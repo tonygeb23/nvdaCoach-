@@ -1,0 +1,324 @@
+{
+	"id": "browse_mode",
+	"title": "Browse Mode and Web Navigation",
+	"description": "Learn how to navigate web pages and HTML documents using NVDA's browse mode. A practice web page will open automatically when you start a lesson.",
+	"order": 3,
+	"practicePage": true,
+	"lessons": [
+		{
+			"id": "intro_browse_mode",
+			"title": "About Browse Mode",
+			"order": 1,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Browse mode is how NVDA helps you read web pages. When you open a web page in your browser, NVDA creates a virtual text copy of the page. You can move through it with arrow keys, just like a document. Single-letter shortcut keys also become available for fast navigation. A practice web page has just opened in your browser. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Press Alt+Tab now to switch to your browser. Once you are in the browser, press Down Arrow to start reading through the practice page. You can come back to continue the lesson at any time. Press Enter when you are ready."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press Alt+Tab to switch to your browser.",
+					"hint": "Hold the Alt key and press Tab. This cycles through your open windows. Release both keys when your browser is announced.",
+					"expectedGestures": [
+						"kb:alt+tab"
+					],
+					"successMessage": "You switched windows. You should now be in your browser on the practice page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "You are in the browser. Press Down Arrow to start reading the page line by line.",
+					"hint": "Just press the Down Arrow key. In browse mode, NVDA reads each line as you move down.",
+					"expectedGestures": [
+						"kb:downArrow"
+					],
+					"successMessage": "You are navigating the practice page in browse mode. Arrow keys work just like reading a text document. Well done.",
+					"allowExecution": true,
+					"feedbackDelay": 1000
+				}
+			]
+		},
+		{
+			"id": "browse_headings",
+			"title": "Navigate by Heading",
+			"order": 2,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Web pages are structured with headings, like chapters in a book. Headings help you understand the layout of a page and jump to sections quickly. In browse mode, press H to jump to the next heading. Shift plus H goes back to the previous heading. Make sure you are in your browser on the practice page. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press H to jump to the next heading on the page.",
+					"hint": "Just press the letter H by itself. In browse mode, single letters are navigation shortcuts, not typed characters.",
+					"expectedGestures": [
+						"kb:h"
+					],
+					"successMessage": "You jumped to the next heading. NVDA announced the heading text and its level.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press H again to move to the next heading.",
+					"hint": "Keep pressing H to move forward through headings on the page.",
+					"expectedGestures": [
+						"kb:h"
+					],
+					"successMessage": "Good. You can press H repeatedly to scan all the headings on a page very quickly.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Shift+H to go back to the previous heading.",
+					"hint": "Hold the Shift key and press H to move backwards through headings.",
+					"expectedGestures": [
+						"kb:shift+h"
+					],
+					"successMessage": "You jumped back one heading. Shift plus a navigation key always moves backward. H and Shift+H let you scan any page's structure in seconds.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				}
+			]
+		},
+		{
+			"id": "heading_levels",
+			"title": "Jump to Heading Levels",
+			"order": 3,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Web pages use different heading levels for structure. Heading level 1 is usually the main page title. Level 2 headings are major sections. Level 3 headings are sub-sections within those. In browse mode, you can press a number from 1 to 6 to jump directly to a heading of that level. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press 1 to jump to the next level 1 heading on the page.",
+					"hint": "Press the number 1 from the top row of your keyboard, not the numpad.",
+					"expectedGestures": [
+						"kb:1"
+					],
+					"successMessage": "You jumped to a level 1 heading. This is usually the main title of the page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press 2 to jump to the next level 2 heading.",
+					"hint": "Press the number 2 from the top row of your keyboard.",
+					"expectedGestures": [
+						"kb:2"
+					],
+					"successMessage": "You jumped to a level 2 heading. These are the main section headings.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press 3 to jump to the next level 3 heading.",
+					"hint": "Press the number 3 from the top row.",
+					"expectedGestures": [
+						"kb:3"
+					],
+					"successMessage": "You jumped to a level 3 heading. Heading-level navigation is one of the most powerful tools for quickly scanning a web page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				}
+			]
+		},
+		{
+			"id": "navigate_links",
+			"title": "Navigate by Link",
+			"order": 4,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Links are what you click to move between web pages. In browse mode, press K to jump to the next link. Shift plus K goes to the previous link. Tab also moves you forward between links and other interactive elements. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press K to jump to the next link on the page.",
+					"hint": "Press the letter K by itself. NVDA will announce the link text.",
+					"expectedGestures": [
+						"kb:k"
+					],
+					"successMessage": "You jumped to a link. NVDA announced the link text. To follow a link in browse mode, press Enter.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press K again to jump to the next link.",
+					"hint": "Keep pressing K to move through all links on the page.",
+					"expectedGestures": [
+						"kb:k"
+					],
+					"successMessage": "Good. You can scan all links on a page very quickly with K.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Shift+K to go back to the previous link.",
+					"hint": "Hold Shift and press K to move backward through links.",
+					"expectedGestures": [
+						"kb:shift+k"
+					],
+					"successMessage": "You moved back one link. K and Shift+K let you quickly review all the links on a page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press Tab to move to the next interactive element on the page.",
+					"hint": "Tab moves you between links, buttons, and form fields. It only visits interactive elements, not plain text.",
+					"expectedGestures": [
+						"kb:tab"
+					],
+					"successMessage": "Tab moved you to the next interactive element. Tab is great for moving between controls in forms and navigating menus.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				}
+			]
+		},
+		{
+			"id": "navigate_forms",
+			"title": "Interact with Forms",
+			"order": 5,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Web pages often have forms with text boxes, buttons, and checkboxes. In browse mode, press F to jump to the next form field. Press E to jump to the next edit field, which is a text box you can type in. Press B to jump to the next button. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press F to jump to the next form field on the page.",
+					"hint": "Press the letter F by itself. This includes text boxes, checkboxes, radio buttons, and more.",
+					"expectedGestures": [
+						"kb:f"
+					],
+					"successMessage": "You jumped to a form field. NVDA announced what type of field it is.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press E to jump to the next text input field.",
+					"hint": "Press the letter E. Edit fields are text boxes where you type information.",
+					"expectedGestures": [
+						"kb:e"
+					],
+					"successMessage": "You landed on an edit field. To type in it, you would first press Enter or NVDA+Space to switch to focus mode.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press B to jump to the next button.",
+					"hint": "Press the letter B. Buttons are controls you activate with Enter or Space.",
+					"expectedGestures": [
+						"kb:b"
+					],
+					"successMessage": "You found a button. Buttons are activated by pressing Enter or Space. B is the quickest way to find buttons on any page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				}
+			]
+		},
+		{
+			"id": "focus_mode",
+			"title": "Focus Mode vs Browse Mode",
+			"order": 6,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Browse mode lets you read and navigate pages. But when you need to type into a text box, you need to switch to focus mode. In focus mode, your keypresses go directly to the application instead of being used as navigation shortcuts. NVDA often switches automatically when you Tab into a text field. You can also toggle manually with NVDA+Space. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press the Space bar. NVDA will announce either 'focus mode' or 'browse mode' to tell you which one you are switching to. In focus mode, letter keys type characters into a field instead of navigating the page. In browse mode, letter keys are navigation shortcuts. NVDA often switches automatically when you Tab into a text field, but knowing how to toggle manually with NVDA+Space gives you full control at any time. Press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+space"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Press NVDA+Space one more time to switch back to the other mode. Hold your NVDA key and press Space, and listen for NVDA to announce the mode name. Remembering this one shortcut means you will always have control over how your keyboard behaves on any web page. Press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+space"
+					]
+				}
+			]
+		},
+		{
+			"id": "landmarks_and_lists",
+			"title": "Landmarks and Lists",
+			"order": 7,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Well-designed web pages use landmarks, which are named regions such as navigation, main content, and footer. In browse mode, press D to jump to the next landmark. Shift plus D goes backward. Pages also have lists of items. Press L to jump to the next list. These shortcuts help you skip to the right part of a page without reading everything. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press D to jump to the next landmark on the page.",
+					"hint": "Press the letter D. NVDA will announce the landmark type, such as navigation, main, or contentinfo.",
+					"expectedGestures": [
+						"kb:d"
+					],
+					"successMessage": "You jumped to a landmark. Landmarks are a quick way to get to the main content area and skip past repeated navigation links.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Press D again to move to the next landmark.",
+					"hint": "Keep pressing D to cycle through all landmarks on the page.",
+					"expectedGestures": [
+						"kb:d"
+					],
+					"successMessage": "Good. You can press D repeatedly to move between all the major sections of a page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press L to jump to the next list on the page.",
+					"hint": "Press the letter L. Lists contain grouped items like navigation menus, product listings, or bullet points.",
+					"expectedGestures": [
+						"kb:l"
+					],
+					"successMessage": "You found a list. Once inside a list, press I to move between list items. L and D together cover most of the structural navigation you need on any page.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				}
+			]
+		},
+		{
+			"id": "elements_list",
+			"title": "The Elements List",
+			"order": 8,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "NVDA has a powerful dialog called the Elements List that shows you all the headings, links, form fields, or landmarks on the current page in one place. You can filter the list and jump directly to any item. It is like a table of contents for the whole page. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press F7 at the top of your keyboard. The Elements List dialog will open and NVDA will announce it. Inside the dialog, press Tab to switch between viewing headings, links, form fields, and landmarks on the current page. Use the arrow keys to move through the list, and press Enter on any item to jump directly to it on the page. It is like an instant table of contents for the whole page — one of the most powerful tools NVDA gives you for web navigation. When you are done exploring, press Escape to close the dialog, then press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+f7"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Excellent work — you have completed the Browse Mode and Web Navigation chapter! You now know how to navigate web pages using headings, links, form fields, landmarks, lists, the Elements List, and how to switch between browse mode and focus mode. These skills let you navigate any web page quickly and independently. To explore more resources, press NVDA+Shift+C to open the lesson picker and check the Additional Training and Help section at the bottom of the list. Press Enter to finish."
+				}
+			]
+		}
+	]
+}

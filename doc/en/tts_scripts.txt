@@ -1,0 +1,856 @@
+════════════════════════════════════════════════════════════════
+  NVDA COACH — AUDIO GUIDE
+  A complete walkthrough of the NVDA Coach lesson program.
+  Created by Tony Gebhard, Assistive Technology Instructor.
+  tonygebhard.me/NVDACoach
+════════════════════════════════════════════════════════════════
+
+  PRODUCTION NOTES
+  ─────────────────
+  • Read the narration text aloud using a text-to-speech voice.
+  • Sections marked  ◆ AUDIO INSERT  are placeholders for
+    recorded NVDA session audio to be edited in later.
+  • Each ◆ AUDIO INSERT block describes what to record and an
+    approximate duration for the clip.
+  • A short tone or soft chime can be added before and after
+    each insert to signal a transition in and out of demo audio.
+  • About one second of silence between paragraphs sounds natural.
+  • Chapter and section breaks can include a brief musical sting.
+════════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════════
+  INTRODUCTION
+════════════════════════════════════════════════════════════════
+
+Welcome to NVDA Coach — the guided audio walkthrough for learning
+the NVDA screen reader.
+
+NVDA Coach is a free, hands-on training program for Windows. It
+was created by Tony Gebhard, an Assistive Technology Instructor,
+and is available at tonygebhard.me/NVDACoach. The program guides
+students through short, practical lessons that build real skills
+with the NVDA screen reader — one command at a time.
+
+This audio guide is a companion to the NVDA Coach software. It
+walks through every lesson in the program, explains each concept
+in plain language, and includes audio demonstrations of NVDA in
+action so the listener knows exactly what to listen for.
+
+The guide is organized into three chapters. Chapter One is called
+Getting Started with NVDA and covers ten foundational lessons.
+Chapter Two is called Reading and Moving Through Text and covers
+five lessons on document navigation. Chapter Three is called
+Browse Mode and Web Navigation and covers eight lessons on using
+NVDA with websites.
+
+Before beginning, a note for students working with an instructor.
+If an assistive technology instructor or a knowledgeable guide is
+present, this is the right moment to let them know training is
+starting. They can assist with finding keys, adjusting settings,
+or answering questions. For students working independently, the
+NVDA Coach program is designed to support that completely. Every
+step is explained in full, and help is always available through
+the built-in hint and repeat functions.
+
+Let us begin.
+
+
+════════════════════════════════════════════════════════════════
+  CHAPTER ONE: GETTING STARTED WITH NVDA
+════════════════════════════════════════════════════════════════
+
+Chapter One — Getting Started with NVDA.
+
+This chapter covers the ten commands that form the foundation of
+daily NVDA use. Each lesson focuses on a single skill, takes one
+to three minutes, and is immediately practical. By the end of
+this chapter, a student will have the core vocabulary needed to
+navigate Windows using the NVDA screen reader.
+
+At any point during a lesson in NVDA Coach, these keys are
+available. Press F1 to hear the current instruction repeated.
+Press F2 to receive a hint. Press F3 to skip the current step.
+Press Escape to stop the lesson and return to the main window.
+These keys are always active during any lesson and can be used
+freely at any time.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON ONE: Meet Your NVDA Key
+────────────────────────────────────────────────────────────────
+
+Lesson one — Meet Your NVDA Key.
+
+The most important concept in all of NVDA is the NVDA modifier
+key. This is the key that is held down while pressing other keys
+to send commands to NVDA. Without it, NVDA reads and responds
+to what is happening on the screen. With it, NVDA receives a
+direct command.
+
+On most desktop keyboards, the NVDA key is the Insert key. On
+many laptops, it is the Caps Lock key. On keyboards with a
+number pad, the zero key on the number pad also works. An
+instructor can confirm which key is configured for a given
+system. Insert is the most common default on desktop computers.
+
+Every command covered in this guide begins with the NVDA key.
+It is the starting point for everything.
+
+The first command combines the NVDA key with the letter N. This
+opens the NVDA menu — the central hub for all of NVDA's settings
+and features. When the menu opens, NVDA begins announcing the
+items inside it. Pressing Escape closes the menu and returns
+focus to where it was before.
+
+Here is what that sounds like.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+N — Opening the NVDA menu
+  Record: Press NVDA+N. Hear NVDA announce the menu and read
+  through several items such as Preferences, Tools, and Help.
+  Then press Escape. Hear the menu close.
+  Duration: approximately 6–10 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+When NVDA plus N is pressed, the menu opens and NVDA begins
+reading through its items. Pressing Escape closes it. These two
+actions — opening and closing the menu — are the foundation of
+navigating everything NVDA can do.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON TWO: Read the Title Bar
+────────────────────────────────────────────────────────────────
+
+Lesson two — Read the Title Bar.
+
+Every window on a Windows computer has a title bar at the top.
+It contains the name of the program and, when applicable, the
+name of the file currently open. NVDA can read that title bar
+at any time, without switching windows or moving focus.
+
+The command is NVDA plus T. Hold the NVDA key and press T. NVDA
+immediately announces the full title of the current window.
+
+This command answers one of the most common orientation questions
+a screen reader user has: which program is currently in focus?
+Whenever that question comes up, NVDA plus T provides the answer
+instantly.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+T — Reading the title bar
+  Record: Press NVDA+T in a clearly named window such as Notepad
+  or the NVDA Coach window. Hear NVDA announce the full title.
+  Duration: approximately 3–5 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus T — the title of the current window, on demand.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON THREE: Read the Time
+────────────────────────────────────────────────────────────────
+
+Lesson three — Read the Time.
+
+NVDA can announce the current time or date without the need to
+leave the active program, navigate to a clock, or switch tasks.
+
+The command is NVDA plus F12. F12 is the last function key in
+the top row of the keyboard, on the far right. Pressing NVDA
+plus F12 once announces the current time. Pressing it twice in
+quick succession announces the date instead.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+F12 — Time and date
+  Record: Press NVDA+F12 once. Hear NVDA announce the time.
+  Then press NVDA+F12 twice quickly. Hear NVDA announce the date.
+  Duration: approximately 6–8 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus F12 for the time. Pressed twice for the date.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON FOUR: Stop NVDA from Talking
+────────────────────────────────────────────────────────────────
+
+Lesson four — Stop NVDA from Talking.
+
+There will be many moments when NVDA begins reading something
+and the listener wants it to stop immediately. The key for this
+is Control — pressed alone, with nothing else held. A single
+tap of the Control key silences NVDA instantly. This is called
+stopping speech.
+
+The Control key is located in the bottom-left corner of the
+keyboard. It may be labeled Control or Ctrl. This single key
+becomes one of the most-used keys in a screen reader user's
+daily routine.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Control key — Stopping speech mid-sentence
+  Record: NVDA reading a paragraph of text aloud. Part of the
+  way through, press Control. Hear speech cut off immediately
+  and silence follow.
+  Duration: approximately 4–6 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+The Control key stops speech the instant it is pressed.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON FIVE: Find Out Where You Are
+────────────────────────────────────────────────────────────────
+
+Lesson five — Find Out Where You Are.
+
+When the keyboard cursor lands on a new control, NVDA usually
+announces it automatically. But there are moments when focus
+moves silently, or when a user wants to double-check exactly
+what is currently selected. NVDA plus Tab reports the current
+focus — the name, type, and state of the control that currently
+has keyboard focus.
+
+The Tab key is on the left side of the keyboard, above Caps Lock.
+Hold the NVDA key and press Tab to hear NVDA describe the current
+control in full.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+Tab — Reading current focus
+  Record: Focus on a named control such as a button or list box.
+  Press NVDA+Tab. Hear NVDA announce the control name, type,
+  and state — for example: "Start Lesson, button."
+  Duration: approximately 3–5 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus Tab — an immediate answer to where the cursor is.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON SIX: Move Between Controls with Tab
+────────────────────────────────────────────────────────────────
+
+Lesson six — Move Between Controls with Tab.
+
+Inside dialog boxes, settings windows, and web forms, the Tab
+key moves forward between interactive controls — buttons,
+checkboxes, text fields, and more. Shift plus Tab moves backward
+through those same controls. NVDA announces each control as
+focus arrives on it, including its name, type, and current state.
+
+Tab and Shift plus Tab together are the primary navigation method
+for any dialog box on a Windows computer.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Tab and Shift+Tab — Moving through controls
+  Record: In a dialog or settings panel with multiple controls,
+  press Tab several times. Hear NVDA announce each control as
+  focus moves forward — a button, a checkbox, a list, etc.
+  Then press Shift+Tab two or three times. Hear NVDA announce
+  each control as focus moves backward.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Tab moves forward. Shift plus Tab moves backward. These two keys
+navigate through almost every dialog box Windows presents.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON SEVEN: Activate Buttons and Controls
+────────────────────────────────────────────────────────────────
+
+Lesson seven — Activate Buttons and Controls.
+
+Once focus is on a control, two keys handle activation. Enter
+performs the default action — on a button, it presses it; on a
+link, it follows it; in a dialog with a default option, it
+confirms that option. Space toggles checkboxes between checked
+and unchecked. Space also activates many buttons.
+
+Together, Tab, Space, and Enter provide full control of almost
+any dialog box or form on a Windows system.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Space — Toggling a checkbox
+  Record: Tab to a checkbox that is currently unchecked.
+  Hear NVDA announce "unchecked." Press Space. Hear NVDA
+  announce "checked." Press Space again. Hear "unchecked."
+  Duration: approximately 5–8 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Enter — Activating a button
+  Record: Tab to a named button. Hear NVDA announce it.
+  Press Enter. Hear the result — a dialog closing or an action
+  confirming.
+  Duration: approximately 4–6 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Space to toggle. Enter to activate. Tab to move between them.
+Three keys for full dialog navigation.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON EIGHT: Read the Current Line
+────────────────────────────────────────────────────────────────
+
+Lesson eight — Read the Current Line.
+
+When working inside a document, an email, or any text area, NVDA
+can re-read the line where the cursor is currently sitting at
+any time. The command is NVDA plus Up Arrow. It does not move
+the cursor. It simply reads the current line aloud again.
+
+This is especially useful when NVDA reads a line and the content
+is missed, or when the cursor has just been moved and the user
+wants to hear the line it landed on.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+Up Arrow — Re-reading the current line
+  Record: Place the cursor on a line of text in a document.
+  Press NVDA+Up Arrow. Hear NVDA read the full line aloud.
+  Press it a second time to demonstrate it can be repeated.
+  Duration: approximately 5–7 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus Up Arrow reads the current line, as many times as needed.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON NINE: Explore Keys with Input Help
+────────────────────────────────────────────────────────────────
+
+Lesson nine — Explore Keys with Input Help.
+
+NVDA includes a feature called Input Help. When it is enabled,
+pressing any key or key combination causes NVDA to announce
+what that key does — without actually performing the action.
+Nothing changes on the computer. No programs open, no commands
+run. NVDA simply describes the key pressed.
+
+This makes Input Help a completely safe way to explore the
+keyboard at any time. It is especially useful for students who
+are still learning key locations or who want to know the function
+of a key before using it.
+
+Input Help is toggled on and off with NVDA plus the number 1
+from the number row at the top of the keyboard.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+1 — Input Help exploration
+  Record: Press NVDA+1. Hear NVDA announce "Input help on."
+  Press a few keys — such as NVDA+T, NVDA+F12, and the Tab key.
+  Hear NVDA describe each one without performing the action.
+  Then press NVDA+1 again. Hear "Input help off."
+  Duration: approximately 12–18 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+When Input Help is on, every keypress becomes a question answered.
+NVDA plus 1 turns it on. NVDA plus 1 turns it off again.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER ONE, LESSON TEN: Open the User Guide
+────────────────────────────────────────────────────────────────
+
+Lesson ten — Open the User Guide.
+
+NVDA ships with a complete user guide that documents every
+feature and command the screen reader provides. It is accessible
+at any time from within NVDA itself, at no cost, and covers far
+more than any introductory course can.
+
+The user guide is found inside the NVDA menu. Press NVDA plus N
+to open the menu, navigate to the Help submenu, and select
+User Guide. The guide opens as a document that can be read using
+all of the navigation skills covered in this program.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Navigating to the User Guide
+  Record: Press NVDA+N to open the menu. Use Down Arrow to
+  move through menu items. Reach the Help submenu. Press Enter
+  or Right Arrow to open it. Hear submenu items announced,
+  including User Guide.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+That completes Chapter One. Ten lessons. Ten commands that form
+the foundation of daily NVDA use. These are the commands that
+experienced screen reader users rely on every single day without
+thinking about them — because they have been practiced until
+they became automatic. That same process begins here.
+
+Chapter Two continues with document navigation.
+
+
+════════════════════════════════════════════════════════════════
+  CHAPTER TWO: READING AND MOVING THROUGH TEXT
+════════════════════════════════════════════════════════════════
+
+Chapter Two — Reading and Moving Through Text.
+
+Documents, emails, notes, reports, and articles — text is at
+the center of most computer work. This chapter teaches five
+methods for moving through text precisely and efficiently, from
+the slowest and most exact to the fastest and most continuous.
+
+Before beginning any lesson in this chapter, it is recommended
+to open Notepad or another text editor and type a few sentences.
+Having real text to practice with makes the difference between
+abstract understanding and usable skill.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER TWO, LESSON ONE: Move by Character
+────────────────────────────────────────────────────────────────
+
+Lesson one — Move by Character.
+
+The most precise method of text navigation is character by
+character. The Right Arrow key moves the cursor forward one
+character. The Left Arrow key moves it back one character. NVDA
+announces each character as the cursor lands on it — every
+letter, every space, every punctuation mark.
+
+This is the method used for proofreading, for spelling out an
+unfamiliar word, and for checking the exact content of a field.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Right/Left Arrow — Character by character
+  Record: Cursor at the start of a word in a text editor.
+  Press Right Arrow several times. Hear NVDA announce each
+  letter individually. Then press Left Arrow several times.
+  Hear each character announced in reverse.
+  Duration: approximately 8–12 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Right Arrow — one character forward. Left Arrow — one character
+back. The most exact way to move through any text.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER TWO, LESSON TWO: Jump Word by Word
+────────────────────────────────────────────────────────────────
+
+Lesson two — Jump Word by Word.
+
+When scanning across text rather than examining it precisely,
+jumping word by word is far faster than moving character by
+character. Control plus Right Arrow moves the cursor to the
+beginning of the next word. Control plus Left Arrow moves it
+back to the previous word. NVDA announces the word the cursor
+lands on.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Control+Right/Left Arrow — Word by word
+  Record: Cursor at the beginning of a sentence. Press
+  Control+Right Arrow several times. Hear NVDA announce each
+  word as the cursor jumps to it. Then press Control+Left Arrow
+  to jump back through several words.
+  Duration: approximately 8–12 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Control plus Right Arrow — the next word. Control plus Left
+Arrow — the previous word. A significant step up in speed from
+character-by-character navigation.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER TWO, LESSON THREE: Move Line by Line
+────────────────────────────────────────────────────────────────
+
+Lesson three — Move Line by Line.
+
+For reading through a document from top to bottom, the Down
+Arrow moves to the next line and the Up Arrow moves to the
+previous line. NVDA reads the full text of each line as the
+cursor arrives on it. This is the fundamental rhythm of reading
+with a screen reader — Down Arrow, then listen; Down Arrow again,
+then listen again.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Down/Up Arrow — Line by line through a document
+  Record: Cursor in a multi-line text document. Press Down Arrow
+  several times with slight pauses between presses. Hear NVDA
+  read each full line as the cursor moves down. Then press Up
+  Arrow twice and hear those lines read again.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Down Arrow — the next line. Up Arrow — the previous line. The
+essential rhythm of reading any document with NVDA.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER TWO, LESSON FOUR: Jump to Start and End
+────────────────────────────────────────────────────────────────
+
+Lesson four — Jump to Start and End.
+
+When working in a long document, pressing Up Arrow repeatedly
+to reach the beginning is impractical. Control plus Home jumps
+immediately to the very beginning of the document. Control plus
+End jumps to the very end. NVDA reads the first or last line
+as the cursor lands.
+
+These shortcuts apply to documents, email messages, lists, and
+web pages — anywhere text has a definable beginning and end.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Control+Home and Control+End
+  Record: Cursor somewhere in the middle of a multi-line
+  document. Press Control+Home. Hear NVDA announce the first
+  line. Then press Control+End. Hear NVDA announce the last
+  line.
+  Duration: approximately 6–10 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Control plus Home — the beginning. Control plus End — the end.
+Instant travel to either boundary of any document.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER TWO, LESSON FIVE: Read Everything from Here
+────────────────────────────────────────────────────────────────
+
+Lesson five — Read Everything from Here.
+
+NVDA plus Down Arrow begins continuous reading from the current
+cursor position to the end of the document without stopping.
+This is called Say All. NVDA reads without pause until it
+reaches the end of the content or is stopped by the listener.
+Pressing Control stops it at any time.
+
+Say All is the preferred method for reading long documents,
+email messages, articles, and any text where continuous
+listening is more practical than line-by-line navigation.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+Down Arrow — Say All
+  Record: Cursor near the beginning of a paragraph. Press
+  NVDA+Down Arrow. Hear NVDA begin reading continuously without
+  stopping. Allow 6–8 seconds of reading. Then press Control.
+  Hear speech stop immediately.
+  Duration: approximately 12–16 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus Down Arrow begins Say All. Control stops it. The two
+commands work together — start reading, then stop when ready.
+
+That completes Chapter Two. Five navigation methods for any text.
+Character by character, word by word, line by line, jump to
+start or end, and continuous reading with Say All. These skills
+apply in every document, email, and text field on the computer.
+
+Chapter Three continues with web navigation.
+
+
+════════════════════════════════════════════════════════════════
+  CHAPTER THREE: BROWSE MODE AND WEB NAVIGATION
+════════════════════════════════════════════════════════════════
+
+Chapter Three — Browse Mode and Web Navigation.
+
+The web is one of the most important environments for screen
+reader users. News, government services, health information,
+banking, communication, and education all live on web pages.
+NVDA provides a dedicated set of tools for navigating them
+efficiently.
+
+In NVDA Coach, a practice web page opens automatically when
+any lesson in this chapter is started. That page contains
+real headings, links, forms, and landmarks specifically
+designed for these exercises.
+
+This chapter has eight lessons.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON ONE: About Browse Mode
+────────────────────────────────────────────────────────────────
+
+Lesson one — About Browse Mode.
+
+When a web page opens in a browser, NVDA automatically enters
+browse mode. In browse mode, NVDA constructs a virtual text
+copy of the page in memory. The user can then navigate that
+copy with arrow keys, exactly as with a document. Down Arrow
+reads the next line. Up Arrow reads the previous line. All of
+the navigation skills from Chapter Two apply here.
+
+Browse mode also activates single-letter shortcut keys for fast
+navigation. Pressing H jumps to the next heading. Pressing K
+jumps to the next link. Pressing B jumps to the next button.
+These shortcuts are available throughout the rest of this chapter.
+
+Here is what a web page sounds like when read in browse mode.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Browse mode — Reading a web page with Down Arrow
+  Record: Browser open on the practice page. NVDA in browse
+  mode. Press Down Arrow several times. Hear NVDA read each
+  line — including headings, paragraph text, and links —
+  announcing the type of content as it goes.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA reads the page line by line in browse mode, announcing
+the type of content encountered — headings, links, plain text —
+as the cursor moves through it.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON TWO: Navigate by Heading
+────────────────────────────────────────────────────────────────
+
+Lesson two — Navigate by Heading.
+
+Well-structured web pages use headings to divide their content
+into sections, similar to chapters and subheadings in a book.
+In browse mode, the letter H jumps to the next heading on the
+page. Shift plus H jumps backward to the previous heading. NVDA
+announces the heading text and its level each time the cursor
+lands on one.
+
+Heading navigation makes it possible to scan the full structure
+of a web page in seconds by pressing H repeatedly, without
+reading a single line of the page's body text.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: H and Shift+H — Heading navigation
+  Record: In browse mode on the practice page, press H several
+  times. Hear NVDA announce each heading with its level number
+  and text. Then press Shift+H to go back one heading and hear
+  it announced again.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+H — the next heading. Shift plus H — the previous heading. The
+fastest way to understand the structure of any web page.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON THREE: Jump to Heading Levels
+────────────────────────────────────────────────────────────────
+
+Lesson three — Jump to Heading Levels.
+
+Headings on web pages are numbered by level. Level one headings
+are typically the main page title. Level two headings mark
+major sections. Level three and below mark sub-sections within
+those. In browse mode, pressing a number from one through six
+jumps directly to the next heading of that specific level on
+the page.
+
+This allows a user to jump straight to major sections by pressing
+two, or to find sub-sections within a specific area by pressing
+three — without moving through every other heading on the page.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: Number keys 1, 2, 3 — Heading level navigation
+  Record: In browse mode on the practice page, press 1. Hear
+  NVDA announce "Heading level 1" and the heading text. Press 2.
+  Hear "Heading level 2" and its text. Press 3. Hear "Heading
+  level 3" and its text.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Number keys one through six jump to headings at each level.
+Precise structural navigation across any page.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON FOUR: Navigate by Link
+────────────────────────────────────────────────────────────────
+
+Lesson four — Navigate by Link.
+
+Links connect web pages to each other and to resources across
+the web. In browse mode, the letter K jumps to the next link
+on the page. Shift plus K jumps back to the previous link. NVDA
+announces the link text — the words that describe what the link
+leads to. Pressing Enter follows the link.
+
+The Tab key also moves forward between interactive elements,
+including links, buttons, and form fields. Tab is useful when
+the goal is to reach the next interactive element of any kind.
+K is faster when the goal is specifically to find links.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: K, Shift+K, Tab — Link navigation
+  Record: In browse mode on the practice page, press K several
+  times. Hear NVDA announce each link's text as the cursor
+  lands on it. Press Shift+K to go back one link. Then press
+  Tab to move to the next interactive element.
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+K — the next link. Shift plus K — back one link. Tab — the next
+interactive element. Enter — follow the link.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON FIVE: Interact with Forms
+────────────────────────────────────────────────────────────────
+
+Lesson five — Interact with Forms.
+
+Web pages frequently contain forms — search fields, login
+pages, contact forms, settings panels, and more. In browse
+mode, three letter keys provide fast access to form elements.
+
+Pressing F jumps to the next form field of any kind, including
+text boxes, checkboxes, radio buttons, and drop-down menus.
+Pressing E jumps to the next edit field — a text box that can
+be typed in. Pressing B jumps to the next button.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: F, E, B — Form field navigation
+  Record: In browse mode on the practice page which contains
+  a sample form. Press F — hear NVDA announce a form field
+  type and label. Press E — hear an edit field announced.
+  Press B — hear a button announced with its label.
+  Duration: approximately 10–12 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+F for any form field. E for text input fields. B for buttons.
+Three letters that cover every interactive element in any form.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON SIX: Focus Mode vs Browse Mode
+────────────────────────────────────────────────────────────────
+
+Lesson six — Focus Mode versus Browse Mode.
+
+Browse mode is for reading and navigating. In browse mode,
+letter keys are navigation shortcuts rather than typed
+characters. H jumps to headings; it does not type the letter H.
+
+Focus mode is for interacting with applications. In focus mode,
+keypresses go directly to the active element. Letters type into
+a text field. Arrow keys move within a control. NVDA's single-
+letter navigation shortcuts are suspended.
+
+NVDA often switches modes automatically. When Tab moves focus
+into a text field, NVDA typically switches to focus mode and
+announces it. When Escape is pressed out of that field, NVDA
+returns to browse mode. Manual toggling is also available at
+any time using NVDA plus Space.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+Space — Toggling focus and browse mode
+  Record: In browse mode on the practice page. Press NVDA+Space.
+  Hear NVDA announce "Focus mode." Press NVDA+Space again.
+  Hear NVDA announce "Browse mode." Then Tab to a text field —
+  hear NVDA automatically announce "Focus mode" on entry.
+  Press Escape. Hear "Browse mode."
+  Duration: approximately 10–15 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+Browse mode for reading and navigating. Focus mode for typing
+and interacting. NVDA plus Space toggles between them at will.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON SEVEN: Landmarks and Lists
+────────────────────────────────────────────────────────────────
+
+Lesson seven — Landmarks and Lists.
+
+Accessible web pages divide their content into regions called
+landmarks. Common landmarks include navigation, which contains
+the site's main menu; main, which contains the primary content;
+and contentinfo, which is typically the footer. In browse mode,
+pressing D jumps to the next landmark. Shift plus D goes back.
+
+Landmarks make it possible to skip directly to the main content
+of a page without reading through the navigation links that
+repeat at the top of every page on a site.
+
+Web pages also contain lists — grouped sets of related items
+such as navigation menus, search results, or article summaries.
+Pressing L jumps to the next list on the page. Once inside a
+list, pressing I moves between individual list items.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: D and L — Landmark and list navigation
+  Record: In browse mode on the practice page. Press D. Hear
+  NVDA announce a landmark type and name. Press D again to
+  move to the next landmark. Then press L to jump to a list.
+  Hear the list announced. Press I to move through list items.
+  Duration: approximately 12–18 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+D for landmarks. L for lists. I for list items. Structural
+navigation across any well-built web page.
+
+
+────────────────────────────────────────────────────────────────
+  CHAPTER THREE, LESSON EIGHT: The Elements List
+────────────────────────────────────────────────────────────────
+
+Lesson eight — The Elements List.
+
+The Elements List is one of the most powerful tools NVDA
+provides for web navigation. It opens a dialog that lists all
+of the headings, links, form fields, or landmarks on the current
+page in a single, searchable view. Pressing Tab inside the
+dialog switches between those four categories. Arrow keys move
+through the items. Pressing Enter on any item jumps directly to
+it on the page.
+
+The Elements List is opened with NVDA plus F7. F7 is a function
+key in the top row of the keyboard.
+
+◆ ─────────────────────────────────────────────────────────── ◆
+  AUDIO INSERT: NVDA+F7 — The Elements List
+  Record: In browse mode on the practice page. Press NVDA+F7.
+  Hear the Elements List dialog announced, defaulting to the
+  headings view. Hear a few heading items. Press Tab to switch
+  to the Links view. Hear the link list announced. Press Down
+  Arrow through a few items. Press Escape to close the dialog.
+  Duration: approximately 15–20 seconds.
+◆ ─────────────────────────────────────────────────────────── ◆
+
+NVDA plus F7 — the Elements List. A complete overview of any
+page's structure in a single searchable dialog.
+
+That completes Chapter Three and the final lesson of the NVDA
+Coach Audio Guide.
+
+
+════════════════════════════════════════════════════════════════
+  CLOSING
+════════════════════════════════════════════════════════════════
+
+This guide has covered all three chapters of NVDA Coach — twenty-
+three lessons spanning the full foundation of NVDA screen reader
+use.
+
+From the very first command to the most advanced web navigation
+tools, each skill covered here builds toward genuine independence
+with a screen reader. Learning these commands takes time and
+repetition. The commands that require thought today will become
+automatic with practice. Using NVDA a little every day — for
+reading a short article, checking email, navigating a familiar
+website — is the most effective way to build that fluency.
+
+For further instruction, custom training, or accessible technology
+resources, contact Tony Gebhard, Assistive Technology Instructor,
+at info@tonygebhard.me. Additional resources are available at
+tonygebhard.me/NVDACoach.
+
+NVDA itself is free, open-source software developed and maintained
+by NV Access. It can be downloaded at nvaccess.org.
+
+This concludes the NVDA Coach Audio Guide.
+
+
+════════════════════════════════════════════════════════════════
+  END OF NVDA COACH AUDIO GUIDE
+  3 Chapters | 23 Lessons | 16 Audio Insert Placeholders
+  NVDA Coach — tonygebhard.me/NVDACoach
+════════════════════════════════════════════════════════════════

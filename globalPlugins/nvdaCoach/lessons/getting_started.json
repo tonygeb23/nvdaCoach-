@@ -1,0 +1,240 @@
+{
+	"id": "getting_started",
+	"title": "Getting Started with NVDA",
+	"description": "Learn the essential NVDA commands every beginner needs. Each lesson is a short drill that takes about one to three minutes.",
+	"order": 1,
+	"lessons": [
+		{
+			"id": "nvda_key",
+			"title": "Meet Your NVDA Key",
+			"order": 1,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Welcome to NVDA Coach! If you have an assistive technology instructor with you right now, this is a great moment to let them know you are starting. They can sit with you, help you find keys, and answer questions as you go. If you are working on your own, that is absolutely fine. NVDA Coach is designed to guide you independently, and you can do this. If you ever feel stuck, press F2 for a hint, F1 to hear the instruction again, or F3 to skip a step and come back to it later. In this first lesson, you will learn about the NVDA modifier key. This is the special key you hold while pressing other keys to send commands to NVDA. On most keyboards it is the Insert key. On many laptops it is Caps Lock. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Let's try it out. Press your NVDA key plus the letter N. Hold Insert, Caps Lock, or Num Pad Zero — whichever is your NVDA key — and while holding it, press the letter N. You should hear NVDA open a menu and begin announcing items such as Preferences, Tools, and Help. This is the NVDA menu, and it gives you access to all of NVDA's settings and features. If nothing happens, ask your instructor to help you locate and confirm your NVDA key before moving on. Once you hear the menu open, press Escape to close it and come back here, then press Enter to continue.",
+					"monitorGestures": [
+						"kb:nvda+n"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Well done! You now know how to open and close the NVDA menu. NVDA+N opens the menu — it is your main hub for preferences, tools, and help. The Escape key closes menus and cancels actions, and you will use it constantly. These two shortcuts together give you full access to everything NVDA can do. Press Enter to finish this lesson."
+				}
+			]
+		},
+		{
+			"id": "title_bar",
+			"title": "Read the Title Bar",
+			"order": 2,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Every window has a title bar at the top that tells you which program you are in. NVDA can read it for you at any time. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press the letter T. You should hear NVDA read the title bar of the current window — something like the name of the program you are in right now. Whenever you are not sure which program you are looking at, NVDA+T will tell you immediately. It is one of the most useful commands you will ever learn. Press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+t"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Let's do that one more time to build the habit. Hold your NVDA key and press T again. Listen as NVDA reads the title bar aloud. Repetition is how keyboard commands become automatic — the more you practice, the faster each command becomes second nature. Press Enter here when you are ready to continue.",
+					"monitorGestures": [
+						"kb:nvda+t"
+					]
+				}
+			]
+		},
+		{
+			"id": "read_time",
+			"title": "Read the Time",
+			"order": 3,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "NVDA can tell you the current time and date without leaving what you are doing. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press F12 — the last function key on the top row of your keyboard, usually on the far right. You should hear NVDA announce the current time. Quick tip: if you press NVDA+F12 twice in rapid succession, NVDA reads the date instead of the time. Give both a try if you like, then press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+f12"
+					]
+				}
+			]
+		},
+		{
+			"id": "stop_speech",
+			"title": "Stop NVDA from Talking",
+			"order": 4,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Sometimes NVDA talks too much or you want it to stop mid sentence. You can press the Control key by itself to immediately silence NVDA. This is called stopping speech. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "A note on practicing this key: pressing Control during an active lesson would silence NVDA before it can give you feedback, making reliable in-lesson practice impossible. Instead, build the habit naturally. The next time NVDA reads something too long or too fast, reach for Control. You will discover the reflex on your own within minutes of real use. There is nothing else to do here. Press Enter to finish this lesson."
+				}
+			]
+		},
+		{
+			"id": "where_am_i",
+			"title": "Find Out Where You Are",
+			"order": 5,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "When you are not sure what control you are on, NVDA can announce your current position. A practice login form window has opened alongside this window so you have real controls to explore. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Switch to the practice window now by pressing Alt+Tab. Tab to any control in the login form, then press NVDA+Tab. NVDA will announce the name, type, and state of whatever control you are focused on. For example it might say 'Username edit' or 'Sign in button.' Try it on several different controls — text fields, the checkbox, and each button — to hear how NVDA describes each type. When you are done exploring, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"monitorGestures": [
+						"kb:nvda+tab"
+					]
+				}
+			]
+		},
+		{
+			"id": "tab_navigation",
+			"title": "Move Between Controls with Tab",
+			"order": 6,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "In dialog boxes, settings windows, and forms, you press the Tab key to move forward between controls like buttons, checkboxes, and text fields. Shift+Tab moves you backwards. A practice form window has opened alongside this window so you have real controls to Tab through. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Switch to the practice form by pressing Alt+Tab. Once you are there, press Tab to move to the next control. NVDA will announce the name and type of each control as you land on it. Keep pressing Tab to move through the whole form. When you are ready, press NVDA+Shift+C to come back here, then press Enter to continue.",
+					"hint": "The Tab key is on the left side of your keyboard, above Caps Lock. Just press it by itself. Each time you press Tab, NVDA announces the control you moved to.",
+					"expectedGestures": [
+						"kb:tab"
+					],
+					"successMessage": "You moved to the next control. NVDA announced what you landed on.",
+					"allowExecution": true,
+					"feedbackDelay": 1500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now in the practice form, press Shift+Tab to move back to the previous control. Hold Shift and press Tab. NVDA will announce the control you return to. Tab goes forward, Shift+Tab goes back. Press NVDA+Shift+C to return here when ready, then press Enter to continue.",
+					"hint": "Hold the Shift key and press Tab. Shift is the large wide key just above Ctrl on either side of the keyboard.",
+					"expectedGestures": [
+						"kb:shift+tab"
+					],
+					"successMessage": "You moved backwards. Tab goes forward, Shift+Tab goes back. These two keys will carry you through most dialog boxes and forms.",
+					"allowExecution": true,
+					"feedbackDelay": 2000
+				}
+			]
+		},
+		{
+			"id": "activate_controls",
+			"title": "Activate Buttons and Controls",
+			"order": 7,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Once you have Tabbed to a button or control, you need to activate it. The two keys for this are Enter and Space. Enter activates buttons and default actions. Space toggles things like checkboxes on and off. A practice window has opened with checkboxes and buttons for you to try. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Switch to the practice window with Alt+Tab. Tab to one of the checkboxes labeled 'Enable screen reader tips' or 'Show practice hints', then press the Space bar to check or uncheck it. NVDA will announce whether the box is now checked or unchecked. When you are done, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"hint": "The Space bar is the long key at the bottom center of your keyboard. Make sure you have Tabbed to a checkbox first.",
+					"expectedGestures": [
+						"kb:space"
+					],
+					"successMessage": "Space bar pressed. Space is used to check or uncheck checkboxes and to activate some buttons.",
+					"allowExecution": false,
+					"feedbackDelay": 500
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now in the practice window, Tab to one of the buttons — 'Play a beep sound', 'Say hello', or 'Show keyboard tip' — and press Enter to activate it. NVDA will announce what happened. When done, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"hint": "Enter is the large key on the right side of the main keyboard area. Make sure you have Tabbed to a button first.",
+					"expectedGestures": [
+						"kb:return",
+						"kb:enter",
+						"kb:numpadenter"
+					],
+					"successMessage": "Enter key pressed. Enter activates buttons and follows links. Between Tab, Space, and Enter, you can navigate almost any dialog box.",
+					"allowExecution": false,
+					"feedbackDelay": 500
+				}
+			]
+		},
+		{
+			"id": "read_current_line",
+			"title": "Read the Current Line",
+			"order": 8,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "When you are in a document or text area, you can have NVDA read the line where your cursor is sitting. A practice text area is included right in the next step. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Arrow down into the practice text area below to move your cursor through the lines. Then press NVDA+Up Arrow to have NVDA read the current line aloud. Move to a different line with Up or Down Arrow and press NVDA+Up Arrow again to hear each one. This works in any document, email, or text area. Press Enter to continue when done.",
+					"monitorGestures": [
+						"kb:nvda+upArrow"
+					],
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "input_help",
+			"title": "Explore Keys with Input Help",
+			"order": 9,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "NVDA has a special mode called Input Help. When it is on, pressing any key tells you what that key does in NVDA instead of performing the action. It is a safe way to explore your keyboard. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press the number 1 from the top row of your keyboard — not the numpad, but the number row just above the letter keys. You should hear NVDA say 'Input help on.' While Input Help is active, you can press any key and NVDA will describe what that key does without actually performing the action. It is a completely safe way to explore your keyboard. Press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+1"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Now press NVDA+1 again to turn Input Help back off. Hold your NVDA key and press the number 1. You should hear NVDA say 'Input help off.' Whenever you forget what a key does in the future, turn on Input Help, press the key to hear its description, and then turn Input Help back off. It is like having a built-in cheat sheet that is always available to you. Press Enter here to continue.",
+					"monitorGestures": [
+						"kb:nvda+1"
+					]
+				}
+			]
+		},
+		{
+			"id": "getting_help",
+			"title": "Open the User Guide",
+			"order": 10,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "NVDA comes with a complete user guide that you can open at any time. It is a great reference when you want to learn more on your own. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Try it now. Hold your NVDA key and press N to open the NVDA menu. You should hear NVDA announce the menu and its items. From here, in real use, you would press the Down Arrow to move through items, navigate to Help, and then select User Guide to read the full documentation at any time. For now, just listen to the menu open, then press Escape to close it and come back here. Press Enter to continue.",
+					"monitorGestures": [
+						"kb:nvda+n"
+					]
+				},
+				{
+					"type": "info",
+					"instruction": "Excellent work — you have completed the Getting Started chapter! You now know the essential NVDA commands that will carry you through daily use: your NVDA key, reading the title bar and time, stopping speech, finding your focus, navigating with Tab, activating controls, reading lines, using Input Help, and opening the user guide. Practice a little every day and these commands will become automatic. When you are ready for more, press NVDA+Shift+C to open the lesson picker and start the next chapter: Reading and Moving Through Text. Press Enter to finish."
+				}
+			]
+		}
+	]
+}

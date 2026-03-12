@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NVDA Coach Practice Page</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1em 2em; line-height: 1.6; }
+h1 { border-bottom: 2px solid #333; }
+h2 { border-bottom: 1px solid #666; margin-top: 2em; }
+nav { background: #f0f0f0; padding: 0.75em 1em; border: 1px solid #ccc; margin-bottom: 1.5em; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5em; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #999; padding: 0.5em 0.75em; text-align: left; }
+th { background: #e0e0e0; }
+form { background: #f9f9f9; border: 1px solid #ccc; padding: 1em; }
+label { display: block; margin: 0.5em 0 0.25em; }
+input[type="text"], input[type="email"], select { width: 100%; max-width: 300px; padding: 0.3em; }
+.radio-group, .checkbox-group { margin: 0.5em 0; }
+button { margin-top: 0.75em; padding: 0.4em 1.2em; }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+
+<nav aria-label="Site navigation">
+  <ul>
+    <li><a href="#about">About This Page</a></li>
+    <li><a href="#reading">Reading Practice</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#lists">Lists</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>NVDA Coach Practice Page</h1>
+
+<section id="about" aria-label="About">
+  <h2>About This Page</h2>
+  <p>Welcome to the NVDA Coach practice page. This page has been created specifically for practicing screen reader navigation. It contains headings, links, a form, a table, and lists — everything you need to practice the skills taught in NVDA Coach.</p>
+  <p>You can navigate this page in browse mode using the keyboard shortcuts you are learning. There is no need to click anything. Everything here is for practice, so feel free to explore freely.</p>
+
+  <h3>How to Use This Page</h3>
+  <p>Simply press the navigation keys your NVDA Coach lesson is teaching. For example, press H to jump between headings, K to jump between links, and F to jump between form fields. Use Down Arrow to read line by line, or NVDA+Down Arrow to read the entire page.</p>
+</section>
+
+<section id="reading" aria-label="Text Reading Practice">
+  <h2>Text Reading Practice</h2>
+  <p>This section has longer paragraphs so you can practice reading and navigation. NVDA can read all of this text using Say All, which you start with NVDA plus Down Arrow. You can stop reading at any time by pressing Control.</p>
+
+  <h3>The History of Screen Readers</h3>
+  <p>Screen readers have been around since the 1980s. The first screen readers were simple programs that converted text displayed on screen into speech using synthesizers. Over time, they became much more sophisticated, learning to interpret graphics, web pages, and complex layouts.</p>
+  <p>Today, screen readers like NVDA, JAWS, and VoiceOver are capable of reading web content, spreadsheets, email, and documents with remarkable accuracy. NVDA, which stands for NonVisual Desktop Access, was first released in 2006 and has grown into one of the most widely used screen readers in the world, largely because it is free and open source.</p>
+
+  <h3>Why Practice Matters</h3>
+  <p>Learning a screen reader takes time and repetition. The keyboard shortcuts may feel unfamiliar at first, but with practice they become automatic. Most experienced screen reader users navigate web pages and documents at high speed, using heading navigation, landmark navigation, and link lists to find information quickly.</p>
+  <p>The key is to practice a little every day. Focus on one set of commands at a time, use them in real situations, and gradually build up your speed and confidence. NVDA Coach is designed to help you do exactly that.</p>
+</section>
+
+<section id="links" aria-label="Links Practice">
+  <h2>Links Practice</h2>
+  <p>This section has several links for practicing link navigation. Press K to jump to the next link, Shift+K to go back, or Tab to move through interactive elements.</p>
+  <ul>
+    <li><a href="https://www.nvaccess.org">NV Access — the organization that makes NVDA</a></li>
+    <li><a href="https://www.nvaccess.org/get-help/">NVDA Help and Support</a></li>
+    <li><a href="https://github.com/nvaccess/nvda">NVDA on GitHub (source code)</a></li>
+    <li><a href="https://webaim.org">WebAIM — web accessibility resources</a></li>
+    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+    <li><a href="https://webaim.org/techniques/keyboard/">Keyboard Accessibility Guide</a></li>
+  </ul>
+</section>
+
+<section id="forms" aria-label="Forms Practice">
+  <h2>Forms Practice</h2>
+  <p>This section has a sample form. Practice navigating to form fields with F, E, and B. To type in a text field, press Enter or NVDA+Space to enter focus mode first.</p>
+
+  <form aria-label="Sample contact form">
+    <h3>Sample Contact Form</h3>
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic">
+      <option value="">Choose a topic</option>
+      <option value="general">General Question</option>
+      <option value="technical">Technical Support</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+    </select>
+
+    <fieldset>
+      <legend>Preferred contact method:</legend>
+      <div class="radio-group">
+        <input type="radio" id="contact_email" name="contact" value="email">
+        <label for="contact_email" style="display:inline;">Email</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_phone" name="contact" value="phone">
+        <label for="contact_phone" style="display:inline;">Phone</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_none" name="contact" value="none">
+        <label for="contact_none" style="display:inline;">No follow-up needed</label>
+      </div>
+    </fieldset>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter" style="display:inline;">Subscribe to the NVDA Coach newsletter</label>
+    </div>
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Clear Form</button>
+  </form>
+</section>
+
+<section id="tables" aria-label="Tables Practice">
+  <h2>Tables Practice</h2>
+  <p>This section has a data table. Press T to jump to the table. Once inside, use Control+Alt+Arrow keys to navigate between cells. NVDA announces the row and column headers as you move.</p>
+
+  <table>
+    <caption>NVDA Browse Mode Navigation Keys</caption>
+    <thead>
+      <tr>
+        <th scope="col">Key</th>
+        <th scope="col">What It Does</th>
+        <th scope="col">Reverse (Shift+Key)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H</td>
+        <td>Next heading</td>
+        <td>Previous heading</td>
+      </tr>
+      <tr>
+        <td>1 through 6</td>
+        <td>Next heading at that level</td>
+        <td>Previous heading at that level</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>Next link</td>
+        <td>Previous link</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>Next button</td>
+        <td>Previous button</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>Next form field</td>
+        <td>Previous form field</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>Next edit field</td>
+        <td>Previous edit field</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>Next list</td>
+        <td>Previous list</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>Next landmark</td>
+        <td>Previous landmark</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td>Next table</td>
+        <td>Previous table</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="lists" aria-label="Lists Practice">
+  <h2>Lists Practice</h2>
+  <p>This section has both an unordered list and an ordered list. Press L to jump to the next list. Press I to move between items within a list.</p>
+
+  <h3>Essential NVDA Commands (Unordered List)</h3>
+  <ul>
+    <li>NVDA+T — Read the title bar of the current window</li>
+    <li>NVDA+Tab — Report current focus</li>
+    <li>NVDA+Up Arrow — Read the current line</li>
+    <li>NVDA+Down Arrow — Say All from current position</li>
+    <li>NVDA+F12 — Report the time (press twice for date)</li>
+    <li>NVDA+1 — Toggle input help mode</li>
+    <li>NVDA+F7 — Open the elements list</li>
+    <li>NVDA+Space — Toggle between browse and focus mode</li>
+    <li>Control — Cancel speech</li>
+    <li>NVDA+N — Open the NVDA menu</li>
+  </ul>
+
+  <h3>Steps to Navigate a New Web Page (Ordered List)</h3>
+  <ol>
+    <li>Press NVDA+T to confirm which page you are on.</li>
+    <li>Press H to scan the headings and get an overview of the page structure.</li>
+    <li>Press D to jump to the main content landmark, skipping the navigation.</li>
+    <li>Press Down Arrow to read the page content.</li>
+    <li>Use K to find and follow links as needed.</li>
+    <li>Use F and E to fill in any forms on the page.</li>
+    <li>Press NVDA+F7 to get a full list of links or headings if you need to find something specific.</li>
+  </ol>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>NVDA Coach Practice Page — created for use with the NVDA Coach add-on. This page is for keyboard navigation practice only.</p>
+  <p>Created by <strong>Tony Gebhard</strong>, Assistive Technology Instructor &nbsp;|&nbsp;
+  <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a> &nbsp;|&nbsp;
+  <a href="https://tonygebhard.me/NVDACoach">tonygebhard.me/NVDACoach</a></p>
+</footer>
+
+</body>
+</html>

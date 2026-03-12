@@ -1,0 +1,198 @@
+{
+	"id": "reading_text",
+	"title": "Reading and Moving Through Text",
+	"description": "Learn how to move through documents and have NVDA read text back to you. Each practice step includes a text area right inside the Coach window — no extra window needed.",
+	"order": 2,
+	"lessons": [
+		{
+			"id": "move_by_character",
+			"title": "Move by Character",
+			"order": 1,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "When your cursor is in text, the Right Arrow key moves forward one character at a time and the Left Arrow key moves backward. NVDA speaks each character as you land on it. A practice text area is included right in each practice step below. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Arrow down into the practice text area below, then press Right Arrow to move forward one character. NVDA will announce the character you land on. Try it a few times.",
+					"hint": "The Right Arrow key is in the arrow key cluster in the lower-right area of your keyboard.",
+					"expectedGestures": ["kb:rightArrow"],
+					"successMessage": "You moved forward one character. NVDA announced whatever character your cursor landed on.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Left Arrow to move back one character. NVDA will announce it.",
+					"hint": "The Left Arrow key is to the left of the Down Arrow key.",
+					"expectedGestures": ["kb:leftArrow"],
+					"successMessage": "You moved back one character. Right and Left Arrow let you read any text one character at a time.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "jump_by_word",
+			"title": "Jump Word by Word",
+			"order": 2,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Character by character is slow when you need to scan text. Control plus Right Arrow jumps to the start of the next word. Control plus Left Arrow jumps back to the previous word. NVDA speaks the word you land on. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Arrow into the practice text below, then press Control+Right Arrow to jump to the next word. NVDA will announce the word you land on.",
+					"hint": "Hold the Control key (bottom-left of keyboard) and press the Right Arrow at the same time.",
+					"expectedGestures": ["kb:control+rightArrow"],
+					"successMessage": "You jumped forward one word. NVDA announced the word your cursor landed on.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Control+Left Arrow to jump back to the previous word. NVDA will announce it.",
+					"hint": "Hold Control and press Left Arrow.",
+					"expectedGestures": ["kb:control+leftArrow"],
+					"successMessage": "You jumped back one word. Control plus arrows give you fast word-by-word navigation through any document.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "move_by_line",
+			"title": "Move Line by Line",
+			"order": 3,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Down Arrow moves to the next line in a document. Up Arrow moves to the previous line. NVDA reads the entire line each time you move to it. This is one of the most important navigation methods for documents and web pages. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Arrow into the practice text below, then press Down Arrow to move to the next line. NVDA will read the entire line for you.",
+					"hint": "The Down Arrow key is in the arrow key cluster. Press it once to move one line at a time.",
+					"expectedGestures": ["kb:downArrow"],
+					"successMessage": "You moved down one line. NVDA read the entire line for you.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Up Arrow to move back to the previous line. NVDA will read it.",
+					"hint": "The Up Arrow key is directly above the Down Arrow key.",
+					"expectedGestures": ["kb:upArrow"],
+					"successMessage": "You moved up one line. Up and Down Arrow are your main tools for reading through any document line by line.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "jump_to_ends",
+			"title": "Jump to Start and End",
+			"order": 4,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "Control+Home jumps immediately to the very beginning of a document, list, or web page. Control+End jumps to the very end. These are great for getting your bearings when you land in a new document. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Arrow into the practice text below, then press Control+Home to jump to the very beginning. NVDA will read the first line.",
+					"hint": "Hold Control and press the Home key. Home is usually near the Insert, Delete, and Page Up keys.",
+					"expectedGestures": ["kb:control+home"],
+					"successMessage": "You jumped to the start. NVDA read the first line.",
+					"allowExecution": true,
+					"feedbackDelay": 1500,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now press Control+End to jump to the very last line. NVDA will read it.",
+					"hint": "Hold Control and press the End key, which is near the Home key.",
+					"expectedGestures": ["kb:control+end"],
+					"successMessage": "You jumped to the end. Control plus Home or End instantly moves you to either end of any document.",
+					"allowExecution": true,
+					"feedbackDelay": 1500,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "say_all",
+			"title": "Read Everything from Here",
+			"order": 5,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "NVDA plus Down Arrow starts reading everything from the current position to the end of the document. This is called Say All. NVDA keeps reading until it reaches the end or you stop it. You can press Control at any time to stop. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Arrow down into the practice text area below and position your cursor somewhere in the middle. Then hold your NVDA key and press the Down Arrow key. NVDA will begin reading everything from your cursor to the end without stopping. Press Control to stop it at any time. When done, press Enter to continue.",
+					"monitorGestures": ["kb:nvda+downArrow"],
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				}
+			]
+		},
+		{
+			"id": "select_text",
+			"title": "Select and Highlight Text",
+			"order": 6,
+			"steps": [
+				{
+					"type": "info",
+					"instruction": "You can select text by holding the Shift key while pressing arrow keys. As you select, NVDA reads the characters, words, or lines being added to the selection. Selected text can be copied with Control+C and pasted with Control+V anywhere you can type. Press Enter to continue."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Arrow into the practice text below. Hold Shift and press Right Arrow to select one character forward. NVDA will announce it. Keep pressing Shift+Right Arrow to extend the selection character by character.",
+					"hint": "Hold Shift first, then press Right Arrow. Keep Shift held to extend the selection further.",
+					"expectedGestures": ["kb:shift+rightArrow"],
+					"successMessage": "You selected a character. NVDA announced it as selected.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now try selecting a whole word. Press Control+Shift+Right Arrow to select the next word at once. NVDA will read the selected word.",
+					"hint": "Hold both Control and Shift, then press Right Arrow. All three keys together select one word at a time.",
+					"expectedGestures": ["kb:control+shift+rightArrow"],
+					"successMessage": "You selected a full word. Holding Shift with any navigation key extends the selection by that amount.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "gesture",
+					"instruction": "Now hold Shift and press Down Arrow to select the entire current line and one more below it. NVDA will read the selected block.",
+					"hint": "Hold Shift and press Down Arrow once to select to the next line.",
+					"expectedGestures": ["kb:shift+downArrow"],
+					"successMessage": "You selected a line. Shift plus Down Arrow is great for selecting whole lines quickly.",
+					"allowExecution": true,
+					"feedbackDelay": 1000,
+					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area."
+				},
+				{
+					"type": "info",
+					"instruction": "To deselect, press any arrow key without Shift. To copy the selection, press Control+C. To paste it somewhere, press Control+V. Selection works the same way in documents, emails, text fields, and web pages wherever NVDA is active. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "Excellent work — you have completed the Reading and Moving Through Text chapter! You now know how to navigate by character, word, and line, jump to the start and end of a document, use Say All, and select text with Shift plus arrow keys. These skills work everywhere NVDA is active. Press NVDA+Shift+C to open the lesson picker and start the next chapter: Browse Mode and Web Navigation. Press Enter to finish."
+				}
+			]
+		}
+	]
+}

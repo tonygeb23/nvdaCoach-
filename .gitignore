@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build output
+nvdaCoach-*.nvda-addon
+
+# Local release/promo materials — not part of the source repo
+releases/
+
+# Claude Code internal settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*~
