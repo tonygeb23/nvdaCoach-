@@ -5,6 +5,8 @@
 
 import os
 import json
+import ctypes
+import ctypes.wintypes
 import webbrowser
 import globalPluginHandler
 from scriptHandler import script
@@ -66,6 +68,7 @@ class CoachWindow(wx.Frame):
 
 	def _buildUI(self):
 		panel = wx.Panel(self)
+		self._panel = panel
 		sizer = wx.BoxSizer(wx.VERTICAL)
 
 		# Status line: "Category  ›  Lesson  ·  Step N of M"
@@ -89,7 +92,7 @@ class CoachWindow(wx.Frame):
 		self._instructionText.SetValue(
 			"Welcome to NVDA Coach\n"
 			"Created by Tony Gebhard, Assistive Technology Instructor\n"
-			"tonygebhard.me/NVDACoach\n\n"
+			"github.com/tonygeb23/nvdacoach\n\n"
 			"Before you begin, there is one key you should know right now. "
 			"The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. "
 			"Press it once and NVDA stops talking immediately, no matter what it is reading. "
@@ -108,10 +111,11 @@ class CoachWindow(wx.Frame):
 			"starting NVDA Coach. They can help you find keys, adjust settings, or answer "
 			"questions before you begin. If you are working on your own, that is perfectly "
 			"fine too. NVDA Coach is built to guide you step by step, at your own pace.\n\n"
-			"To get started, press NVDA+Shift+C to open the lesson picker and choose your "
-			"first lesson. At any time you can also press Ctrl+N to move to the next lesson, "
-			"Ctrl+B to go back, Ctrl+R to restart the current lesson, "
-			"or press Escape three times to close this window."
+			"When you are ready to begin, press Tab to find the Start Course button below "
+			"and press Enter or Space to start the first lesson. "
+			"You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly. "
+			"At any time during a lesson, press Ctrl+N to move to the next lesson, "
+			"Ctrl+B to go back, Ctrl+R to restart, or press Escape three times to close this window."
 		)
 		sizer.Add(self._instructionText, 1, wx.ALL | wx.EXPAND, 8)
 
@@ -142,6 +146,18 @@ class CoachWindow(wx.Frame):
 			lambda e: self._plugin._lessonRunner.advanceCurrentStep(),
 		)
 		sizer.Add(self._nextStepBtn, 0, wx.ALL | wx.EXPAND, 8)
+
+		# Start Course button — shown only on the introduction screen.
+		self._startCourseBtn = wx.Button(panel, label="Start Course  (Enter)")
+		self._startCourseBtn.SetToolTip(
+			"Begin the first lesson of the Getting Started chapter."
+		)
+		self._startCourseBtn.Bind(
+			wx.EVT_BUTTON,
+			lambda e: self._plugin.startFirstLesson(),
+		)
+		sizer.Add(self._startCourseBtn, 0, wx.ALL | wx.EXPAND, 8)
+		self._startCourseBtn.Hide()
 
 		# Secondary navigation buttons — lesson-level, always visible.
 		btnSizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -185,6 +201,9 @@ class CoachWindow(wx.Frame):
 		self._statusText.SetLabel(status)
 		self._statusText.GetParent().Layout()
 		self._instructionText.SetValue(instruction)
+		self._startCourseBtn.Hide()
+		self._nextStepBtn.Show()
+		self._panel.Layout()
 		# A new step means any pending escape sequence is cancelled.
 		self._clearEscapeCount()
 		if not self.IsShown():
@@ -197,7 +216,7 @@ class CoachWindow(wx.Frame):
 		introText = (
 			"NVDA Coach\n"
 			"Created by Tony Gebhard, Assistive Technology Instructor\n"
-			"tonygebhard.me/NVDACoach\n\n"
+			"github.com/tonygeb23/nvdacoach\n\n"
 			"Before you begin, there is one key you should know right now. "
 			"The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. "
 			"Press it once and NVDA stops talking immediately, no matter what it is reading. "
@@ -216,17 +235,19 @@ class CoachWindow(wx.Frame):
 			"starting NVDA Coach. They can help you find keys, adjust settings, or answer "
 			"questions before you begin. If you are working on your own, that is perfectly "
 			"fine too. NVDA Coach is built to guide you step by step, at your own pace.\n\n"
-			"To get started, press NVDA+Shift+C to open the lesson picker and choose your "
-			"first lesson. At any time you can also press Ctrl+N to move to the next lesson, "
-			"Ctrl+B to go back, Ctrl+R to restart the current lesson, "
-			"or press Escape three times to close this window."
+			"When you are ready to begin, press Tab to find the Start Course button below "
+			"and press Enter or Space to start the first lesson. "
+			"You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
 		)
 		self._instructionText.SetValue(introText)
+		self._startCourseBtn.Show()
+		self._nextStepBtn.Hide()
+		self._panel.Layout()
 		self._clearEscapeCount()
 		ui.message(
 			"Welcome to NVDA Coach. "
 			"Use your reading cursor or arrow keys to read this introduction. "
-			"Press NVDA+Shift+C when you are ready to choose a lesson."
+			"When you are ready, press Tab to reach the Start Course button and press Enter to begin."
 		)
 
 	def showDrillProgress(self, current, total, message):
@@ -248,6 +269,9 @@ class CoachWindow(wx.Frame):
 		"""Show the idle/between-lesson state in the window."""
 		self._statusText.SetLabel("NVDA Coach \u2014 ready")
 		self._statusText.GetParent().Layout()
+		self._startCourseBtn.Hide()
+		self._nextStepBtn.Show()
+		self._panel.Layout()
 		self._instructionText.SetValue(
 			(message or "Ready.") + "\n\n"
 			"--- WHAT TO DO NEXT ---\n"
@@ -264,6 +288,40 @@ class CoachWindow(wx.Frame):
 			"If an instructor is present, this is a great time to ask any questions "
 			"before the next lesson. If you are working independently, keep going "
 			"at your own pace. Every step forward counts."
+		)
+
+	def showBrowseModeCompletion(self):
+		"""Show the chapter-completion congratulations screen for Browse Mode."""
+		self._statusText.SetLabel("NVDA Coach \u2014 Chapter 3 Complete!")
+		self._statusText.GetParent().Layout()
+		self._startCourseBtn.Hide()
+		self._nextStepBtn.Hide()
+		self._panel.Layout()
+		self._instructionText.SetValue(
+			"Congratulations — Browse Mode and Web Navigation Complete!\n\n"
+			"You have finished all eight lessons in Chapter 3. "
+			"You now know how to navigate any web page using NVDA's browse mode.\n\n"
+			"Commands you have mastered:\n"
+			"  H \u2014 Jump between headings\n"
+			"  1 through 6 \u2014 Jump to heading levels\n"
+			"  K \u2014 Jump between links\n"
+			"  F, E, B \u2014 Navigate form fields and buttons\n"
+			"  D \u2014 Jump between landmarks\n"
+			"  L \u2014 Jump between lists\n"
+			"  NVDA+Space \u2014 Toggle browse mode and focus mode\n"
+			"  NVDA+F7 \u2014 Open the Elements List\n\n"
+			"The practice page in your browser can now be closed.\n\n"
+			"What to do next:\n"
+			"  Press NVDA+Shift+C to open the lesson picker.\n"
+			"  Choose Additional Training and Help for more resources.\n"
+			"  Or press Ctrl+R to repeat any lesson in this chapter."
+		)
+		self._clearEscapeCount()
+		ui.message(
+			"Congratulations! You have completed Browse Mode and Web Navigation, "
+			"Chapter 3 of NVDA Coach. "
+			"The practice page in your browser can now be closed. "
+			"Press NVDA+Shift+C to continue to additional training resources."
 		)
 
 	def beginEscapeSequence(self):
@@ -782,37 +840,12 @@ class LessonPickerDialog(wx.Dialog):
 				})
 
 		# ---- Additional Training and Help --------------------------------
+		# Opens a single standalone resources page in the browser.
 		helpItem = self._tree.AppendItem(root, "Additional Training and Help")
-		self._tree.SetItemData(helpItem, {"type": "category"})
-
-		userGuideItem = self._tree.AppendItem(helpItem, "User Guide")
-		self._tree.SetItemData(userGuideItem, {
+		self._tree.SetItemData(helpItem, {
 			"type": "file",
-			"label": "User Guide",
-			"path": os.path.join(self._addonRoot, "doc", "en", "readme.html"),
-		})
-
-		practiceItem = self._tree.AppendItem(helpItem, "Practice File")
-		self._tree.SetItemData(practiceItem, {
-			"type": "file",
-			"label": "Practice File",
-			"path": os.path.join(self._addonRoot, "doc", "en", "practice.html"),
-		})
-
-		nvdaItem = self._tree.AppendItem(
-			helpItem, "Visit NV Access  \u2014  nvaccess.org"
-		)
-		self._tree.SetItemData(nvdaItem, {
-			"type": "url",
-			"url": "https://www.nvaccess.org",
-		})
-
-		devItem = self._tree.AppendItem(
-			helpItem, "Visit NVDA Coach Developer  \u2014  tonygebhard.me"
-		)
-		self._tree.SetItemData(devItem, {
-			"type": "url",
-			"url": "https://tonygebhard.me/NVDACoach",
+			"label": "Additional Training and Help",
+			"path": os.path.join(self._addonRoot, "doc", "en", "resources.html"),
 		})
 
 		# Focus Introduction by default.
@@ -1019,17 +1052,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self._practiceFrame.showForLesson(lessonId, lesson.get("title", ""))
 
 			if category and category.get("practicePage"):
-				# Open the practice HTML page in the browser.
-				addonRoot = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-				practiceFile = os.path.join(addonRoot, "doc", "en", "practice.html")
-				try:
-					os.startfile(practiceFile)
-				except Exception as e:
-					log.warning(f"NVDA Coach: Could not open practice page: {e}")
-				# Show window but don't steal focus — let the browser come to front.
+				# Wire up browse-mode callbacks on the runner.
+				self._lessonRunner.onOpenPracticePage = self._openPracticePage
+				self._lessonRunner.onChapterComplete = self._onBrowseModeComplete
 				self._coachWindow.Show()
+				self._coachWindow.Raise()
+				lessonId = lesson.get("id", "")
+				if lessonId != "intro_browse_mode":
+					# For non-intro browse lessons the practice page opens after 2s
+					# so the student can hear the first step before the browser appears.
+					wx.CallLater(2000, self._openPracticePage)
+				# intro_browse_mode handles opening via its openPracticePageAfter step flag.
 				wx.CallLater(
-					1500,
+					300,
 					self._lessonRunner.startLesson,
 					categoryId,
 					lesson,
@@ -1131,3 +1166,69 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			lesson,
 			self._currentCategoryTitle,
 		)
+
+	def startFirstLesson(self):
+		"""Start the first lesson of the Getting Started chapter (Start Course button)."""
+		category = next(
+			(c for c in self._categories if c.get("id") == "getting_started"), None
+		)
+		if not category:
+			ui.message("Could not find the Getting Started chapter.")
+			return
+		lessons = sorted(
+			category.get("lessons", []), key=lambda l: l.get("order", 999)
+		)
+		if not lessons:
+			return
+		lesson = lessons[0]
+		self._currentCategoryId = "getting_started"
+		self._currentCategoryTitle = category.get("title", "")
+		self._currentCategoryLessons = lessons
+		self._currentLessonIndex = 0
+		self._coachWindow.Show()
+		self._coachWindow.Raise()
+		wx.CallLater(
+			300,
+			self._lessonRunner.startLesson,
+			"getting_started",
+			lesson,
+			category.get("title", ""),
+		)
+
+	def _openPracticePage(self):
+		"""Open the browse mode practice HTML page in the default browser."""
+		addonRoot = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+		practiceFile = os.path.join(addonRoot, "doc", "en", "practice.html")
+		try:
+			os.startfile(practiceFile)
+		except Exception as e:
+			log.warning(f"NVDA Coach: Could not open practice page: {e}")
+
+	def _onBrowseModeComplete(self):
+		"""Handle browse mode chapter completion: show congrats screen and close browser."""
+		self._coachWindow.showBrowseModeCompletion()
+		wx.CallLater(1500, self._closePracticeBrowserWindow)
+
+	def _closePracticeBrowserWindow(self):
+		"""Close any browser window whose title contains 'NVDA Coach Practice Page'."""
+		TITLE_PARTIAL = "NVDA Coach Practice Page"
+		try:
+			found = []
+
+			def _enum_cb(hwnd, _param):
+				length = ctypes.windll.user32.GetWindowTextLengthW(hwnd)
+				if length > 0:
+					buf = ctypes.create_unicode_buffer(length + 1)
+					ctypes.windll.user32.GetWindowTextW(hwnd, buf, length + 1)
+					if TITLE_PARTIAL in buf.value:
+						found.append(hwnd)
+				return True
+
+			_WNDENUMPROC = ctypes.WINFUNCTYPE(
+				ctypes.c_bool, ctypes.wintypes.HWND, ctypes.wintypes.LPARAM
+			)
+			ctypes.windll.user32.EnumWindows(_WNDENUMPROC(_enum_cb), 0)
+			for hwnd in found:
+				ctypes.windll.user32.PostMessageW(hwnd, 0x0010, 0, 0)  # WM_CLOSE
+		except Exception as e:
+			log.warning(f"NVDA Coach: Could not close practice browser window: {e}")

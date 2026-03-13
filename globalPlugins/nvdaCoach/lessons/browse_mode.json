@@ -12,11 +12,12 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Browse mode is how NVDA helps you read web pages. When you open a web page in your browser, NVDA creates a virtual text copy of the page. You can move through it with arrow keys, just like a document. Single-letter shortcut keys also become available for fast navigation. A practice web page has just opened in your browser. Press Enter to continue."
+					"instruction": "Browse mode is how NVDA helps you read web pages. When you open a web page in your browser, NVDA creates a virtual text copy of the page. You can move through it with arrow keys, just like a document. Single-letter shortcut keys also become available for fast navigation. When you press Enter, a practice web page will open in your browser in a separate window. Stay here and finish reading these instructions first. NVDA Coach will remain focused so you can read the next step. When you are ready, press Alt+Tab to switch to your browser. Press Enter to open the practice page and continue.",
+					"openPracticePageAfter": true
 				},
 				{
 					"type": "info",
-					"instruction": "Press Alt+Tab now to switch to your browser. Once you are in the browser, press Down Arrow to start reading through the practice page. You can come back to continue the lesson at any time. Press Enter when you are ready."
+					"instruction": "The practice page is now open in your browser. Press Alt+Tab to switch to it. Once you are there, press Down Arrow to begin reading the page. Press NVDA+Shift+C at any time to return here and continue your lesson. Press Enter when you are ready."
 				},
 				{
 					"type": "gesture",
@@ -302,6 +303,7 @@
 			"id": "elements_list",
 			"title": "The Elements List",
 			"order": 8,
+			"chapterComplete": true,
 			"steps": [
 				{
 					"type": "info",

@@ -25,6 +25,8 @@ class LessonRunner:
 		self._stepIndex = 0
 		self._pendingTimer = None
 		self.coachWindow = None  # Set by GlobalPlugin after creation.
+		self.onOpenPracticePage = None  # Callback: fired when a step with openPracticePageAfter is advanced past.
+		self.onChapterComplete = None   # Callback: fired when a lesson with chapterComplete: true finishes.
 
 	# ------------------------------------------------------------------
 	# Public API
@@ -180,11 +182,14 @@ class LessonRunner:
 		if not self.isActive:
 			return
 		self._pendingTimer = None
+		prevStep = self._currentStep()  # Capture before incrementing.
 		self._stepIndex += 1
 		steps = self._lesson.get("steps", [])
 		if self._stepIndex >= len(steps):
 			self._completeLesson()
 		else:
+			if prevStep and prevStep.get("openPracticePageAfter") and self.onOpenPracticePage:
+				wx.CallAfter(self.onOpenPracticePage)
 			self._speakCurrentStep()
 
 	def _completeLesson(self):
@@ -227,6 +232,10 @@ class LessonRunner:
 				"  Ctrl+R  \u2014  Repeat this lesson.\n"
 				"  Ctrl+B  \u2014  Go back to the previous lesson."
 			)
+		# If this lesson marks the end of a chapter, fire the chapter-complete callback
+		# after the normal completion screen has been shown.
+		if self._lesson.get("chapterComplete") and self.onChapterComplete:
+			wx.CallLater(3000, self.onChapterComplete)
 
 	# ------------------------------------------------------------------
 	# Utility helpers
