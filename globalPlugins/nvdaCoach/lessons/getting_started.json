@@ -80,7 +80,11 @@
 				},
 				{
 					"type": "info",
-					"instruction": "A note on practicing this key: pressing Control during an active lesson would silence NVDA before it can give you feedback, making reliable in-lesson practice impossible. Instead, build the habit naturally. The next time NVDA reads something too long or too fast, reach for Control. You will discover the reflex on your own within minutes of real use. There is nothing else to do here. Press Enter to finish this lesson."
+					"instruction": "There is also a second option: the Shift key. Pressing Shift pauses NVDA's speech mid-sentence. Press Shift again and NVDA resumes reading right where it left off. This is useful when you need a brief moment to focus — for example, reading a phone number from a document while you dial it. Press Shift once to pause, then press Shift again to continue. Control stops completely. Shift pauses and resumes. Both are worth knowing. Press Enter to continue."
+				},
+				{
+					"type": "info",
+					"instruction": "A note on practicing these keys: pressing Control or Shift during an active lesson would interfere with the lesson itself, so reliable in-lesson practice is not possible here. Instead, build the habit naturally. The next time NVDA reads something too long or too fast, reach for Control to stop it. When you need a moment mid-reading, try Shift to pause and resume. You will discover both reflexes quickly in real use. Press Enter to finish this lesson."
 				}
 			]
 		},
