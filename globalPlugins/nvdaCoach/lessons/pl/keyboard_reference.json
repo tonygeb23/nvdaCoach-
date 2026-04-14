@@ -1,0 +1,165 @@
+{
+  "id": "keyboard_reference",
+  "title": "Twoja klawiatura",
+  "description": "Poznaj fizyczną klawiaturę: położenie klawiszy modyfikujących, klawisze funkcyjne, działanie klawisza Fn oraz sposób dopasowania klawiatury do ustawienia układu klawiatury w NVDA.",
+  "order": 2,
+  "lessons": [
+    {
+      "id": "modifier_keys",
+      "title": "Klawisze modyfikujące i ich położenie",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Klawisze modyfikujące to klawisze, które przytrzymujesz podczas naciskania innego klawisza, aby zmienić jego działanie. Cztery główne klawisze modyfikujące w systemie Windows to: Control (Ctrl), Shift, Alt oraz klawisz Windows. Żaden z nich sam w sobie nic nie robi — zmieniają działanie innych klawiszy. Wiedza o tym, gdzie się znajdują, jest tak samo ważna jak znajomość samych poleceń. W tej lekcji poznasz położenie każdego z nich. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisze modyfikujące zawsze przytrzymujesz, gdy naciskasz inny klawisz. Jeśli puścisz je za wcześnie albo naciśniesz w złej kolejności, polecenie może nie zadziałać.",
+            "Na większości klawiatur te klawisze występują po obu stronach: Ctrl z lewej i z prawej, Shift z lewej i z prawej, Alt z lewej i z prawej. W większości poleceń można użyć dowolnej strony.",
+            "Klawisz Windows i klawisz Menu, jeśli występuje, zwykle są tylko po lewej stronie albo tylko po jednej stronie klawiatury."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisz Control, oznaczony jako Ctrl, zwykle znajduje się w lewym dolnym rogu klawiatury oraz w prawym dolnym rogu. Jednak w niektórych laptopach lewy dolny róg zajmuje klawisz Fn, a Ctrl jest przesunięty o jedno miejsce w prawo. Jeśli spodziewasz się, że Ctrl będzie w samym rogu, a polecenie nie działa, poszukaj klawisza z napisem Ctrl tuż na prawo od Fn. Lewy i prawy Ctrl działają identycznie prawie we wszystkich poleceniach. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Typowe położenie: Ctrl to skrajny lewy klawisz w dolnym rzędzie. W części laptopów skrajnie po lewej jest Fn, a Ctrl jest drugim klawiszem od lewej.",
+            "Prawy Ctrl działa tak samo jak lewy we wszystkich poleceniach tego kursu. Użyj tego, który jest wygodniejszy dla układu dłoni.",
+            "Nie masz pewności, który klawisz to Ctrl? Naciśnij NVDA+1, aby włączyć pomoc klawiatury, naciśnij klawisz, który podejrzewasz o bycie Ctrl, a NVDA potwierdzi, czy rozpoznał go jako Control. Potem ponownie naciśnij NVDA+1, aby wyłączyć pomoc klawiatury."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisz Shift to szeroki klawisz znajdujący się bezpośrednio nad Ctrl po obu stronach klawiatury. Na większości klawiatur jest jednym z najszerszych klawiszy, dlatego łatwo go znaleźć dotykiem. Lewy Shift jest nad lewym Ctrl, a prawy Shift nad prawym Ctrl. W większości poleceń możesz użyć dowolnego Shifta. Shift jest często używany w NVDA: Shift+Tab przechodzi wstecz między kontrolkami, Shift+H wraca do poprzedniego nagłówka w trybie przeglądania, a NVDA+Shift+C otwiera wybór lekcji. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Lewy Shift znajduje się nad lewym Ctrl po lewej stronie klawiatury. Prawy Shift jest nad prawym Ctrl po prawej stronie.",
+            "Shift jest szerszy niż większość klawiszy, więc zwykle da się go znaleźć samym dotykiem. To szeroki klawisz tuż nad Ctrl po obu stronach.",
+            "Do każdego polecenia możesz użyć dowolnego Shifta. Wybieraj tę stronę, która jest bliżej innych klawiszy potrzebnych w danym skrócie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisz Alt znajduje się bezpośrednio po lewej i prawej stronie spacji. Spacja to długi, płaski klawisz na środku dolnego rzędu — najdłuższy klawisz na całej klawiaturze. Alt leży tuż obok niej z obu stron. Najczęściej używany jest lewy Alt. Alt+Tab służy do przełączania się między oknami, a Alt+F4 zamyka okno. W polskim układzie klawiatury prawy Alt, często oznaczany jako AltGr, działa jak lewy Ctrl+Alt i używa się go do wpisywania polskich znaków, takich jak ą, ć, ę, ł, ń, ó, ś, ź i ż. Do nawigacji w Windows i NVDA, na przykład w poleceniach Alt+Tab i Alt+F4, zwykle użyjesz lewego Alt. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Alt znajduje się bezpośrednio po lewej i po prawej stronie spacji. Spację łatwo znaleźć, bo to najdłuższy klawisz na klawiaturze.",
+            "Do Alt+Tab i innych poleceń nawigacyjnych Windows używaj lewego Alt. W polskim układzie prawy Alt, czyli AltGr, działa jak lewy Ctrl+Alt i służy do wpisywania polskich znaków.",
+            "Alt+Tab to polecenie systemu Windows. Alt+F4 zamyka bieżące okno. W obu przypadkach zwykle używasz lewego Altu, a nie prawego Alta."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisz Windows ma nadrukowane logo Windows i zwykle znajduje się między lewym Ctrl a lewym Altem. W niektórych laptopach może być w nieco innym miejscu, ale zawsze znajduje się gdzieś w dolnym rzędzie. Sam klawisz Windows otwiera menu Start. Windows + strzałka w górę maksymalizuje okno. Windows+D pokazuje pulpit. Windows+L blokuje ekran. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisz Windows zwykle znajduje się między lewym Ctrl a lewym Altem w dolnym rzędzie. Ma logo Windows, czyli cztery pola ułożone w siatkę.",
+            "Windows + strzałka w górę maksymalizuje bieżące okno do pełnego ekranu. To przydaje się szczególnie przed nawigacją po obiektach, bo zmaksymalizowane okno pokazuje więcej obiektów.",
+            "Sam klawisz Windows otwiera menu Start. Jeśli nie chcesz nic wybierać, naciśnij Escape, aby je zamknąć."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Twój klawisz NVDA to jedna z dwóch możliwości: Insert albo Caps Lock. Insert znajduje się na większości klawiatur w grupie klawiszy nad strzałkami, obok Home, Delete, Page Up i Page Down. Caps Lock znajduje się po lewej stronie klawiatury, tuż nad lewym Shiftem. Oba mogą jednocześnie pełnić rolę klawisza NVDA, ponieważ NVDA akceptuje każdy z nich. Wielu użytkowników laptopów wybiera Caps Lock, bo Insert bywa trudniej dostępny. Preferowany klawisz NVDA możesz ustawić w ustawieniach NVDA w kategorii Klawiatura. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Insert znajduje się w grupie klawiszy nad strzałkami, obok Home, Delete, End, Page Up i Page Down. Sam w sobie nie jest klawiszem modyfikującym — staje się klawiszem NVDA dlatego, że NVDA przypisuje mu tę rolę.",
+            "Caps Lock znajduje się skrajnie po lewej stronie, tuż nad Shiftem. Gdy używasz go jako klawisza NVDA, nie przełącza od razu wielkich liter — aby rzeczywiście włączyć Caps Lock, naciśnij NVDA+F2, a następnie Caps Lock.",
+            "Insert i Caps Lock mogą działać jednocześnie jako klawisz NVDA. Nie musisz wybierać tylko jednego — możesz używać tego, który jest wygodniejszy w danym poleceniu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "function_keys",
+      "title": "Klawisze funkcyjne i klawisz Fn",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "W górnym rzędzie klawiatury znajdują się klawisze oznaczone od F1 do F12 — to klawisze funkcyjne. Każdemu z nich system Windows, NVDA albo używana aplikacja może przypisać określone działanie. W NVDA Coach klawisz F1 powtarza bieżącą instrukcję, F2 podaje podpowiedź, a F3 pomija krok. W większości aplikacji systemu Windows F1 otwiera pomoc. W większości przeglądarek F5 odświeża stronę. W NVDA polecenie NVDA+F12 odczytuje czas. To tylko kilka przykładów — klawisze funkcyjne mają bardzo wiele zastosowań. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisze funkcyjne są w górnym rzędzie i są oznaczone od F1 do F12 od lewej do prawej. F1 jest skrajnie po lewej, a F12 skrajnie po prawej.",
+            "W NVDA Coach: F1 powtarza instrukcję, F2 podaje podpowiedź, a F3 pomija krok. To polecenia specyficzne dla NVDA Coach.",
+            "W większości aplikacji Windows F1 otwiera pomoc. W większości przeglądarek F5 odświeża stronę. NVDA+F12 odczytuje czas."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "W wielu laptopach górny rząd klawiszy działa w dwóch trybach. W jednym trybie klawisze zachowują się jak F1 do F12 i służą do poleceń programowych. W drugim te same klawisze sterują funkcjami sprzętowymi, takimi jak jasność ekranu, głośność głośników, podświetlenie klawiatury czy multimedia. Funkcje sprzętowe są często oznaczone ikonami nadrukowanymi na klawiszach. To, który tryb jest domyślnie aktywny, zależy od modelu laptopa. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przyjrzyj się klawiszom F1 do F12. Jeśli widzisz na nich małe ikony, takie jak słońce dla jasności, głośnik dla głośności albo nutę dla multimediów, to właśnie funkcje sprzętowe.",
+            "W części laptopów ikony sprzętowe są podstawowe i wtedy, aby uzyskać F1 do F12, trzeba przytrzymać Fn. W innych modelach podstawowe są F1 do F12, a Fn służy do funkcji sprzętowych.",
+            "Klawisz Fn nie jest standardowym modyfikatorem Windows — jest obsługiwany przez elektronikę klawiatury jeszcze zanim system Windows go zobaczy. To oznacza, że Windows i NVDA nie wiedzą o samym naciśnięciu Fn."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisz Fn zwykle znajduje się w lewym dolnym rogu klawiatury laptopa albo tuż na prawo od lewego Ctrl. Gdy przytrzymasz Fn i naciśniesz strzałkę, wiele laptopów wygeneruje Home, End, Page Up albo Page Down, ponieważ kompaktowe klawiatury często nie mają osobnych klawiszy tych funkcji. Fn + strzałka w lewo to zazwyczaj Home. Fn + strzałka w prawo to End. Fn + strzałka w górę to Page Up. Fn + strzałka w dół to Page Down. Sprawdź pomocnicze oznaczenia na klawiszach strzałek. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Poszukaj na strzałkach małych dodatkowych oznaczeń: poziomej kreski ze strzałką dla Home i End albo oznaczeń Page Up i Page Down.",
+            "Na większości kompaktowych laptopów Fn + strzałka w lewo to Home, Fn + strzałka w prawo to End, Fn + strzałka w górę to Page Up, a Fn + strzałka w dół to Page Down.",
+            "Te kombinacje z Fn są obsługiwane przez klawiaturę i są niewidoczne dla Windows i NVDA. Dają ten sam rezultat co osobne klawisze Home, End, Page Up i Page Down."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Wiele klawiatur laptopowych ma funkcję Fn Lock. Gdy Fn Lock jest włączony, nie musisz przytrzymywać Fn — funkcje dodatkowe są aktywne cały czas. To przydaje się, jeśli często potrzebujesz klawiszy F1 do F12 i nie chcesz za każdym razem przytrzymywać Fn. Fn Lock często włącza się kombinacją Fn+Escape, Fn+Caps Lock albo osobnym klawiszem z ikoną kłódki. Sprawdź dokumentację swojego laptopa, aby dowiedzieć się, gdzie jest Fn Lock i jak go przełączyć. Różni producenci umieszczają go w różnych miejscach i stosują różne kombinacje. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Poszukaj klawisza z ikoną kłódki połączoną z Fn albo sprawdź instrukcję laptopa, jaka kombinacja włącza Fn Lock. Często jest to Fn+Escape albo Fn+Caps Lock.",
+            "Część laptopów sygnalizuje stan Fn Lock małą lampką. Inne odtwarzają dźwięk albo pokazują komunikat ekranowy po przełączeniu.",
+            "Jeśli w NVDA Coach naciśnięcie F2 podaje podpowiedź zamiast zmieniać jasność ekranu, to znaczy, że Fn Lock jest włączony albo komputer domyślnie pracuje w trybie klawiszy funkcyjnych."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Praktyczna wskazówka do korzystania z NVDA Coach: jeśli po naciśnięciu F2 zmienia się jasność ekranu albo głośność zamiast odczytania podpowiedzi, Twoja klawiatura działa w trybie multimedialnym. Wtedy albo przytrzymaj Fn i naciśnij F2, albo przełącz Fn Lock, aby klawisze F1 do F12 były podstawowe. Gdy klawisze funkcyjne działają jako F1 do F12, F1 powtarza instrukcję, F2 podaje podpowiedź, a F3 pomija krok. To polecenia specyficzne dla NVDA Coach. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Test: naciśnij F2 w trakcie lekcji. Jeśli usłyszysz podpowiedź, klawisze funkcyjne działają w trybie programowym. Jeśli zmieni się jasność ekranu, jesteś w trybie multimedialnym — wtedy użyj Fn+F2.",
+            "Gdy poznasz stan Fn Lock, korzystanie ze skrótów NVDA Coach będzie znacznie łatwiejsze. F1 powtarza instrukcję, F2 podaje podpowiedź, a F3 pomija krok.",
+            "W większości laptopów stan Fn Lock jest zapamiętywany po restarcie. Gdy ustawisz go tak, jak lubisz, zwykle nie trzeba już tego zmieniać."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nvda_keyboard_layout",
+      "title": "Układ Desktop a układ Laptop",
+      "order": 3,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA ma dwa ustawienia układu klawiatury: Desktop i Laptop. Nie chodzi tu o fizyczny typ Twojej klawiatury, ale o ustawienie w samym NVDA, które określa, jakich kombinacji klawiszy NVDA nasłuchuje. Układ Desktop wykorzystuje w wielu poleceniach blok numeryczny. Układ Laptop używa zamiast tego klawisza NVDA wraz z literami lub symbolami, dzięki czemu wszystkie polecenia są dostępne także bez bloku numerycznego. Układ wybierasz w ustawieniach NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop i układ Laptop to ustawienia programu NVDA. Nie zmieniają działania systemu Windows ani aplikacji, tylko sposób, w jaki NVDA reaguje na klawisze.",
+            "Jeśli Twoja klawiatura ma blok numeryczny po prawej stronie, układ Desktop może być naturalny. Jeśli korzystasz z laptopa bez bloku numerycznego, układ Laptop został stworzony właśnie dla Ciebie.",
+            "Między układami można przełączać się w dowolnym momencie bez ponownego uruchamiania NVDA. Zmiana działa od razu."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby sprawdzić lub zmienić układ, naciśnij NVDA+N, aby otworzyć menu NVDA, następnie O jak Opcje, a potem U jak Ustawienia. Otworzy się okno Ustawienia NVDA. Na liście kategorii po lewej możesz nacisnąć K, aby przejść do kategorii Klawiatura nawigacją po pierwszej literze. Przejdź klawiszem Tab do listy rozwijanej Układ klawiatury, użyj strzałki w górę i strzałki w dół, aby wybrać Desktop albo Laptop, a następnie przejdź klawiszem Tab do przycisku OK i naciśnij Enter, aby zapisać zmianę. Rozdział Dostosowywanie NVDA omawia ten proces bardziej szczegółowo. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+N otwiera menu NVDA. Litera O przechodzi do pozycji Opcje, a U otwiera Ustawienia.",
+            "Pole kombi Układ klawiatury ma dwie możliwości: Desktop i Laptop. Użyj strzałek, aby wybrać odpowiednią opcję, potem Tab do OK i Enter, aby zapisać.",
+            "Jeśli nie masz pewności, jaki układ jest teraz aktywny, naciśnij NVDA+1, aby włączyć pomoc klawiatury, naciśnij klawisz z bloku numerycznego i posłuchaj, co powie NVDA. Następnie ponownie naciśnij NVDA+1, aby wyłączyć pomoc klawiatury."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy dane polecenie różni się między układami, NVDA Coach zawsze pokazuje obie wersje. Na przykład: „Naciśnij NVDA+NumPad5 w układzie Desktop albo NVDA+Shift+przecinek w układzie Laptop”. Używaj tej wersji, która odpowiada bieżącemu ustawieniu układu w NVDA. Jeśli polecenie nie działa tak, jak oczekujesz, najczęstszą przyczyną jest niezgodność między ustawieniem układu w NVDA a naciskanymi klawiszami. Zanim zaczniesz szukać innych przyczyn, najpierw sprawdź układ klawiatury. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Najpierw jest podawane polecenie dla układu Desktop, a potem wersja dla układu Laptop. Korzystaj z tej, która odpowiada Twojemu ustawieniu układu w NVDA.",
+            "Najczęstszym powodem, dla którego polecenie nie działa, jest niezgodność między ustawieniem układu a naciskanymi klawiszami. Jeśli coś się nie zgadza, otwórz ustawienia NVDA i sprawdź kategorię Klawiatura.",
+            "Pamiętaj: układ klawiatury to ustawienie NVDA, a nie cecha sprzętowa klawiatury. Możesz używać układu Laptop na klawiaturze stacjonarnej albo układu Desktop na laptopie, jeśli tak Ci wygodniej."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Rozdział Twoja klawiatura został ukończony. Wiesz już, gdzie znajdują się klawisze modyfikujące na standardowych klawiaturach i laptopach, jak działają klawisze funkcyjne oraz klawisz Fn, a także jak wybrać i zmienić ustawienie układu klawiatury w NVDA. Dzięki temu wszystkie kombinacje klawiszy pojawiające się w NVDA Coach będą bardziej zrozumiałe — będziesz dokładnie wiedzieć, gdzie powinny trafić Twoje palce. Gdy będziesz gotów, naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji i przejść do innych rozdziałów. Naciśnij Enter, aby zakończyć.",
+          "hints": [
+            "To rozdział, do którego możesz wracać w każdej chwili. Jeśli jakieś polecenie nie działa, a nie masz pewności, gdzie znajduje się potrzebny klawisz, wróć tutaj.",
+            "Podsumowanie położenia klawiszy: Ctrl jest w lewym dolnym rogu albo na prawo od Fn. Shift jest nad Ctrl. Alt leży obok spacji. Klawisz Windows jest między Ctrl a Altem. Klawisz NVDA to Insert albo Caps Lock.",
+            "NVDA Coach zapisuje postępy automatycznie. Gdy wrócisz, wszystkie ukończone lekcje będą już oznaczone."
+          ]
+        }
+      ]
+    }
+  ]
+}

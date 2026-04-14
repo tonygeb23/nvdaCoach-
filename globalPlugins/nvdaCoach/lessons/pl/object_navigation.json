@@ -1,0 +1,207 @@
+{
+  "id": "object_navigation",
+  "title": "Nawigacja po obiektach",
+  "description": "Dowiedz się, jak przeglądać i obsługiwać kontrolki, do których nie można dotrzeć klawiszem Tab, używając poleceń nawigacji po obiektach NVDA.",
+  "order": 5,
+  "lessons": [
+    {
+      "id": "what_is_object_nav",
+      "title": "Czym jest nawigacja po obiektach?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Witamy w rozdziale o nawigacji po obiektach. Większość poleceń, których uczyłeś się do tej pory, korzysta z klawisza Tab i klawiszy strzałek, aby poruszać się po ekranie. Jednak niektóre programy, zwłaszcza starsze aplikacje komputerowe, zawierają kontrolki, do których klawisz Tab nie dociera. NVDA ma osobny system ich przeglądania, nazywany nawigacją po obiektach. Pozwala on przemieszczać się po każdym elemencie na ekranie, niezależnie od tego, czy przyjmuje on fokus klawiatury. Zanim zaczniesz, zmaksymalizuj bieżące okno aplikacji, jeśli nie jest jeszcze na pełnym ekranie. Naciśnij Windows + strzałka w górę, aby zmaksymalizować okno. Dzięki temu wszystkie obiekty będą widoczne i dostępne dla nawigatora. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Nawigacja po obiektach jest czymś innym niż nawigacja klawiszem Tab. Tab dociera tylko do kontrolek zaprojektowanych do przyjmowania fokusu. Nawigacja po obiektach dociera do wszystkiego, co jest na ekranie.",
+            "Starsze aplikacje komputerowe, niestandardowe paski narzędzi, odtwarzacze i niektóre narzędzia dostępności często mają kontrolki, które nie reagują na klawisz Tab. Właśnie do nich służy nawigacja po obiektach.",
+            "Aby zmaksymalizować okno przed rozpoczęciem przeglądania, naciśnij Windows + strzałka w górę. Zmaksymalizowane okno pomaga uniknąć sytuacji, w której część obiektów jest ukryta poza ekranem."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA traktuje ekran jak drzewo obiektów, które możesz sobie wyobrazić jako piramidę. Na szczycie znajduje się okno aplikacji. Poziom niżej zawiera panele, paski narzędzi i menu. Jeszcze niżej znajdują się pojedyncze kontrolki: przyciski, pola tekstowe i pola wyboru. Każdy obiekt może zawierać kolejne obiekty na poziomie poniżej. Nawigacja po obiektach pozwala poruszać się po tej piramidzie w dowolnym kierunku: do następnego obiektu na tym samym poziomie, poziom wyżej do kontenera albo poziom niżej do pierwszego obiektu wewnątrz. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wyobraź sobie tę piramidę jak budynek. Cały budynek to aplikacja. Każde piętro to poziom. Pomieszczenia na piętrze to panele albo paski narzędzi. Przedmioty w pomieszczeniach to pojedyncze kontrolki.",
+            "Każdy element na ekranie, taki jak przycisk paska narzędzi, pasek stanu albo wskaźnik postępu, znajduje się gdzieś w tej piramidzie, nawet jeśli Tab nie potrafi do niego dotrzeć.",
+            "Nawigacja po obiektach jest szczególnie przydatna w programach z niestandardowymi kontrolkami: paskami narzędzi, paskami stanu, obszarami powiadomień i wbudowanymi elementami."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA ma dwa układy klawiatury: Desktop i Laptop. Układ Desktop korzysta z bloku numerycznego po prawej stronie pełnowymiarowej klawiatury. Układ Laptop używa kombinacji z klawiszem NVDA oraz literami lub symbolami, więc nie potrzebujesz bloku numerycznego. Wszystkie polecenia nawigacji po obiektach w tym rozdziale będą podawane dla obu układów. Jeżeli nie masz pewności, którego układu używasz, otwórz menu NVDA poleceniem NVDA+N, przejdź do Opcji, potem do Ustawień, następnie do kategorii Klawiatura i sprawdź ustawienie układu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop używa do nawigacji po obiektach klawiszy z bloku numerycznego. Układ Laptop wykorzystuje kombinacje z klawiszami strzałek i często z klawiszem Shift. W tym rozdziale wszystkie polecenia są podawane w obu wersjach.",
+            "Jeżeli nie masz pewności, którego układu używasz, naciśnij NVDA+1, aby włączyć pomoc klawiatury, a następnie naciśnij jeden z klawiszy nawigacji po obiektach i posłuchaj, jakiego układu oczekuje NVDA. Potem ponownie naciśnij NVDA+1, aby wyłączyć pomoc klawiatury.",
+            "Układ klawiatury możesz zmienić w dowolnym momencie w ustawieniach NVDA w kategorii Klawiatura. Rozdział Dostosowywanie NVDA omawia to szczegółowo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "move_next_prev_object",
+      "title": "Przechodzenie do następnego i poprzedniego obiektu",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Aby przejść do następnego obiektu na tym samym poziomie piramidy, naciśnij NVDA+NumPad6 w układzie Desktop albo NVDA + Shift + strzałka w prawo w układzie Laptop. To polecenia NVDA. Aby przejść do poprzedniego obiektu na tym samym poziomie, naciśnij NVDA+NumPad4 w układzie Desktop albo NVDA + Shift + strzałka w lewo w układzie Laptop. NVDA odczytuje każdy obiekt, na którym się zatrzymasz: jego nazwę, typ, a czasem także wartość. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i naciśnij NumPad6, czyli strzałkę w prawo na bloku numerycznym, aby przejść do następnego obiektu. NumPad4, czyli strzałka w lewo na bloku numerycznym, przechodzi do poprzedniego obiektu.",
+            "Układ Laptop: przytrzymaj jednocześnie NVDA i Shift, a następnie naciśnij strzałkę w prawo, aby przejść do następnego obiektu, albo strzałkę w lewo, aby wrócić do poprzedniego.",
+            "NVDA odczytuje nazwę, typ, a czasem też wartość każdego obiektu, na którym się zatrzymujesz, podobnie jak NVDA+Tab opisuje mającą fokus kontrolkę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij NumPad6 w układzie Desktop albo NVDA + Shift + strzałka w prawo w układzie Laptop, aby przejść do następnego obiektu. NVDA odczyta, czym on jest. Następnie naciśnij NVDA+NumPad4 w układzie Desktop albo NVDA + Shift + strzałka w lewo w układzie Laptop, aby przejść do poprzedniego obiektu. Przejdź po kilku obiektach w dowolnej otwartej aplikacji, aby wyczuć, jak to działa. Gdy będziesz gotów kontynuować, naciśnij Enter.",
+          "monitorGestures": [
+            "kb:nvda+numpad6",
+            "kb:nvda+shift+rightArrow"
+          ],
+          "hints": [
+            "Układ Desktop: NumPad6 to strzałka w prawo na bloku numerycznym. Przytrzymaj NVDA i naciśnij ten klawisz, aby przejść do następnego obiektu na tym samym poziomie.",
+            "Układ Laptop: przytrzymaj NVDA i Shift, a potem naciśnij strzałkę w prawo. Pamiętaj o Shift. Bez niego klawisze strzałek sterują raczej punktem przeglądu niż nawigacją po obiektach.",
+            "Otwórz znaną aplikację, taką jak Eksplorator plików albo Notatnik, i przejdź po kilku obiektach. Dzięki temu lepiej zrozumiesz, jak są ułożone."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Zauważ, że NVDA odczytuje nazwę, typ, a czasem także wartość każdego obiektu, niezależnie od tego, czy ma on fokus klawiatury. To ważna różnica. Polecenie NVDA+Tab odczytuje kontrolkę, która ma aktualnie fokus. Nawigacja po obiektach odczytuje natomiast obiekt, na który wskazuje obiekt nawigatora. To dwie różne rzeczy. Możesz w każdej chwili użyć NVDA+Tab, aby sprawdzić, gdzie znajduje się fokus, a następnie używać nawigacji po obiektach, aby przeglądać elementy wokół niego. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+Tab opisuje mającą fokus kontrolkę, czyli tę, na której aktualnie znajduje się klawiatura. Nawigacja po obiektach działa niezależnie od fokusu.",
+            "Nawet jeśli dany obiekt nie może przyjmować fokusu klawiatury, nawigacja po obiektach nadal może do niego dotrzeć i go odczytać.",
+            "Możesz użyć NVDA+Tab, aby sprawdzić, gdzie jesteś, a potem nawigacji po obiektach, aby zbadać pobliskie kontrolki, do których nie prowadzi klawisz Tab."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "move_parent_child",
+      "title": "Przechodzenie poziom wyżej i poziom niżej",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Aby przejść o jeden poziom wyżej, do kontenera zawierającego bieżący obiekt, naciśnij NVDA+NumPad8 w układzie Desktop albo NVDA + Shift + strzałka w górę w układzie Laptop. To polecenia NVDA. Aby przejść o jeden poziom niżej, do pierwszego obiektu wewnątrz bieżącego obiektu, naciśnij NVDA+NumPad2 w układzie Desktop albo NVDA + Shift + strzałka w dół w układzie Laptop. Dzięki temu możesz przeglądać piramidę w głąb: wchodzić wyżej, żeby zobaczyć szerszy obraz, albo schodzić niżej, żeby dotrzeć do kontrolek zagnieżdżonych w panelu lub pasku narzędzi. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: NumPad8, czyli strzałka w górę na bloku numerycznym, przechodzi o jeden poziom wyżej do kontenera. NumPad2, czyli strzałka w dół na bloku numerycznym, przechodzi o jeden poziom niżej do pierwszego obiektu wewnątrz.",
+            "Układ Laptop: NVDA + Shift + strzałka w górę przechodzi poziom wyżej, a NVDA + Shift + strzałka w dół przechodzi poziom niżej.",
+            "Ruch w górę przenosi Cię do kontenera, czyli panelu albo paska narzędzi zawierającego bieżący obiekt. Ruch w dół wprowadza do pierwszego obiektu znajdującego się w tym kontenerze."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj NVDA i naciśnij NumPad8 w układzie Desktop albo NVDA + Shift + strzałka w górę w układzie Laptop, aby przejść o jeden poziom wyżej. NVDA odczyta kontener. Następnie naciśnij NVDA+NumPad2 w układzie Desktop albo NVDA + Shift + strzałka w dół w układzie Laptop, aby wrócić poziom niżej do pierwszego obiektu wewnątrz. Przechodzenie w górę i w dół po poziomach pomaga znaleźć kontrolki pogrupowane w panelach albo paskach narzędzi. Naciśnij Enter, gdy będziesz gotów kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+numpad8",
+            "kb:nvda+shift+upArrow"
+          ],
+          "hints": [
+            "Układ Desktop: NumPad8 to strzałka w górę na bloku numerycznym. Przytrzymaj NVDA i naciśnij ten klawisz, aby przejść poziom wyżej.",
+            "Układ Laptop: przytrzymaj NVDA i Shift, a potem naciśnij strzałkę w górę, aby przejść poziom wyżej. Aby wrócić poziom niżej, przytrzymaj NVDA i Shift i naciśnij strzałkę w dół.",
+            "Jeśli wejdziesz poziom wyżej i chcesz wrócić do środka, użyj polecenia przejścia poziom niżej. Pierwszy obiekt na niższym poziomie to pierwszy element w bieżącym kontenerze."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read_current_object",
+      "title": "Odczytywanie bieżącego obiektu nawigatora",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy przejdziesz do obiektu, możesz poprosić NVDA o jego odczytanie. Naciśnij NVDA+NumPad5 w układzie Desktop albo NVDA+Shift+przecinek w układzie Laptop, aby usłyszeć pełny opis bieżącego obiektu nawigatora. To polecenia NVDA. Klawisz przecinka znajduje się w dolnym rzędzie liter, między M a kropką. Jeśli szybko naciśniesz to polecenie dwa razy, NVDA przeliteruje nazwę obiektu znak po znaku. To przydaje się, gdy nazwa jest nieznana albo skrócona. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i naciśnij NumPad5, czyli środkowy klawisz na bloku numerycznym, aby odczytać bieżący obiekt nawigatora.",
+            "Układ Laptop: przytrzymaj NVDA i Shift, a potem naciśnij przecinek. Klawisz przecinka znajduje się w dolnym rzędzie liter, między M a kropką.",
+            "Dwukrotne szybkie naciśnięcie tego polecenia przeliteruje nazwę obiektu znak po znaku. To bardzo pomocne przy nieznanych nazwach albo skrótach."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przejdź do dowolnego obiektu poleceniem NVDA+NumPad6 w układzie Desktop albo NVDA + Shift + strzałka w prawo w układzie Laptop. Następnie naciśnij NVDA+NumPad5 w układzie Desktop albo NVDA+Shift+przecinek w układzie Laptop, aby usłyszeć pełny opis tego obiektu. Naciśnij polecenie dwa razy szybko, aby przeliterować nazwę. Gdy będziesz gotów, naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+numpad5",
+            "kb:nvda+shift+,"
+          ],
+          "hints": [
+            "Najpierw przejdź do obiektu poleceniem przejścia do następnego obiektu, a potem odczytaj go poleceniem NVDA+NumPad5 w układzie Desktop albo NVDA+Shift+przecinek w układzie Laptop.",
+            "Dwukrotne szybkie naciśnięcie polecenia odczytu przeliteruje nazwę obiektu znak po znaku. To bardzo przydatne przy nieznanych nazwach albo skrótach.",
+            "Klawisz przecinka dla układu Laptop znajduje się w dolnym rzędzie klawiatury, między M a kropką."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "route_focus_to_object",
+      "title": "Przenoszenie fokusu klawiatury na obiekt nawigatora",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy znajdziesz kontrolkę za pomocą nawigacji po obiektach, możesz przenieść na nią fokus klawiatury, aby obsłużyć ją w zwykły sposób. Naciśnij NVDA+Shift+NumPadMinus w układzie Desktop albo NVDA+Shift+Backspace w układzie Laptop, aby przenieść fokus na bieżący obiekt nawigatora. To polecenia NVDA. Jeśli dany obiekt może przyjąć fokus, klawiatura przejdzie na ten element i będzie można użyć Enter, spacji albo pisać tak jak zwykle. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i Shift, a potem naciśnij minus na bloku numerycznym, znajdujący się w prawym górnym rogu bloku numerycznego, aby przenieść fokus klawiatury na bieżący obiekt nawigatora.",
+            "Układ Laptop: przytrzymaj NVDA i Shift, a potem naciśnij Backspace, czyli duży klawisz nad Enter po prawej stronie klawiatury.",
+            "Nie każdy obiekt może przyjmować fokus klawiatury. Jeśli przeniesienie fokusu nie działa, obiekt może być tylko informacyjny. Da się go odczytać, ale nie da się go bezpośrednio obsłużyć."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Istnieje także polecenie działające w odwrotną stronę. Naciśnij NVDA+NumPadMinus w układzie Desktop albo NVDA+Backspace w układzie Laptop, tym razem bez Shift, aby przenieść obiekt nawigatora do miejsca, w którym aktualnie znajduje się fokus klawiatury. To bardzo przydatne, gdy chcesz zacząć przeglądanie od miejsca, w którym już jesteś w programie, zamiast szukać od samej góry piramidy. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: NVDA+NumPadMinus bez klawisza Shift przenosi obiekt nawigatora do kontrolki, która ma aktualnie fokus. To dobry punkt wyjścia do dalszego przeglądania.",
+            "Układ Laptop: NVDA+Backspace bez Shift działa tak samo. Użyj tego polecenia, aby zsynchronizować obiekt nawigatora z bieżącym fokusem klawiatury.",
+            "Używaj tego polecenia na początku sesji nawigacji po obiektach, gdy chcesz przeglądać program od miejsca, w którym już jesteś, zamiast zaczynać od samej góry."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Nawigacja po obiektach wymaga praktyki. Najlepiej oswoić się z nią, maksymalizując znany program, taki jak Notatnik albo Eksplorator plików, i poświęcając kilka minut na przeglądanie jego piramidy. Przechodź między obiektami na tym samym poziomie, wracaj do kontenerów, schodź z powrotem niżej i odczytuj kolejne obiekty po drodze. Z czasem zbudujesz sobie w głowie obraz tego, jak programy są zorganizowane na poszczególnych poziomach. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Dobrym miejscem do ćwiczeń jest Eksplorator plików, bo ma przejrzystą strukturę z czytelnymi nazwami folderów, pasków narzędzi i paneli.",
+            "Notatnik też jest dobrym środowiskiem ćwiczeniowym, bo jego piramida obiektów jest prosta i przewidywalna.",
+            "Najpierw zmaksymalizuj okno aplikacji poleceniem Windows + strzałka w górę, aby wszystkie obiekty były widoczne. Potem eksploruj je spokojnie i nie próbuj na raz zapamiętać wszystkich poleceń."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "when_object_nav_helps",
+      "title": "Kiedy pomaga nawigacja po obiektach",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Nawigacja po obiektach jest najbardziej przydatna w trzech sytuacjach. Po pierwsze, gdy program ma kontrolki, do których nie dociera klawisz Tab. Niektóre paski narzędzi, niestandardowe panele i specyficzne dla programu elementy pojawiają się tylko w piramidzie obiektów. Po drugie, gdy trzeba odczytać coś na ekranie, co nie ma fokusu, na przykład pasek stanu pokazujący postęp albo obszar powiadomień. Po trzecie, gdy chcesz najpierw poznać strukturę nowego programu, zanim zdecydujesz, jak będziesz z nim pracować. Ważna wskazówka: zawsze najpierw maksymalizuj okno aplikacji. Zmaksymalizowane okno daje obiektowi nawigatora najpełniejszy widok wszystkich dostępnych obiektów. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Paski stanu i wskaźniki postępu to częste przykłady obiektów, do których Tab nie dociera. Nawigacja po obiektach pozwala je odczytać bez zmiany fokusu klawiatury.",
+            "Niestandardowe paski narzędzi w starszych aplikacjach, odtwarzaczach multimediów, edytorach zdjęć i niektórych programach biurowych często reagują tylko na nawigację po obiektach.",
+            "Najpierw zmaksymalizuj okno poleceniem Windows + strzałka w górę, a dopiero potem zacznij nawigację. Znajdziesz wtedy więcej obiektów i unikniesz niespodzianek."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Większość codziennych zadań, takich jak poczta, przeglądanie internetu czy praca z dokumentami, nie wymaga nawigacji po obiektach. Klawisz Tab, klawisze strzałek i tryb przeglądania pokrywają prawie wszystko. Nawigacja po obiektach jest narzędziem bardziej zaawansowanym, po które sięgasz wtedy, gdy standardowe metody przestają wystarczać. Sama świadomość, że takie narzędzie istnieje, oznacza jednak, że żadna kontrolka na ekranie nie pozostaje całkowicie poza zasięgiem. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Jeśli klawisz Tab i tryb przeglądania wystarczają Ci w codziennej pracy, to zupełnie normalne. Nawigacja po obiektach jest narzędziem specjalistycznym, a nie koniecznością w każdej sytuacji.",
+            "Gdy osoba widząca mówi, że na ekranie jest przycisk, ale Tab nie może do niego dotrzeć, odpowiedzią jest właśnie nawigacja po obiektach.",
+            "Wraz z doświadczeniem rozwiniesz intuicję, kiedy przełączyć się na nawigację po obiektach. Na początku większość nowych użytkowników czytników ekranu korzysta z niej raczej rzadko."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Rozdział Nawigacja po obiektach został ukończony. Wiesz już, jak poruszać się między obiektami na tym samym poziomie, przechodzić do kontenerów poziom wyżej, schodzić poziom niżej, odczytywać bieżący obiekt i przenosić na niego fokus klawiatury. Gdy będziesz gotów, naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji i przejść do następnego rozdziału: Dostosowywanie NVDA, w którym nauczysz się zmieniać układ klawiatury oraz regulować prędkość, wysokość, głos i głośność mowy. Naciśnij Enter, aby zakończyć.",
+          "chapterComplete": true,
+          "hints": [
+            "Następny rozdział to Dostosowywanie NVDA. Dowiesz się w nim, jak regulować prędkość, wysokość, głośność, głos i układ klawiatury bez konieczności otwierania ustawień, jeśli wolisz działać skrótami.",
+            "Szybkie przypomnienie nawigacji po obiektach: układ Desktop używa NumPad4 i NumPad6 do ruchu po tym samym poziomie, NumPad8 i NumPad2 do ruchu między poziomami oraz NumPad5 do odczytu obiektu. W układzie Laptop najczęściej używasz kombinacji NVDA+Shift ze strzałkami oraz NVDA+Shift+przecinek do odczytu.",
+            "NVDA Coach zapisuje postępy automatycznie. Po powrocie wszystkie ukończone lekcje będą już oznaczone."
+          ]
+        }
+      ]
+    }
+  ]
+}
