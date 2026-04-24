@@ -13,7 +13,7 @@
           "type": "info",
           "instruction": "NVDA supports two keyboard layouts: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard for many NVDA commands. Laptop layout uses NVDA plus letter keys instead, so you do not need a numpad. Most desktop computers use desktop layout by default. Most laptops use laptop layout. You can change this at any time in NVDA settings. Press Enter to continue.",
           "hints": [
-            "Desktop layout relies on the numeric keypad â€” the block of number keys on the right side of a full-size keyboard. If your keyboard does not have a numpad, use laptop layout.",
+            "Desktop layout relies on the numeric keypad — the block of number keys on the right side of a full-size keyboard. If your keyboard does not have a numpad, use laptop layout.",
             "Laptop layout replaces numpad commands with NVDA plus letter key combinations. Most laptop users find this more natural since they do not have a numpad.",
             "You can switch between layouts at any time without restarting NVDA. The change takes effect immediately after you save in Settings."
           ]
@@ -22,14 +22,14 @@
           "type": "info",
           "instruction": "To open NVDA settings, press NVDA+N (NVDA command) to open the NVDA menu. Then press P for Preferences, then S for Settings. You will hear NVDA announce the Settings dialog opening. The first category you land on may vary. Press Tab (Windows command) to move between settings categories or use the Arrow keys in the category list. Navigate to the Keyboard category to find the layout setting. Press Enter to continue.",
           "hints": [
-            "NVDA plus N is an NVDA command â€” it opens the NVDA menu. P for Preferences, then S for Settings opens the main NVDA Settings dialog.",
+            "NVDA plus N is an NVDA command — it opens the NVDA menu. P for Preferences, then S for Settings opens the main NVDA Settings dialog.",
             "Once the Settings dialog is open, you will be in a category list on the left. Use the Up and Down Arrow keys to move through categories, or press the first letter of a category name to jump to it.",
-            "You can also use first-letter navigation â€” press K to jump straight to the Keyboard category, or S to jump to Speech."
+            "You can also use first-letter navigation — press K to jump straight to the Keyboard category, or S to jump to Speech."
           ]
         },
         {
           "type": "info",
-          "instruction": "Inside the Keyboard settings, you will find a combo box labeled 'Keyboard layout' with two options: Desktop and Laptop. Use the Up and Down Arrow keys (Windows commands) to choose the layout that matches your keyboard. Use Tab (Windows command) to move to the OK button and press Enter to save â€” the same Tab navigation you practiced in the Moving Between Controls lesson in the Getting Started chapter. Your new layout takes effect immediately without restarting NVDA. Press Enter to continue.",
+          "instruction": "Inside the Keyboard settings, you will find a combo box labeled 'Keyboard layout' with two options: Desktop and Laptop. Use the Up and Down Arrow keys (Windows commands) to choose the layout that matches your keyboard. Use Tab (Windows command) to move to the OK button and press Enter to save — the same Tab navigation you practiced in the Moving Between Controls lesson in the Getting Started chapter. Your new layout takes effect immediately without restarting NVDA. Press Enter to continue.",
           "hints": [
             "Once in the Keyboard category, press Tab to move to the Keyboard layout combo box. Use Up and Down Arrow to choose Desktop or Laptop.",
             "After choosing your layout, press Tab to reach the OK button and press Enter to save. This is the same Tab navigation from the Getting Started chapter.",
@@ -41,7 +41,7 @@
           "instruction": "A note on NVDA Coach lessons: the lesson instructions in this course mention both desktop and laptop key alternatives when they differ. If you have changed your layout to laptop, use the laptop key combinations shown. If you are unsure which layout is active, open NVDA Settings and check the Keyboard category. Press Enter to finish this lesson.",
           "hints": [
             "Throughout NVDA Coach, desktop layout commands appear first, followed by laptop layout commands in parentheses. Use whichever matches your keyboard.",
-            "If a command does not seem to work, check your keyboard layout setting. Pressing desktop layout keys when NVDA is set to laptop layout â€” or vice versa â€” will not produce the expected result.",
+            "If a command does not seem to work, check your keyboard layout setting. Pressing desktop layout keys when NVDA is set to laptop layout — or vice versa — will not produce the expected result.",
             "Not sure which layout you are using? Press NVDA plus 1 to turn on Input Help, press a numpad key, and listen to what NVDA says. Then press NVDA plus 1 again to turn Input Help off."
           ]
         }
@@ -54,25 +54,25 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA includes a powerful on-the-fly speech control system called the synth settings ring. It lets you adjust speech properties â€” such as rate, pitch, volume, voice, and variant â€” without ever opening a settings dialog. Think of it as a dial you can spin through different settings and then turn up or down. Press Enter to continue.",
+          "instruction": "NVDA includes a powerful on-the-fly speech control system called the synth settings ring. It lets you adjust speech properties — such as rate, pitch, volume, voice, and variant — without ever opening a settings dialog. Think of it as a dial you can spin through different settings and then turn up or down. Press Enter to continue.",
           "hints": [
-            "The synth settings ring lets you adjust speech on the fly â€” while you are in the middle of anything â€” without opening any dialog.",
+            "The synth settings ring lets you adjust speech on the fly — while you are in the middle of anything — without opening any dialog.",
             "Available settings in the ring include: rate (speed), pitch, volume, voice, and variant. You navigate between them and then adjust each one.",
             "Think of it as a two-step process: first pick the setting you want (like rate), then turn it up or down."
           ]
         },
         {
           "type": "info",
-          "instruction": "The synth settings ring has two types of movement. First, you move between settings to choose which property you want to adjust â€” for example, moving from rate to pitch to volume. Second, once you are on the setting you want, you increase or decrease its value. These are two separate sets of keys. Press Enter to continue.",
+          "instruction": "The synth settings ring has two types of movement. First, you move between settings to choose which property you want to adjust — for example, moving from rate to pitch to volume. Second, once you are on the setting you want, you increase or decrease its value. These are two separate sets of keys. Press Enter to continue.",
           "hints": [
             "Step one: navigate between settings using the left and right commands. Step two: adjust the value using the up and down commands. Two separate sets of keys.",
-            "NVDA announces the setting name when you navigate to it â€” for example 'Rate' or 'Pitch'. Then it announces the value as you adjust â€” for example 'Rate 60'.",
+            "NVDA announces the setting name when you navigate to it — for example 'Rate' or 'Pitch'. Then it announces the value as you adjust — for example 'Rate 60'.",
             "You must be on the right setting before you can adjust it. If you press the up or down command but hear the wrong setting change, navigate left or right first to get to the setting you want."
           ]
         },
         {
           "type": "info",
-          "instruction": "All synth settings ring commands are NVDA commands â€” they require your NVDA key and only work while NVDA is running. To move to the next setting in the ring, press NVDA+Control+Right Arrow on desktop layout, or NVDA+Shift+Control+Right Arrow on laptop layout. To move to the previous setting, press NVDA+Control+Left Arrow on desktop, or NVDA+Shift+Control+Left Arrow on laptop. NVDA will announce the name of the setting you land on, such as 'Rate' or 'Pitch'. Press Enter to continue.",
+          "instruction": "All synth settings ring commands are NVDA commands — they require your NVDA key and only work while NVDA is running. To move to the next setting in the ring, press NVDA+Control+Right Arrow on desktop layout, or NVDA+Shift+Control+Right Arrow on laptop layout. To move to the previous setting, press NVDA+Control+Left Arrow on desktop, or NVDA+Shift+Control+Left Arrow on laptop. NVDA will announce the name of the setting you land on, such as 'Rate' or 'Pitch'. Press Enter to continue.",
           "monitorGestures": [
             "kb:nvda+control+rightArrow",
             "kb:nvda+shift+control+rightArrow"
@@ -80,7 +80,7 @@
           "hints": [
             "Desktop layout: hold NVDA and Control together, then press Right Arrow to move to the next setting. Left Arrow moves to the previous setting.",
             "Laptop layout: hold NVDA, Shift, and Control together, then press Right Arrow for the next setting or Left Arrow for the previous setting.",
-            "NVDA announces the setting name as you land on it â€” for example 'Rate', 'Pitch', 'Volume', 'Voice', or 'Variant'. Stop when you hear the one you want to adjust."
+            "NVDA announces the setting name as you land on it — for example 'Rate', 'Pitch', 'Volume', 'Voice', or 'Variant'. Stop when you hear the one you want to adjust."
           ]
         },
         {
@@ -95,7 +95,7 @@
           "hints": [
             "Desktop layout: hold NVDA and Control, then press Up Arrow to increase the current setting's value. Down Arrow decreases it.",
             "Laptop layout: hold NVDA, Shift, and Control, then press Up Arrow to increase or Down Arrow to decrease.",
-            "NVDA announces the new value after each adjustment â€” for example 'Rate 75'. Keep pressing to continue adjusting in the same direction."
+            "NVDA announces the new value after each adjustment — for example 'Rate 75'. Keep pressing to continue adjusting in the same direction."
           ]
         },
         {
@@ -109,7 +109,7 @@
         },
         {
           "type": "info",
-          "instruction": "Try it now. Press NVDA+Control+Right Arrow (desktop) or NVDA+Shift+Control+Right Arrow (laptop) a few times to cycle through the available settings â€” you will hear Rate, Pitch, Volume, Voice, and Variant announced as you move. Then stop on Rate, and press the increase or decrease keys to change it. Notice how NVDA speaks in real time at the new speed. Press Enter when you are ready to continue.",
+          "instruction": "Try it now. Press NVDA+Control+Right Arrow (desktop) or NVDA+Shift+Control+Right Arrow (laptop) a few times to cycle through the available settings — you will hear Rate, Pitch, Volume, Voice, and Variant announced as you move. Then stop on Rate, and press the increase or decrease keys to change it. Notice how NVDA speaks in real time at the new speed. Press Enter when you are ready to continue.",
           "monitorGestures": [
             "kb:nvda+control+rightArrow",
             "kb:nvda+shift+control+rightArrow"
@@ -122,7 +122,7 @@
         },
         {
           "type": "info",
-          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation â€” just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Moving Between Controls lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
+          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Moving Between Controls lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
           "hints": [
             "Open Settings with NVDA plus N, P for Preferences, S for Settings. Then press S in the category list to jump straight to the Speech category using first-letter navigation.",
             "Inside the Speech category, Tab moves forward through controls: rate slider, pitch slider, volume slider, voice combo box, and more. Shift plus Tab moves backward.",
@@ -131,7 +131,7 @@
         },
         {
           "type": "info",
-          "instruction": "NVDA includes the eSpeak NG synthesizer by default, which supports many languages and voices. If you have installed additional synthesizers â€” such as Windows OneCore voices or third-party options â€” you can switch between them in the Speech settings under the Synthesizer combo box. Each synthesizer may offer different voice options and quality levels. Press Enter to continue.",
+          "instruction": "NVDA includes the eSpeak NG synthesizer by default, which supports many languages and voices. If you have installed additional synthesizers — such as Windows OneCore voices or third-party options — you can switch between them in the Speech settings under the Synthesizer combo box. Each synthesizer may offer different voice options and quality levels. Press Enter to continue.",
           "hints": [
             "eSpeak NG is installed with NVDA and works offline. Windows OneCore voices use Microsoft's built-in voices and offer more natural-sounding speech.",
             "To switch synthesizers, open NVDA Settings, go to the Speech category, and find the Synthesizer combo box. Use arrow keys to choose a different synthesizer.",

@@ -1,5 +1,12 @@
 # NVDA Coach — Changelog
 
+## v1.5.3 (2026-04-23)
+
+### Bug Fixes
+- **Lesson text encoding corrected:** 144 corrupted em dash characters (appearing as "â€"" in three English lesson files) have been replaced with the correct em dash character (—). The corruption affected `getting_started.json` (87 instances), `nvda_settings.json` (20 instances), and `reading_text.json` (37 instances). NVDA would have spoken these as "â€" " instead of a natural pause. No lesson content, commands, or instructions were changed — only the character encoding.
+
+---
+
 ## v1.5.2 (2026-04-14)
 
 ### Bug Fixes

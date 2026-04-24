@@ -4,7 +4,7 @@
 
 NVDA Coach is a free add-on for the [NVDA screen reader](https://nvaccess.org) that teaches commands through guided, step-by-step practice sessions — from inside NVDA itself. No videos, no PDFs, no switching between windows. Press one key combination and the Coach walks you through what to do and why, one step at a time.
 
-**Current version:** 1.5.2
+**Current version:** 1.5.3
 **Author:** Tony Gebhard, Assistive Technology Instructor
 **License:** GPL v2
 
@@ -12,7 +12,7 @@ NVDA Coach is a free add-on for the [NVDA screen reader](https://nvaccess.org) t
 
 ## Download and Install
 
-**[Download NVDA Coach v1.5.2](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.5.2/nvdaCoach-1.5.2.nvda-addon)**
+**[Download NVDA Coach v1.5.3](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.5.3/nvdaCoach-1.5.3.nvda-addon)**
 
 1. Download the `.nvda-addon` file above
 2. Open the file — NVDA handles the installation automatically and asks you to confirm
@@ -22,14 +22,9 @@ NVDA 2024.1 or later required. Available in the NVDA Add-on Store (Tools → Add
 
 ---
 
-## What's New in v1.5.2
+## What's New in v1.5.3
 
-- **Bug fix — startup completion announcement removed:** NVDA Coach was incorrectly announcing "Congratulations — you have completed every lesson!" (with sound) each time NVDA restarted if the student had previously completed the course. The certificate button now restores silently on startup. The full announcement only plays during the actual completion event.
-- **Profile button in the lesson picker:** A new "Profile (F7)" button in the lesson picker dialog makes it easy to set your name, instructor, and training center without having to remember the F7 shortcut.
-- **Post-completion return screen:** Returning students who have completed all lessons now see a quiet "Welcome back — Course Complete!" screen with certificate access instructions and a review of navigation shortcuts. No completion sound plays on return.
-- **F1–F7 reference in introduction:** The introduction screen and initial Coach window text now include a complete listing of all function keys (F1 through F7) and what each one does, so new students understand all available controls before their first lesson.
-- **4 new lessons (45 total):** Check Your Battery Status (Getting Started, Ch. 1) — NVDA+Shift+B announces battery level and charging state on laptops; Check Font and Formatting (Reading Text, Ch. 3) — NVDA+F reports font name, size, bold/italic/underline, double-press opens a full formatting dialog; Change the Audio Output Device (Customizing NVDA, Ch. 6) — NVDA+Ctrl+U opens the audio output device picker for headphones, speakers, or HDMI; Control Audio Ducking (Customizing NVDA, Ch. 6) — NVDA+Shift+D cycles through ducking modes so NVDA lowers other audio while speaking.
-- **Spanish (es) translation:** All six lesson chapters, all three documentation pages, and all UI strings are now available in Spanish. Spanish-speaking users who set their NVDA language to Spanish receive a fully localized experience.
+- **Bug fix — lesson text encoding corrected:** 144 corrupted em dash characters (displaying as "â€"" instead of "—") have been fixed across three English lesson files: Getting Started, Customizing NVDA, and Reading and Moving Through Text. NVDA would have spoken the garbled sequence aloud instead of a natural pause. No lesson content or commands were changed.
 
 See [CHANGELOG.md](CHANGELOG.md) for the full version history.
 
@@ -102,7 +97,7 @@ Get in touch at [info@tonygebhard.me](mailto:info@tonygebhard.me) to discuss cus
 cd nvdaCoach-source
 python -c "
 import zipfile, os
-output = 'nvdaCoach-1.5.2.nvda-addon'
+output = 'nvdaCoach-1.5.3.nvda-addon'
 if os.path.exists(output): os.remove(output)
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as zf:
     zf.write('manifest.ini', 'manifest.ini')

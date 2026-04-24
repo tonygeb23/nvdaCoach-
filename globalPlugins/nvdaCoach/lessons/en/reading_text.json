@@ -1,7 +1,7 @@
 {
   "id": "reading_text",
   "title": "Reading and Moving Through Text",
-  "description": "Learn how to move through documents and have NVDA read text back to you. Each practice step includes a text area right inside the Coach window â€” no extra window needed.",
+  "description": "Learn how to move through documents and have NVDA read text back to you. Each practice step includes a text area right inside the Coach window — no extra window needed.",
   "order": 3,
   "lessons": [
     {
@@ -14,7 +14,7 @@
           "instruction": "When your cursor is in text, the Right Arrow key moves forward one character at a time and the Left Arrow key moves backward. NVDA speaks each character as you land on it. Sighted users can see each character; NVDA announces it for you as you move. A practice text area is included right in each practice step below. Press Enter to continue.",
           "hints": [
             "The Right and Left Arrow keys are in the arrow key cluster in the lower right area of the keyboard. Right moves forward one character; Left moves back one.",
-            "NVDA announces each character as your cursor lands on it. For punctuation, NVDA speaks the punctuation name â€” for example, it says 'period' instead of just making a sound.",
+            "NVDA announces each character as your cursor lands on it. For punctuation, NVDA speaks the punctuation name — for example, it says 'period' instead of just making a sound.",
             "Moving by character is useful for checking spelling, reading character by character through a word you do not recognize, or confirming what you just typed."
           ]
         },
@@ -42,7 +42,7 @@
           "hints": [
             "The Left Arrow key is to the left of the Down Arrow key in the arrow key cluster. Press it once to move one character backward.",
             "NVDA speaks the character your cursor backs onto. This is the same character that was to the left of where you were.",
-            "Right and Left Arrow give you complete control over reading any word or line one character at a time â€” useful for proofreading or confirming spelling."
+            "Right and Left Arrow give you complete control over reading any word or line one character at a time — useful for proofreading or confirming spelling."
           ],
           "expectedGestures": [
             "kb:leftArrow"
@@ -61,7 +61,7 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Character by character is slow when you need to scan text. Control plus Right Arrow jumps to the start of the next word. Control plus Left Arrow jumps back to the previous word. NVDA speaks the word you land on. This shortcut works the same way in Word, Notepad, email, and most other programs â€” with or without a screen reader. Press Enter to continue.",
+          "instruction": "Character by character is slow when you need to scan text. Control plus Right Arrow jumps to the start of the next word. Control plus Left Arrow jumps back to the previous word. NVDA speaks the word you land on. This shortcut works the same way in Word, Notepad, email, and most other programs — with or without a screen reader. Press Enter to continue.",
           "hints": [
             "Control plus Right Arrow jumps forward one word at a time. Hold the Control key in the bottom left corner of the keyboard and press Right Arrow.",
             "Control plus Left Arrow jumps backward one word. NVDA speaks each word as your cursor lands on it.",
@@ -92,7 +92,7 @@
           "hints": [
             "Hold Control and press the Left Arrow. This jumps your cursor back to the start of the previous word.",
             "NVDA announces the word you land on each time. Use this to review words you just passed over.",
-            "Control plus Left and Right Arrow together give you fast scanning through any document â€” much quicker than moving one character at a time."
+            "Control plus Left and Right Arrow together give you fast scanning through any document — much quicker than moving one character at a time."
           ],
           "expectedGestures": [
             "kb:control+leftArrow"
@@ -115,7 +115,7 @@
           "hints": [
             "Down Arrow moves to the next line and NVDA reads the entire line aloud. Up Arrow moves to the previous line.",
             "The Down and Up Arrow keys are in the arrow key cluster in the lower right area of the keyboard.",
-            "Line-by-line navigation is the most common way to read through a document, email, or web page â€” you will use it constantly."
+            "Line-by-line navigation is the most common way to read through a document, email, or web page — you will use it constantly."
           ]
         },
         {
@@ -164,7 +164,7 @@
           "instruction": "Control+Home jumps immediately to the very beginning of a document, list, or web page. Control+End jumps to the very end. These are great for getting your bearings when you land in a new document. Sighted users can scroll quickly to get the full picture; these keys do the equivalent instantly for keyboard users. Press Enter to continue.",
           "hints": [
             "Control plus Home jumps to the very beginning of a document. Control plus End jumps to the very end.",
-            "The Home key is usually near the Insert, Delete, and Page Up keys â€” above the arrow keys on most keyboards.",
+            "The Home key is usually near the Insert, Delete, and Page Up keys — above the arrow keys on most keyboards.",
             "These two shortcuts are useful whenever you open a new document and want to start reading from the beginning, or jump to the end to see how long it is."
           ]
         },
@@ -192,7 +192,7 @@
           "hints": [
             "Hold Control and press the End key. End is near the Home key, in the cluster above the arrow keys.",
             "NVDA reads the last line of the document after you jump there with Control plus End.",
-            "Control plus Home and Control plus End together let you quickly get the full scope of any document â€” jump to the start to begin, jump to the end to see where it finishes."
+            "Control plus Home and Control plus End together let you quickly get the full scope of any document — jump to the start to begin, jump to the end to see where it finishes."
           ],
           "expectedGestures": [
             "kb:control+end"
@@ -211,7 +211,7 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Say All tells NVDA to start reading from the current position to the end of the document without stopping. The keystroke depends on your keyboard layout. If you are on the desktop layout, press NVDA plus Down Arrow. If you are on the laptop layout, press NVDA plus A. NVDA keeps reading until it reaches the end or you stop it. Sighted users can skim an entire page at a glance; Say All is your equivalent â€” let NVDA read the whole thing while you listen. You can press Control at any time to stop. Press Enter to continue.",
+          "instruction": "Say All tells NVDA to start reading from the current position to the end of the document without stopping. The keystroke depends on your keyboard layout. If you are on the desktop layout, press NVDA plus Down Arrow. If you are on the laptop layout, press NVDA plus A. NVDA keeps reading until it reaches the end or you stop it. Sighted users can skim an entire page at a glance; Say All is your equivalent — let NVDA read the whole thing while you listen. You can press Control at any time to stop. Press Enter to continue.",
           "hints": [
             "Desktop layout: hold your NVDA key and press Down Arrow. Laptop layout: hold your NVDA key and press the letter A. Not sure which layout you are using? Check in the Customizing NVDA chapter.",
             "Press Control at any time to stop Say All immediately. Press Shift to pause it; press Shift again to resume from where it stopped.",
@@ -227,8 +227,8 @@
           ],
           "practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area.",
           "hints": [
-            "Desktop layout: hold NVDA â€” Insert or Caps Lock â€” and press the Down Arrow key. Laptop layout: hold NVDA and press the letter A.",
-            "Once Say All starts, you do not need to do anything â€” just listen. Press Control to stop at any point.",
+            "Desktop layout: hold NVDA — Insert or Caps Lock — and press the Down Arrow key. Laptop layout: hold NVDA and press the letter A.",
+            "Once Say All starts, you do not need to do anything — just listen. Press Control to stop at any point.",
             "Try starting Say All from different positions in the practice text. It always reads from the cursor position to the end."
           ]
         }
@@ -241,11 +241,11 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "You can select text by holding the Shift key while pressing arrow keys. These are Windows commands â€” they work the same way with or without NVDA, in any application. As you select, NVDA reads the characters, words, or lines being added to the selection. Sighted users can see highlighted text on screen; NVDA announces each piece you select so you always know exactly what is included. Selected text can be copied with Control+C and pasted with Control+V anywhere you can type â€” both are also Windows commands. This chapter covers a mix of Windows commands and NVDA commands, so pay attention to which is which as we go. Press Enter to continue.",
+          "instruction": "You can select text by holding the Shift key while pressing arrow keys. These are Windows commands — they work the same way with or without NVDA, in any application. As you select, NVDA reads the characters, words, or lines being added to the selection. Sighted users can see highlighted text on screen; NVDA announces each piece you select so you always know exactly what is included. Selected text can be copied with Control+C and pasted with Control+V anywhere you can type — both are also Windows commands. This chapter covers a mix of Windows commands and NVDA commands, so pay attention to which is which as we go. Press Enter to continue.",
           "hints": [
             "Hold Shift and press any arrow key to extend a selection. Shift plus Right Arrow selects one character; Shift plus Down Arrow selects one line; Control plus Shift plus Right Arrow selects one word. These are all Windows commands.",
             "NVDA announces each character, word, or line as you add it to the selection. Press any arrow key without Shift to deselect.",
-            "Once text is selected, Control plus C copies it and Control plus V pastes it. These are Windows commands â€” they work in every application whether NVDA is running or not."
+            "Once text is selected, Control plus C copies it and Control plus V pastes it. These are Windows commands — they work in every application whether NVDA is running or not."
           ]
         },
         {
@@ -272,7 +272,7 @@
           "hints": [
             "Hold Control and Shift at the same time, then press Right Arrow. Control plus Shift plus Right Arrow selects one full word at once.",
             "NVDA announces the selected word. You can keep pressing Control plus Shift plus Right Arrow to select additional words one at a time.",
-            "This combination â€” Control plus Shift plus Right Arrow â€” is one of the fastest ways to select text. You can build up a multi-word selection quickly."
+            "This combination — Control plus Shift plus Right Arrow — is one of the fastest ways to select text. You can build up a multi-word selection quickly."
           ],
           "expectedGestures": [
             "kb:control+shift+rightArrow"
@@ -301,16 +301,16 @@
         },
         {
           "type": "info",
-          "instruction": "To deselect, press any arrow key without Shift. To copy the selection, press Control+C (Windows command). To paste it somewhere, press Control+V (Windows command). Control+A selects all text in the current document at once â€” also a Windows command. Selection with Shift plus arrows works identically in Word, Notepad, email, web forms, and most other text areas. Press Enter to continue.",
+          "instruction": "To deselect, press any arrow key without Shift. To copy the selection, press Control+C (Windows command). To paste it somewhere, press Control+V (Windows command). Control+A selects all text in the current document at once — also a Windows command. Selection with Shift plus arrows works identically in Word, Notepad, email, web forms, and most other text areas. Press Enter to continue.",
           "hints": [
             "Press any arrow key without Shift to deselect. Control plus C copies the selection; Control plus V pastes it anywhere you can type. Both are Windows commands.",
-            "Control plus A selects all the text in the current document or text area at once â€” a quick way to select everything. This is a Windows command.",
-            "Selection with Shift plus arrows works identically in Word, Notepad, email, web forms, and most other text areas â€” with or without NVDA running."
+            "Control plus A selects all the text in the current document or text area at once — a quick way to select everything. This is a Windows command.",
+            "Selection with Shift plus arrows works identically in Word, Notepad, email, web forms, and most other text areas — with or without NVDA running."
           ]
         },
         {
           "type": "info",
-          "instruction": "After selecting text, you can ask NVDA to read back exactly what you have selected. This is an NVDA command â€” it only works when NVDA is running. On desktop layout, press NVDA+Shift+Up Arrow. On laptop layout, press NVDA+Shift+S. NVDA will read the entire selected text aloud. This is a good habit to build: select text, then verify the selection before copying or doing anything else with it. Press Enter to continue.",
+          "instruction": "After selecting text, you can ask NVDA to read back exactly what you have selected. This is an NVDA command — it only works when NVDA is running. On desktop layout, press NVDA+Shift+Up Arrow. On laptop layout, press NVDA+Shift+S. NVDA will read the entire selected text aloud. This is a good habit to build: select text, then verify the selection before copying or doing anything else with it. Press Enter to continue.",
           "hints": [
             "Desktop layout: hold NVDA and Shift, then press the Up Arrow key to hear your current selection read back.",
             "Laptop layout: hold NVDA and Shift, then press the letter S to hear your current selection read back.",
@@ -319,10 +319,10 @@
         },
         {
           "type": "info",
-          "instruction": "Well done. You have finished the Select and Highlight Text lesson. Next up is the last lesson in this chapter: Navigate by Paragraph and Page â€” where you will learn to jump through long documents in bigger jumps using Ctrl+Up/Down Arrow for paragraphs and Page Up/Page Down for larger sections. Press Enter to continue.",
+          "instruction": "Well done. You have finished the Select and Highlight Text lesson. Next up is the last lesson in this chapter: Navigate by Paragraph and Page — where you will learn to jump through long documents in bigger jumps using Ctrl+Up/Down Arrow for paragraphs and Page Up/Page Down for larger sections. Press Enter to continue.",
           "hints": [
-            "The next lesson is Navigate by Paragraph and Page. Paragraph and page navigation are Windows commands â€” they work in most text editors and word processors.",
-            "Selection commands summary: Shift+Arrow selects by amount moved; Ctrl+C copies; Ctrl+V pastes. All Windows commands. NVDA+Shift+Up or NVDA+Shift+S reports your selection â€” NVDA command.",
+            "The next lesson is Navigate by Paragraph and Page. Paragraph and page navigation are Windows commands — they work in most text editors and word processors.",
+            "Selection commands summary: Shift+Arrow selects by amount moved; Ctrl+C copies; Ctrl+V pastes. All Windows commands. NVDA+Shift+Up or NVDA+Shift+S reports your selection — NVDA command.",
             "Press Enter to move to the Navigate by Paragraph and Page lesson."
           ]
         }
@@ -335,10 +335,10 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "When a document has many paragraphs, moving line by line is slow. Control+Down Arrow jumps forward to the start of the next paragraph. Control+Up Arrow jumps back to the previous paragraph. These are Windows commands â€” they work in Word, Notepad, email clients, and most text-editing applications whether NVDA is running or not. NVDA reads the paragraph text as you land on it. Press Enter to continue.",
+          "instruction": "When a document has many paragraphs, moving line by line is slow. Control+Down Arrow jumps forward to the start of the next paragraph. Control+Up Arrow jumps back to the previous paragraph. These are Windows commands — they work in Word, Notepad, email clients, and most text-editing applications whether NVDA is running or not. NVDA reads the paragraph text as you land on it. Press Enter to continue.",
           "hints": [
             "Hold the Control key in the bottom left corner of the keyboard and press Down Arrow to jump to the next paragraph. Control plus Up Arrow jumps to the previous paragraph.",
-            "These are Windows commands â€” they work in Word, Outlook, Notepad, and most other text applications even without a screen reader.",
+            "These are Windows commands — they work in Word, Outlook, Notepad, and most other text applications even without a screen reader.",
             "Paragraph navigation is faster than line-by-line when you are scanning a long document and want to get to the right section quickly."
           ]
         },
@@ -347,7 +347,7 @@
           "instruction": "Arrow into the practice text below, then press Control+Down Arrow to jump to the next paragraph. NVDA will read the first line of the paragraph you land on.",
           "hint": "Hold Control and press the Down Arrow key. Both must be pressed at the same time.",
           "hints": [
-            "Hold Control â€” bottom left of the keyboard â€” and press Down Arrow at the same time. Your cursor jumps to the start of the next paragraph.",
+            "Hold Control — bottom left of the keyboard — and press Down Arrow at the same time. Your cursor jumps to the start of the next paragraph.",
             "NVDA reads the text at the beginning of the paragraph you jump to. Keep pressing Control plus Down Arrow to move through subsequent paragraphs.",
             "In some applications, Ctrl+Down Arrow may jump to the end of the current paragraph before moving to the next. The behavior varies slightly by program."
           ],
@@ -357,7 +357,7 @@
           "successMessage": "You jumped to the next paragraph. NVDA read the text where your cursor landed.",
           "allowExecution": true,
           "feedbackDelay": 1000,
-          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation â€” for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
+          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation — for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
         },
         {
           "type": "gesture",
@@ -374,14 +374,14 @@
           "successMessage": "You jumped back to the previous paragraph. Control plus Up and Down Arrow are great for scanning long documents quickly.",
           "allowExecution": true,
           "feedbackDelay": 1000,
-          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation â€” for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
+          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation — for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
         },
         {
           "type": "info",
-          "instruction": "Page Up and Page Down move in larger jumps â€” typically one screen's worth of content at a time. These are Windows commands that work in most applications. In a word processor, Page Down moves forward about one full page. In a web browser in browse mode, it scrolls down one screen. In some programs, Page Up and Page Down also move the cursor. NVDA reads the line your cursor lands on after each jump. Press Enter to continue.",
+          "instruction": "Page Up and Page Down move in larger jumps — typically one screen's worth of content at a time. These are Windows commands that work in most applications. In a word processor, Page Down moves forward about one full page. In a web browser in browse mode, it scrolls down one screen. In some programs, Page Up and Page Down also move the cursor. NVDA reads the line your cursor lands on after each jump. Press Enter to continue.",
           "hints": [
             "Page Up and Page Down keys are usually in the cluster above the arrow keys, near the Home and End keys.",
-            "These are Windows commands â€” they work in Word, browsers, PDF viewers, and most other applications whether NVDA is running or not.",
+            "These are Windows commands — they work in Word, browsers, PDF viewers, and most other applications whether NVDA is running or not.",
             "Page Up and Page Down are best used in long documents or web pages when you want to move quickly without jumping all the way to the start or end."
           ]
         },
@@ -400,7 +400,7 @@
           "successMessage": "You pressed Page Down. In longer documents this moves you forward by about one screen at a time.",
           "allowExecution": true,
           "feedbackDelay": 1000,
-          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation â€” for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
+          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation — for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
         },
         {
           "type": "gesture",
@@ -409,7 +409,7 @@
           "hints": [
             "The Page Up key is next to Page Down in the cluster above the arrow keys.",
             "NVDA reads the line your cursor lands on after Page Up.",
-            "Page Up and Page Down together give you fast, large-scale movement through documents â€” use them after Control plus Home/End to navigate at different speeds."
+            "Page Up and Page Down together give you fast, large-scale movement through documents — use them after Control plus Home/End to navigate at different speeds."
           ],
           "expectedGestures": [
             "kb:pageUp"
@@ -417,11 +417,11 @@
           "successMessage": "You pressed Page Up. Page Up and Page Down together let you move through long documents in large jumps.",
           "allowExecution": true,
           "feedbackDelay": 1000,
-          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation â€” for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
+          "practiceText": "First paragraph: The quick brown fox jumps over the lazy dog. This sentence is commonly used to test keyboards and fonts because it contains every letter of the alphabet.\n\nSecond paragraph: Screen readers open the digital world to everyone. NVDA is free, open source, and available to anyone who needs it. Learning to use a screen reader takes practice and patience.\n\nThird paragraph: Control plus Down Arrow moves to the next paragraph. Control plus Up Arrow moves back. These are Windows commands that work in most text applications whether or not a screen reader is running.\n\nFourth paragraph: Page Up and Page Down move in larger jumps through a document. Use them when paragraphs are not the right unit of navigation — for example in a long web article or a multi-page document.\n\nFifth paragraph: This is the last paragraph in the practice area. You have reached the end of the text."
         },
         {
           "type": "info",
-          "instruction": "Excellent work â€” you have completed the Reading and Moving Through Text chapter! You now know how to navigate by character, word, line, paragraph, and page; jump to document extremes; use Say All; select text with Shift plus arrows; verify selections with NVDA+Shift+Up Arrow or NVDA+Shift+S; and copy and paste with Windows commands. These skills work everywhere NVDA is active. Quick tip: if NVDA is reading too fast or too slowly as you practice, you can adjust speech speed using the synth settings ring â€” that is covered in the Customizing NVDA chapter. When you are ready, press NVDA+Shift+C to open the lesson picker and start the next chapter: Browse Mode and Web Navigation. Press Enter to finish.",
+          "instruction": "Excellent work — you have completed the Reading and Moving Through Text chapter! You now know how to navigate by character, word, line, paragraph, and page; jump to document extremes; use Say All; select text with Shift plus arrows; verify selections with NVDA+Shift+Up Arrow or NVDA+Shift+S; and copy and paste with Windows commands. These skills work everywhere NVDA is active. Quick tip: if NVDA is reading too fast or too slowly as you practice, you can adjust speech speed using the synth settings ring — that is covered in the Customizing NVDA chapter. When you are ready, press NVDA+Shift+C to open the lesson picker and start the next chapter: Browse Mode and Web Navigation. Press Enter to finish.",
           "hints": [
             "The next chapter is Browse Mode and Web Navigation. It covers how to read and interact with web pages using NVDA's navigation shortcuts.",
             "If NVDA's reading speed feels too fast or slow, you can adjust it in the Customizing NVDA chapter using the synth settings ring.",

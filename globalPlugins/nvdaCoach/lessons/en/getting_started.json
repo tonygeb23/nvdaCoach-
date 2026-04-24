@@ -14,33 +14,33 @@
 					"instruction": "Welcome to NVDA Coach. Before you practice any commands, it helps to understand something that most documentation glosses over: when you press a key on your keyboard, who is actually doing the work? There are three different layers that control keyboard commands on Windows, and knowing which layer a command belongs to will help you learn faster and make fewer mistakes. This lesson covers all three. Press Enter to continue.",
 					"hints": [
 						"The three layers are: Windows itself, the application you are using, and your screen reader. Each handles different commands.",
-						"Windows commands work the same in every program. Application commands work only in the program they belong to. NVDA commands only announce information â€” they never change anything.",
+						"Windows commands work the same in every program. Application commands work only in the program they belong to. NVDA commands only announce information — they never change anything.",
 						"As you practice through this course, try guessing which category each new command belongs to before being told. This habit builds faster intuition."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The first layer is Windows itself. Some commands belong entirely to the operating system. Cut, Copy, and Paste â€” Control+X, Control+C, and Control+V â€” are Windows commands. When any application lets you paste text, it is not the application doing the pasting; it is making a request to Windows to do it. Opening the Start Menu, switching between windows with Alt+Tab, and closing a window with Alt+F4 are also Windows commands. They work the same way in every program because Windows itself is in charge. Press Enter to continue.",
+					"instruction": "The first layer is Windows itself. Some commands belong entirely to the operating system. Cut, Copy, and Paste — Control+X, Control+C, and Control+V — are Windows commands. When any application lets you paste text, it is not the application doing the pasting; it is making a request to Windows to do it. Opening the Start Menu, switching between windows with Alt+Tab, and closing a window with Alt+F4 are also Windows commands. They work the same way in every program because Windows itself is in charge. Press Enter to continue.",
 					"hints": [
-						"Control plus C copies, Control plus V pastes â€” these work in every Windows program because the operating system handles them, not the application.",
+						"Control plus C copies, Control plus V pastes — these work in every Windows program because the operating system handles them, not the application.",
 						"Alt plus Tab switches between open windows. Alt plus F4 closes the current window. Both are Windows commands that work everywhere.",
-						"Windows commands are the most transferable skills you will learn â€” master them once and they work in every program you will ever use."
+						"Windows commands are the most transferable skills you will learn — master them once and they work in every program you will ever use."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The second layer is the application you are using. When you press Down Arrow in a word processor, you are telling the word processor to move your cursor to the next line. The application moves the cursor â€” that is a program command. Control+N in Microsoft Word opens a new document â€” that is Word's command, not Windows. Your screen reader has nothing to do with moving that cursor. It simply reads aloud what the application already did. Press Enter to continue.",
+					"instruction": "The second layer is the application you are using. When you press Down Arrow in a word processor, you are telling the word processor to move your cursor to the next line. The application moves the cursor — that is a program command. Control+N in Microsoft Word opens a new document — that is Word's command, not Windows. Your screen reader has nothing to do with moving that cursor. It simply reads aloud what the application already did. Press Enter to continue.",
 					"hints": [
-						"Down Arrow in a word processor moves the cursor â€” the application does the work, and NVDA only reads aloud what happened.",
-						"The same key can mean different things in different applications. Control plus N opens a new document in Word but a new tab in a browser â€” because each application defines its own commands.",
+						"Down Arrow in a word processor moves the cursor — the application does the work, and NVDA only reads aloud what happened.",
+						"The same key can mean different things in different applications. Control plus N opens a new document in Word but a new tab in a browser — because each application defines its own commands.",
 						"When something does not work as expected, remember: NVDA is only reading what the application shows. If the application is misbehaving, that is an application issue, not an NVDA issue."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The third layer is your screen reader. NVDA commands are unique: they take no action in the application. They only inform. When you press NVDA+T, nothing changes in your document. The title bar does not move, no dialog opens, nothing is activated. NVDA simply announces what is already there â€” because sighted users can glance at the title bar any time, and you need a way to hear it. This distinction â€” take no action, only inform â€” is the heart of what makes screen reader commands different from all others. As you work through NVDA Coach, you will begin to recognize which layer each command belongs to without being told. Press Enter to begin your first lesson.",
+					"instruction": "The third layer is your screen reader. NVDA commands are unique: they take no action in the application. They only inform. When you press NVDA+T, nothing changes in your document. The title bar does not move, no dialog opens, nothing is activated. NVDA simply announces what is already there — because sighted users can glance at the title bar any time, and you need a way to hear it. This distinction — take no action, only inform — is the heart of what makes screen reader commands different from all others. As you work through NVDA Coach, you will begin to recognize which layer each command belongs to without being told. Press Enter to begin your first lesson.",
 					"hints": [
-						"NVDA commands always start with the NVDA modifier key â€” usually Insert or Caps Lock â€” and they never change anything on screen. They only speak information.",
+						"NVDA commands always start with the NVDA modifier key — usually Insert or Caps Lock — and they never change anything on screen. They only speak information.",
 						"If you press NVDA plus T and nothing on screen changes, that is correct behavior. NVDA read the title bar aloud without modifying anything.",
 						"Think of NVDA commands as questions. NVDA plus T asks 'what is the title of this window?' NVDA answers in speech, and nothing changes."
 					]
@@ -63,22 +63,22 @@
 				},
 				{
 					"type": "info",
-					"instruction": "NVDA+N opens the NVDA menu â€” your hub for all of NVDA's settings and features. Sighted users can click a menu with a mouse; NVDA+N is your equivalent. Try it now. Hold your NVDA key and press the letter N. You should hear NVDA open a menu and begin announcing items such as Preferences, Tools, and Help. Once you hear the menu open, press Escape to close it and come back here, then press Enter to continue.",
+					"instruction": "NVDA+N opens the NVDA menu — your hub for all of NVDA's settings and features. Sighted users can click a menu with a mouse; NVDA+N is your equivalent. Try it now. Hold your NVDA key and press the letter N. You should hear NVDA open a menu and begin announcing items such as Preferences, Tools, and Help. Once you hear the menu open, press Escape to close it and come back here, then press Enter to continue.",
 					"monitorGestures": [
 						"kb:nvda+n"
 					],
 					"hints": [
-						"Hold the Insert or Caps Lock key down first, keep it held, then press the letter N. Both keys must be pressed together â€” not one at a time.",
+						"Hold the Insert or Caps Lock key down first, keep it held, then press the letter N. Both keys must be pressed together — not one at a time.",
 						"If the menu does not open, try again. Make sure you are holding the NVDA key before pressing N. A common mistake is releasing the NVDA key too early.",
 						"After the menu opens, press Escape to close it and return to where you were. Escape cancels menus and dialogs throughout all of Windows."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Well done! You now know how to open and close the NVDA menu. NVDA+N opens the menu â€” it is your main hub for preferences, tools, and help. The Escape key closes menus and cancels actions, and you will use it constantly. These two shortcuts together give you full access to everything NVDA can do. Press Enter to finish this lesson.",
+					"instruction": "Well done! You now know how to open and close the NVDA menu. NVDA+N opens the menu — it is your main hub for preferences, tools, and help. The Escape key closes menus and cancels actions, and you will use it constantly. These two shortcuts together give you full access to everything NVDA can do. Press Enter to finish this lesson.",
 					"hints": [
-						"NVDA plus N is your master key for everything NVDA can do â€” settings, tools, help, and more. It is worth making it your first habit.",
-						"The Escape key closes menus and cancels dialogs without taking any action. It will never cause harm â€” when in doubt, press Escape.",
+						"NVDA plus N is your master key for everything NVDA can do — settings, tools, help, and more. It is worth making it your first habit.",
+						"The Escape key closes menus and cancels dialogs without taking any action. It will never cause harm — when in doubt, press Escape.",
 						"Practice opening and closing the NVDA menu a few more times on your own. The muscle memory will build quickly."
 					]
 				}
@@ -91,28 +91,28 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Every window has a title bar at the top that tells you which program you are in. Sighted users can glance at the title bar at any time. NVDA+T speaks the title bar aloud â€” your equivalent of that glance. Press Enter to continue.",
+					"instruction": "Every window has a title bar at the top that tells you which program you are in. Sighted users can glance at the title bar at any time. NVDA+T speaks the title bar aloud — your equivalent of that glance. Press Enter to continue.",
 					"hints": [
 						"The title bar is the strip at the very top of every window. It usually shows the program name and sometimes the current document or page title.",
 						"NVDA plus T is a quick orientation command. Use it any time you are not sure which program is currently active.",
-						"Pressing NVDA plus T twice quickly spells out the title bar character by character â€” useful when the title contains an abbreviation you do not recognize."
+						"Pressing NVDA plus T twice quickly spells out the title bar character by character — useful when the title contains an abbreviation you do not recognize."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Try it now. Hold your NVDA key and press the letter T. You should hear NVDA read the title bar of the current window â€” something like the name of the program you are in right now. Whenever you are not sure which program you are looking at, NVDA+T will tell you immediately. It is one of the most useful commands you will ever learn. Press Enter here to continue.",
+					"instruction": "Try it now. Hold your NVDA key and press the letter T. You should hear NVDA read the title bar of the current window — something like the name of the program you are in right now. Whenever you are not sure which program you are looking at, NVDA+T will tell you immediately. It is one of the most useful commands you will ever learn. Press Enter here to continue.",
 					"monitorGestures": [
 						"kb:nvda+t"
 					],
 					"hints": [
-						"Hold your NVDA key â€” Insert or Caps Lock â€” and press the letter T. The T key is in the middle row of letters, between R and Y.",
-						"If NVDA reads something like 'NVDA Coach â€” lesson window', that is correct. It is reading the title of the currently active window.",
+						"Hold your NVDA key — Insert or Caps Lock — and press the letter T. The T key is in the middle row of letters, between R and Y.",
+						"If NVDA reads something like 'NVDA Coach — lesson window', that is correct. It is reading the title of the currently active window.",
 						"Press NVDA plus T twice quickly to have NVDA spell out the title character by character. This is useful when the title is an unfamiliar word or abbreviation."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Let's do that one more time to build the habit. Hold your NVDA key and press T again. Listen as NVDA reads the title bar aloud. Repetition is how keyboard commands become automatic â€” the more you practice, the faster each command becomes second nature. Press Enter here when you are ready to continue.",
+					"instruction": "Let's do that one more time to build the habit. Hold your NVDA key and press T again. Listen as NVDA reads the title bar aloud. Repetition is how keyboard commands become automatic — the more you practice, the faster each command becomes second nature. Press Enter here when you are ready to continue.",
 					"monitorGestures": [
 						"kb:nvda+t"
 					],
@@ -134,13 +134,13 @@
 					"instruction": "Sighted users can glance at the clock in the corner of the screen. NVDA+F12 speaks the current time without you having to navigate anywhere. NVDA can tell you the current time and date without leaving what you are doing. Press Enter to continue.",
 					"hints": [
 						"F12 is the last function key on the top row of your keyboard, on the far right end of the row labeled F1 through F12.",
-						"Pressing NVDA plus F12 twice quickly reads the current date instead of the time â€” a handy way to check both without opening any program.",
+						"Pressing NVDA plus F12 twice quickly reads the current date instead of the time — a handy way to check both without opening any program.",
 						"Function keys run across the very top of the keyboard. F12 is at the far right end of that row, often next to a Print Screen or Scroll Lock key."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Try it now. Hold your NVDA key and press F12 â€” the last function key on the top row of your keyboard, usually on the far right. You should hear NVDA announce the current time. Quick tip: if you press NVDA+F12 twice in rapid succession, NVDA reads the date instead of the time. Give both a try if you like, then press Enter here to continue.",
+					"instruction": "Try it now. Hold your NVDA key and press F12 — the last function key on the top row of your keyboard, usually on the far right. You should hear NVDA announce the current time. Quick tip: if you press NVDA+F12 twice in rapid succession, NVDA reads the date instead of the time. Give both a try if you like, then press Enter here to continue.",
 					"monitorGestures": [
 						"kb:nvda+f12"
 					],
@@ -187,7 +187,7 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Sometimes NVDA talks too much or you want it to stop mid sentence. The Control key by itself immediately silences speech. This is called stopping speech, and it works in Narrator, JAWS, and VoiceOver as well â€” it is a universal screen reader convention. Press Enter to continue.",
+					"instruction": "Sometimes NVDA talks too much or you want it to stop mid sentence. The Control key by itself immediately silences speech. This is called stopping speech, and it works in Narrator, JAWS, and VoiceOver as well — it is a universal screen reader convention. Press Enter to continue.",
 					"hints": [
 						"The Control key is in the bottom left corner of your keyboard. Most keyboards also have a second Control key in the bottom right corner. Either one silences NVDA.",
 						"A single tap of Control stops NVDA speech instantly. You do not need to hold it or combine it with any other key.",
@@ -196,10 +196,10 @@
 				},
 				{
 					"type": "info",
-					"instruction": "There is also a second option: the Shift key. Pressing Shift pauses NVDA's speech mid-sentence. Press Shift again and NVDA resumes reading right where it left off. This pause-and-resume behavior is specific to NVDA. It is useful when you need a brief moment to focus â€” for example, reading a phone number from a document while you dial it. Press Shift once to pause, then press Shift again to continue. Control stops completely. Shift pauses and resumes. Both are worth knowing. Press Enter to continue.",
+					"instruction": "There is also a second option: the Shift key. Pressing Shift pauses NVDA's speech mid-sentence. Press Shift again and NVDA resumes reading right where it left off. This pause-and-resume behavior is specific to NVDA. It is useful when you need a brief moment to focus — for example, reading a phone number from a document while you dial it. Press Shift once to pause, then press Shift again to continue. Control stops completely. Shift pauses and resumes. Both are worth knowing. Press Enter to continue.",
 					"hints": [
 						"The Shift key is the wide key just above the Control key on either side of the keyboard. A single press pauses NVDA; pressing it again resumes from exactly where it left off.",
-						"Use Shift to pause when you need a moment to act â€” for example, NVDA is reading a phone number and you need to dial it. Pause with Shift, dial, then Shift again to continue.",
+						"Use Shift to pause when you need a moment to act — for example, NVDA is reading a phone number and you need to dial it. Pause with Shift, dial, then Shift again to continue.",
 						"Control stops completely with no resuming. Shift pauses and resumes. Both are single key presses with no modifiers needed."
 					]
 				},
@@ -207,9 +207,9 @@
 					"type": "info",
 					"instruction": "A note on practicing these keys: pressing Control or Shift during an active lesson would interfere with the lesson itself, so reliable in-lesson practice is not possible here. Instead, build the habit naturally. The next time NVDA reads something too long or too fast, reach for Control to stop it. When you need a moment mid-reading, try Shift to pause and resume. You will discover both reflexes quickly in real use. Press Enter to finish this lesson.",
 					"hints": [
-						"The best time to practice is during Say All â€” press NVDA plus Down Arrow (desktop layout) or NVDA plus A (laptop layout) to start reading, then use Control to stop or Shift to pause. Say All is covered in the Reading Text chapter.",
+						"The best time to practice is during Say All — press NVDA plus Down Arrow (desktop layout) or NVDA plus A (laptop layout) to start reading, then use Control to stop or Shift to pause. Say All is covered in the Reading Text chapter.",
 						"These keys are completely safe to press at any time. They only affect NVDA's speech output and have no effect on the application you are using.",
-						"You will develop these reflexes naturally through daily use. The next time NVDA reads something too long, reach for Control â€” and it will become automatic."
+						"You will develop these reflexes naturally through daily use. The next time NVDA reads something too long, reach for Control — and it will become automatic."
 					]
 				}
 			]
@@ -221,9 +221,9 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Sighted users can see which control is highlighted on screen. NVDA+Tab speaks the name, type, and state of whatever control you are currently focused on â€” your equivalent of that visual glance. Press Enter to continue.",
+					"instruction": "Sighted users can see which control is highlighted on screen. NVDA+Tab speaks the name, type, and state of whatever control you are currently focused on — your equivalent of that visual glance. Press Enter to continue.",
 					"hints": [
-						"NVDA plus Tab reads the currently focused control â€” its name, type (button, checkbox, edit field), and state (checked, pressed, etc.).",
+						"NVDA plus Tab reads the currently focused control — its name, type (button, checkbox, edit field), and state (checked, pressed, etc.).",
 						"Note the difference: Tab alone moves you to the next control. NVDA plus Tab reads the current control without moving anywhere.",
 						"This command is most useful when you land somewhere unexpected and need to figure out where you are before doing anything else."
 					]
@@ -240,12 +240,12 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Now in the practice window, Tab to any control in the login form, then press NVDA+Tab. NVDA will announce the name, type, and state of whatever control you are focused on. For example it might say 'Username edit' or 'Sign in button.' Try it on several different controls â€” text fields, the checkbox, and each button â€” to hear how NVDA describes each type. When you are done exploring, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"instruction": "Now in the practice window, Tab to any control in the login form, then press NVDA+Tab. NVDA will announce the name, type, and state of whatever control you are focused on. For example it might say 'Username edit' or 'Sign in button.' Try it on several different controls — text fields, the checkbox, and each button — to hear how NVDA describes each type. When you are done exploring, press NVDA+Shift+C to return here, then press Enter to continue.",
 					"monitorGestures": [
 						"kb:nvda+tab"
 					],
 					"hints": [
-						"Hold your NVDA key and press Tab. This is different from Tab alone â€” Tab alone moves focus, but NVDA plus Tab only reads the current control without moving.",
+						"Hold your NVDA key and press Tab. This is different from Tab alone — Tab alone moves focus, but NVDA plus Tab only reads the current control without moving.",
 						"Try NVDA plus Tab on several different control types. A text field sounds different from a button, which sounds different from a checkbox.",
 						"When you are done, press NVDA plus Shift plus C to bring the Coach window forward, then press Enter to continue."
 					]
@@ -259,10 +259,10 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "In dialog boxes, settings windows, and forms, you press the Tab key to move forward between controls like buttons, checkboxes, and text fields. Shift+Tab moves you backwards. This is the same in every Windows program â€” learning it here means you can use it everywhere. You will use Tab and Shift+Tab throughout this course, including inside the NVDA Settings dialog in the Customizing NVDA chapter. Press Enter to continue.",
+					"instruction": "In dialog boxes, settings windows, and forms, you press the Tab key to move forward between controls like buttons, checkboxes, and text fields. Shift+Tab moves you backwards. This is the same in every Windows program — learning it here means you can use it everywhere. You will use Tab and Shift+Tab throughout this course, including inside the NVDA Settings dialog in the Customizing NVDA chapter. Press Enter to continue.",
 					"hints": [
 						"The Tab key is on the far left side of the keyboard, just above Caps Lock. It often has a symbol with two arrows pointing in opposite directions.",
-						"Shift plus Tab moves backwards through controls â€” opposite direction from Tab alone. Together they let you move freely through any form or dialog.",
+						"Shift plus Tab moves backwards through controls — opposite direction from Tab alone. Together they let you move freely through any form or dialog.",
 						"Tab and Shift plus Tab work identically in every Windows dialog, form, and settings window. Master them here and you can use them in any program."
 					]
 				},
@@ -273,7 +273,7 @@
 					"hints": [
 						"Press Alt plus Tab to switch to the practice form after it opens. Hold Alt and tap Tab once.",
 						"Press NVDA plus Shift plus C at any time to bring the Coach window back to the front.",
-						"The practice form has several controls â€” text fields, checkboxes, and buttons. Tab all the way through the form before returning."
+						"The practice form has several controls — text fields, checkboxes, and buttons. Tab all the way through the form before returning."
 					]
 				},
 				{
@@ -281,9 +281,9 @@
 					"instruction": "Switch to the practice form by pressing Alt+Tab. Once you are there, press Tab to move to the next control. NVDA will announce the name and type of each control as you land on it. Keep pressing Tab to move through the whole form. When you are ready, press NVDA+Shift+C to come back here, then press Enter to continue.",
 					"hint": "The Tab key is on the left side of your keyboard, above Caps Lock. Just press it by itself. Each time you press Tab, NVDA announces the control you moved to.",
 					"hints": [
-						"The Tab key is on the far left of the keyboard, just above Caps Lock. Press it by itself â€” no modifier key needed.",
+						"The Tab key is on the far left of the keyboard, just above Caps Lock. Press it by itself — no modifier key needed.",
 						"Each press of Tab moves to the next control and NVDA announces its name and type. Listen for words like 'button', 'edit', or 'checkbox'.",
-						"If you Tab past the last control in the form, focus wraps back to the first control. This is normal â€” you can keep pressing Tab to cycle through indefinitely."
+						"If you Tab past the last control in the form, focus wraps back to the first control. This is normal — you can keep pressing Tab to cycle through indefinitely."
 					],
 					"expectedGestures": [
 						"kb:tab"
@@ -298,7 +298,7 @@
 					"hint": "Hold the Shift key and press Tab. Shift is the large wide key just above Ctrl on either side of the keyboard.",
 					"hints": [
 						"Hold Shift first, then press Tab while keeping Shift held. Shift is the wide key above the left Control key.",
-						"Shift plus Tab always moves backwards â€” the exact opposite of Tab alone. Use it whenever you overshoot a control and need to back up.",
+						"Shift plus Tab always moves backwards — the exact opposite of Tab alone. Use it whenever you overshoot a control and need to back up.",
 						"You never have to start over from the beginning of a form. If you go too far, Shift plus Tab brings you right back."
 					],
 					"expectedGestures": [
@@ -352,10 +352,10 @@
 				},
 				{
 					"type": "gesture",
-					"instruction": "Now in the practice window, Tab to one of the buttons â€” 'Play a beep sound', 'Say hello', or 'Show keyboard tip' â€” and press Enter to activate it. NVDA will announce what happened. When done, press NVDA+Shift+C to return here, then press Enter to continue.",
+					"instruction": "Now in the practice window, Tab to one of the buttons — 'Play a beep sound', 'Say hello', or 'Show keyboard tip' — and press Enter to activate it. NVDA will announce what happened. When done, press NVDA+Shift+C to return here, then press Enter to continue.",
 					"hint": "Enter is the large key on the right side of the main keyboard area. Make sure you have Tabbed to a button first.",
 					"hints": [
-						"Enter is the large key on the right side of the main keyboard area. Some keyboards also have a second Enter key on the numpad â€” either works.",
+						"Enter is the large key on the right side of the main keyboard area. Some keyboards also have a second Enter key on the numpad — either works.",
 						"Tab to a button first, then press Enter to activate it. If nothing seems to happen, make sure NVDA announced 'button' when you tabbed to it.",
 						"Between Tab, Space, and Enter, you can navigate and activate almost every control in any Windows application or dialog."
 					],
@@ -377,11 +377,11 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "When you are in a document or text area, you can have NVDA read the line where your cursor is sitting. NVDA+Up Arrow reads the current line â€” useful whenever you want to confirm exactly where you are in a document. A practice text area is included right in the next step. Press Enter to continue.",
+					"instruction": "When you are in a document or text area, you can have NVDA read the line where your cursor is sitting. NVDA+Up Arrow reads the current line — useful whenever you want to confirm exactly where you are in a document. A practice text area is included right in the next step. Press Enter to continue.",
 					"hints": [
 						"NVDA plus Up Arrow reads the current line without moving your cursor. Your position in the document stays exactly where it is.",
 						"The Up Arrow key is in the arrow key cluster in the lower right area of the keyboard. Hold your NVDA key and press the upward-pointing arrow.",
-						"Use NVDA plus Up Arrow whenever you lose track of where you are in a document â€” it re-reads the line your cursor is on without changing anything."
+						"Use NVDA plus Up Arrow whenever you lose track of where you are in a document — it re-reads the line your cursor is on without changing anything."
 					]
 				},
 				{
@@ -392,7 +392,7 @@
 					],
 					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area.",
 					"hints": [
-						"Hold your NVDA key â€” Insert or Caps Lock â€” and press the Up Arrow key. The Up Arrow is the upward-pointing key in the arrow cluster at the lower right of the keyboard.",
+						"Hold your NVDA key — Insert or Caps Lock — and press the Up Arrow key. The Up Arrow is the upward-pointing key in the arrow cluster at the lower right of the keyboard.",
 						"Move your cursor to different lines first with the Down Arrow key, then press NVDA plus Up Arrow to confirm which line you are on.",
 						"If NVDA reads a line but you did not catch it all, just press NVDA plus Up Arrow again. You can press it as many times as needed to re-read the same line."
 					]
@@ -406,22 +406,22 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "NVDA+1 toggles Input Help mode. When it is on, pressing any key tells you what that key does in NVDA â€” without actually doing anything. It is a completely safe way to explore your keyboard, and it is unique to NVDA. Press Enter to continue.",
+					"instruction": "NVDA+1 toggles Input Help mode. When it is on, pressing any key tells you what that key does in NVDA — without actually doing anything. It is a completely safe way to explore your keyboard, and it is unique to NVDA. Press Enter to continue.",
 					"hints": [
-						"NVDA plus 1 uses the number 1 from the top row of the keyboard â€” the row of numbers above the letter keys. Do not use the numpad 1.",
-						"In Input Help mode, pressing any key is completely safe. Nothing actually happens in the application â€” NVDA only describes what the key would do.",
+						"NVDA plus 1 uses the number 1 from the top row of the keyboard — the row of numbers above the letter keys. Do not use the numpad 1.",
+						"In Input Help mode, pressing any key is completely safe. Nothing actually happens in the application — NVDA only describes what the key would do.",
 						"Input Help is one of the most useful learning tools NVDA has. Use it any time you encounter an unfamiliar key combination and want to know what it does."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Try it now. Hold your NVDA key and press the number 1 from the top row of your keyboard â€” not the numpad, but the number row just above the letter keys. You should hear NVDA say 'Input help on.' While Input Help is active, you can press any key and NVDA will describe what that key does without actually performing the action. Press Enter here to continue.",
+					"instruction": "Try it now. Hold your NVDA key and press the number 1 from the top row of your keyboard — not the numpad, but the number row just above the letter keys. You should hear NVDA say 'Input help on.' While Input Help is active, you can press any key and NVDA will describe what that key does without actually performing the action. Press Enter here to continue.",
 					"monitorGestures": [
 						"kb:nvda+1"
 					],
 					"hints": [
 						"Hold your NVDA key and press the number 1 from the top row of the keyboard. The number 1 is at the far left of the number row, just above the Q key.",
-						"When Input Help turns on, try pressing any key â€” for example, press F12 and NVDA will tell you it reads the time, without actually reading the time.",
+						"When Input Help turns on, try pressing any key — for example, press F12 and NVDA will tell you it reads the time, without actually reading the time.",
 						"NVDA says 'Input help on' to confirm it is active. While it is on, every key press is described but nothing is executed."
 					]
 				},
@@ -432,7 +432,7 @@
 						"kb:nvda+1"
 					],
 					"hints": [
-						"Press NVDA plus 1 again â€” the same combination that turned Input Help on will turn it off. NVDA says 'Input help off' to confirm.",
+						"Press NVDA plus 1 again — the same combination that turned Input Help on will turn it off. NVDA says 'Input help off' to confirm.",
 						"After turning it off, all keys resume their normal behavior immediately.",
 						"Remember this shortcut for life: whenever you encounter an unfamiliar key combination, turn on Input Help, press it to hear the description, then turn it back off."
 					]
@@ -450,7 +450,7 @@
 					"hints": [
 						"The user guide opens in your default web browser as a local HTML file. It is installed with NVDA so you can read it without an internet connection.",
 						"To open the user guide: press NVDA plus N to open the NVDA menu, press H for Help, then press U for User Guide. Your browser will open automatically.",
-						"The user guide covers every NVDA command and feature in detail. You can use browse mode â€” covered later in this course â€” to navigate it quickly with headings."
+						"The user guide covers every NVDA command and feature in detail. You can use browse mode — covered later in this course — to navigate it quickly with headings."
 					]
 				},
 				{
@@ -467,7 +467,7 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Well done. You have now learned the essential NVDA commands that carry you through daily use. Two more lessons remain in the Getting Started chapter: Understanding Your Keyboard â€” which covers the physical keys you will use constantly â€” and Switching Windows with Alt+Tab. When you are ready, press Enter to continue to the next lesson.",
+					"instruction": "Well done. You have now learned the essential NVDA commands that carry you through daily use. Two more lessons remain in the Getting Started chapter: Understanding Your Keyboard — which covers the physical keys you will use constantly — and Switching Windows with Alt+Tab. When you are ready, press Enter to continue to the next lesson.",
 					"hints": [
 						"Two more lessons remain in this chapter: Understanding Your Keyboard and Switching Windows with Alt+Tab. Continue through them before moving to the Reading Text chapter.",
 						"All the commands from this lesson work together: NVDA plus T tells you where you are, NVDA plus Tab tells you what control you are on, and Tab plus Enter let you navigate and act.",
@@ -483,7 +483,7 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Before going further, let's look at some keys that often cause confusion â€” especially on laptop keyboards. The first is the Control key. On most keyboards, the Control key sits in the bottom-left corner. But on some laptops, the Fn key occupies the bottom-left corner instead, with the Control key immediately to its right. If you are pressing what you think is Control and nothing happens, check whether your bottom-left corner key says Fn or Ctrl â€” it matters. Press Enter to continue.",
+					"instruction": "Before going further, let's look at some keys that often cause confusion — especially on laptop keyboards. The first is the Control key. On most keyboards, the Control key sits in the bottom-left corner. But on some laptops, the Fn key occupies the bottom-left corner instead, with the Control key immediately to its right. If you are pressing what you think is Control and nothing happens, check whether your bottom-left corner key says Fn or Ctrl — it matters. Press Enter to continue.",
 					"hints": [
 						"Look at the bottom-left corner of your keyboard. If the key says Fn, the Control key is one key to the right of it. If it says Ctrl, you are already on the right key.",
 						"Both Fn and Control are typically in the same row, but which one is in the very corner varies by laptop model and manufacturer.",
@@ -492,29 +492,29 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Many laptops do not have dedicated Home, End, Page Up, and Page Down keys. Instead, the Fn key combines with the Arrow keys to produce them. On most keyboards with this design: Fn plus Left Arrow equals Home; Fn plus Right Arrow equals End; Fn plus Up Arrow equals Page Up; Fn plus Down Arrow equals Page Down. Your keyboard may vary â€” check the small labels printed on the Arrow keys for symbols like a home icon or up-arrow-page symbol. If your keyboard has dedicated Home, End, Page Up, and Page Down keys above the arrow keys, you do not need Fn at all for those functions. Press Enter to continue.",
+					"instruction": "Many laptops do not have dedicated Home, End, Page Up, and Page Down keys. Instead, the Fn key combines with the Arrow keys to produce them. On most keyboards with this design: Fn plus Left Arrow equals Home; Fn plus Right Arrow equals End; Fn plus Up Arrow equals Page Up; Fn plus Down Arrow equals Page Down. Your keyboard may vary — check the small labels printed on the Arrow keys for symbols like a home icon or up-arrow-page symbol. If your keyboard has dedicated Home, End, Page Up, and Page Down keys above the arrow keys, you do not need Fn at all for those functions. Press Enter to continue.",
 					"hints": [
-						"Look at your Arrow keys. If they have small secondary labels â€” a home icon, a page icon, or arrow-with-line symbols â€” those indicate Fn combinations.",
+						"Look at your Arrow keys. If they have small secondary labels — a home icon, a page icon, or arrow-with-line symbols — those indicate Fn combinations.",
 						"Fn plus Left Arrow is typically Home. Fn plus Right Arrow is End. Fn plus Up Arrow is Page Up. Fn plus Down Arrow is Page Down. But always check your specific keyboard.",
-						"If your keyboard has a full key cluster above the arrow keys â€” including dedicated Page Up, Page Down, Home, and End keys â€” you do not need Fn for those functions at all."
+						"If your keyboard has a full key cluster above the arrow keys — including dedicated Page Up, Page Down, Home, and End keys — you do not need Fn for those functions at all."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The top row of many laptops has function keys labeled F1 through F12. On some laptop models, these keys default to multimedia controls â€” adjusting volume, brightness, and media playback â€” rather than F1 through F12. To use F1 through F12 on those keyboards, you hold the Fn key and press the corresponding function key. Other laptops are the opposite: the F keys are primary and multimedia controls require Fn. Many keyboards have an Fn Lock key â€” often Fn plus Escape or Fn plus Caps Lock â€” that permanently swaps the behavior so you do not have to hold Fn each time. Check your laptop's manual or the key labels to find out how your keyboard is set up. Press Enter to continue.",
+					"instruction": "The top row of many laptops has function keys labeled F1 through F12. On some laptop models, these keys default to multimedia controls — adjusting volume, brightness, and media playback — rather than F1 through F12. To use F1 through F12 on those keyboards, you hold the Fn key and press the corresponding function key. Other laptops are the opposite: the F keys are primary and multimedia controls require Fn. Many keyboards have an Fn Lock key — often Fn plus Escape or Fn plus Caps Lock — that permanently swaps the behavior so you do not have to hold Fn each time. Check your laptop's manual or the key labels to find out how your keyboard is set up. Press Enter to continue.",
 					"hints": [
 						"If pressing F2 for a Coach hint changes your screen brightness instead, your laptop defaults to multimedia mode. Hold Fn and press F2 to get the actual F2 function.",
-						"Look for an Fn Lock key â€” often labeled FnLk or shown as a padlock icon combined with Fn. Pressing it toggles between multimedia-primary and F-key-primary modes.",
+						"Look for an Fn Lock key — often labeled FnLk or shown as a padlock icon combined with Fn. Pressing it toggles between multimedia-primary and F-key-primary modes.",
 						"Some laptops show whether multimedia or F-key mode is active through an indicator light. Others announce it via sound. Check your specific model if you are unsure."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "A quick review of the modifier key locations most important for NVDA: Ctrl is bottom-left (or one key right of Fn on some laptops). Shift is the wide key above Ctrl on both sides of the keyboard. Alt is next to the Space bar on both sides. The Windows key â€” a key with the Windows logo â€” is between Ctrl and Alt on the left side. And of course your NVDA key: Insert is in the cluster above the arrow keys, and Caps Lock is on the far left above Shift. Knowing where these keys live without looking is one of the most valuable keyboard skills you can build. Press Enter to continue.",
+					"instruction": "A quick review of the modifier key locations most important for NVDA: Ctrl is bottom-left (or one key right of Fn on some laptops). Shift is the wide key above Ctrl on both sides of the keyboard. Alt is next to the Space bar on both sides. The Windows key — a key with the Windows logo — is between Ctrl and Alt on the left side. And of course your NVDA key: Insert is in the cluster above the arrow keys, and Caps Lock is on the far left above Shift. Knowing where these keys live without looking is one of the most valuable keyboard skills you can build. Press Enter to continue.",
 					"hints": [
 						"From left to right along the bottom row of most keyboards: Ctrl (or Fn), Windows key, Alt, Space bar, Alt, menu key (sometimes), Ctrl.",
-						"Shift is the wide key above Ctrl on both sides. It is one of the widest keys on the keyboard â€” easy to find by feel.",
-						"Caps Lock is on the far left, just above Shift. On many NVDA users' keyboards, Caps Lock serves as the NVDA key â€” one of the most important keys you will ever press."
+						"Shift is the wide key above Ctrl on both sides. It is one of the widest keys on the keyboard — easy to find by feel.",
+						"Caps Lock is on the far left, just above Shift. On many NVDA users' keyboards, Caps Lock serves as the NVDA key — one of the most important keys you will ever press."
 					]
 				}
 			]
@@ -527,29 +527,29 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Alt+Tab is a Windows command that switches between open programs and windows. Sighted users can see all open windows on the taskbar at a glance. Alt+Tab is the keyboard equivalent â€” it lets you cycle through open windows without needing a mouse. This is one of the most important Windows commands you will ever learn, and it works in every version of Windows. You have already used it briefly to switch between the Coach window and practice forms. This lesson teaches both ways to use it. Press Enter to continue.",
+					"instruction": "Alt+Tab is a Windows command that switches between open programs and windows. Sighted users can see all open windows on the taskbar at a glance. Alt+Tab is the keyboard equivalent — it lets you cycle through open windows without needing a mouse. This is one of the most important Windows commands you will ever learn, and it works in every version of Windows. You have already used it briefly to switch between the Coach window and practice forms. This lesson teaches both ways to use it. Press Enter to continue.",
 					"hints": [
-						"Alt plus Tab is a Windows command â€” it is built into Windows itself and works whether NVDA is running or not.",
+						"Alt plus Tab is a Windows command — it is built into Windows itself and works whether NVDA is running or not.",
 						"The Alt key is on either side of the Space bar. The Tab key is on the far left of the keyboard above Caps Lock.",
 						"This command works in every version of Windows and in virtually every scenario. It is one of the most universal keyboard shortcuts you will ever use."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The first way: a single Alt+Tab press. Hold Alt and tap Tab once, then release both keys immediately. This switches you to the most recently used window â€” the one you were in before the current one. If you are in your browser and you press Alt+Tab, you jump to the program you were in before the browser. Press Alt+Tab again and you go back to the browser. This is the fastest way to toggle between two programs you are using together. NVDA announces the name of the window you switch to. Press Enter to continue.",
+					"instruction": "The first way: a single Alt+Tab press. Hold Alt and tap Tab once, then release both keys immediately. This switches you to the most recently used window — the one you were in before the current one. If you are in your browser and you press Alt+Tab, you jump to the program you were in before the browser. Press Alt+Tab again and you go back to the browser. This is the fastest way to toggle between two programs you are using together. NVDA announces the name of the window you switch to. Press Enter to continue.",
 					"hints": [
 						"Hold Alt, tap Tab once, then release both. You land in the most recently used window. NVDA announces what you landed in.",
 						"Press Alt+Tab a second time to go back to where you started. Two presses toggle you between two windows quickly.",
-						"This is the version most people use the most â€” a quick Alt+Tab to check another window, then Alt+Tab again to return."
+						"This is the version most people use the most — a quick Alt+Tab to check another window, then Alt+Tab again to return."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "The second way: hold Alt and keep tapping Tab. If you have three or more windows open, you can cycle through them all. Hold Alt down and tap Tab once â€” NVDA announces the first window. Keep holding Alt and tap Tab again â€” NVDA announces the second window. Each tap moves to the next open window in the list. When you hear the window you want, release the Alt key and you land there. If you go too far, you can hold Alt and press Shift+Tab to cycle backward. Press Enter to continue.",
+					"instruction": "The second way: hold Alt and keep tapping Tab. If you have three or more windows open, you can cycle through them all. Hold Alt down and tap Tab once — NVDA announces the first window. Keep holding Alt and tap Tab again — NVDA announces the second window. Each tap moves to the next open window in the list. When you hear the window you want, release the Alt key and you land there. If you go too far, you can hold Alt and press Shift+Tab to cycle backward. Press Enter to continue.",
 					"hints": [
 						"Hold the Alt key down the entire time. Each Tab press cycles to the next window. Do not release Alt until you hear the window you want.",
 						"NVDA announces each window name as you cycle through. Listen for the program name or the document title.",
-						"Holding Alt and pressing Shift plus Tab cycles backward through the window list â€” useful if you overshoot the window you want."
+						"Holding Alt and pressing Shift plus Tab cycles backward through the window list — useful if you overshoot the window you want."
 					]
 				},
 				{
@@ -557,7 +557,7 @@
 					"instruction": "Try single Alt+Tab now. Hold Alt and press Tab once, then release both keys. NVDA will announce which window you switched to. Then press Alt+Tab again to come back here. When you are back in the Coach window, press Enter to continue.",
 					"hint": "Hold the Alt key, press Tab once, then release both. Alt is next to the Space bar; Tab is above Caps Lock on the far left.",
 					"hints": [
-						"Hold Alt â€” the key to the left of the Space bar â€” and tap Tab once. Release both keys immediately after tapping Tab.",
+						"Hold Alt — the key to the left of the Space bar — and tap Tab once. Release both keys immediately after tapping Tab.",
 						"NVDA announces the name of the window you land in. You may land in the previous application or another Coach practice window.",
 						"To come back, press Alt plus Tab once more. This toggles you back to the Coach window."
 					],
@@ -570,7 +570,7 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Excellent work â€” you have completed the Getting Started chapter! You now know how to identify the three categories of commands; use essential NVDA commands; understand your keyboard layout; and switch between programs with Alt+Tab. These skills work together every time you use NVDA. Practice a little every day and they will become automatic. When you are ready, press NVDA+Shift+C to open the lesson picker and start the next chapter: Reading and Moving Through Text. Press Enter to finish.",
+					"instruction": "Excellent work — you have completed the Getting Started chapter! You now know how to identify the three categories of commands; use essential NVDA commands; understand your keyboard layout; and switch between programs with Alt+Tab. These skills work together every time you use NVDA. Practice a little every day and they will become automatic. When you are ready, press NVDA+Shift+C to open the lesson picker and start the next chapter: Reading and Moving Through Text. Press Enter to finish.",
 					"hints": [
 						"The next chapter is Reading and Moving Through Text. It covers navigating through documents by character, word, line, paragraph, and page.",
 						"Alt+Tab summary: single press toggles to the last window. Hold Alt and keep pressing Tab to cycle through all open windows. Release Alt to land.",
