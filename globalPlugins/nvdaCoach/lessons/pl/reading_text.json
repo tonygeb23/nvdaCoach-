@@ -1,0 +1,434 @@
+{
+  "id": "reading_text",
+  "title": "Czytanie i poruszanie się po tekście",
+  "description": "Naucz się poruszać po dokumentach i słuchać tego, co odczytuje NVDA. Każdy krok ćwiczeniowy zawiera pole tekstowe bezpośrednio w oknie Coach, więc nie potrzebujesz dodatkowego okna.",
+  "order": 3,
+  "lessons": [
+    {
+      "id": "move_by_character",
+      "title": "Poruszanie się po znakach",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy kursor znajduje się w tekście, strzałka w prawo przesuwa go do przodu po jednym znaku, a strzałka w lewo cofa o jeden znak. NVDA odczytuje każdy znak, na którym się zatrzymasz. Osoby widzące widzą poszczególne znaki wzrokiem, a NVDA odczytuje je Tobie podczas ruchu. W każdym kroku ćwiczeniowym poniżej znajduje się obszar tekstowy do ćwiczeń. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Strzałka w prawo i strzałka w lewo znajdują się w grupie strzałek w prawej dolnej części klawiatury. Prawa przesuwa do przodu o jeden znak, lewa cofa o jeden znak.",
+            "NVDA odczytuje każdy znak, na którym zatrzymuje się kursor. W przypadku znaków interpunkcyjnych odczytuje ich nazwę.",
+            "Poruszanie się po znakach przydaje się przy sprawdzaniu pisowni, literowaniu nieznanego słowa albo upewnianiu się, co dokładnie zostało wpisane."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź strzałką w dół do obszaru tekstowego poniżej, a następnie naciśnij strzałkę w prawo, aby przejść o jeden znak do przodu. NVDA odczyta znak, na którym się zatrzymasz. Spróbuj kilka razy.",
+          "hint": "Klawisz strzałki w prawo znajduje się w grupie strzałek w prawej dolnej części klawiatury.",
+          "hints": [
+            "Klawisz strzałki w prawo znajduje się w grupie strzałek w prawej dolnej części klawiatury. Naciśnij go raz, aby przejść o jeden znak do przodu.",
+            "NVDA odczytuje znak, na którym zatrzyma się kursor. Dla liter odczyta literę, dla spacji powie \"spacja\", a dla interpunkcji nazwę znaku.",
+            "Najpierw przejdź do obszaru ćwiczeń w tekście poniżej, a dopiero potem używaj strzałki w prawo."
+          ],
+          "expectedGestures": [
+            "kb:rightArrow"
+          ],
+          "successMessage": "Przeszedłeś o jeden znak do przodu. NVDA odczytał znak, na którym zatrzymał się kursor.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij strzałkę w lewo, aby cofnąć się o jeden znak. NVDA go odczyta.",
+          "hint": "Klawisz strzałki w lewo znajduje się na lewo od strzałki w dół.",
+          "hints": [
+            "Klawisz strzałki w lewo znajduje się po lewej stronie strzałki w dół w grupie strzałek. Naciśnij go raz, aby cofnąć się o jeden znak.",
+            "NVDA odczyta znak, na który cofnął się kursor. To ten sam znak, który znajdował się po lewej stronie poprzedniej pozycji.",
+            "Strzałka w prawo i strzałka w lewo dają pełną kontrolę nad odczytem słowa lub wiersza znak po znaku. To bardzo przydatne podczas korekty i sprawdzania pisowni."
+          ],
+          "expectedGestures": [
+            "kb:leftArrow"
+          ],
+          "successMessage": "Cofnąłeś się o jeden znak. Strzałka w prawo i strzałka w lewo pozwalają czytać tekst znak po znaku.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        }
+      ]
+    },
+    {
+      "id": "jump_by_word",
+      "title": "Przeskakiwanie słowo po słowie",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Poruszanie się znak po znaku jest zbyt wolne, gdy chcesz szybko przejrzeć tekst. Control + strzałka w prawo przenosi kursor na początek następnego słowa. Control + strzałka w lewo cofa do poprzedniego słowa. NVDA odczytuje słowo, na którym się zatrzymasz. Ten skrót działa tak samo w Wordzie, Notatniku, poczcie i większości innych programów, niezależnie od tego, czy działa czytnik ekranu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Control + strzałka w prawo przeskakuje do przodu po jednym słowie. Przytrzymaj Control w lewym dolnym rogu klawiatury i naciśnij strzałkę w prawo.",
+            "Control + strzałka w lewo cofa o jedno słowo. NVDA odczytuje każde słowo, na którym zatrzymuje się kursor.",
+            "Poruszanie się słowo po słowie jest znacznie szybsze niż znak po znaku, gdy chcesz przeskanować zdanie albo znaleźć konkretne słowo w akapicie."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do tekstu ćwiczeniowego poniżej, a następnie naciśnij Control + strzałka w prawo, aby przeskoczyć do następnego słowa. NVDA odczyta słowo, na którym się zatrzymasz.",
+          "hint": "Przytrzymaj klawisz Control, znajdujący się w lewym dolnym rogu klawiatury, i jednocześnie naciśnij strzałkę w prawo.",
+          "hints": [
+            "Przytrzymaj klawisz Control w lewym dolnym rogu klawiatury i jednocześnie naciśnij strzałkę w prawo. Oba klawisze muszą być naciśnięte równocześnie.",
+            "NVDA odczyta słowo, na które przeskoczy kursor. Każde naciśnięcie przesuwa o całe jedno słowo do przodu.",
+            "Jeśli przytrzymasz Control + strzałka w prawo, kursor będzie szybko przeskakiwał po kolejnych słowach. Puść klawisze, aby zatrzymać ruch."
+          ],
+          "expectedGestures": [
+            "kb:control+rightArrow"
+          ],
+          "successMessage": "Przeskoczyłeś o jedno słowo do przodu. NVDA odczytał słowo, na którym zatrzymał się kursor.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Control + strzałka w lewo, aby wrócić do poprzedniego słowa. NVDA je odczyta.",
+          "hint": "Przytrzymaj Control i naciśnij strzałkę w lewo.",
+          "hints": [
+            "Przytrzymaj Control i naciśnij strzałkę w lewo. Kursor cofnie się do początku poprzedniego słowa.",
+            "NVDA odczytuje słowo, na którym zatrzymasz się po każdym takim ruchu. Używaj tego skrótu do sprawdzania słów, które właśnie minąłeś.",
+            "Control + strzałka w lewo i Control + strzałka w prawo razem pozwalają szybko skanować dowolny dokument znacznie sprawniej niż przy poruszaniu się po znakach."
+          ],
+          "expectedGestures": [
+            "kb:control+leftArrow"
+          ],
+          "successMessage": "Cofnąłeś się o jedno słowo. Skróty z Control i strzałkami pozwalają szybko poruszać się po tekście słowo po słowie.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        }
+      ]
+    },
+    {
+      "id": "move_by_line",
+      "title": "Poruszanie się wiersz po wierszu",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Strzałka w dół przechodzi do następnego wiersza dokumentu. Strzałka w górę wraca do poprzedniego wiersza. NVDA odczytuje cały wiersz przy każdym takim ruchu. Osoby widzące skanują wiersze wzrokiem, a Ty przechodzisz do każdego z nich i słuchasz go w NVDA. To jedna z najważniejszych metod nawigacji po dokumentach i stronach internetowych. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Strzałka w dół przechodzi do następnego wiersza i NVDA odczytuje cały wiersz. Strzałka w górę wraca do poprzedniego wiersza.",
+            "Klawisze strzałki w dół i strzałki w górę znajdują się w grupie strzałek w prawej dolnej części klawiatury.",
+            "Poruszanie się wiersz po wierszu to najczęstszy sposób czytania dokumentu, wiadomości e-mail albo strony internetowej. Będziesz używać tych klawiszy bardzo często."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do tekstu ćwiczeniowego poniżej, a następnie naciśnij strzałkę w dół, aby przejść do następnego wiersza. NVDA odczyta cały wiersz.",
+          "hint": "Klawisz strzałki w dół znajduje się w grupie strzałek. Naciśnij go raz, aby przejść o jeden wiersz.",
+          "hints": [
+            "Klawisz strzałki w dół znajduje się w grupie strzałek w prawej dolnej części klawiatury. Naciśnij go raz, aby przejść w dół o jeden wiersz.",
+            "NVDA odczytuje cały wiersz po przejściu do niego. Jeśli chcesz usłyszeć go ponownie, użyj polecenia NVDA + strzałka w górę, aby odczytać bieżący wiersz.",
+            "Przejdź w dół o kilka wierszy, a potem spróbuj wrócić strzałką w górę. NVDA odczytuje każdy wiersz zarówno przy ruchu w dół, jak i w górę."
+          ],
+          "expectedGestures": [
+            "kb:downArrow"
+          ],
+          "successMessage": "Przeszedłeś w dół o jeden wiersz. NVDA odczytał cały wiersz.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij strzałkę w górę, aby wrócić do poprzedniego wiersza. NVDA go odczyta.",
+          "hint": "Klawisz strzałki w górę znajduje się bezpośrednio nad strzałką w dół.",
+          "hints": [
+            "Klawisz strzałki w górę znajduje się bezpośrednio nad strzałką w dół w grupie strzałek. Naciśnij go raz, aby przejść w górę o jeden wiersz.",
+            "NVDA odczytuje cały wiersz także przy ruchu w górę, tak samo jak przy przechodzeniu w dół.",
+            "Strzałka w górę i strzałka w dół to podstawowe narzędzia czytania dokumentów. Większość użytkowników czytników ekranu spędza większość czasu właśnie z tymi dwoma klawiszami."
+          ],
+          "expectedGestures": [
+            "kb:upArrow"
+          ],
+          "successMessage": "Wróciłeś o jeden wiersz. Strzałka w górę i strzałka w dół to podstawowe narzędzia do czytania tekstu wiersz po wierszu.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        }
+      ]
+    },
+    {
+      "id": "jump_to_ends",
+      "title": "Przechodzenie do początku i końca",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Control+Home natychmiast przenosi na sam początek dokumentu, listy albo strony internetowej. Control+End przenosi na sam koniec. To bardzo przydatne skróty, gdy trafiasz do nowego dokumentu i chcesz szybko się zorientować, gdzie jesteś. Osoby widzące mogą przewinąć stronę wzrokiem i od razu zobaczyć całość, a te skróty dają podobny efekt użytkownikowi klawiatury. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Control+Home przechodzi na sam początek dokumentu. Control+End przechodzi na sam koniec.",
+            "Klawisz Home zwykle znajduje się w grupie klawiszy nad strzałkami, obok Insert, Delete i Page Up.",
+            "Te dwa skróty przydają się zawsze wtedy, gdy otwierasz dokument i chcesz zacząć czytanie od początku albo przejść na koniec, aby sprawdzić jego długość."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do tekstu ćwiczeniowego poniżej, a następnie naciśnij Control+Home, aby przeskoczyć na sam początek. NVDA odczyta pierwszy wiersz.",
+          "hint": "Przytrzymaj Control i naciśnij klawisz Home. Home zwykle znajduje się obok Insert, Delete i Page Up.",
+          "hints": [
+            "Przytrzymaj Control i naciśnij Home. Na większości klawiatur Home znajduje się w grupie klawiszy nad strzałkami, obok Insert i Delete.",
+            "Po przejściu na początek NVDA odczytuje pierwszy wiersz dokumentu. Oznacza to, że jesteś teraz na samym początku.",
+            "Control+Home działa w dokumentach, na stronach internetowych, listach i w większości pól tekstowych. Zawsze przenosi na sam początek."
+          ],
+          "expectedGestures": [
+            "kb:control+home"
+          ],
+          "successMessage": "Przeszedłeś na początek. NVDA odczytał pierwszy wiersz.",
+          "allowExecution": true,
+          "feedbackDelay": 1500,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Control+End, aby przejść do ostatniego wiersza. NVDA go odczyta.",
+          "hint": "Przytrzymaj Control i naciśnij klawisz End, który znajduje się obok Home.",
+          "hints": [
+            "Przytrzymaj Control i naciśnij End. End znajduje się obok Home, w grupie klawiszy nad strzałkami.",
+            "Po przejściu na koniec Control+End NVDA odczyta ostatni wiersz dokumentu.",
+            "Control+Home i Control+End razem pozwalają bardzo szybko objąć cały dokument. Jednym skrótem przechodzisz na początek, drugim sprawdzasz koniec."
+          ],
+          "expectedGestures": [
+            "kb:control+end"
+          ],
+          "successMessage": "Przeszedłeś na koniec. Control+Home i Control+End natychmiast przenoszą na oba krańce dokumentu.",
+          "allowExecution": true,
+          "feedbackDelay": 1500,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        }
+      ]
+    },
+    {
+      "id": "say_all",
+      "title": "Czytaj wszystko od bieżącego miejsca",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Polecenie czytaj wszystko sprawia, że NVDA zaczyna czytać od bieżącej pozycji aż do końca dokumentu bez zatrzymywania się. Skrót zależy od ustawionego układu klawiatury. W układzie Desktop naciśnij NVDA + strzałka w dół. W układzie Laptop naciśnij NVDA+A. NVDA będzie czytać do końca albo do chwili, gdy je zatrzymasz. Osoby widzące mogą jednym spojrzeniem przeskanować całą stronę, a czytaj wszystko jest odpowiednikiem tego zachowania: pozwól NVDA przeczytać całość, a Ty słuchaj. W dowolnym momencie możesz nacisnąć Control, aby zatrzymać odczyt. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: przytrzymaj klawisz NVDA i naciśnij strzałkę w dół. Układ Laptop: przytrzymaj klawisz NVDA i naciśnij literę A. Nie wiesz, którego układu używasz? Sprawdź to w rozdziale Dostosowywanie NVDA.",
+            "W dowolnym momencie naciśnij Control, aby natychmiast zatrzymać czytaj wszystko. Naciśnięcie Shift wstrzymuje odczyt, a ponowne naciśnięcie Shift wznawia go od miejsca zatrzymania.",
+            "Polecenie czytaj wszystko przydaje się szczególnie przy długich dokumentach, wiadomościach e-mail i artykułach internetowych, gdy nie chcesz bez końca naciskać strzałki w dół."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Przejdź strzałką w dół do obszaru tekstowego poniżej i ustaw kursor gdzieś w środku. Następnie uruchom czytaj wszystko: użytkownicy układu Desktop naciskają NVDA + strzałka w dół, a użytkownicy układu Laptop naciskają NVDA+A. NVDA zacznie czytać od bieżącej pozycji kursora aż do końca bez zatrzymywania się. W dowolnym momencie naciśnij Control, aby przerwać odczyt. Gdy skończysz, naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+downArrow",
+            "kb:nvda+a"
+          ],
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń.",
+          "hints": [
+            "Układ Desktop: przytrzymaj klawisz NVDA, czyli Insert albo Caps Lock, i naciśnij strzałkę w dół. Układ Laptop: przytrzymaj NVDA i naciśnij literę A.",
+            "Gdy czytaj wszystko już się uruchomi, nie musisz nic robić, tylko słuchać. Naciśnij Control w dowolnej chwili, aby zatrzymać odczyt.",
+            "Spróbuj uruchomić czytaj wszystko z różnych miejsc w tekście ćwiczeniowym. NVDA zawsze czyta od bieżącej pozycji kursora do końca."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "select_text",
+      "title": "Zaznaczanie tekstu",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Tekst możesz zaznaczać, przytrzymując Shift podczas naciskania klawiszy strzałek. To polecenia systemu Windows, więc działają tak samo z NVDA i bez NVDA, w każdej aplikacji. Gdy rozszerzasz zaznaczenie, NVDA odczytuje znaki, słowa albo wiersze dodawane do zaznaczenia. Osoby widzące widzą tekst podświetlony na ekranie, a NVDA odczytuje każdy fragment, więc zawsze wiesz dokładnie, co zostało zaznaczone. Zaznaczony tekst można skopiować skrótem Control+C i wkleić skrótem Control+V w dowolnym miejscu, w którym można pisać — to także polecenia systemu Windows. W tym rozdziale pojawiają się zarówno polecenia Windows, jak i polecenia NVDA, więc zwracaj uwagę, które jest które. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przytrzymaj Shift i naciśnij dowolną strzałkę, aby rozszerzyć zaznaczenie. Shift+strzałka w prawo zaznacza jeden znak, Shift+strzałka w dół zaznacza jeden wiersz, a Control+Shift+strzałka w prawo zaznacza jedno słowo. To wszystko są polecenia Windows.",
+            "NVDA odczytuje każdy znak, słowo albo wiersz dodawany do zaznaczenia. Aby usunąć zaznaczenie, naciśnij dowolną strzałkę bez Shift.",
+            "Gdy tekst jest już zaznaczony, Control+C go kopiuje, a Control+V wkleja. To polecenia Windows działające w każdej aplikacji, niezależnie od NVDA."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do tekstu ćwiczeniowego poniżej. Przytrzymaj Shift i naciśnij strzałkę w prawo, aby zaznaczyć jeden znak do przodu. NVDA go odczyta. Naciskaj dalej Shift+strzałka w prawo, aby rozszerzać zaznaczenie znak po znaku.",
+          "hint": "Najpierw przytrzymaj Shift, a potem naciśnij strzałkę w prawo. Nie puszczaj Shifta, jeśli chcesz dalej rozszerzać zaznaczenie.",
+          "hints": [
+            "Najpierw przytrzymaj Shift, a potem naciskaj strzałkę w prawo, wciąż trzymając Shift. Shift to szeroki klawisz nad lewym Control.",
+            "NVDA odczytuje każdy znak dodawany do zaznaczenia. Powinieneś usłyszeć nazwę znaku, a potem informację, że jest zaznaczony.",
+            "Trzymaj Shift i naciskaj dalej strzałkę w prawo, aby zaznaczać kolejne znaki. Gdy skończysz, puść Shift."
+          ],
+          "expectedGestures": [
+            "kb:shift+rightArrow"
+          ],
+          "successMessage": "Zaznaczyłeś znak. NVDA odczytał go jako zaznaczony.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz spróbuj zaznaczyć całe słowo. Naciśnij Control+Shift+strzałka w prawo, aby od razu zaznaczyć następne słowo. NVDA odczyta zaznaczone słowo.",
+          "hint": "Przytrzymaj jednocześnie Control i Shift, a potem naciśnij strzałkę w prawo. Ta kombinacja zaznacza jedno słowo naraz.",
+          "hints": [
+            "Przytrzymaj jednocześnie Control i Shift, a potem naciśnij strzałkę w prawo. Control+Shift+strzałka w prawo zaznacza od razu całe słowo.",
+            "NVDA odczyta zaznaczone słowo. Możesz dalej naciskać Control+Shift+strzałka w prawo, aby zaznaczać kolejne słowa jedno po drugim.",
+            "Ta kombinacja, czyli Control+Shift+strzałka w prawo, jest jednym z najszybszych sposobów zaznaczania tekstu. Pozwala bardzo szybko zbudować zaznaczenie obejmujące kilka słów."
+          ],
+          "expectedGestures": [
+            "kb:control+shift+rightArrow"
+          ],
+          "successMessage": "Zaznaczyłeś całe słowo. Przytrzymanie Shift wraz z dowolnym klawiszem nawigacyjnym rozszerza zaznaczenie o taki zakres, jaki wykonuje dany ruch.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz przytrzymaj Shift i naciśnij strzałkę w dół, aby zaznaczyć cały bieżący wiersz oraz kolejny poniżej. NVDA odczyta zaznaczony blok.",
+          "hint": "Przytrzymaj Shift i naciśnij raz strzałkę w dół, aby rozszerzyć zaznaczenie o kolejny wiersz.",
+          "hints": [
+            "Przytrzymaj Shift i naciśnij raz strzałkę w dół. To rozszerzy zaznaczenie w dół o cały kolejny wiersz.",
+            "NVDA odczyta treść nowo zaznaczonego wiersza, gdy zostanie dodany do zaznaczenia.",
+            "Shift+strzałka w dół to najszybszy sposób zaznaczania całych wierszy. Każde kolejne naciśnięcie dodaje jeszcze jeden wiersz."
+          ],
+          "expectedGestures": [
+            "kb:shift+downArrow"
+          ],
+          "successMessage": "Zaznaczyłeś wiersz. Shift+strzałka w dół świetnie sprawdza się przy szybkim zaznaczaniu całych wierszy.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń."
+        },
+        {
+          "type": "info",
+          "instruction": "Aby usunąć zaznaczenie, naciśnij dowolną strzałkę bez Shift. Aby skopiować zaznaczenie, naciśnij Control+C. Aby wkleić je w innym miejscu, naciśnij Control+V. Control+A zaznacza od razu cały tekst w bieżącym dokumencie. To wszystko są polecenia systemu Windows. Zaznaczanie za pomocą Shift i strzałek działa tak samo w Wordzie, Notatniku, poczcie, formularzach internetowych i większości innych pól tekstowych. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciśnij dowolną strzałkę bez Shift, aby usunąć zaznaczenie. Control+C kopiuje zaznaczenie, a Control+V je wkleja. To polecenia Windows.",
+            "Control+A zaznacza cały tekst w bieżącym dokumencie albo polu tekstowym. To szybki sposób zaznaczenia wszystkiego.",
+            "Zaznaczanie za pomocą Shift i strzałek działa tak samo w Wordzie, Notatniku, poczcie, formularzach internetowych i większości innych pól tekstowych, niezależnie od tego, czy działa NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Po zaznaczeniu tekstu możesz poprosić NVDA, aby odczytał dokładnie to, co jest zaznaczone. To polecenie NVDA, więc działa tylko wtedy, gdy NVDA jest uruchomione. W układzie Desktop naciśnij NVDA + Shift + strzałka w górę. W układzie Laptop naciśnij NVDA+Shift+S. NVDA odczyta cały zaznaczony tekst. Warto wyrobić sobie taki nawyk: zaznacz tekst, a potem sprawdź zaznaczenie, zanim je skopiujesz albo zrobisz z nim cokolwiek innego. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i Shift, a potem naciśnij strzałkę w górę, aby usłyszeć bieżące zaznaczenie.",
+            "Układ Laptop: przytrzymaj NVDA i Shift, a potem naciśnij literę S, aby usłyszeć bieżące zaznaczenie.",
+            "Użyj tego polecenia NVDA przed naciśnięciem Control+C. Dzięki temu upewnisz się, że zaznaczone jest dokładnie to, co chcesz skopiować."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Świetnie. Lekcja o zaznaczaniu tekstu została ukończona. Następna i ostatnia lekcja w tym rozdziale to Poruszanie się po akapitach i stronach. Dowiesz się w niej, jak wykonywać większe skoki w długich dokumentach za pomocą Control + strzałka w górę i Control + strzałka w dół dla akapitów oraz Page Up i Page Down dla większych fragmentów. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Następna lekcja to Poruszanie się po akapitach i stronach. Nawigacja po akapitach i stronach wykorzystuje polecenia systemu Windows, które działają w większości edytorów tekstu i procesorów tekstu.",
+            "Podsumowanie zaznaczania: Shift+strzałka zaznacza o zakres odpowiadający ruchowi, Control+C kopiuje, Control+V wkleja. To polecenia Windows. NVDA + Shift + strzałka w górę albo NVDA+Shift+S odczytuje zaznaczenie. To polecenie NVDA.",
+            "Naciśnij Enter, aby przejść do lekcji o poruszaniu się po akapitach i stronach."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigate_paragraph_page",
+      "title": "Poruszanie się po akapitach i stronach",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy dokument zawiera wiele akapitów, poruszanie się wiersz po wierszu staje się zbyt wolne. Control + strzałka w dół przenosi kursor na początek następnego akapitu. Control + strzałka w górę wraca do poprzedniego akapitu. To polecenia systemu Windows, więc działają w Wordzie, Notatniku, programach pocztowych i większości aplikacji do edycji tekstu, niezależnie od tego, czy NVDA jest uruchomione. NVDA odczytuje tekst akapitu, na którym się zatrzymasz. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przytrzymaj klawisz Control w lewym dolnym rogu klawiatury i naciśnij strzałkę w dół, aby przejść do następnego akapitu. Control + strzałka w górę wraca do poprzedniego akapitu.",
+            "To polecenia Windows. Działają w Wordzie, Outlooku, Notatniku i większości innych aplikacji tekstowych nawet bez czytnika ekranu.",
+            "Nawigacja po akapitach jest szybsza niż czytanie wiersz po wierszu, gdy chcesz przeskanować długi dokument i dotrzeć do właściwego miejsca."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do tekstu ćwiczeniowego poniżej, a następnie naciśnij Control + strzałka w dół, aby przeskoczyć do następnego akapitu. NVDA odczyta pierwszy wiersz akapitu, na którym się zatrzymasz.",
+          "hint": "Przytrzymaj Control i naciśnij strzałkę w dół. Oba klawisze muszą być wciśnięte jednocześnie.",
+          "hints": [
+            "Przytrzymaj Control w lewym dolnym rogu klawiatury i jednocześnie naciśnij strzałkę w dół. Kursor przeskoczy na początek następnego akapitu.",
+            "NVDA odczyta tekst na początku akapitu, na którym się zatrzymasz. Naciskaj dalej Control + strzałka w dół, aby przechodzić przez kolejne akapity.",
+            "W niektórych programach Control + strzałka w dół może najpierw przejść na koniec bieżącego akapitu, a dopiero potem do następnego. To zachowanie może się nieco różnić między aplikacjami."
+          ],
+          "expectedGestures": [
+            "kb:control+downArrow"
+          ],
+          "successMessage": "Przeszedłeś do następnego akapitu. NVDA odczytał tekst z miejsca, na którym zatrzymał się kursor.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Akapit pierwszy: Zażółć gęślą jaźń. To znane polskie zdanie jest często używane do testowania klawiatur i czcionek, ponieważ zawiera polskie znaki diakrytyczne.\n\nAkapit drugi: Czytniki ekranu otwierają cyfrowy świat dla wszystkich. NVDA jest darmowy, otwartoźródłowy i dostępny dla każdej osoby, która go potrzebuje. Nauka pracy z czytnikiem ekranu wymaga ćwiczeń i cierpliwości.\n\nAkapit trzeci: Control + strzałka w dół przechodzi do następnego akapitu. Control + strzałka w górę wraca. To polecenia Windows działające w większości aplikacji tekstowych niezależnie od czytnika ekranu.\n\nAkapit czwarty: Page Up i Page Down wykonują większe skoki w dokumencie. Używaj ich wtedy, gdy akapit nie jest właściwą jednostką nawigacji, na przykład w długim artykule albo wielostronicowym dokumencie.\n\nAkapit piąty: To ostatni akapit w obszarze ćwiczeń. Dotarłeś do końca tekstu."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Control + strzałka w górę, aby wrócić do poprzedniego akapitu. NVDA go odczyta.",
+          "hint": "Przytrzymaj Control i naciśnij strzałkę w górę.",
+          "hints": [
+            "Przytrzymaj Control i naciśnij strzałkę w górę, aby wrócić na początek poprzedniego akapitu.",
+            "NVDA odczyta tekst akapitu, na którym się zatrzymasz. To wygodny sposób na ponowne odsłuchanie akapitu, który właśnie minąłeś.",
+            "Control + strzałka w górę i Control + strzałka w dół razem pozwalają bardzo szybko skanować długie dokumenty na poziomie akapitów."
+          ],
+          "expectedGestures": [
+            "kb:control+upArrow"
+          ],
+          "successMessage": "Wróciłeś do poprzedniego akapitu. Control + strzałka w górę i Control + strzałka w dół świetnie nadają się do szybkiego przeglądania długich dokumentów.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Akapit pierwszy: Zażółć gęślą jaźń. To znane polskie zdanie jest często używane do testowania klawiatur i czcionek, ponieważ zawiera polskie znaki diakrytyczne.\n\nAkapit drugi: Czytniki ekranu otwierają cyfrowy świat dla wszystkich. NVDA jest darmowy, otwartoźródłowy i dostępny dla każdej osoby, która go potrzebuje. Nauka pracy z czytnikiem ekranu wymaga ćwiczeń i cierpliwości.\n\nAkapit trzeci: Control + strzałka w dół przechodzi do następnego akapitu. Control + strzałka w górę wraca. To polecenia Windows działające w większości aplikacji tekstowych niezależnie od czytnika ekranu.\n\nAkapit czwarty: Page Up i Page Down wykonują większe skoki w dokumencie. Używaj ich wtedy, gdy akapit nie jest właściwą jednostką nawigacji, na przykład w długim artykule albo wielostronicowym dokumencie.\n\nAkapit piąty: To ostatni akapit w obszarze ćwiczeń. Dotarłeś do końca tekstu."
+        },
+        {
+          "type": "info",
+          "instruction": "Page Up i Page Down wykonują większe skoki, zwykle o mniej więcej jedną wysokość ekranu naraz. To polecenia systemu Windows działające w większości aplikacji. W edytorze tekstu Page Down zwykle przesuwa do przodu o około jedną stronę. W przeglądarce internetowej w trybie przeglądania przewija stronę o jeden ekran. W części programów Page Up i Page Down mogą także przesuwać sam kursor. Po każdym takim skoku NVDA odczytuje wiersz, na którym zatrzyma się kursor. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisze Page Up i Page Down zwykle znajdują się w grupie klawiszy nad strzałkami, obok Home i End.",
+            "To polecenia Windows. Działają w Wordzie, przeglądarkach, czytnikach PDF i większości innych aplikacji niezależnie od tego, czy NVDA jest uruchomione.",
+            "Page Up i Page Down najlepiej sprawdzają się w długich dokumentach albo na długich stronach internetowych, gdy chcesz poruszać się szybciej, ale nie od razu przechodzić na sam początek albo koniec."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij Page Down, aby przesunąć się do przodu o mniej więcej jedną wysokość ekranu. NVDA odczyta tekst z miejsca, na którym zatrzyma się kursor.",
+          "hint": "Klawisz Page Down zwykle znajduje się nad strzałkami, obok Home i End.",
+          "hints": [
+            "Klawisz Page Down znajduje się na większości klawiatur w grupie klawiszy nad strzałkami, obok Home, End i Page Up.",
+            "Po naciśnięciu Page Down NVDA odczyta wiersz, na którym zatrzymał się kursor. W krótkim tekście ćwiczeniowym może to oznaczać przeskok prawie na sam koniec.",
+            "W długim artykule internetowym albo wielostronicowym dokumencie Page Down jest znacznie szybszy niż wielokrotne naciskanie strzałki w dół."
+          ],
+          "expectedGestures": [
+            "kb:pageDown"
+          ],
+          "successMessage": "Nacisnąłeś Page Down. W dłuższych dokumentach klawisz ten przesuwa do przodu mniej więcej o jeden ekran naraz.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Akapit pierwszy: Zażółć gęślą jaźń. To znane polskie zdanie jest często używane do testowania klawiatur i czcionek, ponieważ zawiera polskie znaki diakrytyczne.\n\nAkapit drugi: Czytniki ekranu otwierają cyfrowy świat dla wszystkich. NVDA jest darmowy, otwartoźródłowy i dostępny dla każdej osoby, która go potrzebuje. Nauka pracy z czytnikiem ekranu wymaga ćwiczeń i cierpliwości.\n\nAkapit trzeci: Control + strzałka w dół przechodzi do następnego akapitu. Control + strzałka w górę wraca. To polecenia Windows działające w większości aplikacji tekstowych niezależnie od czytnika ekranu.\n\nAkapit czwarty: Page Up i Page Down wykonują większe skoki w dokumencie. Używaj ich wtedy, gdy akapit nie jest właściwą jednostką nawigacji, na przykład w długim artykule albo wielostronicowym dokumencie.\n\nAkapit piąty: To ostatni akapit w obszarze ćwiczeń. Dotarłeś do końca tekstu."
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Page Up, aby wrócić o mniej więcej jedną wysokość ekranu. NVDA odczyta wiersz, na którym się zatrzymasz.",
+          "hint": "Page Up znajduje się obok Page Down, zwykle nad strzałkami.",
+          "hints": [
+            "Klawisz Page Up znajduje się obok Page Down w grupie klawiszy nad strzałkami.",
+            "Po naciśnięciu Page Up NVDA odczyta wiersz, na którym zatrzymał się kursor.",
+            "Page Up i Page Down razem pozwalają wykonywać szybkie, duże skoki w dokumentach. Możesz łączyć je z Control+Home i Control+End, aby poruszać się po tekście z różną dokładnością."
+          ],
+          "expectedGestures": [
+            "kb:pageUp"
+          ],
+          "successMessage": "Nacisnąłeś Page Up. Page Up i Page Down razem pozwalają wykonywać duże skoki w długich dokumentach.",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "Akapit pierwszy: Zażółć gęślą jaźń. To znane polskie zdanie jest często używane do testowania klawiatur i czcionek, ponieważ zawiera polskie znaki diakrytyczne.\n\nAkapit drugi: Czytniki ekranu otwierają cyfrowy świat dla wszystkich. NVDA jest darmowy, otwartoźródłowy i dostępny dla każdej osoby, która go potrzebuje. Nauka pracy z czytnikiem ekranu wymaga ćwiczeń i cierpliwości.\n\nAkapit trzeci: Control + strzałka w dół przechodzi do następnego akapitu. Control + strzałka w górę wraca. To polecenia Windows działające w większości aplikacji tekstowych niezależnie od czytnika ekranu.\n\nAkapit czwarty: Page Up i Page Down wykonują większe skoki w dokumencie. Używaj ich wtedy, gdy akapit nie jest właściwą jednostką nawigacji, na przykład w długim artykule albo wielostronicowym dokumencie.\n\nAkapit piąty: To ostatni akapit w obszarze ćwiczeń. Dotarłeś do końca tekstu."
+        },
+        {
+          "type": "info",
+          "instruction": "Doskonała praca. Rozdział Czytanie i poruszanie się po tekście został ukończony. Umiesz już poruszać się po znakach, słowach, wierszach, akapitach i stronach, przechodzić do początku i końca dokumentu, używać polecenia czytaj wszystko, zaznaczać tekst z użyciem Shift i strzałek, sprawdzać zaznaczenie poleceniem NVDA + Shift + strzałka w górę albo NVDA+Shift+S oraz kopiować i wklejać za pomocą poleceń Windows. Te umiejętności przydadzą Ci się wszędzie tam, gdzie działa NVDA. Mała wskazówka: jeśli podczas ćwiczeń mowa NVDA jest za szybka albo za wolna, możesz dostosować prędkość mowy szybką zmianą ustawień syntezatora. To będzie omówione w rozdziale Dostosowywanie NVDA. Gdy będziesz gotów, naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji i rozpocząć następny rozdział: Tryb przeglądania i nawigacja po stronach internetowych. Naciśnij Enter, aby zakończyć.",
+          "hints": [
+            "Następny rozdział to Tryb przeglądania i nawigacja po stronach internetowych. Dowiesz się w nim, jak czytać strony internetowe i poruszać się po nich przy użyciu skrótów NVDA.",
+            "Jeśli prędkość mowy NVDA wydaje się zbyt szybka albo zbyt wolna, możesz ją zmienić w rozdziale Dostosowywanie NVDA za pomocą szybkiej zmiany ustawień syntezatora.",
+            "NVDA Coach zapisuje postępy. Gdy wrócisz do kursu, ukończone lekcje będą oznaczone, więc bez problemu wznowisz naukę od właściwego miejsca."
+          ]
+        }
+      ]
+    }
+  ]
+}

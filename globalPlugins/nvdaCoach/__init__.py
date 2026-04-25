@@ -40,7 +40,7 @@ config.conf.spec["nvdaCoach"] = {
 class NvdaCoachSettingsPanel(gui.settingsDialogs.SettingsPanel):
 	"""NVDA Coach settings panel — appears in NVDA Preferences > NVDA Coach."""
 
-	title = "NVDA Coach"
+	title = _("NVDA Coach")
 
 	def makeSettings(self, settingsSizer):
 		self._playSoundsCheckbox = wx.CheckBox(
@@ -293,6 +293,7 @@ def _generateCertificate():
 
 	# Translators: title of the completion certificate document
 	title_text = _("Certificate of Completion")
+	addon_name = _("NVDA Coach")
 	# Translators: opening line of certificate, followed by the student's name
 	certifies = _("This certifies that")
 	# Translators: line below student name on certificate
@@ -306,7 +307,7 @@ def _generateCertificate():
 <html lang="{lang}">
 <head>
   <meta charset="utf-8">
-  <title>{title} \u2014 NVDA Coach</title>
+  <title>{title} \u2014 {addon_name}</title>
   <style>
     body {{ font-family: Georgia, serif; background: #f5f0e8; margin: 0; padding: 40px; }}
     .certificate {{
@@ -332,7 +333,7 @@ def _generateCertificate():
     <p class="certifies">{certifies}</p>
     <p class="student-name">{name}</p>
     <p class="completed">{completed}</p>
-    <p class="program">NVDA Coach</p>
+    <p class="program">{addon_name}</p>
     <hr>
     <p class="date"><strong>{date_label}:</strong> {date_str}</p>
     {instructor_html}
@@ -346,6 +347,7 @@ def _generateCertificate():
 </html>""".format(
 		lang=lang,
 		title=title_text,
+		addon_name=addon_name,
 		certifies=certifies,
 		name=name,
 		completed=completed,
@@ -359,8 +361,8 @@ def _generateCertificate():
 
 	safe_name = "".join(
 		c for c in name if c.isalnum() or c in (" ", "-", "_")
-	).strip() or "Student"
-	filename = "NVDA Coach - {} certification of completion.html".format(safe_name)
+	).strip() or _("Student")
+	filename = _("NVDA Coach - {name} certificate of completion.html").format(name=safe_name)
 	downloads = os.path.join(os.path.expanduser("~"), "Downloads")
 	filepath = os.path.join(downloads, filename)
 	with open(filepath, "w", encoding="utf-8") as f:
@@ -383,7 +385,7 @@ class CoachWindow(wx.Frame):
 	def __init__(self, parent, plugin):
 		super().__init__(
 			parent,
-			title="NVDA Coach",
+			title=_("NVDA Coach"),
 			size=(820, 760),
 			style=wx.DEFAULT_FRAME_STYLE,
 		)
@@ -693,7 +695,7 @@ class CoachWindow(wx.Frame):
 		"""
 		bar = "\u25a0" * current + "\u25a1" * (total - current)
 		self._instructionText.SetValue(
-			f"Practice drill — {current} of {total} complete\n"
+			_("Practice drill — {current} of {total} complete").format(current=current, total=total) + "\n"
 			f"[{bar}]\n\n"
 			f"{message}"
 		)
@@ -1187,7 +1189,7 @@ class PracticeFrame(wx.Frame):
 	def __init__(self, parent, plugin):
 		super().__init__(
 			parent,
-			title="NVDA Coach — Practice Area",
+			title=_("NVDA Coach — Practice Area"),
 			size=(520, 480),
 			style=wx.DEFAULT_FRAME_STYLE,
 		)
@@ -1216,8 +1218,8 @@ class PracticeFrame(wx.Frame):
 		if lessonId not in self.SUPPORTED_LESSONS:
 			return
 		self._currentLessonId = lessonId
-		title = lessonTitle or "Practice Area"
-		self.SetTitle(f"NVDA Coach — Practice: {title}")
+		title = lessonTitle or _("Practice Area")
+		self.SetTitle(_("NVDA Coach — Practice: {title}").format(title=title))
 		self._rebuildContent(lessonId)
 		if not self.IsShown():
 			self.Show()
@@ -1295,9 +1297,9 @@ class PracticeFrame(wx.Frame):
 		fgs = wx.FlexGridSizer(rows=0, cols=2, hgap=10, vgap=6)
 		fgs.AddGrowableCol(1)
 		for labelText, fieldName in [
-			("First name:", "First name"),
-			("Last name:", "Last name"),
-			("Email address:", "Email address"),
+			(_("First name:"), _("First name")),
+			(_("Last name:"), _("Last name")),
+			(_("Email address:"), _("Email address")),
 		]:
 			fgs.Add(
 				wx.StaticText(self._scroll, label=labelText),
@@ -1308,13 +1310,13 @@ class PracticeFrame(wx.Frame):
 			fgs.Add(field, 0, wx.EXPAND)
 		self._scrollSizer.Add(fgs, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 12)
 
-		cb = wx.CheckBox(self._scroll, label="Subscribe to the NVDA Coach newsletter")
+		cb = wx.CheckBox(self._scroll, label=_("Subscribe to the NVDA Coach newsletter"))
 		self._scrollSizer.Add(cb, 0, wx.LEFT | wx.TOP, 12)
 
 		radioBox = wx.RadioBox(
 			self._scroll,
-			label="Preferred contact method",
-			choices=["Email", "Phone", "No preference"],
+			label=_("Preferred contact method"),
+			choices=[_("Email"), _("Phone"), _("No preference")],
 			majorDimension=3,
 			style=wx.RA_SPECIFY_COLS,
 		)
@@ -1322,18 +1324,18 @@ class PracticeFrame(wx.Frame):
 
 		choiceSizer = wx.BoxSizer(wx.HORIZONTAL)
 		choiceSizer.Add(
-			wx.StaticText(self._scroll, label="Country:"),
+			wx.StaticText(self._scroll, label=_("Country:")),
 			0, wx.ALIGN_CENTER_VERTICAL | wx.RIGHT, 6,
 		)
 		choiceSizer.Add(wx.Choice(
 			self._scroll,
-			choices=["United States", "Canada", "United Kingdom", "Australia", "Other"],
+			choices=[_("United States"), _("Canada"), _("United Kingdom"), _("Australia"), _("Other")],
 		))
 		self._scrollSizer.Add(choiceSizer, 0, wx.LEFT | wx.TOP, 12)
 
 		btnSizer = wx.BoxSizer(wx.HORIZONTAL)
-		submitBtn = wx.Button(self._scroll, label="Submit form")
-		cancelBtn = wx.Button(self._scroll, label="Cancel")
+		submitBtn = wx.Button(self._scroll, label=_("Submit form"))
+		cancelBtn = wx.Button(self._scroll, label=_("Cancel"))
 		btnSizer.Add(submitBtn, 0, wx.RIGHT, 8)
 		btnSizer.Add(cancelBtn)
 		self._scrollSizer.Add(btnSizer, 0, wx.LEFT | wx.TOP, 12)
@@ -1361,22 +1363,22 @@ class PracticeFrame(wx.Frame):
 		self._addSep()
 
 		self._scrollSizer.Add(
-			wx.StaticText(self._scroll, label="Checkboxes — press Space to toggle:"),
+			wx.StaticText(self._scroll, label=_("Checkboxes — press Space to toggle:")),
 			0, wx.LEFT | wx.TOP, 12,
 		)
-		cb1 = wx.CheckBox(self._scroll, label="Enable screen reader tips")
-		cb2 = wx.CheckBox(self._scroll, label="Show practice hints during lessons")
-		cb3 = wx.CheckBox(self._scroll, label="Open Coach window automatically on startup")
+		cb1 = wx.CheckBox(self._scroll, label=_("Enable screen reader tips"))
+		cb2 = wx.CheckBox(self._scroll, label=_("Show practice hints during lessons"))
+		cb3 = wx.CheckBox(self._scroll, label=_("Open Coach window automatically on startup"))
 		for cb in (cb1, cb2, cb3):
 			self._scrollSizer.Add(cb, 0, wx.LEFT | wx.TOP, 8)
 
 		self._scrollSizer.Add(
-			wx.StaticText(self._scroll, label="Buttons — press Enter to activate:"),
+			wx.StaticText(self._scroll, label=_("Buttons — press Enter to activate:")),
 			0, wx.LEFT | wx.TOP, 16,
 		)
-		playBtn = wx.Button(self._scroll, label="Play a beep sound")
-		greetBtn = wx.Button(self._scroll, label="Say hello")
-		tipBtn = wx.Button(self._scroll, label="Show keyboard tip")
+		playBtn = wx.Button(self._scroll, label=_("Play a beep sound"))
+		greetBtn = wx.Button(self._scroll, label=_("Say hello"))
+		tipBtn = wx.Button(self._scroll, label=_("Show keyboard tip"))
 		for btn in (playBtn, greetBtn, tipBtn):
 			self._scrollSizer.Add(btn, 0, wx.LEFT | wx.TOP, 8)
 		self._addTip()
@@ -1417,17 +1419,17 @@ class PracticeFrame(wx.Frame):
 
 		fgs = wx.FlexGridSizer(rows=0, cols=2, hgap=10, vgap=6)
 		fgs.AddGrowableCol(1)
-		fgs.Add(wx.StaticText(self._scroll, label="Username:"), 0, wx.ALIGN_CENTER_VERTICAL)
+		fgs.Add(wx.StaticText(self._scroll, label=_("Username:")), 0, wx.ALIGN_CENTER_VERTICAL)
 		userField = wx.TextCtrl(self._scroll)
-		userField.SetName("Username")
+		userField.SetName(_("Username"))
 		fgs.Add(userField, 0, wx.EXPAND)
-		fgs.Add(wx.StaticText(self._scroll, label="Password:"), 0, wx.ALIGN_CENTER_VERTICAL)
+		fgs.Add(wx.StaticText(self._scroll, label=_("Password:")), 0, wx.ALIGN_CENTER_VERTICAL)
 		passField = wx.TextCtrl(self._scroll, style=wx.TE_PASSWORD)
-		passField.SetName("Password")
+		passField.SetName(_("Password"))
 		fgs.Add(passField, 0, wx.EXPAND)
 		self._scrollSizer.Add(fgs, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 12)
 
-		rememberCb = wx.CheckBox(self._scroll, label="Remember me on this computer")
+		rememberCb = wx.CheckBox(self._scroll, label=_("Remember me on this computer"))
 		self._scrollSizer.Add(rememberCb, 0, wx.LEFT | wx.TOP, 12)
 
 		for label, msg in [
@@ -1503,7 +1505,7 @@ class LessonPickerDialog(wx.Dialog):
 				| wx.TR_SINGLE
 			),
 		)
-		root = self._tree.AddRoot("NVDA Coach")
+		root = self._tree.AddRoot(_("NVDA Coach"))
 
 		# ---- Introduction ------------------------------------------------
 		introItem = self._tree.AppendItem(root, _("Introduction / About NVDA Coach"))
@@ -1756,7 +1758,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		description=_("Show NVDA Coach window, or open the lesson picker"),
 		gesture="kb:NVDA+shift+c",
-		category="NVDA Coach",
+		category=_("NVDA Coach"),
 	)
 	def script_toggleCoach(self, gesture):
 		"""Show and focus the CoachWindow.
@@ -1975,7 +1977,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _closePracticeBrowserWindow(self):
 		"""Close any browser window whose title contains 'NVDA Coach Practice Page'."""
-		TITLE_PARTIAL = "NVDA Coach Practice Page"
+		TITLE_PARTIAL = _("NVDA Coach Practice Page")
 		try:
 			found = []
 
