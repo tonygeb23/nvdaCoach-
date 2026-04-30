@@ -1,5 +1,12 @@
 # NVDA Coach — Changelog
 
+## v1.5.4 (2026-04-29)
+
+### Compatibility
+- **NVDA 2026.1 compatibility confirmed:** NVDA Coach has been tested and verified to work correctly with NVDA 2026.1 (64-bit, Python 3.13). The `lastTestedNVDAVersion` declaration has been updated to 2026.1 so users on NVDA 2026.1 no longer see a compatibility warning in the Add-on Store. No code changes were required — NVDA Coach is pure Python with no compiled extensions.
+
+---
+
 ## v1.5.3 (2026-04-23)
 
 ### Bug Fixes
