@@ -30,6 +30,17 @@ See [CHANGELOG.md](CHANGELOG.md) for the full version history.
 
 ---
 
+## See It in Action — Demonstrations & Coverage
+
+Watch NVDA Coach in use and hear from independent reviewers in the blindness community:
+
+- **[NVDA Coach: From First Keystroke to Confidence — A Free Tool Changing How NVDA Is Learned](https://www.youtube.com/watch?v=hpbxCDttU5A)** — *Blind Abilities* with Jeff Thompson. Independent feature on how NVDA Coach is changing the way NVDA is taught and learned.
+- **[Bits & Bytes S2 Ep10: LocalSend and the NVDA Coach](https://www.youtube.com/watch?v=SR-sR0in_Dk)** — *The Knowledge Chest* podcast covering NVDA Coach alongside other accessible tech tools.
+- **[Demonstrating the NVDA Coach Add-on for the NVDA Screen Reader](https://www.youtube.com/watch?v=-JXX_u-RQB4)** — A hands-on walk-through from the developer showing exactly how a lesson runs from start to finish.
+- **[Can't find a teacher? Use the NVDA Coach](https://www.youtube.com/shorts/0KtsuOs2Lqg)** *(short)* — *Guidance for the Blind* — quick community recommendation for self-directed learners without access to an instructor.
+
+---
+
 ## What's Included — 45 Lessons Across Six Chapters
 
 ### Chapter 1: Getting Started with NVDA — 14 lessons
