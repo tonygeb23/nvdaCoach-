@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NVDA Coach 练习页</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1em 2em; line-height: 1.6; }
+h1 { border-bottom: 2px solid #333; }
+h2 { border-bottom: 1px solid #666; margin-top: 2em; }
+nav { background: #f0f0f0; padding: 0.75em 1em; border: 1px solid #ccc; margin-bottom: 1.5em; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5em; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #999; padding: 0.5em 0.75em; text-align: left; }
+th { background: #e0e0e0; }
+form { background: #f9f9f9; border: 1px solid #ccc; padding: 1em; }
+label { display: block; margin: 0.5em 0 0.25em; }
+input[type="text"], input[type="email"], select { width: 100%; max-width: 300px; padding: 0.3em; }
+.radio-group, .checkbox-group { margin: 0.5em 0; }
+button { margin-top: 0.75em; padding: 0.4em 1.2em; }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+
+<nav aria-label="站点导航">
+  <ul>
+    <li><a href="#about">关于本页</a></li>
+    <li><a href="#reading">阅读练习</a></li>
+    <li><a href="#links">链接</a></li>
+    <li><a href="#forms">表单</a></li>
+    <li><a href="#tables">表格</a></li>
+    <li><a href="#lists">列表</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h1>NVDA Coach 练习页</h1>
+
+<section id="about" aria-label="关于">
+  <h2>关于本页</h2>
+  <p>欢迎来到 NVDA Coach 练习页。本页专门用于练习屏幕阅读器导航，包含标题、链接、表单、表格和列表，也就是 NVDA Coach 中浏览模式课程需要练习的主要元素。</p>
+  <p>您可以在浏览模式中使用正在学习的键盘快捷键浏览此页。不需要用鼠标点击任何内容。这里的所有内容都用于练习，您可以自由探索。</p>
+
+  <h3>如何使用本页</h3>
+  <p>请直接按 NVDA Coach 课程正在讲解的导航键。例如，按 H 在标题之间移动，按 K 在链接之间移动，按 F 在表单控件之间移动。使用下光标逐行阅读，或使用全文朗读读完整页（台式机布局为 NVDA+下光标，笔记本布局为 NVDA+A）。</p>
+</section>
+
+<section id="reading" aria-label="文本阅读练习">
+  <h2>文本阅读练习</h2>
+  <p>本节包含较长段落，便于练习阅读和导航。NVDA 可以用全文朗读读出这些文本。台式机布局按 NVDA+下光标，笔记本布局按 NVDA+A。任何时候都可以按 Ctrl 停止朗读。</p>
+
+  <h3>屏幕阅读器的发展</h3>
+  <p>屏幕阅读器从 20 世纪 80 年代起逐步发展。早期屏幕阅读器只是把屏幕上显示的文本转换成合成语音。随着时间推移，它们变得更加复杂，能够解释图形、网页和复杂布局。</p>
+  <p>今天，NVDA、JAWS 和 VoiceOver 等屏幕阅读器已经可以较准确地阅读网页、电子表格、电子邮件和文档。NVDA 全称 NonVisual Desktop Access，最早发布于 2006 年。由于它免费且开放源代码，它已成为世界上使用最广泛的屏幕阅读器之一。</p>
+
+  <h3>为什么练习很重要</h3>
+  <p>学习屏幕阅读器需要时间和重复。键盘快捷键一开始可能不熟悉，但经过练习后会逐渐形成习惯。有经验的屏幕阅读器用户通常能高速浏览网页和文档，使用标题导航、路标导航和链接列表快速找到信息。</p>
+  <p>关键是每天练一点。一次专注一组命令，在真实场景中使用它们，并逐步提高速度和信心。NVDA Coach 的设计目的正是帮助您做到这一点。</p>
+</section>
+
+<section id="links" aria-label="链接练习">
+  <h2>链接练习</h2>
+  <p>本节包含几个链接，供您练习链接导航。按 K 跳到下一个链接，按 Shift+K 返回上一个链接，或按 Tab 在交互元素之间移动。</p>
+  <ul>
+    <li><a href="https://www.nvaccess.org">NV Access — 开发 NVDA 的组织</a></li>
+    <li><a href="https://www.nvaccess.org/get-help/">NVDA 帮助和支持</a></li>
+    <li><a href="https://github.com/nvaccess/nvda">GitHub 上的 NVDA 源代码</a></li>
+    <li><a href="https://webaim.org">WebAIM — 网页无障碍资源</a></li>
+    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+    <li><a href="https://webaim.org/techniques/keyboard/">键盘无障碍指南</a></li>
+  </ul>
+</section>
+
+<section id="forms" aria-label="表单练习">
+  <h2>表单练习</h2>
+  <p>本节包含一个示例表单。请练习使用 F、E 和 B 导航到表单控件。要在编辑框中输入，请先按回车键或 NVDA+空格进入焦点模式。</p>
+
+  <form aria-label="示例联系表单">
+    <h3>示例联系表单</h3>
+
+    <label for="fname">名字：</label>
+    <input type="text" id="fname" name="fname" placeholder="请输入名字">
+
+    <label for="lname">姓氏：</label>
+    <input type="text" id="lname" name="lname" placeholder="请输入姓氏">
+
+    <label for="email">电子邮件地址：</label>
+    <input type="email" id="email" name="email" placeholder="请输入电子邮件">
+
+    <label for="topic">主题：</label>
+    <select id="topic" name="topic">
+      <option value="">请选择主题</option>
+      <option value="general">一般问题</option>
+      <option value="technical">技术支持</option>
+      <option value="feedback">反馈</option>
+      <option value="other">其他</option>
+    </select>
+
+    <fieldset>
+      <legend>首选联系方式：</legend>
+      <div class="radio-group">
+        <input type="radio" id="contact_email" name="contact" value="email">
+        <label for="contact_email" style="display:inline;">电子邮件</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_phone" name="contact" value="phone">
+        <label for="contact_phone" style="display:inline;">电话</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_none" name="contact" value="none">
+        <label for="contact_none" style="display:inline;">无需后续联系</label>
+      </div>
+    </fieldset>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter" style="display:inline;">订阅 NVDA Coach 新闻邮件</label>
+    </div>
+
+    <button type="submit">提交表单</button>
+    <button type="reset">清空表单</button>
+  </form>
+</section>
+
+<section id="tables" aria-label="表格练习">
+  <h2>表格练习</h2>
+  <p>本节包含一个数据表。按 T 跳到表格。进入表格后，使用 Ctrl+Alt+光标键在单元格之间移动。移动时，NVDA 会读出行标题和列标题。</p>
+
+  <table>
+    <caption>NVDA 浏览模式导航键</caption>
+    <thead>
+      <tr>
+        <th scope="col">按键</th>
+        <th scope="col">作用</th>
+        <th scope="col">反向操作（Shift+按键）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H</td>
+        <td>下一个标题</td>
+        <td>上一个标题</td>
+      </tr>
+      <tr>
+        <td>1 到 6</td>
+        <td>下一个对应级别的标题</td>
+        <td>上一个对应级别的标题</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>下一个链接</td>
+        <td>上一个链接</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>下一个按钮</td>
+        <td>上一个按钮</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>下一个表单</td>
+        <td>上一个表单</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>下一个编辑框</td>
+        <td>上一个编辑框</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>下一个列表</td>
+        <td>上一个列表</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>下一个路标</td>
+        <td>上一个路标</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td>下一个表格</td>
+        <td>上一个表格</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="lists" aria-label="列表练习">
+  <h2>列表练习</h2>
+  <p>本节包含一个无序列表和一个有序列表。按 L 跳到下一个列表。进入列表后，按 I 在列表项之间移动。</p>
+
+  <h3>常用 NVDA 命令（无序列表）</h3>
+  <ul>
+    <li>NVDA+T — 读出当前窗口标题</li>
+    <li>NVDA+Tab — 读出当前焦点</li>
+    <li>NVDA+上光标 — 读出当前行</li>
+    <li>NVDA+下光标（台式机）/ NVDA+A（笔记本）— 从当前位置全文朗读</li>
+    <li>NVDA+F12 — 读出时间（快速按两次读出日期）</li>
+    <li>NVDA+1 — 切换输入帮助模式</li>
+    <li>NVDA+F7 — 打开元素列表</li>
+    <li>NVDA+空格 — 在浏览模式和焦点模式之间切换</li>
+    <li>Ctrl — 停止朗读</li>
+    <li>NVDA+N — 打开 NVDA 菜单</li>
+  </ul>
+
+  <h3>浏览新网页的步骤（有序列表）</h3>
+  <ol>
+    <li>按 NVDA+T 确认当前位于哪个页面。</li>
+    <li>按 H 扫描标题，快速了解页面结构。</li>
+    <li>按 D 跳到主要内容路标，跳过导航区域。</li>
+    <li>按下光标阅读页面内容。</li>
+    <li>需要时使用 K 查找并打开链接。</li>
+    <li>使用 F 和 E 填写页面中的表单。</li>
+    <li>如果需要查找特定内容，按 NVDA+F7 获取链接或标题的完整列表。</li>
+  </ol>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>NVDA Coach 练习页 — 为配合 NVDA Coach 插件使用而创建。本页仅用于键盘导航练习。</p>
+  <p>作者：<strong>Tony Gebhard</strong>，辅助技术讲师 &nbsp;|&nbsp;
+  <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a> &nbsp;|&nbsp;
+  <a href="https://github.com/tonygeb23/nvdaCoach-">github.com/tonygeb23/nvdaCoach-</a></p>
+</footer>
+
+</body>
+</html>
