@@ -11,7 +11,7 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "修饰键是指按住它的同时再按其他键，从而改变按键含义的键。Windows 中常用的四个修饰键是：Control（Ctrl）、Shift、Alt 和 Windows 键。它们单独按下通常不会执行操作，而是和其他键组合使用。知道这些键在键盘上的位置，和知道该用哪些命令一样重要。本课会带您找到它们。请按回车键继续。",
+          "instruction": "修饰键是按住它再按其他键、用于改变按键含义的键。Windows 中常用的四个修饰键是：Control（Ctrl）、Shift、Alt 和 Windows 键。它们单独按下通常不会执行操作，而是和其他键组合使用。知道这些键在键盘上的位置，和知道该用哪些命令一样重要。本课会带您找到它们。请按回车键继续。",
           "hints": [
             "使用修饰键时，要先按住修饰键，再按另一个键。如果先松开修饰键，或按键顺序不对，命令可能无法生效。",
             "多数键盘在左右两侧都有修饰键：左右 Ctrl、左右 Shift、左右 Alt。大多数命令使用任意一侧都可以。",
@@ -56,7 +56,7 @@
         },
         {
           "type": "info",
-          "instruction": "NVDA 键可以是 Insert 或 Caps Lock。多数键盘上，Insert 位于光标键上方的功能键区，靠近 Home、Delete、Page Up 和 Page Down。Caps Lock 位于键盘最左侧，在左 Shift 上方。两者可以同时作为 NVDA 键，NVDA 会同时接受它们。许多笔记本用户更喜欢 Caps Lock，因为 Insert 可能不太好按。您可以在 NVDA 设置的“键盘”类别中选择偏好的 NVDA 键。请按回车键完成本课。",
+          "instruction": "NVDA 键可以是 Insert 或 Caps Lock。多数键盘上，Insert 位于光标键上方的功能键区，靠近 Home、Delete、Page Up 和 Page Down。Caps Lock 位于键盘最左侧，在左 Shift 上方。两者可以同时作为 NVDA 键，NVDA 都会接受。许多笔记本用户更喜欢 Caps Lock，因为 Insert 可能不太好按。您可以在 NVDA 设置的“键盘”类别中选择偏好的 NVDA 键。请按回车键完成本课。",
           "hints": [
             "Insert 位于光标键上方的键区，靠近 Home、Delete、End、Page Up 和 Page Down。它本身不是修饰键，只是因为 NVDA 将它指定为 NVDA 键，才承担这个作用。",
             "Caps Lock 位于最左侧，就在 Shift 上方。把 Caps Lock 用作 NVDA 键后，它不再直接切换大写锁定。需要切换大写锁定时，请先按 NVDA+F2，再按 Caps Lock。",

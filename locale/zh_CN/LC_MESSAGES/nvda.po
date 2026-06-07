@@ -734,7 +734,7 @@ msgstr "NVDA Coach — 选择课程"
 
 #: globalPlugins/nvdaCoach/__init__.py:1486
 msgid "Browse lessons and resources below. Right arrow expands a section, Left arrow collapses it. Press Enter or the Open / Start button to activate the selected item. Press F4 for help, F5 for feedback, F6 to toggle sounds, F7 or the Profile button to set your name and instructor."
-msgstr "浏览下面的课程和资源。右光标可展开章节，左光标可折叠章节。按回车键或“打开当前项目”按钮即可打开当前项目。按 F4 获取帮助，按 F5 发送反馈，按 F6 打开或关闭声音，按 F7 或“个人资料”按钮设置您的姓名和指导老师。"
+msgstr "浏览下面的课程和资源。右光标可展开章节，左光标可折叠章节。按回车键或“打开当前项目”按钮即可打开。按 F4 获取帮助，按 F5 发送反馈，按 F6 打开或关闭声音，按 F7 或“个人资料”按钮设置您的姓名和指导老师。"
 
 #: globalPlugins/nvdaCoach/__init__.py:1509
 msgid "Introduction / About NVDA Coach"
@@ -770,7 +770,7 @@ msgstr "个人资料(&P)（F7）"
 
 #: globalPlugins/nvdaCoach/__init__.py:1552
 msgid "Set your name, instructor name, and training center. This information appears on your certificate of completion and personalizes lesson instructions throughout NVDA Coach. You can update your profile at any time."
-msgstr "设置您的姓名、指导老师姓名和培训中心。这些信息会显示在结业证书上，并用于个性化 NVDA Coach 中的课程说明。您可以随时更新个人资料。"
+msgstr "设置您的姓名、指导老师姓名和培训中心。这些信息会显示在结业证书上，并用于个性化课程说明。可随时更新个人资料。"
 
 #: globalPlugins/nvdaCoach/__init__.py:1576
 msgid "Please select an item first."
