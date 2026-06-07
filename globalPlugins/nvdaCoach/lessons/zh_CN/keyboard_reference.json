@@ -38,7 +38,7 @@
         },
         {
           "type": "info",
-          "instruction": "Alt 键紧挨着空格键的左右两侧。空格键是键盘底部中间那条又长又扁的键，也是键盘上最长的键。Alt 就在空格键两边。最常用的是左 Alt。Alt+Tab（Windows 命令）通常使用左 Alt。Alt+F4（Windows 命令）关闭窗口。有些程序会把右 Alt（某些键盘上也叫 AltGr）用于输入特殊字符，但在 NVDA 和 Windows 导航中，几乎总是使用左 Alt。请按回车键继续。",
+          "instruction": "Alt 键紧挨着空格键的左右两侧。空格键是键盘底部中间最长的键。Alt 就在空格键两边。最常用的是左 Alt。Alt+Tab（Windows 命令）通常使用左 Alt。Alt+F4（Windows 命令）关闭窗口。有些程序会把右 Alt（某些键盘上也叫 AltGr）用于输入特殊字符，但在 NVDA 和 Windows 导航中，几乎总是使用左 Alt。请按回车键继续。",
           "hints": [
             "Alt 就在空格键的左右两侧。空格键很好找，它是键盘上最长的键。",
             "Alt+Tab 和其他 Windows 导航命令通常使用左 Alt。右 Alt（AltGr）常用于某些语言中的特殊字符输入。",
