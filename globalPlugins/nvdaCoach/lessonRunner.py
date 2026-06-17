@@ -76,7 +76,7 @@ class LessonRunner:
 		# Lesson start sound.
 		_playSound("lesson_start.wav")
 
-		lessonTitle = self._lesson.get("title", "Lesson")
+		lessonTitle = self._lesson.get("title", _("Lesson"))
 
 		# One-time personalized greeting at the very first lesson of the session.
 		name = config.conf["nvdaCoach"].get("userName", "").strip()

@@ -1,0 +1,154 @@
+{
+  "id": "nvda_settings",
+  "title": "Dostosowywanie NVDA",
+  "description": "Dowiedz się, jak dopasować układ klawiatury, prędkość mowy i głos NVDA do własnych preferencji.",
+  "order": 6,
+  "lessons": [
+    {
+      "id": "keyboard_layout",
+      "title": "Zmiana układu klawiatury",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA obsługuje dwa układy klawiatury: Desktop i Laptop. Układ Desktop wykorzystuje w wielu poleceniach blok numeryczny po prawej stronie pełnowymiarowej klawiatury. Układ Laptop używa zamiast tego klawisza NVDA razem z literami, więc nie potrzebujesz bloku numerycznego. Większość komputerów stacjonarnych domyślnie używa układu Desktop. Większość laptopów używa układu Laptop. To ustawienie możesz w każdej chwili zmienić w ustawieniach NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop opiera się na bloku numerycznym po prawej stronie pełnowymiarowej klawiatury. Jeśli Twoja klawiatura nie ma bloku numerycznego, używaj układu Laptop.",
+            "Układ Laptop zastępuje polecenia z bloku numerycznego kombinacjami z klawiszem NVDA i literami. Dla większości użytkowników laptopów jest to wygodniejsze.",
+            "Między układami można przełączać się w dowolnym momencie bez ponownego uruchamiania NVDA. Zmiana zaczyna działać od razu po zapisaniu ustawień."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby otworzyć ustawienia NVDA, naciśnij NVDA+N, aby otworzyć menu NVDA. Następnie naciśnij O jak Opcje, a potem U jak Ustawienia. Usłyszysz, że otworzyło się okno Ustawienia NVDA. Pierwsza zaznaczona kategoria może być różna. Użyj klawisza Tab, aby przechodzić między obszarami okna, albo strzałek w górę i w dół na liście kategorii. Przejdź do kategorii Klawiatura, aby znaleźć ustawienie układu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+N to polecenie NVDA otwierające menu NVDA. Litera O przechodzi do pozycji Opcje, a U otwiera Ustawienia.",
+            "Po otwarciu okna Ustawienia będziesz na liście kategorii po lewej stronie. Użyj strzałki w górę i strzałki w dół, aby się po niej poruszać, albo naciśnij pierwszą literę nazwy kategorii, aby od razu do niej przejść.",
+            "Możesz użyć nawigacji po pierwszej literze: naciśnij K, aby przejść prosto do kategorii Klawiatura, albo M, aby przejść do kategorii Mowa."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "W kategorii Klawiatura znajdziesz listę rozwijaną „Układ klawiatury” z dwiema opcjami: Desktop i Laptop. Użyj strzałki w górę i strzałki w dół, aby wybrać układ pasujący do Twojego sposobu pracy. Następnie przejdź klawiszem Tab do przycisku OK i naciśnij Enter, aby zapisać zmianę. To dokładnie ta sama nawigacja klawiszem Tab, którą ćwiczyłeś w lekcji o przechodzeniu między kontrolkami. Nowy układ zaczyna działać od razu, bez restartu NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Po wejściu do kategorii Klawiatura naciśnij Tab, aby przejść do listy rozwijanej Układ klawiatury. Użyj strzałki w górę i w dół, aby wybrać Desktop albo Laptop.",
+            "Po wybraniu układu naciśnij Tab, aż dojdziesz do przycisku OK, a potem Enter, aby zapisać. To ta sama nawigacja Tabem, którą poznawałeś wcześniej w kursie.",
+            "Jeśli zamiast OK naciśniesz Escape, zmiany zostaną odrzucone, a układ pozostanie bez zmian."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Ważna uwaga dotycząca lekcji NVDA Coach: gdy skróty różnią się między układem Desktop a Laptop, instrukcje w tym kursie zawsze podają obie wersje. Jeśli przełączyłeś NVDA na układ Laptop, używaj kombinacji oznaczonych dla Laptopa. Jeżeli nie masz pewności, który układ jest aktywny, otwórz ustawienia NVDA i sprawdź kategorię Klawiatura. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "W całym NVDA Coach najpierw podawane są skróty dla układu Desktop, a potem wersje dla układu Laptop w nawiasie. Używaj tej wersji, która odpowiada Twojemu ustawieniu.",
+            "Jeśli jakieś polecenie nie działa, sprawdź ustawienie układu klawiatury. Naciśnięcie skrótu dla układu Desktop, gdy NVDA pracuje w układzie Laptop, nie da oczekiwanego efektu.",
+            "Nie masz pewności, którego układu używasz? Naciśnij NVDA+1, aby włączyć pomoc klawiatury, naciśnij klawisz z bloku numerycznego i posłuchaj, co powie NVDA. Potem ponownie naciśnij NVDA+1, aby wyłączyć pomoc klawiatury."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speech_settings",
+      "title": "Szybka zmiana ustawień syntezatora",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA zawiera bardzo wygodny system szybkiego sterowania mową nazywany szybką zmianą ustawień syntezatora. Dzięki niemu możesz regulować właściwości mowy, takie jak prędkość, wysokość, głośność, głos i wariant, bez otwierania żadnego okna ustawień. Pomyśl o tym jak o pokrętle, którym najpierw wybierasz parametr, a potem zwiększasz albo zmniejszasz jego wartość. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Szybka zmiana ustawień syntezatora pozwala regulować mowę w locie, w samym środku pracy, bez otwierania żadnych okien dialogowych.",
+            "Dostępne parametry obejmują: prędkość, wysokość, głośność, głos i wariant. Najpierw poruszasz się między nimi, a potem regulujesz wybrany parametr.",
+            "Pomyśl o tym jako o procesie dwuetapowym: najpierw wybierasz parametr, na przykład prędkość, a potem zwiększasz lub zmniejszasz jego wartość."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Szybka zmiana ustawień syntezatora obejmuje dwa rodzaje ruchu. Najpierw przemieszczasz się między parametrami, aby wskazać ten, który chcesz zmienić, na przykład przechodząc od prędkości do wysokości, a potem do głośności. Następnie, gdy już staniesz na wybranym parametrze, zwiększasz lub zmniejszasz jego wartość. To dwa osobne zestawy poleceń. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Krok pierwszy: przemieszczaj się między parametrami poleceniami w lewo i w prawo. Krok drugi: reguluj wartość poleceniami w górę i w dół. To dwa różne zestawy klawiszy.",
+            "Gdy przechodzisz do parametru, NVDA odczytuje jego nazwę, na przykład „Prędkość” albo „Wysokość”. Gdy regulujesz wartość, NVDA odczytuje także bieżącą wartość, na przykład „Prędkość 60”.",
+            "Najpierw musisz stanąć na właściwym parametrze. Jeśli naciskasz polecenie zwiększania albo zmniejszania i zmienia się nie to, co chcesz, najpierw przejdź w lewo albo w prawo do odpowiedniego parametru."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Wszystkie polecenia szybkiej zmiany ustawień syntezatora są poleceniami NVDA — wymagają klawisza NVDA i działają tylko wtedy, gdy NVDA jest uruchomione. Aby przejść do następnego parametru, naciśnij NVDA + Control + strzałka w prawo w układzie Desktop albo NVDA + Shift + Control + strzałka w prawo w układzie Laptop. Aby przejść do poprzedniego parametru, naciśnij NVDA + Control + strzałka w lewo w układzie Desktop albo NVDA + Shift + Control + strzałka w lewo w układzie Laptop. NVDA odczyta nazwę parametru, na którym się zatrzymasz, na przykład „Prędkość” albo „Wysokość”. Naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+control+rightArrow",
+            "kb:nvda+shift+control+rightArrow"
+          ],
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i Control, a potem naciśnij strzałkę w prawo, aby przejść do następnego parametru. Strzałka w lewo przechodzi do poprzedniego.",
+            "Układ Laptop: przytrzymaj NVDA+Shift+Control, a potem naciśnij strzałkę w prawo, aby przejść do następnego parametru, albo strzałkę w lewo, aby wrócić do poprzedniego.",
+            "NVDA odczytuje nazwę parametru po przejściu do niego, na przykład „Prędkość”, „Wysokość”, „Głośność”, „Głos” albo „Wariant”. Zatrzymaj się na tym, który chcesz zmienić."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy jesteś już na parametrze, który chcesz zmienić, naciśnij NVDA + Control + strzałka w górę w układzie Desktop albo NVDA + Shift + Control + strzałka w górę w układzie Laptop, aby zwiększyć wartość. Naciśnij NVDA + Control + strzałka w dół w układzie Desktop albo NVDA + Shift + Control + strzałka w dół w układzie Laptop, aby ją zmniejszyć. NVDA po każdej zmianie odczyta nową wartość. Na przykład, jeśli jesteś na parametrze Prędkość i naciśniesz polecenie zwiększania, usłyszysz coś w rodzaju „Prędkość 60”. Naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+control+upArrow",
+            "kb:nvda+shift+control+upArrow",
+            "kb:nvda+control+downArrow",
+            "kb:nvda+shift+control+downArrow"
+          ],
+          "hints": [
+            "Układ Desktop: przytrzymaj NVDA i Control, a potem naciśnij strzałkę w górę, aby zwiększyć wartość bieżącego parametru. Strzałka w dół ją zmniejsza.",
+            "Układ Laptop: przytrzymaj NVDA+Shift+Control, a potem naciśnij strzałkę w górę, aby zwiększyć wartość, albo strzałkę w dół, aby ją zmniejszyć.",
+            "Po każdej zmianie NVDA odczytuje nową wartość, na przykład „Prędkość 75”. Możesz naciskać ten sam skrót kilka razy z rzędu, aby dalej regulować parametr w tym samym kierunku."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeśli chcesz szybciej wprowadzać większe zmiany, użyj NVDA+Control+Page Up w układzie Desktop albo NVDA+Shift+Control+Page Up w układzie Laptop, aby zwiększać parametr większymi krokami. Aby zmniejszać go większymi krokami, użyj NVDA+Control+Page Down w układzie Desktop albo NVDA+Shift+Control+Page Down w układzie Laptop. To przydaje się, gdy chcesz wyraźnie zmienić ustawienie bez wielokrotnego naciskania tego samego skrótu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Układ Desktop: NVDA+Control+Page Up zwiększa wartość większym krokiem, a NVDA+Control+Page Down zmniejsza ją większym krokiem.",
+            "Układ Laptop: NVDA+Shift+Control+Page Up zwiększa wartość większym krokiem, a NVDA+Shift+Control+Page Down zmniejsza ją większym krokiem.",
+            "Klawisze Page Up i Page Down zwykle znajdują się w grupie klawiszy nad strzałkami, obok Home i End."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Naciśnij kilka razy NVDA + Control + strzałka w prawo w układzie Desktop albo NVDA + Shift + Control + strzałka w prawo w układzie Laptop, aby przejść kolejno przez dostępne parametry — usłyszysz Prędkość, Wysokość, Głośność, Głos i Wariant. Zatrzymaj się na parametrze Prędkość, a potem użyj poleceń zwiększania albo zmniejszania, aby go zmienić. Zwróć uwagę, że NVDA od razu mówi z nową prędkością. Naciśnij Enter, gdy będziesz gotów kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+control+rightArrow",
+            "kb:nvda+shift+control+rightArrow"
+          ],
+          "hints": [
+            "Naciśnij kilka razy polecenie przechodzenia w prawo, aby przejść przez wszystkie dostępne parametry. Usłyszysz kolejno Prędkość, Wysokość, Głośność, Głos i Wariant.",
+            "Zatrzymaj się, gdy usłyszysz „Prędkość”. Następnie naciśnij kilka razy polecenie zwiększania i zwróć uwagę, jak NVDA w czasie rzeczywistym zaczyna mówić szybciej.",
+            "Po ćwiczeniu zmniejsz prędkość z powrotem do wygodnego poziomu. NVDA odczytuje każdą nową wartość, więc możesz bardzo precyzyjnie ustawić to, co Ci odpowiada."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeśli potrzebujesz większej precyzji, możesz regulować ustawienia mowy bezpośrednio w oknie Ustawienia NVDA. Naciśnij NVDA+N, aby otworzyć menu NVDA, następnie O jak Opcje, a potem U jak Ustawienia. Otworzy się okno Ustawienia z listą kategorii po lewej stronie. Po kategoriach możesz poruszać się strzałką w górę i strzałką w dół albo nawigacją po pierwszej literze, naciskając pierwszą literę nazwy kategorii. Na przykład naciśnij M, aby od razu przejść do kategorii Mowa. Gdy znajdziesz się w kategorii Mowa, naciskaj Tab, aby przechodzić do suwaków i list rozwijanych dla prędkości, wysokości, głośności, intonacji, głosu i syntezatora. Shift+Tab przechodzi wstecz. Jeśli chcesz odświeżyć sobie nawigację klawiszem Tab, była ona omawiana w lekcji o przechodzeniu między kontrolkami. Zmiany wprowadzone tutaj są zapisywane po naciśnięciu OK albo Zastosuj. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Otwórz Ustawienia poleceniem NVDA+N, potem O jak Opcje i U jak Ustawienia. Następnie na liście kategorii naciśnij M, aby przejść bezpośrednio do kategorii Mowa.",
+            "W kategorii Mowa klawisz Tab przechodzi do kolejnych kontrolek: suwaka prędkości, suwaka wysokości, suwaka głośności, listy rozwijanej głosu i innych. Shift+Tab przechodzi w przeciwnym kierunku.",
+            "Suwaki w ustawieniach Mowy reagują na strzałkę w lewo i strzałkę w prawo. Gdy zmieniasz wartość suwaka, NVDA odczytuje bieżące ustawienie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Domyślnie NVDA zawiera syntezator eSpeak NG, który obsługuje wiele języków i głosów. Jeśli zainstalowałeś dodatkowe syntezatory, na przykład głosy Windows OneCore albo rozwiązania innych firm, możesz przełączać się między nimi w kategorii Mowa w liście rozwijanej Syntezator. Każdy syntezator może oferować inne głosy i inną jakość mowy. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "eSpeak NG jest instalowany razem z NVDA i działa bez połączenia z internetem. Głosy Windows OneCore korzystają z wbudowanych głosów systemu Microsoft i zwykle brzmią bardziej naturalnie.",
+            "Aby zmienić syntezator, otwórz ustawienia NVDA, przejdź do kategorii Mowa i znajdź listę rozwijaną Syntezator. Użyj strzałek, aby wybrać inny syntezator.",
+            "Po zmianie syntezatora lista rozwijana Głos zaktualizuje się i pokaże głosy dostępne dla nowego syntezatora. Warto wypróbować kilka, aby znaleźć ten, który najbardziej Ci odpowiada."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy znajdziesz ustawienia mowy, które Ci odpowiadają, NVDA zapisze je automatycznie po zamknięciu okna ustawień przyciskiem OK. Preferowana prędkość, głos i wysokość będą aktywne za każdym razem, gdy uruchomisz NVDA. Jeśli chcesz eksperymentować i móc wrócić do sprawdzonego zestawu, zanotuj swoje ustawienia przed zmianami albo skorzystaj z przycisku Przywróć ustawienia domyślne w kategorii Mowa. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "NVDA zapisuje wszystkie ustawienia mowy po naciśnięciu przycisku OK w oknie Ustawienia. Twoje preferencje zostaną przywrócone przy każdym uruchomieniu NVDA.",
+            "Przycisk Przywróć ustawienia domyślne w kategorii Mowa przywraca fabryczne wartości ustawień mowy. Użyj go, jeśli chcesz cofnąć eksperymenty.",
+            "Możesz łączyć szybką zmianę ustawień syntezatora do szybkich zmian w locie z kategorią Mowa w Ustawieniach NVDA do precyzyjnego strojenia. Obie metody zapisują Twoje preferencje."
+          ]
+        }
+      ],
+      "chapterComplete": true
+    }
+  ]
+}

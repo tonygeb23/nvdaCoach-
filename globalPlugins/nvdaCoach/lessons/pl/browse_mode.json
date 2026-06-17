@@ -1,0 +1,576 @@
+{
+  "id": "browse_mode",
+  "title": "Tryb przeglądania i nawigacja po stronach internetowych",
+  "description": "Naucz się poruszać po stronach internetowych i dokumentach HTML przy użyciu trybu przeglądania NVDA. Po rozpoczęciu lekcji automatycznie otworzy się ćwiczeniowa strona internetowa.",
+  "order": 4,
+  "practicePage": true,
+  "lessons": [
+    {
+      "id": "intro_browse_mode",
+      "title": "O trybie przeglądania",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Tryb przeglądania to sposób, w jaki NVDA pomaga Ci czytać strony internetowe. Widzący użytkownicy widzą układ strony na ekranie. NVDA tworzy tekstową wersję strony, po której można poruszać się za pomocą klawiszy strzałek i skrótów jednoliterowych, tak jak po dokumencie. Po naciśnięciu klawisza Enter strona internetowa z ćwiczeniami otworzy się w przeglądarce w osobnym oknie. Zostań tutaj i najpierw dokończ czytanie tych instrukcji. Okno NVDA Coach pozostanie na pierwszym planie, abyś mógł przeczytać następny krok. Gdy będziesz gotowy, naciśnij Alt+Tab, aby przejść do przeglądarki. Naciśnij Enter, aby otworzyć stronę ćwiczeń i kontynuować.",
+          "openPracticePageAfter": true,
+          "hints": [
+            "Tryb przeglądania tworzy wirtualną kopię strony internetowej w postaci dokumentu tekstowego. Klawisze strzałek poruszają się po nim jak po zwykłym dokumencie.",
+            "Skróty jednoliterowe, takie jak H dla nagłówka i K dla linku, działają tylko w trybie przeglądania, a nie w formularzach czy polach tekstowych, w których trzeba pisać.",
+            "NVDA automatycznie przełącza się w tryb przeglądania po otwarciu strony internetowej. Po aktywacji usłyszysz komunikat „tryb przeglądania”."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Strona ćwiczeń jest teraz otwarta w Twojej przeglądarce. Naciśnij Alt+Tab, aby się do niej przełączyć. Gdy już tam będziesz, naciśnij strzałkę w dół, aby rozpocząć czytanie strony. W dowolnym momencie naciśnij NVDA+Shift+C, aby wrócić tutaj i kontynuować lekcję. Naciśnij Enter, kiedy będziesz gotowy.",
+          "hints": [
+            "Naciśnij Alt+Tab, aby przejść do przeglądarki. Przytrzymaj Alt i naciśnij raz Tab, aby przejść do następnego otwartego okna.",
+            "Będąc w przeglądarce, po prostu naciśnij strzałkę w dół, aby rozpocząć czytanie strony linia po linii - dokładnie tak samo, jak czytasz dokument.",
+            "W dowolnym momencie naciśnij NVDA+Shift+C, aby powrócić do okna NVDA Coach i kontynuować lekcję."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij Alt+Tab, aby przejść do przeglądarki.",
+          "hint": "Przytrzymaj klawisz Alt i naciśnij Tab. To przełącza między otwartymi oknami. Zwolnij oba klawisze, gdy zostanie ogłoszona przeglądarka.",
+          "hints": [
+            "Przytrzymaj klawisz Alt — po lewej stronie spacji — i naciśnij raz klawisz Tab. Zwolnij oba klawisze, gdy usłyszysz komunikat przeglądarki.",
+            "Jeśli przejdziesz obok przeglądarki, przytrzymaj klawisz Alt i ponownie naciśnij klawisz Tab, aby kontynuować przeglądanie otwartych okien.",
+            "Gdy znajdziesz się w przeglądarce, NVDA powinna ogłosić tytuł strony i „tryb przeglądania”, aby poinformować Cię, że jesteś na stronie internetowej."
+          ],
+          "expectedGestures": [
+            "kb:alt+tab"
+          ],
+          "successMessage": "Zmieniłeś okna. Powinieneś teraz znajdować się w przeglądarce na stronie ćwiczeń.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Jesteś w przeglądarce. Naciśnij strzałkę w dół, aby rozpocząć czytanie strony linia po linii.",
+          "hint": "Wystarczy nacisnąć klawisz strzałki w dół. W trybie przeglądania NVDA czyta każdą linię w miarę przesuwania się w dół.",
+          "hints": [
+            "Naciśnij klawisz strzałki w dół — klawisz skierowany w dół w grupie strzałek. W trybie przeglądania porusza się po stronie wiersz po wierszu.",
+            "NVDA czyta każdą linię w miarę przesuwania się w dół, tak jak czyta się dokument. Zawartość strony przepływa z góry na dół.",
+            "Jeśli NVDA milczy, upewnij się, że masz fokus na oknie przeglądarki. Spróbuj nacisnąć NVDA+T, aby potwierdzić, które okno jest aktywne."
+          ],
+          "expectedGestures": [
+            "kb:downArrow"
+          ],
+          "successMessage": "Nawigujesz po stronie ćwiczeń w trybie przeglądania. Klawisze strzałek działają podobnie jak czytanie dokumentu tekstowego. Dobra robota.",
+          "allowExecution": true,
+          "feedbackDelay": 1000
+        }
+      ]
+    },
+    {
+      "id": "browse_headings",
+      "title": "Nawigacja po nagłówkach",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Strony internetowe mają strukturę nagłówków, podobnie jak rozdziały w książce. Widzący użytkownicy widzą nagłówki wizualnie – są większe lub pogrubione. NVDA ogłasza tekst nagłówka i jego poziom. W trybie przeglądania naciśnij literę H, aby przejść do następnego nagłówka. Shift+H powoduje powrót do poprzedniego nagłówka. Upewnij się, że jesteś w przeglądarce na stronie ćwiczeń. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciśnij samo H — samą literę H, bez klawisza modyfikującego. W trybie przeglądania pojedyncze litery są skrótami, a nie wpisywanym tekstem.",
+            "NVDA ogłasza tekst nagłówka i jego poziom, na przykład „nagłówek poziomu 2 Pierwsze kroki”. Poziom informuje, gdzie znajduje się w strukturze strony.",
+            "Shift+H powoduje powrót do poprzedniego nagłówka. Schemat naciśnięcia klawisza, aby przejść do przodu i Shift oraz tego klawisza, aby przejść do tyłu, dotyczy większości skrótów trybu przeglądania."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij H, aby przejść do następnego nagłówka na stronie.",
+          "hint": "Wystarczy nacisnąć samą literę H. W trybie przeglądania pojedyncze litery są skrótami nawigacyjnymi, a nie wpisywanymi znakami.",
+          "hints": [
+            "Naciśnij samo H — tylko klawisz z literą, bez modyfikatora. W trybie przeglądania klawisze liter przeskakują do elementów strony, a nie do wpisywania znaków.",
+            "NVDA ogłasza tekst nagłówka i numer jego poziomu. Poziom 1 to tytuł główny; poziom 2 to sekcja; poziom 3 to podsekcja.",
+            "Jeśli nic się nie dzieje, upewnij się, że jesteś w trybie przeglądania w przeglądarce. W razie potrzeby naciśnij NVDA+Shift+C, aby wrócić do okna NVDA Coach."
+          ],
+          "expectedGestures": [
+            "kb:h"
+          ],
+          "successMessage": "Przeskoczyłeś do następnego nagłówka. NVDA ogłosiło tekst nagłówka i jego poziom.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij ponownie H, aby przejść do następnego nagłówka.",
+          "hint": "Naciskaj literę H, aby przechodzić do przodu przez nagłówki na stronie.",
+          "hints": [
+            "Naciskaj literę H, aby przechodzić do przodu przez wszystkie nagłówki na stronie. Każde naciśnięcie przenosi do następnego.",
+            "Skanowanie nagłówków za pomocą litery H to najszybszy sposób na uzyskanie przeglądu struktury strony internetowej — jak czytanie spisu treści.",
+            "Jeśli NVDA powie „brak następnego nagłówka”, oznacza to, że dotarłeś do ostatniego nagłówka na stronie."
+          ],
+          "expectedGestures": [
+            "kb:h"
+          ],
+          "successMessage": "Dobrze. Możesz naciskać literę H, aby bardzo szybko przeszukać wszystkie nagłówki strony.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Shift+H, aby wrócić do poprzedniego nagłówka.",
+          "hint": "Przytrzymaj klawisz Shift i naciśnij H, aby przechodzić do tyłu przez nagłówki.",
+          "hints": [
+            "Przytrzymaj Shift i naciśnij H. To jest wsteczna wersja skrótu H — ten sam wzór dotyczy większości klawiszy nawigacyjnych w trybie przeglądania.",
+            "NVDA ogłosi nagłówek, do którego wrócisz, łącznie z jego poziomem i tekstem.",
+            "Shift+litera nawigacyjna zawsze przesuwają się do tyłu w trybie przeglądania. H i Shift+H umożliwiają skanowanie nagłówków dowolnej strony w dowolnym kierunku."
+          ],
+          "expectedGestures": [
+            "kb:shift+h"
+          ],
+          "successMessage": "Cofnąłeś się o jeden nagłówek. Shift+klawisz nawigacyjny zawsze przesuwają się do tyłu. H i Shift+H pozwalają przeskanować strukturę dowolnej strony w ciągu kilku sekund.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        }
+      ]
+    },
+    {
+      "id": "heading_levels",
+      "title": "Przechodzenie do nagłówków określonych poziomów",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Strony internetowe mają różną strukturę nagłówków — poziom 1 to tytuł główny, poziom 2 to główna sekcja, poziom 3 to podsekcja. Widzący użytkownicy mogą zobaczyć tę hierarchię po rozmiarze tekstu. W trybie przeglądania możesz nacisnąć cyfrę od 1 do 6, aby przejść bezpośrednio do nagłówka tego poziomu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciśnij 1, aby przejść do nagłówków poziomu 1, 2, aby przejść do poziomu 2 i tak dalej, aż do 6. Użyj wiersza liczbowego u góry klawiatury, a nie klawiatury numerycznej.",
+            "Shift+liczba przenosi do poprzedniego nagłówka tego poziomu — według tego samego schematu co inne klawisze trybu przeglądania.",
+            "Większość dobrze zorganizowanych stron ma jeden nagłówek poziomu 1 (tytuł główny) i kilka nagłówków poziomu 2 (główne sekcje). Nagłówki poziomu 3 stanowią ich podsekcje."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij 1, aby przejść do następnego nagłówka poziomu 1 na stronie.",
+          "hint": "Naciśnij cyfrę 1 z górnego rzędu klawiatury, a nie klawiaturę numeryczną.",
+          "hints": [
+            "Naciśnij cyfrę 1 z górnego rzędu klawiatury — wiersz nad klawiszami literowymi. Nie używaj klawiatury numerycznej.",
+            "NVDA ogłasza tekst nagłówka poziomu 1. Poziom 1 to zazwyczaj główny tytuł strony.",
+            "Jeśli NVDA powie „brak następnego nagłówka na poziomie 1”, oznacza to, że strona zawiera tylko jeden nagłówek poziomu 1 lub nie ma go wcale."
+          ],
+          "expectedGestures": [
+            "kb:1"
+          ],
+          "successMessage": "Przeskoczyłeś do nagłówka poziomu 1. Zwykle jest to główny tytuł strony.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij 2, aby przejść do następnego nagłówka poziomu 2.",
+          "hint": "Naciśnij cyfrę 2 na górze klawiatury.",
+          "hints": [
+            "Naciśnij cyfrę 2 z górnego rzędu klawiatury. Nagłówki poziomu 2 to główne sekcje strony.",
+            "NVDA ogłasza tekst nagłówka poziomu 2. Naciskaj 2, aby poruszać się po wszystkich nagłówkach poziomu 2.",
+            "Nagłówki poziomu 2 w witrynie z wiadomościami mogą być tytułami artykułów. Na stronie pomocy mogą to być nazwy tematów."
+          ],
+          "expectedGestures": [
+            "kb:2"
+          ],
+          "successMessage": "Przeskoczyłeś do nagłówka poziomu 2. To są główne nagłówki sekcji.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij 3, aby przejść do następnego nagłówka poziomu 3.",
+          "hint": "Naciśnij cyfrę 3 z górnego rzędu.",
+          "hints": [
+            "Naciśnij cyfrę 3 z górnego rzędu. Nagłówki poziomu 3 to podsekcje w sekcji poziomu 2.",
+            "NVDA ogłasza tekst nagłówka poziomu 3. Nagłówki poziomu 3 zapewniają bardziej szczegółową strukturę głównych sekcji.",
+            "Nawigacja na poziomie nagłówka jest jednym z najpotężniejszych narzędzi do szybkiego skanowania strony internetowej. Połącz H dla wszystkich nagłówków z liczbami dla określonych poziomów."
+          ],
+          "expectedGestures": [
+            "kb:3"
+          ],
+          "successMessage": "Przeskoczyłeś do nagłówka poziomu 3. Nawigacja na poziomie nagłówka jest jednym z najpotężniejszych narzędzi do szybkiego skanowania strony internetowej.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        }
+      ]
+    },
+    {
+      "id": "navigate_links",
+      "title": "Nawigacja po linkach",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Linki służą do przechodzenia między stronami internetowymi. Osoby widzące widzą je zwykle jako tekst podkreślony lub wyróżniony kolorem. W trybie przeglądania naciśnij K, aby przejść do następnego linku — NVDA ogłosi tekst linku, abyś wiedział, dokąd prowadzi. Shift+K przenosi do poprzedniego linku. Tab umożliwia też przechodzenie między linkami i innymi elementami interaktywnymi. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciśnij klawisz K, aby przejść do następnego linku. NVDA ogłosi tekst linku — informuje Cię on, dokąd prowadzi link, zanim za nim skorzystasz.",
+            "Shift+K przenosi do poprzedniego linku. Ten sam schemat przechodzenia do przodu i do tyłu działa tutaj tak samo jak przy nagłówkach.",
+            "Tab umożliwia również poruszanie się pomiędzy linkami i elementami interaktywnymi, ale pomija zwykły tekst. K porusza się tylko po linkach, podczas gdy Tab obejmuje także przyciski i pola formularzy."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij K, aby przejść do następnego linku na stronie.",
+          "hint": "Naciśnij samą literę K. NVDA ogłosi tekst linku.",
+          "hints": [
+            "Naciśnij samo K — tylko klawisz z literą bez modyfikatora. NVDA ogłasza tekst linku, dzięki czemu wiesz, dokąd prowadzi.",
+            "Tekst linku powinien jasno opisywać jego cel. Dobry tekst linku wskazuje miejsce docelowe, a niejasny tekst, taki jak „kliknij tutaj”, tego nie robi.",
+            "Aby otworzyć link, naciśnij klawisz Enter. Aby kontynuować skanowanie bez podążania za nim, po prostu naciśnij ponownie K, aby przejść do następnego linku."
+          ],
+          "expectedGestures": [
+            "kb:k"
+          ],
+          "successMessage": "Przeszedłeś do linku. NVDA ogłosiło tekst linku. Aby otworzyć link w trybie przeglądania, naciśnij klawisz Enter.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij ponownie K, aby przejść do następnego linku.",
+          "hint": "Naciskaj K, aby poruszać się po wszystkich linkach na stronie.",
+          "hints": [
+            "Naciśnij ponownie K, aby przejść do następnego linku. Naciskaj K, aby skanować wszystkie linki na stronie w odpowiedniej kolejności.",
+            "NVDA ogłasza tekst każdego linku po wejściu na niego. Dzięki temu możesz szybko przeszukać wszystkie opcje nawigacji na stronie.",
+            "Jeśli NVDA powie „brak następnego linku”, oznacza to, że dotarłeś do ostatniego linku na stronie."
+          ],
+          "expectedGestures": [
+            "kb:k"
+          ],
+          "successMessage": "Dobrze. Możesz bardzo szybko przeskanować wszystkie linki na stronie za pomocą K.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij Shift+K, aby wrócić do poprzedniego linku.",
+          "hint": "Przytrzymaj Shift i naciśnij K, aby przechodzić wstecz między linkami.",
+          "hints": [
+            "Przytrzymaj Shift i naciśnij K, aby przejść do tyłu. Działa to według tego samego schematu, co Shift+H dla nagłówków.",
+            "NVDA ogłosi tekst poprzedniego linku, gdy do niego wrócisz.",
+            "K i Shift+K razem pozwalają swobodnie skanować wszystkie linki na stronie w dowolnym kierunku."
+          ],
+          "expectedGestures": [
+            "kb:shift+k"
+          ],
+          "successMessage": "Cofnąłeś się o jeden link. K i Shift+K pozwalają szybko przeglądać wszystkie linki na stronie.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij Tab, aby przejść do kolejnego interaktywnego elementu na stronie.",
+          "hint": "Tab przenosi Cię pomiędzy linkami, przyciskami i polami formularzy. Odwiedza tylko elementy interaktywne, a nie zwykły tekst.",
+          "hints": [
+            "Tab przesuwa się pomiędzy wszystkimi elementami interaktywnymi — linkami, przyciskami i polami formularzy — pomijając zawartość zwykłego tekstu.",
+            "Tab jest przydatna, gdy chcesz poruszać się tylko po dostępnych częściach strony, bez czytania otaczającej ją zawartości.",
+            "Klawisz Tab znajduje się po lewej stronie klawiatury, nad Caps Lock. Naciśnij go samodzielnie — nie jest potrzebny żaden modyfikator."
+          ],
+          "expectedGestures": [
+            "kb:tab"
+          ],
+          "successMessage": "Tab przeniósł Cię do kolejnego interaktywnego elementu. Tab świetnie nadaje się do poruszania się między kontrolkami w formularzach i pozycjami menu.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        }
+      ]
+    },
+    {
+      "id": "navigate_forms",
+      "title": "Praca z formularzami",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Strony internetowe często zawierają formularze z polami tekstowymi, przyciskami i polami wyboru. Widzący użytkownicy widzą je na ekranie, a NVDA ogłasza typ pola, na którym się znajdziesz. W trybie przeglądania naciśnij klawisz F, aby przejść do następnego pola formularza. Naciśnij E, aby przejść do następnego pola edycji, czyli pola tekstowego, w którym możesz pisać. Naciśnij B, aby przejść do następnego przycisku. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "F przeskakuje do następnego pola formularza dowolnego typu. E przeskakuje tylko do pól tekstowych. B przeskakuje do przycisków. Wszystkie te skróty działają według tego samego schematu — Shift + litera przenosi do tyłu.",
+            "NVDA ogłasza typ i etykietę pola, kiedy się na nim znajdziesz — na przykład nazwę pola oraz informację „pole edycji” albo „przycisk”.",
+            "Aby wpisać tekst w polu edycyjnym, musisz najpierw przełączyć się w tryb formularza. NVDA często robi to automatycznie, ale możesz też nacisnąć Enter lub NVDA ze spacją, aby przełączyć ręcznie."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij klawisz F, aby przejść do następnego pola formularza na stronie.",
+          "hint": "Naciśnij samą literę F. Obejmuje to pola tekstowe, pola wyboru, przyciski opcji i nie tylko.",
+          "hints": [
+            "Naciśnij samo F — tylko literę. Spowoduje to przejście do następnego pola formularza dowolnego typu na stronie.",
+            "NVDA ogłasza typ pola — „edycja”, „pole wyboru”, „przycisk opcji”, „lista rozwijana” — abyś wiedział, jaki to rodzaj kontrolki.",
+            "Shift+F przenosi do poprzedniego pola formularza. Obowiązuje tutaj ten sam schemat przechodzenia do przodu i do tyłu."
+          ],
+          "expectedGestures": [
+            "kb:f"
+          ],
+          "successMessage": "Przeskoczyłeś do pola formularza. NVDA ogłosiło, jakiego rodzaju jest to pole.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij E, aby przejść do następnego pola wprowadzania tekstu.",
+          "hint": "Naciśnij literę E. Pola edycyjne to pola tekstowe, w których wpisujesz informacje.",
+          "hints": [
+            "Naciśnij klawisz E, aby przejść do następnego pola edycji — pola tekstowego, w którym możesz pisać.",
+            "NVDA ogłasza etykietę pola i słowa „pole edycji”, aby zidentyfikować je jako miejsce do wpisywania tekstu.",
+            "Aby pisać w polu edycji, naciśnij Enter, aby przejść do trybu formularza, wpisz tekst, a następnie naciśnij Escape, aby wrócić do trybu przeglądania."
+          ],
+          "expectedGestures": [
+            "kb:e"
+          ],
+          "successMessage": "Znalazłeś się w polu edycji. Aby zacząć pisać, naciśnij Enter albo NVDA+spacja, aby przejść do trybu formularza.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij B, aby przejść do następnego przycisku.",
+          "hint": "Naciśnij literę B. Przyciski to elementy sterujące, które aktywujesz klawiszem Enter lub spacją.",
+          "hints": [
+            "Naciśnij sam B, aby przejść do następnego przycisku na stronie.",
+            "NVDA ogłasza etykietę przycisku. Gdy fokus znajduje się na przycisku, możesz go aktywować klawiszem Enter albo spacją.",
+            "B to najszybszy sposób na znalezienie przycisków akcji — takich jak Prześlij, Wyszukaj lub Zaloguj się — na dowolnej stronie internetowej."
+          ],
+          "expectedGestures": [
+            "kb:b"
+          ],
+          "successMessage": "Znalazłeś przycisk. Przyciski aktywuje się poprzez naciśnięcie Enter lub Spacji. B to najszybszy sposób na znalezienie przycisków na dowolnej stronie.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        }
+      ]
+    },
+    {
+      "id": "focus_mode",
+      "title": "Tryb formularza a tryb przeglądania",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Tryb przeglądania pozwala czytać strony i poruszać się po nich. Gdy jednak chcesz coś wpisać w polu edycji, musisz przełączyć się do trybu formularza. Po włączeniu trybu formularza kursor zostaje umieszczony wewnątrz pola edycji i możesz od razu pisać. W trybie formularza naciskane klawisze trafiają bezpośrednio do aplikacji zamiast działać jako skróty nawigacyjne. NVDA często automatycznie przełącza się do trybu formularza, gdy klawiszem Tab wejdziesz do pola edycji. Możesz też przełączać tryby ręcznie skrótem NVDA+spacja. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Tryb przeglądania: klawisze literowe są skrótami nawigacyjnymi. Tryb formularza: klawisze literowe wpisują znaki do pola, a kursor znajduje się w polu edycji. NVDA+Space przełącza między tymi trybami.",
+            "NVDA zwykle przełącza się w tryb formularza automatycznie po wejściu w pole edycji. Usłyszysz komunikat „tryb formularza”, a kursor znajdzie się w polu edycji i będzie gotowy do pisania.",
+            "Jeśli próbujesz pisać, a litery skaczą po stronie zamiast pojawiać się w polu, oznacza to, że jesteś w trybie przeglądania. Naciśnij NVDA ze spacją, aby przejść do trybu formularza i umieść kursor w polu edycji."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij spację. NVDA ogłosi „tryb formularza” albo „tryb przeglądania”, informując, do którego trybu właśnie się przełączasz. W trybie formularza klawisze liter wprowadzają znaki do pola zamiast poruszać się po stronie. W trybie przeglądania litery są skrótami nawigacyjnymi. NVDA często przełącza tryb automatycznie po przejściu klawiszem Tab do pola edycji, ale znajomość ręcznego przełączania skrótem NVDA+spacja daje Ci pełną kontrolę w każdej chwili. Naciśnij tutaj Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+space"
+          ],
+          "hints": [
+            "Przytrzymaj klawisz NVDA — Insert lub Caps Lock — i naciśnij spację. Spacja to długi płaski klawisz znajdujący się na środku dolnej części klawiatury.",
+            "NVDA ogłosi „tryb formularza” lub „tryb przeglądania”, aby potwierdzić, na który tryb się przełączyłeś. Przełączaj w przód i w tył kilka razy, aby to poczuć.",
+            "Jeśli litery są wpisywane w oczekiwaniu na nawigację, naciśnij NVDA ze spacją, aby przejść do trybu przeglądania. Jeśli nawigacja odbywa się w czasie, gdy masz zamiar pisać, naciśnij NVDA ze spacją, aby przejść do trybu skupienia."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Naciśnij jeszcze raz NVDA+spacja, aby wrócić do drugiego trybu. Przytrzymaj klawisz NVDA i naciśnij spację, a potem posłuchaj, jak NVDA ogłasza nazwę trybu. Zapamiętanie tego jednego skrótu sprawi, że zawsze będziesz mieć kontrolę nad tym, jak zachowuje się klawiatura na dowolnej stronie internetowej. Naciśnij tutaj Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+space"
+          ],
+          "hints": [
+            "Przytrzymaj NVDA i naciśnij ponownie spację, aby przełączyć z powrotem. NVDA ogłasza nazwę trybu przy każdej zmianie.",
+            "Spacja to długi płaski klawisz znajdujący się na samym dole klawiatury. Przytrzymaj klawisz NVDA, a następnie stuknij Spację.",
+            "NVDA+Space to jeden z najważniejszych skrótów przeglądania stron internetowych. Gdy stanie się to odruchem, nigdy nie poczujesz, że utknąłeś w niewłaściwym trybie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landmarks_and_lists",
+      "title": "Punkty orientacyjne i listy",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Dobrze zaprojektowane strony internetowe wykorzystują punkty orientacyjne — nazwane regiony, takie jak nawigacja, główna treść i stopka. Widzący użytkownicy mogą zobaczyć te sekcje na pierwszy rzut oka. W trybie przeglądania naciśnij D, aby przejść do następnego punktu orientacyjnego i przejść bezpośrednio do potrzebnej części strony. Shift+D powoduje cofnięcie się. Na stronach znajdują się także listy elementów. Naciśnij L, aby przejść do następnej listy. Dzięki tym skrótom możesz przejść do prawej części strony bez konieczności czytania wszystkiego. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "D przeskakuje do następnego punktu orientacyjnego. Typowe punkty orientacyjne to: baner (nagłówek strony), nawigacja, główna (główna treść) i informacje o treści (stopka).",
+            "L przeskakuje do następnej listy na stronie. Będąc na liście, naciśnij I, aby przechodzić pomiędzy poszczególnymi elementami listy.",
+            "Użycie D do przejścia do głównego punktu orientacyjnego pozwala pominąć powtarzające się linki nawigacyjne u góry strony, co oszczędza dużo czasu podczas przeglądania stron."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij D, aby przejść do następnego punktu orientacyjnego na stronie.",
+          "hint": "Naciśnij literę D. NVDA ogłosi typ punktu orientacyjnego, taki jak nawigacja, strona główna lub informacja o zawartości.",
+          "hints": [
+            "Naciśnij samo D. NVDA ogłasza typ punktu orientacyjnego, na przykład że jest to punkt orientacyjny nawigacji albo treści głównej.",
+            "Główny punkt orientacyjny zawiera podstawową treść strony. Skok do niego za pomocą D powoduje pominięcie powtarzających się nagłówków i menu nawigacyjnych.",
+            "Shift+D powoduje powrót do poprzedniego punktu orientacyjnego."
+          ],
+          "expectedGestures": [
+            "kb:d"
+          ],
+          "successMessage": "Skoczyłeś do punktu orientacyjnego. Punkty orientacyjne pozwalają szybko dotrzeć do głównej treści i pominąć powtarzające się linki nawigacyjne.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Naciśnij ponownie D, aby przejść do następnego punktu orientacyjnego.",
+          "hint": "Naciskaj D, aby przeglądać wszystkie punkty orientacyjne na stronie.",
+          "hints": [
+            "Naciśnij ponownie D, aby przejść do następnego punktu orientacyjnego. Naciskaj, aby przełączać się między wszystkimi charakterystycznymi regionami na stronie.",
+            "NVDA ogłasza każdy typ punktu orientacyjnego, gdy się na nim znajdziesz.",
+            "Jeśli NVDA powie „brak następnego punktu orientacyjnego”, oznacza to, że na stronie albo nie ma więcej punktów orientacyjnych, albo nie jest ona dobrze zorganizowana z rolami ARIA."
+          ],
+          "expectedGestures": [
+            "kb:d"
+          ],
+          "successMessage": "Dobrze. Możesz naciskać D wielokrotnie, aby przechodzić pomiędzy wszystkimi głównymi sekcjami strony.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz naciśnij L, aby przejść do następnej listy na stronie.",
+          "hint": "Naciśnij literę L. Listy zawierają pogrupowane elementy, takie jak menu nawigacyjne, listy produktów lub wypunktowania.",
+          "hints": [
+            "Naciśnij sam L, aby przejść do następnej listy. Listy zawierają pogrupowane elementy — menu nawigacyjne, wypunktowania, listy produktów i inne.",
+            "Będąc na liście, naciśnij I, aby przechodzić pomiędzy poszczególnymi elementami listy pojedynczo.",
+            "NVDA ogłasza „listę zawierającą X elementów”, kiedy znajdziesz się na liście, dzięki czemu wiesz, ile elementów zawiera, zanim zaczniesz ją czytać."
+          ],
+          "expectedGestures": [
+            "kb:l"
+          ],
+          "successMessage": "Znalazłeś listę. Będąc na liście, naciśnij I, aby przechodzić pomiędzy elementami listy. L i D razem obejmują większość nawigacji strukturalnej potrzebnej na dowolnej stronie.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        }
+      ]
+    },
+    {
+      "id": "elements_list",
+      "title": "Lista elementów",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA posiada potężne okno dialogowe zwane Listą elementów, które pokazuje w jednym miejscu wszystkie nagłówki, linki, pola formularzy i punkty orientacyjne na bieżącej stronie. Możesz filtrować listę i przejść bezpośrednio do dowolnego elementu. Widzący użytkownicy mogą szybko przeskanować stronę wzrokiem i znaleźć to, czego potrzebują, a Lista elementów daje podobny przegląd w jednym dostępnym oknie dialogowym. To jak spis treści całej strony. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Lista elementów otwiera się z NVDA+F7. Pokazuje nagłówki, linki, pola formularzy lub punkty orientacyjne, w zależności od tego, na której karcie się znajdujesz.",
+            "Na liście elementów klawisz Tab pozwala przechodzić między przyciskami kategorii u góry. Klawisze strzałek służą do poruszania się po samej liście elementów. Enter przenosi do wybranej pozycji na stronie.",
+            "Lista elementów to jeden z najszybszych sposobów na znalezienie konkretnego linku albo nagłówka na długiej stronie bez czytania wszystkiego."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij F7. Otworzy się okno dialogowe Lista elementów, a NVDA to ogłosi. W oknie dialogowym naciskaj Tab, aby przełączać się między nagłówkami, linkami, polami formularzy i punktami orientacyjnymi z bieżącej strony. Użyj klawiszy strzałek, aby poruszać się po liście, i naciśnij Enter na wybranym elemencie, aby przejść bezpośrednio do niego na stronie. To jedno z najpotężniejszych narzędzi NVDA do szybkiego przeglądania strony. Po zakończeniu eksploracji naciśnij Escape, aby zamknąć okno dialogowe, a następnie naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+f7"
+          ],
+          "hints": [
+            "Przytrzymaj klawisz NVDA i naciśnij F7 — siódmy klawisz funkcyjny w górnym rzędzie. Natychmiast otworzy się okno dialogowe Lista elementów.",
+            "Wewnątrz okna dialogowego Tab umożliwia poruszanie się pomiędzy przyciskami kategorii: nagłówkami, linkami, polami formularzy, przyciskami i punktami orientacyjnymi. Klawisze strzałek umożliwiają następnie poruszanie się po elementach wybranej kategorii.",
+            "Wpisz kilka liter w polu filtru, aby zawęzić listę do elementów zawierających ten tekst. Jest to bardzo przydatne na stronach z wieloma linkami."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Dobra robota. Lista elementów to jeden z najszybszych sposobów uzyskania przeglądu dowolnej strony. Naciśnij Enter, aby przejść do następnej lekcji.",
+          "hints": [
+            "Skorzystaj z Listy elementów za każdym razem, gdy trafisz na nieznaną stronę i chcesz szybko poznać jej strukturę przed przeczytaniem.",
+            "Pole filtru na Liście elementów pozwala wpisać słowo, aby zawęzić listę - na przykład wpisz „kontakt”, aby znaleźć link do kontaktu na stronie.",
+            "Pamiętaj: NVDA+F7 otwiera listę elementów z dowolnej strony internetowej. Działa w większości przeglądarek, w tym Chrome, Firefox i Edge."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nvda_find",
+      "title": "Wyszukiwanie tekstu na stronie",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA+Ctrl+F otwiera okno dialogowe Znajdź NVDA, które umożliwia wyszukiwanie dowolnego tekstu na bieżącej stronie internetowej. Widzący użytkownicy mogą nacisnąć Ctrl+F w swojej przeglądarce, aby znaleźć tekst na ekranie. Okno dialogowe Znajdź NVDA działa w ten sam sposób, ale wynik ogłaszany jest za pomocą mowy. Działa w trybie przeglądania i w wielu dokumentach. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+Control+F otwiera własne okno dialogowe Znajdź NVDA. Przytrzymaj NVDA, przytrzymaj Control, a następnie naciśnij F.",
+            "Wpisz tekst, który chcesz znaleźć, a następnie naciśnij klawisz Enter. NVDA przeskakuje do pierwszego dopasowania i czyta otaczający go tekst.",
+            "NVDA+F3 znajduje następne dopasowanie po pierwszym. NVDA+Shift+F3 znajduje poprzednie dopasowanie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA, następnie przytrzymaj Control i naciśnij F. Otworzy się okno dialogowe Znajdź. Wpisz słowo, które pojawi się na stronie ćwiczeń — na przykład „nagłówek” lub „link” — a następnie naciśnij klawisz Enter, aby przejść do pierwszego dopasowania. NVDA ogłosi tekst wokół wyniku. Naciśnij Escape, aby zamknąć okno dialogowe bez wyszukiwania. Kiedy skończysz, naciśnij NVDA+Shift+C, aby tu wrócić, a następnie naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+control+f"
+          ],
+          "hints": [
+            "Przytrzymaj NVDA, przytrzymaj Control i naciśnij F — wszystkie trzy jednocześnie. Klawisz Control znajduje się w lewym dolnym rogu; F znajduje się w środkowym rzędzie liter.",
+            "Wpisz słowo, o którym wiesz, że znajduje się na stronie, a następnie naciśnij klawisz Enter. NVDA przeskakuje do pierwszego wystąpienia i czyta otaczający go tekst.",
+            "Jeśli nie zostanie znalezione żadne dopasowanie, NVDA wyświetli komunikat „nie znaleziono”. Wypróbuj inne wyszukiwane hasło lub sprawdź pisownię."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Możesz także znaleźć następne lub poprzednie wystąpienie bez ponownego otwierania okna dialogowego. Naciśnij NVDA+F3, aby znaleźć następny mecz, lub NVDA+Shift+F3, aby znaleźć poprzedni mecz. Działają one w taki sam sposób, jak Znajdź następny w innych aplikacjach. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+F3 znajduje następne dopasowanie. NVDA+Shift+F3 znajduje poprzednie dopasowanie. F3 to trzeci klawisz funkcyjny w górnym rzędzie.",
+            "Po otwarciu Znajdź i przeskoczeniu do pierwszego wyniku zamknij okno dialogowe za pomocą Escape i użyj NVDA+F3, aby przechodzić przez kolejne mecze.",
+            "Skrót ten działa w trybie przeglądania na stronach internetowych i w wielu przeglądarkach dokumentów — jest przydatny za każdym razem, gdy szukasz określonego słowa lub frazy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigate_tables",
+      "title": "Nawigacja po tabelach",
+      "order": 10,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Na stronach internetowych tabele są często używane do wyświetlania informacji uporządkowanych w wierszach i kolumnach, takich jak harmonogramy, ceny albo porównania. Widzący użytkownicy widzą układ siatki. Gdy kursor zatrzyma się na tabeli w trybie przeglądania, NVDA ogłosi na przykład „tabela z X wierszami i Y kolumnami”, dzięki czemu poznasz jej rozmiar. Ważne jest też zrozumienie rodzaju używanych poleceń: polecenia nawigacji po komórkach tabeli są poleceniami NVDA. Wymagają klawisza NVDA albo kombinacji przechwytywanej przez NVDA. Nie są to polecenia systemu Windows ani polecenia przeglądarki. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA ogłasza „tabela z X wierszami i Y kolumnami”, gdy wejdziesz do tabeli. Dzięki temu od razu wiesz, jak duża jest tabela, zanim zaczniesz się po niej poruszać.",
+            "Polecenia nawigacji po tabelach przedstawione w tej lekcji są poleceniami NVDA — działają tylko wtedy, gdy NVDA jest uruchomione i jesteś w trybie przeglądania na stronie internetowej.",
+            "Nie wszystkie tabele na stronach internetowych są tabelami danych. Na niektórych stronach do układu wizualnego wykorzystywane są tabele. NVDA nadal będzie je ogłaszać, ale mogą nie mieć znaczącej struktury wierszy i kolumn."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Do poruszania się pomiędzy komórkami w tabeli służą klawisze Control + Alt + strzałka — są to polecenia NVDA służące do nawigacji po tabelach. Ctrl + Alt + strzałka w prawo przechodzi do następnej komórki w tym samym wierszu. Ctrl + Alt + strzałka w lewo przenosi do poprzedniej komórki. Ctrl + Alt + strzałka w dół przenosi do komórki bezpośrednio poniżej w tej samej kolumnie. Ctrl + Alt + strzałka w górę przesuwa się do komórki znajdującej się bezpośrednio nad nią. W polskim układzie klawiatury często możesz użyć także prawego Alta razem ze strzałkami, ponieważ prawy Alt działa jak lewy Ctrl+Alt. Podczas ruchu NVDA ogłasza zawartość komórki oraz jej położenie w wierszach i kolumnach. Działa to w ten sam sposób, niezależnie od tego, czy używasz układu klawiatury komputera stacjonarnego, czy laptopa. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przytrzymaj jednocześnie klawisze Ctrl i Alt, a następnie naciśnij klawisz strzałki, aby poruszać się po komórkach tabeli. Prawo i lewo poruszają się po rzędzie. W dół i w górę poruszają się po kolumnie.",
+            "W polskim układzie klawiatury często zadziała też prawy Alt ze strzałkami, ponieważ prawy Alt działa jak lewy Ctrl+Alt.",
+            "NVDA ogłasza zawartość komórki oraz pozycję w wierszu i kolumnie — na przykład „wiersz 2, kolumna 3, cena: 49 dolarów”. Dzięki temu dowiesz się dokładnie, gdzie jesteś w tabeli."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Wypróbuj teraz na stronie ćwiczeń. Przejdź do tabeli za pomocą klawisza H albo strzałki w dół, aby znaleźć sekcję zatytułowaną Tabele. Gdy już znajdziesz się w tabeli, naciśnij Ctrl + Alt + strzałka w prawo, aby przejść do następnej komórki, a następnie Ctrl + Alt + strzałka w dół, aby przejść o jeden wiersz niżej. W polskim układzie klawiatury często możesz zamiast tego użyć także prawego Alta razem ze strzałkami. NVDA poinformuje o zawartości i położeniu komórki w trakcie ruchu. Gdy będziesz gotowy, aby kontynuować, naciśnij NVDA+Shift+C, aby wrócić tutaj i naciśnij Enter.",
+          "monitorGestures": [
+            "kb:control+alt+rightArrow",
+            "kb:control+alt+leftArrow",
+            "kb:control+alt+downArrow",
+            "kb:control+alt+upArrow"
+          ],
+          "hints": [
+            "Przytrzymaj jednocześnie klawisze Ctrl i Alt — obie lewą ręką — a następnie naciśnij strzałkę w prawo, aby przejść do następnej komórki w wierszu. W polskim układzie klawiatury często możesz zamiast tego użyć także prawego Alta ze strzałką.",
+            "Przytrzymaj klawisze Ctrl i Alt, a następnie naciśnij strzałkę w dół, aby przejść do komórki bezpośrednio poniżej w tej samej kolumnie. NVDA ogłasza numer wiersza i kolumny.",
+            "Jeśli tabela ma nagłówki, NVDA ogłasza etykietę nagłówka kolumny lub wiersza podczas przenoszenia — na przykład „Poniedziałek, kolumna 1” lub „Cena, wiersz 3”."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Przypomnienie o kategoriach poleceń: Control + Alt + strzałka do nawigacji po tabelach to polecenie NVDA. W polskim układzie klawiatury często zadziała też prawy Alt razem ze strzałkami, ponieważ prawy Alt działa jak lewy Ctrl+Alt. Zwykły klawisz Tab i klawisze strzałek to polecenia systemu Windows, które działają w dowolnym miejscu. H, K, D i inne jednoliterowe skróty to polecenia trybu przeglądania NVDA, które działają tylko w trybie przeglądania na stronach internetowych. Śledzenie, które polecenia należą do której kategorii, pomaga zrozumieć, dlaczego niektóre klawisze działają w niektórych miejscach, a w innych nie. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Polecenia NVDA wymagają, aby NVDA był uruchomiony i aktywny. Klawisze Tab i strzałki to polecenia systemu Windows — działają w dowolnej aplikacji.",
+            "Jednoliterowe skróty trybu przeglądania, takie jak H i K, działają tylko w trybie przeglądania. Jeśli nie działają, być może znajdujesz się w trybie skupienia — naciśnij NVDA i spację, aby to sprawdzić.",
+            "Control + Alt + strzałka dla tabel to polecenie NVDA, które aktywuje się tylko wewnątrz tabeli w trybie przeglądania. W polskim układzie to samo często zadziała także z prawym Altem i strzałką."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Dobra robota - ukończyłeś rozdział o trybie przeglądania i nawigacji po stronach internetowych. Teraz wiesz, jak poruszać się po stronach przy użyciu nagłówków, linków, pól formularzy, punktów orientacyjnych, list, Listy elementów, wyszukiwania NVDA, trybu formularza i nawigacji po tabelach. Te umiejętności pozwalają szybko i samodzielnie poruszać się po dowolnej stronie. Gdy będziesz gotowy, naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji i przejść do następnego rozdziału: Nawigacja po obiektach, gdzie nauczysz się docierać do elementów na ekranie, do których nie prowadzi klawisz Tab. Naciśnij Enter, aby zakończyć.",
+          "hints": [
+            "Następny rozdział to Nawigacja po obiektach. Uczy, jak dotrzeć do dowolnego elementu na ekranie — nawet elementów sterujących, do których nie można uzyskać dostępu w trybie Tab i przeglądania.",
+            "Skrócona instrukcja trybu przeglądania: H dla nagłówków, K dla linków, F dla pól formularzy, D dla punktów orientacyjnych, L dla list, Control + Alt + strzałka dla komórek tabeli. W polskim układzie klawiatury często możesz użyć tu także prawego Alta ze strzałką. W większości przypadków Shift z tym samym klawiszem cofa do poprzedniego elementu.",
+            "NVDA Coach automatycznie zapisuje Twoje postępy. Wszystkie ukończone lekcje są zaznaczane po powrocie."
+          ]
+        }
+      ]
+    }
+  ]
+}

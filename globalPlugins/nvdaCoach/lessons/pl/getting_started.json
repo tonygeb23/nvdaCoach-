@@ -1,0 +1,555 @@
+{
+  "id": "getting_started",
+  "title": "Pierwsze kroki z NVDA",
+  "description": "Poznaj podstawowe polecenia NVDA, których potrzebuje każda początkująca osoba. Każda lekcja to krótkie ćwiczenie trwające od jednej do trzech minut.",
+  "order": 1,
+  "lessons": [
+    {
+      "id": "command_categories",
+      "title": "Zrozumienie kategorii poleceń",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Witamy w NVDA Coach. Zanim przećwiczysz jakiekolwiek polecenia, warto zrozumieć coś, co większość dokumentacji przemilcza: kiedy naciskasz klawisz na klawiaturze, kto tak naprawdę wykonuje tę pracę? W systemie Windows istnieją trzy różne warstwy sterujące poleceniami klawiaturowymi, a wiedza, do której warstwy należy dane polecenie, pomoże Ci szybciej się uczyć i popełniać mniej błędów. Ta lekcja obejmuje wszystkie trzy. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Trzy warstwy to: sam system Windows, używana aplikacja i czytnik ekranu. Każdy obsługuje inne polecenia.",
+            "Polecenia systemu Windows działają tak samo w każdym programie. Polecenia aplikacji działają tylko w programie, do którego należą. Polecenia NVDA jedynie ogłaszają informacje — nigdy niczego nie zmieniają.",
+            "Podczas ćwiczeń w tym kursie spróbuj odgadnąć, do której kategorii należy każde nowe polecenie, zanim zostaniesz o tym poinformowany. Ten nawyk buduje szybszą intuicję."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pierwszą warstwą jest sam system Windows. Niektóre polecenia należą w całości do systemu operacyjnego. Wytnij, kopiuj i wklej — Control+X, Control+C i Control+V — to polecenia systemu Windows. Jeśli jakakolwiek aplikacja umożliwia wklejenie tekstu, to nie ona dokonuje wklejania; wysyła żądanie do systemu Windows, aby to zrobił. Otwieranie menu Start, przełączanie między oknami za pomocą Alt+Tab i zamykanie okna za pomocą Alt+F4 to także polecenia systemu Windows. Działają w ten sam sposób w każdym programie, ponieważ sam Windows jest odpowiedzialny. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Control+C i Control+V działają w każdym programie Windows, ponieważ obsługuje je system operacyjny, a nie sama aplikacja.",
+            "Alt+Tab przełącza pomiędzy otwartymi oknami. Alt+F4 zamyka bieżące okno. Obydwa są poleceniami systemu Windows, które działają wszędzie.",
+            "Polecenia systemu Windows to najbardziej uniwersalne umiejętności, jakich się nauczysz — opanuj je raz, a będą działać w każdym programie, którego będziesz używać."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Druga warstwa to aplikacja, z której korzystasz. Kiedy naciśniesz strzałkę w dół w edytorze tekstu, powiesz procesorowi tekstu, aby przesunął kursor do następnego wiersza. Aplikacja przesuwa kursor — czyli polecenie programu. Control+N w programie Microsoft Word otwiera nowy dokument — to jest polecenie programu Word, a nie systemu Windows. Czytnik ekranu nie ma nic wspólnego z przesuwaniem kursora. Po prostu czyta na głos, co aplikacja już zrobiła. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Strzałka w dół w edytorze tekstu przesuwa kursor — aplikacja wykonuje pracę, a NVDA jedynie czyta na głos, co się stało.",
+            "Ten sam klawisz może oznaczać różne rzeczy w różnych aplikacjach. Control+N otwiera nowy dokument w programie Word, ale nową kartę w przeglądarce — ponieważ każda aplikacja definiuje własne polecenia.",
+            "Kiedy coś nie działa zgodnie z oczekiwaniami, pamiętaj: NVDA czyta tylko to, co pokazuje aplikacja. Jeśli aplikacja działa nieprawidłowo, jest to problem aplikacji, a nie NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Trzecia warstwa to czytnik ekranu. Polecenia NVDA są unikalne: nie podejmują żadnej akcji w aplikacji. Tylko informują. Po naciśnięciu NVDA+T w dokumencie nic się nie zmienia. Pasek tytułowy nie porusza się, nie otwiera się żadne okno dialogowe, nic nie jest aktywowane. NVDA po prostu ogłasza to, co już jest dostępne — ponieważ widzący użytkownicy mogą w każdej chwili spojrzeć na pasek tytułu, a Ty potrzebujesz sposobu, aby to usłyszeć. To rozróżnienie — nie podejmuj żadnych działań, tylko informuj — jest sercem tego, co odróżnia polecenia czytnika ekranu od wszystkich innych. Pracując z NVDA Coach, zaczniesz rozpoznawać, do której warstwy należy każde polecenie, bez konieczności bycia informowanym o tym. Naciśnij Enter, aby rozpocząć pierwszą lekcję.",
+          "hints": [
+            "Polecenia NVDA zawsze zaczynają się od klawisza modyfikującego NVDA — zwykle Insert lub Caps Lock — i nigdy nie zmieniają niczego na ekranie. Mówią tylko informacje.",
+            "Jeśli naciśniesz NVDA+T i nic na ekranie się nie zmieni, jest to prawidłowe zachowanie. NVDA odczyta pasek tytułu, nie zmieniając niczego.",
+            "Pomyśl o poleceniach NVDA jak o pytaniach. NVDA+T pyta: „Jaki jest tytuł tego okna?” NVDA odpowiada w mowie i nic się nie zmienia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nvda_key",
+      "title": "Poznaj klawisz NVDA",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Witamy w NVDA Coach! Jeśli masz teraz przy sobie instruktora technologii wspomagających, jest to świetny moment, aby poinformować go, że zaczynasz. Może usiąść obok Ciebie, pomóc Ci znaleźć klawisze i odpowiedzieć na pytania. Jeśli pracujesz samodzielnie, to żaden problem. NVDA Coach został zaprojektowany tak, aby prowadzić Cię krok po kroku. Jeśli kiedykolwiek utkniesz, naciśnij F2, aby uzyskać podpowiedź, F1, aby ponownie usłyszeć instrukcję, lub F3, aby pominąć krok i wrócić do niego później. W tej pierwszej lekcji poznasz klawisz modyfikujący NVDA. Jest to specjalny klawisz, który trzymasz podczas naciskania innych klawiszy, aby wysyłać polecenia do NVDA. Na większości klawiatur jest to klawisz Insert. Na wielu laptopach jest to Caps Lock. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Na większości klawiatur stacjonarnych klawisz NVDA to klawisz Insert. Znajduje się w grupie klawiszy nad klawiszami strzałek, w pobliżu Home, Delete i Page Up.",
+            "Na wielu laptopach Caps Lock służy jako klawisz NVDA. Znajduje się po lewej stronie klawiatury, tuż nad lewym klawiszem Shift.",
+            "Możesz używać zarówno Insert, jak i Caps Lock jako klawiszy NVDA w tym samym czasie. NVDA akceptuje jedno i drugie, więc nigdy nie musisz wybierać pomiędzy nimi."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA+N otwiera menu NVDA — centrum wszystkich ustawień i funkcji NVDA. Osoby widzące mogą kliknąć menu myszą; NVDA+N jest Twoim odpowiednikiem. Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij literę N. Powinieneś usłyszeć, jak NVDA otwiera menu i zaczyna ogłaszać takie elementy, jak Opcje, Narzędzia i Pomoc. Gdy usłyszysz otwarcie menu, naciśnij Escape, aby je zamknąć i wróć tutaj, a następnie naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+n"
+          ],
+          "hints": [
+            "Przytrzymaj najpierw klawisz Insert lub Caps Lock, przytrzymaj go, a następnie naciśnij literę N. Obydwa klawisze należy nacisnąć jednocześnie, a nie jeden po drugim.",
+            "Jeśli menu nie otworzy się, spróbuj ponownie. Upewnij się, że trzymasz klawisz NVDA przed naciśnięciem N. Częstym błędem jest zbyt wczesne zwolnienie klawisza NVDA.",
+            "Po otwarciu menu naciśnij Escape, aby je zamknąć i wrócić do miejsca, w którym byłeś. Escape anuluje menu i okna dialogowe w całym systemie Windows."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Dobra robota! Teraz wiesz jak otwierać i zamykać menu NVDA. NVDA+N otwiera menu - jest to główne miejsce dostępu do ustawień, narzędzi i pomocy NVDA. Klawisz Escape zamyka menu i anuluje akcje, a będziesz go stale używać. Te dwa skróty razem dają pełny dostęp do wszystkiego, co może zrobić NVDA. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "NVDA+N to Twój główny skrót do wszystkiego, co może zrobić NVDA — ustawień, narzędzi, pomocy i nie tylko. Warto uczynić z tego swój pierwszy nawyk.",
+            "Klawisz Escape zamyka menu i anuluje okna dialogowe bez podejmowania jakiejkolwiek akcji. Nigdy nie wyrządzi krzywdy — w razie wątpliwości naciśnij Escape.",
+            "Poćwicz jeszcze kilka razy samodzielne otwieranie i zamykanie menu NVDA. Pamięć mięśniowa będzie się szybko budować."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "title_bar",
+      "title": "Odczytywanie paska tytułu",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Każde okno ma u góry pasek tytułu, który informuje, w jakim programie się znajdujesz. Użytkownicy widzący mogą w dowolnym momencie zerknąć na pasek tytułu. NVDA+T wypowiada na głos pasek tytułu — odpowiednik tego spojrzenia. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Pasek tytułowy to pasek znajdujący się na samej górze każdego okna. Zwykle pokazuje nazwę programu, a czasami bieżący tytuł dokumentu lub strony.",
+            "NVDA+T to polecenie szybkiej orientacji. Użyj go, gdy nie jesteś pewien, który program jest aktualnie aktywny.",
+            "Szybkie dwukrotne naciśnięcie NVDA+T powoduje przeliterowanie paska tytułu znak po znaku — przydatne, gdy tytuł zawiera skrót, którego nie rozpoznajesz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij literę T. Powinieneś usłyszeć, jak NVDA czyta pasek tytułu bieżącego okna — coś w rodzaju nazwy programu, w którym właśnie się znajdujesz. Jeśli nie jesteś pewien, jakiego programu szukasz, NVDA+T natychmiast Cię o tym poinformuje. Jest to jedno z najbardziej przydatnych poleceń, jakich kiedykolwiek się nauczysz. Naciśnij tutaj Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+t"
+          ],
+          "hints": [
+            "Przytrzymaj klawisz NVDA — Insert lub Caps Lock — i naciśnij literę T. Klawisz T znajduje się w środkowym rzędzie liter, pomiędzy R i Y.",
+            "Jeśli NVDA czyta coś w stylu „NVDA Coach — okno lekcji”, to jest to poprawne. Czyta tytuł aktualnie aktywnego okna.",
+            "Naciśnij szybko dwa razy NVDA+T, aby NVDA przeliterował tytułowy znak po znaku. Jest to przydatne, gdy tytuł jest nieznanym słowem lub skrótem."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Powtórzmy to jeszcze raz, aby wyrobić w sobie nawyk. Przytrzymaj klawisz NVDA i naciśnij ponownie T. Posłuchaj, jak NVDA czyta na głos pasek tytułu. Powtarzanie sprawia, że ​​polecenia klawiaturowe stają się automatyczne — im więcej ćwiczysz, tym szybciej każde polecenie staje się drugą naturą. Naciśnij klawisz Enter, gdy będziesz gotowy, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+t"
+          ],
+          "hints": [
+            "Tym razem spróbuj najpierw przełączyć się do innego otwartego okna, naciskając klawisze Alt+Tab, a następnie naciśnij NVDA+T, aby usłyszeć tytuł tego okna.",
+            "NVDA+T jest szczególnie przydatny po przełączeniu okien za pomocą Alt+Tab, ponieważ nie zawsze można ze słuchu rozpoznać, w którym programie właśnie się znalazłeś.",
+            "Przytrzymaj NVDA, naciśnij T, a następnie zwolnij oba. Powinieneś natychmiast usłyszeć tytuł."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "read_time",
+      "title": "Odczytywanie godziny",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Widzący użytkownicy mogą zerknąć na zegar w rogu ekranu. NVDA+F12 mówi aktualny czas bez konieczności nawigacji w dowolnym miejscu. NVDA może podać aktualny czas i datę, nie przerywając czynności, którą aktualnie wykonujesz. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "F12 to ostatni klawisz funkcyjny na górze klawiatury, na prawym końcu wiersza oznaczonego od F1 do F12.",
+            "Dwukrotne naciśnięcie NVDA+F12 powoduje szybkie odczytanie bieżącej daty zamiast godziny — wygodny sposób sprawdzenia obu bez otwierania żadnego programu.",
+            "Klawisze funkcyjne znajdują się na samej górze klawiatury. F12 znajduje się na prawym końcu tego rzędu, często obok klawisza Print Screen lub Scroll Lock."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij F12 — ostatni klawisz funkcyjny na górze klawiatury, zwykle po prawej stronie. Powinieneś usłyszeć, jak NVDA ogłasza aktualny czas. Szybka wskazówka: jeśli naciśniesz NVDA+F12 dwa razy z rzędu, NVDA odczyta datę zamiast godziny. Jeśli chcesz, wypróbuj oba rozwiązania, a następnie naciśnij tutaj klawisz Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+f12"
+          ],
+          "hints": [
+            "F12 to ostatni klawisz w rzędzie klawiszy funkcyjnych u góry klawiatury. Przytrzymaj klawisz NVDA i naciśnij F12.",
+            "Jeśli nie jesteś pewien, czy nacisnąłeś właściwy klawisz, skorzystaj z pomocy klawiatury: naciśnij NVDA+1, aby go włączyć, naciśnij klawisz, który chcesz przetestować, wysłuchaj opisu, a następnie naciśnij ponownie NVDA+1, aby go wyłączyć.",
+            "Naciśnij dwukrotnie NVDA+F12, aby usłyszeć pełną datę. Pierwsze naciśnięcie podaje czas; drugie szybkie naciśnięcie podaje datę."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stop_speech",
+      "title": "Zatrzymywanie mowy NVDA",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Czasami NVDA mówi za dużo lub chcesz, żeby skończyło się w połowie zdania. Sam klawisz Control natychmiast wycisza mowę. Nazywa się to zatrzymywaniem mowy i działa również w Narratorze, JAWS i VoiceOver — jest to uniwersalna konwencja czytnika ekranu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisz Control znajduje się w lewym dolnym rogu klawiatury. Większość klawiatur ma także drugi klawisz Control w prawym dolnym rogu. Każdy z nich ucisza NVDA.",
+            "Pojedyncze naciśnięcie klawisza Control natychmiast zatrzymuje mowę NVDA. Nie musisz go przytrzymywać ani łączyć z żadnym innym klawiszem.",
+            "Control całkowicie zatrzymuje mowę i nie można jej wznowić. Shift wstrzymuje mowę i po ponownym naciśnięciu wznawia ją od miejsca przerwania."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Istnieje też druga możliwość: klawisz Shift. Naciśnięcie Shift wstrzymuje mowę NVDA w połowie zdania. Naciśnij Shift ponownie, a NVDA wznowi czytanie od miejsca, w którym zostało przerwane. Takie wstrzymywanie i wznawianie jest charakterystyczne dla NVDA. Przydaje się na przykład wtedy, gdy musisz na chwilę zatrzymać odczyt, aby spisać numer telefonu. Control zatrzymuje mowę całkowicie, a Shift ją wstrzymuje i wznawia. Warto poznać oba zachowania. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisz Shift to szeroki klawisz tuż nad klawiszem Control po obu stronach klawiatury. Pojedyncze naciśnięcie wstrzymuje NVDA; Ponowne naciśnięcie powoduje wznowienie od dokładnie miejsca, w którym zostało przerwane.",
+            "Użyj Shift, aby wstrzymać, kiedy potrzebujesz chwili na działanie — na przykład NVDA odczytuje numer telefonu i musisz go wybrać. Wstrzymaj klawisz Shift, wybierz numer, a następnie ponownie Shift, aby kontynuować.",
+            "Control zatrzymuje mowę całkowicie, bez możliwości wznowienia. Shift wstrzymuje ją i pozwala wznowić od tego samego miejsca. W obu przypadkach wystarczy pojedynczy klawisz, bez dodatkowych modyfikatorów."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Uwaga dotycząca ćwiczenia tych klawiszy: naciśnięcie Control lub Shift podczas aktywnej lekcji zakłóciłoby samą lekcję, dlatego nie jest tutaj możliwe rzetelne ćwiczenie podczas lekcji. Zamiast tego buduj nawyk w sposób naturalny. Następnym razem, gdy NVDA będzie czytać zbyt długo, naciśnij Control, aby zatrzymać mowę. Jeśli potrzebujesz chwili w połowie czytania, użyj klawisza Shift, aby wstrzymać i wznowić. Obydwa odruchy szybko odkryjesz w prawdziwym użyciu. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Najlepszy czas na ćwiczenie jest w czasie Czytaj wszystko — naciśnij NVDA + strzałka w dół (układ Desktop) lub NVDA+A (układ Laptop), aby rozpocząć czytanie, następnie użyj Control, aby zatrzymać lub Shift, aby wstrzymać. Czytaj wszystko zostało omówione w rozdziale Czytanie tekstu.",
+            "Naciśnięcie tych klawiszy jest całkowicie bezpieczne w dowolnym momencie. Wpływają one jedynie na mowę NVDA i nie mają żadnego wpływu na aplikację, której używasz.",
+            "Te odruchy wyrobisz naturalnie podczas codziennego używania NVDA. Gdy następnym razem NVDA będzie czytać za długo, po prostu naciśnij Control."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "where_am_i",
+      "title": "Sprawdź, gdzie jesteś",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Widzący użytkownicy mogą zobaczyć, które elementy sterujące są podświetlone na ekranie. NVDA+Tab wypowiada nazwę, typ i stan dowolnego elementu sterującego, na którym się aktualnie skupiasz — odpowiednik tego wizualnego spojrzenia. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+Tab odczytuje kontrolkę, która ma aktualnie fokus - jej nazwę, typ (przycisk, pole wyboru, pole edycji) i stan (oznaczone, naciśnięte itp.).",
+            "Zwróć uwagę na różnicę: sam klawisz Tab przenosi Cię do następnej kontrolki. NVDA+Tab odczytuje bieżącą kontrolkę bez poruszania się gdziekolwiek.",
+            "To polecenie jest najbardziej przydatne, gdy trafisz w nieoczekiwane miejsce i musisz dowiedzieć się, gdzie jesteś, zanim zrobisz cokolwiek innego."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Formularz logowania do ćwiczeń zostanie wkrótce otwarty w osobnym oknie. Kiedy się pojawi, naciśnij Alt+Tab, aby się na niego przełączyć. Przejdź do różnych elementów sterujących i naciśnij NVDA+Tab na każdym z nich, aby usłyszeć opis nadany przez NVDA. Kiedy skończysz, naciśnij Alt+Tab, aby wrócić tutaj, a następnie naciśnij NVDA+Shift+C, aby przywrócić okno NVDA Coach na pierwszy plan, i naciśnij Enter, aby kontynuować. Gotowy? Naciśnij teraz Enter, aby otworzyć formularz ćwiczeń.",
+          "openPracticeFrameAfter": true,
+          "hints": [
+            "Naciśnij Alt+Tab, aby po jego otwarciu przejść do okna ćwiczeń. Przytrzymaj Alt i naciśnij raz Tab, aby przejść do następnego otwartego okna.",
+            "Jeśli przełączysz się do niewłaściwego okna, przytrzymaj klawisz Alt i ponownie naciśnij klawisz Tab, aby przeglądać wszystkie otwarte okna, aż usłyszysz formularz ćwiczeń.",
+            "Formularz ćwiczeń zawiera pola Nazwa użytkownika i Hasło, pole wyboru oraz przyciski. Przejdź klawiszem Tab do każdego z nich i naciśnij NVDA+Tab, aby usłyszeć, jak NVDA opisuje każdy typ kontrolki."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Teraz w oknie ćwiczeń przejdź klawiszem Tab do dowolnej kontrolki w formularzu logowania, a następnie naciśnij NVDA+Tab. NVDA ogłosi nazwę, typ i stan kontrolki, która ma fokus. Może to brzmieć na przykład jak „Nazwa użytkownika, pole edycji” albo „Zaloguj się, przycisk”. Wypróbuj to na kilku różnych kontrolkach — polach tekstowych, polu wyboru i przyciskach — aby usłyszeć, jak NVDA opisuje każdy typ. Po zakończeniu eksploracji naciśnij NVDA+Shift+C, aby tu wrócić, a następnie naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+tab"
+          ],
+          "hints": [
+            "Przytrzymaj klawisz NVDA i naciśnij Tab. Różni się to od samego Tab — sama Tab przesuwa fokus, ale NVDA+Tab odczytuje tylko bieżącą kontrolkę bez poruszania się.",
+            "Wypróbuj NVDA+Tab na kilku różnych typach kontrolek. Pole edycji brzmi inaczej niż przycisk, a przycisk inaczej niż pole wyboru.",
+            "Kiedy skończysz, naciśnij NVDA+Shift+C, aby przywrócić okno NVDA Coach na pierwszy plan, a następnie naciśnij Enter, aby kontynuować."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab_navigation",
+      "title": "Przechodzenie między kontrolkami klawiszem Tab",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "W oknach dialogowych, oknach ustawień i formularzach klawisz Tab przechodzi między kontrolkami, takimi jak przyciski, pola wyboru i pola tekstowe. Shift+Tab cofa do poprzedniej kontrolki. Ta zasada działa w całym systemie Windows. W trakcie kursu będziesz używać Tab i Shift+Tab także w oknie Ustawienia NVDA w rozdziale Dostosowywanie NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisz Tab znajduje się po lewej stronie klawiatury, tuż nad klawiszem Caps Lock. Często ma symbol z dwiema strzałkami skierowanymi w przeciwnych kierunkach.",
+            "Shift+Tab powoduje cofanie się pomiędzy elementami sterującymi – w kierunku przeciwnym do samego Tab. Razem umożliwiają swobodne poruszanie się po dowolnym formularzu lub oknie dialogowym.",
+            "Tab i Shift+Tab działają identycznie w każdym oknie dialogowym, formularzu i oknie ustawień systemu Windows. Opanuj je tutaj i możesz ich używać w dowolnym programie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Formularz ćwiczeń zostanie wkrótce otwarty w osobnym oknie. Kiedy się pojawi, naciśnij Alt+Tab, aby się na niego przełączyć. Naciśnij Tab, aby przejść do przodu przez elementy sterujące. Kiedy skończysz, naciśnij Alt+Tab, aby tu wrócić, naciśnij NVDA+Shift+C, aby przywrócić okno NVDA Coach na pierwszy plan, i naciśnij Enter, aby kontynuować. Gotowy? Naciśnij teraz Enter, aby otworzyć formularz ćwiczeń.",
+          "openPracticeFrameAfter": true,
+          "hints": [
+            "Naciśnij Alt+Tab, aby po jego otwarciu przejść do formularza ćwiczeń. Przytrzymaj Alt i naciśnij raz Tab.",
+            "W dowolnym momencie naciśnij NVDA+Shift+C, aby przywrócić okno NVDA Coach na pierwszy plan.",
+            "Formularz ćwiczeniowy ma kilka elementów sterujących — pola tekstowe, pola wyboru i przyciski. Przed powrotem przejdź przez formularz tabulatorem."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do formularza ćwiczeń, naciskając Alt+Tab. Gdy już tam będziesz, naciśnij Tab, aby przejść do następnej kontrolki. NVDA ogłosi nazwę i typ każdego elementu sterującego, gdy się na nim znajdziesz. Naciskaj klawisz Tab, aby poruszać się po całym formularzu. Kiedy będziesz gotowy, naciśnij NVDA+Shift+C, aby tu wrócić, a następnie naciśnij Enter, aby kontynuować.",
+          "hint": "Klawisz Tab znajduje się po lewej stronie klawiatury, nad Caps Lock. Po prostu naciśnij go samodzielnie. Za każdym razem, gdy naciśniesz Tab, NVDA poinformuje, do jakiego elementu sterującego się przeniosłeś.",
+          "hints": [
+            "Klawisz Tab znajduje się po lewej stronie klawiatury, tuż nad klawiszem Caps Lock. Naciśnij go samodzielnie — nie jest potrzebny klawisz modyfikujący.",
+            "Każde naciśnięcie klawisza Tab powoduje przejście do następnej kontrolki, a NVDA ogłasza jej nazwę i typ. Posłuchaj słów takich jak „przycisk”, „pole edycji” lub „pole wyboru”.",
+            "Jeśli naciśniesz klawisz Tab poza ostatnią kontrolką w formularzu, fokus wróci do pierwszej kontrolki. Jest to normalne — możesz naciskać klawisz Tab, aby przełączać się między nimi w nieskończoność."
+          ],
+          "expectedGestures": [
+            "kb:tab"
+          ],
+          "successMessage": "Przeszedłeś do następnej kontrolki. NVDA ogłosiło, na jakiej kontrolce się znalazłeś.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz w formularzu ćwiczeń naciśnij Shift+Tab, aby wrócić do poprzedniej kontrolki. Przytrzymaj Shift i naciśnij Tab. NVDA ogłosi kontrolkę, do której powrócisz. Tab idzie do przodu, Shift+Tab cofa. Naciśnij NVDA+Shift+C, aby wrócić tutaj, gdy wszystko będzie gotowe, a następnie naciśnij Enter, aby kontynuować.",
+          "hint": "Przytrzymaj klawisz Shift i naciśnij Tab. Shift to duży, szeroki klawisz tuż nad klawiszem Ctrl po obu stronach klawiatury.",
+          "hints": [
+            "Najpierw przytrzymaj Shift, a następnie naciśnij Tab, trzymając Shift wciśnięty. Shift to szeroki klawisz nad lewym klawiszem Control.",
+            "Shift i Tab zawsze przesuwają się do tyłu — dokładne przeciwieństwo samego Tab. Używaj go, gdy przekroczysz kontrolę i musisz wykonać kopię zapasową.",
+            "Nigdy nie musisz zaczynać od początku formularza. Jeśli posuniesz się za daleko, Shift i Tab przywrócą cię z powrotem."
+          ],
+          "expectedGestures": [
+            "kb:shift+tab"
+          ],
+          "successMessage": "Cofnąłeś się. Tab idzie do przodu, Shift+Tab cofa. Te dwa klawisze przeprowadzą Cię przez większość okien dialogowych i formularzy.",
+          "allowExecution": true,
+          "feedbackDelay": 2000
+        }
+      ]
+    },
+    {
+      "id": "activate_controls",
+      "title": "Aktywowanie przycisków i kontrolek",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy klawiszem Tab przejdziesz do przycisku albo innej kontrolki, trzeba ją aktywować. Enter aktywuje przyciski i akcje domyślne. Spacja włącza i wyłącza pola wyboru. Klawisze te działają w ten sam sposób w każdym programie Windows. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Enter aktywuje przyciski. Spacja włącza i wyłącza pola wyboru. Te dwa klawisze obsługują prawie wszystkie zadania aktywacji w oknach dialogowych systemu Windows.",
+            "Po naciśnięciu spacji na polu wyboru NVDA ogłosi „oznaczone” albo „nieoznaczone”, aby potwierdzić nowy stan.",
+            "W przypadku przycisków opcji do poruszania się między opcjami służą klawisze strzałek w górę i w dół, a nie spacja lub Enter."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Zaraz otworzy się okno ćwiczeń z polami wyboru i przyciskami. Kiedy się pojawi, naciśnij Alt+Tab, aby się na niego przełączyć. Kiedy skończysz, naciśnij Alt+Tab, aby tu wrócić, naciśnij NVDA+Shift+C, aby przywrócić okno NVDA Coach na pierwszy plan, i naciśnij Enter, aby kontynuować. Gotowy? Naciśnij teraz Enter, aby otworzyć okno ćwiczeń.",
+          "openPracticeFrameAfter": true,
+          "hints": [
+            "Naciśnij Alt+Tab, aby po jego otwarciu przejść do okna ćwiczeń.",
+            "Okno ćwiczeń zawiera pola wyboru i przyciski. Przejdź do każdego z nich i posłuchaj, jak NVDA ogłasza typ sterowania, abyś wiedział, jakiego klawisza użyć.",
+            "NVDA ogłasza nazwy przycisków i etykiety pól wyboru, gdy na nie naciśniesz klawisz Tab. Przyciski otrzymują Enter; pola wyboru otrzymują spację."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Przejdź do okna ćwiczeń za pomocą Alt+Tab. Przejdź klawiszem Tab do jednego z pól wyboru „Włącz wskazówki dotyczące czytnika ekranu” lub „Pokazuj podpowiedzi podczas lekcji”, a następnie naciśnij spację, aby zmienić jego stan. NVDA ogłosi, czy pole jest teraz „oznaczone” czy „nieoznaczone”. Kiedy skończysz, naciśnij NVDA+Shift+C, aby tu wrócić, a następnie naciśnij Enter, aby kontynuować.",
+          "hint": "Spacja to długi klawisz znajdujący się pośrodku dolnej części klawiatury. Upewnij się, że najpierw zaznaczyłeś pole wyboru Tabulatorem.",
+          "hints": [
+            "Spacja to długi płaski klawisz znajdujący się na samym dole, pośrodku klawiatury. Przed naciśnięciem upewnij się, że masz zaznaczone pole wyboru Tabulatorem.",
+            "Po naciśnięciu spacji NVDA powie „oznaczone”, jeśli pole wyboru jest teraz włączone, albo „nieoznaczone”, jeśli je wyłączyłeś. To potwierdza, że działanie się powiodło.",
+            "Spacja aktywuje również niektóre typy przycisków, ale Enter jest bardziej niezawodnym wyborem w przypadku przycisków. Użyj spacji specjalnie dla pól wyboru i elementów sterujących przełączaniem."
+          ],
+          "expectedGestures": [
+            "kb:space"
+          ],
+          "successMessage": "Naciśnięto spację. Spacja służy do zaznaczania lub odznaczania pól wyboru oraz do aktywacji niektórych przycisków.",
+          "allowExecution": false,
+          "feedbackDelay": 500
+        },
+        {
+          "type": "gesture",
+          "instruction": "Teraz w oknie ćwiczeń wybierz jeden z przycisków — „Odtwórz sygnał dźwiękowy”, „Powiedz cześć” lub „Pokaż wskazówkę klawiaturową” — i naciśnij klawisz Enter, aby go aktywować. NVDA ogłosi, co się stało. Po zakończeniu naciśnij NVDA+Shift+C, aby tu wrócić, a następnie naciśnij Enter, aby kontynuować.",
+          "hint": "Enter to duży klawisz znajdujący się po prawej stronie głównego obszaru klawiatury. Najpierw upewnij się, że masz przycisk Tab.",
+          "hints": [
+            "Enter to duży klawisz znajdujący się po prawej stronie głównego obszaru klawiatury. Niektóre klawiatury mają także drugi klawisz Enter na klawiaturze numerycznej — oba działają.",
+            "Najpierw przejdź klawiszem Tab do przycisku, a następnie naciśnij Enter, aby go aktywować. Jeśli nic się nie dzieje, upewnij się, że NVDA ogłosiło „przycisk”, gdy znalazłeś się na tej kontrolce.",
+            "Pomiędzy Tab, Spacją i Enterem możesz nawigować i aktywować prawie każdą kontrolkę w dowolnej aplikacji lub oknie dialogowym Windows."
+          ],
+          "expectedGestures": [
+            "kb:return",
+            "kb:enter",
+            "kb:numpadenter"
+          ],
+          "successMessage": "Wciśnięty klawisz Enter. Enter aktywuje przyciski i podąża za linkami. Pomiędzy Tab, Spacją i Enterem możesz poruszać się po prawie każdym oknie dialogowym.",
+          "allowExecution": false,
+          "feedbackDelay": 500
+        }
+      ]
+    },
+    {
+      "id": "read_current_line",
+      "title": "Odczytywanie bieżącego wiersza",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Kiedy jesteś w dokumencie lub obszarze tekstowym, możesz pozwolić NVDA przeczytać linię, w której znajduje się kursor. NVDA + strzałka w górę odczytuje bieżącą linię — przydatna, gdy chcesz dokładnie sprawdzić, gdzie w dokumencie się znajdujesz. W następnym kroku dodany zostanie obszar tekstu ćwiczeń. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA + strzałka w górę odczytuje bieżącą linię bez przesuwania kursora. Twoja pozycja w dokumencie pozostaje dokładnie tam, gdzie jest.",
+            "Klawisz strzałki w górę znajduje się w grupie klawiszy strzałek w prawym dolnym rogu klawiatury. Przytrzymaj klawisz NVDA i naciśnij strzałkę skierowaną w górę.",
+            "Użyj NVDA ze strzałką w górę, gdy stracisz orientację w miejscu, w którym się znajdujesz w dokumencie — ponownie odczytuje linię, na której znajduje się kursor, bez zmiany czegokolwiek."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby przesuwać kursor pomiędzy liniami, przejdź strzałką w dół do obszaru tekstu ćwiczeń poniżej. Następnie naciśnij NVDA + strzałka w górę, aby NVDA przeczytała na głos bieżącą linię. Przejdź do innej linii za pomocą strzałki w górę lub w dół i naciśnij ponownie NVDA + strzałka w górę, aby usłyszeć każdą linię. Działa to w każdym dokumencie, wiadomości e-mail lub obszarze tekstowym. Po zakończeniu naciśnij klawisz Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+upArrow"
+          ],
+          "practiceText": "Zażółć gęślą jaźń.\nCzytniki ekranu otwierają cyfrowy świat dla wszystkich.\nNVDA jest darmowym oprogramowaniem o otwartym kodzie źródłowym.\nĆwiczenie buduje nawyk sprawnej nawigacji z czytnikiem ekranu.\nStrzałki pozwalają poruszać się po tekście krok po kroku.\nControl i strzałki przeskakują całe słowa.\nHome i End przenoszą do początku lub końca wiersza.\nControl+Home i Control+End przechodzą na skraj dokumentu.\nTo jest ostatni wiersz obszaru ćwiczeń.",
+          "hints": [
+            "Przytrzymaj klawisz NVDA — Insert lub Caps Lock — i naciśnij klawisz strzałki w górę. Strzałka w górę to klawisz skierowany w górę w grupie strzałek w prawym dolnym rogu klawiatury.",
+            "Najpierw przesuń kursor do różnych linii za pomocą klawisza strzałki w dół, a następnie naciśnij NVDA i strzałkę w górę, aby potwierdzić, w której linii się znajdujesz.",
+            "Jeśli NVDA przeczyta linię, ale nie zrozumiałeś jej w całości, po prostu naciśnij ponownie NVDA + strzałka w górę. Możesz naciskać ten skrót tyle razy, ile potrzeba, aby ponownie przeczytać tę samą linię."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "input_help",
+      "title": "Poznawanie klawiszy za pomocą pomocy klawiatury",
+      "order": 10,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA+1 włącza i wyłącza pomoc klawiatury. Gdy jest włączona, naciśnięcie dowolnego klawisza powoduje odczytanie przez NVDA, do czego ten klawisz służy, bez wykonywania żadnego działania. To całkowicie bezpieczny sposób poznawania klawiatury i jedna z unikalnych funkcji NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA+1 używa cyfry 1 z górnego rzędu klawiatury — rzędu cyfr nad klawiszami literowymi. Nie używaj klawiatury numerycznej 1.",
+            "W trybie pomocy klawiatury naciśnięcie dowolnego klawisza jest całkowicie bezpieczne. W aplikacji nic się nie dzieje — NVDA opisuje jedynie, co zrobiłby ten klawisz.",
+            "Pomoc klawiatury jest jednym z najbardziej użytecznych narzędzi edukacyjnych, jakie posiada NVDA. Użyj jej za każdym razem, gdy napotkasz nieznaną kombinację klawiszy i chcesz wiedzieć, do czego służy."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij cyfrę 1 z górnego rzędu klawiatury, a nie z bloku numerycznego. Powinieneś usłyszeć komunikat „pomoc klawiatury tak. Naciśnij NVDA+1 ponownie, aby wyłączyć.” Gdy pomoc klawiatury jest aktywna, możesz nacisnąć dowolny klawisz, a NVDA opisze jego działanie bez wykonywania danej czynności. Naciśnij tutaj Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+1"
+          ],
+          "hints": [
+            "Przytrzymaj klawisz NVDA i naciśnij cyfrę 1 z górnego rzędu klawiatury. Cyfra 1 znajduje się po lewej stronie rzędu liczb, tuż nad klawiszem Q.",
+            "Gdy włączy się pomoc klawiatury, spróbuj nacisnąć dowolny klawisz — na przykład naciśnij F12, a NVDA poinformuje Cię, że odczytuje godzinę, bez faktycznego odczytywania godziny.",
+            "NVDA powie „pomoc klawiatury tak. Naciśnij NVDA+1 ponownie, aby wyłączyć.”, aby potwierdzić włączenie. Gdy pomoc klawiatury jest aktywna, każde naciśnięcie klawisza jest opisywane, ale nic nie jest wykonywane."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Teraz naciśnij ponownie NVDA+1, aby wyłączyć pomoc klawiatury. Przytrzymaj klawisz NVDA i naciśnij cyfrę 1. Powinieneś usłyszeć komunikat „pomoc klawiatury nie”. Gdy w przyszłości zapomnisz, do czego służy jakiś klawisz, włącz pomoc klawiatury, naciśnij ten klawisz, aby usłyszeć jego opis, a potem wyłącz pomoc klawiatury. To jak zawsze dostępna, wbudowana ściąga. Naciśnij tutaj Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+1"
+          ],
+          "hints": [
+            "Naciśnij ponownie NVDA+1 — ta sama kombinacja, która włączyła pomoc klawiatury, spowoduje jej wyłączenie. NVDA powie „pomoc klawiatury nie”, aby potwierdzić wyłączenie.",
+            "Po wyłączeniu wszystkie klawisze natychmiast wracają do normalnego działania.",
+            "Zapamiętaj ten skrót na całe życie: za każdym razem, gdy napotkasz nieznaną kombinację klawiszy, włącz pomoc klawiatury, naciśnij go, aby usłyszeć opis, a następnie wyłącz go ponownie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "getting_help",
+      "title": "Otwieranie Podręcznika użytkownika",
+      "order": 11,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA zawiera pełny Podręcznik użytkownika, który możesz otworzyć w dowolnym momencie. Podręcznik użytkownika znajduje się w menu NVDA w podmenu Pomoc. To świetne źródło informacji, gdy chcesz samodzielnie dowiedzieć się więcej. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Podręcznik użytkownika otwiera się w domyślnej przeglądarce internetowej jako lokalny plik HTML. Jest instalowany z NVDA, dzięki czemu można go czytać bez połączenia z Internetem.",
+            "Aby otworzyć podręcznik użytkownika: naciśnij NVDA+N, aby otworzyć menu NVDA, naciśnij H, aby uzyskać pomoc, a następnie naciśnij U, aby wyświetlić podręcznik użytkownika. Twoja przeglądarka otworzy się automatycznie.",
+            "Podręcznik użytkownika opisuje szczegółowo każde polecenie i funkcję NVDA. Możesz użyć trybu przeglądania — omówione w dalszej części tego kursu — aby szybko poruszać się po nim za pomocą nagłówków."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przytrzymaj klawisz NVDA i naciśnij N, aby otworzyć menu NVDA. Powinieneś usłyszeć menu i jego pozycje. W praktyce nacisnąłbyś teraz strzałkę w dół, aby poruszać się po pozycjach, przejść do podmenu Pomoc, a następnie wybrać Podręcznik użytkownika, by w dowolnym momencie otworzyć pełną dokumentację. Na razie po prostu posłuchaj, jak otwiera się menu, potem naciśnij Escape, aby je zamknąć i wrócić tutaj. Naciśnij Enter, aby kontynuować.",
+          "monitorGestures": [
+            "kb:nvda+n"
+          ],
+          "hints": [
+            "Przytrzymaj NVDA i naciśnij N, aby otworzyć menu. Po otwarciu naciśnij H, aby otworzyć podmenu Pomoc, a następnie naciśnij U, aby wyświetlić Podręcznik użytkownika.",
+            "Jeśli trafisz w menu w nieoczekiwane miejsce, naciśnij Escape, aby je zamknąć i spróbuj ponownie. Menu za każdym razem otwiera się od góry.",
+            "Menu NVDA podzielone jest na Opcje, Narzędzia, Pomoc i kilka innych elementów. Poruszają się po nim klawisze strzałek; Enter otwiera podmenu lub aktywuje element."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Dobra robota. Nauczyłeś się już podstawowych poleceń NVDA, które pomogą Ci w codziennym użytkowaniu. W rozdziale Pierwsze kroki pozostają jeszcze dwie lekcje: Zrozumienie klawiatury — która omawia klawisze fizyczne, których będziesz stale używać — oraz Przełączanie okien za pomocą Alt+Tab. Kiedy będziesz gotowy, naciśnij Enter, aby przejść do następnej lekcji.",
+          "hints": [
+            "W tym rozdziale pozostały jeszcze dwie lekcje: Zrozumienie klawiatury i przełączanie systemu Windows za pomocą Alt+Tab. Kontynuuj ich przeglądanie, zanim przejdziesz do rozdziału Czytanie tekstu.",
+            "Wszystkie polecenia z tej lekcji współdziałają ze sobą: NVDA+T informuje, gdzie się znajdujesz, NVDA+Tab informuje, jakiego elementu sterującego aktualnie używasz, a Tab i Enter umożliwiają nawigację i działanie.",
+            "NVDA Coach automatycznie zapisuje Twoje postępy. Kiedy wrócisz, ukończone lekcje zostaną oznaczone, dzięki czemu będziesz mógł kontynuować naukę od miejsca, w którym ją przerwałeś."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keyboard_orientation",
+      "title": "Poznawanie klawiatury",
+      "order": 12,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Zanim przejdziemy dalej, przyjrzyjmy się niektórym klawiszom, które często powodują zamieszanie — zwłaszcza na klawiaturach laptopów. Pierwszym z nich jest klawisz Control. Na większości klawiatur klawisz Control znajduje się w lewym dolnym rogu. Jednak w niektórych laptopach klawisz Fn znajduje się w lewym dolnym rogu, a klawisz Control znajduje się bezpośrednio po jego prawej stronie. Jeśli naciskasz klawisz Control i nic się nie dzieje, sprawdź, czy na klawiszu w lewym dolnym rogu jest napisane Fn czy Ctrl — to ma znaczenie. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Spójrz na lewy dolny róg klawiatury. Jeśli na klawiszu widnieje napis Fn, klawisz Control znajduje się o jeden klawisz po jego prawej stronie. Jeśli jest napisane Ctrl, jesteś już na właściwym klawiszu.",
+            "Zarówno Fn, jak i Control znajdują się zazwyczaj w tym samym rzędzie, ale to, który z nich znajduje się w samym rogu, zależy od modelu laptopa i producenta.",
+            "Jeśli nie jesteś pewien, który klawisz jest który, naciśnij NVDA+1, aby włączyć pomoc klawiatury, a następnie naciśnij lewy dolny klawisz. NVDA powie ci, co to jest. Naciśnij ponownie NVDA+1, aby wyłączyć pomoc klawiatury."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Wiele laptopów nie ma dedykowanych klawiszy Home, End, Page Up i Page Down. Zamiast tego klawisz Fn łączy się z klawiszami strzałek, aby je utworzyć. Na większości klawiatur tego typu: Fn plus strzałka w lewo równa się Home; Fn plus strzałka w prawo równa się End; Fn plus strzałka w górę równa się Page Up; Fn plus strzałka w dół równa się Page Down. Twoja klawiatura może się różnić — sprawdź małe etykiety wydrukowane na klawiszach strzałek pod kątem symboli, takich jak ikona strony głównej lub symbol strony ze strzałką w górę. Jeśli Twoja klawiatura ma dedykowane klawisze Home, End, Page Up i Page Down nad klawiszami strzałek, do tych funkcji w ogóle nie potrzebujesz klawisza Fn. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Spójrz na swoje klawisze strzałek. Jeśli mają małe etykiety dodatkowe — ikonę strony głównej, ikonę strony lub symbole strzałki z linią — oznaczają one kombinacje Fn.",
+            "Fn plus strzałka w lewo to zazwyczaj Home. Fn plus strzałka w prawo to End. Fn plus strzałka w górę to Page Up. Fn plus strzałka w dół to Page Down. Ale zawsze sprawdź konkretną klawiaturę.",
+            "Jeśli Twoja klawiatura ma pełny zestaw klawiszy nad klawiszami strzałek — w tym dedykowane klawisze Page Up, Page Down, Home i End — w ogóle nie potrzebujesz klawisza Fn do tych funkcji."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "W górnym rzędzie wielu laptopów znajdują się klawisze funkcyjne oznaczone od F1 do F12. W niektórych modelach laptopów te klawisze domyślnie służą do sterowania multimediami — regulacji głośności, jasności i odtwarzania multimediów — a nie od F1 do F12. Aby używać F1 do F12 na tych klawiaturach, przytrzymaj klawisz Fn i naciśnij odpowiedni klawisz funkcyjny. W innych laptopach jest odwrotnie: klawisze F są podstawowe, a sterowanie multimediami wymaga Fn. Wiele klawiatur ma klawisz Fn Lock — często Fn plus Escape lub Fn plus Caps Lock — który na stałe zmienia zachowanie, dzięki czemu nie trzeba przytrzymywać Fn za każdym razem. Sprawdź instrukcję obsługi laptopa lub etykiety klawiszy, aby dowiedzieć się, jak skonfigurowana jest klawiatura. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Jeśli naciśnięcie F2 w celu wyświetlenia podpowiedzi Coach zmieni zamiast tego jasność ekranu, Twój laptop prawdopodobnie pracuje domyślnie w trybie multimedialnym. Przytrzymaj Fn i naciśnij F2, aby uzyskać rzeczywistą funkcję F2.",
+            "Poszukaj klawisza Fn Lock — często oznaczonego jako FnLk lub przedstawianego jako ikona kłódki w połączeniu z Fn. Naciśnięcie go przełącza między trybem multimedialnym a trybem klawiszy funkcyjnych.",
+            "Niektóre laptopy pokazują, czy tryb multimediów lub klawisz F jest aktywny, za pomocą lampki kontrolnej. Inni ogłaszają to za pomocą dźwięku. Jeśli nie masz pewności, sprawdź swój konkretny model."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Szybki przegląd lokalizacji klawiszy modyfikatorów najważniejszych dla NVDA: Ctrl znajduje się w lewym dolnym rogu (lub jeden klawisz na prawo od Fn na niektórych laptopach). Shift to szeroki klawisz nad Ctrl po obu stronach klawiatury. Alt znajduje się obok spacji po obu stronach. Klawisz Windows — klawisz z logo Windows — znajduje się pomiędzy klawiszami Ctrl i Alt po lewej stronie. I oczywiście twój klawisz NVDA: Insert znajduje się w klastrze nad klawiszami strzałek, a Caps Lock znajduje się po lewej stronie nad Shift. Wiedza o tym, gdzie znajdują się te klawisze, bez patrzenia, jest jedną z najcenniejszych umiejętności obsługi klawiatury, jaką możesz rozwinąć. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Od lewej do prawej w dolnym rzędzie większości klawiatur: Ctrl (lub Fn), klawisz Windows, Alt, spacja, Alt, klawisz menu (czasami), Ctrl.",
+            "Shift to szeroki klawisz nad Ctrl po obu stronach. Jest to jeden z najszerszych klawiszy na klawiaturze — łatwo go znaleźć na wyczucie.",
+            "Caps Lock znajduje się po lewej stronie, tuż nad Shift. Na klawiaturach wielu użytkowników NVDA Caps Lock służy jako klawisz NVDA — jeden z najważniejszych klawiszy, jakie kiedykolwiek naciśniesz."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alt_tab",
+      "title": "Przełączanie okien za pomocą Alt+Tab",
+      "order": 13,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Alt+Tab to polecenie systemu Windows umożliwiające przełączanie pomiędzy otwartymi programami i oknami. Osoby widzące mogą jednym rzutem oka zobaczyć wszystkie otwarte okna na pasku zadań. Alt+Tab jest odpowiednikiem klawiatury — umożliwia poruszanie się po otwartych oknach bez konieczności używania myszy. Jest to jedno z najważniejszych poleceń systemu Windows, jakiego kiedykolwiek się nauczysz i działa w każdej wersji systemu Windows. To polecenie było już używane do przechodzenia między oknem NVDA Coach a formularzami ćwiczeniowymi. Ta lekcja uczy obu sposobów korzystania z niego. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Alt+Tab to polecenie systemu Windows — jest wbudowane w sam system Windows i działa niezależnie od tego, czy NVDA jest uruchomiona, czy nie.",
+            "Klawisz Alt znajduje się po obu stronach spacji. Klawisz Tab znajduje się po lewej stronie klawiatury, nad Caps Lock.",
+            "To polecenie działa w każdej wersji systemu Windows i praktycznie w każdym scenariuszu. Jest to jeden z najbardziej uniwersalnych skrótów klawiaturowych, jakich kiedykolwiek będziesz używać."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sposób pierwszy: pojedyncze Alt+Tab. Przytrzymaj Alt i naciśnij raz Tab, a następnie natychmiast zwolnij oba klawisze. Spowoduje to przełączenie do ostatnio używanego okna — tego, w którym byłeś przed bieżącym. Jeśli jesteś w przeglądarce i naciśniesz Alt+Tab, przeskoczysz do programu, w którym byłeś przed przeglądarką. Naciśnij ponownie Alt+Tab i wrócisz do przeglądarki. Jest to najszybszy sposób przełączania pomiędzy dwoma programami, których używasz razem. NVDA ogłosi nazwę okna, do którego się przełączysz. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przytrzymaj Alt, naciśnij raz Tab, a następnie zwolnij oba klawisze. Przełączysz się do ostatnio używanego okna. NVDA ogłosi nazwę tego okna.",
+            "Naciśnij Alt+Tab drugi raz, aby wrócić do miejsca, w którym zacząłeś. Dwa naciśnięcia umożliwiają szybkie przełączanie pomiędzy dwoma oknami.",
+            "Jest to wersja najczęściej używana przez większość ludzi — szybkie Alt+Tab w celu sprawdzenia innego okna, a następnie ponowne Alt+Tab w celu powrotu."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Drugi sposób: przytrzymaj Alt i naciskaj Tab. Jeśli masz otwarte trzy lub więcej okien, możesz przeglądać je wszystkie. Przytrzymaj Alt i naciśnij raz Tab — NVDA ogłosi nazwę pierwszego okna. Przytrzymaj Alt i ponownie naciśnij Tab — NVDA ogłosi nazwę drugiego okna. Każde naciśnięcie klawisza Tab przenosi do kolejnego otwartego okna na liście. Gdy usłyszysz nazwę właściwego okna, zwolnij klawisz Alt, aby do niego przejść. Jeśli posuniesz się za daleko, możesz przytrzymać Alt i nacisnąć Shift+Tab, aby cofnąć się. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przytrzymaj klawisz Alt przez cały czas. Każde naciśnięcie klawisza Tab powoduje przejście do następnego okna. Nie zwalniaj klawisza Alt, dopóki nie usłyszysz żądanego okna.",
+            "NVDA ogłasza nazwę każdego okna podczas przeglądania. Posłuchaj nazwy programu lub tytułu dokumentu.",
+            "Przytrzymanie Alt i naciśnięcie Shift+Tab powoduje przewijanie listy okien do tyłu — przydatne, jeśli przekroczysz żądane okno."
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "Wypróbuj teraz pojedyncze Alt+Tab. Przytrzymaj Alt i naciśnij raz Tab, a następnie zwolnij oba klawisze. NVDA ogłosi, do którego okna się przełączyłeś. Następnie naciśnij ponownie Alt+Tab, aby tu wrócić. Po powrocie do okna NVDA Coach naciśnij klawisz Enter, aby kontynuować.",
+          "hint": "Przytrzymaj klawisz Alt, naciśnij raz klawisz Tab, a następnie zwolnij oba. Alt znajduje się obok spacji; Tab znajduje się nad Caps Lock po lewej stronie.",
+          "hints": [
+            "Przytrzymaj klawisz Alt — klawisz po lewej stronie spacji — i naciśnij raz Tab. Zwolnij oba klawisze natychmiast po dotknięciu Tab.",
+            "NVDA ogłosi nazwę okna, w którym się znajdziesz. Możesz przejść do poprzedniej aplikacji lub innego okna ćwiczeń trenerskich.",
+            "Aby wrócić, naciśnij jeszcze raz Alt+Tab. Spowoduje to przełączenie z powrotem do okna NVDA Coach."
+          ],
+          "expectedGestures": [
+            "kb:alt+tab"
+          ],
+          "successMessage": "Zamieniłeś okna za pomocą Alt+Tab. Alt+Tab to sposób poruszania się pomiędzy otwartymi programami bez użycia myszy.",
+          "allowExecution": true,
+          "feedbackDelay": 1500
+        },
+        {
+          "type": "info",
+          "instruction": "Świetna robota — ukończyłeś rozdział Pierwsze kroki! Teraz wiesz, jak rozpoznać trzy kategorie poleceń; używać podstawowych poleceń NVDA, rozumieć układ klawiatury i przełączać się między programami za pomocą Alt+Tab. Umiejętności te współdziałają ze sobą za każdym razem, gdy używasz NVDA. Ćwicz trochę każdego dnia, a staną się automatyczne. Kiedy będziesz gotowy, naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji i rozpocząć następny rozdział: Czytanie i poruszanie się po tekście. Naciśnij Enter, aby zakończyć.",
+          "hints": [
+            "Następny rozdział to Czytanie i poruszanie się po tekście. Obejmuje nawigację po dokumentach według znaku, słowa, wiersza, akapitu i strony.",
+            "Podsumowanie Alt+Tab: pojedyncze naciśnięcie przełącza do ostatnio używanego okna. Przytrzymaj Alt i naciskaj Tab, aby przechodzić przez wszystkie otwarte okna. Zwolnij Alt na tym, które chcesz aktywować.",
+            "NVDA Coach automatycznie zapisuje Twoje postępy. Kiedy wrócisz, ukończone lekcje zostaną oznaczone, dzięki czemu będziesz mógł kontynuować naukę od miejsca, w którym ją przerwałeś."
+          ]
+        }
+      ]
+    }
+  ]
+}
