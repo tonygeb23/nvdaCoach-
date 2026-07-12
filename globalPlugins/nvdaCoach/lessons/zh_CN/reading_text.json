@@ -1,0 +1,481 @@
+{
+  "id": "reading_text",
+  "title": "阅读和浏览文本",
+  "description": "学习如何在文档中移动，并让 NVDA 把文本读给您听。每个练习步骤都在 NVDA Coach 窗口内提供文本区域，不需要切换到其他窗口。",
+  "order": 3,
+  "lessons": [
+    {
+      "id": "move_by_character",
+      "title": "按字符移动",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "当光标位于文本中时，右光标每次向前移动一个字符，左光标每次向后移动一个字符。光标移到哪个字符，NVDA 就会读出哪个字符。非屏幕阅读器用户可以看到每个字符；您则通过 NVDA 听到它。下面每个练习步骤都包含文本区域。请按回车键继续。",
+          "hints": [
+            "左右光标位于键盘右下方的光标键区域。右光标向前一个字符，左光标向后一个字符。",
+            "NVDA 会读出光标所在的字符。遇到标点时，NVDA 通常会读出标点名称。",
+            "按字符移动适合检查拼写、逐字阅读不熟悉的词，或确认刚输入的内容。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本区域，然后按右光标向前移动一个字符。NVDA 会读出光标所在的字符。请多试几次。",
+          "hint": "右光标位于键盘右下方的光标键区域。",
+          "hints": [
+            "右光标在键盘右下方的光标键区域。按一次向前移动一个字符。",
+            "NVDA 会读出光标所在的字符；遇到空格会读“空格”，遇到标点会读出标点名称。",
+            "请先单击或按 Tab 进入练习文本区域，再按右光标。"
+          ],
+          "expectedGestures": [
+            "kb:rightArrow"
+          ],
+          "successMessage": "您已经向前移动一个字符。NVDA 读出了光标所在的字符。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按左光标向后移动一个字符。NVDA 会读出它。",
+          "hint": "左光标在下光标的左边。",
+          "hints": [
+            "左光标位于光标键区域中，下光标的左边。按一次向后移动一个字符。",
+            "NVDA 会读出光标退回到的字符，也就是原来位于您左侧的字符。",
+            "左右光标能让您逐字阅读任何词或句子，特别适合校对和确认拼写。"
+          ],
+          "expectedGestures": [
+            "kb:leftArrow"
+          ],
+          "successMessage": "您已经向后移动一个字符。左右光标可以让您逐字阅读文本。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        }
+      ]
+    },
+    {
+      "id": "jump_by_word",
+      "title": "按词跳转",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "需要快速浏览文本时，逐字符移动会很慢。Ctrl+右光标会跳到下一个词的开头，Ctrl+左光标会回到上一个词。NVDA 会读出光标所在的词。这个快捷键在 Word、记事本、邮件和大多数程序中都一样，无论是否使用屏幕阅读器。请按回车键继续。",
+          "hints": [
+            "Ctrl+右光标每次向前跳一个词。按住键盘左下角的 Ctrl，再按右光标。",
+            "Ctrl+左光标每次向后跳一个词。光标移到哪里，NVDA 就读出哪里。",
+            "按词移动比逐字符移动更适合快速扫读句子或在段落中找某个词。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本，然后按 Ctrl+右光标跳到下一个词。NVDA 会读出光标所在的词。",
+          "hint": "按住 Ctrl 键（键盘左下角），同时按右光标。",
+          "hints": [
+            "按住键盘左下角的 Ctrl，再按右光标。两个键需要同时按。",
+            "NVDA 会读出光标跳到的词。每按一次，就向前移动一个完整的词。",
+            "如果按住 Ctrl+右光标不放，光标会快速逐词移动。松开即可停止。"
+          ],
+          "expectedGestures": [
+            "kb:control+rightArrow"
+          ],
+          "successMessage": "您已经向前跳过一个词。NVDA 读出了光标所在的词。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按 Ctrl+左光标跳回上一个词。NVDA 会读出它。",
+          "hint": "按住 Ctrl，再按左光标。",
+          "hints": [
+            "按住 Ctrl，再按左光标。这会把光标跳回上一个词的开头。",
+            "每次移到一个词上，NVDA 都会读出它。可以用来回读刚刚经过的词。",
+            "Ctrl+左/右光标能让您在文档中快速按词扫读，比逐字符移动快得多。"
+          ],
+          "expectedGestures": [
+            "kb:control+leftArrow"
+          ],
+          "successMessage": "您已经向后跳过一个词。Ctrl+光标键可以在任何文档中快速按词移动。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        }
+      ]
+    },
+    {
+      "id": "move_by_line",
+      "title": "按行移动",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "下光标会移动到文档中的下一行，上光标会移动到上一行。每次移动到一行，NVDA 都会读出整行。非屏幕阅读器用户可以用眼睛扫行；您则移动到每一行，让 NVDA 读出来。这是阅读文档和网页时最重要的导航方式之一。请按回车键继续。",
+          "hints": [
+            "下光标移到下一行并读出整行；上光标移到上一行。",
+            "上下光标位于键盘右下方的光标键区域。",
+            "按行阅读是浏览文档、邮件和网页最常用的方法之一，您会经常使用。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本，然后按下光标移到下一行。NVDA 会为您读出整行。",
+          "hint": "下光标在光标键区域。按一次移动一行。",
+          "hints": [
+            "下光标在键盘右下方的光标键区域。按一次向下移动一行。",
+            "光标移到一行时，NVDA 会读出整行。如果想重听当前行，可以用 NVDA+上光标。",
+            "先向下移动几行，再试着用上光标向回移动。两个方向都会让 NVDA 读出所在行。"
+          ],
+          "expectedGestures": [
+            "kb:downArrow"
+          ],
+          "successMessage": "您已经向下移动一行。NVDA 为您读出了整行。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按上光标回到上一行。NVDA 会读出它。",
+          "hint": "上光标在下光标正上方。",
+          "hints": [
+            "上光标位于光标键区域中，下光标的正上方。按一次向上移动一行。",
+            "向上移动到某行时，NVDA 也会像向下移动时一样读出整行。",
+            "上下光标是阅读文档的主要工具。很多屏幕阅读器用户的大量阅读都依靠这两个键。"
+          ],
+          "expectedGestures": [
+            "kb:upArrow"
+          ],
+          "successMessage": "您已经向上移动一行。上下光标是逐行阅读任何文档的主要工具。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        }
+      ]
+    },
+    {
+      "id": "jump_to_ends",
+      "title": "跳到开头和结尾",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Ctrl+Home 会立即跳到文档、列表或网页的最开头。Ctrl+End 会跳到最结尾。当您进入一个新文档时，它们非常适合快速确认范围。非屏幕阅读器用户可以快速滚动查看整体；这些键为键盘用户提供了类似的快速定位方式。请按回车键继续。",
+          "hints": [
+            "Ctrl+Home 跳到文档最开头，Ctrl+End 跳到文档最结尾。",
+            "Home 键通常在 Insert、Delete 和 Page Up 附近，多数键盘上位于光标键上方的按键区。",
+            "打开新文档想从头读起，或想跳到末尾看看文档长度时，这两个快捷键很有用。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本，然后按 Ctrl+Home 跳到最开头。NVDA 会读出第一行。",
+          "hint": "按住 Ctrl，再按 Home。Home 通常靠近 Insert、Delete 和 Page Up。",
+          "hints": [
+            "按住 Ctrl，再按 Home。多数键盘上 Home 位于光标键上方，靠近 Insert 和 Delete。",
+            "跳到开头后，NVDA 会读出文档第一行。您现在位于最开始的位置。",
+            "Ctrl+Home 可用于文档、网页、列表和多数文本区域，通常会带您到最顶部。"
+          ],
+          "expectedGestures": [
+            "kb:control+home"
+          ],
+          "successMessage": "您已经跳到开头。NVDA 读出了第一行。",
+          "allowExecution": true,
+          "feedbackDelay": 1500,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按 Ctrl+End 跳到最后一行。NVDA 会读出它。",
+          "hint": "按住 Ctrl，再按 End。End 键通常在 Home 键附近。",
+          "hints": [
+            "按住 Ctrl，再按 End。End 通常和 Home 在同一组按键中。",
+            "使用 Ctrl+End 跳转后，NVDA 会读出文档最后一行。",
+            "Ctrl+Home 和 Ctrl+End 可以让您快速掌握文档范围：到开头开始读，到末尾确认结束位置。"
+          ],
+          "expectedGestures": [
+            "kb:control+end"
+          ],
+          "successMessage": "您已经跳到结尾。Ctrl+Home 或 Ctrl+End 可以立即移到文档两端。",
+          "allowExecution": true,
+          "feedbackDelay": 1500,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        }
+      ]
+    },
+    {
+      "id": "say_all",
+      "title": "从当前位置全文朗读",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "全文朗读会让 NVDA 从当前位置开始持续朗读，直到文档结尾或被您停止。按键取决于键盘布局：台式机布局按 NVDA+下光标，笔记本布局按 NVDA+A。非屏幕阅读器用户可以快速浏览整页；全文朗读就是让 NVDA 帮您把后面的内容连续读完。随时按 Ctrl 可停止。请按回车键继续。",
+          "hints": [
+            "台式机布局：按住 NVDA 键再按下光标。笔记本布局：按住 NVDA 键再按字母 A。不确定布局时，可在“自定义 NVDA”章节中查看。",
+            "全文朗读期间，随时按 Ctrl 可立即停止。按 Shift 可暂停，再按 Shift 从暂停位置继续。",
+            "全文朗读适合阅读较长文档、邮件或网页文章，不需要反复按下光标。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "用光标键进入下面的练习文本区域，并把光标放在中间某处。然后启动全文朗读：台式机布局按 NVDA+下光标；笔记本布局按 NVDA+A。NVDA 会从光标所在位置一直读到结尾。随时按 Ctrl 可停止。完成后按回车键继续。",
+          "monitorGestures": [
+            "kb:nvda+downArrow",
+            "kb:nvda+a"
+          ],
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。",
+          "hints": [
+            "台式机布局：按住 NVDA，也就是 Insert 或 Caps Lock，再按下光标。笔记本布局：按住 NVDA 再按字母 A。",
+            "全文朗读开始后，您不需要继续操作，只要听即可。想停下来时按 Ctrl。",
+            "可以从练习文本的不同位置启动全文朗读。它总是从当前光标位置读到末尾。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "select_text",
+      "title": "选择和高亮文本",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "按住 Shift 配合光标键，可以选择文本。这些是 Windows 命令，无论是否使用 NVDA，在任何应用中用法基本相同。选择过程中，NVDA 会读出被加入选择范围的字符、词或行。非屏幕阅读器用户可以看到屏幕上高亮的文本；NVDA 会读出选择内容，让您知道选中了什么。选中文本后，可以用 Ctrl+C 复制，用 Ctrl+V 粘贴到可输入的位置，这两个也是 Windows 命令。本章会混合出现 Windows 命令和 NVDA 命令，请留意它们的区别。请按回车键继续。",
+          "hints": [
+            "按住 Shift 再按任意光标键可扩展选择。Shift+右光标选择一个字符；Shift+下光标选择一行；Ctrl+Shift+右光标选择一个词。",
+            "每加入一个字符、词或行，NVDA 都会读出。按不带 Shift 的光标键会取消选择。",
+            "选中文本后，Ctrl+C 复制，Ctrl+V 粘贴。这些是 Windows 命令，在各种应用中都可用。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本。按住 Shift，再按右光标，向前选择一个字符。NVDA 会读出它。继续按 Shift+右光标，可以逐字符扩展选择。",
+          "hint": "先按住 Shift，再按右光标。继续按住 Shift 可进一步扩展选择。",
+          "hints": [
+            "先按住 Shift，再在按住 Shift 的同时按右光标。Shift 是左 Ctrl 上方的较宽按键。",
+            "每把一个字符加入选择，NVDA 都会读出。您应该会听到字符名称以及“已选中”之类的提示。",
+            "按住 Shift 不放，继续按右光标，可以一次选择更多字符。选择完成后松开 Shift。"
+          ],
+          "expectedGestures": [
+            "kb:shift+rightArrow"
+          ],
+          "successMessage": "您已经选择了一个字符。NVDA 读出了被选中的字符。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在试着选择一个完整的词。按 Ctrl+Shift+右光标，一次选择下一个词。NVDA 会读出被选中的词。",
+          "hint": "同时按住 Ctrl 和 Shift，再按右光标。三个键一起按可按词选择。",
+          "hints": [
+            "同时按住 Ctrl 和 Shift，再按右光标。Ctrl+Shift+右光标会一次选择一个完整的词。",
+            "NVDA 会读出被选中的词。继续按这个组合键，可以一次一个词地扩展选择。",
+            "Ctrl+Shift+右光标是快速选择文本的常用方式，可以很快建立多词选择。"
+          ],
+          "expectedGestures": [
+            "kb:control+shift+rightArrow"
+          ],
+          "successMessage": "您已经选择了一个完整的词。按住 Shift 配合任意导航键，会按相应单位扩展选择。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按住 Shift，再按下光标，选择当前行以及下一行的一部分或全部。NVDA 会读出选中的文本块。",
+          "hint": "按住 Shift，再按一次下光标，选择到下一行。",
+          "hints": [
+            "按住 Shift，再按一次下光标。这会把选择向下扩展一整行。",
+            "当您把新的一行加入选择时，NVDA 会读出新选中的内容。",
+            "Shift+下光标适合快速选择整行。每多按一次，就继续加入下一行。"
+          ],
+          "expectedGestures": [
+            "kb:shift+downArrow"
+          ],
+          "successMessage": "您已经选择了一行。Shift+下光标适合快速选择整行文本。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "春天的微风吹过公园的小路。\n屏幕阅读器让数字世界更加开放。\nNVDA 是免费且开放源代码的屏幕阅读器。\n练习能帮助您养成稳定的键盘导航习惯。\n光标键一次移动一个文本单位。\nCtrl+光标键可以按词快速移动。\nHome 和 End 可以移动到行首或行尾。\nCtrl+Home 或 Ctrl+End 可以跳到文档开头或结尾。\n这是练习区域的最后一行。"
+        },
+        {
+          "type": "info",
+          "instruction": "要取消选择，按不带 Shift 的任意光标键。要复制选择内容，按 Ctrl+C（Windows 命令）。要粘贴到某处，按 Ctrl+V（Windows 命令）。Ctrl+A 可以一次选择当前文档中的所有文本，也是 Windows 命令。用 Shift+光标键选择文本，在 Word、记事本、电子邮件、网页表单和多数文本区域中用法一致。请按回车键继续。",
+          "hints": [
+            "按任意不带 Shift 的光标键可以取消选择。Ctrl+C 复制，Ctrl+V 粘贴到可输入的位置。",
+            "Ctrl+A 会一次选择当前文档或文本区域中的所有文本，也是 Windows 命令。",
+            "Shift+光标键选择文本，在 Word、记事本、邮件和多数文本区域中都一样，无论是否运行 NVDA。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "选择文本后，可让 NVDA 读出选中了什么。这是 NVDA 命令，只在 NVDA 运行时可用。台式机布局按 NVDA+Shift+上光标；笔记本布局按 NVDA+Shift+S。NVDA 会读出整个选区。这是值得养成的习惯：先选择，再确认选区，最后再复制或执行其他操作。请按回车键继续。",
+          "hints": [
+            "台式机布局：按住 NVDA 和 Shift，再按上光标，听 NVDA 读出当前选区。",
+            "笔记本布局：按住 NVDA 和 Shift，再按字母 S，听 NVDA 读出当前选区。",
+            "复制前先用这个 NVDA 命令确认选区，可避免不小心复制错误内容。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "做得好。您已经完成“选择和高亮文本”这一课。下一课也是本章最后一课：按段落和页面导航。您将学习用 Ctrl+上/下光标按段落跳转，以及用 Page Up/Page Down 在较长文档中大幅移动。请按回车键继续。",
+          "hints": [
+            "下一课是按段落和页面导航。段落和页面导航是 Windows 命令，在多数文本编辑器和文字处理器中可用。",
+            "选择命令摘要：Shift+光标键按移动单位选择；Ctrl+C 复制；Ctrl+V 粘贴；这些都是 Windows 命令。NVDA+Shift+上光标或 NVDA+Shift+S 读出当前选择，是 NVDA 命令。",
+            "按回车键进入“按段落和页面导航”课程。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navigate_paragraph_page",
+      "title": "按段落和页面导航",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "文档有很多段落时，逐行移动会很慢。Ctrl+下光标会向前跳到下一段开头，Ctrl+上光标会回到上一段。这些是 Windows 命令，在 Word、记事本、邮件客户端和多数文本编辑应用中都可用，无论 NVDA 是否运行。光标移到段落时，NVDA 会读出段落文本。请按回车键继续。",
+          "hints": [
+            "按住键盘左下角的 Ctrl，再按下光标，可跳到下一段。Ctrl+上光标跳到上一段。",
+            "这些是 Windows 命令，在 Word、Outlook、记事本和多数文本应用中都能使用，即使没有屏幕阅读器也一样。",
+            "浏览长文档时，按段落移动比逐行移动更快，适合快速找到目标部分。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "用光标键进入下面的练习文本，然后按 Ctrl+下光标跳到下一段。NVDA 会读出光标所在段落的第一行。",
+          "hint": "按住 Ctrl，再按下光标。两个键需要同时按。",
+          "hints": [
+            "按住 Ctrl，也就是键盘左下角的键，再同时按下光标。光标会跳到下一段开头。",
+            "NVDA 会读出您跳到的段落开头文本。继续按 Ctrl+下光标可浏览后续段落。",
+            "在某些应用中，Ctrl+下光标可能先跳到当前段末尾，再到下一段。不同程序略有差异。"
+          ],
+          "expectedGestures": [
+            "kb:control+downArrow"
+          ],
+          "successMessage": "您已经跳到下一段。NVDA 读出了光标所在的位置。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "第一段：春天的微风吹过公园的小路。这个句子适合用来练习逐字、逐词和逐行阅读。\n\n第二段：屏幕阅读器让数字世界更加开放。NVDA 免费且开放源代码，任何需要它的人都可以使用。学习屏幕阅读器需要练习，也需要一点耐心。\n\n第三段：Ctrl+下光标可以移到下一段，Ctrl+上光标可以回到上一段。这些是 Windows 命令，在多数文本编辑程序中都能使用。\n\n第四段：Page Up 和 Page Down 可以在文档中大幅移动。当逐段移动不够合适时，例如阅读较长网页或多页文档时，它们很有用。\n\n第五段：这是练习区域的最后一段。您已经到达文本末尾。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按 Ctrl+上光标跳回上一段。NVDA 会读出它。",
+          "hint": "按住 Ctrl，再按上光标。",
+          "hints": [
+            "按住 Ctrl，再按上光标，跳回上一段的开头。",
+            "NVDA 会读出您移到的段落。可以用它重读刚刚跳过的段落。",
+            "Ctrl+上光标和 Ctrl+下光标配合使用，可以在长文档中快速按段落扫读。"
+          ],
+          "expectedGestures": [
+            "kb:control+upArrow"
+          ],
+          "successMessage": "您已经跳回上一段。Ctrl+上/下光标非常适合快速浏览长文档。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "第一段：春天的微风吹过公园的小路。这个句子适合用来练习逐字、逐词和逐行阅读。\n\n第二段：屏幕阅读器让数字世界更加开放。NVDA 免费且开放源代码，任何需要它的人都可以使用。学习屏幕阅读器需要练习，也需要一点耐心。\n\n第三段：Ctrl+下光标可以移到下一段，Ctrl+上光标可以回到上一段。这些是 Windows 命令，在多数文本编辑程序中都能使用。\n\n第四段：Page Up 和 Page Down 可以在文档中大幅移动。当逐段移动不够合适时，例如阅读较长网页或多页文档时，它们很有用。\n\n第五段：这是练习区域的最后一段。您已经到达文本末尾。"
+        },
+        {
+          "type": "info",
+          "instruction": "Page Up 和 Page Down 会大幅移动，通常一次移动大约一个屏幕的内容。这些是 Windows 命令，在多数应用中都可用。在文字处理器中，Page Down 大约向前移动一页；在浏览器的浏览模式中，它会向下滚动一个屏幕。有些程序中，Page Up 和 Page Down 也会移动光标。每次跳转后，NVDA 会读出光标所在的行。请按回车键继续。",
+          "hints": [
+            "Page Up 和 Page Down 通常位于光标键上方的按键区，靠近 Home 和 End。",
+            "这些是 Windows 命令，在 Word、浏览器、PDF 阅读器和多数应用中都可用，无论 NVDA 是否运行。",
+            "阅读长文档或网页时，Page Up 和 Page Down 适合快速移动，但又不像 Ctrl+Home/End 那样直接跳到两端。"
+          ]
+        },
+        {
+          "type": "gesture",
+          "instruction": "按 Page Down 向前移动大约一个屏幕的内容。NVDA 会读出光标所在的位置。",
+          "hint": "Page Down 通常在光标键上方，靠近 Home 和 End。",
+          "hints": [
+            "Page Down 通常在光标键上方的按键区，靠近 Home、End 和 Page Up。",
+            "按 Page Down 后，NVDA 会读出光标所在的行。在较短的练习文本区域中，它可能直接跳到末尾。",
+            "在长网页或多页文档中，Page Down 比反复按下光标快得多。"
+          ],
+          "expectedGestures": [
+            "kb:pageDown"
+          ],
+          "successMessage": "您已经按下 Page Down。在较长文档中，它会大约每次向前移动一个屏幕。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "第一段：春天的微风吹过公园的小路。这个句子适合用来练习逐字、逐词和逐行阅读。\n\n第二段：屏幕阅读器让数字世界更加开放。NVDA 免费且开放源代码，任何需要它的人都可以使用。学习屏幕阅读器需要练习，也需要一点耐心。\n\n第三段：Ctrl+下光标可以移到下一段，Ctrl+上光标可以回到上一段。这些是 Windows 命令，在多数文本编辑程序中都能使用。\n\n第四段：Page Up 和 Page Down 可以在文档中大幅移动。当逐段移动不够合适时，例如阅读较长网页或多页文档时，它们很有用。\n\n第五段：这是练习区域的最后一段。您已经到达文本末尾。"
+        },
+        {
+          "type": "gesture",
+          "instruction": "现在按 Page Up，向后移动大约一个屏幕的内容。NVDA 会读出您移到的行。",
+          "hint": "Page Up 在 Page Down 旁边，通常位于光标键上方。",
+          "hints": [
+            "Page Up 与 Page Down 相邻，通常在光标键上方的按键区。",
+            "按 Page Up 后，NVDA 会读出光标所在的行。",
+            "Page Up 和 Page Down 适合在文档中做大幅度移动；配合 Ctrl+Home/End，可以用不同速度导航。"
+          ],
+          "expectedGestures": [
+            "kb:pageUp"
+          ],
+          "successMessage": "您已经按下 Page Up。Page Up 和 Page Down 可以让您在长文档中大幅移动。",
+          "allowExecution": true,
+          "feedbackDelay": 1000,
+          "practiceText": "第一段：春天的微风吹过公园的小路。这个句子适合用来练习逐字、逐词和逐行阅读。\n\n第二段：屏幕阅读器让数字世界更加开放。NVDA 免费且开放源代码，任何需要它的人都可以使用。学习屏幕阅读器需要练习，也需要一点耐心。\n\n第三段：Ctrl+下光标可以移到下一段，Ctrl+上光标可以回到上一段。这些是 Windows 命令，在多数文本编辑程序中都能使用。\n\n第四段：Page Up 和 Page Down 可以在文档中大幅移动。当逐段移动不够合适时，例如阅读较长网页或多页文档时，它们很有用。\n\n第五段：这是练习区域的最后一段。您已经到达文本末尾。"
+        },
+        {
+          "type": "info",
+          "instruction": "很好。您已经学习了按字符、词、行、段落和页面导航，也学会了跳到文档两端、全文朗读、选择文本以及复制粘贴。本章还剩最后一课：检查字体和格式，它会介绍用 NVDA+F 查看文本样式。请按回车键进入本章最后一课。",
+          "hints": [
+            "本章最后一课介绍 NVDA+F，用一个命令读出光标处的字体名称、字号，以及粗体、斜体、下划线等属性。",
+            "如果 NVDA 的语速在练习时感觉太快或太慢，可以在“自定义 NVDA”章节中通过循环切换语音设置来调整。",
+            "NVDA Coach 会保存您的进度。下次回来时，已完成课程会被标记，可以继续学习。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "font_info",
+      "title": "检查字体和格式",
+      "order": 8,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "阅读或校对文档时，除了知道文本写了什么，有时还需要知道它的格式。NVDA+F 会读出当前光标位置的字体名称、字号和属性，例如粗体、斜体、下划线等。这个命令适用于文字处理器、文本编辑器，以及其他能让 NVDA 读取文本光标的应用。把光标放在有格式的文本中，按 NVDA+F 即可听到格式详情。请按回车键继续。",
+          "hints": [
+            "NVDA+F 是 NVDA 命令。它读出文本光标处的格式，也就是文档或编辑框中的插入点位置。",
+            "读出的内容包括字体名称（如 Calibri 或 Times New Roman）、字号，以及粗体、斜体、下划线、颜色等适用属性。",
+            "这个命令在能向 NVDA 提供格式信息的应用中效果最好，例如 Microsoft Word、LibreOffice Writer 和多数富文本编辑器。纯文本编辑器中的格式信息可能有限。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "快速按一次 NVDA+F，会读出基本的字体名称和字号。快速连续按两次 NVDA+F，会打开“字体格式”对话框，在可浏览窗口中列出所有格式详情；当属性较多时很有用。请两种方式都试试：先按一次听 NVDA 读出，再快速按两次打开对话框。请按回车键继续。",
+          "hints": [
+            "按一次：NVDA 立即读出字体名称和字号。按两次：打开列出所有格式属性的对话框，可阅读后按 Escape 关闭。",
+            "当文本同时具有多种属性，例如粗体、斜体和彩色时，双击打开的对话框尤其有用。",
+            "如果不小心打开了对话框，按 Escape 可立即关闭，不会改变任何内容。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "打开一个包含混合格式的文档，例如 Word 文件或富文本邮件。把光标放在某段粗体或斜体文本中，按 NVDA+F，听 NVDA 读出格式信息。然后移到格式不同的词上，再按 NVDA+F 进行比较。尝试完成后，请在这里按回车键。",
+          "monitorGestures": [
+            "kb:nvda+f"
+          ],
+          "hints": [
+            "如果手边没有格式化文档，可以打开记事本输入几个词，再打开写字板并粘贴进去；写字板支持粗体和斜体格式。",
+            "可以通过鼠标点击或光标键放置光标。NVDA+F 总是读出文本光标位置的格式，而不是鼠标指针所在位置。",
+            "试着用 Ctrl+右光标逐词移动，并在每个词上按 NVDA+F，听句子中格式如何变化。"
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "非常好，您已经完成“阅读和浏览文本”章节！您现在知道如何按字符、词、行、段落和页面导航，如何跳到文档两端，使用全文朗读，用 Shift+光标键选择文本，用 NVDA+Shift+上光标或 NVDA+Shift+S 验证选区，用 Windows 命令复制粘贴，以及用 NVDA+F 检查字体和格式。这些技能在使用 NVDA 时都很常用。小提示：如果练习时觉得 NVDA 读得太快或太慢，可以用循环切换语音设置调整语速，“自定义 NVDA”章节会讲到。准备好后，按 NVDA+Shift+C 打开课程选择器，继续下一章：浏览模式和网页导航。请按回车键结束本课。",
+          "hints": [
+            "下一章是“浏览模式和网页导航”，会讲如何使用 NVDA 的导航快捷键阅读和操作网页。",
+            "如果 NVDA 的语速太快或太慢，可以在“自定义 NVDA”章节中通过循环切换语音设置调整。",
+            "NVDA Coach 会保存您的进度。下次回来时，已完成课程会被标记，可以继续学习。"
+          ]
+        }
+      ]
+    }
+  ]
+}

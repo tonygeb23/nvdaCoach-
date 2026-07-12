@@ -1,0 +1,1113 @@
+# NVDA Coach Add-on — Simplified Chinese translation
+# Copyright (C) 2025-2026 Tony Gebhard <info@tonygebhard.me>
+# This file is distributed under the same license as the NVDA Coach package.
+#
+# Translators:
+#   Simplified Chinese translation by Codex, 2026
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NVDA Coach 1.5.5\n"
+"Report-Msgid-Bugs-To: info@tonygebhard.me\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-06-04 00:00+0800\n"
+"Last-Translator: NVDA Simplified Chinese translation team <noreply@example.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Codex\n"
+
+#: globalPlugins/nvdaCoach/__init__.py:48
+msgid "Play sounds during lessons (correct/incorrect/completion chimes)"
+msgstr "课程中播放声音（正确、错误和完成提示音）"
+
+#: globalPlugins/nvdaCoach/__init__.py:67
+msgid "NVDA Coach — Your Profile"
+msgstr "NVDA Coach — 您的个人资料"
+
+#: globalPlugins/nvdaCoach/__init__.py:76
+msgid "Your name (optional):"
+msgstr "您的姓名（可选）："
+
+#: globalPlugins/nvdaCoach/__init__.py:85
+msgid "Your instructor's name (optional):"
+msgstr "指导老师姓名（可选）："
+
+#: globalPlugins/nvdaCoach/__init__.py:94
+msgid "Training center or program (optional):"
+msgstr "培训中心/项目（可选）："
+
+#: globalPlugins/nvdaCoach/__init__.py:105
+msgid "&Save"
+msgstr "保存(&S)"
+
+#: globalPlugins/nvdaCoach/__init__.py:107
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: globalPlugins/nvdaCoach/__init__.py:127
+msgid "Hello, {name}!"
+msgstr "您好，{name}！"
+
+#: globalPlugins/nvdaCoach/__init__.py:129
+msgid "Profile saved."
+msgstr "个人资料已保存。"
+
+#: globalPlugins/nvdaCoach/__init__.py:148
+msgid "NVDA Coach — Certificate of Completion"
+msgstr "NVDA Coach — 结业证书"
+
+#: globalPlugins/nvdaCoach/__init__.py:155
+msgid "Congratulations, {name}! You have completed every lesson in NVDA Coach. Your certificate of completion has been saved to your Downloads folder and opened in your web browser."
+msgstr "恭喜，{name}！您已经完成 NVDA Coach 中的所有课程。结业证书已保存到“下载”文件夹，并已在浏览器中打开。"
+
+#: globalPlugins/nvdaCoach/__init__.py:161
+msgid "Congratulations! You have completed every lesson in NVDA Coach. Your certificate of completion has been saved to your Downloads folder and opened in your web browser."
+msgstr "恭喜！您已经完成 NVDA Coach 中的所有课程。结业证书已保存到“下载”文件夹，并已在浏览器中打开。"
+
+#: globalPlugins/nvdaCoach/__init__.py:171
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: globalPlugins/nvdaCoach/__init__.py:263
+msgid "Student"
+msgstr "学员"
+
+#: globalPlugins/nvdaCoach/__init__.py:271
+msgid "Instructor:"
+msgstr "指导老师："
+
+#: globalPlugins/nvdaCoach/__init__.py:278
+msgid "Training Center / Program:"
+msgstr "培训中心/项目："
+
+#: globalPlugins/nvdaCoach/__init__.py:285
+msgid "Your dedication and persistence have brought you to this moment. The skills you have learned in NVDA Coach will serve you every day — at work, at home, and everywhere in between. Every expert was once a beginner, and you have proven that with patience and practice, anything is possible. Well done, and welcome to a world of greater independence."
+msgstr "您的坚持和投入让您走到了这一刻。您在 NVDA Coach 中学到的技能，会在工作、生活以及更多场景中每天为您提供帮助。每一位熟练用户都曾是初学者，而您已经证明，只要有耐心并持续练习，就能不断突破。做得很好，也祝您在今后的使用中更加独立自如。"
+
+#: globalPlugins/nvdaCoach/__init__.py:295
+msgid "Certificate of Completion"
+msgstr "结业证书"
+
+#: globalPlugins/nvdaCoach/__init__.py:297
+msgid "This certifies that"
+msgstr "兹证明"
+
+#: globalPlugins/nvdaCoach/__init__.py:299
+msgid "has successfully completed all lessons in"
+msgstr "已顺利完成以下全部课程："
+
+#: globalPlugins/nvdaCoach/__init__.py:301
+msgid "Date of Completion"
+msgstr "完成日期"
+
+#: globalPlugins/nvdaCoach/__init__.py:303
+msgid "Assistive Technology Instructor"
+msgstr "辅助技术讲师"
+
+#: globalPlugins/nvdaCoach/__init__.py:407
+msgid "NVDA Coach — ready"
+msgstr "NVDA Coach — 就绪"
+
+#: globalPlugins/nvdaCoach/__init__.py:424
+msgid ""
+"Welcome to NVDA Coach\n"
+"Created by Tony Gebhard, Assistive Technology Instructor\n"
+"github.com/tonygeb23/nvdacoach\n"
+"\n"
+"Before you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n"
+"\n"
+"NVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n"
+"\n"
+"If you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n"
+"\n"
+"If you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace.\n"
+"\n"
+"--- KEYS AVAILABLE DURING EVERY LESSON ---\n"
+"  Enter  —  Confirm you have tried the step and move to the next one.\n"
+"  F1  —  Repeat the current instruction.\n"
+"  F2  —  Hear a hint. Press again for more hints.\n"
+"  F3  —  Skip the current step.\n"
+"  Escape  —  Stop the lesson. Press three times to close NVDA Coach.\n"
+"\n"
+"--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\n"
+"  F4  —  Open help documentation (press twice within 5 seconds).\n"
+"  F5  —  Send feedback by email (press twice within 5 seconds).\n"
+"  F6  —  Toggle lesson sounds on or off.\n"
+"  F7  —  Open your profile (name, instructor, training center).\n"
+"\n"
+"--- LESSON NAVIGATION ---\n"
+"  Ctrl+N  —  Next lesson  ·  Ctrl+B  —  Previous  ·  Ctrl+R  —  Restart\n"
+"\n"
+"When you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
+msgstr ""
+"欢迎使用 NVDA Coach\n"
+"由辅助技术讲师 Tony Gebhard 创建\n"
+"github.com/tonygeb23/nvdacoach\n"
+"\n"
+"开始之前，先记住一个非常重要的键：Control 键，键帽上通常标为 Ctrl，位于键盘左下角。无论 NVDA 正在读什么，只要按一下 Ctrl，NVDA 就会立刻停止朗读。对 NVDA 用户来说，这是最有用的按键之一。您每天都会在各种程序、各种场景中频繁用到它。\n"
+"\n"
+"NVDA Coach 通过简短的实践课程教授屏幕阅读器命令。每节课会一次讲解一个命令，等待您尝试后再继续。此程序面向初学者设计，但假定您已经大致熟悉键盘，包括字母、数字、光标键、回车键、Escape 和 Tab。\n"
+"\n"
+"如果您对键盘还不够熟悉，也没关系。NVDA 内置了“输入帮助”工具。按 NVDA+1 可开启输入帮助。开启后，按任意键时，NVDA 会告诉您该键的作用，而不会真正执行该操作。再次按 NVDA+1 可关闭输入帮助。您可以随时使用输入帮助，包括在课程进行过程中。\n"
+"\n"
+"如果您身边有辅助技术讲师，请告诉他们您要开始使用 NVDA Coach。他们可以帮您找到按键、调整设置，或在开始前回答问题。如果您是独自学习，也完全没问题。NVDA Coach 会按照您的节奏一步一步引导您。\n"
+"\n"
+"--- 每节课中可用的按键 ---\n"
+"  回车键：进入下一步。\n"
+"  F1  —  重复当前说明。\n"
+"  F2  —  读出提示。再次按可听到更多提示。\n"
+"  F3  —  跳过当前步骤。\n"
+"  Escape  —  停止课程。连按三次可关闭 NVDA Coach。\n"
+"\n"
+"--- 此窗口中随时可用的按键 ---\n"
+"  F4  —  打开帮助文档（5 秒内按两次）。\n"
+"  F5  —  通过电子邮件发送反馈（5 秒内按两次）。\n"
+"  F6  —  开启或关闭课程声音。\n"
+"  F7  —  打开个人资料（姓名、指导老师、培训中心）。\n"
+"\n"
+"--- 课程导航 ---\n"
+"  Ctrl+N  —  下一课  ·  Ctrl+B  —  上一课  ·  Ctrl+R  —  重新开始\n"
+"\n"
+"准备好后，请按 Tab 找到下面的“开始课程”按钮，然后按回车键或空格键开始第一课。您也可以按 NVDA+Shift+C 打开课程选择器，直接选择任意课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:471
+msgid "During a lesson:  Enter — Next Step  ·  F1 Repeat  ·  F2 Hint  ·  F3 Skip  ·  Esc Stop"
+msgstr "课程中可用：回车键：进入下一步  ·  F1：重复  ·  F2：提示  ·  F3：跳过  ·  Esc：停止"
+
+#: globalPlugins/nvdaCoach/__init__.py:482
+msgid "F4 Help  ·  F5 Feedback  ·  F6 Sounds  ·  F7 Profile"
+msgstr "F4 帮助  ·  F5 反馈  ·  F6 声音  ·  F7 个人资料"
+
+#: globalPlugins/nvdaCoach/__init__.py:490
+msgid "Next Step  (Enter)"
+msgstr "下一步（Enter）"
+
+#: globalPlugins/nvdaCoach/__init__.py:492
+msgid "Confirm you have tried the current step and move to the next one."
+msgstr "确认您已经尝试当前步骤，并进入下一步。"
+
+#: globalPlugins/nvdaCoach/__init__.py:501
+msgid "Start Course  (Enter)"
+msgstr "开始课程（Enter）"
+
+#: globalPlugins/nvdaCoach/__init__.py:503
+msgid "Begin the first lesson of the Getting Started chapter."
+msgstr "开始“NVDA 入门”章节的第一课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:514
+msgid "◄ Back  (Ctrl+B)"
+msgstr "上一课（Ctrl+B）"
+
+#: globalPlugins/nvdaCoach/__init__.py:515
+msgid "↺ Restart  (Ctrl+R)"
+msgstr "重新开始（Ctrl+R）"
+
+#: globalPlugins/nvdaCoach/__init__.py:516
+msgid "Next Lesson ►  (Ctrl+N)"
+msgstr "下一课（Ctrl+N）"
+
+#: globalPlugins/nvdaCoach/__init__.py:517
+msgid "Go to the previous lesson in this category."
+msgstr "转到当前章节的上一课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:518
+msgid "Restart the current lesson from the beginning."
+msgstr "从头重新开始当前课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:519
+msgid "Go to the next lesson in this category."
+msgstr "转到当前章节的下一课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:531
+msgid "Export Certificate of Completion"
+msgstr "导出结业证书"
+
+#: globalPlugins/nvdaCoach/__init__.py:533
+msgid "You have completed every lesson in NVDA Coach. Click to save your certificate of completion to your Downloads folder."
+msgstr "您已经完成 NVDA Coach 中的所有课程。激活此按钮即可将结业证书保存到“下载”文件夹。"
+
+#: globalPlugins/nvdaCoach/__init__.py:566
+msgid "Step {stepNum} of {stepTotal}"
+msgstr "第 {stepNum} 步，共 {stepTotal} 步"
+
+#: globalPlugins/nvdaCoach/__init__.py:589
+msgid "Congratulations — you have completed every lesson in NVDA Coach! Tab to the Export Certificate of Completion button to save your certificate."
+msgstr "恭喜，您已经完成 NVDA Coach 中的所有课程！请按 Tab 找到“导出结业证书”按钮以保存证书。"
+
+#: globalPlugins/nvdaCoach/__init__.py:596
+msgid "NVDA Coach — Introduction"
+msgstr "NVDA Coach — 简介"
+
+#: globalPlugins/nvdaCoach/__init__.py:601
+msgid "Welcome, {name}, to NVDA Coach"
+msgstr "{name}，欢迎使用 NVDA Coach"
+
+#: globalPlugins/nvdaCoach/__init__.py:602
+msgid "Welcome, {name}, to NVDA Coach. Use your reading cursor or arrow keys to read this introduction. When you are ready, press Tab to reach the Start Course button and press Enter to begin."
+msgstr "{name}，欢迎使用 NVDA Coach。请使用阅读光标或光标键阅读本简介。准备好后，按 Tab 找到“开始课程”按钮，然后按回车键开始。"
+
+#: globalPlugins/nvdaCoach/__init__.py:608
+msgid "Welcome to NVDA Coach"
+msgstr "欢迎使用 NVDA Coach"
+
+#: globalPlugins/nvdaCoach/__init__.py:609
+msgid "Welcome to NVDA Coach. Use your reading cursor or arrow keys to read this introduction. When you are ready, press Tab to reach the Start Course button and press Enter to begin."
+msgstr "欢迎使用 NVDA Coach。请使用阅读光标或光标键阅读本简介。准备好后，按 Tab 找到“开始课程”按钮，然后按回车键开始。"
+
+#: globalPlugins/nvdaCoach/__init__.py:615
+msgid "Your instructor today is {instructor}. Let them know you are starting — they can help you find keys, adjust settings, or answer questions before you begin."
+msgstr "今天指导您的老师是 {instructor}。请告诉他们您要开始了，他们可以帮您找到按键、调整设置，或在开始前回答问题。"
+
+#: globalPlugins/nvdaCoach/__init__.py:621
+msgid "If you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace."
+msgstr "如果您身边有辅助技术讲师，请告诉他们您要开始使用 NVDA Coach。他们可以帮您找到按键、调整设置，或在开始前回答问题。如果您是独自学习，也完全没问题。NVDA Coach 会按照您的节奏一步一步引导您。"
+
+#: globalPlugins/nvdaCoach/__init__.py:629
+msgid "Created by Tony Gebhard, Assistive Technology Instructor"
+msgstr "由辅助技术讲师 Tony Gebhard 创建"
+
+#: globalPlugins/nvdaCoach/__init__.py:631
+msgid ""
+"Before you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n"
+"\n"
+"NVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n"
+"\n"
+"If you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n"
+"\n"
+msgstr ""
+"开始之前，先记住一个非常重要的键：Control 键，键帽上通常标为 Ctrl，位于键盘左下角。无论 NVDA 正在读什么，只要按一下 Ctrl，NVDA 就会立刻停止朗读。对 NVDA 用户来说，这是最有用的按键之一。您每天都会在各种程序、各种场景中频繁用到它。\n"
+"\n"
+"NVDA Coach 通过简短的实践课程教授屏幕阅读器命令。每节课会一次讲解一个命令，等待您尝试后再继续。此程序面向初学者设计，但假定您已经大致熟悉键盘，包括字母、数字、光标键、回车键、Escape 和 Tab。\n"
+"\n"
+"如果您对键盘还不够熟悉，也没关系。NVDA 内置了“输入帮助”工具。按 NVDA+1 可开启输入帮助。开启后，按任意键时，NVDA 会告诉您该键的作用，而不会真正执行该操作。再次按 NVDA+1 可关闭输入帮助。您可以随时使用输入帮助，包括在课程进行过程中。\n"
+"\n"
+
+#: globalPlugins/nvdaCoach/__init__.py:648
+msgid ""
+"--- KEYS AVAILABLE DURING EVERY LESSON ---\n"
+"These function keys work at any time while a lesson is open:\n"
+"\n"
+"  Enter  —  Confirm you have tried the step and move to the next one.\n"
+"  F1  —  Repeat the current instruction. Use this whenever you want NVDA to read the step again.\n"
+"  F2  —  Hear a hint. If you are not sure what to do, press F2 for a helpful suggestion. Press it again for additional hints.\n"
+"  F3  —  Skip the current step and move on. Use this if you cannot complete a step right now and want to continue.\n"
+"  Escape  —  Stop the lesson. Press Escape three times to close NVDA Coach.\n"
+"\n"
+"--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\n"
+"These keys work whether a lesson is running or not:\n"
+"\n"
+"  F4  —  Open the NVDA Coach help documentation in your web browser. Press F4 once to arm it, then press F4 again within five seconds to open.\n"
+"  F5  —  Send feedback to the developer by email. Press F5 once to arm it, then press F5 again within five seconds to open.\n"
+"  F6  —  Toggle lesson sounds on or off. Press once to silence sounds, press again to restore them.\n"
+"  F7  —  Open your profile. Set your name, your instructor's name, and your training center. This information personalizes your lessons and appears on your certificate of completion.\n"
+"\n"
+"--- LESSON NAVIGATION ---\n"
+"  Ctrl+N  —  Move to the next lesson in the current chapter.\n"
+"  Ctrl+B  —  Go back to the previous lesson.\n"
+"  Ctrl+R  —  Restart the current lesson from the beginning.\n"
+"\n"
+msgstr ""
+"--- 每节课中可用的按键 ---\n"
+"课程打开期间，这些功能键可随时使用：\n"
+"\n"
+"  回车键：进入下一步。\n"
+"  F1  —  重复当前说明。需要让 NVDA 再次读出本步骤时可使用此键。\n"
+"  F2  —  读出提示。如果不确定该怎么做，请按 F2 获取建议。再次按可听到更多提示。\n"
+"  F3  —  跳过当前步骤并继续。暂时无法完成某一步但想继续时，可使用此键。\n"
+"  Escape  —  停止课程。连按 Escape 三次可关闭 NVDA Coach。\n"
+"\n"
+"--- 此窗口中随时可用的按键 ---\n"
+"无论课程是否正在运行，这些按键都可使用：\n"
+"\n"
+"  F4  —  在浏览器中打开 NVDA Coach 帮助文档。先按一次 F4 确认，再在 5 秒内再次按 F4 打开。\n"
+"  F5  —  通过电子邮件向开发者发送反馈。先按一次 F5 确认，再在 5 秒内再次按 F5 打开。\n"
+"  F6  —  开启或关闭课程声音。按一次静音，再按一次恢复。\n"
+"  F7  —  打开个人资料。设置您的姓名、指导老师姓名和培训中心。这些信息会用于个性化课程，并显示在结业证书上。\n"
+"\n"
+"--- 课程导航 ---\n"
+"  Ctrl+N  —  移到当前章节的下一课。\n"
+"  Ctrl+B  —  返回上一课。\n"
+"  Ctrl+R  —  从头重新开始当前课程。\n"
+"\n"
+
+#: globalPlugins/nvdaCoach/__init__.py:675
+msgid "When you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
+msgstr "准备好开始后，请按 Tab 找到下面的“开始课程”按钮，然后按回车键或空格键开始第一课。您也可以按 NVDA+Shift+C 打开课程选择器，直接选择任意课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:706
+msgid "Ready, {name}."
+msgstr "已就绪，{name}。"
+
+#: globalPlugins/nvdaCoach/__init__.py:706
+msgid "Ready."
+msgstr "已就绪。"
+
+#: globalPlugins/nvdaCoach/__init__.py:714
+msgid ""
+"--- WHAT TO DO NEXT ---\n"
+"  Press NVDA+Shift+C to open the lesson picker and choose a lesson.\n"
+"\n"
+"--- LESSON NAVIGATION ---\n"
+"  Ctrl+N  —  Move to the next lesson in this category.\n"
+"  Ctrl+B  —  Go back to the previous lesson.\n"
+"  Ctrl+R  —  Restart this lesson from the beginning.\n"
+"\n"
+"The Control key (Ctrl) is in the bottom-left corner of your keyboard.\n"
+"\n"
+"--- NEW TO KEYBOARD NAVIGATION? ---\n"
+"Use NVDA Input Help: press NVDA+1 to turn it on, press any key to hear what it does without anything happening, then press NVDA+1 to turn it off.\n"
+"\n"
+"--- A NOTE FOR INSTRUCTORS AND STUDENTS ---\n"
+"If an instructor is present, this is a great time to ask any questions before the next lesson. If you are working independently, keep going at your own pace. Every step forward counts.\n"
+"\n"
+"--- QUICK KEYS (available any time in this window) ---\n"
+"  F4 — Open help documentation\n"
+"  F5 — Send feedback to the developer\n"
+"  F6 — Toggle lesson sounds on or off\n"
+"  F7 — Set your name and instructor's name"
+msgstr ""
+"--- 接下来做什么 ---\n"
+"  按 NVDA+Shift+C 打开课程选择器并选择课程。\n"
+"\n"
+"--- 课程导航 ---\n"
+"  Ctrl+N  —  移到当前章节的下一课。\n"
+"  Ctrl+B  —  返回上一课。\n"
+"  Ctrl+R  —  从头重新开始当前课程。\n"
+"\n"
+"Control 键（Ctrl）位于键盘左下角。\n"
+"\n"
+"--- 刚开始学习键盘导航？ ---\n"
+"使用 NVDA 输入帮助：按 NVDA+1 开启，按任意键听 NVDA 读出说明而不会实际执行操作，然后再次按 NVDA+1 关闭。\n"
+"\n"
+"--- 给指导老师和学员的提示 ---\n"
+"如果有指导老师在场，这是开始下一课前提问的好时机。如果您是独自学习，请按自己的节奏继续。每一步都是进步。\n"
+"\n"
+"--- 快捷键（此窗口中随时可用） ---\n"
+"  F4 — 打开帮助文档\n"
+"  F5 — 向开发者发送反馈\n"
+"  F6 — 开启或关闭课程声音\n"
+"  F7 — 设置您的姓名和指导老师姓名"
+
+#: globalPlugins/nvdaCoach/__init__.py:741
+msgid "Congratulations, {name} — Browse Mode and Web Navigation Complete!"
+msgstr "恭喜，{name}，浏览模式和网页导航已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:743
+msgid "Congratulations — Browse Mode and Web Navigation Complete!"
+msgstr "恭喜，浏览模式和网页导航已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:746
+msgid "Congratulations, {name}! You have completed Browse Mode and Web Navigation, Chapter 4 of NVDA Coach. The practice page in your browser can now be closed. Press NVDA+Shift+C to continue to additional training resources."
+msgstr "恭喜，{name}！您已经完成 NVDA Coach 第 4 章“浏览模式和网页导航”。现在可以关闭浏览器中的练习页。请按 NVDA+Shift+C 继续查看进阶训练资源。"
+
+#: globalPlugins/nvdaCoach/__init__.py:751
+msgid "Congratulations! You have completed Browse Mode and Web Navigation, Chapter 4 of NVDA Coach. The practice page in your browser can now be closed. Press NVDA+Shift+C to continue to additional training resources."
+msgstr "恭喜！您已经完成 NVDA Coach 第 4 章“浏览模式和网页导航”。现在可以关闭浏览器中的练习页。请按 NVDA+Shift+C 继续查看进阶训练资源。"
+
+#: globalPlugins/nvdaCoach/__init__.py:756
+msgid "NVDA Coach — Chapter 4 Complete!"
+msgstr "NVDA Coach — 第 4 章已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:763
+msgid ""
+"You have finished all lessons in Chapter 4. You now know how to navigate any web page using NVDA's browse mode.\n"
+"\n"
+"Commands you have mastered:\n"
+"  H — Jump between headings\n"
+"  1 through 6 — Jump to heading levels\n"
+"  K — Jump between links\n"
+"  F, E, B — Navigate form fields and buttons\n"
+"  D — Jump between landmarks\n"
+"  L — Jump between lists\n"
+"  NVDA+Space — Toggle browse mode and focus mode\n"
+"  NVDA+F7 — Open the Elements List\n"
+"\n"
+"The practice page in your browser can now be closed.\n"
+"\n"
+"What to do next:\n"
+"  Press NVDA+Shift+C to open the lesson picker.\n"
+"  Choose Additional Training and Help for more resources.\n"
+"  Or press Ctrl+R to repeat any lesson in this chapter."
+msgstr ""
+"您已经完成第 4 章的所有课程。现在，您已经知道如何使用 NVDA 的浏览模式导航任意网页。\n"
+"\n"
+"您已经掌握的命令：\n"
+"  H — 在标题之间跳转\n"
+"  1 到 6 — 跳转到指定级别的标题\n"
+"  K — 在链接之间跳转\n"
+"  F、E、B — 导航表单、编辑框和按钮\n"
+"  D — 在路标之间跳转\n"
+"  L — 在列表之间跳转\n"
+"  NVDA+空格 — 在浏览模式和焦点模式之间切换\n"
+"  NVDA+F7 — 打开元素列表\n"
+"\n"
+"现在可以关闭浏览器中的练习页。\n"
+"\n"
+"接下来做什么：\n"
+"  按 NVDA+Shift+C 打开课程选择器。\n"
+"  选择“进阶训练和帮助”查看更多资源。\n"
+"  或按 Ctrl+R 重复本章中的任意课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:792
+msgid "Congratulations, {name} — You Have Completed NVDA Coach!"
+msgstr "恭喜，{name}，您已完成 NVDA Coach！"
+
+#: globalPlugins/nvdaCoach/__init__.py:794
+msgid "Congratulations — You Have Completed NVDA Coach!"
+msgstr "恭喜，您已完成 NVDA Coach！"
+
+#: globalPlugins/nvdaCoach/__init__.py:797
+msgid "Congratulations, {name}! You have finished every lesson in NVDA Coach. This is a tremendous achievement. Tab to the Export Certificate of Completion button to save your certificate."
+msgstr "恭喜，{name}！您已经完成 NVDA Coach 中的所有课程。这是一项了不起的成就。请按 Tab 找到“导出结业证书”按钮以保存证书。"
+
+#: globalPlugins/nvdaCoach/__init__.py:801
+msgid "Congratulations! You have finished every lesson in NVDA Coach. This is a tremendous achievement. Tab to the Export Certificate of Completion button to save your certificate."
+msgstr "恭喜！您已经完成 NVDA Coach 中的所有课程。这是一项了不起的成就。请按 Tab 找到“导出结业证书”按钮以保存证书。"
+
+#: globalPlugins/nvdaCoach/__init__.py:807
+msgid "Instructor: {instructor}"
+msgstr "指导老师：{instructor}"
+
+#: globalPlugins/nvdaCoach/__init__.py:811
+msgid "Training Program: {center}"
+msgstr "培训中心/项目：{center}"
+
+#: globalPlugins/nvdaCoach/__init__.py:831
+msgid ""
+"--- WHAT YOU HAVE LEARNED ---\n"
+"  Chapter 1: Getting Started with NVDA\n"
+"  Chapter 2: Your Keyboard\n"
+"  Chapter 3: Reading Text\n"
+"  Chapter 4: Browse Mode and Web Navigation\n"
+"  Chapter 5: Object Navigation\n"
+"  Chapter 6: Customizing NVDA\n"
+"\n"
+msgstr ""
+"--- 您已经学习的内容 ---\n"
+"  第 1 章：NVDA 入门\n"
+"  第 2 章：您的键盘\n"
+"  第 3 章：阅读文本\n"
+"  第 4 章：浏览模式和网页导航\n"
+"  第 5 章：对象导航\n"
+"  第 6 章：自定义 NVDA\n"
+"\n"
+
+#: globalPlugins/nvdaCoach/__init__.py:840
+msgid ""
+"--- YOUR CERTIFICATE OF COMPLETION ---\n"
+"Tab to the Export Certificate button below and press Enter.\n"
+"Your certificate will open in your web browser.\n"
+"\n"
+"To save or print your certificate:\n"
+"  1. In your browser, press Ctrl+S to save the page, or press Ctrl+P to print it.\n"
+"  2. To print to PDF, choose 'Save as PDF' or 'Microsoft Print to PDF' as your printer.\n"
+"  3. A copy is also saved automatically to your Downloads folder."
+msgstr ""
+"--- 您的结业证书 ---\n"
+"请按 Tab 找到下面的“导出证书”按钮并按回车键。\n"
+"证书会在浏览器中打开。\n"
+"\n"
+"要保存或打印证书：\n"
+"  1. 在浏览器中按 Ctrl+S 保存页面，或按 Ctrl+P 打印。\n"
+"  2. 要打印为 PDF，请在打印机中选择“另存为 PDF”或“Microsoft Print to PDF”。\n"
+"  3. 证书副本也会自动保存到“下载”文件夹。"
+
+#: globalPlugins/nvdaCoach/__init__.py:853
+msgid "NVDA Coach — Course Complete!"
+msgstr "NVDA Coach — 课程已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:874
+msgid "Welcome back, {name} — NVDA Coach Complete!"
+msgstr "欢迎回来，{name}，NVDA Coach 已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:876
+msgid "Welcome back — NVDA Coach Complete!"
+msgstr "欢迎回来，NVDA Coach 已完成！"
+
+#: globalPlugins/nvdaCoach/__init__.py:879
+msgid "Welcome back, {name}. You have already completed every lesson in NVDA Coach. Your certificate is available below."
+msgstr "欢迎回来，{name}。您已经完成 NVDA Coach 中的所有课程。您的证书可在下方获取。"
+
+#: globalPlugins/nvdaCoach/__init__.py:882
+msgid "Welcome back. You have already completed every lesson in NVDA Coach. Your certificate is available below."
+msgstr "欢迎回来。您已经完成 NVDA Coach 中的所有课程。您的证书可在下方获取。"
+
+#: globalPlugins/nvdaCoach/__init__.py:888
+msgid ""
+"You have completed all six chapters of NVDA Coach. Your progress is saved and your certificate of completion is ready.\n"
+"\n"
+"--- YOUR CERTIFICATE ---\n"
+"Tab to the Export Certificate of Completion button below and press Enter to open your certificate in your web browser. A copy is also saved to your Downloads folder automatically.\n"
+"\n"
+"--- CONTINUE LEARNING ---\n"
+"Press NVDA+Shift+C to open the lesson picker. You can revisit any lesson at any time to review commands and practice.\n"
+"\n"
+"--- LESSON NAVIGATION ---\n"
+"  Ctrl+N  —  Next lesson in the current category\n"
+"  Ctrl+B  —  Previous lesson\n"
+"  Ctrl+R  —  Restart the current lesson\n"
+"\n"
+"--- QUICK KEYS ---\n"
+"  F4 — Open help documentation\n"
+"  F5 — Send feedback to the developer\n"
+"  F6 — Toggle lesson sounds on or off\n"
+"  F7 — Update your profile (name, instructor, training center)"
+msgstr ""
+"您已经完成 NVDA Coach 的全部六个章节。您的进度已保存，结业证书已准备就绪。\n"
+"\n"
+"--- 您的证书 ---\n"
+"请按 Tab 找到下面的“导出结业证书”按钮并按回车键，在浏览器中打开证书。副本也会自动保存到“下载”文件夹。\n"
+"\n"
+"--- 继续学习 ---\n"
+"按 NVDA+Shift+C 打开课程选择器。您可以随时回到任意课程，复习命令并继续练习。\n"
+"\n"
+"--- 课程导航 ---\n"
+"  Ctrl+N  —  当前章节的下一课\n"
+"  Ctrl+B  —  上一课\n"
+"  Ctrl+R  —  重新开始当前课程\n"
+"\n"
+"--- 快捷键 ---\n"
+"  F4 — 打开帮助文档\n"
+"  F5 — 向开发者发送反馈\n"
+"  F6 — 开启或关闭课程声音\n"
+"  F7 — 更新个人资料（姓名、指导老师、培训中心）"
+
+#: globalPlugins/nvdaCoach/__init__.py:928
+msgid ""
+"Lesson stopped.\n"
+"\n"
+"Press Escape two more times to close NVDA Coach.\n"
+"Or press NVDA+Shift+C to start another lesson."
+msgstr ""
+"课程已停止。\n"
+"\n"
+"再按两次 Escape 可关闭 NVDA Coach。\n"
+"或按 NVDA+Shift+C 开始另一节课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:953
+msgid "Opening NVDA Coach help documentation in your web browser."
+msgstr "正在浏览器中打开 NVDA Coach 帮助文档。"
+
+#: globalPlugins/nvdaCoach/__init__.py:956
+msgid "If you wish to view the NVDA Coach help documentation, press F4 once more."
+msgstr "如果要查看 NVDA Coach 帮助文档，请再次按 F4。"
+
+#: globalPlugins/nvdaCoach/__init__.py:976
+msgid "Opening a feedback email to the developer."
+msgstr "正在打开写给开发者的反馈邮件。"
+
+#: globalPlugins/nvdaCoach/__init__.py:979
+msgid "Press F5 once more to open a feedback email to the developer."
+msgstr "请再次按 F5，打开写给开发者的反馈邮件。"
+
+#: globalPlugins/nvdaCoach/__init__.py:993
+msgid "Sounds enabled."
+msgstr "声音已开启。"
+
+#: globalPlugins/nvdaCoach/__init__.py:995
+msgid "Sounds disabled."
+msgstr "声音已关闭。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1127
+msgid "Press Escape two more times to close NVDA Coach."
+msgstr "再按两次 Escape 可关闭 NVDA Coach。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1130
+msgid "Or press NVDA+Shift+C to start a lesson."
+msgstr "或按 NVDA+Shift+C 开始一节课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1134
+msgid "Press Escape one more time to close NVDA Coach."
+msgstr "再按一次 Escape 可关闭 NVDA Coach。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1273
+msgid "When you are done, press NVDA+Shift+C to return to the Coach window, then press Enter or Next Step to continue."
+msgstr "完成后，按 NVDA+Shift+C 返回 NVDA Coach 窗口，然后按回车键或“下一步”继续。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1287
+msgid "Tab Navigation Practice Form"
+msgstr "Tab 导航练习表单"
+
+#: globalPlugins/nvdaCoach/__init__.py:1288
+msgid "Press Tab to move forward through these controls. Press Shift+Tab to move backward. NVDA announces each control as you land on it."
+msgstr "按 Tab 在这些控件间向前移动。按 Shift+Tab 向后移动。每次移动到控件上时，NVDA 都会读出该控件。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1343
+msgid "Form submitted. In a real form, this would send your information."
+msgstr "表单已提交。在真实表单中，这会发送您的信息。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1346
+msgid "Cancelled. The form was not submitted."
+msgstr "已取消。表单未提交。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1349
+msgid "Subscribed to newsletter."
+msgstr "已订阅简报。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1349
+msgid "Unsubscribed."
+msgstr "已取消订阅。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1355
+msgid "Activating Controls Practice"
+msgstr "激活控件练习"
+
+#: globalPlugins/nvdaCoach/__init__.py:1356
+msgid "Tab to a control and activate it. Press Space to check or uncheck a checkbox. Press Enter to activate a button."
+msgstr "按 Tab 移到某个控件并将其激活。按空格选中或取消选中复选框。按回车键激活按钮。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1385
+msgid "Screen reader tips enabled."
+msgstr "屏幕阅读器提示已开启。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1386
+msgid "Screen reader tips disabled."
+msgstr "屏幕阅读器提示已关闭。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1389
+msgid "Practice hints on."
+msgstr "练习提示已开启。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1389
+msgid "Practice hints off."
+msgstr "练习提示已关闭。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1392
+msgid "Auto-start enabled."
+msgstr "自动启动已开启。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1392
+msgid "Auto-start disabled."
+msgstr "自动启动已关闭。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1397
+msgid "Beep! You activated the button."
+msgstr "哔！您激活了按钮。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1401
+msgid "Hello! You just activated a button. Great work."
+msgstr "您好！您刚刚激活了一个按钮。做得很好。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1403
+msgid "Tip: Tab moves between controls. Enter activates buttons. Space checks or unchecks checkboxes."
+msgstr "提示：Tab 在控件之间移动。回车键激活按钮。空格选中或取消选中复选框。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1411
+msgid "Find Your Focus — Practice Login Form"
+msgstr "确认当前位置 — 登录表单练习"
+
+#: globalPlugins/nvdaCoach/__init__.py:1412
+msgid "Tab around this form. When you land on a control, press NVDA+Tab to hear its name, type, and current state."
+msgstr "在此表单中按 Tab 移动。移动到某个控件后，按 NVDA+Tab 读出它的名称、类型和当前状态。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1434
+msgid "Sign in"
+msgstr "登录"
+
+#: globalPlugins/nvdaCoach/__init__.py:1434
+msgid "Sign in activated. In a real application, this would log you in."
+msgstr "已激活“登录”。在真实应用中，这会让您登录。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1435
+msgid "Create account"
+msgstr "创建账户"
+
+#: globalPlugins/nvdaCoach/__init__.py:1435
+msgid "Create account activated. This would open a registration form."
+msgstr "已激活“创建账户”。这会打开注册表单。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1436
+msgid "Forgot your password?"
+msgstr "忘记密码？"
+
+#: globalPlugins/nvdaCoach/__init__.py:1436
+msgid "Password reset activated. A reset link would be sent."
+msgstr "已激活密码重置。系统会发送重置链接。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1467
+msgid "NVDA Coach — Choose a Lesson"
+msgstr "NVDA Coach — 选择课程"
+
+#: globalPlugins/nvdaCoach/__init__.py:1486
+msgid "Browse lessons and resources below. Right arrow expands a section, Left arrow collapses it. Press Enter or the Open / Start button to activate the selected item. Press F4 for help, F5 for feedback, F6 to toggle sounds, F7 or the Profile button to set your name and instructor."
+msgstr "浏览下面的课程和资源。右光标可展开章节，左光标可折叠章节。按回车键或“打开当前项目”按钮即可打开。按 F4 获取帮助，按 F5 发送反馈，按 F6 打开或关闭声音，按 F7 或“个人资料”按钮设置您的姓名和指导老师。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1509
+msgid "Introduction / About NVDA Coach"
+msgstr "简介/关于 NVDA Coach"
+
+#: globalPlugins/nvdaCoach/__init__.py:1515
+msgid "Unknown Category"
+msgstr "未知章节"
+
+#: globalPlugins/nvdaCoach/__init__.py:1519
+msgid "{completed} of {total} complete"
+msgstr "已完成 {completed} / {total}"
+
+#: globalPlugins/nvdaCoach/__init__.py:1524
+msgid "Untitled"
+msgstr "未命名"
+
+#: globalPlugins/nvdaCoach/__init__.py:1527
+msgid "[Done]"
+msgstr "[已完成]"
+
+#: globalPlugins/nvdaCoach/__init__.py:1537
+msgid "Additional Training and Help"
+msgstr "进阶训练和帮助"
+
+#: globalPlugins/nvdaCoach/__init__.py:1549
+msgid "&Open / Start"
+msgstr "打开当前项目(&O)"
+
+#: globalPlugins/nvdaCoach/__init__.py:1551
+msgid "&Profile  (F7)"
+msgstr "个人资料(&P)（F7）"
+
+#: globalPlugins/nvdaCoach/__init__.py:1552
+msgid "Set your name, instructor name, and training center. This information appears on your certificate of completion and personalizes lesson instructions throughout NVDA Coach. You can update your profile at any time."
+msgstr "设置您的姓名、指导老师姓名和培训中心。这些信息会显示在结业证书上，并用于个性化课程说明。可随时更新个人资料。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1576
+msgid "Please select an item first."
+msgstr "请先选择一个项目。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1597
+msgid "Section collapsed. {count} items hidden."
+msgstr "章节已折叠。已隐藏 {count} 个项目。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1602
+msgid "Section expanded. {count} items available. Use the Down arrow to browse them."
+msgstr "章节已展开。共有 {count} 个项目。请使用下光标浏览。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1608
+msgid "File"
+msgstr "文件"
+
+#: globalPlugins/nvdaCoach/__init__.py:1611
+msgid "{label} is not available in this version of NVDA Coach."
+msgstr "{label} 在此版本的 NVDA Coach 中不可用。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1616
+msgid "Opening {label}."
+msgstr "正在打开 {label}。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1620
+msgid "Could not open {label}. Please check that the add-on is installed correctly."
+msgstr "无法打开 {label}。请检查插件是否已正确安装。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1628
+msgid "Opening {url} in your web browser."
+msgstr "正在浏览器中打开 {url}。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1631
+msgid "Could not open the website. Please check your internet connection."
+msgstr "无法打开网站。请检查网络连接。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1694
+msgid "&NVDA Coach"
+msgstr "NVDA Coach(&N)"
+
+#: globalPlugins/nvdaCoach/__init__.py:1695
+msgid "Open NVDA Coach lesson picker"
+msgstr "打开 NVDA Coach 课程选择器"
+
+#: globalPlugins/nvdaCoach/__init__.py:1735
+msgid "NVDA Coach. Press Enter or Next Step to continue, or Escape to stop the lesson."
+msgstr "NVDA Coach。按回车键或“下一步”继续，或按 Escape 停止课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1742
+msgid "NVDA Coach: No lesson files found. Please check that the lessons folder is in the add-on directory."
+msgstr "NVDA Coach：未找到课程文件。请检查插件目录中是否有 lessons 文件夹。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1757
+msgid "Show NVDA Coach window, or open the lesson picker"
+msgstr "显示 NVDA Coach 窗口，或打开课程选择器"
+
+#: globalPlugins/nvdaCoach/__init__.py:1869
+msgid "No active category. Press NVDA+Shift+C to choose a lesson."
+msgstr "当前未选择章节。请按 NVDA+Shift+C 选择课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1872
+msgid "You are on the last lesson in this category. Press NVDA+Shift+C to open the lesson picker and continue to the next chapter."
+msgstr "您已经在当前章节的最后一课。请按 NVDA+Shift+C 打开课程选择器，并继续下一章。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1884
+msgid "Moving to: {title}."
+msgstr "正在转到：{title}。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1884
+msgid "next lesson"
+msgstr "下一课"
+
+#: globalPlugins/nvdaCoach/__init__.py:1899
+msgid "You are on the first lesson in this category."
+msgstr "您已经在当前章节的第一课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1907
+msgid "Going back to: {title}."
+msgstr "正在返回上一课：{title}。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1907
+msgid "previous lesson"
+msgstr "上一课"
+
+#: globalPlugins/nvdaCoach/__init__.py:1926
+msgid "Restarting lesson."
+msgstr "正在重新开始课程。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1941
+msgid "Could not find the Getting Started chapter."
+msgstr "找不到“NVDA 入门”章节。"
+
+#: globalPlugins/nvdaCoach/__init__.py:2048
+msgid "Could not save the certificate. Please check that your Downloads folder is accessible."
+msgstr "无法保存证书。请检查“下载”文件夹是否可访问。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:87
+msgid "Hello, {name}! "
+msgstr "您好，{name}！"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:89
+msgid "Your instructor today is {instructor}. "
+msgstr "今天指导您的老师是 {instructor}。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:94
+msgid "Starting lesson: {title}."
+msgstr "开始课程：{title}。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:99
+msgid "Press Enter or the Next Step button to advance. F1 repeats the instruction, F2 gives a hint, Escape stops the lesson."
+msgstr "按回车键或“下一步”按钮继续。F1 重复说明，F2 读出提示，Escape 停止课程。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:118
+msgid "Lesson stopped. Press NVDA+Shift+C to choose another lesson, or Ctrl+R to restart this one."
+msgstr "课程已停止。请按 NVDA+Shift+C 选择另一节课，或按 Ctrl+R 重新开始当前课程。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:124
+msgid "Lesson stopped."
+msgstr "课程已停止。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:164
+msgid "Hint {idx} of {total}: {hint}"
+msgstr "第 {idx} 条提示，共 {total} 条：{hint}"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:166
+msgid "Hint: {hint}"
+msgstr "提示：{hint}"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:171
+msgid "No additional hint is available for this step."
+msgstr "此步骤没有其他提示。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:179
+msgid "Step skipped."
+msgstr "已跳过此步骤。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:208
+msgid "Step {stepNum} of {totalSteps}. "
+msgstr "第 {stepNum} 步，共 {totalSteps} 步。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:213
+msgid "Try it now. When you are ready to continue, press Enter or click Next Step."
+msgstr "现在试试看。准备好继续时，请按回车键或激活“下一步”按钮。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:229
+msgid "PRACTICE AREA — NAVIGATE WITH ARROW KEYS:"
+msgstr "练习区：使用光标键导航"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:282
+msgid "Lesson"
+msgstr "课程"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:284
+msgid "Well done, {name}!"
+msgstr "做得很好，{name}！"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:284
+msgid "Well done."
+msgstr "做得很好。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:294
+msgid "Lesson complete: {title}! "
+msgstr "课程“{title}”已完成！ "
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:300
+msgid "Press NVDA+Shift+C to open the lesson picker and choose your next lesson or continue to the next chapter. Ctrl+N moves to the next lesson in this category, or Ctrl+R repeats this one."
+msgstr "按 NVDA+Shift+C 打开课程选择器，选择下一课或继续下一章。Ctrl+N 移到当前章节的下一课，Ctrl+R 重复当前课程。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:310
+msgid "Lesson complete: {title}!"
+msgstr "课程“{title}”已完成！"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:312
+msgid "WHAT TO DO NEXT"
+msgstr "接下来做什么"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:313
+msgid "Press NVDA+Shift+C to open the lesson picker."
+msgstr "按 NVDA+Shift+C 打开课程选择器。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:314
+msgid "Choose the next lesson in this chapter, or start the next chapter."
+msgstr "选择本章的下一课，或开始下一章。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:315
+msgid "STAY IN THIS CHAPTER"
+msgstr "留在本章"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:316
+msgid "Next lesson in this category."
+msgstr "当前章节的下一课。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:317
+msgid "Repeat this lesson."
+msgstr "重复当前课程。"
+
+#: globalPlugins/nvdaCoach/lessonRunner.py:318
+msgid "Go back to the previous lesson."
+msgstr "返回上一课。"
+
+#: globalPlugins/nvdaCoach/__init__.py:1194
+msgid "NVDA Coach — Practice Area"
+msgstr "NVDA Coach — 练习区域"
+
+#: globalPlugins/nvdaCoach/__init__.py:1223
+msgid "Practice Area"
+msgstr "练习区域"
+
+#: globalPlugins/nvdaCoach/__init__.py:1224
+msgid "NVDA Coach — Practice: {title}"
+msgstr "NVDA Coach — 练习：{title}"
+
+#: globalPlugins/nvdaCoach/__init__.py:1302
+msgid "First name:"
+msgstr "名字："
+
+#: globalPlugins/nvdaCoach/__init__.py:1302
+msgid "First name"
+msgstr "名字"
+
+#: globalPlugins/nvdaCoach/__init__.py:1303
+msgid "Last name:"
+msgstr "姓氏："
+
+#: globalPlugins/nvdaCoach/__init__.py:1303
+msgid "Last name"
+msgstr "姓氏"
+
+#: globalPlugins/nvdaCoach/__init__.py:1304
+msgid "Email address:"
+msgstr "电子邮件地址："
+
+#: globalPlugins/nvdaCoach/__init__.py:1304
+msgid "Email address"
+msgstr "电子邮件地址"
+
+#: globalPlugins/nvdaCoach/__init__.py:1315
+msgid "Subscribe to the NVDA Coach newsletter"
+msgstr "订阅 NVDA Coach 新闻邮件"
+
+#: globalPlugins/nvdaCoach/__init__.py:1320
+msgid "Preferred contact method"
+msgstr "首选联系方式"
+
+#: globalPlugins/nvdaCoach/__init__.py:1321
+msgid "Email"
+msgstr "电子邮件"
+
+#: globalPlugins/nvdaCoach/__init__.py:1321
+msgid "Phone"
+msgstr "电话"
+
+#: globalPlugins/nvdaCoach/__init__.py:1321
+msgid "No preference"
+msgstr "无偏好"
+
+#: globalPlugins/nvdaCoach/__init__.py:1329
+msgid "Country:"
+msgstr "国家或地区："
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "United States"
+msgstr "美国"
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "Canada"
+msgstr "加拿大"
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "United Kingdom"
+msgstr "英国"
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "Australia"
+msgstr "澳大利亚"
+
+#: globalPlugins/nvdaCoach/__init__.py:1334
+msgid "Other"
+msgstr "其他"
+
+#: globalPlugins/nvdaCoach/__init__.py:1339
+msgid "Submit form"
+msgstr "提交表单"
+
+#: globalPlugins/nvdaCoach/__init__.py:1340
+msgid "Cancel"
+msgstr "取消"
+
+#: globalPlugins/nvdaCoach/__init__.py:1368
+msgid "Checkboxes — press Space to toggle:"
+msgstr "复选框：按空格键切换"
+
+#: globalPlugins/nvdaCoach/__init__.py:1371
+msgid "Enable screen reader tips"
+msgstr "启用屏幕阅读器提示"
+
+#: globalPlugins/nvdaCoach/__init__.py:1372
+msgid "Show practice hints during lessons"
+msgstr "课程中显示练习提示"
+
+#: globalPlugins/nvdaCoach/__init__.py:1373
+msgid "Open Coach window automatically on startup"
+msgstr "启动时自动打开 NVDA Coach 窗口"
+
+#: globalPlugins/nvdaCoach/__init__.py:1378
+msgid "Buttons — press Enter to activate:"
+msgstr "按钮：按回车键激活"
+
+#: globalPlugins/nvdaCoach/__init__.py:1381
+msgid "Play a beep sound"
+msgstr "播放提示音"
+
+#: globalPlugins/nvdaCoach/__init__.py:1382
+msgid "Say hello"
+msgstr "问候"
+
+#: globalPlugins/nvdaCoach/__init__.py:1383
+msgid "Show keyboard tip"
+msgstr "显示键盘提示"
+
+#: globalPlugins/nvdaCoach/__init__.py:1424
+msgid "Username:"
+msgstr "用户名："
+
+#: globalPlugins/nvdaCoach/__init__.py:1426
+msgid "Username"
+msgstr "用户名"
+
+#: globalPlugins/nvdaCoach/__init__.py:1428
+msgid "Password:"
+msgstr "密码："
+
+#: globalPlugins/nvdaCoach/__init__.py:1430
+msgid "Password"
+msgstr "密码"
+
+#: globalPlugins/nvdaCoach/__init__.py:1434
+msgid "Remember me on this computer"
+msgstr "在此计算机上记住我"
