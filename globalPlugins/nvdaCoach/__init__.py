@@ -1,7 +1,7 @@
 # NVDA Coach - Interactive Screen Reader Training
 # A global plugin that provides guided, hands-on NVDA training.
 # Built by Tony Gebhard, Assistive Technology Instructor.
-# info@tonygebhard.me  |  https://tonygebhard.me/NVDACoach
+# info@tonygebhard.me  |  https://tonygebhard.me/nvdacoach/
 
 import os
 import json
@@ -940,7 +940,7 @@ class CoachWindow(wx.Frame):
 	# F4 / F5 / F6 / F7 — quick keys (available at all times in the window)
 	# ------------------------------------------------------------------
 
-	_HELP_URL = "https://tonygebhard.me/NVDACoach"
+	_HELP_URL = "https://tonygebhard.me/nvdacoach/"
 	_FEEDBACK_URL = "mailto:info@tonygebhard.me?subject=Feedback%20for%20NVDA%20Coach"
 
 	def _handleF4(self):

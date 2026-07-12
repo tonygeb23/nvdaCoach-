@@ -4,7 +4,7 @@ REM Packages the add-on as an .nvda-addon file (which is just a zip archive).
 REM Run this from the nvdaCoach directory.
 
 set ADDON_NAME=nvdaCoach
-set VERSION=1.5.5
+set VERSION=1.5.6
 
 echo Building %ADDON_NAME% version %VERSION%...
 

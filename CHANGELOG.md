@@ -1,5 +1,12 @@
 # NVDA Coach — Changelog
 
+## v1.5.6 (2026-07-11)
+
+### Bug Fixes
+- **F4 help documentation no longer opens a 404 page:** The help URL opened by pressing F4 twice was `https://tonygebhard.me/NVDACoach`, which returns 404 because the web server treats paths case-sensitively — the live page is `https://tonygebhard.me/nvdacoach/`. The URL has been corrected in the F4 handler, `manifest.ini`, and every readme/documentation file in all languages. Reported by Andrew Leland (#014), running NVDA Coach on macOS via Parallels.
+
+---
+
 ## v1.5.5 (2026-06-03)
 
 ### Compatibility

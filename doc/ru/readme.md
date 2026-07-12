@@ -5,7 +5,7 @@
 Создано **Тони Гебхардом** , инструктором по ассистивным технологиям
 
   * Эл. почта: [info@tonygebhard.me](mailto:info@tonygebhard.me)
-  * Сайт: [tonygebhard.me/NVDACoach](https://tonygebhard.me/NVDACoach)
+  * Сайт: [tonygebhard.me/nvdacoach](https://tonygebhard.me/nvdacoach/)
 
 ## Что такое NVDA Coach?
 
@@ -173,7 +173,7 @@ JSON-файл определяет одну категорию уроков с �
 об использовании NVDA Coach с вашими учениками свяжитесь с Тони напрямую:
 
   * Эл. почта: [info@tonygebhard.me](mailto:info@tonygebhard.me)
-  * Сайт: [tonygebhard.me/NVDACoach](https://tonygebhard.me/NVDACoach)
+  * Сайт: [tonygebhard.me/nvdacoach](https://tonygebhard.me/nvdacoach/)
 
 ## Системные требования
 
@@ -188,7 +188,7 @@ JSON-файл определяет одну категорию уроков с �
 
   * **Тони Гебхард** , инструктор по ассистивным технологиям
   * Эл. почта: [info@tonygebhard.me](mailto:info@tonygebhard.me)
-  * Сайт: [tonygebhard.me/NVDACoach](https://tonygebhard.me/NVDACoach)
+  * Сайт: [tonygebhard.me/nvdacoach](https://tonygebhard.me/nvdacoach/)
 
 ## Благодарности
 
