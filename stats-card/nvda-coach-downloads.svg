@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#16171a"/>
+<rect x="0" y="0" width="14" height="675" fill="#ff9e6b"/>
+<text x="72" y="92" fill="#ff9e6b" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:26px;font-weight:700;letter-spacing:6px">NVDA COACH</text>
+<text x="72" y="132" fill="#fdfdfc" text-anchor="start" opacity="0.75" style="font-family:Georgia,'Iowan Old Style','Times New Roman',serif;font-size:24px;font-weight:400">A free NVDA add-on that teaches NVDA</text>
+<text x="72" y="288" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:Georgia,'Iowan Old Style','Times New Roman',serif;font-size:150px;font-weight:700">5,752</text>
+<text x="72" y="340" fill="#6fb3dd" text-anchor="start" opacity="1" style="font-family:Georgia,'Iowan Old Style','Times New Roman',serif;font-size:40px;font-weight:400">downloads</text>
+<text x="72" y="396" fill="#fdfdfc" text-anchor="start" opacity="0.7" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:24px;font-weight:400">16 releases, March 2026 to July 2026</text>
+<text x="72" y="440" fill="#fdfdfc" text-anchor="start" opacity="0.7" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:24px;font-weight:400">Available in 7 languages</text>
+<text x="72" y="484" fill="#fdfdfc" text-anchor="start" opacity="0.7" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:24px;font-weight:400">Also on the NVDA Add-on Store</text>
+<text x="640" y="152" fill="#ff9e6b" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:18px;font-weight:700;letter-spacing:3px">MOST DOWNLOADED VERSIONS</text>
+<text x="640" y="212" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.4</text>
+<rect x="706" y="194" width="380" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="1098" y="212" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">1,073</text>
+<text x="640" y="256" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.7</text>
+<rect x="706" y="238" width="356" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="1074" y="256" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">1,007</text>
+<text x="640" y="300" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.5</text>
+<rect x="706" y="282" width="352" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="1070" y="300" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">995</text>
+<text x="640" y="344" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.1</text>
+<rect x="706" y="326" width="186" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="904" y="344" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">526</text>
+<text x="640" y="388" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.6</text>
+<rect x="706" y="370" width="134" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="852" y="388" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">381</text>
+<text x="640" y="432" fill="#fdfdfc" text-anchor="start" opacity="1" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:600">1.5.3</text>
+<rect x="706" y="414" width="106" height="22" rx="4" fill="#6fb3dd" opacity="0.85"/>
+<text x="824" y="432" fill="#fdfdfc" text-anchor="start" opacity="0.9" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:19px;font-weight:600">300</text>
+<rect x="72" y="567" width="440" height="2" fill="#fdfdfc" opacity="0.18"/>
+<text x="72" y="613" fill="#fdfdfc" text-anchor="start" opacity="0.85" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:24px;font-weight:600">tonygebhard.me/nvdacoach</text>
+<text x="1128" y="613" fill="#fdfdfc" text-anchor="end" opacity="0.6" style="font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:400">Free. Open source. Built by a blind developer.</text>
+</svg>

@@ -24,3 +24,6 @@ desktop.ini
 *~
 promotional/
 FEEDBACK_LOG.md
+
+# Packaged add-on builds. Produced from source by the build script.
+*.zip
