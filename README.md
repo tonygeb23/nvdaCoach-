@@ -141,17 +141,16 @@ or email [info@tonygebhard.me](mailto:info@tonygebhard.me).
   worldwide, contributed the complete Russian translation across all six
   chapters, and caught the missing `nvda.mo` in 1.5 that left Russian speakers
   reading English. Far beyond translation.
-- **Jessica Tegner** (Be My Eyes) — early feedback, feature and lesson requests
-- **John Hess**, State Services for the Blind — corrected the laptop layout
-  gestures in Object Navigation
+- **Jessica Tegner** — early feedback, feature and lesson requests
+- **John Hess** — corrected the laptop layout gestures in Object Navigation
 - **Brandon Patterson** — corrected the synth settings ring keystrokes
-- **Darrell Hilliker**, CPWA, Salesforce Certified UX Designer
+- **Darrell Hilliker** — accessibility review
 - **Rui Fontes** — NVDA Portuguese translation team
 - **Umut KORKMAZ** — Turkish translation
 - **Edson Miranda** — Brazilian Portuguese translation (in progress)
 - **Mateo Quintela** — Spanish localization testing and practice text
-- **Chris, Mike, Kevin, Julie, Larry, Jim, McKayla and Skyler** — AT specialists
-  with Pacific Northwest state agencies, from the April 2026 training sessions
+- **Chris, Mike, Kevin, Julie, Larry, Jim, McKayla and Skyler** — AT
+  specialists, from the April 2026 training sessions
 - **Nash** — feature and lesson requests
 - **Brian**, **Gene**, **Joseph**, and the anonymous community members who wrote
   in with corrections and encouragement
