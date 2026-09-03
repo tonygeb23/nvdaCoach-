@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NVDAコーチ — 練習ページ</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1em 2em; line-height: 1.7; }
+h1 { border-bottom: 2px solid #333; }
+h2 { border-bottom: 1px solid #666; margin-top: 2em; }
+ul, ol { margin: 0.5em 0; }
+li { margin: 0.6em 0; }
+form { background: #f9f9f9; padding: 1.5em; border: 1px solid #ddd; margin-top: 1em; }
+label { display: block; margin-top: 1em; font-weight: bold; }
+input[type="text"], input[type="email"], select { width: 100%; padding: 0.5em; margin-top: 0.3em; margin-bottom: 0.5em; box-sizing: border-box; }
+fieldset { margin-top: 1.5em; border: 1px solid #ccc; padding: 1em; }
+legend { font-weight: bold; }
+.radio-group, .checkbox-group { margin-top: 0.5em; }
+table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+th { background-color: #eee; }
+caption { font-weight: bold; margin-bottom: 0.5em; font-size: 1.1em; }
+footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ccc; font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <h1>NVDAコーチ — 練習ページ</h1>
+  <p>このページは、NVDA のブラウズモードでのナビゲーションを練習するために設計されています。本物のウェブページと同じように、見出し、リンク、フォーム、表、リストが含まれています。</p>
+  <p>このページを使って、レッスンで学んだクイックナビゲーションキー（見出しの H、リンクの K、フォームの F、表の T など）を試してみてください。</p>
+</header>
+
+<main role="main">
+
+<section id="reading" aria-label="テキスト読み上げの練習">
+  <h2>テキスト読み上げの練習</h2>
+  <p>このセクションには長い段落があり、読み上げとナビゲーションの練習ができます。NVDA は「連続読み」を使ってこのテキストをすべて読み上げることができます。デスクトップ配列の場合は NVDAキー+下矢印 を、ラップトップ配列の場合は NVDAキー+A を押してください。Control キーを押せば、いつでも読み上げを停止できます。</p>
+
+  <h3>スクリーンリーダーの歴史</h3>
+  <p>スクリーンリーダーは1980年代から存在しています。最初のスクリーンリーダーは、画面に表示されたテキストを音声合成装置を使って音声に変換するシンプルなプログラムでした。時が経つにつれ、それらははるかに洗練され、グラフィック、ウェブページ、複雑なレイアウトを解釈するようになりました。</p>
+  <p>今日、NVDA、JAWS、VoiceOver のようなスクリーンリーダーは、ウェブコンテンツ、スプレッドシート、メール、ドキュメントを驚くほどの精度で読み上げることができます。NVDA（NonVisual Desktop Access）は2006年に初めてリリースされ、無料でオープンソースであるという理由から、世界で最も広く使用されているスクリーンリーダーの一つに成長しました。</p>
+
+  <h3>練習が重要な理由</h3>
+  <p>スクリーンリーダーの習得には時間と反復が必要です。最初はキーボードショートカットに慣れないかもしれませんが、練習すれば無意識に使えるようになります。経験豊富なスクリーンリーダーユーザーの多くは、見出しジャンプ、ランドマークジャンプ、要素リストなどを駆使して、ウェブページやドキュメントを高速でナビゲートし、情報をすばやく見つけ出します。</p>
+  <p>重要なのは、毎日少しずつ練習することです。一度に1つのコマンド群に集中し、それを実際の状況で使い、徐々にスピードと自信をつけていきましょう。NVDAコーチは、まさにそのお手伝いをするために設計されています。</p>
+</section>
+
+<section id="links" aria-label="リンクの練習">
+  <h2>リンクの練習</h2>
+  <p>このセクションには、リンクナビゲーションを練習するためのリンクがいくつかあります。K キーを押して次のリンクへジャンプしたり、Shift+K で前のリンクへ戻ったり、Tab キーでインタラクティブな要素間を移動してみてください。</p>
+  <ul>
+    <li><a href="https://www.nvda.jp">NVDA日本語チーム (nvdajp)</a></li>
+    <li><a href="https://www.nvaccess.org">NV Access — NVDA を開発している組織</a></li>
+    <li><a href="https://www.nvaccess.org/get-help/">NVDA ヘルプとサポート</a></li>
+    <li><a href="https://github.com/nvaccess/nvda">NVDA on GitHub (ソースコード)</a></li>
+    <li><a href="https://webaim.org">WebAIM — ウェブアクセシビリティのリソース</a></li>
+    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
+    <li><a href="https://webaim.org/techniques/keyboard/">キーボードアクセシビリティガイド</a></li>
+  </ul>
+</section>
+
+<section id="forms" aria-label="フォームの練習">
+  <h2>フォームの練習</h2>
+  <p>このセクションにはサンプルフォームがあります。F、E、B キーを使ってフォームフィールドにジャンプする練習をしましょう。テキストフィールドに入力するには、まず Enter または NVDA+スペース を押してフォーカスモードに入ります。</p>
+
+  <form aria-label="サンプルお問い合わせフォーム">
+    <h3>サンプルお問い合わせフォーム</h3>
+
+    <label for="fname">名：</label>
+    <input type="text" id="fname" name="fname" placeholder="名を入力してください">
+
+    <label for="lname">姓：</label>
+    <input type="text" id="lname" name="lname" placeholder="姓を入力してください">
+
+    <label for="email">メールアドレス：</label>
+    <input type="email" id="email" name="email" placeholder="メールアドレスを入力してください">
+
+    <label for="topic">トピック：</label>
+    <select id="topic" name="topic">
+      <option value="">トピックを選択</option>
+      <option value="general">一般的な質問</option>
+      <option value="technical">テクニカルサポート</option>
+      <option value="feedback">フィードバック</option>
+      <option value="other">その他</option>
+    </select>
+
+    <fieldset>
+      <legend>希望する連絡方法：</legend>
+      <div class="radio-group">
+        <input type="radio" id="contact_email" name="contact" value="email">
+        <label for="contact_email" style="display:inline;">メール</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_phone" name="contact" value="phone">
+        <label for="contact_phone" style="display:inline;">電話</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="contact_none" name="contact" value="none">
+        <label for="contact_none" style="display:inline;">連絡不要</label>
+      </div>
+    </fieldset>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter" style="display:inline;">NVDAコーチのニュースレターを購読する</label>
+    </div>
+
+    <button type="submit">フォームを送信</button>
+    <button type="reset">フォームをクリア</button>
+  </form>
+</section>
+
+<section id="tables" aria-label="表の練習">
+  <h2>表の練習</h2>
+  <p>このセクションにはデータテーブルがあります。T キーを押して表にジャンプしてください。表の中に入ったら、Control+Alt+矢印キーを使ってセル間を移動します。移動する際、NVDA は行や列の見出しを読み上げます。</p>
+
+  <table>
+    <caption>NVDA ブラウズモード ナビゲーションキー</caption>
+    <thead>
+      <tr>
+        <th scope="col">キー</th>
+        <th scope="col">機能</th>
+        <th scope="col">逆方向 (Shift+キー)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H</td>
+        <td>次の見出し</td>
+        <td>前の見出し</td>
+      </tr>
+      <tr>
+        <td>1 から 6</td>
+        <td>次の指定レベルの見出し</td>
+        <td>前の指定レベルの見出し</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>次のリンク</td>
+        <td>前のリンク</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>次のボタン</td>
+        <td>前のボタン</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>次のフォームフィールド</td>
+        <td>前のフォームフィールド</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>次のエディットフィールド</td>
+        <td>前のエディットフィールド</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>次のリスト</td>
+        <td>前のリスト</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>次のランドマーク</td>
+        <td>前のランドマーク</td>
+      </tr>
+      <tr>
+        <td>T</td>
+        <td>次の表</td>
+        <td>前の表</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="lists" aria-label="リストの練習">
+  <h2>リストの練習</h2>
+  <p>このセクションには、箇条書き（順序なしリスト）と番号付き（順序ありリスト）の両方があります。L キーを押して次のリストにジャンプしてください。リスト内の項目間を移動するには I キーを押します。</p>
+
+  <h3>必須 NVDA コマンド (箇条書きリスト)</h3>
+  <ul>
+    <li>NVDA+T — 現在のウィンドウのタイトルバーを読み上げる</li>
+    <li>NVDA+Tab — 現在のフォーカスを報告する</li>
+    <li>NVDA+上矢印 — 現在の行を読み上げる</li>
+    <li>NVDA+下矢印 (デスクトップ) / NVDA+A (ラップトップ) — 現在位置から連続読み</li>
+    <li>NVDA+F12 — 時刻を報告する (2回押すと日付)</li>
+    <li>NVDA+1 — 入力ヘルプモードのオン/オフ</li>
+    <li>NVDA+F7 — 要素リストを開く</li>
+    <li>NVDA+スペース — ブラウズモードとフォーカスモードを切り替える</li>
+    <li>Control — 音声を停止する</li>
+    <li>NVDA+N — NVDA メニューを開く</li>
+  </ul>
+
+  <h3>新しいウェブページをナビゲートする手順 (番号付きリスト)</h3>
+  <ol>
+    <li>NVDA+T を押して、どのページにいるかを確認します。</li>
+    <li>H を押して見出しを拾い読みし、ページの構造の概要を把握します。</li>
+    <li>D を押してメインコンテンツのランドマークにジャンプし、ナビゲーションをスキップします。</li>
+    <li>下矢印キーを押してページの内容を読み進めます。</li>
+    <li>必要に応じて K を使い、リンクを探して移動します。</li>
+    <li>ページのフォームに入力する場合は F と E を使用します。</li>
+    <li>特定のものを探したい場合は、NVDA+F7 を押してリンクや見出しのリスト全体を表示します。</li>
+  </ol>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>NVDAコーチ 練習ページ — NVDAコーチ アドオンと共に使用するために作成されました。このページはキーボードナビゲーションの練習専用です。</p>
+  <p>作成者: <strong>Tony Gebhard</strong>, 支援技術指導者 &nbsp;|&nbsp;
+  <a href="mailto:info@tonygebhard.me">info@tonygebhard.me</a> &nbsp;|&nbsp;
+  <a href="https://github.com/tonygeb23/nvdaCoach-">github.com/tonygeb23/nvdaCoach-</a></p>
+</footer>
+
+</body>
+</html>

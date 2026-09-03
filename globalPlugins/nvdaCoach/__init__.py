@@ -1331,7 +1331,7 @@ class PracticeFrame(wx.Frame):
 		)
 		choiceSizer.Add(wx.Choice(
 			self._scroll,
-			choices=[_("United States"), _("Canada"), _("United Kingdom"), _("Australia"), _("Other")],
+			choices=[_("United States"), _("Japan"), _("Canada"), _("United Kingdom"), _("Australia"), _("Other")],
 		))
 		self._scrollSizer.Add(choiceSizer, 0, wx.LEFT | wx.TOP, 12)
 
