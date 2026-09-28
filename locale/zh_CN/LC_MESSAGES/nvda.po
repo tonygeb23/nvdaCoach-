@@ -1029,7 +1029,7 @@ msgstr ""
 
 #: globalPlugins/nvdaCoach/__init__.py:1486
 msgid "Find Your Focus — Practice Login Form"
-msgstr "找到你的焦点 — 登录表单练习"
+msgstr "找到你的系统焦点 — 登录表单练习"
 
 #: globalPlugins/nvdaCoach/__init__.py:1487
 msgid ""
