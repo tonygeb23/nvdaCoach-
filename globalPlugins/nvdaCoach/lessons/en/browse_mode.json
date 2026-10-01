@@ -134,9 +134,9 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages use different heading levels for structure — level 1 is the main title, level 2 is a major section, level 3 is a sub-section. Sighted users can see this hierarchy by the size of the text. In browse mode, you can press a number from 1 to 9 to jump directly to a heading of that level. Press Enter to continue.",
+          "instruction": "Web pages use different heading levels for structure — level 1 is the main title, level 2 is a major section, level 3 is a sub-section. Sighted users can see this hierarchy by the size of the text. In browse mode, you can press a number from 1 to 6 to jump directly to a heading of that level. Press Enter to continue.",
           "hints": [
-            "Press 1 to jump to level 1 headings, 2 for level 2, and so on up to 9. Use the number row at the top of the keyboard, not the numpad.",
+            "Press 1 to jump to level 1 headings, 2 for level 2, and so on up to 6. Use the number row at the top of the keyboard, not the numpad.",
             "Shift plus a number jumps backward to the previous heading of that level — the same forward and backward pattern as other browse mode keys.",
             "Most well-structured pages have one level 1 heading (the main title) and several level 2 headings (main sections). Level 3 headings are sub-sections within those."
           ]

@@ -18,715 +18,727 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: globalPlugins/nvdaCoach/__init__.py:48
+#: globalPlugins/nvdaCoach/__init__.py:51
 msgid "Play sounds during lessons (correct/incorrect/completion chimes)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:67
+#: globalPlugins/nvdaCoach/__init__.py:70
 msgid "NVDA Coach — Your Profile"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:76
+#: globalPlugins/nvdaCoach/__init__.py:79
 msgid "Your name (optional):"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:85
+#: globalPlugins/nvdaCoach/__init__.py:88
 msgid "Your instructor's name (optional):"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:94
+#: globalPlugins/nvdaCoach/__init__.py:97
 msgid "Training center or program (optional):"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:105
+#: globalPlugins/nvdaCoach/__init__.py:108
 msgid "&Save"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:107
+#: globalPlugins/nvdaCoach/__init__.py:110
 msgid "&Cancel"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:127
+#: globalPlugins/nvdaCoach/__init__.py:130
 msgid "Hello, {name}!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:129
+#: globalPlugins/nvdaCoach/__init__.py:132
 msgid "Profile saved."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:148
+#: globalPlugins/nvdaCoach/__init__.py:151
 msgid "NVDA Coach — Certificate of Completion"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:155
+#: globalPlugins/nvdaCoach/__init__.py:158
 msgid "Congratulations, {name}! You have completed every lesson in NVDA Coach. Your certificate of completion has been saved to your Downloads folder and opened in your web browser."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:161
+#: globalPlugins/nvdaCoach/__init__.py:164
 msgid "Congratulations! You have completed every lesson in NVDA Coach. Your certificate of completion has been saved to your Downloads folder and opened in your web browser."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:171
+#: globalPlugins/nvdaCoach/__init__.py:174
 msgid "&OK"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:263
+#: globalPlugins/nvdaCoach/__init__.py:325
 msgid "Student"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:271
+#: globalPlugins/nvdaCoach/__init__.py:342
 msgid "Instructor:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:278
+#: globalPlugins/nvdaCoach/__init__.py:349
 msgid "Training Center / Program:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:285
+#: globalPlugins/nvdaCoach/__init__.py:356
 msgid "Your dedication and persistence have brought you to this moment. The skills you have learned in NVDA Coach will serve you every day — at work, at home, and everywhere in between. Every expert was once a beginner, and you have proven that with patience and practice, anything is possible. Well done, and welcome to a world of greater independence."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:295
+#: globalPlugins/nvdaCoach/__init__.py:366
 msgid "Certificate of Completion"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:297
+#: globalPlugins/nvdaCoach/__init__.py:368
 msgid "This certifies that"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:299
+#: globalPlugins/nvdaCoach/__init__.py:370
 msgid "has successfully completed all lessons in"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:301
+#: globalPlugins/nvdaCoach/__init__.py:372
 msgid "Date of Completion"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:303
+#: globalPlugins/nvdaCoach/__init__.py:374
 msgid "Assistive Technology Instructor"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:407
+#: globalPlugins/nvdaCoach/__init__.py:478
 msgid "NVDA Coach — ready"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:428
-msgid "Welcome to NVDA Coach\nCreated by Tony Gebhard, Assistive Technology Instructor\ngithub.com/tonygeb23/nvdacoach\n\nBefore you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n\nNVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n\nIf you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n\nIf you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace.\n\n--- KEYS AVAILABLE DURING EVERY LESSON ---\n  Enter  —  Confirm you have tried the step and move to the next one.\n  F1  —  Repeat the current instruction.\n  F2  —  Hear a hint. Press again for more hints.\n  F3  —  Skip the current step.\n  Escape  —  Stop the lesson. Press three times to close NVDA Coach.\n\n--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\n  F4  —  Open help documentation (press twice within 5 seconds).\n  F5  —  Send feedback by email (press twice within 5 seconds).\n  F6  —  Toggle lesson sounds on or off.\n  F7  —  Open your profile (name, instructor, training center).\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson  ·  Ctrl+B  —  Previous  ·  Ctrl+R  —  Restart\n\nWhen you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
+#: globalPlugins/nvdaCoach/__init__.py:499
+msgid "Welcome to NVDA Coach\nCreated by Tony Gebhard, Assistive Technology Instructor\ngithub.com/tonygeb23/nvdaCoach-\n\nBefore you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n\nNVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n\nIf you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n\nIf you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace.\n\n--- KEYS AVAILABLE DURING EVERY LESSON ---\n  Enter  —  Confirm you have tried the step and move to the next one.\n  F1  —  Repeat the current instruction.\n  F2  —  Hear a hint. Press again for more hints.\n  F3  —  Skip the current step.\n  Escape  —  Stop the lesson. Press three times to close NVDA Coach.\n\n--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\n  F4  —  Open help documentation (press twice within 5 seconds).\n  F5  —  Send feedback by email (press twice within 5 seconds).\n  F6  —  Toggle lesson sounds on or off.\n  F7  —  Open your profile (name, instructor, training center).\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson  ·  Ctrl+B  —  Previous  ·  Ctrl+R  —  Restart\n\nWhen you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:475
+#: globalPlugins/nvdaCoach/__init__.py:546
 msgid "During a lesson:  Enter — Next Step  ·  F1 Repeat  ·  F2 Hint  ·  F3 Skip  ·  Esc Stop"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:486
+#: globalPlugins/nvdaCoach/__init__.py:557
 msgid "F4 Help  ·  F5 Feedback  ·  F6 Sounds  ·  F7 Profile"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:494
+#: globalPlugins/nvdaCoach/__init__.py:565
 msgid "Next Step  (Enter)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:496
+#: globalPlugins/nvdaCoach/__init__.py:567
 msgid "Confirm you have tried the current step and move to the next one."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:505
+#: globalPlugins/nvdaCoach/__init__.py:576
 msgid "Start Course  (Enter)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:507
+#: globalPlugins/nvdaCoach/__init__.py:578
 msgid "Begin the first lesson of the Getting Started chapter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:518
+#: globalPlugins/nvdaCoach/__init__.py:589
 msgid "◄ Back  (Ctrl+B)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:519
+#: globalPlugins/nvdaCoach/__init__.py:590
 msgid "↺ Restart  (Ctrl+R)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:520
+#: globalPlugins/nvdaCoach/__init__.py:591
 msgid "Next Lesson ►  (Ctrl+N)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:521
+#: globalPlugins/nvdaCoach/__init__.py:592
 msgid "Go to the previous lesson in this category."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:522
+#: globalPlugins/nvdaCoach/__init__.py:593
 msgid "Restart the current lesson from the beginning."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:523
+#: globalPlugins/nvdaCoach/__init__.py:594
 msgid "Go to the next lesson in this category."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:535
+#: globalPlugins/nvdaCoach/__init__.py:606
 msgid "Export Certificate of Completion"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:537
+#: globalPlugins/nvdaCoach/__init__.py:608
 msgid "You have completed every lesson in NVDA Coach. Click to save your certificate of completion to your Downloads folder."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:570
+#: globalPlugins/nvdaCoach/__init__.py:641
 msgid "Step {stepNum} of {stepTotal}"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:593
+#: globalPlugins/nvdaCoach/__init__.py:664
 msgid "Congratulations — you have completed every lesson in NVDA Coach! Tab to the Export Certificate of Completion button to save your certificate."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:600
+#: globalPlugins/nvdaCoach/__init__.py:671
 msgid "NVDA Coach — Introduction"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:605
+#: globalPlugins/nvdaCoach/__init__.py:676
 msgid "Welcome, {name}, to NVDA Coach"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:606
+#: globalPlugins/nvdaCoach/__init__.py:677
 msgid "Welcome, {name}, to NVDA Coach. Use your reading cursor or arrow keys to read this introduction. When you are ready, press Tab to reach the Start Course button and press Enter to begin."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:612
+#: globalPlugins/nvdaCoach/__init__.py:683
 msgid "Welcome to NVDA Coach"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:613
+#: globalPlugins/nvdaCoach/__init__.py:684
 msgid "Welcome to NVDA Coach. Use your reading cursor or arrow keys to read this introduction. When you are ready, press Tab to reach the Start Course button and press Enter to begin."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:619
+#: globalPlugins/nvdaCoach/__init__.py:690
 msgid "Your instructor today is {instructor}. Let them know you are starting — they can help you find keys, adjust settings, or answer questions before you begin."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:625
+#: globalPlugins/nvdaCoach/__init__.py:696
 msgid "If you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:633
+#: globalPlugins/nvdaCoach/__init__.py:704
 msgid "Created by Tony Gebhard, Assistive Technology Instructor"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:635
+#: globalPlugins/nvdaCoach/__init__.py:706
 msgid "Before you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n\nNVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n\nIf you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n\n"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:652
+#: globalPlugins/nvdaCoach/__init__.py:723
 msgid "--- KEYS AVAILABLE DURING EVERY LESSON ---\nThese function keys work at any time while a lesson is open:\n\n  Enter  —  Confirm you have tried the step and move to the next one.\n  F1  —  Repeat the current instruction. Use this whenever you want NVDA to read the step again.\n  F2  —  Hear a hint. If you are not sure what to do, press F2 for a helpful suggestion. Press it again for additional hints.\n  F3  —  Skip the current step and move on. Use this if you cannot complete a step right now and want to continue.\n  Escape  —  Stop the lesson. Press Escape three times to close NVDA Coach.\n\n--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\nThese keys work whether a lesson is running or not:\n\n  F4  —  Open the NVDA Coach help documentation in your web browser. Press F4 once to arm it, then press F4 again within five seconds to open.\n  F5  —  Send feedback to the developer by email. Press F5 once to arm it, then press F5 again within five seconds to open.\n  F6  —  Toggle lesson sounds on or off. Press once to silence sounds, press again to restore them.\n  F7  —  Open your profile. Set your name, your instructor's name, and your training center. This information personalizes your lessons and appears on your certificate of completion.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Move to the next lesson in the current chapter.\n  Ctrl+B  —  Go back to the previous lesson.\n  Ctrl+R  —  Restart the current lesson from the beginning.\n\n"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:679
+#: globalPlugins/nvdaCoach/__init__.py:750
 msgid "When you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:710
+#: globalPlugins/nvdaCoach/__init__.py:781
 msgid "Ready, {name}."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:710
+#: globalPlugins/nvdaCoach/__init__.py:781
 msgid "Ready."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:718
+#: globalPlugins/nvdaCoach/__init__.py:789
 msgid "--- WHAT TO DO NEXT ---\n  Press NVDA+Shift+C to open the lesson picker and choose a lesson.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Move to the next lesson in this category.\n  Ctrl+B  —  Go back to the previous lesson.\n  Ctrl+R  —  Restart this lesson from the beginning.\n\nThe Control key (Ctrl) is in the bottom-left corner of your keyboard.\n\n--- NEW TO KEYBOARD NAVIGATION? ---\nUse NVDA Input Help: press NVDA+1 to turn it on, press any key to hear what it does without anything happening, then press NVDA+1 to turn it off.\n\n--- A NOTE FOR INSTRUCTORS AND STUDENTS ---\nIf an instructor is present, this is a great time to ask any questions before the next lesson. If you are working independently, keep going at your own pace. Every step forward counts.\n\n--- QUICK KEYS (available any time in this window) ---\n  F4 — Open help documentation\n  F5 — Send feedback to the developer\n  F6 — Toggle lesson sounds on or off\n  F7 — Set your name and instructor's name"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:745
+#: globalPlugins/nvdaCoach/__init__.py:816
 msgid "Congratulations, {name} — Browse Mode and Web Navigation Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:747
+#: globalPlugins/nvdaCoach/__init__.py:818
 msgid "Congratulations — Browse Mode and Web Navigation Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:750
+#: globalPlugins/nvdaCoach/__init__.py:821
 msgid "Congratulations, {name}! You have completed Browse Mode and Web Navigation, Chapter 4 of NVDA Coach. The practice page in your browser can now be closed. Press NVDA+Shift+C to continue to additional training resources."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:755
+#: globalPlugins/nvdaCoach/__init__.py:826
 msgid "Congratulations! You have completed Browse Mode and Web Navigation, Chapter 4 of NVDA Coach. The practice page in your browser can now be closed. Press NVDA+Shift+C to continue to additional training resources."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:760
+#: globalPlugins/nvdaCoach/__init__.py:831
 msgid "NVDA Coach — Chapter 4 Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:767
+#: globalPlugins/nvdaCoach/__init__.py:838
 msgid "You have finished all lessons in Chapter 4. You now know how to navigate any web page using NVDA's browse mode.\n\nCommands you have mastered:\n  H — Jump between headings\n  1 through 6 — Jump to heading levels\n  K — Jump between links\n  F, E, B — Navigate form fields and buttons\n  D — Jump between landmarks\n  L — Jump between lists\n  NVDA+Space — Toggle browse mode and focus mode\n  NVDA+F7 — Open the Elements List\n\nThe practice page in your browser can now be closed.\n\nWhat to do next:\n  Press NVDA+Shift+C to open the lesson picker.\n  Choose Additional Training and Help for more resources.\n  Or press Ctrl+R to repeat any lesson in this chapter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:796
+#: globalPlugins/nvdaCoach/__init__.py:867
 msgid "Congratulations, {name} — You Have Completed NVDA Coach!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:798
+#: globalPlugins/nvdaCoach/__init__.py:869
 msgid "Congratulations — You Have Completed NVDA Coach!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:801
+#: globalPlugins/nvdaCoach/__init__.py:872
 msgid "Congratulations, {name}! You have finished every lesson in NVDA Coach. This is a tremendous achievement. Tab to the Export Certificate of Completion button to save your certificate."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:805
+#: globalPlugins/nvdaCoach/__init__.py:876
 msgid "Congratulations! You have finished every lesson in NVDA Coach. This is a tremendous achievement. Tab to the Export Certificate of Completion button to save your certificate."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:811
+#: globalPlugins/nvdaCoach/__init__.py:882
 msgid "Instructor: {instructor}"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:815
+#: globalPlugins/nvdaCoach/__init__.py:886
 msgid "Training Program: {center}"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:835
+#: globalPlugins/nvdaCoach/__init__.py:906
 msgid "--- WHAT YOU HAVE LEARNED ---\n  Chapter 1: Getting Started with NVDA\n  Chapter 2: Your Keyboard\n  Chapter 3: Reading Text\n  Chapter 4: Browse Mode and Web Navigation\n  Chapter 5: Object Navigation\n  Chapter 6: Customizing NVDA\n\n"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:844
+#: globalPlugins/nvdaCoach/__init__.py:915
 msgid "--- YOUR CERTIFICATE OF COMPLETION ---\nTab to the Export Certificate button below and press Enter.\nYour certificate will open in your web browser.\n\nTo save or print your certificate:\n  1. In your browser, press Ctrl+S to save the page, or press Ctrl+P to print it.\n  2. To print to PDF, choose 'Save as PDF' or 'Microsoft Print to PDF' as your printer.\n  3. A copy is also saved automatically to your Downloads folder."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:857
+#: globalPlugins/nvdaCoach/__init__.py:928
 msgid "NVDA Coach — Course Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:878
+#: globalPlugins/nvdaCoach/__init__.py:949
 msgid "Welcome back, {name} — NVDA Coach Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:880
+#: globalPlugins/nvdaCoach/__init__.py:951
 msgid "Welcome back — NVDA Coach Complete!"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:883
+#: globalPlugins/nvdaCoach/__init__.py:954
 msgid "Welcome back, {name}. You have already completed every lesson in NVDA Coach. Your certificate is available below."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:886
+#: globalPlugins/nvdaCoach/__init__.py:957
 msgid "Welcome back. You have already completed every lesson in NVDA Coach. Your certificate is available below."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:892
+#: globalPlugins/nvdaCoach/__init__.py:963
 msgid "You have completed all six chapters of NVDA Coach. Your progress is saved and your certificate of completion is ready.\n\n--- YOUR CERTIFICATE ---\nTab to the Export Certificate of Completion button below and press Enter to open your certificate in your web browser. A copy is also saved to your Downloads folder automatically.\n\n--- CONTINUE LEARNING ---\nPress NVDA+Shift+C to open the lesson picker. You can revisit any lesson at any time to review commands and practice.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson in the current category\n  Ctrl+B  —  Previous lesson\n  Ctrl+R  —  Restart the current lesson\n\n--- QUICK KEYS ---\n  F4 — Open help documentation\n  F5 — Send feedback to the developer\n  F6 — Toggle lesson sounds on or off\n  F7 — Update your profile (name, instructor, training center)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:932
+#: globalPlugins/nvdaCoach/__init__.py:1003
 msgid "Lesson stopped.\n\nPress Escape two more times to close NVDA Coach.\nOr press NVDA+Shift+C to start another lesson."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:957
+#: globalPlugins/nvdaCoach/__init__.py:1028
 msgid "Opening NVDA Coach help documentation in your web browser."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:960
+#: globalPlugins/nvdaCoach/__init__.py:1031
 msgid "If you wish to view the NVDA Coach help documentation, press F4 once more."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:980
+#: globalPlugins/nvdaCoach/__init__.py:1051
 msgid "Opening a feedback email to the developer."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:983
+#: globalPlugins/nvdaCoach/__init__.py:1054
 msgid "Press F5 once more to open a feedback email to the developer."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:997
+#: globalPlugins/nvdaCoach/__init__.py:1068
 msgid "Sounds enabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:999
+#: globalPlugins/nvdaCoach/__init__.py:1070
 msgid "Sounds disabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1131
+#: globalPlugins/nvdaCoach/__init__.py:1202
 msgid "Press Escape two more times to close NVDA Coach."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1134
+#: globalPlugins/nvdaCoach/__init__.py:1205
 msgid "Or press NVDA+Shift+C to start a lesson."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1138
+#: globalPlugins/nvdaCoach/__init__.py:1209
 msgid "Press Escape one more time to close NVDA Coach."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1277
+#: globalPlugins/nvdaCoach/__init__.py:1265
+msgid "NVDA Coach — Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1294
+msgid "Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1295
+msgid "NVDA Coach — Practice: {title}"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1348
 msgid "When you are done, press NVDA+Shift+C to return to the Coach window, then press Enter or Next Step to continue."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1291
+#: globalPlugins/nvdaCoach/__init__.py:1362
 msgid "Tab Navigation Practice Form"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1292
+#: globalPlugins/nvdaCoach/__init__.py:1363
 msgid "Press Tab to move forward through these controls. Press Shift+Tab to move backward. NVDA announces each control as you land on it."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1302
+#: globalPlugins/nvdaCoach/__init__.py:1373
 msgid "First name:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1302
+#: globalPlugins/nvdaCoach/__init__.py:1373
 msgid "First name"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1303
+#: globalPlugins/nvdaCoach/__init__.py:1374
 msgid "Last name:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1303
+#: globalPlugins/nvdaCoach/__init__.py:1374
 msgid "Last name"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1304
+#: globalPlugins/nvdaCoach/__init__.py:1375
 msgid "Email address:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1304
+#: globalPlugins/nvdaCoach/__init__.py:1375
 msgid "Email address"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1315
+#: globalPlugins/nvdaCoach/__init__.py:1386
 msgid "Subscribe to the NVDA Coach newsletter"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1320
+#: globalPlugins/nvdaCoach/__init__.py:1391
 msgid "Preferred contact method"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1321
+#: globalPlugins/nvdaCoach/__init__.py:1392
 msgid "Email"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1321
+#: globalPlugins/nvdaCoach/__init__.py:1392
 msgid "Phone"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1321
+#: globalPlugins/nvdaCoach/__init__.py:1392
 msgid "No preference"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1329
+#: globalPlugins/nvdaCoach/__init__.py:1400
 msgid "Country:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "United States"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "Japan"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "Canada"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "United Kingdom"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "Australia"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1334
+#: globalPlugins/nvdaCoach/__init__.py:1405
 msgid "Other"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1339
+#: globalPlugins/nvdaCoach/__init__.py:1410
 msgid "Submit form"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1340
+#: globalPlugins/nvdaCoach/__init__.py:1411
 msgid "Cancel"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1347
+#: globalPlugins/nvdaCoach/__init__.py:1418
 msgid "Form submitted. In a real form, this would send your information."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1350
+#: globalPlugins/nvdaCoach/__init__.py:1421
 msgid "Cancelled. The form was not submitted."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1353
+#: globalPlugins/nvdaCoach/__init__.py:1424
 msgid "Subscribed to newsletter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1353
+#: globalPlugins/nvdaCoach/__init__.py:1424
 msgid "Unsubscribed."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1359
+#: globalPlugins/nvdaCoach/__init__.py:1430
 msgid "Activating Controls Practice"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1360
+#: globalPlugins/nvdaCoach/__init__.py:1431
 msgid "Tab to a control and activate it. Press Space to check or uncheck a checkbox. Press Enter to activate a button."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1368
+#: globalPlugins/nvdaCoach/__init__.py:1439
 msgid "Checkboxes — press Space to toggle:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1371
+#: globalPlugins/nvdaCoach/__init__.py:1442
 msgid "Enable screen reader tips"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1372
+#: globalPlugins/nvdaCoach/__init__.py:1443
 msgid "Show practice hints during lessons"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1373
+#: globalPlugins/nvdaCoach/__init__.py:1444
 msgid "Open Coach window automatically on startup"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1378
+#: globalPlugins/nvdaCoach/__init__.py:1449
 msgid "Buttons — press Enter to activate:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1381
+#: globalPlugins/nvdaCoach/__init__.py:1452
 msgid "Play a beep sound"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1382
+#: globalPlugins/nvdaCoach/__init__.py:1453
 msgid "Say hello"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1383
+#: globalPlugins/nvdaCoach/__init__.py:1454
 msgid "Show keyboard tip"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1389
+#: globalPlugins/nvdaCoach/__init__.py:1460
 msgid "Screen reader tips enabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1390
+#: globalPlugins/nvdaCoach/__init__.py:1461
 msgid "Screen reader tips disabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1393
+#: globalPlugins/nvdaCoach/__init__.py:1464
 msgid "Practice hints on."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1393
+#: globalPlugins/nvdaCoach/__init__.py:1464
 msgid "Practice hints off."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1396
+#: globalPlugins/nvdaCoach/__init__.py:1467
 msgid "Auto-start enabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1396
+#: globalPlugins/nvdaCoach/__init__.py:1467
 msgid "Auto-start disabled."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1401
+#: globalPlugins/nvdaCoach/__init__.py:1472
 msgid "Beep! You activated the button."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1405
+#: globalPlugins/nvdaCoach/__init__.py:1476
 msgid "Hello! You just activated a button. Great work."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1407
+#: globalPlugins/nvdaCoach/__init__.py:1478
 msgid "Tip: Tab moves between controls. Enter activates buttons. Space checks or unchecks checkboxes."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1415
+#: globalPlugins/nvdaCoach/__init__.py:1486
 msgid "Find Your Focus — Practice Login Form"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1416
+#: globalPlugins/nvdaCoach/__init__.py:1487
 msgid "Tab around this form. When you land on a control, press NVDA+Tab to hear its name, type, and current state."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1424
+#: globalPlugins/nvdaCoach/__init__.py:1495
 msgid "Username:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1426
+#: globalPlugins/nvdaCoach/__init__.py:1497
 msgid "Username"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1428
+#: globalPlugins/nvdaCoach/__init__.py:1499
 msgid "Password:"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1430
+#: globalPlugins/nvdaCoach/__init__.py:1501
 msgid "Password"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1434
+#: globalPlugins/nvdaCoach/__init__.py:1505
 msgid "Remember me on this computer"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1438
+#: globalPlugins/nvdaCoach/__init__.py:1509
 msgid "Sign in"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1438
+#: globalPlugins/nvdaCoach/__init__.py:1509
 msgid "Sign in activated. In a real application, this would log you in."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1439
+#: globalPlugins/nvdaCoach/__init__.py:1510
 msgid "Create account"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1439
+#: globalPlugins/nvdaCoach/__init__.py:1510
 msgid "Create account activated. This would open a registration form."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1440
+#: globalPlugins/nvdaCoach/__init__.py:1511
 msgid "Forgot your password?"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1440
+#: globalPlugins/nvdaCoach/__init__.py:1511
 msgid "Password reset activated. A reset link would be sent."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1471
+#: globalPlugins/nvdaCoach/__init__.py:1542
 msgid "NVDA Coach — Choose a Lesson"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1490
+#: globalPlugins/nvdaCoach/__init__.py:1561
 msgid "Browse lessons and resources below. Right arrow expands a section, Left arrow collapses it. Press Enter or the Open / Start button to activate the selected item. Press F4 for help, F5 for feedback, F6 to toggle sounds, F7 or the Profile button to set your name and instructor."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1513
+#: globalPlugins/nvdaCoach/__init__.py:1584
 msgid "Introduction / About NVDA Coach"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1519
+#: globalPlugins/nvdaCoach/__init__.py:1590
 msgid "Unknown Category"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1523
+#: globalPlugins/nvdaCoach/__init__.py:1594
 msgid "{completed} of {total} complete"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1528
+#: globalPlugins/nvdaCoach/__init__.py:1599
 msgid "Untitled"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1531
+#: globalPlugins/nvdaCoach/__init__.py:1602
 msgid "[Done]"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1541
+#: globalPlugins/nvdaCoach/__init__.py:1612
 msgid "Additional Training and Help"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1553
+#: globalPlugins/nvdaCoach/__init__.py:1624
 msgid "&Open / Start"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1555
+#: globalPlugins/nvdaCoach/__init__.py:1626
 msgid "&Profile  (F7)"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1556
+#: globalPlugins/nvdaCoach/__init__.py:1627
 msgid "Set your name, instructor name, and training center. This information appears on your certificate of completion and personalizes lesson instructions throughout NVDA Coach. You can update your profile at any time."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1580
+#: globalPlugins/nvdaCoach/__init__.py:1651
 msgid "Please select an item first."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1601
+#: globalPlugins/nvdaCoach/__init__.py:1672
 msgid "Section collapsed. {count} items hidden."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1606
+#: globalPlugins/nvdaCoach/__init__.py:1677
 msgid "Section expanded. {count} items available. Use the Down arrow to browse them."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1612
+#: globalPlugins/nvdaCoach/__init__.py:1683
 msgid "File"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1615
+#: globalPlugins/nvdaCoach/__init__.py:1686
 msgid "{label} is not available in this version of NVDA Coach."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1620
+#: globalPlugins/nvdaCoach/__init__.py:1691
 msgid "Opening {label}."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1624
+#: globalPlugins/nvdaCoach/__init__.py:1695
 msgid "Could not open {label}. Please check that the add-on is installed correctly."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1632
+#: globalPlugins/nvdaCoach/__init__.py:1703
 msgid "Opening {url} in your web browser."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1635
+#: globalPlugins/nvdaCoach/__init__.py:1706
 msgid "Could not open the website. Please check your internet connection."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1698
+#: globalPlugins/nvdaCoach/__init__.py:1769
 msgid "&NVDA Coach"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1699
+#: globalPlugins/nvdaCoach/__init__.py:1770
 msgid "Open NVDA Coach lesson picker"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1739
+#: globalPlugins/nvdaCoach/__init__.py:1810
 msgid "NVDA Coach. Press Enter or Next Step to continue, or Escape to stop the lesson."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1746
+#: globalPlugins/nvdaCoach/__init__.py:1817
 msgid "NVDA Coach: No lesson files found. Please check that the lessons folder is in the add-on directory."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1761
-msgid "Show NVDA Coach window, or open the lesson picker"
+#: globalPlugins/nvdaCoach/__init__.py:1832
+msgid "Show NVDA Coach window, or open the lesson picker. In Excel this key stays with NVDA, for setting column headers"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1873
+#: globalPlugins/nvdaCoach/__init__.py:2001
 msgid "No active category. Press NVDA+Shift+C to choose a lesson."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1876
+#: globalPlugins/nvdaCoach/__init__.py:2004
 msgid "You are on the last lesson in this category. Press NVDA+Shift+C to open the lesson picker and continue to the next chapter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1888
+#: globalPlugins/nvdaCoach/__init__.py:2016
 msgid "Moving to: {title}."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1888
+#: globalPlugins/nvdaCoach/__init__.py:2016
 msgid "next lesson"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1903
+#: globalPlugins/nvdaCoach/__init__.py:2031
 msgid "You are on the first lesson in this category."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1911
+#: globalPlugins/nvdaCoach/__init__.py:2039
 msgid "Going back to: {title}."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1911
+#: globalPlugins/nvdaCoach/__init__.py:2039
 msgid "previous lesson"
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1930
+#: globalPlugins/nvdaCoach/__init__.py:2058
 msgid "Restarting lesson."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:1945
+#: globalPlugins/nvdaCoach/__init__.py:2073
 msgid "Could not find the Getting Started chapter."
 msgstr ""
 
-#: globalPlugins/nvdaCoach/__init__.py:2052
+#: globalPlugins/nvdaCoach/__init__.py:2188
 msgid "Could not save the certificate. Please check that your Downloads folder is accessible."
 msgstr ""
 

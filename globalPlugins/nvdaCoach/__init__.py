@@ -1262,7 +1262,7 @@ class PracticeFrame(wx.Frame):
 	def __init__(self, parent, plugin):
 		super().__init__(
 			parent,
-			title="NVDA Coach — Practice Area",
+			title=_("NVDA Coach — Practice Area"),
 			size=(520, 480),
 			style=wx.DEFAULT_FRAME_STYLE,
 		)
@@ -1291,8 +1291,8 @@ class PracticeFrame(wx.Frame):
 		if lessonId not in self.SUPPORTED_LESSONS:
 			return
 		self._currentLessonId = lessonId
-		title = lessonTitle or "Practice Area"
-		self.SetTitle(f"NVDA Coach — Practice: {title}")
+		title = lessonTitle or _("Practice Area")
+		self.SetTitle(_("NVDA Coach — Practice: {title}").format(title=title))
 		self._rebuildContent(lessonId)
 		if not self.IsShown():
 			self.Show()
@@ -2106,8 +2106,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallLater(1500, self._closePracticeBrowserWindow)
 
 	def _closePracticeBrowserWindow(self):
-		"""Close any browser window whose title contains 'NVDA Coach Practice Page'."""
-		TITLE_PARTIAL = "NVDA Coach Practice Page"
+		"""Close the localized practice page browser window."""
+		titlePartials = ["NVDA Coach Practice Page"]
+		try:
+			with open(_localizedDocPath("practice.html"), encoding="utf-8") as f:
+				match = re.search(r"<title>\s*(.*?)\s*</title>", f.read(), re.IGNORECASE | re.DOTALL)
+			if match:
+				titlePartials.append(html.unescape(match.group(1)))
+		except OSError:
+			pass
 		try:
 			found = []
 
@@ -2116,7 +2123,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				if length > 0:
 					buf = ctypes.create_unicode_buffer(length + 1)
 					ctypes.windll.user32.GetWindowTextW(hwnd, buf, length + 1)
-					if TITLE_PARTIAL in buf.value:
+					if any(title in buf.value for title in titlePartials):
 						found.append(hwnd)
 				return True
 
