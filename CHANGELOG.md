@@ -1,6 +1,6 @@
 # NVDA Coach — Changelog
 
-## v1.7.0 (2026-11-22, not yet released)
+## v1.7.0 (2026-11-23)
 
 ### New lessons
 - **Chapter 7, Add-ons and the Add-on Store: 11 lessons, 48 steps.** What add-ons are and why nobody vets them; opening the store and the first-time warning; the four tabs and the layout of each; searching, the Channel filter and sorting; reading the description, Other details, Community reviews and VirusTotal results before installing; installing and restarting; updating, disabling and removing; add-on files, incompatible add-ons, and restarting with add-ons disabled. Wording, tab names, action names, access keys and status text were taken from the NVDA 2026.3.1 user guide and source, not from memory.
@@ -38,7 +38,7 @@
 - `tools/validate_addon.py`: knows the two new chapters, warns for a language that does not have them, and fails if any chapter other than braille is marked optional.
 
 ### Not verified
-- **Nothing in 1.7.0 has been run inside NVDA.** NVDA was running as the working screen reader on the build machine and was not restarted. The new lessons have not been walked with a real Add-on Store window or a real braille display.
+- **Run inside NVDA in English only.** 1.7.0 was installed on NVDA 2026.3.1rc1 on 2026-11-23 and loads without errors in the NVDA log, and Tony tried it there before release. The translated chapters have not been run in NVDA in their own languages.
 - Still open from `reviews/1.6.0-deferred.md`: Escape inside a lesson stops it without asking; Enter means two things in the browse mode chapter; settings are stored per configuration profile.
 
 ## v1.6.0 (2026-09-20)
