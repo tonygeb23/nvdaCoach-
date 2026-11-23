@@ -20,9 +20,9 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Control 鍵（Ctrl）位於鍵盤的左下角和右下角。在大多數膝上型電腦上，Fn 鍵緊挨在左 Ctrl 鍵的右邊——夾在 Ctrl 和 Windows 鍵之間——所以左下角這一排從左到右依序是 Ctrl、Fn、Windows、Alt，然後是空白鍵。在標準的桌上型電腦鍵盤上，這一排沒有 Fn 鍵，順序就是 Ctrl、Windows、Alt、空白鍵。左右兩個 Ctrl 鍵對幾乎所有指令的作用完全相同。按 Enter 繼續。",
+					"instruction": "Control 鍵（Ctrl）位於鍵盤的左下角和右下角。在大多數筆記型電腦上，Fn 鍵緊挨在左 Ctrl 鍵的右邊——夾在 Ctrl 和 Windows 鍵之間——所以左下角這一排從左到右依序是 Ctrl、Fn、Windows、Alt，然後是空白鍵。在標準的桌上型電腦鍵盤上，這一排沒有 Fn 鍵，順序就是 Ctrl、Windows、Alt、空白鍵。左右兩個 Ctrl 鍵對幾乎所有指令的作用完全相同。按 Enter 繼續。",
 					"hints": [
-						"在膝上型電腦上：Ctrl 在最左下角，往右依序是 Fn 鍵、Windows 鍵、Alt 鍵，然後是空白鍵。",
+						"在筆記型電腦上：Ctrl 在最左下角，往右依序是 Fn 鍵、Windows 鍵、Alt 鍵，然後是空白鍵。",
 						"在本課程中，右 Ctrl 鍵和左 Ctrl 鍵對所有指令的作用完全一樣。哪隻手按起來更順手，就用哪一側。",
 						"不確定哪個是 Ctrl？按 NVDA 加 1 開啟輸入說明，按下您認為是 Ctrl 的那個鍵，NVDA 會告訴您它是否識別為 Control。再按一次 NVDA 加 1 關閉輸入說明。"
 					]
@@ -47,20 +47,20 @@
 				},
 				{
 					"type": "info",
-					"instruction": "Windows 鍵上印著 Windows 徽標，位於鍵盤的最底排。在標準的桌上型電腦鍵盤上，它夾在左 Ctrl 和左 Alt 之間。在大多數膝上型電腦上，緊挨著 Ctrl 的位置被 Fn 鍵佔據，所以 Windows 鍵位於 Fn 和 Alt 之間。無論哪種情況，它都在最底排的某個位置。單獨按 Windows 鍵會開啟開始選單。Windows+向上鍵（Windows 指令）可以最大化視窗。Windows+D（Windows 指令）顯示桌面。Windows+L（Windows 指令）鎖定螢幕。按 Enter 繼續。",
+					"instruction": "Windows 鍵上印著 Windows 徽標，位於鍵盤的最底排。在標準的桌上型電腦鍵盤上，它夾在左 Ctrl 和左 Alt 之間。在大多數筆記型電腦上，緊挨著 Ctrl 的位置被 Fn 鍵佔據，所以 Windows 鍵位於 Fn 和 Alt 之間。無論哪種情況，它都在最底排的某個位置。單獨按 Windows 鍵會開啟開始選單。Windows+向上鍵（Windows 指令）可以最大化視窗。Windows+D（Windows 指令）顯示桌面。Windows+L（Windows 指令）鎖定螢幕。按 Enter 繼續。",
 					"hints": [
-						"桌上型電腦鍵盤：Windows 鍵在左 Ctrl 和左 Alt 之間。膝上型電腦：Fn 在 Ctrl 和 Windows 鍵之間，所以順序是 Ctrl、Fn、Windows、Alt。Windows 鍵上印有 Windows 徽標——由四個彩色方塊拼成的網格圖案。",
+						"桌上型電腦鍵盤：Windows 鍵在左 Ctrl 和左 Alt 之間。筆記型電腦：Fn 在 Ctrl 和 Windows 鍵之間，所以順序是 Ctrl、Fn、Windows、Alt。Windows 鍵上印有 Windows 徽標——由四個彩色方塊拼成的網格圖案。",
 						"Windows+向上鍵可以把目前視窗最大化到全螢幕。在使用物件導覽之前，這個操作很有用——最大化的視窗能顯示所有物件。",
 						"單獨按 Windows 鍵會開啟開始選單。按 Escape 可以不做任何選擇直接關閉它。"
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "您的 NVDA 鍵有兩個選擇：Insert 鍵或大寫鎖定鍵（Caps Lock）。在大多數鍵盤上，Insert 鍵位於方向鍵上方的按鍵區，靠近 Home、Delete、Page Up 和 Page Down。大寫鎖定鍵（Caps Lock）在鍵盤最左側，就在左 Shift 鍵的上方。這兩個鍵可以同時作為您的 NVDA 鍵——NVDA 兩個都接受。許多筆記型電腦使用者更喜歡用 Caps Lock，因為 Insert 鍵可能不太好夠。您可以在 NVDA 設定的鍵盤類別中選擇自己偏好的 NVDA 鍵。按 Enter 完成本課。",
+					"instruction": "NVDA 預設使用 Insert 作為 NVDA 鍵，您也可以選用 Caps Lock。「鍵盤」設定提供三個選項：Caps Lock、方向鍵上方的 Insert，以及數字鍵盤上的 Insert。您可以同時啟用多個選項。大多數鍵盤的 Insert 位於方向鍵上方，靠近 Home、Delete、Page Up 和 Page Down。Caps Lock 在鍵盤最左側、左 Shift 鍵正上方。啟用 Caps Lock 後，就可以和 Insert 搭配使用。許多筆記型電腦使用者偏好 Caps Lock，因為比較容易按到。按 Enter 完成本課。",
 					"hints": [
 						"Insert 鍵位於方向鍵上方的按鍵區——靠近 Home、Delete、End、Page Up 和 Page Down。它本身並不是修飾鍵，只是因為 NVDA 賦予了它這個角色，它才成為 NVDA 鍵。",
-						"大寫鎖定鍵（Caps Lock）在鍵盤最左側，就在 Shift 上方。把 Caps Lock 用作 NVDA 鍵後，它就不再切換大小寫了——需要切換時，先按 NVDA 加 F2，再按 Caps Lock，就能真正切換大小寫。",
-						"Insert 鍵和 Caps Lock 可以同時作為 NVDA 鍵使用。您不必二選一——每個指令都可以隨手用更方便的那一個。"
+						"Caps Lock 位於鍵盤最左側，就在左 Shift 鍵上方。如果您已將 Caps Lock 設為 NVDA 鍵，請快速連按兩下 Caps Lock 來切換大小寫。",
+						"在「鍵盤」設定中啟用 Caps Lock 作為 NVDA 鍵後，就可以和 Insert 交替使用。執行指令時，選擇順手的按鍵即可。"
 					]
 				}
 			]
@@ -81,7 +81,7 @@
 				},
 				{
 					"type": "info",
-					"instruction": "在許多膝上型電腦上，功能鍵這一排有兩種模式。一種模式下，這些鍵作為 F1 到 F12，用於軟體指令。另一種模式下，同樣的按鍵控制硬體功能——調節螢幕亮度、揚聲器音量、鍵盤背光和媒體播放。這些硬體功能通常以圖示的形式印在按鍵上。預設哪種模式生效，取決於您的筆記型電腦型號。按 Enter 繼續。",
+					"instruction": "在許多筆記型電腦上，功能鍵這一排有兩種模式。一種模式下，這些鍵作為 F1 到 F12，用於軟體指令。另一種模式下，同樣的按鍵控制硬體功能——調節螢幕亮度、揚聲器音量、鍵盤背光和媒體播放。這些硬體功能通常以圖示的形式印在按鍵上。預設哪種模式生效，取決於您的筆記型電腦型號。按 Enter 繼續。",
 					"hints": [
 						"留意您的 F1 到 F12 按鍵。如果上面印有小圖示——太陽代表亮度、喇叭代表音量、音符代表媒體——那些就是硬體功能。",
 						"有些筆記型電腦以硬體圖示（多媒體）功能為主，需要按住 Fn 再按相應的鍵才能得到 F1 到 F12；另一些則以 F1 到 F12 為主，按住 Fn 才是硬體功能。",
@@ -134,11 +134,11 @@
 				},
 				{
 					"type": "info",
-					"instruction": "檢視或更改鍵盤配置的方法：按 NVDA+N（NVDA 指令）開啟 NVDA 選單，然後按 P 進入偏好，再按 S 開啟設定。設定對話框開啟後，在左側的類別清單中用向上鍵、向下鍵找到「鍵盤」類別。按 Tab 移到鍵盤配置下拉式方塊，用向上鍵、向下鍵選擇桌上型電腦或筆記型電腦，再按 Tab 移到確定按鈕並按 Enter 儲存。自訂 NVDA 一章會詳細講解這個過程。按 Enter 繼續。",
+					"instruction": "檢視或更改鍵盤配置的方法：按 NVDA+N（NVDA 指令）開啟 NVDA 功能表，然後按 P 進入偏好，再按 S 開啟設定。設定對話框開啟後，在左側的類別清單中用向上鍵、向下鍵找到「鍵盤」類別。按 Tab 移到鍵盤配置下拉式方塊，用向上鍵、向下鍵選擇桌上型電腦或筆記型電腦，再按 Tab 移到確定按鈕並按 Enter 儲存。自訂 NVDA 一章會詳細講解這個過程。按 Enter 繼續。",
 					"hints": [
-						"NVDA 加 N 開啟 NVDA 選單。按 P 進入偏好，按 S 開啟設定。然後在類別清單中用向上鍵、向下鍵找到「鍵盤」類別。",
+						"NVDA 加 N 開啟 NVDA 功能表。按 P 進入偏好，按 S 開啟設定。然後在類別清單中用向上鍵、向下鍵找到「鍵盤」類別。",
 						"鍵盤配置下拉式方塊有兩個選項：桌上型電腦和筆記型電腦。用方向鍵選擇，按 Tab 移到確定按鈕，再按 Enter 儲存。",
-						"如果不確定目前使用的是哪種鍵盤配置，按 NVDA 加 1 開啟輸入說明，按一個數字鍵盤上的鍵，聽聽 NVDA 怎麼說。再按一次 NVDA 加 1 關閉輸入說明。"
+						"如果不確定目前的鍵盤配置，請按 NVDA+Ctrl+K。「鍵盤」設定會開啟，焦點在「鍵盤配置」，NVDA 會讀出「桌上型電腦」或「筆記型電腦」。按 Escape 關閉。"
 					]
 				},
 				{
@@ -155,7 +155,7 @@
 					"instruction": "您已經完成了認識鍵盤這一章！現在您知道了修飾鍵在標準鍵盤和筆記型電腦鍵盤上的位置、功能鍵和 Fn 鍵的工作方式，以及如何選擇和更改 NVDA 鍵盤配置設定。有了這個基礎，NVDA Coach 中所有的按鍵組合都會更容易理解——您會清楚地知道手指該放在哪裡。準備好後，按 NVDA+Shift+C 開啟課程選擇器，繼續學習下一章：閱讀和瀏覽文字。按 Enter 完成。",
 					"hints": [
 						"這一章是可以隨時回來查閱的參考資料。如果某個指令不起作用、您又不確定某個鍵的位置，就回到這裡看看。",
-						"修飾鍵位置小結：Ctrl 在左下角。膝上型電腦上，Fn 位於 Ctrl 和 Windows 鍵之間，所以最底排是 Ctrl、Fn、Windows、Alt、空白鍵；桌上型電腦鍵盤這一排沒有 Fn，就是 Ctrl、Windows、Alt、空白鍵。Shift 在 Ctrl 上方。Alt 緊挨空白鍵。NVDA 鍵是 Insert 或 Caps Lock。",
+						"修飾鍵位置小結：Ctrl 在左下角。筆記型電腦上，Fn 位於 Ctrl 和 Windows 鍵之間，所以最底排是 Ctrl、Fn、Windows、Alt、空白鍵；桌上型電腦鍵盤這一排沒有 Fn，就是 Ctrl、Windows、Alt、空白鍵。Shift 在 Ctrl 上方。Alt 緊挨空白鍵。NVDA 鍵預設是 Insert，也可以設定為 Caps Lock。",
 						"NVDA Coach 會自動儲存您的進度。您回來時，所有已完成的課程都會被標記出來。"
 					]
 				}
