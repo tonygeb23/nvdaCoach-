@@ -41,6 +41,19 @@ CHAPTERS = [
     "object_navigation.json",
     "nvda_settings.json",
 ]
+# Chapters added in 1.7.0. English must have them. Another language may be
+# waiting for its translator, which is reported as a warning rather than a
+# failure: a missing chapter is simply not offered to that language's
+# students, and shipping an English copy in its place is the mistake the
+# "is actually translated" check exists to catch.
+NEW_CHAPTERS = [
+    "addon_store.json",
+    "braille.json",
+]
+ALL_CHAPTERS = CHAPTERS + NEW_CHAPTERS
+# Chapters that must never count toward the certificate, and the only ones
+# that may be marked optional.
+OPTIONAL_CHAPTERS = ["braille.json"]
 DOC_PAGES = ["readme.html", "practice.html", "resources.html"]
 
 # Things the add-on once claimed that NVDA does not do. Each was verified
@@ -86,6 +99,12 @@ def lesson_sig(path):
 
 
 def main(strict):
+    # Chinese and Japanese chapter titles appear in the report, and a Windows
+    # console on its default code page cannot print them.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     version = manifest_version()
     check(bool(version), "manifest.ini states a version", version or "")
 
@@ -95,7 +114,13 @@ def main(strict):
     # --- every language is complete -------------------------------------
     for lang in langs:
         missing = [c for c in CHAPTERS if not os.path.isfile(os.path.join(LESSONS, lang, c))]
-        check(not missing, "%s: all six chapter files" % lang, ", ".join(missing))
+        check(not missing, "%s: all six core chapter files" % lang, ", ".join(missing))
+        waiting = [c for c in NEW_CHAPTERS if not os.path.isfile(os.path.join(LESSONS, lang, c))]
+        if lang == "en":
+            check(not waiting, "en: both 1.7.0 chapter files", ", ".join(waiting))
+        else:
+            check(not waiting, "%s: 1.7.0 chapters translated" % lang,
+                  "awaiting translation: " + ", ".join(waiting), warn=True)
 
         docmissing = [p for p in DOC_PAGES if not os.path.isfile(os.path.join(DOC, lang, p))]
         check(not docmissing, "%s: all three doc pages" % lang, ", ".join(docmissing))
@@ -125,14 +150,14 @@ def main(strict):
 
     # --- lesson files parse, and structure matches English --------------
     en_sigs = {}
-    for c in CHAPTERS:
+    for c in ALL_CHAPTERS:
         p = os.path.join(LESSONS, "en", c)
         if os.path.isfile(p):
             en_sigs[c] = lesson_sig(p)[1]
 
     for lang in langs:
         broken = []
-        for c in CHAPTERS:
+        for c in ALL_CHAPTERS:
             p = os.path.join(LESSONS, lang, c)
             if not os.path.isfile(p):
                 continue
@@ -155,7 +180,7 @@ def main(strict):
     )
     for lang in ("en",):
         offenders = []
-        for c in CHAPTERS:
+        for c in ALL_CHAPTERS:
             p = os.path.join(LESSONS, lang, c)
             if not os.path.isfile(p):
                 continue
@@ -169,13 +194,28 @@ def main(strict):
         check(not offenders, "%s: no lesson asks the student to look at something" % lang,
               "; ".join(sorted(set(offenders))[:4]))
 
+    # --- only the braille chapter is optional ------------------------------
+    # "optional": true takes a chapter out of the certificate. Set on a core
+    # chapter by accident, in any language, it would hand out certificates for
+    # a course the student had not finished.
+    for lang in langs:
+        wrong = []
+        for c in ALL_CHAPTERS:
+            p = os.path.join(LESSONS, lang, c)
+            if not os.path.isfile(p):
+                continue
+            flag = json.load(io.open(p, encoding="utf-8")).get("optional")
+            if (flag is True) != (c in OPTIONAL_CHAPTERS) or flag not in (None, True, False):
+                wrong.append("%s optional=%r" % (c, flag))
+        check(not wrong, "%s: only the braille chapter is optional" % lang, "; ".join(wrong))
+
     # --- lesson ids are identifiers, not text ----------------------------
     # A bulk text pass over the Turkish files rewrote activate_controls to
     # activate_Kontrols. The practice-window registry is keyed on the English
     # id, so it silently never matched and Turkish students got no practice
     # window and no explanation. Progress is stored under the id too.
     en_ids = {}
-    for c in CHAPTERS:
+    for c in ALL_CHAPTERS:
         p = os.path.join(LESSONS, "en", c)
         if os.path.isfile(p):
             en_ids[c] = [l["id"] for l in json.load(io.open(p, encoding="utf-8"))["lessons"]]
@@ -223,7 +263,7 @@ def main(strict):
         return out
 
     en_all = set()
-    for c in CHAPTERS:
+    for c in ALL_CHAPTERS:
         p = os.path.join(LESSONS, "en", c)
         if os.path.isfile(p):
             en_all |= set(strings_of(json.load(io.open(p, encoding="utf-8")), []))
@@ -232,7 +272,7 @@ def main(strict):
         if lang == "en":
             continue
         mine = []
-        for c in CHAPTERS:
+        for c in ALL_CHAPTERS:
             p = os.path.join(LESSONS, lang, c)
             if os.path.isfile(p):
                 mine += strings_of(json.load(io.open(p, encoding="utf-8")), [])
@@ -313,7 +353,7 @@ def main(strict):
             continue
         raw = io.open(p, encoding="utf-8", errors="replace").read()
         ships = {}
-        for c in CHAPTERS:
+        for c in ALL_CHAPTERS:
             f = os.path.join(LESSONS, lang, c)
             if os.path.isfile(f):
                 d = json.load(io.open(f, encoding="utf-8"))

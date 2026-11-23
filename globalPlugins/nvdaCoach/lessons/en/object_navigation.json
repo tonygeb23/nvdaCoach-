@@ -29,10 +29,10 @@
         },
         {
           "type": "info",
-          "instruction": "There are two keyboard layouts in NVDA: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard. Laptop layout uses combinations of NVDA plus letter or symbol keys so you do not need a numpad. All object navigation commands in this chapter will show both layouts. If you are not sure which layout you are using, open the NVDA menu with NVDA+N (NVDA command), go to Preferences, then Settings, then Keyboard, and listen for the layout setting. Press Enter to continue.",
+          "instruction": "There are two keyboard layouts in NVDA: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard. Laptop layout uses combinations of NVDA plus letter or symbol keys so you do not need a numpad. All object navigation commands in this chapter will show both layouts. If you are not sure which layout you are using, open the NVDA menu with NVDA+N (NVDA command), go to Preferences, then Settings, then Keyboard, and listen for the layout setting. On desktop layout, Num Lock must be off for the numpad commands to work. If a numpad command types a number instead, press the Num Lock key and try again. Press Enter to continue.",
           "hints": [
             "Desktop layout uses numpad keys for object navigation. Laptop layout adds Shift to many arrow key combinations. All commands in this chapter list both.",
-            "If you are not sure which layout you are using, press NVDA+1 (NVDA command) to turn on Input Help, then press one of the object navigation keys to hear which layout NVDA expects. Then press NVDA+1 again to turn Input Help off.",
+            "If you are not sure which layout you are using, press NVDA+Control+K (NVDA command). Keyboard settings opens on the Keyboard layout box, and NVDA reads out Desktop or Laptop. Press Escape to close it.",
             "You can change your keyboard layout at any time in NVDA Settings under the Keyboard category. The Customizing NVDA chapter covers this in detail."
           ]
         }
@@ -150,11 +150,11 @@
         },
         {
           "type": "info",
-          "instruction": "There is also a reverse command: press NVDA+NumPadMinus (desktop) or NVDA+BackSpace (laptop) — without Shift — to move the navigator object to wherever your keyboard focus currently is. This is useful when you want to start exploring from where you already are in the program, rather than starting from the top of the pyramid. Press Enter to continue.",
+          "instruction": "There is also a reverse command: press NVDA+NumPadMinus (desktop) or NVDA+BackSpace (laptop) — without Shift — to move the navigator object to wherever your keyboard focus currently is. This is useful when you want to start exploring from where you already are in the program, after the navigator object has wandered somewhere else. Press Enter to continue.",
           "hints": [
             "Desktop layout: NVDA plus NumPadMinus (without Shift) moves the navigator to the currently focused control — a good starting point for object exploration.",
             "Laptop layout: NVDA plus Backspace (without Shift) does the same thing. Use this to sync the navigator with your current keyboard focus.",
-            "Use this command at the start of an object navigation session to begin exploring from where you are rather than searching from the top of the pyramid."
+            "Use this command at the start of an object navigation session to bring the navigator object back to where your keyboard focus is."
           ]
         },
         {

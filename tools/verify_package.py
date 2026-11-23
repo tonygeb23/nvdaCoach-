@@ -80,8 +80,12 @@ def main(path):
     for lang in langs:
         chapters = [n for n in names
                     if n.startswith("globalPlugins/nvdaCoach/lessons/%s/" % lang) and n.endswith(".json")]
-        if len(chapters) != CHAPTERS:
-            fail("%s has %d chapter files, expected %d" % (lang, len(chapters), CHAPTERS))
+        # English carries the two chapters added in 1.7.0. Another language
+        # has them only once they are translated, and never just one of them.
+        allowed = (CHAPTERS + 2,) if lang == "en" else (CHAPTERS, CHAPTERS + 2)
+        if len(chapters) not in allowed:
+            fail("%s has %d chapter files, expected %s" % (
+                lang, len(chapters), " or ".join(str(n) for n in allowed)))
         for page in DOC_PAGES:
             if "doc/%s/%s" % (lang, page) not in names:
                 fail("%s is missing doc/%s" % (lang, page))

@@ -1,40 +1,45 @@
 # NVDA Coach
 
-Interactive screen reader training inside NVDA. 45 lessons across six chapters,
+Interactive screen reader training inside NVDA. 64 lessons across eight chapters,
 taught step by step — no videos, no PDFs, no switching windows.
 
 Free. GPL v2. By Tony Gebhard, Assistive Technology Instructor.
 
-**Current version:** 1.6.0
+**Current version:** 1.7.0
 
 ## Install
 
-**[Download NVDA Coach v1.6.0](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.6.0/nvdaCoach-1.6.0.nvda-addon)**
+**[Download NVDA Coach v1.7.0](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.7.0/nvdaCoach-1.7.0.nvda-addon)**
 — or get it from the NVDA Add-on Store (Tools → Add-on Store).
 
 Open the `.nvda-addon` file; NVDA installs it and asks you to confirm. Then
 press **NVDA+Shift+C**.
 
-Needs NVDA 2024.1 or later. Tested through 2026.1.1.
+Needs NVDA 2024.1 or later. Tested through 2026.3.1.
 
-## What's new in 1.6.0
+## What's new in 1.7.0
 
-- **Japanese and Polish**, both complete — six chapters, every interface
-  string, the documentation and the store listing.
-- **Brazilian Portuguese is a real translation for the first time.** The
-  folder has existed since 1.5.1 but shipped as an English copy: the lessons
-  were byte-identical to English and not one interface string was translated.
-- **Ten commands the Coach taught that NVDA does not have.** The worst: the
-  laptop command for reading the current object was `NVDA+Shift+Comma`, which
-  is bound to nothing in NVDA. The real key is `NVDA+Shift+O`. Every
-  translator had faithfully translated the error, so it was wrong in all nine
-  languages. See [the changelog](CHANGELOG.md) for all ten.
-- **NVDA Coach no longer takes `NVDA+Shift+C` away from NVDA.** NVDA binds
-  that key in Word and Excel to mark column headers, and a global plugin wins
-  the resolution — so the add-on was quietly removing an NVDA command. It now
-  hands the key back where NVDA wants it.
-- **Hong Kong, Macau and European Portuguese** no longer fall back to English
-  when a perfectly good translation is sitting in the add-on.
+- **A new chapter on add-ons and the Add-on Store**, eleven lessons: what
+  add-ons are, how to judge whether to trust one, how to find your way around
+  the store, and how to install, update, disable and remove them. It ends with
+  a tour of 25 of the most downloaded add-ons.
+- **An optional chapter for braille display users**, eight lessons. It does not
+  count toward the certificate, so nobody is held back for hardware they do
+  not own.
+- **Tested with NVDA 2026.3.1**, and every existing lesson re-checked against
+  that version's user guide. Twenty corrections, the worst of which left laptop
+  students pressing `NVDA+Up Arrow` to read the current line, when on laptop
+  layout that key reads the line above. The laptop key is `NVDA+L`.
+- **The certificate could not be exported in 1.6.0.** One misplaced variable
+  name made the export fail every time, with a message blaming the Downloads
+  folder. Fixed, and covered by a test.
+- **A test suite that runs outside NVDA**, `python -m unittest discover -s tests`,
+  which walks every lesson through the real lesson runner.
+
+The two new chapters are drafted in all eight other languages. Those drafts
+are machine-assisted, use NVDA's own wording for each language, and are
+waiting for review by each language's translator; see
+`translators/REVIEW-NOTES-1.7.0.md`.
 
 [Full history](CHANGELOG.md).
 
@@ -64,7 +69,20 @@ reach for it. Desktop and laptop layouts both documented.
 
 **6. Customizing NVDA — 4 lessons.** Keyboard layout, speech rate and voice
 including the synth settings ring, audio output device, and audio ducking.
-Finishing this chapter triggers the Certificate of Completion.
+
+**7. Add-ons and the Add-on Store — 11 lessons.** What add-ons are and why
+they are not vetted, opening and navigating the store, searching and
+filtering, reading about an add-on before installing it, installing,
+updating, disabling and removing, add-on files and incompatible add-ons,
+restarting with add-ons disabled, and a tour of 25 of the most downloaded
+add-ons.
+
+**8. Using a Braille Display — 8 lessons, optional.** Connecting a display,
+reading and scrolling, routing keys, braille tables, tethering and braille
+mode, control abbreviations, braille input, and comfort settings. Not
+required for the certificate.
+
+The Certificate of Completion is offered when chapters 1 to 7 are complete.
 
 ## How it works
 
@@ -134,7 +152,7 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as zf:
 
 ## Planned
 
-Email and Office chapters · braille display module · difficulty and pace
+Email and Office chapters · difficulty and pace
 settings · instructor progress reporting.
 
 Ideas and corrections: [open an issue](https://github.com/tonygeb23/nvdaCoach-/issues)

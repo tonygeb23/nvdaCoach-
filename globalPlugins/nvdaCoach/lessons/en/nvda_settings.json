@@ -11,7 +11,7 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "NVDA supports two keyboard layouts: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard for many NVDA commands. Laptop layout uses NVDA plus letter keys instead, so you do not need a numpad. Most desktop computers use desktop layout by default. Most laptops use laptop layout. You can change this at any time in NVDA settings. Press Enter to continue.",
+          "instruction": "NVDA supports two keyboard layouts: desktop and laptop. Desktop layout uses the numeric keypad on the right side of a full-size keyboard for many NVDA commands. Laptop layout uses NVDA plus letter keys instead, so you do not need a numpad. NVDA starts on desktop layout on every computer, laptops included, unless laptop layout was chosen in NVDA's Welcome dialog or in Keyboard settings. You can change this at any time in NVDA settings. Press Enter to continue.",
           "hints": [
             "Desktop layout relies on the numeric keypad — the block of number keys on the right side of a full-size keyboard. If your keyboard does not have a numpad, use laptop layout.",
             "Laptop layout replaces numpad commands with NVDA plus letter key combinations. Most laptop users find this more natural since they do not have a numpad.",
@@ -20,7 +20,7 @@
         },
         {
           "type": "info",
-          "instruction": "To open NVDA settings, press NVDA+N (NVDA command) to open the NVDA menu. Then press P for Preferences, then S for Settings. You will hear NVDA announce the Settings dialog opening. The first category you land on may vary. Press Tab (Windows command) to move between settings categories or use the Arrow keys in the category list. Navigate to the Keyboard category to find the layout setting. Press Enter to continue.",
+          "instruction": "To open NVDA settings, press NVDA+N (NVDA command) to open the NVDA menu. Then press P for Preferences, then S for Settings. You will hear NVDA announce the Settings dialog opening. The first category you land on may vary. Use the Up and Down Arrow keys in the category list to move between settings categories, or press Control+Tab (Windows command) from anywhere in the dialog to move to the next category. Pressing Tab moves from the category list into the settings themselves. Navigate to the Keyboard category to find the layout setting. Press Enter to continue.",
           "hints": [
             "NVDA plus N is an NVDA command — it opens the NVDA menu. P for Preferences, then S for Settings opens the main NVDA Settings dialog.",
             "Once the Settings dialog is open, you will be in a category list on the left. Use the Up and Down Arrow keys to move through categories, or press the first letter of a category name to jump to it.",
@@ -42,7 +42,7 @@
           "hints": [
             "Throughout NVDA Coach, desktop layout commands appear first, followed by laptop layout commands in parentheses. Use whichever matches your keyboard.",
             "If a command does not seem to work, check your keyboard layout setting. Pressing desktop layout keys when NVDA is set to laptop layout — or vice versa — will not produce the expected result.",
-            "Not sure which layout you are using? Press NVDA plus 1 to turn on Input Help, press a numpad key, and listen to what NVDA says. Then press NVDA plus 1 again to turn Input Help off."
+            "Not sure which layout you are using? Press NVDA plus Control plus K. Keyboard settings opens on the Keyboard layout box, and NVDA reads out Desktop or Laptop. Press Escape to close it."
           ]
         }
       ]
@@ -122,7 +122,7 @@
         },
         {
           "type": "info",
-          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through sliders and combo boxes for rate, pitch, volume, inflection, voice, and synthesizer. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Move Between Controls with Tab lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
+          "instruction": "For more precise control, you can adjust speech settings inside the NVDA Settings dialog. Press NVDA+N to open the NVDA menu, then P for Preferences, then S for Settings. The Settings dialog opens with a category list on the left. You can move through categories with the Up and Down Arrow keys, or use first-letter navigation — just press the first letter of the category name to jump to it. For example, press S to jump straight to Speech. Once you are in the Speech category, press Tab to move forward through the Change button for the synthesizer, and then the combo boxes and sliders for voice, rate, pitch, volume, and inflection. Press Shift+Tab to move backward. If you need a refresher on Tab navigation, that was covered in the Move Between Controls with Tab lesson in the Getting Started chapter. Changes made here are saved when you press OK or Apply. Press Enter to continue.",
           "hints": [
             "Open Settings with NVDA plus N, P for Preferences, S for Settings. Then press S in the category list to jump straight to the Speech category using first-letter navigation.",
             "Inside the Speech category, Tab moves forward through controls: rate slider, pitch slider, volume slider, voice combo box, and more. Shift plus Tab moves backward.",
@@ -131,20 +131,20 @@
         },
         {
           "type": "info",
-          "instruction": "NVDA includes the eSpeak NG synthesizer by default, which supports many languages and voices. If you have installed additional synthesizers — such as Windows OneCore voices or third-party options — you can switch between them in the Speech settings under the Synthesizer combo box. Each synthesizer may offer different voice options and quality levels. Press Enter to continue.",
+          "instruction": "On Windows 10 and 11, NVDA speaks with Windows OneCore voices by default. The eSpeak NG synthesizer, which supports many languages, is also built in, and more synthesizers can be added with add-ons. To switch synthesizer, press NVDA+Control+S (NVDA command) to open the Select Synthesizer dialog, or press the Change button at the top of the Speech category. Each synthesizer may offer different voice options and quality levels. Press Enter to continue.",
           "hints": [
             "eSpeak NG is installed with NVDA and works offline. Windows OneCore voices use Microsoft's built-in voices and offer more natural-sounding speech.",
-            "To switch synthesizers, open NVDA Settings, go to the Speech category, and find the Synthesizer combo box. Use arrow keys to choose a different synthesizer.",
+            "To switch synthesizers, press NVDA plus Control plus S. In the Select Synthesizer dialog, use the arrow keys to choose a different synthesizer, then press Enter.",
             "After switching synthesizers, the Voice combo box will update to show the voices available for the new synthesizer. Try a few to find the one you prefer."
           ]
         },
         {
           "type": "info",
-          "instruction": "Once you have found speech settings you are happy with, NVDA saves them automatically when you close the settings dialog with OK. Your preferred rate, voice, and pitch will be active every time NVDA starts. If you ever want to experiment and return to a known state, note your settings before changing them, or press NVDA+Ctrl+R once to revert to your last saved configuration. Press Enter to finish this lesson.",
+          "instruction": "Once you have found speech settings you are happy with, pressing OK applies them straight away. NVDA then writes your settings to disk when it exits, or immediately if you press NVDA+Control+C (NVDA command) to save the configuration. After that, your preferred rate, voice, and pitch will be active every time NVDA starts. If you ever want to experiment and return to a known state, note your settings before changing them, or press NVDA+Ctrl+R once to revert to your last saved configuration. Press Enter to finish this lesson.",
           "hints": [
-            "NVDA saves all speech settings when you press OK in the Settings dialog. Your preferences are restored every time NVDA starts.",
-            "The Speech category has no reset button. To put every NVDA setting back to how it shipped, press NVDA+Ctrl+R three times: once reverts to your last saved configuration, and three times restores factory defaults.",
-            "You can combine the synth settings ring for quick on-the-fly adjustments with the Settings dialog for precise fine-tuning. Both methods save your preferences."
+            "OK applies your settings at once. They are saved to disk when NVDA exits, or right away with NVDA plus Control plus C.",
+            "The Speech category has no reset button. To put every NVDA setting back to how it shipped, press NVDA+Ctrl+R three times: once reverts to your last saved configuration, and three times restores factory defaults. The NVDA menu also has Reset configuration to factory defaults, and in NVDA 2026.2 and later that route offers an Undo button afterward.",
+            "You can combine the synth settings ring for quick on-the-fly adjustments with the Settings dialog for precise fine-tuning. Both are saved when NVDA exits."
           ]
         }
       ]
@@ -160,7 +160,7 @@
           "hints": [
             "NVDA plus Control plus U is an NVDA command that opens the Audio category of the NVDA Settings dialog, where Output device is one of the settings.",
             "Tab to the Output device combo box, then use the Up and Down Arrow keys to hear each device. Tab to OK and press Enter to apply, or press Escape to leave it unchanged.",
-            "The change takes effect immediately — you will hear NVDA begin speaking through the selected device right away. No restart is needed."
+            "The change takes effect when you press OK or Apply. No restart is needed."
           ]
         },
         {
@@ -189,7 +189,7 @@
           "hints": [
             "NVDA plus Shift plus D is an NVDA command. Each press cycles to the next ducking mode and NVDA announces the new mode by name.",
             "The three modes are: No ducking (other audio plays at full volume), Duck when outputting speech and sounds (audio lowers only while NVDA is talking), and Always duck (audio stays lowered even when NVDA is silent).",
-            "Audio ducking is only available when NVDA has been installed. If you are running NVDA from a USB drive, NVDA+Shift+D does nothing at all. On an installed copy, if you hear no difference between modes, your audio driver may not support ducking."
+            "Audio ducking is only available when NVDA has been installed. If you are running NVDA from a USB drive, NVDA+Shift+D does nothing at all. On an installed copy, if you hear no difference between modes, the usual cause is the synthesizer: ducking is not available with SAPI 4 voices or 32-bit SAPI 5 voices."
           ]
         },
         {
@@ -201,12 +201,12 @@
           "hints": [
             "Hold NVDA and Shift together, then press D. NVDA announces the new ducking mode immediately.",
             "Start with music or a video playing so you can clearly hear whether ducking is working. The volume drop should be noticeable when NVDA begins to speak.",
-            "If no mode changes anything, check first whether this is a portable copy of NVDA, because ducking needs an installed copy. On an installed copy it is usually the audio driver, which is common with some USB headsets and virtual audio devices."
+            "If no mode changes anything, check first whether this is a portable copy of NVDA, because ducking needs an installed copy. On an installed copy it is usually the synthesizer: ducking is not available with SAPI 4 voices or 32-bit SAPI 5 voices."
           ]
         },
         {
           "type": "info",
-          "instruction": "Your preferred ducking mode is saved automatically and will be active every time NVDA starts. Most users prefer Duck when outputting speech and sounds — it keeps audio at full volume when NVDA is quiet and only lowers it when speech begins, so you can follow both the audio content and NVDA announcements without one drowning out the other. Press Enter to finish this lesson and complete the Customizing NVDA chapter.",
+          "instruction": "Your preferred ducking mode is saved with the rest of your settings when NVDA exits, and will be active every time NVDA starts. Most users prefer Duck when outputting speech and sounds — it keeps audio at full volume when NVDA is quiet and only lowers it when speech begins, so you can follow both the audio content and NVDA announcements without one drowning out the other. Press Enter to finish this lesson and complete the Customizing NVDA chapter.",
           "hints": [
             "Duck when outputting speech and sounds is the most popular mode — audio plays normally when NVDA is quiet and drops only when NVDA speaks.",
             "Always Duck is useful if you find audio distracting even between NVDA announcements, such as when using NVDA in a noisy or media-heavy environment.",

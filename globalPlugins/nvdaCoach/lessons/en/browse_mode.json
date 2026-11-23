@@ -17,7 +17,7 @@
           "hints": [
             "Browse mode creates a virtual copy of the web page as a text document. Arrow keys move through it just like a regular document.",
             "Single-letter shortcuts like H for heading and K for link only work in browse mode — not in forms or text fields where you need to type.",
-            "NVDA switches to browse mode automatically when you open a web page. You will hear 'browse mode' announced when it activates."
+            "NVDA switches to browse mode automatically when you open a web page. By default NVDA does not announce this. It simply starts reading the page."
           ]
         },
         {
@@ -36,7 +36,7 @@
           "hints": [
             "Hold the Alt key — to the left of the Space bar — and press Tab once. Release both keys when you hear your browser announced.",
             "If you cycle past the browser, keep holding Alt and press Tab again to continue cycling through open windows.",
-            "Once in the browser, NVDA should announce the page title and 'browse mode' to let you know you are in a web page."
+            "Once in the browser, NVDA should announce the page title and begin reading the page, which tells you that you are in a web page."
           ],
           "expectedGestures": [
             "kb:alt+tab"
@@ -73,7 +73,7 @@
           "instruction": "Web pages are structured with headings, like chapters in a book. Sighted users see headings visually — they are larger or bold. NVDA announces the heading text and its level. In browse mode, press H to jump to the next heading. Shift plus H goes back to the previous heading. Make sure you are in your browser on the practice page. Press Enter to continue.",
           "hints": [
             "Press H by itself — just the letter H with no modifier key. In browse mode, single letters are shortcuts, not typed text.",
-            "NVDA announces the heading text and its level, for example 'level 2 heading: Getting Started'. The level tells you where it sits in the page structure.",
+            "NVDA announces the heading text and its level, for example 'Getting Started, heading level 2'. The level tells you where it sits in the page structure.",
             "Shift plus H goes backward to the previous heading. The pattern of pressing a key to go forward and Shift plus that key to go backward applies to most browse mode shortcuts."
           ]
         },
@@ -345,30 +345,30 @@
           "instruction": "Browse mode lets you read and navigate pages. But when you need to type into a text box, you need to switch to focus mode. When focus mode activates, your cursor is placed inside the edit box and you can type directly — this is intentional. Focus mode puts the cursor in the edit box so you can interact with form fields. Your keypresses go directly to the application instead of being used as navigation shortcuts. NVDA often switches to focus mode automatically when you Tab into a text field. You can also toggle manually with NVDA+Space (NVDA command). Press Enter to continue.",
           "hints": [
             "Browse mode: letter keys are navigation shortcuts. Focus mode: letter keys type characters into a field — your cursor is in the edit box. NVDA plus Space toggles between them.",
-            "NVDA usually switches to focus mode automatically when you enter a text field. You will hear 'focus mode' announced, and your cursor lands in the edit box ready to type.",
+            "NVDA usually switches to focus mode automatically when you enter a text field. By default NVDA plays a short sound to mark the switch to focus mode, and your cursor lands in the edit box ready to type.",
             "If you are trying to type and letters are jumping around the page instead of appearing in a field, you are in browse mode. Press NVDA plus Space to switch to focus mode and place the cursor in the edit box."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Hold your NVDA key and press the Space bar. NVDA will announce either 'focus mode' or 'browse mode' to tell you which one you are switching to. In focus mode, letter keys type characters into a field instead of navigating the page. In browse mode, letter keys are navigation shortcuts. NVDA often switches automatically when you Tab into a text field, but knowing how to toggle manually with NVDA+Space gives you full control at any time. Press Enter here to continue.",
+          "instruction": "Try it now. Hold your NVDA key and press the Space bar. NVDA tells you which mode you have switched to. By default it does this with two different short sounds, one for focus mode and one for browse mode. If those sounds have been turned off in Browse Mode settings, NVDA says 'focus mode' or 'browse mode' instead. In focus mode, letter keys type characters into a field instead of navigating the page. In browse mode, letter keys are navigation shortcuts. NVDA often switches automatically when you Tab into a text field, but knowing how to toggle manually with NVDA+Space gives you full control at any time. Press Enter here to continue.",
           "monitorGestures": [
             "kb:nvda+space"
           ],
           "hints": [
             "Hold your NVDA key — Insert or Caps Lock — and press the Space bar. The Space bar is the long flat key at the bottom center of the keyboard.",
-            "NVDA announces 'focus mode' or 'browse mode' to confirm which mode you switched to. Toggle back and forth a few times to get the feel of it.",
+            "NVDA plays a different sound for each mode, or speaks the mode name if the sounds are turned off. Toggle back and forth a few times to get the feel of it.",
             "If letters are being typed when you expect navigation, press NVDA plus Space to switch to browse mode. If navigation is happening when you expect typing, press NVDA plus Space to switch to focus mode."
           ]
         },
         {
           "type": "info",
-          "instruction": "Press NVDA+Space one more time to switch back to the other mode. Hold your NVDA key and press Space, and listen for NVDA to announce the mode name. Remembering this one shortcut means you will always have control over how your keyboard behaves on any web page. Press Enter here to continue.",
+          "instruction": "Press NVDA+Space one more time to switch back to the other mode. Hold your NVDA key and press Space, and listen for the sound, or the mode name, that tells you which mode you are in. Remembering this one shortcut means you will always have control over how your keyboard behaves on any web page. Press Enter here to continue.",
           "monitorGestures": [
             "kb:nvda+space"
           ],
           "hints": [
-            "Hold NVDA and press the Space bar again to toggle back. NVDA announces the mode name each time you switch.",
+            "Hold NVDA and press the Space bar again to toggle back. NVDA signals the mode each time you switch.",
             "The Space bar is the long flat key at the very bottom of the keyboard. Hold your NVDA key, then tap Space.",
             "NVDA plus Space is one of the most important web browsing shortcuts. Once it becomes a reflex, you will never feel stuck in the wrong mode."
           ]
@@ -448,20 +448,20 @@
           "type": "info",
           "instruction": "NVDA has a powerful dialog called the Elements List that shows you all the headings, links, form fields, or landmarks on the current page in one place. You can filter the list and jump directly to any item. Sighted users can visually scan a page and spot what they need; the Elements List gives you the same overview in one accessible dialog. It is like a table of contents for the whole page. Press Enter to continue.",
           "hints": [
-            "The Elements List opens with NVDA plus F7. It shows headings, links, form fields, or landmarks depending on which tab you are on.",
-            "Inside the Elements List, Tab moves between the category buttons at the top. Arrow keys move through the list of items. Enter jumps to the selected item on the page.",
+            "The Elements List opens with NVDA plus F7. It shows headings, links, form fields, or landmarks depending on which type you choose.",
+            "The Elements List opens in the list of items, and arrow keys move through it. Shift plus Tab moves back to the Type radio buttons, where Up and Down Arrow choose links, headings, form fields, buttons, or landmarks. Alt plus M, the Move to button, jumps to the selected item on the page.",
             "The Elements List is one of the fastest ways to find a specific link or heading on a long page without reading everything."
           ]
         },
         {
           "type": "info",
-          "instruction": "Try it now. Hold your NVDA key and press F7 at the top of your keyboard. The Elements List dialog will open and NVDA will announce it. Inside the dialog, press Tab to switch between viewing headings, links, form fields, and landmarks on the current page. Use the arrow keys to move through the list, and press Enter on any item to jump directly to it on the page. It is like an instant table of contents for the whole page — one of the most powerful tools NVDA gives you for web navigation. When you are done exploring, press Escape to close the dialog, then press Enter here to continue.",
+          "instruction": "Try it now. Hold your NVDA key and press F7 at the top of your keyboard. The Elements List dialog will open and NVDA will announce it. The dialog opens in a list of the links on the page. Press Shift+Tab to reach the Type radio buttons, and use Up and Down Arrow there to switch between links, headings, form fields, buttons, and landmarks. Press Tab to return to the list, and use the arrow keys to move through it. Press Alt+M, the Move to button, to jump to an item on the page. Pressing Enter instead activates the item, which for a link means following it. It is like an instant table of contents for the whole page — one of the most powerful tools NVDA gives you for web navigation. When you are done exploring, press Escape to close the dialog, then press Enter here to continue.",
           "monitorGestures": [
             "kb:nvda+f7"
           ],
           "hints": [
             "Hold your NVDA key and press F7 — the seventh function key in the top row. The Elements List dialog opens immediately.",
-            "Inside the dialog, Tab moves between the category buttons: headings, links, form fields, buttons, and landmarks. Arrow keys then move through the items in the selected category.",
+            "Shift plus Tab from the list reaches the Type radio buttons: links, headings, form fields, buttons, and landmarks. Tab returns to the list, where arrow keys move through the items of the chosen type.",
             "Type a few letters in the filter box to narrow the list to items containing that text. This is very useful on pages with many links."
           ]
         },
@@ -499,7 +499,7 @@
           "hints": [
             "Hold NVDA, hold Control, and press F — all three at the same time. The Control key is in the bottom left corner; F is in the middle row of letters.",
             "Type a word you know is on the page, then press Enter. NVDA jumps to the first occurrence and reads the surrounding text.",
-            "If no match is found, NVDA says 'not found'. Try a different search term or check your spelling."
+            "If no match is found, a small dialog tells you the text was not found. Press Enter to close it, then try a different search term or check your spelling."
           ]
         },
         {
@@ -521,10 +521,10 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Web pages often use tables to display structured information — rows and columns of data such as schedules, pricing, or comparison charts. Sighted users can see the grid layout visually. When your cursor lands on a table in browse mode, NVDA announces 'table with X rows and Y columns' so you know the size of the table. Understanding what kind of command you are using is important here: table cell navigation commands are NVDA commands — they require your NVDA key or a combination that NVDA interprets. They are not Windows commands or browser commands. Press Enter to continue.",
+          "instruction": "Web pages often use tables to display structured information — rows and columns of data such as schedules, pricing, or comparison charts. Sighted users can see the grid layout visually. When your cursor lands on a table in browse mode, NVDA announces something like 'table with 3 columns and 4 rows' so you know the size of the table. Understanding what kind of command you are using is important here: table cell navigation commands are NVDA commands — they require your NVDA key or a combination that NVDA interprets. They are not Windows commands or browser commands. Press Enter to continue.",
           "hints": [
-            "NVDA announces 'table with X rows and Y columns' when you land on a table. This tells you how large it is before you start navigating inside it.",
-            "Table navigation commands in this lesson are NVDA commands — they only work when NVDA is running and you are in browse mode on a web page.",
+            "NVDA announces something like 'table with 3 columns and 4 rows' when you land on a table. This tells you how large it is before you start navigating inside it.",
+            "Table navigation commands in this lesson are NVDA commands — they only work when NVDA is running. They work wherever NVDA finds a table, including Word documents as well as web pages.",
             "Not all tables on web pages are data tables. Some pages use tables for visual layout. NVDA will still announce them, but they may not have meaningful row and column structure."
           ]
         },
@@ -534,7 +534,7 @@
           "hints": [
             "Hold Ctrl and Alt together, then press an Arrow key to move through table cells. Right and Left move across a row. Down and Up move through a column.",
             "NVDA announces the cell content, plus its row and column position — for example, 'row 2, column 3, Price: 49 dollars'. This tells you exactly where you are in the table.",
-            "These are NVDA commands — Ctrl+Alt+Arrow keys are intercepted by NVDA in browse mode. They do not work the same way outside of a web page table."
+            "These are NVDA commands — Ctrl+Alt+Arrow keys are intercepted by NVDA in browse mode. They only do something when you are inside a table."
           ]
         },
         {
@@ -558,7 +558,7 @@
           "hints": [
             "NVDA commands require NVDA to be running and active. Tab and Arrow keys are Windows commands — they work in any application.",
             "Browse mode single-letter shortcuts like H and K only work when you are in browse mode. If they are not working, you may be in focus mode — press NVDA plus Space to check.",
-            "Ctrl+Alt+Arrow for tables is an NVDA command that only activates inside a table in browse mode. Outside a table, Ctrl+Alt+Arrow may do something different or nothing at all."
+            "Ctrl+Alt+Arrow for tables is an NVDA command that only activates inside a table. Outside a table, Ctrl+Alt+Arrow may do something different or nothing at all."
           ]
         },
         {

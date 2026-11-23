@@ -1,5 +1,46 @@
 # NVDA Coach — Changelog
 
+## v1.7.0 (2026-11-22, not yet released)
+
+### New lessons
+- **Chapter 7, Add-ons and the Add-on Store: 11 lessons, 48 steps.** What add-ons are and why nobody vets them; opening the store and the first-time warning; the four tabs and the layout of each; searching, the Channel filter and sorting; reading the description, Other details, Community reviews and VirusTotal results before installing; installing and restarting; updating, disabling and removing; add-on files, incompatible add-ons, and restarting with add-ons disabled. Wording, tab names, action names, access keys and status text were taken from the NVDA 2026.3.1 user guide and source, not from memory.
+- **Three of those lessons tour 25 of the most downloaded add-ons.** The Add-on Store publishes no usage figures, so the ranking is total GitHub release downloads for every stable add-on the store offers for NVDA 2026.3, counted on 2026-11-22 (581 add-ons counted; 10 are hosted elsewhere and could not be). The lessons say how the list was made and that download counts favour add-ons that update often. BluetoothAudio ranked 21st on downloads but is not offered for NVDA 2026.3, so it was left out and Outlook Extended took the 25th place. Where NVDA now does a similar job itself (sentence navigation, Remote Access, math, OCR, repeating the last speech) the lesson says so.
+- **Chapter 8, Using a Braille Display: 8 lessons, 34 steps, optional.** Connecting over USB and Bluetooth, automatic detection and `NVDA+Ctrl+A`; scrolling and line movement; the braille cursor and routing keys; output and input tables; tethering (`NVDA+Ctrl+T`), braille mode (`NVDA+Alt+T`) and speech modes (`NVDA+S`); control abbreviations; braille keyboard input; message, text wrap and paragraph settings. Display-specific keys are not taught, because they differ by model; the lessons teach the command names and send the student to their display's section of the user guide and to Input Help.
+- **Optional chapters.** A chapter with `"optional": true` in its JSON does not count toward the certificate, is labelled "optional" in the lesson picker, and is listed on the completion screen only if the student finished it. Only a real boolean `true` counts.
+- The course is now 64 lessons in English: 56 required and 8 optional. **The Add-on Store chapter is required**, so a student who finished 1.6.0 needs it before the certificate is offered again.
+- **Drafted in all eight other languages, pending native review.** Spanish, Japanese, Polish, Brazilian Portuguese, Russian, Turkish, Simplified Chinese and Traditional Chinese each have both chapters, the two manual sections, and the new interface strings. The drafts are machine-assisted. Interface names and access keys were taken from NVDA 2026.3.1's own translation for each language, and add-on names from the Add-on Store in that language; where NVDA's translation gives a control no access key, or gives two controls the same one, the lesson teaches Tab instead. None of it has been read by a native speaker or tried in NVDA in that language. What each translator should look at first is in `translators/REVIEW-NOTES-1.7.0.md`. The twenty factual corrections to the six original chapters are still English only.
+
+### NVDA 2026.3.1
+- `lastTestedNVDAVersion` is 2026.3.1. NVDA Coach 1.6.0 already loaded cleanly on NVDA 2026.3.1rc1 (checked in a live NVDA log), and none of the APIs deprecated in 2026.2 or 2026.3 are used by the add-on.
+- All 45 existing English lessons (165 steps, 495 hints) and the English manual were checked against the NVDA 2026.3.1 user guide and change log. Nothing had gone stale between 2026.1.1 and 2026.3.1; the 20 findings were errors of longer standing. All are corrected in English and written up for translators in `translators/FACTUAL-CORRECTIONS-1.7.0.md`. The ones that mattered most:
+  1. **Read current line was taught with the desktop key only.** On laptop layout `NVDA+Up Arrow` reads the line above; the key is `NVDA+L`.
+  2. **"Most laptops use laptop layout."** NVDA starts on desktop layout on every computer.
+  3. **Caps Lock was presented as an NVDA key that already works.** By default only the two Insert keys are.
+  4. **Focus mode and browse mode were said to be spoken.** By default NVDA plays a sound for each.
+  5. **Num Lock was never mentioned,** and every desktop object navigation command needs it off.
+  6. **The Elements List was described as tabs you Tab between.** It has Type radio buttons, and Enter activates a link rather than moving to it.
+  7. **A Synthesizer combo box in the Speech category,** which does not exist, and eSpeak NG as the default voice, which it is not on Windows 10 and 11.
+  8. **"Saved when you press OK"** in the same step that taught `NVDA+Ctrl+R`, which would undo it.
+- New commands from 2026.2 and 2026.3 are mentioned where they fit: `NVDA+X` to repeat the last speech, `Alt+C` in the Formatting window, and the Undo offered after a menu reset to factory defaults.
+
+### Fixed
+- **The Certificate of Completion could not be exported in 1.6.0.** The 1.6.0 change that escaped names for HTML used `html.escape()` in a function that also assigned to a local variable called `html`, so every export raised `UnboundLocalError` and the student was told to check their Downloads folder. Reproduced against the released 1.6.0 code and covered by a test.
+- **The certificate button appeared after one chapter.** At start-up the add-on still asked only whether Customizing NVDA was complete, while the completion screen asked about the whole course.
+- **The certificate finds the real Downloads folder,** asking Windows instead of assuming `~/Downloads`, which OneDrive moves.
+- **The practice browser is closed in every language.** The window was matched against the English page title; it is now matched against the title of the page that was opened.
+- **A practice page that fails to open is announced.**
+- **Escape in the first 600 ms of a lesson** no longer leaves NVDA announcing that the lesson is starting after saying it stopped.
+- **Two interface translations lost in 1.6.0 are back.** The welcome text and the gesture description were reworded in 1.6.0 without resyncing the catalogues, so they had been showing in English in every language. `tools/sync_locales.py` now does that step and carries translations across a rewording.
+
+### Tooling
+- `tests/test_coach.py`: 25 tests that run the add-on's own code outside NVDA with stand-in NVDA modules and real wxPython. One walks all 64 lessons through the real lesson runner, and another does the same for every language. Nothing is shown, spoken, or focused.
+- `tools/sync_locales.py`: regenerates the template, merges every catalogue, and compiles `.mo` files.
+- `tools/validate_addon.py`: knows the two new chapters, warns for a language that does not have them, and fails if any chapter other than braille is marked optional.
+
+### Not verified
+- **Nothing in 1.7.0 has been run inside NVDA.** NVDA was running as the working screen reader on the build machine and was not restarted. The new lessons have not been walked with a real Add-on Store window or a real braille display.
+- Still open from `reviews/1.6.0-deferred.md`: Escape inside a lesson stops it without asking; Enter means two things in the browse mode chapter; settings are stored per configuration profile.
+
 ## v1.6.0 (2026-09-20)
 
 ### Localization

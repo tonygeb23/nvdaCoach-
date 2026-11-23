@@ -54,11 +54,11 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "Welcome to NVDA Coach! If you have an assistive technology instructor with you right now, this is a great moment to let them know you are starting. They can sit with you, help you find keys, and answer questions as you go. If you are working on your own, that is absolutely fine. NVDA Coach is designed to guide you independently, and you can do this. If you ever feel stuck, press F2 for a hint, F1 to hear the instruction again, or F3 to skip a step and come back to it later. In this first lesson, you will learn about the NVDA modifier key. This is the special key you hold while pressing other keys to send commands to NVDA. On most keyboards it is the Insert key. On many laptops it is Caps Lock. Press Enter to continue.",
+					"instruction": "Welcome to NVDA Coach! If you have an assistive technology instructor with you right now, this is a great moment to let them know you are starting. They can sit with you, help you find keys, and answer questions as you go. If you are working on your own, that is absolutely fine. NVDA Coach is designed to guide you independently, and you can do this. If you ever feel stuck, press F2 for a hint, F1 to hear the instruction again, or F3 to skip a step and come back to it later. In this first lesson, you will learn about the NVDA modifier key. This is the special key you hold while pressing other keys to send commands to NVDA. Unless it has been changed, it is the Insert key. NVDA can also be set to use Caps Lock, which many laptop users prefer. Press Enter to continue.",
 					"hints": [
 						"On most desktop keyboards, the NVDA key is the Insert key. It is in the cluster of keys above the arrow keys, near Home, Delete, and Page Up.",
-						"On many laptops, Caps Lock serves as the NVDA key. It is on the far left of the keyboard, just above the left Shift key.",
-						"You can use both Insert and Caps Lock as NVDA keys at the same time. NVDA accepts either one, so you never have to choose between them."
+						"Caps Lock can also serve as the NVDA key, but only if that was chosen in NVDA's Welcome dialog or in Keyboard settings. It is on the far left of the keyboard, just above the left Shift key.",
+						"Once Caps Lock is switched on as an NVDA key, you can use Insert and Caps Lock interchangeably. If Caps Lock does not work as your NVDA key, it has not been switched on yet. Use Insert for now. The Your Keyboard chapter explains how to change it."
 					]
 				},
 				{
@@ -159,10 +159,10 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "If you are using a laptop, NVDA can tell you your battery level and whether the charger is connected — without touching the mouse or navigating to the taskbar. Press NVDA+Shift+B to have NVDA announce the current battery status. NVDA will say something like \"Battery: 74 percent, not charging\" or \"Battery: 91 percent, charging\". This command only works on laptops and tablets that have a battery. On a desktop computer, NVDA may say nothing or report no battery found. Press Enter to continue.",
+					"instruction": "If you are using a laptop, NVDA can tell you your battery level and whether the charger is connected — without touching the mouse or navigating to the taskbar. Press NVDA+Shift+B to have NVDA announce the current battery status. NVDA reports the percentage of charge and whether the computer is plugged in, for example \"74 percent\" followed by \"unplugged\". This command only works on laptops and tablets that have a battery. On a desktop computer, NVDA says there is no system battery. Press Enter to continue.",
 					"hints": [
 						"NVDA plus Shift plus B is an NVDA command that reads the battery level instantly — no navigation required.",
-						"The report includes the percentage remaining and whether the power adapter is connected. \"Not charging\" means the charger is unplugged or the battery is full.",
+						"The report includes the percentage remaining and whether the power adapter is connected. NVDA may also tell you roughly how much time is left.",
 						"If you do not hear anything, your computer may be a desktop with no battery, or the battery driver may not be reporting status. This is normal on most desktop PCs."
 					]
 				},
@@ -377,24 +377,24 @@
 			"steps": [
 				{
 					"type": "info",
-					"instruction": "When you are in a document or text area, you can have NVDA read the line where your cursor is sitting. NVDA+Up Arrow reads the current line — useful whenever you want to confirm exactly where you are in a document. A practice text area is included right in the next step. Press Enter to continue.",
+					"instruction": "When you are in a document or text area, you can have NVDA read the line where your cursor is sitting. On desktop layout, NVDA+Up Arrow reads the current line. On laptop layout, press NVDA+L instead. This is useful whenever you want to confirm exactly where you are in a document. A practice text area is included right in the next step. Press Enter to continue.",
 					"hints": [
-						"NVDA plus Up Arrow reads the current line without moving your cursor. Your position in the document stays exactly where it is.",
+						"NVDA plus Up Arrow on desktop layout, or NVDA plus L on laptop layout, reads the current line without moving your cursor. Your position in the document stays exactly where it is.",
 						"The Up Arrow key is in the arrow key cluster in the lower right area of the keyboard. Hold your NVDA key and press the upward-pointing arrow.",
-						"Use NVDA plus Up Arrow whenever you lose track of where you are in a document — it re-reads the line your cursor is on without changing anything."
+						"Use this command whenever you lose track of where you are in a document — it re-reads the line your cursor is on without changing anything. In NVDA 2026.2 and later, NVDA plus X repeats the last thing NVDA said, whatever it was."
 					]
 				},
 				{
 					"type": "info",
-					"instruction": "Arrow down into the practice text area below to move your cursor through the lines. Then press NVDA+Up Arrow to have NVDA read the current line aloud. Move to a different line with Up or Down Arrow and press NVDA+Up Arrow again to hear each one. This works in any document, email, or text area. Press Enter to continue when done.",
+					"instruction": "Arrow down into the practice text area below to move your cursor through the lines. Then press NVDA+Up Arrow on desktop layout, or NVDA+L on laptop layout, to have NVDA read the current line aloud. Move to a different line with Up or Down Arrow and press the command again to hear each one. This works in any document, email, or text area. Press Enter to continue when done.",
 					"monitorGestures": [
 						"kb:nvda+upArrow"
 					],
 					"practiceText": "The quick brown fox jumps over the lazy dog.\nScreen readers open the digital world to everyone.\nNVDA is free and open source software.\nPractice builds the habit of screen reader navigation.\nArrow keys move through text one step at a time.\nControl plus arrows jump by whole words at once.\nHome and End move to a line boundary.\nControl plus Home or End jumps to document extremes.\nThis is the last line of the practice area.",
 					"hints": [
 						"Hold your NVDA key — Insert or Caps Lock — and press the Up Arrow key. The Up Arrow is the upward-pointing key in the arrow cluster at the lower right of the keyboard.",
-						"Move your cursor to different lines first with the Down Arrow key, then press NVDA plus Up Arrow to confirm which line you are on.",
-						"If NVDA reads a line but you did not catch it all, just press NVDA plus Up Arrow again. You can press it as many times as needed to re-read the same line."
+						"Move your cursor to different lines first with the Down Arrow key, then press NVDA plus Up Arrow on desktop layout, or NVDA plus L on laptop layout, to confirm which line you are on.",
+						"If NVDA reads a line but you did not catch it all, just press the command again. If NVDA plus Up Arrow reads the line above instead of the current one, NVDA is set to laptop layout: use NVDA plus L."
 					]
 				}
 			]
@@ -421,7 +421,7 @@
 					],
 					"hints": [
 						"Hold your NVDA key and press the number 1 from the top row of the keyboard. The number 1 is at the far left of the number row, just above the Q key.",
-						"When Input Help turns on, try pressing any key — for example, press F12 and NVDA will tell you it reads the time, without actually reading the time.",
+						"When Input Help turns on, try pressing any key — for example, hold your NVDA key and press F12, and NVDA will tell you that command reports the time, without actually reading the time.",
 						"NVDA says 'Input help on' to confirm it is active. While it is on, every key press is described but nothing is executed."
 					]
 				},
@@ -485,9 +485,9 @@
 					"type": "info",
 					"instruction": "Before going further, let's look at some keys that often cause confusion — especially on laptop keyboards. The first is the Control key. On most keyboards, the Control key sits in the bottom-left corner. But on some laptops, the Fn key occupies the bottom-left corner instead, with the Control key immediately to its right. If you are pressing what you think is Control and nothing happens, check whether your bottom-left corner key says Fn or Ctrl — it matters. Press Enter to continue.",
 					"hints": [
-						"Press NVDA+1 to turn on Input Help, then press the key in the very bottom-left corner. NVDA will name it. If it says Fn, Control is the next key to the right. If it says Control, you are already on it. Press NVDA+1 again to turn Input Help off.",
+						"Press NVDA+1 to turn on Input Help, then press the key in the very bottom-left corner. If NVDA says left control, you are on Control. If NVDA says nothing at all, that key is Fn, because the Fn key is handled inside the keyboard and never reaches NVDA. Control is then the next key to the right. Press NVDA+1 again to turn Input Help off.",
 						"Both Fn and Control are typically in the same row, but which one is in the very corner varies by laptop model and manufacturer.",
-						"If you are not sure which key is which, press NVDA plus 1 to turn on Input Help, then press the bottom-left key. NVDA will tell you what it is. Press NVDA plus 1 again to turn off Input Help."
+						"If you are not sure which key is which, press NVDA plus 1 to turn on Input Help, then press the bottom-left key. NVDA names it if it is Control, and stays silent if it is Fn. Press NVDA plus 1 again to turn off Input Help."
 					]
 				},
 				{

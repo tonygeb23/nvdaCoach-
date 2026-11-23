@@ -104,8 +104,18 @@ class LessonRunner:
 			)
 			LessonRunner._controlsIntroShown = True
 
-		wx.CallLater(600, ui.message, introMsg)
+		wx.CallLater(600, self._speakIfActive, introMsg)
 		wx.CallLater(600 + self._estimateReadTime(introMsg), self._speakCurrentStep)
+
+	def _speakIfActive(self, message):
+		"""Speak a delayed message only if the lesson is still running.
+
+		The introduction is spoken 600 ms after the lesson starts. Without this
+		check, pressing Escape inside that window made NVDA say the lesson had
+		stopped and then announce that it was starting.
+		"""
+		if self.isActive:
+			ui.message(message)
 
 	def stopLesson(self, announce=True):
 		"""Stop the current lesson."""

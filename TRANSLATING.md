@@ -94,7 +94,7 @@ You should now hear your translated strings.
 
 ## Step 4 — Translate and Test Lesson Files
 
-The six JSON lesson files are in `globalPlugins/nvdaCoach/lessons/[lang]/`. You can edit these in any plain text editor — Notepad works fine.
+The JSON lesson files (six core chapters, plus the two added in 1.7.0) are in `globalPlugins/nvdaCoach/lessons/[lang]/`. You can edit these in any plain text editor — Notepad works fine.
 
 ### What to translate
 
@@ -154,7 +154,7 @@ Files to include:
 ```
 locale\[lang]\LC_MESSAGES\nvda.po
 locale\[lang]\LC_MESSAGES\nvda.mo
-globalPlugins\nvdaCoach\lessons\[lang]\    (all six .json files)
+globalPlugins\nvdaCoach\lessons\[lang]\    (every .json file)
 doc\[lang]\                                (readme.html, practice.html, resources.html)
 locale\[lang]\manifest.ini                 (add-on description in your language, if translated)
 ```

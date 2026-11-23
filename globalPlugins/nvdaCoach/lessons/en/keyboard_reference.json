@@ -56,11 +56,11 @@
         },
         {
           "type": "info",
-          "instruction": "Your NVDA key can be Insert or Caps Lock. NVDA actually offers three choices in its Keyboard settings - Caps Lock, the Insert key in the cluster above the arrows, and the Insert on the numeric keypad - and any combination of them can be switched on. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Both can serve as your NVDA key at the same time — NVDA accepts either. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
+          "instruction": "Your NVDA key is Insert unless you change it, and it can also be Caps Lock. NVDA actually offers three choices in its Keyboard settings - Caps Lock, the Insert key in the cluster above the arrows, and the Insert on the numeric keypad - and any combination of them can be switched on. Insert is in the cluster of keys above the arrow keys on most keyboards, near Home, Delete, Page Up, and Page Down. Caps Lock is on the far left side of the keyboard, just above the left Shift key. Once Caps Lock is switched on in Keyboard settings, both can serve as your NVDA key at the same time. Many laptop users prefer Caps Lock because Insert may be harder to reach. You can choose your preferred NVDA key in NVDA Settings under Keyboard. Press Enter to finish this lesson.",
           "hints": [
             "Insert is in the cluster above the arrow keys — near Home, Delete, End, Page Up, and Page Down. It is not a modifier by itself; it only becomes the NVDA key because NVDA assigns it that role.",
-            "Caps Lock is on the far left, just above Shift. Using Caps Lock as your NVDA key means Caps Lock no longer toggles uppercase — press NVDA plus F2 and then Caps Lock to actually toggle it when needed.",
-            "Both Insert and Caps Lock work as the NVDA key simultaneously. You do not have to choose — you can use either one depending on which is more convenient for each command."
+            "Caps Lock is on the far left, just above Shift. Using Caps Lock as your NVDA key means Caps Lock no longer toggles uppercase — press Caps Lock twice quickly to actually toggle it when needed.",
+            "With Caps Lock switched on as an NVDA key, Insert and Caps Lock both work. You do not have to choose — you can use either one depending on which is more convenient for each command."
           ]
         }
       ]
@@ -138,7 +138,7 @@
           "hints": [
             "NVDA plus N opens the NVDA menu. P for Preferences, S for Settings. Then K in the category list jumps to Keyboard using first-letter navigation.",
             "The Keyboard layout combo box has two options: Desktop and Laptop. Use Arrow keys to choose, Tab to OK, and Enter to save.",
-            "If you are unsure which layout is currently active, press NVDA plus 1 to turn on Input Help, press a numpad key, and listen to what NVDA says. Press NVDA plus 1 again to turn off Input Help."
+            "If you are unsure which layout is currently active, press NVDA plus Control plus K. Keyboard settings opens on the Keyboard layout box, and NVDA reads out Desktop or Laptop. Press Escape to close it."
           ]
         },
         {

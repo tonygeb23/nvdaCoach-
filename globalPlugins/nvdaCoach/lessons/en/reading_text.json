@@ -124,7 +124,7 @@
           "hint": "The Down Arrow key is in the arrow key cluster. Press it once to move one line at a time.",
           "hints": [
             "The Down Arrow key is in the arrow key cluster at the lower right of the keyboard. Press it once to move down one line.",
-            "NVDA reads the entire line as you land on it. If you want to hear just part of it again, use NVDA plus Up Arrow to re-read the current line.",
+            "NVDA reads the entire line as you land on it. If you want to hear just part of it again, use NVDA plus Up Arrow on desktop layout, or NVDA plus L on laptop layout, to re-read the current line.",
             "Move down a few lines, then try moving back up with the Up Arrow. NVDA reads each line as you move to it in either direction."
           ],
           "expectedGestures": [
@@ -313,7 +313,7 @@
           "instruction": "After selecting text, you can ask NVDA to read back exactly what you have selected. This is an NVDA command — it only works when NVDA is running. On desktop layout, press NVDA+Shift+Up Arrow. On laptop layout, press NVDA+Shift+S. NVDA will read the entire selected text aloud. This is a good habit to build: select text, then verify the selection before copying or doing anything else with it. Press Enter to continue.",
           "hints": [
             "Desktop layout: hold NVDA and Shift, then press the Up Arrow key to hear your current selection read back.",
-            "Laptop layout: hold NVDA and Shift, then press the letter S to hear your current selection read back.",
+            "Laptop layout: hold NVDA and Shift, then press the letter S to hear your current selection read back. If NVDA goes silent instead, you are on desktop layout, where this key turns on sleep mode for the current program. Press NVDA plus Shift plus S again to wake NVDA.",
             "Use this NVDA command before pressing Control plus C to copy. It confirms exactly what is selected so you do not accidentally copy the wrong text."
           ]
         },
@@ -447,9 +447,9 @@
         },
         {
           "type": "info",
-          "instruction": "Pressing NVDA+F once quickly reports the basic font name and size. Pressing NVDA+F twice in rapid succession opens a Font Formatting dialog that lists all formatting details in a browseable window — useful when there are many attributes to review. Try both: first a single press to hear the spoken report, then a quick double press to open the dialog. Press Enter to continue.",
+          "instruction": "Pressing NVDA+F once speaks the formatting of the text at your cursor. Pressing NVDA+F twice quickly puts the same report in a window called Formatting, where you can read it line by line with the arrow keys — useful when there are many attributes to review. Escape closes that window, and in NVDA 2026.3 and later Alt+C copies the report. Try both: first a single press to hear the spoken report, then a quick double press to open the window. Press Enter to continue.",
           "hints": [
-            "Single press: NVDA speaks the font name and size immediately. Double press: a dialog opens showing all formatting attributes, which you can read and close with Escape.",
+            "Single press: NVDA speaks the formatting immediately. Double press: a window opens showing the same information, which you can read with the arrow keys and close with Escape.",
             "The dialog from a double press is especially useful when text has many simultaneous attributes — for example, bold, italic, and colored text all at once.",
             "If the double press is opening a dialog you did not intend, Escape closes it immediately without changing anything."
           ]

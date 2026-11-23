@@ -1,0 +1,374 @@
+{
+  "id": "braille",
+  "title": "Using a Braille Display",
+  "description": "An optional chapter for students who have a refreshable braille display. Learn how to connect it, read and scroll, use routing keys, choose a braille code, and type in braille. This chapter is not required for your certificate of completion.",
+  "order": 8,
+  "optional": true,
+  "lessons": [
+    {
+      "id": "braille_is_optional",
+      "title": "Is This Chapter for You?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "This chapter is optional. It is for students who have a refreshable braille display, which is a device with a row of small pins that rise and fall to form braille characters. If you do not have one, you can skip this whole chapter. Your certificate of completion does not depend on it. Press Enter to continue, or press Escape to stop here.",
+          "hints": [
+            "Optional means exactly that. NVDA Coach counts the course as complete without these lessons, and your certificate is issued without them.",
+            "If you get a braille display later, this chapter will still be here in the lesson picker.",
+            "You do not need to know braille to use NVDA. Speech alone does everything taught in the earlier chapters."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "If you do have a braille display, here is what NVDA does with it. Whatever NVDA would speak, it can also show in braille: the control you are on, the line of text you are reading, and messages. You can read with your fingers at your own pace, check the spelling of a word by touch, and work silently. If your display has a braille keyboard, you can type on it as well. Speech and braille work together, or you can use either one alone. Press Enter to continue.",
+          "hints": [
+            "Braille is especially good for things speech is poor at: exact spelling, punctuation, numbers, and layout.",
+            "Many people use both at once: speech for speed, braille for accuracy.",
+            "NVDA supports braille codes for many languages, in both uncontracted and contracted forms."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "One thing before you begin. Braille displays are all built a little differently, and the keys on a Focus are not the keys on a Brailliant or an Orbit. NVDA Coach teaches what each command does and what NVDA calls it. For the exact keys on your display, the NVDA User Guide has a section called Supported Braille Displays, with a list of key assignments for every model. Open the User Guide with NVDA+N, then H for Help, then U for User Guide. Press Enter to finish this lesson.",
+          "hints": [
+            "The User Guide is a web page. Press NVDA+Control+F to search it for the name of your display, or use the Elements List, NVDA+F7, and choose Headings.",
+            "Input Help works on braille display keys too. Press NVDA+1, then press a key on your display, and NVDA tells you what that key does. Press NVDA+1 again to turn Input Help off.",
+            "The booklet that came with your display names its keys. Keep it nearby while you work through this chapter."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect_display",
+      "title": "Connect Your Braille Display",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA can find many braille displays by itself. This is called automatic detection, and it is switched on by default. In most cases, connecting is this simple: plug the display into the computer with its USB cable, switch the display on, and wait a few seconds. Braille appears under your fingers. Try that now if your display is not yet connected. Press Enter to continue.",
+          "hints": [
+            "Automatic detection works with most current displays, including models from HumanWare, Freedom Scientific, Help Tech, HIMS, Orbit, Baum, Eurobraille, and Seika, and any display that uses the standard HID braille protocol.",
+            "Some displays have more than one connection mode. If nothing happens, check the display's own menu or manual for a setting such as screen reader mode, terminal mode, or HID mode.",
+            "A USB cable is the most reliable way to start. Get it working over USB first, and add Bluetooth afterward."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To connect over Bluetooth instead, the display has to be paired with Windows first. Open Windows Settings with Windows+I (Windows command), go to Bluetooth and devices, and add the display there. Once it is paired, NVDA's automatic detection finds it just as it would over USB. Pairing only has to be done once. Press Enter to continue.",
+          "hints": [
+            "Pairing is a Windows job, not an NVDA job. NVDA can only use a Bluetooth display that Windows already knows about.",
+            "If Windows asks for a PIN while pairing, your display's manual tells you what it is. It is often 0000 or 1234.",
+            "Bluetooth displays go to sleep to save their battery. If braille stops, wake the display and give NVDA a few seconds to reconnect."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "If your display is not found automatically, you can choose it yourself. Press NVDA+Control+A (NVDA command). This opens the Select Braille Display dialog. The first control is a combo box named Braille display. Use Up and Down Arrow to hear the choices. Automatic is the default. No braille switches braille off. The rest are the names of display makers and models. Choose yours, Tab to OK, and press Enter. Press Enter to continue.",
+          "hints": [
+            "NVDA plus Control plus A. Think of A for attach. It works from anywhere, without opening the NVDA menu.",
+            "If NVDA cannot load the display you chose, it tells you so and keeps using whatever was working before. Nothing is broken. Check the cable and try again.",
+            "Some displays need a driver from the manufacturer installed in Windows before NVDA can talk to them. The Supported Braille Displays section of the User Guide says so where that applies."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The same dialog has a combo box named Port. It decides how NVDA reaches the display: Automatic, USB, Bluetooth, or sometimes a serial port. Leave it on Automatic unless your display's instructions tell you otherwise. If your display is not in the list at all, it may still be supported through an add-on. Some manufacturers publish their NVDA driver in the Add-on Store, which you learned to use in the previous chapter. Press Enter to continue.",
+          "hints": [
+            "Automatic is the right choice for Port almost every time.",
+            "To look for a driver add-on, open the Add-on Store, go to Available add-ons, and search for the name of your display or its maker.",
+            "Connect only one display from the same maker at a time. NVDA cannot be told which of two identical displays to use."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Check that it is working. With your display connected, come back to this window by pressing NVDA+Shift+C, and feel the display. You should find braille there: the text of this lesson, or the name of the control that has focus. If you do, your display is connected and you are ready for the next lesson. If the display is blank, press NVDA+Control+A and check which display is selected. Press Enter to finish this lesson.",
+          "hints": [
+            "When NVDA starts with a display connected, the first thing it shows in braille is a message saying that NVDA has started.",
+            "A blank display usually means one of three things: the display is switched off or asleep, the cable is loose, or No braille is selected in the Select Braille Display dialog.",
+            "If you have an instructor, connecting the display for the first time is a good moment to ask for their help. After that, NVDA reconnects on its own."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading_braille",
+      "title": "Read and Scroll in Braille",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "A braille display shows one short piece of the screen at a time. Most displays have between 14 and 40 cells, and some have 80. A line of text is often longer than that, so reading in braille means reading what is on the display and then moving the display along. Moving it along is called scrolling, or panning. Press Enter to continue.",
+          "hints": [
+            "A cell is one braille character: a block of six or eight pins.",
+            "A 40 cell display shows about half of a typical line of text. A 20 cell display shows about a quarter.",
+            "Scrolling the display does not move your cursor or change anything on screen. It only changes which part you are reading."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA has two scrolling commands. Scroll braille display forward shows the next piece of text. Scroll braille display back shows the previous piece. On most displays these are the panning keys or thumb keys, usually at the ends or along the front of the display. When you scroll forward past the end of a line, NVDA carries on to the start of the next line, so you can read a whole document just by pressing scroll forward. Press Enter to continue.",
+          "hints": [
+            "To find the scrolling keys on your display, press NVDA+1 for Input Help, then try the keys at each end of the display. NVDA says scrolls the braille display forward, or back, when you find them. Press NVDA+1 again when you are done.",
+            "Reading with one hand while the other rests on the scroll forward key is the usual technique.",
+            "Scrolling moves through the text. It does not move your typing cursor, so nothing is changed by reading."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "There are two more reading commands. Move braille display to next line, and Move braille display to previous line. These jump a whole line at a time, whatever part of the line you were on. Many displays have separate keys for these. Use them to skim down a document, and use scrolling to read a line from end to end. Press Enter to continue.",
+          "hints": [
+            "Scroll forward and back move along a line in display-sized pieces. Next line and previous line move down and up by whole lines.",
+            "Not every display gives these two commands keys of their own. You can assign keys to them in the Input Gestures dialog, in the Braille category.",
+            "By default, speech stops when you scroll the display, so that it does not talk over your reading."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now, right here. The practice text below is in this window. Press Down Arrow on your keyboard to move into it. Read the first line on your display with your fingers. Press your display's scroll forward key to read on. Then try the next line and previous line keys if your display has them. When you have read to the end, press Enter to continue.",
+          "practiceText": "This is the first line of the braille practice text, and it is long enough that you will need to scroll your display to read all of it.\nThe second line is short.\nBraille shows you exactly how a word is spelled, including capital letters and punctuation marks.\nNumbers such as 2026 and symbols such as the at sign in name@example.com are easy to check by touch.\nThis is the last line of the practice text.",
+          "hints": [
+            "If the display still shows the instruction and not the practice text, press Down Arrow a few more times until you reach the heading that says Practice area.",
+            "If your scroll key does nothing, turn on Input Help with NVDA+1 and press it. NVDA tells you what the key is assigned to. Turn Input Help off with NVDA+1.",
+            "Take your time. Reading braille on a display is a physical skill, and it speeds up with practice just as keyboard commands do."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "One more thing you may want as you read. NVDA can scroll the display for you at a steady pace. This is called automatic scroll, and it arrived in NVDA 2026.2. Press NVDA+Alt+K (NVDA command) to turn it on or off. While it is on, NVDA+Alt+L makes it faster and NVDA+Alt+J makes it slower. It stops by itself when you press a routing key, when focus moves, or when it reaches the end. Press Enter to finish this lesson.",
+          "hints": [
+            "K turns automatic scroll on and off. L is faster. J is slower. All three are held with NVDA and Alt.",
+            "While automatic scroll is running you can still press scroll back to re-read something, or scroll forward to skip a short line.",
+            "The speed can also be set in NVDA Settings, in the Braille category, with the Automatic Scroll Rate slider."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_cursor_routing",
+      "title": "The Braille Cursor and Routing Keys",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "When you are in a place where you can type, braille shows you where your cursor is. The cursor appears as dots 7 and 8, the two bottom dots of a cell, raised underneath the character it is on. By default it blinks, rising and falling steadily, so that you can find it by touch. Press Enter to continue.",
+          "hints": [
+            "Dots 7 and 8 are the extra bottom row of an eight dot braille cell. Ordinary six dot braille does not use them, which is why they are free to mark the cursor.",
+            "If the blinking is distracting, it can be turned off in NVDA Settings, in the Braille category: uncheck Blink cursor.",
+            "Selected text is also marked with dots 7 and 8, under every selected character, and without blinking."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Above or below each cell on most displays there is a small button. These are the cursor routing keys, one for every cell. Pressing the routing key over a character moves your cursor straight to that character. This is one of the great strengths of braille: you find a mistake with your finger, press the button above it, and your cursor is there, ready to fix it. No arrowing along the line. Press Enter to continue.",
+          "hints": [
+            "Routing means sending the cursor to a place. One press of the routing key over a letter, and the cursor is on that letter.",
+            "Routing keys are small, and there is one for each cell, so they sit in a row directly behind or in front of the cells.",
+            "A few very small or low cost displays have no routing keys. Their manuals describe another way to move the cursor."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Routing keys do a second job. When the display is showing a control instead of text, such as a button, a link, or a checkbox, pressing a routing key over it activates it, just as pressing Enter or Space would. So in a dialog you can read a button's name in braille and press the routing key over it to press the button. Press Enter to continue.",
+          "hints": [
+            "On text, a routing key moves the cursor. On a control, a routing key activates the control.",
+            "On a web page in browse mode, pressing a routing key over a link follows that link.",
+            "When NVDA shows a message in braille, pressing any routing key dismisses the message and shows you where you were again."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Routing keys work best in a real document, where you have a cursor to move. To practice, open Notepad: press the Windows key, type notepad, and press Enter. Type a sentence with a deliberate spelling mistake in it. Find the mistake with your finger. Press the routing key above the wrong letter. Press Delete on your keyboard and type the right letter. When you have tried it, come back with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "After you press the routing key, feel for the blinking dots 7 and 8. They should now be under the letter you chose.",
+            "If nothing happens when you press a routing key, check with Input Help: press NVDA+1, press the routing key, and NVDA should say that it routes the cursor or activates the object under the cell.",
+            "When you are finished, close Notepad with Alt+F4. If it asks whether to save, choose Don't save."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_tables",
+      "title": "Choose Your Braille Code",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Braille comes in different codes. There is a code for each language. Within a language there is usually uncontracted braille, also called grade 1, where every letter is written out, and contracted braille, also called grade 2, which uses short forms to save space. There is also computer braille, which uses eight dots and shows exactly one cell for every character. NVDA calls each of these codes a table, and you choose which table it uses. Press Enter to continue.",
+          "hints": [
+            "If you are still learning braille, choose an uncontracted table. Every letter appears, and nothing is abbreviated.",
+            "Contracted braille fits more on a small display, which makes it popular with experienced readers.",
+            "Computer braille is useful for things that must be exact, such as email addresses, passwords, and program code."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The choice is made in NVDA Settings. Press NVDA+N, then P for Preferences, then S for Settings. In the category list, press B until you hear Braille. Then press Tab to move through the settings. After the Change button, which opens the Select Braille Display dialog, you reach Output table. That is the code NVDA uses to show braille on your display. Use Up and Down Arrow to choose one. The first choice, Automatic, picks a table to match the language NVDA itself is set to. Press Enter to continue.",
+          "hints": [
+            "Two categories begin with B: Braille and Browse Mode. Press B until NVDA says Braille.",
+            "The list of tables is long, because it covers many languages, and it is in alphabetical order. Press the first letter of a table's name to jump to it.",
+            "For English, the usual choices are Unified English Braille Code grade 1, which is uncontracted, and Unified English Braille Code grade 2, which is contracted. Press U to jump to them."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The next setting is Input table. This is the code NVDA expects when you type on the braille keyboard of your display. It can be different from the output table. For example, you could read contracted braille and type uncontracted. If your display has no braille keyboard, this setting does not matter to you. After that comes a checkbox named Expand to computer braille for the word at the cursor. When it is checked, the word your cursor is on is shown in full, without contractions, so you can check its exact spelling. Press Enter to continue.",
+          "hints": [
+            "Output is what you read. Input is what you type. They are set separately.",
+            "Expand to computer braille for the word at the cursor is the reason a word seems to change shape when your cursor moves onto it. That is on purpose.",
+            "If the changing word bothers you, uncheck that box. The word then stays in the same code as the rest of the line."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. Open NVDA Settings and go to the Braille category. Tab to Output table and listen to which table is selected. If it suits you, press Escape to leave everything as it is. If you want a different one, choose it, Tab to OK, and press Enter. The braille on your display changes at once. Then come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "Escape closes NVDA Settings without changing anything. OK applies what you chose.",
+            "If the display suddenly shows braille you cannot read, you have picked a table for a code you do not know. Go back to the Braille category and choose again, or choose Automatic.",
+            "Your choice is saved with the rest of your NVDA settings when NVDA exits."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_follow",
+      "title": "What the Display Follows",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "In Chapter 5 you learned that NVDA keeps track of two places. One is the system focus, with its cursor: the place where your typing goes. The other is the navigator object, with the review cursor, which you move around to explore without disturbing anything. Your braille display can follow either one. NVDA calls this tethering, as in tying the display to something. Press Enter to continue.",
+          "hints": [
+            "Tethered to focus means the display shows where your keyboard focus and cursor are.",
+            "Tethered to review means the display shows where the navigator object and review cursor are.",
+            "If object navigation is new to you, this lesson will make more sense after Chapter 5. Braille works perfectly well without changing this setting."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Press NVDA+Control+T (NVDA command) to change what braille is tethered to. Each press moves to the next choice, and NVDA announces it. There are three choices. Automatically, which is the default: braille follows the focus, and switches to the review cursor for a while whenever you deliberately move it. Focus: braille follows the focus only. Review: braille follows the review cursor only. Automatically suits nearly everyone, so if you try the others, finish on automatically. Press Enter to continue.",
+          "hints": [
+            "T for tether. NVDA plus Control plus T cycles through automatically, focus, and review.",
+            "If your display seems stuck and does not follow you as you Tab around, check this setting first. It may have been changed to review.",
+            "The same setting is in NVDA Settings, in the Braille category, as a combo box named Tether braille."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "There is a second, different setting, called braille mode. Press NVDA+Alt+T (NVDA command) to switch between its two choices. Follow cursors is the default and is what you have been using: the display shows where you are. Display speech output shows, in braille, whatever NVDA is saying. That mode is useful for reading announcements that are spoken once and then gone, such as a notification. Press NVDA+Alt+T again to go back to follow cursors. Press Enter to continue.",
+          "hints": [
+            "NVDA plus Control plus T chooses which cursor braille follows. NVDA plus Alt plus T chooses whether braille follows cursors at all, or shows speech.",
+            "In display speech output mode, the display shows what NVDA would have said even when speech is turned off.",
+            "If your display shows messages and announcements but never your cursor, braille mode has been set to display speech output. Press NVDA+Alt+T."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Speaking of turning speech off: some braille readers work with no speech at all. Press NVDA+S (NVDA command) to move through NVDA's speech modes. They are talk, which is normal speech, on-demand, off, and beeps. NVDA announces each mode as you reach it. With speech mode set to off, NVDA is silent and your braille display carries everything. Keep pressing NVDA+S until you hear talk to bring speech back. Press Enter to finish this lesson.",
+          "hints": [
+            "NVDA plus S, for speech. Each press moves to the next speech mode.",
+            "If NVDA ever goes silent and you did not mean it to, press NVDA+S until you hear talk again. This is worth remembering even if you never use braille.",
+            "On-demand mode speaks only when you ask a question with a command, such as NVDA+T for the title. It stays quiet as you move around."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_abbreviations",
+      "title": "Braille Abbreviations for Controls",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Speech says the type of each control in full: button, checkbox, edit. On a small braille display that would waste precious cells. So NVDA uses short abbreviations in braille. Once you know the common ones, you can read a dialog in braille quickly. This lesson goes through the ones you will meet most. The letters are written here as words so that NVDA speaks them clearly. Press Enter to continue.",
+          "hints": [
+            "The abbreviation normally comes right after the name of the control, the same order speech uses.",
+            "You do not need to memorize all of them today. The most common five or six cover most of what you will read.",
+            "The complete list is in the User Guide, under Braille, in a section called Control Type, State and Landmark abbreviations."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Here are the most common control types. A button is B T N. A checkbox is C H K. An edit field, where you type, is E D T. A combo box is C B O. A radio button is R B T N. A link is L N K, and a link you have already visited is V L N K. A list is L S T. A menu is M N U, and a menu item is M N U I T E M. A dialog is D L G. A heading is the letter H followed by its level, so a level 2 heading is H 2. Press Enter to continue.",
+          "practiceText": "Save btn\nRemember me chk\nFirst name edt\nCountry cbo\nEmail rbtn\nContact us lnk\nHome vlnk\nOptions dlg\nh2 Getting Started",
+          "hints": [
+            "The practice area below this step shows each abbreviation the way it appears on a display. Arrow down into it and read each line in braille.",
+            "Most abbreviations are the word with its vowels removed: button becomes B T N, link becomes L N K, dialog becomes D L G.",
+            "On a web page, landmarks have abbreviations too. Main is M A I N, navigation is N A V I, and search is S R C H."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille also shows the state of a control. A checkbox that is checked shows a filled box shape, made of three cells, and one that is not checked shows an empty box shape. Other states are shown with short words or signs. S E L means selected. R O means read-only. R E Q means a required form field. Three asterisks mean protected, as in a password field. S U B M N U means the item opens a submenu. A minus sign means the item can be collapsed, and a plus sign means it can be expanded. Press Enter to continue.",
+          "hints": [
+            "The checked and unchecked signs are easier to learn by touch than by description. Find a checkbox, press Space to toggle it, and feel how the sign changes.",
+            "In a tree view such as the NVDA Coach lesson picker, a plus sign on a chapter means it can be opened, and a minus sign means it is open.",
+            "In a table, C followed by a number is the column, and R followed by a number is the row. C 2 R 3 means column 2, row 3."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. Open the NVDA Settings dialog: press NVDA+N, then P, then S. Press Tab slowly through the dialog, and after each press, read your display. Find a button, a checkbox, a combo box, and an edit field, and notice the abbreviation after each name. When you have found them, press Escape to close NVDA Settings without changing anything. Come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "The General category, which is where NVDA Settings usually opens, has several checkboxes and combo boxes close together.",
+            "If the name of a control is too long for your display, scroll forward. The abbreviation for its type comes after the name.",
+            "Pressing Escape leaves every setting as it was. Tabbing through a dialog changes nothing."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_input_and_comfort",
+      "title": "Typing in Braille and Fine-Tuning",
+      "order": 8,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "If your display has a braille keyboard, with six or eight keys arranged like a Perkins brailler, you can type on it and NVDA turns your braille into text. Which code NVDA expects is the Input table you met earlier in this chapter. With an uncontracted table, each letter appears as soon as you type it. With a contracted table, NVDA waits until you press Space or Enter at the end of a word, and then translates the whole word. If your display has no braille keyboard, press Enter to move on to the next step.",
+          "hints": [
+            "Not every display has a braille keyboard, and a few that do are not supported for typing. The Supported Braille Displays section of the User Guide says which.",
+            "Typing contracted braille feels delayed, because the word only appears when you finish it. That is how it is meant to work.",
+            "You can use the braille keyboard and the computer keyboard together. NVDA accepts both."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Three keys do special jobs when you type in braille. Dot 7 on its own erases the last braille cell or character you typed, like Backspace. Dot 8 on its own translates what you have typed and presses Enter. Dots 7 and 8 together translate what you have typed without adding a space or pressing Enter. Dot 7 is the key just outside dot 3, under your left little finger. Dot 8 is the key just outside dot 6, under your right little finger. Press Enter to continue.",
+          "hints": [
+            "Dot 7 is Backspace. Dot 8 is Enter. Those two cover most of what you need.",
+            "Dots 7 and 8 together are for finishing a contracted word when you do not want a space after it, for example before a punctuation mark typed on the keyboard.",
+            "To practice, open Notepad from the Start menu and type a few words on the braille keyboard. Close it with Alt+F4 and choose Don't save."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Now three settings that make reading more comfortable. All are in NVDA Settings, in the Braille category. Show messages decides whether NVDA's messages appear in braille, and whether they disappear after a timeout or stay until you dismiss them. Message timeout sets the number of seconds. If messages vanish before you can read them, increase the timeout, or choose the option that shows them indefinitely. And Interrupt speech while scrolling, which is on by default, keeps speech from talking over you as you read. Press Enter to continue.",
+          "hints": [
+            "A message is something NVDA tells you that is not on screen, such as the time when you press NVDA+F12. In braille it temporarily replaces what you were reading.",
+            "When messages are shown indefinitely, a message stays until you press a routing key or move on.",
+            "If you like to listen and read along at the same time, turn Interrupt speech while scrolling off."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Two more settings shape how text fits on the display. Text wrap decides what happens when a word does not fit at the end of the display. It can cut the word, cut it and show a mark, or move the whole word to the next display-full so that you never read half a word. In NVDA versions before 2026.3 this was a simpler checkbox named Word wrap. And Read by paragraph makes the display flow through a whole paragraph instead of stopping at the end of each line on screen, which many people prefer for reading books and long documents. Press Enter to continue.",
+          "hints": [
+            "When a word is cut across two display-fulls, NVDA shows dots 7 and 8 in the last cell as a sign that the word continues.",
+            "The At word boundaries choice is the most comfortable for reading. Off fits the most text on each display-full.",
+            "With Read by paragraph on, the next line and previous line keys move by paragraph."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "You have finished the braille chapter. You know how to connect a display, read and scroll, send your cursor to a spot with a routing key, choose a braille code, decide what the display follows, read the abbreviations for controls, type in braille, and tune it to suit you. For the exact keys on your own display, remember the Supported Braille Displays section of the User Guide. Press Enter to finish this lesson and complete the Using a Braille Display chapter.",
+          "hints": [
+            "The quickest way to get fluent is to leave your display connected and keep one hand on it during everyday work, even while you are listening to speech.",
+            "Every braille command NVDA has is listed in the Input Gestures dialog, in the Braille category. You can give any of them a key on your display or keyboard.",
+            "This chapter was optional, so finishing it does not change your certificate. It is still a real accomplishment."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -240,6 +240,55 @@ def _languageCandidates():
 	return ordered
 
 
+def _isOptionalCategory(category):
+	"""True for a chapter that does not count toward the certificate.
+
+	A chapter opts out with "optional": true at the top of its JSON file.
+	Only a real boolean true counts, so a translator's stray "false" string
+	cannot quietly make a required chapter optional.
+	"""
+	return isinstance(category, dict) and category.get("optional") is True
+
+
+def _downloadsFolder():
+	"""The user's real Downloads folder.
+
+	Windows lets this folder be moved, and OneDrive moves it routinely, so
+	~/Downloads is a guess that fails on exactly the managed computers a
+	training centre is likely to use. Ask Windows, and fall back to the guess.
+	"""
+	try:
+		class _GUID(ctypes.Structure):
+			_fields_ = [
+				("Data1", ctypes.c_ulong),
+				("Data2", ctypes.c_ushort),
+				("Data3", ctypes.c_ushort),
+				("Data4", ctypes.c_ubyte * 8),
+			]
+
+		# FOLDERID_Downloads {374DE290-123F-4565-9164-39C4925E467B}
+		folderId = _GUID(
+			0x374DE290, 0x123F, 0x4565,
+			(ctypes.c_ubyte * 8)(0x91, 0x64, 0x39, 0xC4, 0x92, 0x5E, 0x46, 0x7B),
+		)
+		pathPtr = ctypes.c_wchar_p()
+		getPath = ctypes.windll.shell32.SHGetKnownFolderPath
+		getPath.argtypes = [
+			ctypes.POINTER(_GUID), ctypes.c_ulong, ctypes.c_void_p,
+			ctypes.POINTER(ctypes.c_wchar_p),
+		]
+		getPath.restype = ctypes.c_long
+		if getPath(ctypes.byref(folderId), 0, None, ctypes.byref(pathPtr)) == 0:
+			path = pathPtr.value
+			ctypes.windll.ole32.CoTaskMemFree.argtypes = [ctypes.c_void_p]
+			ctypes.windll.ole32.CoTaskMemFree(ctypes.cast(pathPtr, ctypes.c_void_p))
+			if path and os.path.isdir(path):
+				return path
+	except Exception:
+		log.debugWarning("NVDA Coach: could not ask Windows for the Downloads folder", exc_info=True)
+	return os.path.join(os.path.expanduser("~"), "Downloads")
+
+
 def _loadLessonCategories():
 	"""Load all lesson category JSON files from the lessons directory.
 
@@ -316,6 +365,21 @@ def _localizedDocPath(filename):
 	return candidates[-1]  # Return fallback path even if not present.
 
 
+def _practicePageTitle():
+	"""The <title> of the practice page in the student's language, or ""."""
+	try:
+		with open(_localizedDocPath("practice.html"), "r", encoding="utf-8", errors="replace") as f:
+			head = f.read(4096)
+	except OSError:
+		return ""
+	match = re.search(r"<title[^>]*>(.*?)</title>", head, re.IGNORECASE | re.DOTALL)
+	if not match:
+		return ""
+	title = html.unescape(match.group(1)).strip()
+	# A very short title would match unrelated windows, so do not use one.
+	return title if len(title) >= 8 else ""
+
+
 def _generateCertificate():
 	"""Generate a completion certificate HTML file, save to Downloads, and open it.
 
@@ -373,7 +437,11 @@ def _generateCertificate():
 	# Translators: label for the signer's title on the certificate
 	author_title = _("Assistive Technology Instructor")
 
-	html = """<!DOCTYPE html>
+	# Not named "html": assigning to that name anywhere in this function makes
+	# it a local for the whole function, and the html.escape() calls above then
+	# raise UnboundLocalError. 1.6.0 shipped that way, so no certificate could
+	# be exported at all.
+	page = """<!DOCTYPE html>
 <html lang="{lang}">
 <head>
   <meta charset="utf-8">
@@ -432,10 +500,9 @@ def _generateCertificate():
 		c for c in rawName if c.isalnum() or c in (" ", "-", "_")
 	).strip() or "Student"
 	filename = "NVDA Coach - {} certification of completion.html".format(safe_name)
-	downloads = os.path.join(os.path.expanduser("~"), "Downloads")
-	filepath = os.path.join(downloads, filename)
+	filepath = os.path.join(_downloadsFolder(), filename)
 	with open(filepath, "w", encoding="utf-8") as f:
-		f.write(html)
+		f.write(page)
 	os.startfile(filepath)
 	return filepath
 
@@ -903,15 +970,16 @@ class CoachWindow(wx.Frame):
 			+ "\n\n"
 			+ heartfelt
 			+ "\n\n"
-			+ _(
-				"--- WHAT YOU HAVE LEARNED ---\n"
-				"  Chapter 1: Getting Started with NVDA\n"
-				"  Chapter 2: Your Keyboard\n"
-				"  Chapter 3: Reading Text\n"
-				"  Chapter 4: Browse Mode and Web Navigation\n"
-				"  Chapter 5: Object Navigation\n"
-				"  Chapter 6: Customizing NVDA\n\n"
+			# The chapter list is built from the chapters that are actually
+			# installed, so it cannot fall out of step with the course again.
+			+ _("--- WHAT YOU HAVE LEARNED ---") + "\n"
+			+ "".join(
+				# Translators: one line of the completion screen, for example
+				# "Chapter 3: Reading and Moving Through Text"
+				"  " + _("Chapter {number}: {title}").format(number=number, title=title) + "\n"
+				for number, title in self._plugin.chaptersLearned()
 			)
+			+ "\n"
 			+ _(
 				"--- YOUR CERTIFICATE OF COMPLETION ---\n"
 				"Tab to the Export Certificate button below and press Enter.\n"
@@ -961,7 +1029,7 @@ class CoachWindow(wx.Frame):
 		body = (
 			heading + "\n\n"
 			+ _(
-				"You have completed all six chapters of NVDA Coach. "
+				"You have completed NVDA Coach. "
 				"Your progress is saved and your certificate of completion is ready.\n\n"
 				"--- YOUR CERTIFICATE ---\n"
 				"Tab to the Export Certificate of Completion button below and press Enter "
@@ -1592,6 +1660,10 @@ class LessonPickerDialog(wx.Dialog):
 			completed, total = self._progress.getCategoryProgress(catId, len(lessons))
 			# Translators: progress label in the lesson picker tree
 			catLabel = f"{catTitle}  —  " + _("{completed} of {total} complete").format(completed=completed, total=total)
+			if _isOptionalCategory(category):
+				# Translators: added in the lesson picker after a chapter that
+				# is not required for the certificate of completion
+				catLabel += "  —  " + _("optional")
 			catItem = self._tree.AppendItem(root, catLabel)
 			self._tree.SetItemData(catItem, {"type": "category"})
 			for lesson in sorted(lessons, key=lambda l: l.get("order", 999)):
@@ -1775,7 +1847,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		log.info(f"NVDA Coach loaded. {len(self._categories)} lesson categories found.")
 		# If the student has already completed the final chapter in a prior session,
 		# quietly show the certificate button when the add-on loads (no fanfare, no speech).
-		if self._categories and self._nvdaSettingsComplete():
+		#
+		# This used to ask only whether the last chapter was complete, while
+		# the completion screen asked about the whole course. A student who
+		# had finished Customizing NVDA and nothing else was offered a
+		# certificate on every start.
+		if self._categories and self._allLessonsComplete():
 			self._coachWindow.showCertificateButton(silent=True)
 
 	def terminate(self):
@@ -2099,6 +2176,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			os.startfile(practiceFile)
 		except Exception as e:
 			log.warning(f"NVDA Coach: Could not open practice page: {e}")
+			# Say so. The lesson is about to tell the student to press H for
+			# headings on a page that never opened, and a student who cannot
+			# see that no browser appeared has no way to tell.
+			ui.message(_(
+				"The practice web page could not be opened. "
+				"Please check that a web browser is installed, then restart this lesson."
+			))
 
 	def _onBrowseModeComplete(self):
 		"""Handle browse mode chapter completion: show congrats screen and close browser."""
@@ -2107,7 +2191,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _closePracticeBrowserWindow(self):
 		"""Close any browser window whose title contains 'NVDA Coach Practice Page'."""
-		TITLE_PARTIAL = "NVDA Coach Practice Page"
+		# The page's own title, read from the file that was opened. Every
+		# language but English translates it, so matching the English words
+		# meant the practice browser was only ever closed for English students.
+		TITLE_PARTIAL = _practicePageTitle()
+		if not TITLE_PARTIAL:
+			return
 		try:
 			found = []
 
@@ -2133,24 +2222,37 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Course completion certificate
 	# ------------------------------------------------------------------
 
-	def _nvdaSettingsComplete(self):
-		"""Return True when every lesson in the final chapter (nvda_settings) is marked complete."""
-		for category in self._categories:
-			if category.get("id") == "nvda_settings":
-				return all(
-					self._progressTracker.isLessonComplete("nvda_settings", l.get("id", ""))
-					for l in category.get("lessons", [])
-				)
-		return False
+	def _categoryComplete(self, category):
+		"""Return True when every lesson in one chapter is marked complete."""
+		catId = category.get("id", "")
+		return all(
+			self._progressTracker.isLessonComplete(catId, lesson.get("id", ""))
+			for lesson in category.get("lessons", [])
+		)
 
 	def _allLessonsComplete(self):
-		"""Return True only when every lesson in every category is marked complete."""
-		for category in self._categories:
-			catId = category.get("id", "")
-			for lesson in category.get("lessons", []):
-				if not self._progressTracker.isLessonComplete(catId, lesson.get("id", "")):
-					return False
-		return True
+		"""Return True when every lesson in every required chapter is complete.
+
+		Optional chapters (braille, for students who own a display) are left
+		out, so nobody is refused a certificate for hardware they do not have.
+		"""
+		required = [c for c in self._categories if not _isOptionalCategory(c)]
+		if not required:
+			return False
+		return all(self._categoryComplete(c) for c in required)
+
+	def chaptersLearned(self):
+		"""Chapters to list on the completion screen, as (number, title) pairs.
+
+		Every required chapter, plus any optional one the student finished.
+		The number is the chapter's position in the picker.
+		"""
+		learned = []
+		for number, category in enumerate(self._categories, 1):
+			if _isOptionalCategory(category) and not self._categoryComplete(category):
+				continue
+			learned.append((number, category.get("title", "")))
+		return learned
 
 	def _onLessonComplete(self, categoryId, lessonId):
 		"""Called by LessonRunner after every lesson finishes.
@@ -2167,6 +2269,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# have finished every lesson in NVDA Coach" - with a certificate
 		# saying the same thing. A student who cannot see the picker has no
 		# way to notice it disagreeing with the speech.
+		#
+		# Finishing a lesson in an optional chapter never triggers it. The
+		# course was already complete before that lesson, so the fanfare would
+		# otherwise replay after every braille lesson.
+		category = next(
+			(c for c in self._categories if c.get("id") == categoryId), None
+		)
+		if category is not None and _isOptionalCategory(category):
+			return False
 		if self._allLessonsComplete():
 			wx.CallLater(2500, self._coachWindow.showFinalCompletion)
 			return True

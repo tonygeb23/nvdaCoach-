@@ -1,0 +1,518 @@
+{
+  "id": "addon_store",
+  "title": "Add-ons and the Add-on Store",
+  "description": "Learn what NVDA add-ons are, how to stay safe with them, how to move around the Add-on Store, and how to install, update, disable, and remove add-ons. Ends with a tour of 25 of the most downloaded add-ons.",
+  "order": 7,
+  "lessons": [
+    {
+      "id": "what_are_addons",
+      "title": "What Are Add-ons?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "An add-on is a small package that gives NVDA something it does not have out of the box. You are using one right now: NVDA Coach is an add-on. Add-ons do three kinds of things. Some add or improve support for a particular program. Some add extra speech synthesizers or braille display drivers. And some add or change features of NVDA itself, such as a clipboard history or a clock. Press Enter to continue.",
+          "hints": [
+            "Think of add-ons the way you think of apps on a phone. NVDA works without any of them, and each one you add gives it one more ability.",
+            "Add-ons are made by people in the NVDA community and by some companies. They are not made by NV Access, the organization that makes NVDA.",
+            "You never have to install an add-on. Everything taught in the first six chapters of NVDA Coach works with NVDA exactly as it comes."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA has a built-in place to find add-ons, called the Add-on Store. Every add-on in the store can be downloaded for free. A few of them, mostly commercial voices, are a free download that then needs a paid license before it will work. If you install one of those and change your mind, you can simply remove it. Press Enter to continue.",
+          "hints": [
+            "Free to download does not always mean free to use. The description of an add-on says so when a license has to be bought.",
+            "The Add-on Store needs an internet connection to show what is available. Add-ons you have already installed keep working offline.",
+            "There are several hundred add-ons in the store. The last three lessons of this chapter introduce 25 of the most downloaded ones so you have somewhere to start."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Before you install anything, here is the most important fact in this chapter. Add-ons in the Add-on Store are not checked or approved by NV Access or by anyone else. An add-on can do anything NVDA can do, and that includes reading your personal information. Each add-on submitted to the store is scanned for known viruses by a service called VirusTotal, but a clean scan is not a guarantee. So treat an add-on like any other program you download: only install it if you trust where it comes from. Press Enter to continue.",
+          "hints": [
+            "The store is a catalog, not a seal of approval. Being listed there does not mean an add-on has been tested by NV Access.",
+            "A virus scan only catches what was already known when the add-on was submitted. It can also be wrong in both directions.",
+            "NVDA shows you this same warning the first time you open the Add-on Store. You will meet that warning in the next lesson."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "How do you decide whether to trust an add-on? Here are four checks anyone can do. One: find out who made it and how long they have been making add-ons. Two: check whether it is updated regularly. Three: read what other users say, using the Community reviews action in the store, which you will learn in this chapter. Four: ask other NVDA users, for example on the NVDA users mailing list or on social media. If you still are not sure, do not install it. Press Enter to finish this lesson.",
+          "hints": [
+            "An add-on that many people have used for years, and that still gets updates, is a much safer choice than one nobody has heard of.",
+            "Community reviews are written by other NVDA users. They open as a web page, so the browse mode commands from Chapter 4 are how you read them.",
+            "If you have an instructor, ask them which add-ons they use and recommend. That is a perfectly good way to start."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_addon_store",
+      "title": "Open the Add-on Store",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "The Add-on Store is in the Tools submenu of the NVDA menu. To open it, press NVDA+N (NVDA command) to open the NVDA menu, then press T for Tools, then press A for Add-on Store. You do not need to do it yet. First, the next two steps tell you what you are going to hear, and how to get back here. Press Enter to continue.",
+          "hints": [
+            "NVDA plus N opens the NVDA menu. T moves to Tools and opens it. A activates Add-on Store.",
+            "If pressing a letter does not work in the menu, use the Down Arrow to find Tools, press Right Arrow or Enter to open it, then Down Arrow to Add-on Store and press Enter.",
+            "The store has no shortcut key of its own. You can give it one later in the Input Gestures dialog, which is in the Preferences submenu of the NVDA menu."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The first time you open the Add-on Store, NVDA shows a dialog called Add-on Store Warning. It repeats what you learned in the last lesson: add-ons are made by the community, they are not vetted by NV Access, and they can access your personal data. The dialog has a checkbox named Don't show this message again, and an OK button. Press Tab (Windows command) to reach OK and press Enter. If you would rather not hear the warning every time, press Space on the checkbox first. Press Enter to continue.",
+          "hints": [
+            "If you do not hear the warning, somebody has already ticked Don't show this message again on this computer. That is fine. The store simply opens.",
+            "To read the warning again before you accept it, press NVDA+Tab to hear the focused control, or use the object navigation commands from Chapter 5 to move to the warning text.",
+            "Pressing OK does not install anything. It only confirms that you have read the warning."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "While the Add-on Store is open, you will go back and forth between it and this window. To come back to NVDA Coach, press NVDA+Shift+C. To go back to the store, press Alt+Tab (Windows command) until you hear Add-on Store. To close the store completely, press Escape while you are in it. Press Enter to continue.",
+          "hints": [
+            "NVDA plus Shift plus C always brings you back to this lesson, as long as you are not in Microsoft Excel.",
+            "Alt plus Tab was covered in the last lesson of Chapter 1. Hold Alt, tap Tab, listen, and release Alt when you hear the window you want.",
+            "If you lose track of where you are, press NVDA+T to hear the title of the current window."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. Press NVDA+N, then T, then A. If the warning appears, Tab to OK and press Enter. When the store opens, press NVDA+T (NVDA command) to read its title. Because you already have at least one add-on installed, NVDA Coach, the title will be something like Add-on Store, Installed add-ons. Focus is in a list, and NVDA Coach is in that list. Press Up and Down Arrow to explore it. Then press NVDA+Shift+C to come back here, and press Enter to finish this lesson. You can leave the store open for the next lesson.",
+          "hints": [
+            "On a computer with no add-ons at all, the store opens on Available add-ons instead. On yours it opens on Installed add-ons, because NVDA Coach is installed.",
+            "If the list seems empty or you hear Loading add-ons, wait a few seconds. The store is fetching information from the internet.",
+            "If nothing opens at all, NVDA may be running in secure mode or from a place where add-ons are turned off. Ask your instructor or system administrator."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "store_layout",
+      "title": "Find Your Way Around the Store",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "The Add-on Store is one window with four tabs. Each tab shows a different list of add-ons. Installed add-ons shows what you have. Updatable add-ons shows installed add-ons that have a newer version waiting. Available add-ons shows everything you could install. Installed incompatible add-ons shows add-ons you have that do not work with your version of NVDA. Press Enter to continue.",
+          "hints": [
+            "Four tabs: Installed, Updatable, Available, and Installed incompatible. Most of the time you will use Installed and Available.",
+            "The title of the window always tells you which tab you are on. Press NVDA+T to hear it.",
+            "An empty Updatable tab is good news. It means everything you have is up to date."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To move from one tab to the next, press Control+Tab (Windows command). To move backward, press Control+Shift+Tab. This works from anywhere in the store, and NVDA announces the name of the tab you land on. Try it now: go to the store with Alt+Tab, press Control+Tab until you hear Available add-ons, then come back here with NVDA+Shift+C and press Enter to continue.",
+          "hints": [
+            "Control plus Tab is a Windows command. It moves between tabs in many programs, including web browsers and settings windows.",
+            "You can also press Shift+Tab until you reach the tab control itself, then use Left and Right Arrow to change tabs.",
+            "After you change tabs, the list takes a moment to fill. If you hear Loading add-ons, give it a few seconds."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Every tab is laid out the same way. Pressing Tab moves you through the parts in this order. First the list of add-ons. Then the details of the add-on you selected: a description you can read with the arrow keys, an Actions button, and a second text box called Other details. Then two buttons, Install from external source and Close. After those come the tabs and the filters: Sort by column, Channel, and a Search box. One more Tab brings you back to the list. Press Enter to continue.",
+          "hints": [
+            "The list is the heart of the store. Up and Down Arrow move through add-ons, and whatever add-on you are on is the one the details describe.",
+            "Shift+Tab from the list moves backward to the Search box and the other filters.",
+            "You do not have to memorize this layout. Tab and Shift+Tab will always walk you through it, and NVDA names each part as you land on it."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The store also has access keys, which jump straight to one part of the window. Hold Alt and press the letter. Alt+A moves to the list of add-ons. Alt+S moves to the Search box. Alt+O moves to Other details. Alt+N moves to the Channel filter, and Alt+M to Sort by column. Press Enter to continue.",
+          "hints": [
+            "The two to learn first are Alt plus A for the add-ons list and Alt plus S for Search. Those two get you almost everywhere.",
+            "These letters are for NVDA in English. In another language the letters can be different, and NVDA announces the access key when you Tab to each control.",
+            "Access keys are Windows commands. NVDA reports them as part of each control, for example: Search, edit, Alt plus S."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. Go to the store with Alt+Tab. Press Alt+A to land in the list, and arrow down a few add-ons. Press Tab and listen to what comes next. Keep pressing Tab until you are back in the list. Then come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "As you Tab, listen for: the description, the Actions button, Other details, Install from external source, Close, the tabs, and then the filters.",
+            "The description and Other details are read-only text. Use Up and Down Arrow inside them to read line by line, exactly as you did in Chapter 3.",
+            "If you get lost, press Alt+A. It always takes you back to the list."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_and_filter",
+      "title": "Search and Filter the List",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "The Available add-ons tab lists several hundred add-ons, sorted by name. Arrowing through all of them would take a long time. There are three faster ways to find one: first-letter navigation, the Search box, and the filters. Press Enter to continue.",
+          "hints": [
+            "In the list, typing the first few letters of an add-on's name jumps to it, just as in a list of files.",
+            "Search is the tool to use when you know what you want an add-on to do but not what it is called.",
+            "Filters narrow the list. They do not delete anything. Clear the filter and the full list comes back."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To search, press Alt+S, or press Shift+Tab from the list, to reach the Search box. Type a word or two describing what you want, for example clipboard or clock. You do not press Enter. The list updates on its own as you type. Then press Tab to move to the list and arrow through the results. The search looks in the name of each add-on, its publisher, its author, and its description. Press Enter to continue.",
+          "hints": [
+            "Type the word, then press Tab. The results are already waiting in the list.",
+            "Search matches descriptions too, so searching for a task, such as OCR or volume, finds add-ons whose names you would never guess.",
+            "To get the full list back, return to the Search box with Alt+S and delete what you typed."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Next to Search there are filters. Channel chooses which kind of release is listed: All, Stable, Beta, Dev, or External. Stable means the developer considers the add-on tested and ready. Beta and Dev versions are for testers and may have problems. As a beginner, choose Stable. On the Available and Updatable tabs there is also a checkbox named Include incompatible add-ons. Leave it unchecked. On the Installed tabs there is an Enabled/disabled filter instead. Press Enter to continue.",
+          "hints": [
+            "Press Alt+N to reach the Channel filter, then use Up and Down Arrow to choose Stable.",
+            "External is the channel name for add-ons that were installed from a file rather than from the store.",
+            "Incompatible add-ons are ones not marked as working with your version of NVDA. A later lesson in this chapter explains them."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "The list is normally sorted by name. The Sort by column filter, Alt+M, lets you sort it another way, for example by publisher or by publication date, in ascending or descending order. Sorting by publication date, newest first, is a handy way to discover what has been added or updated lately. Press Enter to continue.",
+          "hints": [
+            "Sort by column is a combo box. Use Up and Down Arrow to hear the choices. The list re-sorts as soon as you choose one.",
+            "The choices change a little from tab to tab, because each tab has slightly different columns.",
+            "If the list seems to be in a strange order, check this filter. Somebody may have changed it."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. Go to the store with Alt+Tab and press Control+Tab until you are on Available add-ons. Press Alt+S and type the word clock. Press Tab to move to the list and arrow through the results. Then press Alt+S again, delete the word, and Tab back to the list to see everything. Come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "If the list is empty after you search, check your spelling, and check that the Channel filter is set to All or Stable.",
+            "To delete your search text quickly, press Control+A to select it all, then press Delete.",
+            "No internet connection means no Available add-ons. If the tab stays empty with nothing typed in Search, check your connection."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "addon_details",
+      "title": "Read About an Add-on Before You Install It",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "When you arrow onto an add-on in the list, NVDA reads its row: the name, its status, the version, the channel, and the publisher. That is only the summary. The full story is in the details, which you reach by pressing Tab from the list. Press Enter to continue.",
+          "hints": [
+            "The row tells you what the add-on is called and who published it. The details tell you what it actually does.",
+            "If NVDA stops reading the row before you catch it all, press NVDA+Tab to hear the focused item again.",
+            "The details always belong to whichever add-on is selected in the list. Change the selection and the details change with it."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Press Tab from the list. You land on the description. It is a read-only text box, so read it with the arrow keys, or read it all with Say All: NVDA+Down Arrow on desktop layout, NVDA+A on laptop layout. Press Tab to pass the Actions button, and Tab once more, or press Alt+O, to reach Other details. This lists the publisher, the author, the version, the minimum NVDA version it needs, the last NVDA version it was tested with, the license, and the result of the VirusTotal scan. Press Enter to continue.",
+          "hints": [
+            "Description answers: what does this do? Other details answers: who made it, how current is it, and was anything flagged by the virus scan?",
+            "Last tested NVDA version is worth checking. If it is several years behind your NVDA, the add-on may no longer be looked after.",
+            "Both boxes are read-only. Nothing you press while reading them will change or install anything."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Every add-on has a menu of actions. To open it, press Enter or the Applications key on the add-on in the list. You can also Tab to the Actions button in the details and press Space. For an add-on you have not installed, the menu offers Install, Help, Homepage, License, Source Code, Community reviews, and VirusTotal scan results. Some add-ons also offer What's new. Use Up and Down Arrow to move through the menu, and Escape to close it without choosing anything. Press Enter to continue.",
+          "hints": [
+            "The Applications key is on the bottom row of many keyboards, to the right of the Space bar. Shift+F10 does the same thing if your keyboard does not have one.",
+            "The actions change depending on the add-on. An installed add-on offers Disable and Remove instead of Install.",
+            "Opening the Actions menu is always safe. Nothing happens until you press Enter on one of the actions."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Three of those actions help you decide whether to trust an add-on. Help opens the add-on's own documentation. Community reviews opens a web page where other NVDA users have written about their experience with it. VirusTotal scan results opens the full virus scan report in your web browser. These open in your browser, so use the browse mode commands from Chapter 4 to read them, then press Alt+Tab to return to the store. Press Enter to continue.",
+          "hints": [
+            "Community reviews are hosted on a website called GitHub. Press H to jump between headings and find each review.",
+            "No reviews yet does not mean an add-on is bad. Many good add-ons simply have not been reviewed.",
+            "Homepage and Source Code tell you where the add-on comes from. A developer with a public home page and a history of releases is easier to trust."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now. In the store, on the Available add-ons tab, pick any add-on that sounds interesting. Tab to its description and read it. Press Alt+O and read Other details. Then press Alt+A to return to the list, press Enter to open the Actions menu, arrow through it to hear what is offered, and press Escape to close the menu. Do not install anything yet. Come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "Pressing Escape once closes the Actions menu. Be careful not to press it a second time, because Escape in the store itself closes the store.",
+            "If you closed the store by accident, reopen it with NVDA+N, then T, then A.",
+            "Not sure which add-on to explore? Search for speech history. It is one of the most downloaded add-ons, and it is covered later in this chapter."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "install_addon",
+      "title": "Install an Add-on",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Installing an add-on from the store takes four steps. One: find the add-on on the Available add-ons tab. Two: press Enter on it and choose Install. Three: close the store. Four: let NVDA restart. The add-on does not start working until NVDA has restarted. You do not have to install anything to finish this lesson. If you would rather just learn the steps for now, read along and press Enter after each one. Press Enter to continue.",
+          "hints": [
+            "Find it, choose Install, close the store, restart NVDA. Those are the four steps every time.",
+            "Restarting NVDA takes a few seconds. NVDA goes quiet, then you hear its startup sound and it begins speaking again.",
+            "If you do want to practice with a real add-on, choose one you read about and felt comfortable with in the previous lesson."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "With the add-on selected in the list, press Enter to open its Actions menu, and press Enter again on Install, which is the first item. The store starts downloading straight away. You stay in the list, and the status of that add-on changes to Downloading, and then to Downloaded, pending install. The status is part of the row, so to check it, press NVDA+Tab, which reports the item that has focus. Press Enter to continue.",
+          "hints": [
+            "Enter opens the Actions menu, and Install is the first item, so pressing Enter twice on an add-on installs it.",
+            "Downloaded, pending install means the file has arrived and is waiting. The actual installation happens when you close the store.",
+            "If the status says Download failed, open the Actions menu again and choose Retry install. A dropped internet connection is the usual cause."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "You can choose more add-ons before you close the store. Each one you install is added to the queue. You can also select several add-ons at once, by holding Shift while you arrow or by holding Control and pressing Space on each one, then open the Actions menu and choose Install selected add-ons. If you change your mind about one that is still downloading, open its Actions menu and choose Cancel install. Press Enter to continue.",
+          "hints": [
+            "There is no need to restart NVDA after each add-on. Choose everything you want first, then close the store once.",
+            "Selecting several add-ons works the same way as selecting several files in File Explorer.",
+            "Start small. Install one or two add-ons, live with them for a while, and add more later. It is much easier to tell what each one does that way."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "When you have finished choosing, press Escape, or Tab to the Close button and press Enter. NVDA says it is installing the add-ons and asks you to wait. Then a dialog tells you that changes were made to add-ons and asks whether you would like to restart NVDA now. Press Enter on Yes. NVDA restarts, and your new add-on is running. If you choose No, the add-on waits and is installed properly the next time NVDA starts. Press Enter to continue.",
+          "hints": [
+            "Choosing Yes is the normal answer. NVDA closes and comes back on its own within a few seconds.",
+            "NVDA Coach stops when NVDA restarts. That is expected. Press NVDA+Shift+C afterward to open the lesson picker, and this lesson will still be here.",
+            "If NVDA does not come back after about fifteen seconds, press Control+Alt+N to start it."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "After NVDA restarts, how do you use your new add-on? Open the Add-on Store again. It opens on Installed add-ons, and your new add-on is in the list with a status of Enabled. Press Enter on it and choose Help to open its documentation, which explains its commands. Many add-ons also add their own section to the Input Gestures dialog, in the Preferences submenu of the NVDA menu, where you can find and change their shortcut keys. Press Enter to finish this lesson.",
+          "hints": [
+            "The Help action is the first place to look. A new add-on is not much use until you know which keys it responds to.",
+            "Turn on Input Help with NVDA+1 and press the add-on's shortcut. NVDA describes what that key does without doing it. Press NVDA+1 again to turn Input Help off.",
+            "Some add-ons add a category of their own to the NVDA Settings dialog, or an item of their own to the NVDA menu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manage_addons",
+      "title": "Update, Disable, and Remove Add-ons",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Add-ons get new versions, just as NVDA does. By default, shortly after NVDA starts, it tells you when updates are available for add-ons you have installed, and offers to take you to them. You can also check at any time: open the Add-on Store and press Control+Tab to the Updatable add-ons tab. To update one, press Enter on it and choose Update. Then close the store and restart NVDA, exactly as you did when installing. Press Enter to continue.",
+          "hints": [
+            "Updating follows the same four steps as installing: find it, choose the action, close the store, restart NVDA.",
+            "To update several at once, select them by holding Shift while you press Down Arrow, then open the Actions menu.",
+            "Keeping add-ons up to date matters most right after you update NVDA itself, because old versions of add-ons can stop working with a new NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "You can choose how updates are handled. Open NVDA Settings with NVDA+N, then P for Preferences, then S for Settings, and move to the Add-on Store category. The Automatic updates setting has three choices. Notify, the default, tells you when updates exist. Update Automatically downloads and installs them in the background, then asks you to restart NVDA. Disabled never checks. Press Enter to continue.",
+          "hints": [
+            "Notify is a good choice for most people. You stay in control, and you do not miss updates.",
+            "In the category list of NVDA Settings, press A until you hear Add-on Store. More than one category begins with that letter.",
+            "NVDA checks for add-on updates once every 24 hours."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sometimes you want an add-on out of the way without deleting it. That is what Disable is for. On the Installed add-ons tab, press Enter on the add-on and choose Disable. Its status changes to Disabled, pending restart. After you restart NVDA it is switched off but still installed, and you can bring it back at any time with the Enable action. Disabling is the right first move when you suspect an add-on is causing a problem. Press Enter to continue.",
+          "hints": [
+            "Disable is like switching something off at the wall. Remove is like throwing it away.",
+            "If NVDA starts misbehaving after you install an add-on, disable that add-on and restart. If the problem goes away, you have found the cause.",
+            "Like everything else in the store, disabling and enabling only take effect after NVDA restarts."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To uninstall an add-on completely, press Enter on it on the Installed add-ons tab and choose Remove. NVDA asks you to confirm. The status then shows Pending removal, and the add-on is gone after NVDA restarts. A word of caution: NVDA Coach is in this list too. If you remove NVDA Coach, your lessons go with it, so take care which add-on is selected before you choose Remove. Press Enter to continue.",
+          "hints": [
+            "Removing an add-on deletes it from your computer. You can install it again from the Available add-ons tab whenever you like.",
+            "Before you confirm, listen to the name in the confirmation message. It tells you exactly which add-on is about to be removed.",
+            "If you choose Remove by mistake and have not restarted NVDA yet, answer No to the confirmation, or ask your instructor before restarting."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Try it now, without changing anything. Open the store and go to the Installed add-ons tab. Arrow to NVDA Coach. Press Enter to open its Actions menu and arrow through it. You will hear Disable, Remove, Help, and others. Press Escape to close the menu without choosing anything. Then press Control+Tab to the Updatable add-ons tab and hear whether anything is waiting. Come back here with NVDA+Shift+C and press Enter to finish this lesson.",
+          "hints": [
+            "Arrowing through a menu never activates anything. Only Enter does. Escape closes the menu safely.",
+            "If the Updatable add-ons list is empty, every add-on you have is current.",
+            "If an update for NVDA Coach is listed, that is a newer version of these lessons. Updating keeps your progress."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external_and_incompatible",
+      "title": "Add-on Files, Incompatible Add-ons, and Getting Out of Trouble",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Not every add-on is in the store. Some are shared as a file on a website or sent to you by email. An add-on file has a name ending in dot N V D A dash addon. There are two ways to install one. In the Add-on Store, press Alt+X for the Install from external source button, and choose the file. Or, if NVDA is installed on the computer, simply press Enter on the file in File Explorer. Either way NVDA asks you to confirm before installing, and then asks to restart. Press Enter to continue.",
+          "hints": [
+            "An add-on from outside the store has not even had the store's virus scan. Be extra sure you trust who gave it to you.",
+            "Downloaded files normally land in your Downloads folder. Press Enter on the add-on file there and NVDA takes over.",
+            "Add-ons installed this way appear on the Installed add-ons tab with the channel shown as External."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Each add-on states which versions of NVDA it works with. Roughly once a year, usually with the first NVDA release of the year, NVDA changes in ways that can break older add-ons. When that happens, NVDA warns you before it updates, and switches off any add-on that has not been updated to match. Those add-ons move to the Installed incompatible add-ons tab. Usually the fix is to wait: most popular add-ons are updated within days or weeks, and then appear on the Updatable add-ons tab. Press Enter to continue.",
+          "hints": [
+            "Incompatible does not mean broken forever. It means the developer has not yet confirmed the add-on works with your NVDA.",
+            "Before a big NVDA update, NVDA tells you which of your add-ons will be disabled. If you depend on one of them, you can wait to update NVDA.",
+            "The store lets you override the incompatibility and enable the add-on anyway. That is at your own risk. It may not work, and it can make NVDA unstable."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Here is the safety net, and it is worth remembering. If NVDA behaves strangely or keeps crashing after you install an add-on, you can restart NVDA with every add-on switched off. Press NVDA+Q (NVDA command). In the Exit NVDA dialog, use the Down Arrow to choose Restart with add-ons disabled, and press Enter. NVDA comes back plain, as if no add-ons were installed. Now open the Add-on Store, disable or remove the add-on you suspect, and restart NVDA normally. Press Enter to continue.",
+          "hints": [
+            "NVDA plus Q opens the Exit NVDA dialog. It is a list of choices. Restart with add-ons disabled is one of them.",
+            "This is temporary. The next normal restart brings all your add-ons back, apart from any you disabled or removed.",
+            "NVDA Coach is an add-on too, so it will not be available while add-ons are disabled. It comes back with the next normal restart."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "You now know the whole life of an add-on: what it is, how to judge whether to trust it, how to find it, read about it, install it, update it, switch it off, remove it, and recover if one goes wrong. The last three lessons in this chapter are a guided tour of 25 of the most downloaded add-ons in the store, grouped by what they are for. You do not need any of them. They are there so that you know what is possible. Press Enter to finish this lesson.",
+          "hints": [
+            "You can come back to this chapter at any time from the lesson picker to look up a step.",
+            "The NVDA User Guide has a full section called Add-ons and the Add-on Store. Open the User Guide from the Help submenu of the NVDA menu.",
+            "Nothing in the tour that follows is a recommendation to install. Use the checks from the first lesson and decide for yourself."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_everyday",
+      "title": "Popular Add-ons: Everyday Tools",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "The next three lessons introduce 25 of the most downloaded add-ons in the Add-on Store. A word on how they were chosen. The store does not publish how many people use each add-on. So this list ranks add-ons by how many times each has been downloaded from GitHub, the website where most add-ons are kept, counted in November 2026. Only add-ons the store offers for NVDA 2026.3 were counted. It is a measure of popularity, not a recommendation. Press Enter to continue.",
+          "hints": [
+            "Download counts include every automatic update, so add-ons that are updated often rank higher than their real number of users would suggest.",
+            "New add-ons appear all the time, and a newer one may suit you better than a famous one. Sorting the Available add-ons tab by publication date shows you what is new.",
+            "Nothing here needs to be installed to finish the lesson. Listen, and note the names of any that sound useful."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "This lesson covers nine small tools that add a feature to NVDA itself. First, three for information on demand. Clock is an advanced clock and calendar. It takes over NVDA's own time command, NVDA+F12, so that one press gives the time, two presses the date, and three presses the day, the week number, and the year. Day of the week tells you which day a date you choose falls on. Resource Monitor reports how busy your computer is: processor load, memory in use, disk space, and more. Press Enter to continue.",
+          "hints": [
+            "Clock, Day of the week, and Resource Monitor all answer a question you would otherwise need sight or several steps to answer.",
+            "Without any add-on, NVDA+F12 already speaks the time, and pressing it twice speaks the date. You learned that in Chapter 1. Clock builds on it.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Next, three for working with what NVDA says and what you copy. Speech history review and copying keeps a list of the most recent things NVDA said. By default Shift+F11 and Shift+F12 step back and forward through them, and F12 copies the current one to the clipboard. It is very handy when NVDA says something once and you missed it. Clip Contents Designer lets you add more text to what is already on the clipboard instead of replacing it, and can show you the clipboard contents. Instant Translate translates selected text, or the text on the clipboard, into another language and reads you the result. Press Enter to continue.",
+          "hints": [
+            "NVDA 2026.2 and later can repeat the last thing spoken on its own: press NVDA+X. Speech history goes further, because it remembers many items, not just the last one.",
+            "Instant Translate sends the text to an online translation service, so it needs an internet connection, and you should not use it on private text.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Last in this group, three that change what you hear or protect you from mistakes. Emoticons makes NVDA say the name of a text emoticon, such as smiling face, instead of reading out the punctuation characters it is typed with. Report Symbols speaks symbols as you type them, such as punctuation marks, even when you have turned off the speaking of typed characters. Input lock locks your input devices with a single key press and unlocks them the same way, which is useful when you need to clean the keyboard or when a child or a pet is nearby. Press Enter to finish this lesson.",
+          "hints": [
+            "Emoticons and Report Symbols change speech only. They do not change what is actually typed or sent.",
+            "Before you install Input lock, read its Help and learn the key that unlocks. A locked keyboard you cannot unlock is a real nuisance.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_reading_navigation",
+      "title": "Popular Add-ons: Reading, Navigation, and Speech",
+      "order": 10,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "This lesson covers nine popular add-ons that change how you read, move around, or hear NVDA. Several of them date from before NVDA could do a similar job itself, so this lesson also tells you what NVDA already does without them. First, reading. Nao, which stands for NVDA Advanced OCR, improves on the text recognition built into NVDA, for reading text out of images and scanned documents. SentenceNav lets you move through text one sentence at a time. Place markers lets you set bookmarks in web pages and other browse mode documents and jump back to them later. Press Enter to continue.",
+          "hints": [
+            "OCR means optical character recognition: turning a picture of text into text NVDA can read. NVDA has OCR built in. Press NVDA+R to recognize the current object. Nao builds on it.",
+            "NVDA 2026.3 moves by sentence on its own in many places: Alt+Down Arrow for the next sentence and Alt+Up Arrow for the previous one. Try that before installing SentenceNav.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Next, moving around. ObjPad lets you perform object navigation, which you learned in Chapter 5, by pressing single keys instead of key combinations. Enhanced Touch Gestures adds extra touchscreen gestures for people who use NVDA on a tablet or a touchscreen laptop. Read Feeds turns NVDA into a reader for news feeds, so you can follow the latest articles from websites without opening each site. Press Enter to continue.",
+          "hints": [
+            "ObjPad suits people who use object navigation a lot. If you rarely need Chapter 5's commands, you will not miss it.",
+            "Enhanced Touch Gestures is only useful on a computer with a touchscreen. NVDA 2026.2 and 2026.3 added many touch gestures of their own.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Last, three that reach beyond everyday speech. Switch synth lets you save synthesizers and voices in numbered slots and jump between them with a key press: Control+Shift+NVDA plus a number from 1 to 6. Access8Math helps with mathematics. It reads math content and lets you write math using a notation called LaTeX. Tele NVDA remote assistance lets a trusted person, such as an instructor, connect to your computer over the internet and hear and control it, or lets you connect to theirs. Press Enter to finish this lesson.",
+          "hints": [
+            "NVDA already includes Remote Access, in the Tools submenu of the NVDA menu, and it has read math on its own since NVDA 2026.1. Tele NVDA and Access8Math add extra options on top of those.",
+            "Remote access tools give another person control of your computer. Only ever connect with someone you know and trust, and never share your connection key publicly.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_app_support",
+      "title": "Popular Add-ons: Support for Specific Programs",
+      "order": 11,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "The last group of popular add-ons do not add a feature. They make one particular program work better with NVDA. If you do not use the program, you do not need the add-on. This lesson covers seven of them. The most downloaded add-on in the entire store is in this group: Windows App Essentials. It improves how NVDA works with various apps and controls on Windows 11. Press Enter to continue.",
+          "hints": [
+            "An add-on for a program only does anything while you are in that program. The rest of the time it stays out of the way.",
+            "Windows App Essentials follows Windows closely and is updated very often. It is also the add-on most likely to need the newest version of NVDA.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Three add-ons for programs you may use every day. Mozilla Apps Enhancements adds accessibility features for the Firefox web browser and the Thunderbird email program. Outlook Extended improves Microsoft Outlook, with commands to read or move to parts of a message such as its headers and attachments. VLC Media Player makes the VLC media player easier to use, with better navigation and a way to read its status bar. Press Enter to continue.",
+          "hints": [
+            "If you use Firefox, Thunderbird, Outlook, or VLC, the matching add-on is worth reading about. If you do not, skip it.",
+            "Each of these documents its own commands. After installing, use the Help action in the Add-on Store to learn them.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "And three for people who work with audio. GoldWave improves access to the GoldWave audio editor. mp3DirectCut adds commands for mp3DirectCut, a program for cutting and trimming MP3 files. StationPlaylist improves support for the StationPlaylist programs, which radio broadcasters use to run a station, and adds commands that control the Studio program from anywhere. Press Enter to continue.",
+          "hints": [
+            "These three are specialist tools. They are popular because blind audio producers and broadcasters rely on them daily.",
+            "A specialist add-on usually adds many commands. Give yourself time with its documentation.",
+            "To find any of these, open the Add-on Store, go to Available add-ons, press Alt+S, and type the name."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "That completes the tour: 25 add-ons, grouped as everyday tools, reading and navigation, and support for specific programs. Remember the order of work for any add-on. Decide whether you trust it. Read its description and reviews. Install it from the Available add-ons tab. Restart NVDA. Read its Help. And if anything goes wrong, press NVDA+Q and choose Restart with add-ons disabled. Press Enter to finish this lesson and complete the Add-ons and the Add-on Store chapter.",
+          "hints": [
+            "Trust it, read about it, install it, restart, read its Help. That order keeps you out of trouble.",
+            "You can return to the lessons in this chapter at any time to look up a step or an add-on name.",
+            "There are several hundred more add-ons in the store than the 25 covered here. Searching for a program you use, or a task you want done, is the best way to find them."
+          ]
+        }
+      ]
+    }
+  ]
+}
