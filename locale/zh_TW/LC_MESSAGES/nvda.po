@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: nvdaCoach 1.5.7\n"
+"Project-Id-Version: nvdaCoach 1.7.1\n"
 "POT-Creation-Date: 2026-03-28 00:00+0000\n"
 "PO-Revision-Date: 2026-07-14 00:00+0800\n"
 "Last-Translator: keyang556\n"
@@ -313,7 +313,7 @@ msgstr "歡迎回來。您已經完成了 NVDA Coach 的所有課程。您的證
 
 #: globalPlugins/nvdaCoach/__init__.py:1031
 msgid "You have completed NVDA Coach. Your progress is saved and your certificate of completion is ready.\n\n--- YOUR CERTIFICATE ---\nTab to the Export Certificate of Completion button below and press Enter to open your certificate in your web browser. A copy is also saved to your Downloads folder automatically.\n\n--- CONTINUE LEARNING ---\nPress NVDA+Shift+C to open the lesson picker. You can revisit any lesson at any time to review commands and practice.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson in the current category\n  Ctrl+B  —  Previous lesson\n  Ctrl+R  —  Restart the current lesson\n\n--- QUICK KEYS ---\n  F4 — Open help documentation\n  F5 — Send feedback to the developer\n  F6 — Toggle lesson sounds on or off\n  F7 — Update your profile (name, instructor, training center)"
-msgstr "您已完成 NVDA Coach 全部六章。您的進度已儲存，您的結業證書也已就緒。\n\n--- 您的證書 ---\n用 Tab 移動到下方的「匯出結業證書」按鈕，按 Enter 即可在網頁瀏覽器中開啟您的證書。系統也會自動在您的下載資料夾中儲存一份副本。\n\n--- 繼續學習 ---\n按 NVDA+Shift+C 開啟課程選擇器。您可以隨時重溫任何一課，複習指令並加以練習。\n\n--- 課程導覽 ---\n  Ctrl+N  ——  目前類別的下一課\n  Ctrl+B  ——  上一課\n  Ctrl+R  ——  重新開始目前這一課\n\n--- 快速鍵 ---\n  F4 —— 開啟說明文件\n  F5 —— 向開發者傳送回饋\n  F6 —— 開啟或關閉課程音效\n  F7 —— 更新您的個人資料（姓名、講師、訓練中心）"
+msgstr "您已完成 NVDA Coach。您的進度已儲存，您的結業證書也已就緒。\n\n--- 您的證書 ---\n用 Tab 移動到下方的「匯出結業證書」按鈕，按 Enter 即可在網頁瀏覽器中開啟您的證書。系統也會自動在您的下載資料夾中儲存一份副本。\n\n--- 繼續學習 ---\n按 NVDA+Shift+C 開啟課程選擇器。您可以隨時重溫任何一課，複習指令並加以練習。\n\n--- 課程導覽 ---\n  Ctrl+N  ——  目前類別的下一課\n  Ctrl+B  ——  上一課\n  Ctrl+R  ——  重新開始目前這一課\n\n--- 快速鍵 ---\n  F4 —— 開啟說明文件\n  F5 —— 向開發者傳送回饋\n  F6 —— 開啟或關閉課程音效\n  F7 —— 更新您的個人資料（姓名、講師、訓練中心）"
 
 #: globalPlugins/nvdaCoach/__init__.py:1071
 msgid "Lesson stopped.\n\nPress Escape two more times to close NVDA Coach.\nOr press NVDA+Shift+C to start another lesson."
@@ -357,15 +357,15 @@ msgstr "再按一次 Escape 即可關閉 NVDA Coach。"
 
 #: globalPlugins/nvdaCoach/__init__.py:1333
 msgid "NVDA Coach — Practice Area"
-msgstr ""
+msgstr "NVDA Coach — 練習區"
 
 #: globalPlugins/nvdaCoach/__init__.py:1362
 msgid "Practice Area"
-msgstr ""
+msgstr "練習區"
 
 #: globalPlugins/nvdaCoach/__init__.py:1363
 msgid "NVDA Coach — Practice: {title}"
-msgstr ""
+msgstr "NVDA Coach — 練習：{title}"
 
 #: globalPlugins/nvdaCoach/__init__.py:1416
 msgid "When you are done, press NVDA+Shift+C to return to the Coach window, then press Enter or Next Step to continue."
@@ -705,7 +705,7 @@ msgstr "NVDA Coach：找不到課程檔案。請檢查附加元件目錄中是�
 
 #: globalPlugins/nvdaCoach/__init__.py:1909
 msgid "Show NVDA Coach window, or open the lesson picker. In Excel this key stays with NVDA, for setting column headers"
-msgstr "顯示 NVDA Coach 視窗，或開啟課程選擇器"
+msgstr "顯示 NVDA Coach 視窗或開啟課程選擇器。在 Excel 中，此按鍵保留給 NVDA 用來設定欄標題"
 
 #: globalPlugins/nvdaCoach/__init__.py:2078
 msgid "No active category. Press NVDA+Shift+C to choose a lesson."
