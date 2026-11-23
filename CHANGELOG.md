@@ -1,6 +1,6 @@
 # NVDA Coach — Changelog
 
-## Unreleased (after v1.7.0)
+## v1.7.1 (2026-11-23)
 
 ### Translations
 - **Japanese, by Katsutoshi Tsuji (pull request #15).** The six original Japanese chapters now carry the 1.6.0 factual corrections: heading levels 1 to 9, the practice checkbox named as the interface names it, the Menu key in the right place, the Windows logo described by touch, and hints that test a key with Input Help instead of asking the student to look at it.
@@ -10,6 +10,9 @@
 
 ### Credit
 - Cary Rowen and keyang556 were not named anywhere in the add-on or the README. They are now, in the README, the English manual, their own language's manual, and the translator line of their catalogues. Katsutoshi Tsuji and Michał Dziwisz were missing from the English manual's acknowledgments and have been added.
+
+### Not verified
+- 1.7.1 has not been run inside NVDA. The one code change is three window titles passed through the translation function; the automated tests pass on the source and on the built package. The Japanese and Simplified Chinese revisions were not tried in NVDA in those languages.
 
 ## v1.7.0 (2026-11-23)
 

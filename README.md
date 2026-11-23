@@ -5,17 +5,29 @@ taught step by step — no videos, no PDFs, no switching windows.
 
 Free. GPL v2. By Tony Gebhard, Assistive Technology Instructor.
 
-**Current version:** 1.7.0
+**Current version:** 1.7.1
 
 ## Install
 
-**[Download NVDA Coach v1.7.0](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.7.0/nvdaCoach-1.7.0.nvda-addon)**
+**[Download NVDA Coach v1.7.1](https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.7.1/nvdaCoach-1.7.1.nvda-addon)**
 — or get it from the NVDA Add-on Store (Tools → Add-on Store).
 
 Open the `.nvda-addon` file; NVDA installs it and asks you to confirm. Then
 press **NVDA+Shift+C**.
 
 Needs NVDA 2024.1 or later. Tested through 2026.3.1.
+
+## What's new in 1.7.1
+
+A translation update, with no change to the English lessons.
+
+- **Japanese**, by Katsutoshi Tsuji: the six original chapters now carry the
+  1.6.0 corrections.
+- **Simplified Chinese**, by Cary Rowen: a revision of every lesson, the
+  manual, the practice pages and the interface, with consistent terminology.
+- **Practice window titles can be translated.** Simplified Chinese and
+  Polish have them.
+- **Translators credited by name** where they had been left out.
 
 ## What's new in 1.7.0
 
