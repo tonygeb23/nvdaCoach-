@@ -1,5 +1,5 @@
 # NVDA Coach - Simplified Chinese (zh_CN) Translation
-# Translators: Simplified Chinese localization, 2026
+# Translator: Cary Rowen (cary-rowen), 2026
 #
 msgid ""
 msgstr ""
@@ -7,7 +7,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: info@tonygebhard.me\n"
 "POT-Creation-Date: 2026-03-28 00:00+0000\n"
 "PO-Revision-Date: 2026-09-22 07:20+0800\n"
-"Last-Translator: Tony Gebhard <info@tonygebhard.me>\n"
+"Last-Translator: Cary Rowen (cary-rowen)\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"

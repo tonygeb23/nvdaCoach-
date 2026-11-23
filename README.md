@@ -175,8 +175,14 @@ or email [info@tonygebhard.me](mailto:info@tonygebhard.me).
 - **Umut KORKMAZ** — Turkish translation
 - **Edson Miranda** — Brazilian Portuguese store listing, and the start of
   the translation
-- **Katsutoshi Tsuji** — Japanese translation
+- **Katsutoshi Tsuji** — Japanese translation, and its revision against the
+  1.6.0 corrections
 - **Michał Dziwisz** — Polish translation
+- **Cary Rowen** ([cary-rowen](https://github.com/cary-rowen)) — Simplified
+  Chinese translation: lessons, manual, practice pages and interface, and the
+  change that made the practice window titles translatable
+- **keyang556** ([keyang556](https://github.com/keyang556)) — Traditional
+  Chinese translation
 - **Mateo Quintela** — Spanish localization testing and practice text
 - **Chris, Mike, Kevin, Julie, Larry, Jim, McKayla and Skyler** — AT
   specialists, from the April 2026 training sessions

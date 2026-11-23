@@ -1,5 +1,16 @@
 # NVDA Coach — Changelog
 
+## Unreleased (after v1.7.0)
+
+### Translations
+- **Japanese, by Katsutoshi Tsuji (pull request #15).** The six original Japanese chapters now carry the 1.6.0 factual corrections: heading levels 1 to 9, the practice checkbox named as the interface names it, the Menu key in the right place, the Windows logo described by touch, and hints that test a key with Input Help instead of asking the student to look at it.
+- **Simplified Chinese, by Cary Rowen (pull request #14).** A revision of every Simplified Chinese lesson, the manual, both practice pages, the interface strings and the store listing, with terminology made consistent across all of them. Merged by hand onto 1.7.0. The one change not taken was to the English lesson, which stays at heading levels 1 to 9; the Simplified Chinese text was changed from 6 to 9 to match NVDA.
+- **The practice window titles can now be translated**, from the same pull request. Simplified Chinese has them, and the Polish titles Michał Dziwisz wrote in April (pull request #7) are in use for the first time.
+- **Pull requests #7 (Polish, Michał Dziwisz), #10 (Simplified Chinese, Cary Rowen) and #12 (Traditional Chinese, keyang556) are now merged in the repository's history.** Their work had been copied into earlier releases without the pull requests being merged, so the contributors' commits were missing from the record. Checked entry by entry before merging: every Polish and Traditional Chinese string in those pull requests is already in the add-on unchanged, and #10 is superseded by Cary Rowen's own #14.
+
+### Credit
+- Cary Rowen and keyang556 were not named anywhere in the add-on or the README. They are now, in the README, the English manual, their own language's manual, and the translator line of their catalogues. Katsutoshi Tsuji and Michał Dziwisz were missing from the English manual's acknowledgments and have been added.
+
 ## v1.7.0 (2026-11-23)
 
 ### New lessons
