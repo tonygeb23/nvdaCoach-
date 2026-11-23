@@ -354,6 +354,18 @@ msgstr "O presiona NVDA+Mayús+C para comenzar una lección."
 msgid "Press Escape one more time to close NVDA Coach."
 msgstr "Presiona Escape una vez más para cerrar NVDA Coach."
 
+#: globalPlugins/nvdaCoach/__init__.py:1333
+msgid "NVDA Coach — Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1362
+msgid "Practice Area"
+msgstr ""
+
+#: globalPlugins/nvdaCoach/__init__.py:1363
+msgid "NVDA Coach — Practice: {title}"
+msgstr ""
+
 #: globalPlugins/nvdaCoach/__init__.py:1416
 msgid "When you are done, press NVDA+Shift+C to return to the Coach window, then press Enter or Next Step to continue."
 msgstr "Cuando hayas terminado, presiona NVDA+Mayús+C para volver a la ventana de Coach, luego presiona Enter o Siguiente Paso para continuar."
