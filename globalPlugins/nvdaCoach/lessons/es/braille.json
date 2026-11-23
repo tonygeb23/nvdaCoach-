@@ -1,0 +1,374 @@
+{
+  "id": "braille",
+  "title": "Usar una Pantalla Braille",
+  "description": "Un capítulo opcional para estudiantes que tienen una pantalla braille. Aprende a conectarla, a leer y desplazarte, a usar los sensores de enrutamiento, a elegir un código braille y a escribir en braille. Este capítulo no es necesario para tu certificado de finalización.",
+  "order": 8,
+  "optional": true,
+  "lessons": [
+    {
+      "id": "braille_is_optional",
+      "title": "¿Es Este Capítulo para Ti?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Este capítulo es opcional. Es para estudiantes que tienen una pantalla braille, también llamada línea braille, que es un dispositivo con una fila de pequeños puntos que suben y bajan para formar caracteres braille. Si no tienes una, puedes saltarte todo este capítulo. Tu certificado de finalización no depende de él. Presiona Enter para continuar, o presiona Escape para detenerte aquí.",
+          "hints": [
+            "Opcional significa exactamente eso. NVDA Coach da el curso por completado sin estas lecciones, y tu certificado se emite sin ellas.",
+            "Si más adelante consigues una pantalla braille, este capítulo seguirá aquí, en el selector de lecciones.",
+            "No necesitas saber braille para usar NVDA. La voz por sí sola hace todo lo que se enseña en los capítulos anteriores."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Si tienes una pantalla braille, esto es lo que NVDA hace con ella. Todo lo que NVDA diría con la voz también puede mostrarlo en braille: el control en el que estás, la línea de texto que estás leyendo y los mensajes. Puedes leer con los dedos a tu propio ritmo, comprobar al tacto cómo se escribe una palabra y trabajar en silencio. Si tu pantalla tiene un teclado braille, también puedes escribir con él. La voz y el braille funcionan juntos, o puedes usar cualquiera de los dos por separado. Presiona Enter para continuar.",
+          "hints": [
+            "El braille es especialmente bueno para lo que a la voz se le da mal: la ortografía exacta, la puntuación, los números y la disposición del texto.",
+            "Muchas personas usan las dos cosas a la vez: la voz para ir rápido, el braille para ser precisas.",
+            "NVDA admite códigos braille de muchos idiomas, tanto sin contraer como contraídos."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Una cosa antes de empezar. Cada pantalla braille está construida de una manera un poco distinta, y las teclas de una Focus no son las teclas de una Brailliant o de una Orbit. NVDA Coach enseña qué hace cada comando y cómo lo llama NVDA. Para las teclas exactas de tu pantalla, la Guía del Usuario de NVDA tiene una sección llamada Pantallas Braille Admitidas, con una lista de asignaciones de teclas para cada modelo. Abre la Guía del Usuario con NVDA+N, luego A de Ayuda, luego G de Guía del Usuario. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "La Guía del Usuario es una página web. Presiona NVDA+Control+F para buscar en ella el nombre de tu pantalla, o usa la Lista de Elementos, NVDA+F7, y elige Encabezados.",
+            "La Ayuda de Entrada también funciona con las teclas de la pantalla braille. Presiona NVDA+1, luego presiona una tecla de tu pantalla, y NVDA te dice qué hace esa tecla. Presiona NVDA+1 de nuevo para desactivar la Ayuda de Entrada.",
+            "El manual que vino con tu pantalla dice cómo se llaman sus teclas. Tenlo a mano mientras avanzas por este capítulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect_display",
+      "title": "Conectar tu Pantalla Braille",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA puede encontrar muchas pantallas braille por sí solo. Esto se llama detección automática, y viene activada de forma predeterminada. En la mayoría de los casos, conectar es así de sencillo: enchufa la pantalla a la computadora con su cable USB, enciende la pantalla y espera unos segundos. El braille aparece bajo tus dedos. Pruébalo ahora si tu pantalla todavía no está conectada. Presiona Enter para continuar.",
+          "hints": [
+            "La detección automática funciona con la mayoría de las pantallas actuales, incluidos modelos de HumanWare, Freedom Scientific, Help Tech, HIMS, Orbit, Baum, Eurobraille y Seika, y con cualquier pantalla que use el protocolo braille HID estándar.",
+            "Algunas pantallas tienen más de un modo de conexión. Si no pasa nada, busca en el menú o en el manual de la propia pantalla un ajuste como modo lector de pantalla, modo terminal o modo HID.",
+            "Un cable USB es la forma más fiable de empezar. Haz que funcione primero por USB y añade Bluetooth después."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Para conectar por Bluetooth, primero hay que emparejar la pantalla con Windows. Abre la Configuración de Windows con Windows+I (comando de Windows), ve a Bluetooth y dispositivos, y añade allí la pantalla. Una vez emparejada, la detección automática de NVDA la encuentra igual que lo haría por USB. El emparejamiento solo hay que hacerlo una vez. Presiona Enter para continuar.",
+          "hints": [
+            "Emparejar es tarea de Windows, no de NVDA. NVDA solo puede usar una pantalla Bluetooth que Windows ya conozca.",
+            "Si Windows pide un PIN al emparejar, el manual de tu pantalla te dice cuál es. A menudo es 0000 o 1234.",
+            "Las pantallas Bluetooth se ponen en reposo para ahorrar batería. Si el braille se detiene, despierta la pantalla y dale a NVDA unos segundos para reconectarse."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Si tu pantalla no se encuentra automáticamente, puedes elegirla tú. Presiona NVDA+Control+A (comando de NVDA). Esto abre el diálogo Seleccionar Pantalla Braille. El primer control es un cuadro combinado llamado Pantalla braille. Usa Flecha Arriba y Flecha Abajo para escuchar las opciones. Automático es la predeterminada. Sin braille apaga el braille. Las demás son nombres de fabricantes y modelos de pantallas. Elige la tuya, ve con Tab hasta Aceptar y presiona Enter. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA más Control más A. Piensa en la A de añadir una pantalla. Funciona desde cualquier lugar, sin abrir el menú de NVDA.",
+            "Si NVDA no puede cargar la pantalla que elegiste, te lo dice y sigue usando la que funcionaba antes. No se ha roto nada. Revisa el cable e inténtalo de nuevo.",
+            "Algunas pantallas necesitan que se instale en Windows un controlador del fabricante antes de que NVDA pueda comunicarse con ellas. La sección Pantallas Braille Admitidas de la Guía del Usuario lo indica cuando es el caso."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "El mismo diálogo tiene un cuadro combinado llamado Puerto. Decide cómo llega NVDA a la pantalla: Automático, USB, Bluetooth o, a veces, un puerto serie. Déjalo en Automático a menos que las instrucciones de tu pantalla te digan otra cosa. Si tu pantalla no está en la lista, puede que aun así sea compatible mediante un complemento. Algunos fabricantes publican su controlador para NVDA en la Tienda de Complementos, que aprendiste a usar en el capítulo anterior. Presiona Enter para continuar.",
+          "hints": [
+            "Automático es la opción correcta para Puerto casi siempre.",
+            "Para buscar un complemento con un controlador, abre la Tienda de Complementos, ve a Complementos disponibles y busca el nombre de tu pantalla o de su fabricante.",
+            "Conecta solo una pantalla del mismo fabricante a la vez. A NVDA no se le puede indicar cuál de dos pantallas idénticas debe usar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Comprueba que funciona. Con tu pantalla conectada, vuelve a esta ventana presionando NVDA+Shift+C y toca la pantalla. Deberías encontrar braille allí: el texto de esta lección, o el nombre del control que tiene el foco. Si es así, tu pantalla está conectada y estás listo para la siguiente lección. Si la pantalla está en blanco, presiona NVDA+Control+A y comprueba qué pantalla está seleccionada. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Cuando NVDA se inicia con una pantalla conectada, lo primero que muestra en braille es un mensaje que dice que NVDA se ha iniciado.",
+            "Una pantalla en blanco suele significar una de tres cosas: la pantalla está apagada o en reposo, el cable está flojo, o está seleccionado Sin braille en el diálogo Seleccionar Pantalla Braille.",
+            "Si tienes un instructor, conectar la pantalla por primera vez es un buen momento para pedirle ayuda. Después de eso, NVDA se reconecta por sí solo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading_braille",
+      "title": "Leer y Desplazarte en Braille",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Una pantalla braille muestra un trozo corto de la pantalla de la computadora cada vez. La mayoría tiene entre 14 y 40 celdas, y algunas tienen 80. Una línea de texto suele ser más larga que eso, así que leer en braille significa leer lo que hay en la pantalla braille y después hacerla avanzar. Hacerla avanzar se llama desplazamiento. Presiona Enter para continuar.",
+          "hints": [
+            "Una celda es un carácter braille: un bloque de seis u ocho puntos.",
+            "Una pantalla de 40 celdas muestra más o menos la mitad de una línea de texto típica. Una de 20 celdas muestra más o menos la cuarta parte.",
+            "Desplazar la pantalla braille no mueve tu cursor ni cambia nada en la computadora. Solo cambia qué parte estás leyendo."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA tiene dos comandos de desplazamiento. Desplaza la línea braille hacia adelante muestra el siguiente trozo de texto. Desplaza la línea braille hacia atrás muestra el trozo anterior. En la mayoría de las pantallas son las teclas de desplazamiento o las teclas de pulgar, normalmente en los extremos o a lo largo del frente de la pantalla. Cuando te desplazas hacia adelante más allá del final de una línea, NVDA sigue con el principio de la línea siguiente, así que puedes leer un documento entero solo presionando el desplazamiento hacia adelante. Presiona Enter para continuar.",
+          "hints": [
+            "Para encontrar las teclas de desplazamiento de tu pantalla, presiona NVDA+1 para la Ayuda de Entrada y prueba las teclas de cada extremo de la pantalla. NVDA dice desplaza la línea braille hacia adelante, o hacia atrás, cuando las encuentras. Presiona NVDA+1 de nuevo cuando termines.",
+            "La técnica habitual es leer con una mano mientras la otra descansa sobre la tecla de desplazamiento hacia adelante.",
+            "El desplazamiento recorre el texto. No mueve tu cursor de escritura, así que leer no cambia nada."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Hay dos comandos de lectura más. Mueve la pantalla braille a la línea siguiente, y Mueve la pantalla braille a la línea anterior. Estos saltan una línea entera cada vez, sea cual sea la parte de la línea en la que estabas. Muchas pantallas tienen teclas aparte para ellos. Úsalos para recorrer un documento hacia abajo por encima, y usa el desplazamiento para leer una línea de principio a fin. Presiona Enter para continuar.",
+          "hints": [
+            "El desplazamiento hacia adelante y hacia atrás recorre una línea en trozos del tamaño de la pantalla. Línea siguiente y línea anterior bajan y suben por líneas enteras.",
+            "No todas las pantallas dan teclas propias a estos dos comandos. Puedes asignarles teclas en el diálogo Gestos de Entrada, en la categoría Braille.",
+            "De forma predeterminada, la voz se detiene cuando desplazas la pantalla, para que no hable encima de tu lectura."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora, aquí mismo. El texto de práctica de abajo está en esta ventana. Presiona Flecha Abajo en tu teclado para entrar en él. Lee con los dedos la primera línea en tu pantalla. Presiona la tecla de desplazamiento hacia adelante de tu pantalla para seguir leyendo. Después prueba las teclas de línea siguiente y línea anterior, si tu pantalla las tiene. Cuando hayas leído hasta el final, presiona Enter para continuar.",
+          "practiceText": "Esta es la primera línea del texto de práctica en braille, y es lo bastante larga como para que tengas que desplazar tu pantalla para leerla entera.\nLa segunda línea es corta.\nEl braille te muestra exactamente cómo se escribe una palabra, incluidas las mayúsculas y los signos de puntuación.\nLos números como 2026 y los símbolos como la arroba de nombre@ejemplo.com son fáciles de comprobar al tacto.\nEsta es la última línea del texto de práctica.",
+          "hints": [
+            "Si la pantalla sigue mostrando la instrucción y no el texto de práctica, presiona Flecha Abajo unas cuantas veces más hasta llegar al encabezado que dice Área de práctica.",
+            "Si tu tecla de desplazamiento no hace nada, activa la Ayuda de Entrada con NVDA+1 y presiónala. NVDA te dice a qué está asignada la tecla. Desactiva la Ayuda de Entrada con NVDA+1.",
+            "Tómate tu tiempo. Leer braille en una pantalla es una habilidad física, y gana velocidad con la práctica, igual que los comandos de teclado."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Una cosa más que quizá quieras mientras lees. NVDA puede desplazar la pantalla por ti a un ritmo constante. Esto se llama desplazamiento automático, y llegó en NVDA 2026.2. Presiona NVDA+Alt+K (comando de NVDA) para activarlo o desactivarlo. Mientras está activado, NVDA+Alt+L lo acelera y NVDA+Alt+J lo hace más lento. Se detiene solo cuando presionas un sensor de enrutamiento, cuando el foco se mueve o cuando llega al final. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "K activa y desactiva el desplazamiento automático. L es más rápido. J es más lento. Las tres se presionan manteniendo NVDA y Alt.",
+            "Mientras el desplazamiento automático está en marcha, puedes seguir presionando el desplazamiento hacia atrás para releer algo, o hacia adelante para saltarte una línea corta.",
+            "La velocidad también se puede ajustar en las Opciones de NVDA, en la categoría Braille, con el control deslizante Velocidad de desplazamiento automática."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_cursor_routing",
+      "title": "El Cursor Braille y los Sensores de Enrutamiento",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Cuando estás en un lugar donde puedes escribir, el braille te muestra dónde está tu cursor. El cursor aparece como los puntos 7 y 8, los dos puntos inferiores de una celda, levantados debajo del carácter en el que está. De forma predeterminada parpadea, subiendo y bajando con regularidad, para que puedas encontrarlo al tacto. Presiona Enter para continuar.",
+          "hints": [
+            "Los puntos 7 y 8 son la fila inferior adicional de una celda braille de ocho puntos. El braille corriente de seis puntos no los usa, y por eso están libres para marcar el cursor.",
+            "Si el parpadeo te distrae, se puede desactivar en las Opciones de NVDA, en la categoría Braille: desmarca Parpadeo del cursor.",
+            "El texto seleccionado también se marca con los puntos 7 y 8, debajo de cada carácter seleccionado, y sin parpadear."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Encima o debajo de cada celda, en la mayoría de las pantallas, hay un botón pequeño. Son los sensores de enrutamiento del cursor, uno por cada celda. Presionar el sensor de enrutamiento que está sobre un carácter lleva tu cursor directamente a ese carácter. Esta es una de las grandes ventajas del braille: encuentras un error con el dedo, presionas el botón que tiene encima, y tu cursor ya está allí, listo para corregirlo. Sin recorrer la línea con las flechas. Presiona Enter para continuar.",
+          "hints": [
+            "Enrutar significa enviar el cursor a un lugar. Una pulsación del sensor de enrutamiento que está sobre una letra, y el cursor está en esa letra.",
+            "Los sensores de enrutamiento son pequeños, y hay uno por cada celda, así que forman una fila justo detrás o delante de las celdas.",
+            "Unas pocas pantallas muy pequeñas o de bajo costo no tienen sensores de enrutamiento. Sus manuales describen otra forma de mover el cursor."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Los sensores de enrutamiento hacen un segundo trabajo. Cuando la pantalla muestra un control en lugar de texto, como un botón, un enlace o una casilla de verificación, presionar un sensor de enrutamiento sobre él lo activa, igual que lo haría presionar Enter o Espacio. Así, en un diálogo puedes leer en braille el nombre de un botón y presionar el sensor de enrutamiento que tiene encima para presionar el botón. Presiona Enter para continuar.",
+          "hints": [
+            "Sobre texto, un sensor de enrutamiento mueve el cursor. Sobre un control, un sensor de enrutamiento activa el control.",
+            "En una página web en modo exploración, presionar un sensor de enrutamiento sobre un enlace sigue ese enlace.",
+            "Cuando NVDA muestra un mensaje en braille, presionar cualquier sensor de enrutamiento descarta el mensaje y te muestra otra vez dónde estabas."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Los sensores de enrutamiento funcionan mejor en un documento real, donde tienes un cursor que mover. Para practicar, abre el Bloc de notas: presiona la tecla Windows, escribe bloc de notas y presiona Enter. Escribe una frase con una falta de ortografía hecha a propósito. Encuentra la falta con el dedo. Presiona el sensor de enrutamiento que está sobre la letra equivocada. Presiona Supr en tu teclado y escribe la letra correcta. Cuando lo hayas probado, vuelve con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Después de presionar el sensor de enrutamiento, busca al tacto los puntos 7 y 8 parpadeando. Ahora deberían estar debajo de la letra que elegiste.",
+            "Si no pasa nada al presionar un sensor de enrutamiento, compruébalo con la Ayuda de Entrada: presiona NVDA+1, presiona el sensor de enrutamiento, y NVDA debería decir que lleva el cursor hacia el objeto bajo la celda braille o lo activa.",
+            "Cuando termines, cierra el Bloc de notas con Alt+F4. Si pregunta si quieres guardar, elige No guardar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_tables",
+      "title": "Elegir tu Código Braille",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "El braille tiene distintos códigos. Hay un código para cada idioma. Dentro de un idioma suele haber braille sin contraer, también llamado grado 1, donde se escribe cada letra, y braille contraído, también llamado grado 2, que usa formas abreviadas para ahorrar espacio. También existe el braille computerizado, que usa ocho puntos y muestra exactamente una celda por cada carácter. NVDA llama tabla a cada uno de estos códigos, y tú eliges qué tabla usa. Presiona Enter para continuar.",
+          "hints": [
+            "Si todavía estás aprendiendo braille, elige una tabla sin contraer. Aparece cada letra, y no se abrevia nada.",
+            "El braille contraído cabe mejor en una pantalla pequeña, y por eso es popular entre lectores con experiencia.",
+            "El braille computerizado es útil para cosas que tienen que ser exactas, como direcciones de correo electrónico, contraseñas y código de programación."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "La elección se hace en las Opciones de NVDA. Presiona NVDA+N, luego P de Preferencias, luego O de Opciones. En la lista de categorías, presiona B hasta escuchar Braille. Después presiona Tab para recorrer las opciones. Después del botón Cambiar, que abre el diálogo Seleccionar Pantalla Braille, llegas a Tabla de Salida. Ese es el código que NVDA usa para mostrar braille en tu pantalla. Usa Flecha Arriba y Flecha Abajo para elegir uno. La primera opción, Automático, elige una tabla que corresponde al idioma en el que está el propio NVDA. Presiona Enter para continuar.",
+          "hints": [
+            "En la lista de categorías funciona la navegación por primera letra. Presiona B hasta que NVDA diga Braille. Si escuchas otra categoría, presiona B otra vez.",
+            "La lista de tablas es larga, porque abarca muchos idiomas, y está en orden alfabético. Presiona la primera letra del nombre de una tabla para saltar a ella.",
+            "Para el español, las opciones habituales son Español grado 1, que es sin contraer, y Español grado 2, que es contraído. También está Español computerizado de 8 puntos. Sus nombres empiezan por E: presiona E y sigue con Flecha Abajo hasta escucharlas."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "La siguiente opción es Tabla de Entrada. Es el código que NVDA espera cuando escribes en el teclado braille de tu pantalla. Puede ser distinto de la tabla de salida. Por ejemplo, podrías leer braille contraído y escribir sin contraer. Si tu pantalla no tiene teclado braille, esta opción no te afecta. Después viene una casilla de verificación llamada Expandir a braille computerizado para la palabra en el cursor. Cuando está marcada, la palabra en la que está tu cursor se muestra completa, sin contracciones, para que puedas comprobar su ortografía exacta. Presiona Enter para continuar.",
+          "hints": [
+            "La salida es lo que lees. La entrada es lo que escribes. Se ajustan por separado.",
+            "Expandir a braille computerizado para la palabra en el cursor es la razón por la que una palabra parece cambiar de forma cuando tu cursor llega a ella. Es a propósito.",
+            "Si te molesta que la palabra cambie, desmarca esa casilla. La palabra se queda entonces en el mismo código que el resto de la línea."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. Abre las Opciones de NVDA y ve a la categoría Braille. Ve con Tab hasta Tabla de Salida y escucha qué tabla está seleccionada. Si te sirve, presiona Escape para dejarlo todo como está. Si quieres otra, elígela, ve con Tab hasta Aceptar y presiona Enter. El braille de tu pantalla cambia al instante. Después vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Escape cierra las Opciones de NVDA sin cambiar nada. Aceptar aplica lo que elegiste.",
+            "Si de pronto la pantalla muestra un braille que no puedes leer, has elegido una tabla de un código que no conoces. Vuelve a la categoría Braille y elige otra vez, o elige Automático.",
+            "Tu elección se guarda con el resto de tus opciones de NVDA cuando NVDA se cierra."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_follow",
+      "title": "A Qué Sigue la Pantalla",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "En el capítulo 5 aprendiste que NVDA lleva la cuenta de dos lugares. Uno es el foco del sistema, con su cursor: el lugar adonde va lo que escribes. El otro es el objeto navegador, con el cursor de revisión, que mueves para explorar sin alterar nada. Tu pantalla braille puede seguir a cualquiera de los dos. NVDA lo llama seguimiento del braille, es decir, a qué queda atada la pantalla. Presiona Enter para continuar.",
+          "hints": [
+            "Seguir al foco significa que la pantalla muestra dónde están el foco de tu teclado y tu cursor.",
+            "Seguir a la revisión significa que la pantalla muestra dónde están el objeto navegador y el cursor de revisión.",
+            "Si la navegación por objetos es nueva para ti, esta lección tendrá más sentido después del capítulo 5. El braille funciona perfectamente sin cambiar esta opción."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Presiona NVDA+Control+T (comando de NVDA) para cambiar a qué sigue el braille. Cada pulsación pasa a la opción siguiente, y NVDA la anuncia. Hay tres opciones. Automático, que es la predeterminada: el braille sigue al foco, y pasa al cursor de revisión durante un rato cada vez que lo mueves a propósito. Al foco: el braille sigue solo al foco. A la revisión: el braille sigue solo al cursor de revisión. Automático le sirve a casi todo el mundo, así que si pruebas las otras, termina en automático. Presiona Enter para continuar.",
+          "hints": [
+            "La T viene de tether, que en inglés significa atar. NVDA más Control más T recorre automático, al foco y a la revisión.",
+            "Si tu pantalla parece atascada y no te sigue cuando te mueves con Tab, revisa primero esta opción. Puede que la hayan cambiado a la revisión.",
+            "La misma opción está en las Opciones de NVDA, en la categoría Braille, como un cuadro combinado llamado Braille sigue."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Hay una segunda opción, distinta, llamada modo braille. Presiona NVDA+Alt+T (comando de NVDA) para cambiar entre sus dos valores. Seguir cursores es el predeterminado y es el que has estado usando: la pantalla muestra dónde estás. Mostrar salida de voz muestra, en braille, todo lo que NVDA va diciendo. Ese modo es útil para leer anuncios que se dicen una vez y desaparecen, como una notificación. Presiona NVDA+Alt+T de nuevo para volver a seguir cursores. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA más Control más T elige a qué cursor sigue el braille. NVDA más Alt más T elige si el braille sigue a los cursores o muestra la voz.",
+            "En el modo mostrar salida de voz, la pantalla muestra lo que NVDA habría dicho incluso cuando la voz está desactivada.",
+            "Si tu pantalla muestra mensajes y anuncios pero nunca tu cursor, el modo braille está en mostrar salida de voz. Presiona NVDA+Alt+T."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Hablando de desactivar la voz: algunos lectores de braille trabajan sin voz alguna. Presiona NVDA+S (comando de NVDA) para recorrer los modos de voz de NVDA. Son hablar, que es la voz normal, a petición, desactivado y pitidos. NVDA anuncia cada modo cuando llegas a él. Con el modo de voz en desactivado, NVDA guarda silencio y tu pantalla braille lo lleva todo. Sigue presionando NVDA+S hasta escuchar hablar para recuperar la voz. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "NVDA más S, de speech, que es voz en inglés. Cada pulsación pasa al siguiente modo de voz.",
+            "Si alguna vez NVDA se queda en silencio sin que tú lo quisieras, presiona NVDA+S hasta escuchar hablar otra vez. Vale la pena recordarlo aunque nunca uses braille.",
+            "El modo a petición solo habla cuando haces una pregunta con un comando, como NVDA+T para el título. Se queda callado mientras te mueves."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_abbreviations",
+      "title": "Abreviaturas Braille de los Controles",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "La voz dice completo el tipo de cada control: botón, casilla de verificación, edición. En una pantalla braille pequeña eso desperdiciaría celdas valiosas. Por eso NVDA usa abreviaturas cortas en braille. Cuando conoces las más comunes, puedes leer un diálogo en braille con rapidez. Esta lección repasa las que más vas a encontrar. Aquí las letras están escritas por separado para que NVDA las diga con claridad. Presiona Enter para continuar.",
+          "hints": [
+            "La abreviatura normalmente viene justo después del nombre del control, en el mismo orden que usa la voz.",
+            "No necesitas memorizarlas todas hoy. Las cinco o seis más comunes cubren la mayor parte de lo que vas a leer.",
+            "La lista completa está en la Guía del Usuario, dentro de Braille, en una sección llamada Abreviaturas de tipos de Control, estado y regiones."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Estos son los tipos de control más comunes. Un botón es B T. Una casilla de verificación es C V. Un campo de edición, donde escribes, es C E. Un cuadro combinado es C C. Un botón de opción es B T O. Un enlace es E N L, y un enlace que ya visitaste es E N L V. Una lista es L S T. Un menú es M N, y un elemento de menú es E L M N. Un diálogo es D L G. Un encabezado son las letras E N seguidas de su nivel, así que un encabezado de nivel 2 es E N 2. Presiona Enter para continuar.",
+          "practiceText": "Guardar bt\nRecordarme cv\nNombre ce\nPaís cc\nCorreo electrónico bto\nContacto enl\nInicio enlv\nOpciones dlg\nen2 Primeros pasos",
+          "hints": [
+            "El área de práctica que hay debajo de este paso muestra cada abreviatura tal como aparece en una pantalla. Baja con las flechas hasta ella y lee cada línea en braille.",
+            "Casi todas las abreviaturas salen de las iniciales o de las primeras letras: botón es B T, casilla de verificación es C V, enlace es E N L, y diálogo es D L G.",
+            "En una página web, los puntos de referencia también tienen abreviaturas. Principal es P R I N, navegación es N A V, y búsqueda es B U S Q."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "El braille también muestra el estado de un control. Una casilla de verificación que está marcada muestra la forma de un recuadro lleno, hecha con tres celdas, y una que no está marcada muestra la forma de un recuadro vacío. Otros estados se muestran con palabras cortas o signos. S E L significa seleccionado. F L significa de solo lectura. R E Q significa un campo de formulario obligatorio. Tres asteriscos significan protegido, como en un campo de contraseña. S M N significa que el elemento abre un submenú. Un signo menos significa que el elemento se puede contraer, y un signo más significa que se puede expandir. Presiona Enter para continuar.",
+          "hints": [
+            "Los signos de marcado y sin marcar se aprenden mejor al tacto que con una descripción. Busca una casilla de verificación, presiona Espacio para cambiarla y nota cómo cambia el signo.",
+            "En una vista de árbol como el selector de lecciones de NVDA Coach, un signo más en un capítulo significa que se puede abrir, y un signo menos significa que está abierto.",
+            "En una tabla, C seguida de un número es la columna, y F seguida de un número es la fila. C 2 F 3 significa columna 2, fila 3."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. Abre el diálogo Opciones de NVDA: presiona NVDA+N, luego P, luego O. Presiona Tab despacio por el diálogo y, después de cada pulsación, lee tu pantalla. Encuentra un botón, una casilla de verificación, un cuadro combinado y un campo de edición, y fíjate en la abreviatura que hay después de cada nombre. Cuando los hayas encontrado, presiona Escape para cerrar las Opciones de NVDA sin cambiar nada. Vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "La categoría General, que es donde suelen abrirse las Opciones de NVDA, tiene varias casillas de verificación y cuadros combinados muy juntos.",
+            "Si el nombre de un control es demasiado largo para tu pantalla, desplázate hacia adelante. La abreviatura de su tipo viene después del nombre.",
+            "Presionar Escape deja cada opción como estaba. Recorrer un diálogo con Tab no cambia nada."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_input_and_comfort",
+      "title": "Escribir en Braille y Ajustes Finos",
+      "order": 8,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Si tu pantalla tiene un teclado braille, con seis u ocho teclas dispuestas como las de una máquina Perkins, puedes escribir en él y NVDA convierte tu braille en texto. El código que NVDA espera es la Tabla de Entrada que conociste antes en este capítulo. Con una tabla sin contraer, cada letra aparece en cuanto la escribes. Con una tabla contraída, NVDA espera hasta que presionas Espacio o Enter al final de una palabra, y entonces traduce la palabra entera. Si tu pantalla no tiene teclado braille, presiona Enter para pasar al siguiente paso.",
+          "hints": [
+            "No todas las pantallas tienen teclado braille, y unas pocas que lo tienen no admiten la escritura. La sección Pantallas Braille Admitidas de la Guía del Usuario dice cuáles.",
+            "Escribir braille contraído se siente con retraso, porque la palabra solo aparece cuando la terminas. Así es como debe funcionar.",
+            "Puedes usar el teclado braille y el teclado de la computadora a la vez. NVDA acepta los dos."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Tres teclas hacen trabajos especiales cuando escribes en braille. El punto 7 solo borra la última celda braille o el último carácter que escribiste, como Retroceso. El punto 8 solo traduce lo que has escrito y presiona Enter. Los puntos 7 y 8 juntos traducen lo que has escrito sin añadir un espacio ni presionar Enter. El punto 7 es la tecla que está justo por fuera del punto 3, bajo tu meñique izquierdo. El punto 8 es la tecla que está justo por fuera del punto 6, bajo tu meñique derecho. Presiona Enter para continuar.",
+          "hints": [
+            "El punto 7 es Retroceso. El punto 8 es Enter. Con esos dos tienes casi todo lo que necesitas.",
+            "Los puntos 7 y 8 juntos sirven para terminar una palabra contraída cuando no quieres un espacio después, por ejemplo antes de un signo de puntuación escrito con el teclado.",
+            "Para practicar, abre el Bloc de notas desde el menú Inicio y escribe unas cuantas palabras con el teclado braille. Ciérralo con Alt+F4 y elige No guardar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Ahora, tres opciones que hacen la lectura más cómoda. Todas están en las Opciones de NVDA, en la categoría Braille. Mostrar mensajes decide si los mensajes de NVDA aparecen en braille, y si desaparecen pasado un tiempo de espera o se quedan hasta que los descartas. Duración de mensajes fija el número de segundos. Si los mensajes desaparecen antes de que puedas leerlos, aumenta la duración, o elige la opción que los muestra indefinidamente. E Interrumpir la voz mientras se desplaza, que viene activada de forma predeterminada, evita que la voz hable encima de ti mientras lees. Presiona Enter para continuar.",
+          "hints": [
+            "Un mensaje es algo que NVDA te dice y que no está en la pantalla de la computadora, como la hora cuando presionas NVDA+F12. En braille reemplaza temporalmente lo que estabas leyendo.",
+            "Cuando los mensajes se muestran indefinidamente, un mensaje se queda hasta que presionas un sensor de enrutamiento o sigues adelante.",
+            "Si te gusta escuchar y leer al mismo tiempo, desactiva Interrumpir la voz mientras se desplaza."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Dos opciones más determinan cómo cabe el texto en la pantalla. Cortar texto decide qué pasa cuando una palabra no cabe al final de la pantalla. Puede cortar la palabra, cortarla y mostrar una marca, o pasar la palabra entera al siguiente tramo de pantalla para que nunca leas media palabra. En las versiones de NVDA anteriores a la 2026.3 esto era una casilla de verificación más sencilla llamada Ajuste de línea. Y Leer por párrafos hace que la pantalla recorra un párrafo entero de corrido en lugar de detenerse al final de cada línea de la pantalla de la computadora, algo que muchas personas prefieren para leer libros y documentos largos. Presiona Enter para continuar.",
+          "hints": [
+            "Cuando una palabra queda cortada entre dos tramos de pantalla, NVDA muestra los puntos 7 y 8 en la última celda como señal de que la palabra continúa.",
+            "La opción En los límites de las palabras es la más cómoda para leer. Desactivado es la que mete más texto en cada tramo de pantalla.",
+            "Con Leer por párrafos activado, las teclas de línea siguiente y línea anterior se mueven por párrafos."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Has terminado el capítulo de braille. Sabes conectar una pantalla, leer y desplazarte, enviar tu cursor a un punto con un sensor de enrutamiento, elegir un código braille, decidir a qué sigue la pantalla, leer las abreviaturas de los controles, escribir en braille y ajustarlo a tu gusto. Para las teclas exactas de tu propia pantalla, recuerda la sección Pantallas Braille Admitidas de la Guía del Usuario. Presiona Enter para finalizar esta lección y completar el capítulo Usar una Pantalla Braille.",
+          "hints": [
+            "La forma más rápida de ganar soltura es dejar tu pantalla conectada y mantener una mano sobre ella durante el trabajo de todos los días, incluso mientras escuchas la voz.",
+            "Todos los comandos de braille que tiene NVDA aparecen en el diálogo Gestos de Entrada, en la categoría Braille. Puedes asignar a cualquiera de ellos una tecla de tu pantalla o de tu teclado.",
+            "Este capítulo era opcional, así que terminarlo no cambia tu certificado. Aun así, es un logro de verdad."
+          ]
+        }
+      ]
+    }
+  ]
+}

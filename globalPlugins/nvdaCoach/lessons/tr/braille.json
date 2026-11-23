@@ -1,0 +1,374 @@
+{
+  "id": "braille",
+  "title": "Braille Ekran Kullanma",
+  "description": "Braille ekranı olan öğrenciler için isteğe bağlı bir bölüm. Ekranı nasıl bağlayacağınızı, nasıl okuyup kaydıracağınızı, imleç yönlendirme tuşlarını nasıl kullanacağınızı, braille kodunu nasıl seçeceğinizi ve braille ile nasıl yazacağınızı öğrenin. Bu bölüm bitirme sertifikanız için gerekli değildir.",
+  "order": 8,
+  "optional": true,
+  "lessons": [
+    {
+      "id": "braille_is_optional",
+      "title": "Bu Bölüm Size Göre mi?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Bu bölüm isteğe bağlıdır. Braille ekranı olan öğrenciler içindir; braille ekran, braille karakterleri oluşturmak için inip kalkan küçük iğnelerden oluşan bir sırası bulunan bir aygıttır. Sizde yoksa bu bölümün tamamını atlayabilirsiniz. Bitirme sertifikanız buna bağlı değildir. Devam etmek için Enter'a, burada durmak için Escape'e basın.",
+          "hints": [
+            "İsteğe bağlı, tam olarak bu demektir. NVDA Eğitmeni kursu bu dersler olmadan tamamlanmış sayar ve sertifikanız bu dersler olmadan verilir.",
+            "Daha sonra bir braille ekran edinirseniz bu bölüm ders seçicide yine burada olacak.",
+            "NVDA'yı kullanmak için braille bilmeniz gerekmez. Önceki bölümlerde öğretilen her şeyi yalnızca konuşma ile yapabilirsiniz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille ekranınız varsa NVDA onunla şunları yapar. NVDA seslendireceği her şeyi braille olarak da gösterebilir: üzerinde bulunduğunuz kontrolü, okuduğunuz metin satırını ve mesajları. Parmaklarınızla kendi hızınızda okuyabilir, bir sözcüğün yazılışını dokunarak kontrol edebilir ve sessizce çalışabilirsiniz. Ekranınızda braille klavye varsa onunla yazabilirsiniz de. Konuşma ve braille birlikte çalışır; isterseniz yalnızca birini de kullanabilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Braille, özellikle konuşmanın zayıf kaldığı şeylerde iyidir: tam yazılış, noktalama, sayılar ve sayfa düzeni.",
+            "Birçok kişi ikisini aynı anda kullanır: hız için konuşma, doğruluk için braille.",
+            "NVDA birçok dilin braille kodlarını hem kısaltmasız hem de kısaltmalı biçimleriyle destekler."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Başlamadan önce bir şey daha. Braille ekranların hepsi biraz farklı üretilir ve bir Focus'un tuşları bir Brailliant'ın veya bir Orbit'in tuşlarıyla aynı değildir. NVDA Eğitmeni her komutun ne yaptığını ve NVDA'nın ona ne ad verdiğini öğretir. Kendi ekranınızdaki tuşların tam karşılığı için NVDA Kullanıcı Rehberi'nde Desteklenen braille ekranlar adlı bir bölüm vardır; burada her modelin tuş atamaları listelenir. Kullanıcı Rehberi'ni NVDA+N, ardından Yardım için A, sonra Kullanıcı Rehberi için K ile açın. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "Kullanıcı Rehberi bir web sayfasıdır. Ekranınızın adını aratmak için NVDA+Kontrol+F tuşlarına basın veya NVDA+F7 ile Öğe Listesi'ni açıp Başlıklar'ı seçin.",
+            "Girdi Yardımı braille ekran tuşlarında da çalışır. NVDA+1 tuşlarına basın, ardından ekranınızdaki bir tuşa basın; NVDA o tuşun ne yaptığını söyler. Girdi Yardımı'nı kapatmak için yeniden NVDA+1 tuşlarına basın.",
+            "Ekranınızla birlikte gelen kitapçık, tuşlarının adlarını verir. Bu bölümde çalışırken onu yakınınızda tutun."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect_display",
+      "title": "Braille Ekranınızı Bağlama",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA birçok braille ekranı kendiliğinden bulabilir. Buna otomatik algılama denir ve varsayılan olarak açıktır. Çoğu durumda bağlanmak şu kadar basittir: ekranı USB kablosuyla bilgisayara takın, ekranı açın ve birkaç saniye bekleyin. Parmaklarınızın altında braille belirir. Ekranınız henüz bağlı değilse bunu şimdi deneyin. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Otomatik algılama güncel ekranların çoğuyla çalışır; buna HumanWare, Freedom Scientific, Help Tech, HIMS, Orbit, Baum, Eurobraille ve Seika modelleri ile standart HID braille protokolünü kullanan her ekran dahildir.",
+            "Bazı ekranların birden fazla bağlantı kipi vardır. Hiçbir şey olmazsa ekranın kendi menüsünde veya kılavuzunda ekran okuyucu kipi, terminal kipi veya HID kipi gibi bir ayar arayın.",
+            "Başlamak için en güvenilir yol USB kablosudur. Önce USB üzerinden çalıştırın, Bluetooth'u sonra ekleyin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bunun yerine Bluetooth ile bağlanmak için ekranın önce Windows ile eşleştirilmesi gerekir. Windows+I (Windows komutu) ile Windows Ayarları'nı açın, Bluetooth ve cihazlar bölümüne gidin ve ekranı oradan ekleyin. Eşleştirildikten sonra NVDA'nın otomatik algılaması onu tıpkı USB'de olduğu gibi bulur. Eşleştirmenin yalnızca bir kez yapılması gerekir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Eşleştirme NVDA'nın değil Windows'un işidir. NVDA yalnızca Windows'un zaten tanıdığı bir Bluetooth ekranı kullanabilir.",
+            "Windows eşleştirme sırasında bir PIN isterse ekranınızın kılavuzu bunun ne olduğunu söyler. Çoğu zaman 0000 veya 1234'tür.",
+            "Bluetooth ekranlar pillerini korumak için uykuya geçer. Braille durursa ekranı uyandırın ve NVDA'ya yeniden bağlanması için birkaç saniye tanıyın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Ekranınız otomatik olarak bulunmazsa onu kendiniz seçebilirsiniz. NVDA+Kontrol+A (NVDA komutu) tuşlarına basın. Bu, Braille ekran seçin iletişim kutusunu açar. İlk kontrol, Braille ekran adlı bir seçim kutusudur. Seçenekleri duymak için Yukarı ve Aşağı Ok tuşlarını kullanın. Varsayılan seçenek Otomatik'tir. Braille yok, braille'i kapatır. Geri kalanlar ekran üreticilerinin ve modellerinin adlarıdır. Kendinizinkini seçin, Sekme ile Tamam'a gidin ve Enter'a basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "NVDA artı Kontrol artı A. A harfini, İngilizcede bağlamak anlamına gelen attach sözcüğünün baş harfi olarak düşünün. NVDA menüsünü açmadan her yerden çalışır.",
+            "NVDA seçtiğiniz ekranı yükleyemezse bunu size söyler ve daha önce çalışan neyse onu kullanmayı sürdürür. Hiçbir şey bozulmamıştır. Kabloyu kontrol edip yeniden deneyin.",
+            "Bazı ekranlarda, NVDA'nın onlarla iletişim kurabilmesi için üreticinin sürücüsünün Windows'a kurulmuş olması gerekir. Kullanıcı Rehberi'nin Desteklenen braille ekranlar bölümü, gereken yerlerde bunu belirtir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aynı iletişim kutusunda Bağlantı noktası adlı bir seçim kutusu vardır. NVDA'nın ekrana nasıl ulaşacağını bu belirler: Otomatik, USB, Bluetooth veya bazen bir seri bağlantı noktası. Ekranınızın yönergeleri başka bir şey söylemedikçe bunu Otomatik'te bırakın. Ekranınız listede hiç yoksa yine de bir eklenti aracılığıyla destekleniyor olabilir. Bazı üreticiler NVDA sürücülerini, önceki bölümde kullanmayı öğrendiğiniz Eklenti Mağazası'nda yayımlar. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bağlantı noktası için neredeyse her zaman doğru seçim Otomatik'tir.",
+            "Sürücü eklentisi aramak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin ve ekranınızın veya üreticisinin adını aratın.",
+            "Aynı üreticinin ekranlarından aynı anda yalnızca birini bağlayın. NVDA'ya iki özdeş ekrandan hangisini kullanacağı söylenemez."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Çalıştığını kontrol edin. Ekranınız bağlıyken NVDA+Shift+C tuşlarına basarak bu pencereye dönün ve ekrana dokunun. Orada braille bulmalısınız: bu dersin metni veya odaktaki kontrolün adı. Bulursanız ekranınız bağlıdır ve bir sonraki derse hazırsınız. Ekran boşsa NVDA+Kontrol+A tuşlarına basın ve hangi ekranın seçili olduğunu kontrol edin. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "NVDA bir ekran bağlıyken başladığında braille olarak gösterdiği ilk şey, NVDA'nın başlatıldığını bildiren bir mesajdır.",
+            "Boş bir ekran genellikle üç şeyden biri demektir: ekran kapalıdır veya uykudadır, kablo gevşektir ya da Braille ekran seçin iletişim kutusunda Braille yok seçilidir.",
+            "Bir eğitmeniniz varsa, ekranı ilk kez bağlamak ondan yardım istemek için iyi bir andır. Ondan sonra NVDA kendiliğinden yeniden bağlanır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading_braille",
+      "title": "Braille ile Okuma ve Kaydırma",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Braille ekran, ekrandakilerin her seferinde kısa bir parçasını gösterir. Çoğu braille ekranda 14 ile 40 arasında hücre bulunur, bazılarında ise 80. Bir metin satırı çoğu zaman bundan uzundur; bu yüzden braille ile okumak, braille ekrandakini okuyup sonra ekranı ilerletmek demektir. Ekranı ilerletmeye kaydırma denir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Hücre, tek bir braille karakteridir: altı veya sekiz iğneden oluşan bir blok.",
+            "40 hücreli bir ekran, tipik bir metin satırının yaklaşık yarısını gösterir. 20 hücreli bir ekran yaklaşık dörtte birini gösterir.",
+            "Braille ekranı kaydırmak imlecinizi hareket ettirmez ve bilgisayar ekranında hiçbir şeyi değiştirmez. Yalnızca hangi bölümü okuduğunuzu değiştirir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA'nın iki kaydırma komutu vardır. Braille ekranını ileri alma komutu sonraki metin parçasını gösterir. Braille ekranını geriye alma komutu önceki parçayı gösterir. Çoğu ekranda bunlar, genellikle ekranın uçlarında veya ön kenarı boyunca bulunan kaydırma tuşları ya da başparmak tuşlarıdır. İleri kaydırırken bir satırın sonunu geçtiğinizde NVDA sonraki satırın başından devam eder; böylece yalnızca ileri kaydırma tuşuna basarak bütün bir belgeyi okuyabilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Ekranınızdaki kaydırma tuşlarını bulmak için NVDA+1 ile Girdi Yardımı'nı açın, ardından ekranın her iki ucundaki tuşları deneyin. Bulduğunuzda NVDA, Braille ekranını ileri alır veya geriye alır der. İşiniz bitince yeniden NVDA+1 tuşlarına basın.",
+            "Bir elle okurken diğer eli ileri kaydırma tuşunun üzerinde tutmak alışılmış tekniktir.",
+            "Kaydırma metin içinde ilerler. Yazma imlecinizi hareket ettirmez; yani okumakla hiçbir şey değişmez."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "İki okuma komutu daha vardır. Braille ekranını bir sonraki satıra taşıma ve Braille ekranını bir önceki satıra taşıma. Bunlar, satırın neresinde olursanız olun bütün bir satır atlar. Birçok ekranda bunlar için ayrı tuşlar bulunur. Bir belgede hızla aşağı inmek için bunları, bir satırı baştan sona okumak için kaydırmayı kullanın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "İleri ve geri kaydırma, bir satır boyunca braille ekran genişliğinde parçalarla ilerler. Sonraki satır ve önceki satır komutları ise bütün satırlar halinde aşağı ve yukarı gider.",
+            "Her ekran bu iki komuta kendi tuşlarını ayırmaz. Girdi Hareketleri iletişim kutusunda, Braille kategorisinde onlara tuş atayabilirsiniz.",
+            "Varsayılan olarak, braille ekranı kaydırdığınızda konuşma durur; böylece siz okurken araya girmez."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi, tam burada deneyin. Aşağıdaki alıştırma metni bu pencerenin içindedir. İçine girmek için klavyenizde Aşağı Ok tuşuna basın. İlk satırı braille ekranınızda parmaklarınızla okuyun. Okumaya devam etmek için ekranınızın ileri kaydırma tuşuna basın. Ardından, ekranınızda varsa sonraki satır ve önceki satır tuşlarını deneyin. Sonuna kadar okuduğunuzda devam etmek için Enter'a basın.",
+          "practiceText": "Bu, braille alıştırma metninin ilk satırıdır ve tamamını okumak için braille ekranınızı kaydırmanızı gerektirecek kadar uzundur.\nİkinci satır kısadır.\nBraille size bir sözcüğün büyük harfler ve noktalama işaretleri dahil tam olarak nasıl yazıldığını gösterir.\n2026 gibi sayıları ve ad@example.com adresindeki et işareti gibi sembolleri dokunarak kontrol etmek kolaydır.\nBu, alıştırma metninin son satırıdır.",
+          "hints": [
+            "Braille ekran hâlâ alıştırma metnini değil talimatı gösteriyorsa, Çalışma alanı yazan başlığa ulaşana kadar Aşağı Ok tuşuna birkaç kez daha basın.",
+            "Kaydırma tuşunuz hiçbir şey yapmıyorsa NVDA+1 ile Girdi Yardımı'nı açın ve tuşa basın. NVDA tuşun neye atandığını söyler. Girdi Yardımı'nı NVDA+1 ile kapatın.",
+            "Acele etmeyin. Braille ekranda okumak bedensel bir beceridir ve tıpkı klavye komutları gibi alıştırmayla hızlanır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Okurken isteyebileceğiniz bir şey daha var. NVDA braille ekranı sizin için sabit bir hızda kaydırabilir. Buna otomatik kaydırma denir ve NVDA 2026.2 ile gelmiştir. Açmak veya kapatmak için NVDA+Alt+K (NVDA komutu) tuşlarına basın. Açıkken NVDA+Alt+L onu hızlandırır, NVDA+Alt+J ise yavaşlatır. Bir imleç yönlendirme tuşuna bastığınızda, odak değiştiğinde veya sona ulaştığında kendiliğinden durur. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "K, otomatik kaydırmayı açıp kapatır. L hızlandırır. J yavaşlatır. Üçü de NVDA ve Alt ile birlikte basılır.",
+            "Otomatik kaydırma çalışırken bir şeyi yeniden okumak için geri kaydırmaya veya kısa bir satırı atlamak için ileri kaydırmaya yine basabilirsiniz.",
+            "Hız ayrıca NVDA Ayarları'nda, Braille kategorisindeki Otomatik kaydırma hızı kaydırıcısıyla da ayarlanabilir."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_cursor_routing",
+      "title": "Braille İmleci ve İmleç Yönlendirme Tuşları",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Yazı yazabileceğiniz bir yerdeyken braille size imlecinizin nerede olduğunu gösterir. İmleç, bir hücrenin en alttaki iki noktası olan 7 ve 8 numaralı noktalar olarak, üzerinde bulunduğu karakterin altında kalkık durur. Varsayılan olarak yanıp söner, yani düzenli biçimde inip kalkar; böylece onu dokunarak bulabilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "7 ve 8 numaralı noktalar, sekiz noktalı bir braille hücresinin fazladan gelen alt sırasıdır. Sıradan altı noktalı braille bunları kullanmaz; imleci göstermek için boşta olmalarının nedeni budur.",
+            "Yanıp sönme dikkatinizi dağıtıyorsa NVDA Ayarları'nda, Braille kategorisinde kapatılabilir: İmleç sinyali onay kutusunun işaretini kaldırın.",
+            "Seçili metin de seçilen her karakterin altında, yanıp sönmeyen 7 ve 8 numaralı noktalarla işaretlenir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Çoğu ekranda her hücrenin üstünde veya altında küçük bir düğme vardır. Bunlar imleç yönlendirme tuşlarıdır; her hücre için bir tane bulunur. Bir karakterin üzerindeki yönlendirme tuşuna basmak, imlecinizi doğrudan o karaktere taşır. Bu, braille'in en güçlü yanlarından biridir: hatayı parmağınızla bulursunuz, üstündeki düğmeye basarsınız ve imleciniz oradadır, düzeltmeye hazırdır. Satır boyunca ok tuşlarıyla ilerlemek gerekmez. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Yönlendirme, imleci bir yere göndermek demektir. Bir harfin üzerindeki yönlendirme tuşuna bir kez basarsınız ve imleç o harfin üzerindedir.",
+            "Yönlendirme tuşları küçüktür ve her hücre için bir tane vardır; bu yüzden hücrelerin hemen arkasında veya önünde bir sıra halinde dururlar.",
+            "Çok küçük veya düşük maliyetli birkaç ekranda yönlendirme tuşu yoktur. Kılavuzları imleci taşımanın başka bir yolunu anlatır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Yönlendirme tuşları ikinci bir iş daha yapar. Braille ekran metin yerine düğme, bağlantı veya onay kutusu gibi bir kontrol gösteriyorsa, onun üzerindeki bir yönlendirme tuşuna basmak, tıpkı Enter'a veya Boşluk tuşuna basmak gibi onu etkinleştirir. Yani bir iletişim kutusunda bir düğmenin adını braille ile okuyabilir ve düğmeye basmak için üzerindeki yönlendirme tuşuna basabilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Metinde yönlendirme tuşu imleci taşır. Bir kontrolde ise yönlendirme tuşu o kontrolü etkinleştirir.",
+            "Tarama kipindeki bir web sayfasında bir bağlantının üzerindeki yönlendirme tuşuna basmak o bağlantıyı açar.",
+            "NVDA braille olarak bir mesaj gösterdiğinde herhangi bir yönlendirme tuşuna basmak mesajı kapatır ve size yeniden bulunduğunuz yeri gösterir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Yönlendirme tuşları en iyi, taşıyacak bir imlecinizin olduğu gerçek bir belgede çalışır. Alıştırma yapmak için Not Defteri'ni açın: Windows tuşuna basın, not defteri yazın ve Enter'a basın. İçinde bilerek yapılmış bir yazım hatası olan bir cümle yazın. Hatayı parmağınızla bulun. Yanlış harfin üzerindeki yönlendirme tuşuna basın. Klavyenizde Delete tuşuna basın ve doğru harfi yazın. Denedikten sonra NVDA+Shift+C ile geri dönün ve bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "Yönlendirme tuşuna bastıktan sonra yanıp sönen 7 ve 8 numaralı noktaları arayın. Artık seçtiğiniz harfin altında olmalılar.",
+            "Yönlendirme tuşuna bastığınızda hiçbir şey olmuyorsa Girdi Yardımı ile kontrol edin: NVDA+1 tuşlarına basın, yönlendirme tuşuna basın; NVDA, tuşun imleci o braille hücresine taşıdığını ya da hücrenin üzerindeki nesneyi etkinleştirdiğini söylemelidir.",
+            "İşiniz bitince Not Defteri'ni Alt+F4 ile kapatın. Kaydedip kaydetmeyeceğinizi sorarsa Kaydetme'yi seçin."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_tables",
+      "title": "Braille Kodunuzu Seçme",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Braille'in farklı kodları vardır. Her dil için bir kod bulunur. Bir dilin içinde genellikle, her harfin tek tek yazıldığı ve derece 1 de denen kısaltmasız braille ile yer kazanmak için kısa biçimler kullanan ve derece 2 de denen kısaltmalı braille vardır. Bir de sekiz nokta kullanan ve her karakter için tam olarak bir hücre gösteren bilgisayar braille'i vardır. NVDA bu kodların her birine tablo der ve hangi tabloyu kullanacağını siz seçersiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Braille'i hâlâ öğreniyorsanız kısaltmasız bir tablo seçin. Her harf görünür ve hiçbir şey kısaltılmaz.",
+            "Kısaltmalı braille küçük bir ekrana daha fazla şey sığdırır; bu da onu deneyimli okurlar arasında yaygın kılar.",
+            "Bilgisayar braille'i e-posta adresleri, parolalar ve program kodu gibi tam olması gereken şeyler için kullanışlıdır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Seçim NVDA Ayarları'nda yapılır. NVDA+N tuşlarına, ardından Tercihler için T'ye, sonra Ayarlar için L'ye basın. Kategori listesinde Braille sözünü duyana kadar B harfine basın. Ardından ayarlar arasında ilerlemek için Sekme tuşuna basın. Braille ekran seçin iletişim kutusunu açan Değiştir düğmesinden sonra Çıktı tablosu'na ulaşırsınız. Bu, NVDA'nın ekranınızda braille göstermek için kullandığı koddur. Birini seçmek için Yukarı ve Aşağı Ok tuşlarını kullanın. İlk seçenek olan Otomatik, NVDA'nın kendisinin ayarlı olduğu dile uygun bir tablo seçer. Devam etmek için Enter'a basın.",
+          "hints": [
+            "B ile başlayan birden fazla kategori vardır; örneğin Braille ve Belge Formatları. NVDA Braille diyene kadar B harfine basın.",
+            "Tablo listesi uzundur, çünkü birçok dili kapsar ve alfabetik sıradadır. Bir tabloya atlamak için adının ilk harfine basın.",
+            "Türkçe için olağan seçenekler, kısaltmasız olan Türkçe derece1 ve kısaltmalı olan Türkçe derece 2 tablolarıdır. Bunlara atlamak için adlarını duyana kadar T harfine basın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sonraki ayar Girdi tablosu'dur. Bu, ekranınızın braille klavyesinde yazarken NVDA'nın beklediği koddur. Çıktı tablosundan farklı olabilir. Örneğin kısaltmalı braille okuyup kısaltmasız yazabilirsiniz. Ekranınızda braille klavye yoksa bu ayar sizin için önemli değildir. Ondan sonra İmleç altındaki sözcüğü bilgisayar braille olarak genişlet adlı bir onay kutusu gelir. İşaretliyken, imlecinizin üzerinde bulunduğu sözcük kısaltmasız olarak tam haliyle gösterilir; böylece tam yazılışını kontrol edebilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Çıktı okuduğunuzdur. Girdi yazdığınızdır. İkisi ayrı ayrı ayarlanır.",
+            "İmleç altındaki sözcüğü bilgisayar braille olarak genişlet ayarı, imleciniz bir sözcüğün üzerine geldiğinde o sözcüğün biçim değiştirir gibi olmasının nedenidir. Bu bilerek böyledir.",
+            "Sözcüğün değişmesi sizi rahatsız ediyorsa o kutunun işaretini kaldırın. O zaman sözcük, satırın geri kalanıyla aynı kodda kalır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. NVDA Ayarları'nı açın ve Braille kategorisine gidin. Sekme ile Çıktı tablosu'na gidin ve hangi tablonun seçili olduğunu dinleyin. Size uygunsa her şeyi olduğu gibi bırakmak için Escape tuşuna basın. Farklı bir tablo istiyorsanız onu seçin, Sekme ile Tamam'a gidin ve Enter'a basın. Ekranınızdaki braille hemen değişir. Ardından NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "Escape, NVDA Ayarları'nı hiçbir şeyi değiştirmeden kapatır. Tamam, seçtiğinizi uygular.",
+            "Ekran birdenbire okuyamadığınız bir braille gösterirse bilmediğiniz bir kodun tablosunu seçmişsinizdir. Braille kategorisine dönün ve yeniden seçin veya Otomatik'i seçin.",
+            "Seçiminiz, NVDA kapanırken diğer NVDA ayarlarınızla birlikte kaydedilir."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_follow",
+      "title": "Braille Ekran Neyi Takip Eder?",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "5. Bölümde NVDA'nın iki yeri izlediğini öğrendiniz. Biri, imleciyle birlikte sistem odağıdır: yazdıklarınızın gittiği yer. Diğeri, hiçbir şeyi bozmadan keşfetmek için dolaştırdığınız inceleme imleciyle birlikte dolaşım nesnesidir. Braille ekranınız bunlardan herhangi birini takip edebilir. NVDA buna braille'in taşınması der; yani braille ekranın bir şeye bağlanıp onunla birlikte hareket etmesi. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Sistem odağına bağlı olması, braille ekranın klavye odağınızın ve imlecinizin bulunduğu yeri göstermesi demektir.",
+            "İnceleme imlecine bağlı olması, braille ekranın dolaşım nesnesinin ve inceleme imlecinin bulunduğu yeri göstermesi demektir.",
+            "Nesne dolaşımı sizin için yeniyse bu ders 5. Bölümden sonra daha anlaşılır olacaktır. Braille, bu ayarı değiştirmeden de gayet iyi çalışır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille'in neye bağlı olacağını değiştirmek için NVDA+Kontrol+T (NVDA komutu) tuşlarına basın. Her basış bir sonraki seçeneğe geçer ve NVDA onu duyurur. Üç seçenek vardır. Varsayılan olan otomatik olarak: braille odağı takip eder ve inceleme imlecini bilerek hareket ettirdiğinizde bir süreliğine ona geçer. Sistem odağı: braille yalnızca odağı takip eder. İnceleme imleci: braille yalnızca inceleme imlecini takip eder. Otomatik olarak seçeneği hemen herkese uygundur; bu yüzden diğerlerini denerseniz sonunda otomatik olarak seçeneğinde bırakın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "T harfi, İngilizcede bağlamak anlamına gelen tether sözcüğünden gelir. NVDA artı Kontrol artı T; otomatik olarak, sistem odağı ve inceleme imleci arasında sırayla geçiş yapar.",
+            "Sekme tuşuyla dolaşırken braille ekranınız takılmış gibiyse ve sizi takip etmiyorsa önce bu ayarı kontrol edin. İnceleme imleci olarak değiştirilmiş olabilir.",
+            "Aynı ayar NVDA Ayarları'nda, Braille kategorisinde Braille taşınsın adlı bir seçim kutusu olarak bulunur."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bundan farklı ikinci bir ayar daha vardır; adı braille kipidir. İki seçeneği arasında geçiş yapmak için NVDA+Alt+T (NVDA komutu) tuşlarına basın. İmleçleri takip et varsayılandır ve şimdiye kadar kullandığınız budur: braille ekran nerede olduğunuzu gösterir. Konuşma çıktısını göster ise NVDA ne söylüyorsa onu braille olarak gösterir. Bu kip, bildirim gibi bir kez söylenip kaybolan duyuruları okumak için kullanışlıdır. İmleçleri takip et kipine dönmek için yeniden NVDA+Alt+T tuşlarına basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "NVDA artı Kontrol artı T, braille'in hangi imleci takip edeceğini seçer. NVDA artı Alt artı T ise braille'in imleçleri mi takip edeceğini yoksa konuşmayı mı göstereceğini seçer.",
+            "Konuşma çıktısını göster kipinde braille ekran, konuşma kapalıyken bile NVDA'nın söyleyeceği şeyi gösterir.",
+            "Braille ekranınız mesajları ve duyuruları gösteriyor ama imlecinizi hiç göstermiyorsa braille kipi konuşma çıktısını göster olarak ayarlanmıştır. NVDA+Alt+T tuşlarına basın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Konuşmayı kapatmaktan söz etmişken: bazı braille okurları hiç konuşma olmadan çalışır. NVDA'nın konuşma modları arasında geçiş yapmak için NVDA+S (NVDA komutu) tuşlarına basın. Bunlar normal konuşma olan konuşma, isteğe bağlı, kapalı ve bipleme modlarıdır. NVDA her moda geldiğinizde onu duyurur. Konuşma modu kapalı olarak ayarlandığında NVDA sessizdir ve her şeyi braille ekranınız taşır. Konuşmayı geri getirmek için konuşma sözünü duyana kadar NVDA+S tuşlarına basmaya devam edin. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "NVDA artı S. S harfi, İngilizcede konuşma anlamına gelen speech sözcüğünden gelir. Her basış bir sonraki konuşma moduna geçer.",
+            "NVDA bir gün siz istemeden susarsa, yeniden konuşma sözünü duyana kadar NVDA+S tuşlarına basın. Braille'i hiç kullanmasanız bile bunu aklınızda tutmaya değer.",
+            "İsteğe bağlı modu, yalnızca başlık için NVDA+T gibi bir komutla soru sorduğunuzda konuşur. Siz dolaşırken sessiz kalır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_abbreviations",
+      "title": "Kontroller için Braille Kısaltmaları",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Konuşma her kontrolün türünü tam olarak söyler: düğme, onay kutusu, yazı alanı. Küçük bir braille ekranda bu, değerli hücreleri boşa harcar. Bu yüzden NVDA braille'de kısa kısaltmalar kullanır. Yaygın olanları öğrendikten sonra bir iletişim kutusunu braille ile hızlıca okuyabilirsiniz. Bu ders en çok karşılaşacaklarınızın üzerinden geçer. Harfler burada, NVDA onları açıkça seslendirsin diye ayrı ayrı yazılmıştır. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Kısaltma normalde kontrolün adından hemen sonra gelir; konuşmanın kullandığı sırayla aynıdır.",
+            "Bugün hepsini ezberlemeniz gerekmez. En yaygın beş altı tanesi okuyacaklarınızın çoğunu karşılar.",
+            "Tam liste Kullanıcı Rehberi'nde, Braille başlığı altında, Braille Kontrol türü, Durumu ve Sınırimi kısaltmaları adlı bölümdedir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "İşte en yaygın kontrol türleri. Düğme, D Ğ M olarak gösterilir. Onay kutusu, O K olarak gösterilir. İçine yazı yazdığınız yazı alanı Y Z A olur. Seçim kutusu S K olur. Seçim düğmesi S D olur. Bağlantı L N K, daha önce ziyaret ettiğiniz bağlantı ise Z B L N olur. Liste L S T olur. Menü M N Ü, menü öğesi ise M N Ü Ö Ğ E olur. İletişim kutusu İ K olur. Başlık, B harfi ve ardından seviyesiyle gösterilir; yani 2. seviye bir başlık B 2 olur. Devam etmek için Enter'a basın.",
+          "practiceText": "Kaydet dğm\nBeni hatırla ok\nAd yza\nÜlke sk\nE-posta sd\nBize ulaşın lnk\nAna sayfa zbln\nSeçenekler ik\nb2 Başlarken",
+          "hints": [
+            "Bu adımın altındaki çalışma alanı, her kısaltmayı braille ekranda göründüğü biçimde gösterir. Ok tuşuyla aşağı inerek içine girin ve her satırı braille ile okuyun.",
+            "Kısaltmaların bir kısmı sözcüğün ünlüleri atılmış halidir: düğme D Ğ M olur, liste L S T olur. Bir kısmı da sözcüklerin baş harfleridir: onay kutusu O K, iletişim kutusu İ K olur.",
+            "Bir web sayfasında sınır imlerinin de kısaltmaları vardır. Ana bölüm A N A, dolaşım D L Ş M, arama ise A R A olur."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille bir kontrolün durumunu da gösterir. İşaretli bir onay kutusu, üç hücreden oluşan dolu bir kutu şekli gösterir; işaretli olmayan ise boş bir kutu şekli gösterir. Diğer durumlar kısa sözcüklerle veya işaretlerle gösterilir. S E Ç, seçili demektir. S O, salt okunur demektir. G R K L, doldurulması gerekli bir form alanı demektir. Üç yıldız işareti, parola alanında olduğu gibi güvenli demektir. A L T M N U, öğenin bir alt menü açtığı anlamına gelir. Eksi işareti öğenin daraltılabileceği, artı işareti ise genişletilebileceği anlamına gelir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "İşaretli ve işaretsiz işaretlerini anlatımla değil dokunarak öğrenmek daha kolaydır. Bir onay kutusu bulun, durumunu değiştirmek için Boşluk tuşuna basın ve işaretin nasıl değiştiğini hissedin.",
+            "NVDA Eğitmeni'nin ders seçicisi gibi bir ağaç görünümünde, bir bölümdeki artı işareti onun açılabileceği, eksi işareti ise açık olduğu anlamına gelir.",
+            "Bir tabloda S Ü T ve ardından gelen sayı sütunu, S A T ve ardından gelen sayı satırı gösterir. S Ü T 2 ve S A T 3; sütun 2, satır 3 demektir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. NVDA Ayarları iletişim kutusunu açın: NVDA+N tuşlarına, ardından T'ye, sonra L'ye basın. İletişim kutusunda Sekme tuşuna yavaş yavaş basarak ilerleyin ve her basıştan sonra braille ekranınızı okuyun. Bir düğme, bir onay kutusu, bir seçim kutusu ve bir yazı alanı bulun ve her adın ardından gelen kısaltmaya dikkat edin. Bunları bulduğunuzda NVDA Ayarları'nı hiçbir şeyi değiştirmeden kapatmak için Escape tuşuna basın. NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "NVDA Ayarları'nın genellikle açıldığı yer olan Genel kategorisinde, birbirine yakın birkaç onay kutusu ve seçim kutusu vardır.",
+            "Bir kontrolün adı braille ekranınıza sığmayacak kadar uzunsa ileri kaydırın. Türünün kısaltması addan sonra gelir.",
+            "Escape'e basmak her ayarı olduğu gibi bırakır. Bir iletişim kutusunda Sekme tuşuyla dolaşmak hiçbir şeyi değiştirmez."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_input_and_comfort",
+      "title": "Braille ile Yazma ve İnce Ayar",
+      "order": 8,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Ekranınızda, Perkins braille daktilosu gibi dizilmiş altı veya sekiz tuşlu bir braille klavye varsa onunla yazabilirsiniz ve NVDA braille'inizi metne çevirir. NVDA'nın hangi kodu beklediğini, bu bölümde daha önce karşılaştığınız Girdi tablosu belirler. Kısaltmasız bir tabloda her harf, siz yazar yazmaz görünür. Kısaltmalı bir tabloda NVDA, sözcüğün sonunda Boşluk veya Enter tuşuna basmanızı bekler ve ardından bütün sözcüğü çevirir. Ekranınızda braille klavye yoksa bir sonraki adıma geçmek için Enter'a basın.",
+          "hints": [
+            "Her ekranda braille klavye yoktur ve klavyesi olan birkaç ekranda da yazma desteklenmez. Hangileri olduğunu Kullanıcı Rehberi'nin Desteklenen braille ekranlar bölümü söyler.",
+            "Kısaltmalı braille ile yazmak gecikmeli gibi gelir, çünkü sözcük ancak siz onu bitirdiğinizde görünür. Bu böyle çalışacak şekilde tasarlanmıştır.",
+            "Braille klavyeyi ve bilgisayar klavyesini birlikte kullanabilirsiniz. NVDA ikisini de kabul eder."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille ile yazarken üç tuş özel işler görür. Tek başına 7. nokta, tıpkı Backspace gibi, yazdığınız son braille hücresini veya karakteri siler. Tek başına 8. nokta, yazdıklarınızı çevirir ve Enter'a basar. 7. ve 8. noktalar birlikte, boşluk eklemeden ve Enter'a basmadan yazdıklarınızı çevirir. 7. nokta, 3. noktanın hemen dışındaki tuştur ve sol serçe parmağınızın altındadır. 8. nokta, 6. noktanın hemen dışındaki tuştur ve sağ serçe parmağınızın altındadır. Devam etmek için Enter'a basın.",
+          "hints": [
+            "7. nokta Backspace'tir. 8. nokta Enter'dır. Bu ikisi ihtiyacınız olanların çoğunu karşılar.",
+            "7. ve 8. noktalar birlikte, kısaltmalı bir sözcüğü ardından boşluk istemediğinizde bitirmek içindir; örneğin klavyeden yazılacak bir noktalama işaretinden önce.",
+            "Alıştırma yapmak için Başlat menüsünden Not Defteri'ni açın ve braille klavyede birkaç sözcük yazın. Alt+F4 ile kapatın ve Kaydetme'yi seçin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi okumayı daha rahat hale getiren üç ayar. Hepsi NVDA Ayarları'nda, Braille kategorisindedir. Mesajları göster, NVDA'nın mesajlarının braille'de görünüp görünmeyeceğini ve bir zaman aşımından sonra mı kaybolacaklarını yoksa siz kapatana kadar mı kalacaklarını belirler. Mesaj zaman aşımı, saniye sayısını ayarlar. Mesajlar siz okuyamadan kayboluyorsa zaman aşımını artırın veya Süresiz olarak göster seçeneğini seçin. Varsayılan olarak açık olan Kaydırma sırasında konuşmayı kesme ise siz okurken konuşmanın araya girmesini önler. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Mesaj, NVDA+F12 tuşlarına bastığınızda söylenen saat gibi, NVDA'nın size bildirdiği ama ekranda bulunmayan bir şeydir. Braille'de, okuduğunuz şeyin yerini geçici olarak alır.",
+            "Mesajlar süresiz olarak gösterildiğinde bir mesaj, siz bir yönlendirme tuşuna basana veya başka bir yere geçene kadar kalır.",
+            "Aynı anda hem dinlemeyi hem de okumayı seviyorsanız Kaydırma sırasında konuşmayı kesme ayarını kapatın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "İki ayar daha, metnin braille ekrana nasıl sığacağını biçimlendirir. Metin kaydırma, bir sözcük braille ekranın sonuna sığmadığında ne olacağını belirler. Sözcüğü bölebilir, bölüp bir işaret gösterebilir ya da hiç yarım sözcük okumamanız için bütün sözcüğü bir sonraki ekran dolusu metne taşıyabilir. NVDA'nın 2026.3'ten önceki sürümlerinde bu, daha basit bir onay kutusuydu. Paragraf bazında oku ise braille ekranın, bilgisayar ekranındaki her satırın sonunda durmak yerine bütün bir paragraf boyunca akmasını sağlar; birçok kişi kitap ve uzun belge okurken bunu tercih eder. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bir sözcük iki ekran dolusu metin arasında bölündüğünde NVDA, sözcüğün devam ettiğinin işareti olarak son hücrede 7 ve 8 numaralı noktaları gösterir.",
+            "Okumak için en rahat seçenek Sözcük sınırlarında seçeneğidir. Kapalı seçeneği ise her ekran dolusuna en çok metni sığdırır.",
+            "Paragraf bazında oku açıkken sonraki satır ve önceki satır tuşları paragraf paragraf ilerler."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Braille bölümünü bitirdiniz. Artık bir braille ekranı bağlamayı, okuyup kaydırmayı, bir yönlendirme tuşuyla imlecinizi bir noktaya göndermeyi, braille kodu seçmeyi, braille ekranın neyi takip edeceğine karar vermeyi, kontrollerin kısaltmalarını okumayı, braille ile yazmayı ve braille'i kendinize göre ayarlamayı biliyorsunuz. Kendi ekranınızdaki tuşların tam karşılığı için Kullanıcı Rehberi'nin Desteklenen braille ekranlar bölümünü unutmayın. Bu dersi bitirmek ve Braille Ekran Kullanma bölümünü tamamlamak için Enter tuşuna basın.",
+          "hints": [
+            "Akıcılık kazanmanın en hızlı yolu, braille ekranınızı bağlı bırakmak ve günlük işlerinizde, konuşmayı dinlerken bile bir elinizi onun üzerinde tutmaktır.",
+            "NVDA'nın bütün braille komutları Girdi Hareketleri iletişim kutusunda, Braille kategorisinde listelenir. Bunlardan herhangi birine braille ekranınızda veya klavyenizde bir tuş atayabilirsiniz.",
+            "Bu bölüm isteğe bağlıydı; bu yüzden onu bitirmek sertifikanızı değiştirmez. Yine de gerçek bir başarıdır."
+          ]
+        }
+      ]
+    }
+  ]
+}

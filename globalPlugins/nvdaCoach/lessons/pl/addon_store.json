@@ -1,0 +1,518 @@
+{
+  "id": "addon_store",
+  "title": "Dodatki i Add-on Store",
+  "description": "Dowiedz się, czym są dodatki do NVDA, jak bezpiecznie z nich korzystać, jak poruszać się po Add-on Store oraz jak instalować, aktualizować, wyłączać i usuwać dodatki. Rozdział kończy się przeglądem 25 najczęściej pobieranych dodatków.",
+  "order": 7,
+  "lessons": [
+    {
+      "id": "what_are_addons",
+      "title": "Czym są dodatki?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Dodatek to niewielki pakiet, który daje NVDA coś, czego program nie ma od razu po instalacji. Z jednego dodatku korzystasz właśnie teraz: NVDA Coach jest dodatkiem. Dodatki robią trzy rodzaje rzeczy. Jedne dodają lub poprawiają obsługę konkretnego programu. Inne dodają kolejne syntezatory mowy albo sterowniki monitorów brajlowskich. Jeszcze inne dodają lub zmieniają funkcje samego NVDA, na przykład historię schowka albo zegar. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Pomyśl o dodatkach tak jak o aplikacjach w telefonie. NVDA działa bez żadnego z nich, a każdy dodany dodatek daje mu jedną umiejętność więcej.",
+            "Dodatki tworzą osoby ze społeczności NVDA oraz niektóre firmy. Nie tworzy ich NV Access, czyli organizacja, która tworzy NVDA.",
+            "Nigdy nie musisz instalować żadnego dodatku. Wszystko, czego uczy pierwszych sześć rozdziałów NVDA Coach, działa w NVDA dokładnie w takiej postaci, w jakiej został zainstalowany."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA ma wbudowane miejsce do wyszukiwania dodatków. Nazywa się Add-on Store, czyli sklep z dodatkami. Każdy dodatek ze sklepu można pobrać za darmo. Kilka z nich, głównie komercyjne głosy, pobiera się za darmo, ale do działania potrzebują płatnej licencji. Jeśli zainstalujesz taki dodatek i zmienisz zdanie, możesz go po prostu usunąć. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Darmowe pobranie nie zawsze oznacza darmowe używanie. Jeśli trzeba kupić licencję, jest to napisane w opisie dodatku.",
+            "Add-on Store potrzebuje połączenia z internetem, aby pokazać, co jest dostępne. Dodatki, które już masz zainstalowane, działają dalej bez internetu.",
+            "W sklepie jest kilkaset dodatków. Trzy ostatnie lekcje tego rozdziału przedstawiają 25 najczęściej pobieranych, żebyś miał od czego zacząć."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Zanim cokolwiek zainstalujesz, poznaj najważniejszą informację w tym rozdziale. Dodatków w Add-on Store nie sprawdza ani nie zatwierdza NV Access ani nikt inny. Dodatek może zrobić wszystko to, co może zrobić NVDA, a to obejmuje odczytywanie Twoich danych osobowych. Każdy dodatek zgłoszony do sklepu jest skanowany pod kątem znanych wirusów przez usługę o nazwie VirusTotal, ale czysty wynik skanowania nie jest gwarancją. Dlatego traktuj dodatek jak każdy inny pobierany program: instaluj go tylko wtedy, gdy ufasz jego źródłu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Sklep jest katalogiem, a nie znakiem jakości. To, że dodatek się w nim znajduje, nie oznacza, że NV Access go przetestowało.",
+            "Skanowanie antywirusowe wykrywa tylko to, co było już znane w chwili zgłoszenia dodatku. Może się też mylić w obie strony.",
+            "NVDA pokazuje to samo ostrzeżenie przy pierwszym otwarciu Add-on Store. Spotkasz je w następnej lekcji."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jak zdecydować, czy można zaufać dodatkowi? Oto cztery rzeczy, które może sprawdzić każdy. Po pierwsze: dowiedz się, kto go stworzył i od jak dawna tworzy dodatki. Po drugie: sprawdź, czy dodatek jest regularnie aktualizowany. Po trzecie: przeczytaj, co mówią inni użytkownicy, korzystając w sklepie z działania Recenzje społeczności, które poznasz w tym rozdziale. Po czwarte: zapytaj innych użytkowników NVDA, na przykład na liście dyskusyjnej użytkowników NVDA albo w mediach społecznościowych. Jeśli nadal nie masz pewności, nie instaluj dodatku. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Dodatek, którego wiele osób używa od lat i który wciąż dostaje aktualizacje, jest znacznie bezpieczniejszym wyborem niż taki, o którym nikt nie słyszał.",
+            "Recenzje społeczności piszą inni użytkownicy NVDA. Otwierają się jako strona internetowa, więc czyta się je poleceniami trybu przeglądania z rozdziału 4, Tryb przeglądania i nawigacja po stronach internetowych.",
+            "Jeśli masz instruktora, zapytaj go, których dodatków używa i które poleca. To bardzo dobry sposób na początek."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_addon_store",
+      "title": "Otwieranie Add-on Store",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Add-on Store znajduje się w podmenu Narzędzia w menu NVDA. Aby go otworzyć, naciśnij NVDA+N (polecenie NVDA), aby otworzyć menu NVDA, następnie naciśnij N jak Narzędzia, a potem A jak Add-on Store. Nie musisz robić tego jeszcze teraz. Najpierw dwa następne kroki powiedzą Ci, co usłyszysz i jak tutaj wrócić. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus N otwiera menu NVDA. Litera N przechodzi do pozycji Narzędzia i ją otwiera. Litera A uruchamia Add-on Store.",
+            "Jeśli naciśnięcie litery w menu nie działa, znajdź Narzędzia strzałką w dół, naciśnij strzałkę w prawo albo Enter, aby otworzyć podmenu, potem przejdź strzałką w dół do pozycji Add-on Store i naciśnij Enter.",
+            "Sklep nie ma własnego skrótu klawiszowego. Możesz mu go później przypisać w oknie dialogowym Zdarzenia wejścia, które znajduje się w podmenu Opcje w menu NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Przy pierwszym otwarciu Add-on Store NVDA pokazuje okno dialogowe o nazwie Ostrzeżenie Add-on Store. Powtarza ono to, czego nauczyłeś się w poprzedniej lekcji: dodatki tworzy społeczność, nie są weryfikowane przez NV Access i mogą mieć dostęp do Twoich danych osobowych. W oknie jest pole wyboru o nazwie Nie pokazuj więcej tego komunikatu oraz przycisk OK. Naciśnij Tab (polecenie systemu Windows), aby dojść do przycisku OK, i naciśnij Enter. Jeśli nie chcesz słyszeć ostrzeżenia za każdym razem, najpierw naciśnij spację na polu wyboru. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Jeśli nie usłyszysz ostrzeżenia, ktoś już wcześniej zaznaczył na tym komputerze pole Nie pokazuj więcej tego komunikatu. To nic złego. Sklep po prostu się otworzy.",
+            "Aby przeczytać ostrzeżenie jeszcze raz, zanim je zaakceptujesz, naciśnij NVDA+Tab, aby usłyszeć kontrolkę, która ma fokus, albo przejdź do tekstu ostrzeżenia poleceniami nawigacji po obiektach z rozdziału 5, Nawigacja po obiektach.",
+            "Naciśnięcie OK niczego nie instaluje. Potwierdza tylko, że przeczytałeś ostrzeżenie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy Add-on Store jest otwarty, będziesz przechodzić tam i z powrotem między nim a tym oknem. Aby wrócić do NVDA Coach, naciśnij NVDA+Shift+C. Aby wrócić do sklepu, naciskaj Alt+Tab (polecenie systemu Windows), aż usłyszysz Add-on Store. Aby całkowicie zamknąć sklep, naciśnij w nim Escape. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus Shift plus C zawsze przenosi Cię z powrotem do tej lekcji, o ile nie jesteś w programie Microsoft Excel.",
+            "Alt plus Tab omawiała ostatnia lekcja rozdziału 1, Pierwsze kroki z NVDA. Przytrzymaj Alt, naciśnij krótko Tab, posłuchaj i zwolnij Alt, gdy usłyszysz okno, którego szukasz.",
+            "Jeśli stracisz orientację, naciśnij NVDA+T, aby usłyszeć tytuł bieżącego okna."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Naciśnij NVDA+N, potem N, potem A. Jeśli pojawi się ostrzeżenie, przejdź klawiszem Tab do OK i naciśnij Enter. Gdy sklep się otworzy, naciśnij NVDA+T (polecenie NVDA), aby odczytać jego tytuł. Ponieważ masz już zainstalowany co najmniej jeden dodatek, NVDA Coach, tytuł będzie brzmiał mniej więcej tak: Add-on Store, Zainstalowane. Fokus jest na liście, a NVDA Coach jest jedną z jej pozycji. Poruszaj się po niej strzałką w górę i strzałką w dół. Potem naciśnij NVDA+Shift+C, aby tu wrócić, i naciśnij Enter, aby zakończyć tę lekcję. Sklep możesz zostawić otwarty na następną lekcję.",
+          "hints": [
+            "Na komputerze bez żadnych dodatków sklep otwiera się na karcie Odkrywaj dodatki. U Ciebie otwiera się na karcie Zainstalowane, ponieważ NVDA Coach jest zainstalowany.",
+            "Jeśli lista wydaje się pusta albo słyszysz Ładowanie dodatków, poczekaj kilka sekund. Sklep pobiera informacje z internetu.",
+            "Jeśli nic się nie otwiera, NVDA może działać w trybie bezpiecznym albo z miejsca, w którym dodatki są wyłączone. Zapytaj instruktora albo administratora systemu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "store_layout",
+      "title": "Orientacja w sklepie",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Add-on Store to jedno okno z czterema kartami. Każda karta pokazuje inną listę dodatków. Karta Zainstalowane pokazuje to, co masz. Karta Do zaktualizowania pokazuje zainstalowane dodatki, na które czeka nowsza wersja. Karta Odkrywaj dodatki pokazuje wszystko, co możesz zainstalować. Karta Zainstalowane niezgodne pokazuje posiadane dodatki, które nie działają z Twoją wersją NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Cztery karty: Zainstalowane, Do zaktualizowania, Odkrywaj dodatki i Zainstalowane niezgodne. Najczęściej będziesz używać kart Zainstalowane i Odkrywaj dodatki.",
+            "Tytuł okna zawsze mówi, na której karcie jesteś. Naciśnij NVDA+T, aby go usłyszeć.",
+            "Pusta karta Do zaktualizowania to dobra wiadomość. Oznacza, że wszystko, co masz, jest aktualne."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby przejść z jednej karty na następną, naciśnij Control+Tab (polecenie systemu Windows). Aby przejść wstecz, naciśnij Control+Shift+Tab. Działa to z każdego miejsca w sklepie, a NVDA ogłasza nazwę karty, na którą trafiasz. Spróbuj teraz: przejdź do sklepu za pomocą Alt+Tab, naciskaj Control+Tab, aż usłyszysz Odkrywaj dodatki, a potem wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Control plus Tab to polecenie systemu Windows. Przechodzi między kartami w wielu programach, między innymi w przeglądarkach internetowych i oknach ustawień.",
+            "Możesz też naciskać Shift+Tab, aż dojdziesz do samej kontrolki kart, a potem zmieniać karty strzałką w lewo i strzałką w prawo.",
+            "Po zmianie karty lista wypełnia się przez chwilę. Jeśli słyszysz Ładowanie dodatków, daj jej kilka sekund."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Każda karta jest zbudowana tak samo. Naciskanie klawisza Tab prowadzi Cię przez jej części w tej kolejności. Najpierw lista dodatków. Potem szczegóły wybranego dodatku: opis, który możesz czytać strzałkami, przycisk Działania i drugie pole tekstowe o nazwie Więcej szczegółów. Potem dwa przyciski, Zainstaluj z pliku i Zamknij. Po nich są karty i filtry: Sortuj według kolumny, Kanał i pole Szukaj. Jeszcze jedno naciśnięcie Tab przenosi Cię z powrotem na listę. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Lista jest sercem sklepu. Strzałka w górę i strzałka w dół przechodzą po dodatkach, a szczegóły zawsze opisują ten dodatek, na którym właśnie jesteś.",
+            "Shift+Tab na liście przenosi wstecz, do pola Szukaj i pozostałych filtrów.",
+            "Nie musisz uczyć się tego układu na pamięć. Tab i Shift+Tab zawsze Cię przez niego przeprowadzą, a NVDA nazwie każdą część, gdy na nią trafisz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sklep ma też klawisze dostępu, które przenoszą prosto do jednej części okna. Przytrzymaj lewy Alt i naciśnij literę. Skrót listy dodatków zależy od karty: na karcie Zainstalowane jest to Alt+A, a na karcie Odkrywaj dodatki Alt+R. Alt+S przenosi do pola Szukaj. Alt+W przenosi do pola Więcej szczegółów. Alt+N przenosi do filtra Kanał, a Alt+M do filtra Sortuj według kolumny. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Na początek zapamiętaj Alt plus S dla pola Szukaj oraz skrót listy dodatków: Alt plus R na karcie Odkrywaj dodatki i Alt plus A na karcie Zainstalowane. Te skróty zaprowadzą Cię prawie wszędzie.",
+            "Te litery dotyczą NVDA w języku polskim. W innym języku litery mogą być inne, a NVDA ogłasza klawisz dostępu, gdy przechodzisz klawiszem Tab do każdej kontrolki.",
+            "Klawisze dostępu to polecenia systemu Windows. NVDA podaje je jako część każdej kontrolki, na przykład: Szukaj, pole edycji, Alt plus S."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przejdź do sklepu za pomocą Alt+Tab. Naciśnij skrót listy dodatków, czyli Alt+R na karcie Odkrywaj dodatki albo Alt+A na karcie Zainstalowane, i przejdź strzałką w dół po kilku dodatkach. Naciśnij Tab i posłuchaj, co jest dalej. Naciskaj Tab, aż wrócisz na listę. Potem wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Naciskając Tab, usłyszysz kolejno: opis, przycisk Działania, Więcej szczegółów, Zainstaluj z pliku, Zamknij, karty, a potem filtry.",
+            "Opis i Więcej szczegółów to tekst tylko do odczytu. Czytaj je wiersz po wierszu strzałką w górę i strzałką w dół, dokładnie tak jak w rozdziale 3, Czytanie i poruszanie się po tekście.",
+            "Jeśli się zgubisz, naciśnij skrót listy dodatków: Alt+R na karcie Odkrywaj dodatki albo Alt+A na karcie Zainstalowane. Zawsze wrócisz na listę."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_and_filter",
+      "title": "Wyszukiwanie i filtrowanie listy",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Karta Odkrywaj dodatki zawiera kilkaset dodatków ułożonych według nazwy. Przechodzenie strzałkami przez wszystkie zajęłoby dużo czasu. Są trzy szybsze sposoby, aby znaleźć dodatek: nawigacja po pierwszej literze, pole Szukaj i filtry. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wpisanie na liście kilku pierwszych liter nazwy dodatku przenosi do niego, tak samo jak na liście plików.",
+            "Wyszukiwanie przydaje się wtedy, gdy wiesz, co dodatek ma robić, ale nie wiesz, jak się nazywa.",
+            "Filtry zawężają listę. Niczego nie usuwają. Wyczyść filtr, a wróci pełna lista."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby wyszukiwać, naciśnij Alt+S albo naciśnij Shift+Tab na liście, żeby dojść do pola Szukaj. Wpisz jedno lub dwa słowa opisujące to, czego szukasz, na przykład zegar. Nie naciskasz Enter. Lista sama aktualizuje się w trakcie pisania. Potem naciśnij Tab, aby przejść na listę, i przejrzyj wyniki strzałkami. Wyszukiwanie sprawdza nazwę każdego dodatku, jego wydawcę, autora i opis. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wpisz słowo, a potem naciśnij Tab. Wyniki już czekają na liście.",
+            "Wyszukiwanie obejmuje też opisy, więc wpisanie zadania, na przykład OCR, znajduje dodatki, których nazw nigdy byś nie odgadł.",
+            "Aby odzyskać pełną listę, wróć do pola Szukaj skrótem Alt+S i usuń to, co wpisałeś."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Obok pola Szukaj są filtry. Kanał określa, jaki rodzaj wydań jest pokazywany: Wszystkie, Stabilny, Beta, Dev albo Z pliku. Stabilny oznacza, że twórca uważa dodatek za przetestowany i gotowy. Wersje Beta i Dev są dla testerów i mogą sprawiać problemy. Jako początkujący wybierz Stabilny. Na kartach Odkrywaj dodatki i Do zaktualizowania jest też pole wyboru o nazwie Uwzględnij dodatki niezgodne. Zostaw je nieoznaczone. Na kartach z zainstalowanymi dodatkami jest zamiast niego filtr Włączone/wyłączone. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciśnij Alt+N, aby przejść do filtra Kanał, a potem strzałką w górę i strzałką w dół wybierz Stabilny.",
+            "Z pliku to nazwa kanału dla dodatków, które zostały zainstalowane z pliku, a nie ze sklepu.",
+            "Dodatki niezgodne to takie, które nie są oznaczone jako działające z Twoją wersją NVDA. Wyjaśnia je jedna z dalszych lekcji tego rozdziału."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Lista jest zwykle ułożona według nazwy. Filtr Sortuj według kolumny, Alt+M, pozwala ułożyć ją inaczej, na przykład według wydawcy albo daty publikacji, rosnąco lub malejąco. Sortowanie według daty publikacji, od najnowszych, to wygodny sposób, aby sprawdzić, co ostatnio dodano lub zaktualizowano. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Sortuj według kolumny to lista rozwijana. Strzałką w górę i strzałką w dół posłuchaj dostępnych opcji. Lista zmienia kolejność od razu po wybraniu jednej z nich.",
+            "Opcje różnią się trochę między kartami, ponieważ każda karta ma nieco inne kolumny.",
+            "Jeśli lista wydaje się ułożona w dziwnej kolejności, sprawdź ten filtr. Ktoś mógł go zmienić."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Przejdź do sklepu za pomocą Alt+Tab i naciskaj Control+Tab, aż znajdziesz się na karcie Odkrywaj dodatki. Naciśnij Alt+S i wpisz słowo zegar. Naciśnij Tab, aby przejść na listę, i przejrzyj wyniki strzałkami. Potem jeszcze raz naciśnij Alt+S, usuń to słowo i wróć klawiszem Tab na listę, aby mieć znowu wszystkie dodatki. Wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Jeśli po wyszukiwaniu lista jest pusta, sprawdź pisownię oraz to, czy filtr Kanał jest ustawiony na Wszystkie albo Stabilny.",
+            "Aby szybko usunąć wpisany tekst, naciśnij Control+A, żeby zaznaczyć go w całości, a potem naciśnij Delete.",
+            "Bez połączenia z internetem karta Odkrywaj dodatki jest pusta. Jeśli pozostaje pusta, gdy w polu Szukaj nic nie ma, sprawdź połączenie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "addon_details",
+      "title": "Zanim zainstalujesz dodatek, przeczytaj o nim",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy przechodzisz strzałką na dodatek na liście, NVDA odczytuje jego wiersz: nazwę, stan, wersję, kanał i wydawcę. To tylko streszczenie. Pełne informacje są w szczegółach, do których przechodzisz z listy klawiszem Tab. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wiersz mówi, jak dodatek się nazywa i kto go wydał. Szczegóły mówią, co dodatek naprawdę robi.",
+            "Jeśli NVDA przestanie czytać wiersz, zanim wszystko usłyszysz, naciśnij NVDA+Tab, aby jeszcze raz usłyszeć element, który ma fokus.",
+            "Szczegóły zawsze dotyczą tego dodatku, który jest zaznaczony na liście. Zmień zaznaczenie, a szczegóły zmienią się razem z nim."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Naciśnij Tab na liście. Trafisz na opis. Jest to pole tekstowe tylko do odczytu, więc czytaj je strzałkami albo przeczytaj całość poleceniem Czytaj wszystko: NVDA+strzałka w dół w układzie Desktop, NVDA+A w układzie Laptop. Naciśnij Tab, aby minąć przycisk Działania, i jeszcze raz Tab albo Alt+W, aby dojść do pola Więcej szczegółów. Podaje ono wydawcę, autora, wersję, minimalną wersję NVDA, której dodatek potrzebuje, ostatnią wersję NVDA, z którą był testowany, licencję oraz wynik skanowania VirusTotal. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Opis odpowiada na pytanie: co ten dodatek robi? Więcej szczegółów odpowiada na pytania: kto go stworzył, jak bardzo jest aktualny i czy skanowanie antywirusowe coś zgłosiło?",
+            "Warto sprawdzić ostatnią testowaną wersję NVDA. Jeśli jest o kilka lat starsza od Twojego NVDA, być może nikt już nie opiekuje się tym dodatkiem.",
+            "Oba pola są tylko do odczytu. Nic, co naciśniesz podczas ich czytania, niczego nie zmieni ani nie zainstaluje."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Każdy dodatek ma menu działań. Aby je otworzyć, naciśnij na dodatku na liście Enter albo klawisz aplikacji. Możesz też przejść klawiszem Tab do przycisku Działania w szczegółach i nacisnąć spację. Dla dodatku, którego nie masz zainstalowanego, menu zawiera pozycje Zainstaluj, Pomoc, Strona internetowa, Licencja, Kod źródłowy, Recenzje społeczności i Wyniki skanowania VirusTotal. Niektóre dodatki mają też pozycję Co nowego. Po menu poruszaj się strzałką w górę i strzałką w dół, a klawiszem Escape zamkniesz je bez wybierania czegokolwiek. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Klawisz aplikacji znajduje się na wielu klawiaturach w dolnym rzędzie, na prawo od spacji. Jeśli Twoja klawiatura go nie ma, to samo robi Shift+F10.",
+            "Działania zależą od dodatku. Zainstalowany dodatek ma pozycje Wyłącz i Usuń zamiast Zainstaluj.",
+            "Otwarcie menu Działania jest zawsze bezpieczne. Nic się nie dzieje, dopóki nie naciśniesz Enter na jednym z działań."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Trzy z tych działań pomagają zdecydować, czy można zaufać dodatkowi. Pomoc otwiera dokumentację samego dodatku. Recenzje społeczności otwierają stronę internetową, na której inni użytkownicy NVDA opisali swoje doświadczenia z dodatkiem. Wyniki skanowania VirusTotal otwierają w przeglądarce pełny raport ze skanowania antywirusowego. Wszystko to otwiera się w przeglądarce, więc czytaj je poleceniami trybu przeglądania z rozdziału 4, a potem naciśnij Alt+Tab, aby wrócić do sklepu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Recenzje społeczności znajdują się w serwisie internetowym o nazwie GitHub. Naciskaj H, aby przechodzić między nagłówkami i znajdować kolejne recenzje.",
+            "Brak recenzji nie oznacza, że dodatek jest zły. Wiele dobrych dodatków po prostu nie zostało jeszcze zrecenzowanych.",
+            "Strona internetowa i Kod źródłowy mówią, skąd dodatek pochodzi. Łatwiej zaufać twórcy, który ma publiczną stronę i historię wydań."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. W sklepie, na karcie Odkrywaj dodatki, wybierz dowolny dodatek, który Cię zaciekawi. Przejdź klawiszem Tab do jego opisu i przeczytaj go. Naciśnij Alt+W i przeczytaj pole Więcej szczegółów. Potem naciśnij Alt+R, aby wrócić na listę, naciśnij Enter, aby otworzyć menu Działania, przejdź po nim strzałkami, aby usłyszeć, co zawiera, i naciśnij Escape, aby je zamknąć. Niczego jeszcze nie instaluj. Wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Jedno naciśnięcie Escape zamyka menu Działania. Uważaj, żeby nie nacisnąć go drugi raz, bo Escape w samym sklepie zamyka sklep.",
+            "Jeśli przypadkiem zamknąłeś sklep, otwórz go ponownie: NVDA+N, potem N, potem A.",
+            "Nie wiesz, który dodatek obejrzeć? Wyszukaj speech history. To jeden z najczęściej pobieranych dodatków i jest omówiony w dalszej części tego rozdziału."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "install_addon",
+      "title": "Instalowanie dodatku",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Instalacja dodatku ze sklepu składa się z czterech kroków. Pierwszy: znajdź dodatek na karcie Odkrywaj dodatki. Drugi: naciśnij na nim Enter i wybierz Zainstaluj. Trzeci: zamknij sklep. Czwarty: pozwól NVDA uruchomić się ponownie. Dodatek zaczyna działać dopiero po ponownym uruchomieniu NVDA. Aby ukończyć tę lekcję, nie musisz niczego instalować. Jeśli wolisz na razie tylko poznać kroki, słuchaj i naciskaj Enter po każdym z nich. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Znajdź, wybierz Zainstaluj, zamknij sklep, uruchom ponownie NVDA. To zawsze te same cztery kroki.",
+            "Ponowne uruchomienie NVDA trwa kilka sekund. NVDA milknie, potem słychać dźwięk startu i program znowu zaczyna mówić.",
+            "Jeśli chcesz poćwiczyć na prawdziwym dodatku, wybierz taki, o którym czytałeś w poprzedniej lekcji i który nie wzbudził Twoich wątpliwości."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy dodatek jest zaznaczony na liście, naciśnij Enter, aby otworzyć jego menu Działania, i jeszcze raz Enter na pozycji Zainstaluj, która jest pierwsza. Sklep od razu zaczyna pobieranie. Zostajesz na liście, a stan tego dodatku zmienia się na Pobieranie, a potem na Pobrany, oczekuje na instalacje. Stan jest częścią wiersza, więc aby go sprawdzić, naciśnij NVDA+Tab, które odczytuje element mający fokus. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Enter otwiera menu Działania, a Zainstaluj jest pierwszą pozycją, więc dwukrotne naciśnięcie Enter na dodatku instaluje go.",
+            "Pobrany, oczekuje na instalacje oznacza, że plik dotarł i czeka. Właściwa instalacja odbywa się po zamknięciu sklepu.",
+            "Jeśli stan brzmi Pobieranie nie powiodło się, otwórz ponownie menu Działania i wybierz Spróbuj ponownie zainstalować. Najczęstszą przyczyną jest zerwane połączenie z internetem."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Przed zamknięciem sklepu możesz wybrać kolejne dodatki. Każdy instalowany dodatek trafia do kolejki. Możesz też zaznaczyć kilka dodatków naraz, przytrzymując Shift podczas przechodzenia strzałkami albo przytrzymując Control i naciskając spację na każdym z nich, a potem otworzyć menu Działania i wybrać Zainstaluj wybrane dodatki. Jeśli rozmyślisz się co do dodatku, który jeszcze się pobiera, otwórz jego menu Działania i wybierz Anuluj instalację. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Nie trzeba uruchamiać NVDA ponownie po każdym dodatku. Najpierw wybierz wszystko, co chcesz, a potem zamknij sklep jeden raz.",
+            "Zaznaczanie kilku dodatków działa tak samo jak zaznaczanie kilku plików w Eksploratorze plików.",
+            "Zacznij od małej liczby. Zainstaluj jeden lub dwa dodatki, poużywaj ich przez jakiś czas, a kolejne dodaj później. W ten sposób dużo łatwiej stwierdzić, co robi każdy z nich."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Gdy skończysz wybierać, naciśnij Escape albo przejdź klawiszem Tab do przycisku Zamknij i naciśnij Enter. NVDA mówi, że instaluje dodatki, i prosi, aby poczekać. Potem okno dialogowe informuje, że nastąpiła zmiana w dodatkach, i pyta, czy chcesz teraz uruchomić NVDA ponownie. Naciśnij Enter na przycisku Tak. NVDA uruchamia się ponownie, a nowy dodatek już działa. Jeśli wybierzesz Nie, dodatek poczeka i zostanie w pełni zainstalowany przy następnym uruchomieniu NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Zwykle wybiera się Tak. NVDA zamyka się i w ciągu kilku sekund samo wraca.",
+            "NVDA Coach zatrzymuje się, gdy NVDA uruchamia się ponownie. Tak ma być. Naciśnij potem NVDA+Shift+C, aby otworzyć wybór lekcji, a ta lekcja nadal tam będzie.",
+            "Jeśli NVDA nie wróci po mniej więcej piętnastu sekundach, naciśnij Control+Alt+N, aby je uruchomić."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jak korzystać z nowego dodatku po ponownym uruchomieniu NVDA? Otwórz jeszcze raz Add-on Store. Otworzy się na karcie Zainstalowane, a nowy dodatek będzie na liście ze stanem Włączone. Naciśnij na nim Enter i wybierz Pomoc, aby otworzyć jego dokumentację, która wyjaśnia jego polecenia. Wiele dodatków dodaje też własną sekcję do okna dialogowego Zdarzenia wejścia, w podmenu Opcje w menu NVDA, gdzie możesz znaleźć i zmienić ich skróty klawiszowe. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Od działania Pomoc warto zacząć. Z nowego dodatku nie ma wielkiego pożytku, dopóki nie wiesz, na które klawisze reaguje.",
+            "Włącz pomoc klawiatury skrótem NVDA+1 i naciśnij skrót dodatku. NVDA opisze, co ten klawisz robi, bez wykonywania polecenia. Naciśnij ponownie NVDA+1, aby wyłączyć pomoc klawiatury.",
+            "Niektóre dodatki dodają własną kategorię do okna Ustawienia NVDA albo własną pozycję do menu NVDA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manage_addons",
+      "title": "Aktualizowanie, wyłączanie i usuwanie dodatków",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Dodatki dostają nowe wersje, tak samo jak NVDA. Domyślnie NVDA krótko po uruchomieniu informuje, że są dostępne aktualizacje zainstalowanych dodatków, i proponuje przejście do nich. Możesz też sprawdzić to w dowolnej chwili: otwórz Add-on Store i przejdź za pomocą Control+Tab na kartę Do zaktualizowania. Aby zaktualizować dodatek, naciśnij na nim Enter i wybierz Zaktualizuj. Potem zamknij sklep i uruchom ponownie NVDA, dokładnie tak jak przy instalowaniu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Aktualizowanie to te same cztery kroki co instalowanie: znajdź dodatek, wybierz działanie, zamknij sklep, uruchom ponownie NVDA.",
+            "Aby zaktualizować kilka dodatków naraz, zaznacz je, przytrzymując Shift i naciskając strzałkę w dół, a potem otwórz menu Działania.",
+            "Aktualność dodatków jest najważniejsza zaraz po aktualizacji samego NVDA, ponieważ stare wersje dodatków mogą przestać działać z nowym NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Możesz wybrać, jak mają być obsługiwane aktualizacje. Otwórz Ustawienia NVDA: NVDA+N, potem O jak Opcje, potem U jak Ustawienia, i przejdź do kategorii Add-on Store. Ustawienie Automatyczne aktualizacje ma trzy opcje. Powiadamiaj, czyli opcja domyślna, informuje, gdy są aktualizacje. Automatycznie aktualizuj pobiera je i instaluje w tle, a potem prosi o ponowne uruchomienie NVDA. Wyłączony nigdy nie sprawdza aktualizacji. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Powiadamiaj to dobry wybór dla większości osób. Zachowujesz kontrolę i nie przegapiasz aktualizacji.",
+            "Na liście kategorii w oknie Ustawienia NVDA naciskaj A, aż usłyszysz Add-on Store. Na tę literę może zaczynać się więcej niż jedna kategoria.",
+            "NVDA sprawdza aktualizacje dodatków raz na 24 godziny."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Czasem chcesz, żeby dodatek nie przeszkadzał, ale nie chcesz go kasować. Do tego służy działanie Wyłącz. Na karcie Zainstalowane naciśnij Enter na dodatku i wybierz Wyłącz. Jego stan zmieni się na Wyłączony, oczekiwanie na ponowne uruchomienie. Po ponownym uruchomieniu NVDA dodatek jest wyłączony, ale nadal zainstalowany, i w każdej chwili możesz go przywrócić działaniem Włącz. Wyłączenie to właściwy pierwszy ruch, gdy podejrzewasz, że dodatek powoduje problem. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wyłączenie jest jak wyjęcie wtyczki z gniazdka. Usunięcie jest jak wyrzucenie urządzenia.",
+            "Jeśli po zainstalowaniu dodatku NVDA zaczyna działać nieprawidłowo, wyłącz ten dodatek i uruchom NVDA ponownie. Jeśli problem zniknie, znalazłeś przyczynę.",
+            "Jak wszystko inne w sklepie, wyłączanie i włączanie zaczyna działać dopiero po ponownym uruchomieniu NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby całkowicie odinstalować dodatek, naciśnij na nim Enter na karcie Zainstalowane i wybierz Usuń. NVDA poprosi o potwierdzenie. Stan zmieni się na Oczekuje na usunięcie, a dodatek zniknie po ponownym uruchomieniu NVDA. Jedna przestroga: na tej liście jest też NVDA Coach. Jeśli usuniesz NVDA Coach, znikną razem z nim Twoje lekcje, więc zanim wybierzesz Usuń, upewnij się, który dodatek jest zaznaczony. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Usunięcie dodatku kasuje go z komputera. Możesz go zainstalować ponownie z karty Odkrywaj dodatki, kiedy tylko zechcesz.",
+            "Zanim potwierdzisz, posłuchaj nazwy w pytaniu o potwierdzenie. Mówi ona dokładnie, który dodatek zostanie usunięty.",
+            "Jeśli wybierzesz Usuń przez pomyłkę i nie uruchomiłeś jeszcze ponownie NVDA, odpowiedz Nie na pytanie o potwierdzenie albo zapytaj instruktora, zanim uruchomisz NVDA ponownie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz, niczego nie zmieniając. Otwórz sklep i przejdź na kartę Zainstalowane. Przejdź strzałkami do NVDA Coach. Naciśnij Enter, aby otworzyć jego menu Działania, i przejdź po nim strzałkami. Usłyszysz Wyłącz, Usuń, Pomoc i inne pozycje. Naciśnij Escape, aby zamknąć menu bez wybierania czegokolwiek. Potem przejdź za pomocą Control+Tab na kartę Do zaktualizowania i posłuchaj, czy coś na niej czeka. Wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Przechodzenie strzałkami po menu nigdy niczego nie uruchamia. Robi to tylko Enter. Escape bezpiecznie zamyka menu.",
+            "Jeśli lista na karcie Do zaktualizowania jest pusta, wszystkie Twoje dodatki są aktualne.",
+            "Jeśli na liście jest aktualizacja NVDA Coach, jest to nowsza wersja tych lekcji. Aktualizacja zachowuje Twoje postępy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external_and_incompatible",
+      "title": "Pliki dodatków, dodatki niezgodne i wychodzenie z kłopotów",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Nie każdy dodatek jest w sklepie. Niektóre są udostępniane jako plik na stronie internetowej albo przysyłane e-mailem. Plik dodatku ma nazwę kończącą się na kropka N V D A myślnik addon. Są dwa sposoby, aby go zainstalować. W Add-on Store przejdź klawiszem Tab do przycisku Zainstaluj z pliku, naciśnij Enter i wybierz plik. Albo, jeśli NVDA jest zainstalowane na komputerze, po prostu naciśnij Enter na pliku w Eksploratorze plików. W obu przypadkach NVDA prosi o potwierdzenie przed instalacją, a potem o ponowne uruchomienie. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Dodatek spoza sklepu nie przeszedł nawet sklepowego skanowania antywirusowego. Upewnij się szczególnie dokładnie, że ufasz osobie, od której go masz.",
+            "Pobrane pliki zwykle trafiają do folderu Pobrane. Naciśnij tam Enter na pliku dodatku, a resztą zajmie się NVDA.",
+            "Dodatki zainstalowane w ten sposób pojawiają się na karcie Zainstalowane z kanałem o nazwie Z pliku."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Każdy dodatek podaje, z którymi wersjami NVDA działa. Mniej więcej raz w roku, zwykle w pierwszym wydaniu NVDA w danym roku, NVDA zmienia się w sposób, który może zepsuć starsze dodatki. Gdy tak się dzieje, NVDA ostrzega Cię przed aktualizacją i wyłącza każdy dodatek, który nie został do niej dostosowany. Takie dodatki przechodzą na kartę Zainstalowane niezgodne. Zwykle wystarczy poczekać: większość popularnych dodatków jest aktualizowana w ciągu dni lub tygodni i wtedy pojawia się na karcie Do zaktualizowania. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Niezgodny nie znaczy zepsuty na zawsze. Znaczy, że twórca nie potwierdził jeszcze, że dodatek działa z Twoim NVDA.",
+            "Przed dużą aktualizacją NVDA mówi, które z Twoich dodatków zostaną wyłączone. Jeśli któryś z nich jest Ci niezbędny, możesz wstrzymać się z aktualizacją NVDA.",
+            "Sklep pozwala pominąć niezgodność i mimo to włączyć dodatek. Robisz to na własną odpowiedzialność. Dodatek może nie działać i może sprawić, że NVDA będzie niestabilne."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Oto siatka bezpieczeństwa, którą warto zapamiętać. Jeśli po zainstalowaniu dodatku NVDA zachowuje się dziwnie albo ciągle się zawiesza, możesz uruchomić NVDA ponownie z wyłączonymi wszystkimi dodatkami. Naciśnij NVDA+Q (polecenie NVDA). W oknie dialogowym Zakończ NVDA wybierz strzałką w dół opcję Uruchom z wyłączonymi dodatkami i naciśnij Enter. NVDA wróci w czystej postaci, tak jakby nie było zainstalowanych żadnych dodatków. Teraz otwórz Add-on Store, wyłącz albo usuń podejrzany dodatek i uruchom NVDA ponownie w zwykły sposób. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus Q otwiera okno dialogowe Zakończ NVDA. Jest w nim lista opcji. Uruchom z wyłączonymi dodatkami jest jedną z nich.",
+            "To rozwiązanie tymczasowe. Następne zwykłe uruchomienie przywraca wszystkie dodatki, oprócz tych, które wyłączyłeś albo usunąłeś.",
+            "NVDA Coach też jest dodatkiem, więc nie będzie dostępny, gdy dodatki są wyłączone. Wróci przy następnym zwykłym uruchomieniu."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Znasz już całe życie dodatku: czym jest, jak ocenić, czy można mu zaufać, jak go znaleźć, przeczytać o nim, zainstalować go, zaktualizować, wyłączyć, usunąć i jak sobie poradzić, gdy coś pójdzie źle. Trzy ostatnie lekcje tego rozdziału to przegląd 25 najczęściej pobieranych dodatków ze sklepu, pogrupowanych według przeznaczenia. Żadnego z nich nie potrzebujesz. Są tu po to, żebyś wiedział, co jest możliwe. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Do tego rozdziału możesz wrócić w każdej chwili z wyboru lekcji, żeby przypomnieć sobie któryś krok.",
+            "Podręcznik użytkownika NVDA ma cały rozdział o nazwie Dodatki i Add-on Store. Podręcznik użytkownika otworzysz z podmenu Pomoc w menu NVDA.",
+            "Nic w przeglądzie, który teraz nastąpi, nie jest zachętą do instalowania. Skorzystaj ze sposobów sprawdzania z pierwszej lekcji i zdecyduj samodzielnie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_everyday",
+      "title": "Popularne dodatki: narzędzia na co dzień",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Trzy następne lekcje przedstawiają 25 najczęściej pobieranych dodatków z Add-on Store. Kilka słów o tym, jak je wybrano. Sklep nie podaje, ile osób używa każdego dodatku. Dlatego ta lista szereguje dodatki według liczby pobrań z serwisu GitHub, w którym przechowywana jest większość dodatków, policzonych w listopadzie 2026 roku. Liczono tylko dodatki, które sklep oferuje dla NVDA 2026.3. To miara popularności, a nie rekomendacja. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Liczba pobrań obejmuje każdą automatyczną aktualizację, więc często aktualizowane dodatki są na liście wyżej, niż wynikałoby to z prawdziwej liczby ich użytkowników.",
+            "Nowe dodatki pojawiają się cały czas, a nowszy może pasować Ci bardziej niż słynny. Posortowanie karty Odkrywaj dodatki według daty publikacji pokazuje, co jest nowe.",
+            "Aby ukończyć lekcję, nie trzeba niczego instalować. Słuchaj i zapamiętuj nazwy tych dodatków, które wydają się przydatne."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Ta lekcja omawia dziewięć małych narzędzi, które dodają funkcję do samego NVDA. Najpierw trzy, które podają informacje na żądanie. Zegar, po angielsku Clock, to zaawansowany zegar i kalendarz. Przejmuje on polecenie czasu z NVDA, czyli NVDA+F12, tak że jedno naciśnięcie podaje godzinę, dwa naciśnięcia datę, a trzy naciśnięcia dzień, numer tygodnia i rok. Dodatek dzień tygodnia, po angielsku Day of the week, mówi, w jaki dzień tygodnia wypada wybrana przez Ciebie data. Monitor zasobów, po angielsku Resource Monitor, informuje, jak bardzo obciążony jest komputer: podaje obciążenie procesora, używaną pamięć, miejsce na dysku i inne dane. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Zegar, dzień tygodnia i Monitor zasobów odpowiadają na pytania, na które inaczej trzeba by odpowiedzieć wzrokiem albo w kilku krokach.",
+            "Bez żadnego dodatku NVDA+F12 już podaje godzinę, a dwukrotne naciśnięcie podaje datę. Nauczyłeś się tego w rozdziale 1. Dodatek Zegar to rozbudowuje.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Teraz trzy dodatki do pracy z tym, co mówi NVDA, i z tym, co kopiujesz. Speech history review and copying przechowuje listę ostatnich wypowiedzi NVDA. Domyślnie Shift+F11 i Shift+F12 przechodzą po nich wstecz i do przodu, a F12 kopiuje bieżącą wypowiedź do schowka. Bardzo się to przydaje, gdy NVDA powie coś tylko raz, a Ty tego nie dosłyszałeś. Clip Contents Designer pozwala dopisywać tekst do tego, co już jest w schowku, zamiast to zastępować, i potrafi pokazać zawartość schowka. Instant Translate tłumaczy zaznaczony tekst albo tekst ze schowka na inny język i odczytuje wynik. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA 2026.2 i nowsze potrafi samo powtórzyć ostatnią wypowiedź: naciśnij NVDA+X. Dodatek z historią mowy idzie dalej, bo pamięta wiele wypowiedzi, a nie tylko ostatnią.",
+            "Instant Translate wysyła tekst do internetowej usługi tłumaczeniowej, więc potrzebuje połączenia z internetem i nie należy używać go do prywatnych tekstów.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Na koniec tej grupy trzy dodatki, które zmieniają to, co słyszysz, albo chronią przed pomyłkami. Emotikony, po angielsku Emoticons, sprawia, że NVDA wypowiada nazwę emotikony tekstowej, na przykład uśmiechnięta buzia, zamiast odczytywać znaki interpunkcyjne, z których jest złożona. Report Symbols wypowiada symbole podczas ich wpisywania, na przykład znaki interpunkcyjne, nawet jeśli wyłączyłeś wypowiadanie wpisywanych znaków. Input lock blokuje urządzenia wejściowe jednym naciśnięciem klawisza i tak samo je odblokowuje, co przydaje się, gdy trzeba wyczyścić klawiaturę albo gdy w pobliżu jest dziecko lub zwierzę. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Emotikony i Report Symbols zmieniają tylko mowę. Nie zmieniają tego, co jest naprawdę wpisywane albo wysyłane.",
+            "Zanim zainstalujesz Input lock, przeczytaj jego Pomoc i naucz się klawisza, który odblokowuje. Zablokowana klawiatura, której nie umiesz odblokować, to prawdziwy kłopot.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_reading_navigation",
+      "title": "Popularne dodatki: czytanie, nawigacja i mowa",
+      "order": 10,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Ta lekcja omawia dziewięć popularnych dodatków, które zmieniają sposób czytania, poruszania się albo słyszenia NVDA. Kilka z nich powstało, zanim NVDA samo potrafiło robić coś podobnego, dlatego ta lekcja mówi też, co NVDA robi już bez nich. Najpierw czytanie. Nao, co jest skrótem od NVDA Advanced OCR, ulepsza wbudowane w NVDA rozpoznawanie tekstu, służące do odczytywania tekstu z obrazów i zeskanowanych dokumentów. SentenceNav pozwala poruszać się po tekście zdanie po zdaniu. Znaczniki miejsca, po angielsku Place markers, pozwala ustawiać zakładki na stronach internetowych i w innych dokumentach trybu przeglądania, a później do nich wracać. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "OCR oznacza optyczne rozpoznawanie znaków, czyli zamianę obrazu z tekstem na tekst, który NVDA może odczytać. NVDA ma wbudowany OCR. Naciśnij NVDA+R, aby rozpoznać bieżący obiekt. Nao to rozbudowuje.",
+            "NVDA 2026.3 w wielu miejscach samo porusza się po zdaniach: Alt+strzałka w dół przechodzi do następnego zdania, a Alt+strzałka w górę do poprzedniego. Wypróbuj to, zanim zainstalujesz SentenceNav.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Teraz poruszanie się. ObjPad pozwala wykonywać nawigację po obiektach, której nauczyłeś się w rozdziale 5, Nawigacja po obiektach, pojedynczymi klawiszami zamiast kombinacji klawiszy. Enhanced Touch Gestures dodaje kolejne gesty ekranu dotykowego dla osób, które używają NVDA na tablecie albo laptopie z ekranem dotykowym. Czytaj wiadomości, po angielsku Read Feeds, zamienia NVDA w czytnik kanałów z wiadomościami, dzięki czemu możesz śledzić najnowsze artykuły z witryn internetowych bez otwierania każdej z nich. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "ObjPad jest dla osób, które często korzystają z nawigacji po obiektach. Jeśli rzadko potrzebujesz poleceń z rozdziału 5, nie będzie Ci go brakować.",
+            "Enhanced Touch Gestures przydaje się tylko na komputerze z ekranem dotykowym. NVDA 2026.2 i 2026.3 dodały wiele własnych gestów dotykowych.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Na koniec trzy dodatki, które wykraczają poza codzienną mowę. Switch synth pozwala zapisywać syntezatory i głosy w ponumerowanych miejscach i przełączać się między nimi naciśnięciem klawiszy: Control+Shift+NVDA plus cyfra od 1 do 6. Access8Math pomaga w matematyce. Odczytuje treści matematyczne i pozwala pisać matematykę w notacji o nazwie LaTeX. TeleNVDA — zdalna pomoc, po angielsku Tele NVDA remote assistance, pozwala zaufanej osobie, na przykład instruktorowi, połączyć się z Twoim komputerem przez internet, słyszeć go i nim sterować, albo pozwala Tobie połączyć się z jej komputerem. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "NVDA ma już Zdalny dostęp w podmenu Narzędzia w menu NVDA, a od wersji NVDA 2026.1 samo odczytuje matematykę. TeleNVDA i Access8Math dodają do tego kolejne możliwości.",
+            "Narzędzia zdalnego dostępu dają innej osobie kontrolę nad Twoim komputerem. Łącz się wyłącznie z kimś, kogo znasz i komu ufasz, i nigdy nie podawaj publicznie swojego klucza połączenia.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_app_support",
+      "title": "Popularne dodatki: obsługa konkretnych programów",
+      "order": 11,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Ostatnia grupa popularnych dodatków nie dodaje żadnej funkcji. Te dodatki sprawiają, że jeden konkretny program lepiej współpracuje z NVDA. Jeśli nie używasz danego programu, nie potrzebujesz dodatku. Ta lekcja omawia siedem takich dodatków. Do tej grupy należy najczęściej pobierany dodatek w całym sklepie: Windows App Essentials. Poprawia on współpracę NVDA z różnymi aplikacjami i kontrolkami w systemie Windows 11. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Dodatek do programu robi cokolwiek tylko wtedy, gdy jesteś w tym programie. Przez resztę czasu nie przeszkadza.",
+            "Windows App Essentials ściśle podąża za zmianami w systemie Windows i jest aktualizowany bardzo często. Jest to też dodatek, który najczęściej wymaga najnowszej wersji NVDA.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Trzy dodatki do programów, których być może używasz codziennie. Mozilla Apps Enhancements dodaje funkcje dostępności do przeglądarki internetowej Firefox i programu pocztowego Thunderbird. Outlook Extended usprawnia pracę z programem Microsoft Outlook, dodając polecenia do odczytywania części wiadomości, takich jak nagłówki i załączniki, albo do przechodzenia do nich. VLC Media Player ułatwia korzystanie z odtwarzacza multimediów VLC dzięki lepszej nawigacji i możliwości odczytania jego paska stanu. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Jeśli używasz programu Firefox, Thunderbird, Outlook albo VLC, warto przeczytać o odpowiednim dodatku. Jeśli nie, pomiń go.",
+            "Każdy z tych dodatków opisuje własne polecenia. Po instalacji poznasz je dzięki działaniu Pomoc w Add-on Store.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "I trzy dodatki dla osób, które pracują z dźwiękiem. GoldWave poprawia dostępność edytora dźwięku GoldWave. mp3DirectCut dodaje polecenia do mp3DirectCut, programu do cięcia i przycinania plików MP3. StationPlaylist poprawia obsługę programów StationPlaylist, których nadawcy radiowi używają do prowadzenia stacji, i dodaje polecenia sterujące programem Studio z dowolnego miejsca. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Te trzy dodatki to narzędzia specjalistyczne. Są popularne, ponieważ niewidomi realizatorzy dźwięku i radiowcy polegają na nich każdego dnia.",
+            "Specjalistyczny dodatek zwykle dodaje wiele poleceń. Daj sobie czas na zapoznanie się z jego dokumentacją.",
+            "Aby znaleźć dowolny z tych dodatków, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki, naciśnij Alt+S i wpisz nazwę."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To koniec przeglądu: 25 dodatków, pogrupowanych jako narzędzia na co dzień, czytanie i nawigacja oraz obsługa konkretnych programów. Zapamiętaj kolejność postępowania z każdym dodatkiem. Zdecyduj, czy mu ufasz. Przeczytaj jego opis i recenzje. Zainstaluj go z karty Odkrywaj dodatki. Uruchom ponownie NVDA. Przeczytaj jego Pomoc. A jeśli coś pójdzie źle, naciśnij NVDA+Q i wybierz Uruchom z wyłączonymi dodatkami. Naciśnij Enter, aby zakończyć tę lekcję i ukończyć rozdział Dodatki i Add-on Store.",
+          "hints": [
+            "Zaufaj, przeczytaj, zainstaluj, uruchom ponownie, przeczytaj Pomoc. Ta kolejność chroni przed kłopotami.",
+            "Do lekcji tego rozdziału możesz wrócić w każdej chwili, żeby przypomnieć sobie któryś krok albo nazwę dodatku.",
+            "W sklepie jest o kilkaset dodatków więcej niż 25 omówionych tutaj. Najlepiej szukać ich, wpisując nazwę programu, którego używasz, albo zadanie, które chcesz wykonać."
+          ]
+        }
+      ]
+    }
+  ]
+}

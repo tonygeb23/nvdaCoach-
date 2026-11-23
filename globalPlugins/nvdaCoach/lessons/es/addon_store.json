@@ -1,0 +1,518 @@
+{
+  "id": "addon_store",
+  "title": "Complementos y la Tienda de Complementos",
+  "description": "Aprende qué son los complementos de NVDA, cómo usarlos con seguridad, cómo moverte por la Tienda de Complementos y cómo instalar, actualizar, deshabilitar y eliminar complementos. Termina con un recorrido por 25 de los complementos más descargados.",
+  "order": 7,
+  "lessons": [
+    {
+      "id": "what_are_addons",
+      "title": "¿Qué Son los Complementos?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Un complemento es un paquete pequeño que le da a NVDA algo que no trae de fábrica. Ahora mismo estás usando uno: NVDA Coach es un complemento. Los complementos hacen tres tipos de cosas. Algunos añaden o mejoran el soporte para un programa concreto. Otros añaden sintetizadores de voz o controladores de pantallas braille. Y otros añaden o cambian funciones del propio NVDA, como un historial del portapapeles o un reloj. Presiona Enter para continuar.",
+          "hints": [
+            "Piensa en los complementos como en las aplicaciones de un teléfono. NVDA funciona sin ninguno, y cada uno que añades le da una capacidad más.",
+            "Los complementos los crean personas de la comunidad de NVDA y algunas empresas. No los crea NV Access, la organización que desarrolla NVDA.",
+            "Nunca estás obligado a instalar un complemento. Todo lo que se enseña en los seis primeros capítulos de NVDA Coach funciona con NVDA tal como viene."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA tiene un lugar integrado para encontrar complementos, llamado Tienda de Complementos. Todos los complementos de la tienda se pueden descargar gratis. Unos pocos, sobre todo voces comerciales, son una descarga gratuita que después necesita una licencia de pago para funcionar. Si instalas uno de esos y cambias de opinión, simplemente puedes eliminarlo. Presiona Enter para continuar.",
+          "hints": [
+            "Gratis de descargar no siempre significa gratis de usar. La descripción del complemento lo indica cuando hay que comprar una licencia.",
+            "La Tienda de Complementos necesita conexión a internet para mostrar lo que hay disponible. Los complementos que ya tienes instalados siguen funcionando sin conexión.",
+            "En la tienda hay varios cientos de complementos. Las tres últimas lecciones de este capítulo presentan 25 de los más descargados para que tengas por dónde empezar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Antes de instalar nada, este es el dato más importante del capítulo. Los complementos de la Tienda de Complementos no han sido revisados ni aprobados por NV Access ni por nadie más. Un complemento puede hacer todo lo que puede hacer NVDA, y eso incluye leer tu información personal. Cada complemento que se envía a la tienda es analizado en busca de virus conocidos por un servicio llamado VirusTotal, pero un análisis limpio no es una garantía. Así que trata un complemento como cualquier otro programa que descargues: instálalo solo si confías en su procedencia. Presiona Enter para continuar.",
+          "hints": [
+            "La tienda es un catálogo, no un sello de aprobación. Que un complemento aparezca allí no significa que NV Access lo haya probado.",
+            "Un análisis de virus solo detecta lo que ya se conocía cuando se envió el complemento. Además, puede equivocarse en los dos sentidos.",
+            "NVDA te muestra esta misma advertencia la primera vez que abres la Tienda de Complementos. La encontrarás en la siguiente lección."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "¿Cómo decides si confiar en un complemento? Aquí tienes cuatro comprobaciones que cualquiera puede hacer. Una: averigua quién lo hizo y cuánto tiempo lleva haciendo complementos. Dos: comprueba si se actualiza con regularidad. Tres: lee lo que dicen otros usuarios, con la acción Reseñas de la comunidad de la tienda, que aprenderás en este capítulo. Cuatro: pregunta a otros usuarios de NVDA, por ejemplo en la lista de correo de usuarios de NVDA o en las redes sociales. Si aun así no estás seguro, no lo instales. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Un complemento que mucha gente ha usado durante años, y que sigue recibiendo actualizaciones, es una opción mucho más segura que uno del que nadie ha oído hablar.",
+            "Las reseñas de la comunidad las escriben otros usuarios de NVDA. Se abren como una página web, así que se leen con los comandos del modo exploración del capítulo 4.",
+            "Si tienes un instructor, pregúntale qué complementos usa y recomienda. Es una manera perfectamente buena de empezar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_addon_store",
+      "title": "Abrir la Tienda de Complementos",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "La Tienda de Complementos está en el submenú Herramientas del menú de NVDA. Para abrirla, presiona NVDA+N (comando de NVDA) para abrir el menú de NVDA, luego presiona H de Herramientas y luego C de Tienda de complementos. Si al presionar C la tienda no se abre sola, es porque en ese submenú hay otro elemento con la misma letra: NVDA dice Tienda de complementos y tú presionas Enter. No hace falta que lo hagas todavía. Primero, los dos pasos siguientes te explican qué vas a escuchar y cómo volver aquí. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA más N abre el menú de NVDA. H va a Herramientas y lo abre. C va a Tienda de complementos, y Enter la abre si no se abrió sola.",
+            "Si presionar una letra no funciona en el menú, usa Flecha Abajo para encontrar Herramientas, presiona Flecha Derecha o Enter para abrirlo, luego baja con Flecha Abajo hasta Tienda de complementos y presiona Enter.",
+            "La tienda no tiene un atajo de teclado propio. Más adelante puedes asignarle uno en el diálogo Gestos de Entrada, que está en el submenú Preferencias del menú de NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "La primera vez que abres la Tienda de Complementos, NVDA muestra un diálogo llamado Advertencia de la Tienda de Complementos. Repite lo que aprendiste en la lección anterior: los complementos los crea la comunidad, NV Access no los revisa y pueden acceder a tus datos personales. El diálogo tiene una casilla de verificación llamada No mostrar este mensaje de nuevo y un botón Aceptar. Presiona Tab (comando de Windows) para llegar a Aceptar y presiona Enter. Si prefieres no escuchar la advertencia cada vez, presiona antes Espacio sobre la casilla de verificación. Presiona Enter para continuar.",
+          "hints": [
+            "Si no escuchas la advertencia, alguien ya marcó No mostrar este mensaje de nuevo en esta computadora. No pasa nada. La tienda simplemente se abre.",
+            "Para leer la advertencia otra vez antes de aceptarla, presiona NVDA+Tab para escuchar el control enfocado, o usa los comandos de navegación por objetos del capítulo 5 para ir al texto de la advertencia.",
+            "Presionar Aceptar no instala nada. Solo confirma que has leído la advertencia."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Mientras la Tienda de Complementos esté abierta, irás y vendrás entre ella y esta ventana. Para volver a NVDA Coach, presiona NVDA+Shift+C. Para volver a la tienda, presiona Alt+Tab (comando de Windows) hasta escuchar Tienda de Complementos. Para cerrar la tienda del todo, presiona Escape estando en ella. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA más Shift más C siempre te trae de vuelta a esta lección, siempre que no estés en Microsoft Excel.",
+            "Alt más Tab se explicó en la última lección del capítulo 1. Mantén presionado Alt, toca Tab, escucha, y suelta Alt cuando oigas la ventana que quieres.",
+            "Si pierdes la noción de dónde estás, presiona NVDA+T para escuchar el título de la ventana actual."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. Presiona NVDA+N, luego H, luego C, y Enter si la tienda no se abre sola. Si aparece la advertencia, ve con Tab hasta Aceptar y presiona Enter. Cuando se abra la tienda, presiona NVDA+T (comando de NVDA) para leer su título. Como ya tienes al menos un complemento instalado, NVDA Coach, el título será algo como Tienda de Complementos, Complementos instalados. El foco está en una lista, y NVDA Coach está en esa lista. Presiona Flecha Arriba y Flecha Abajo para explorarla. Después presiona NVDA+Shift+C para volver aquí, y presiona Enter para finalizar esta lección. Puedes dejar la tienda abierta para la lección siguiente.",
+          "hints": [
+            "En una computadora sin ningún complemento, la tienda se abre en Complementos disponibles. En la tuya se abre en Complementos instalados, porque NVDA Coach está instalado.",
+            "Si la lista parece vacía o escuchas Cargando complementos, espera unos segundos. La tienda está obteniendo información de internet.",
+            "Si no se abre nada en absoluto, puede que NVDA se esté ejecutando en modo seguro o desde un lugar donde los complementos están desactivados. Pregunta a tu instructor o al administrador del sistema."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "store_layout",
+      "title": "Orientarte en la Tienda",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "La Tienda de Complementos es una sola ventana con cuatro pestañas. Cada pestaña muestra una lista distinta de complementos. Complementos instalados muestra lo que tienes. Complementos actualizables muestra los complementos instalados que tienen una versión más nueva esperando. Complementos disponibles muestra todo lo que podrías instalar. Complementos incompatibles instalados muestra los complementos que tienes y que no funcionan con tu versión de NVDA. Presiona Enter para continuar.",
+          "hints": [
+            "Cuatro pestañas: instalados, actualizables, disponibles e incompatibles instalados. La mayor parte del tiempo usarás instalados y disponibles.",
+            "El título de la ventana siempre te dice en qué pestaña estás. Presiona NVDA+T para escucharlo.",
+            "Una pestaña Complementos actualizables vacía es una buena noticia. Significa que todo lo que tienes está al día."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Para pasar de una pestaña a la siguiente, presiona Control+Tab (comando de Windows). Para retroceder, presiona Control+Shift+Tab. Esto funciona desde cualquier parte de la tienda, y NVDA anuncia el nombre de la pestaña a la que llegas. Pruébalo ahora: ve a la tienda con Alt+Tab, presiona Control+Tab hasta escuchar Complementos disponibles, luego vuelve aquí con NVDA+Shift+C y presiona Enter para continuar.",
+          "hints": [
+            "Control más Tab es un comando de Windows. Cambia de pestaña en muchos programas, incluidos los navegadores web y las ventanas de configuración.",
+            "También puedes presionar Shift+Tab hasta llegar al propio control de pestañas, y luego usar Flecha Izquierda y Flecha Derecha para cambiar de pestaña.",
+            "Después de cambiar de pestaña, la lista tarda un momento en llenarse. Si escuchas Cargando complementos, dale unos segundos."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Todas las pestañas están organizadas de la misma manera. Al presionar Tab recorres las partes en este orden. Primero, la lista de complementos. Después, los detalles del complemento que seleccionaste: una descripción que puedes leer con las teclas de flecha, un botón Acciones y un segundo cuadro de texto llamado Otros Detalles. Luego dos botones, Instalar desde una fuente externa y Cerrar. Después vienen las pestañas y los filtros: Ordenar por columna, Canal y un cuadro Buscar. Un Tab más te devuelve a la lista. Presiona Enter para continuar.",
+          "hints": [
+            "La lista es el corazón de la tienda. Flecha Arriba y Flecha Abajo recorren los complementos, y los detalles describen siempre el complemento en el que estás.",
+            "Shift+Tab desde la lista retrocede al cuadro Buscar y a los demás filtros.",
+            "No tienes que memorizar esta distribución. Tab y Shift+Tab siempre te llevarán por ella, y NVDA nombra cada parte cuando llegas."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "La tienda también tiene teclas de acceso, que saltan directamente a una parte de la ventana. Mantén presionado Alt y presiona la letra. Alt+B va al cuadro Buscar. Alt+O va a Otros Detalles. Alt+N va al filtro Canal, y Alt+M a Ordenar por columna. Para la lista de complementos, la letra cambia según la pestaña: Alt+L en Complementos instalados, Alt+D en Complementos disponibles, Alt+A en Complementos actualizables y Alt+I en Complementos incompatibles instalados. Presiona Enter para continuar.",
+          "hints": [
+            "Las que conviene aprender primero son Alt más B para Buscar y las de las dos listas que más usarás: Alt más L en Complementos instalados y Alt más D en Complementos disponibles. Con ellas llegas a casi todas partes.",
+            "Estas letras son las de NVDA en español. En otro idioma las letras pueden ser distintas, y NVDA anuncia la tecla de acceso cuando llegas con Tab a cada control.",
+            "Las teclas de acceso son comandos de Windows. NVDA las anuncia como parte de cada control, por ejemplo: Buscar, edición, Alt más B."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. Ve a la tienda con Alt+Tab. Presiona la tecla de acceso de la lista, Alt+D si estás en Complementos disponibles o Alt+L si estás en Complementos instalados, y baja unos cuantos complementos con Flecha Abajo. Presiona Tab y escucha lo que viene después. Sigue presionando Tab hasta estar de nuevo en la lista. Luego vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Al avanzar con Tab, escucharás: la descripción, el botón Acciones, Otros Detalles, Instalar desde una fuente externa, Cerrar, las pestañas y después los filtros.",
+            "La descripción y Otros Detalles son texto de solo lectura. Usa Flecha Arriba y Flecha Abajo dentro de ellos para leer línea por línea, igual que hiciste en el capítulo 3.",
+            "Si te pierdes, presiona la tecla de acceso de la lista: Alt+D en Complementos disponibles o Alt+L en Complementos instalados. Siempre te devuelve a la lista."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_and_filter",
+      "title": "Buscar y Filtrar la Lista",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "La pestaña Complementos disponibles lista varios cientos de complementos, ordenados por nombre. Recorrerlos todos con las flechas llevaría mucho tiempo. Hay tres formas más rápidas de encontrar uno: la navegación por primera letra, el cuadro Buscar y los filtros. Presiona Enter para continuar.",
+          "hints": [
+            "En la lista, escribir las primeras letras del nombre de un complemento salta hasta él, igual que en una lista de archivos.",
+            "Buscar es la herramienta adecuada cuando sabes lo que quieres que haga un complemento pero no cómo se llama.",
+            "Los filtros reducen la lista. No borran nada. Quita el filtro y la lista completa vuelve."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Para buscar, presiona Alt+B, o presiona Shift+Tab desde la lista, para llegar al cuadro Buscar. Escribe una o dos palabras que describan lo que quieres, por ejemplo portapapeles o reloj. No presiones Enter. La lista se actualiza sola mientras escribes. Luego presiona Tab para ir a la lista y recorre los resultados con las flechas. La búsqueda mira en el nombre de cada complemento, su editor, su autor y su descripción. Presiona Enter para continuar.",
+          "hints": [
+            "Escribe la palabra y luego presiona Tab. Los resultados ya te están esperando en la lista.",
+            "La búsqueda también mira en las descripciones, así que buscar una tarea, como OCR o volumen, encuentra complementos cuyos nombres nunca adivinarías.",
+            "Para recuperar la lista completa, vuelve al cuadro Buscar con Alt+B y borra lo que escribiste."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Junto a Buscar hay filtros. Canal elige qué tipo de versión se lista: Todos, Estable, Beta, Dev o Externo. Estable significa que el desarrollador considera el complemento probado y listo. Las versiones Beta y Dev son para quienes hacen pruebas y pueden tener problemas. Como principiante, elige Estable. En las pestañas Complementos disponibles y Complementos actualizables hay además una casilla de verificación llamada Incluir complementos incompatibles. Déjala sin marcar. En las pestañas de complementos instalados hay, en su lugar, un filtro llamado Habilitar/deshabilitar. Presiona Enter para continuar.",
+          "hints": [
+            "Presiona Alt+N para llegar al filtro Canal, y luego usa Flecha Arriba y Flecha Abajo para elegir Estable.",
+            "Externo es el nombre del canal para los complementos que se instalaron desde un archivo y no desde la tienda.",
+            "Los complementos incompatibles son los que no están marcados como compatibles con tu versión de NVDA. Una lección posterior de este capítulo los explica."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "La lista normalmente está ordenada por nombre. El filtro Ordenar por columna, Alt+M, te permite ordenarla de otra manera, por ejemplo por editor o por fecha de publicación, en orden ascendente o descendente. Ordenar por fecha de publicación, con lo más nuevo primero, es una forma práctica de descubrir qué se ha añadido o actualizado últimamente. Presiona Enter para continuar.",
+          "hints": [
+            "Ordenar por columna es un cuadro combinado. Usa Flecha Arriba y Flecha Abajo para escuchar las opciones. La lista se reordena en cuanto eliges una.",
+            "Las opciones cambian un poco de una pestaña a otra, porque cada pestaña tiene columnas ligeramente distintas.",
+            "Si la lista parece estar en un orden extraño, revisa este filtro. Puede que alguien lo haya cambiado."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. Ve a la tienda con Alt+Tab y presiona Control+Tab hasta estar en Complementos disponibles. Presiona Alt+B y escribe la palabra reloj. Presiona Tab para ir a la lista y recorre los resultados con las flechas. Después presiona Alt+B otra vez, borra la palabra y vuelve con Tab a la lista para tenerlo todo de nuevo. Vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Si la lista queda vacía después de buscar, revisa la ortografía y comprueba que el filtro Canal esté en Todos o en Estable.",
+            "Para borrar rápido el texto de búsqueda, presiona Control+A para seleccionarlo todo y luego presiona Supr.",
+            "Sin conexión a internet no hay complementos disponibles. Si la pestaña sigue vacía sin nada escrito en Buscar, revisa tu conexión."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "addon_details",
+      "title": "Leer sobre un Complemento antes de Instalarlo",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Cuando llegas con las flechas a un complemento de la lista, NVDA lee su fila: el nombre, su estado, la versión, el canal y el editor. Eso es solo el resumen. La historia completa está en los detalles, a los que llegas presionando Tab desde la lista. Presiona Enter para continuar.",
+          "hints": [
+            "La fila te dice cómo se llama el complemento y quién lo publicó. Los detalles te dicen qué hace realmente.",
+            "Si NVDA deja de leer la fila antes de que lo captes todo, presiona NVDA+Tab para escuchar de nuevo el elemento enfocado.",
+            "Los detalles siempre pertenecen al complemento que esté seleccionado en la lista. Cambia la selección y los detalles cambian con ella."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Presiona Tab desde la lista. Llegas a la descripción. Es un cuadro de texto de solo lectura, así que léela con las teclas de flecha, o léela entera con Leer todo: NVDA+Flecha Abajo en la distribución de escritorio, NVDA+A en la distribución portátil. Presiona Tab para pasar el botón Acciones, y Tab una vez más, o presiona Alt+O, para llegar a Otros Detalles. Allí se indican el editor, el autor, la versión, la versión mínima de NVDA que necesita, la última versión de NVDA con la que se comprobó, la licencia y el resultado del análisis de VirusTotal. Presiona Enter para continuar.",
+          "hints": [
+            "La descripción responde: ¿qué hace esto? Otros Detalles responde: ¿quién lo hizo, qué tan al día está y marcó algo el análisis de virus?",
+            "Vale la pena revisar la última versión comprobada de NVDA. Si va varios años por detrás de tu NVDA, puede que ya nadie mantenga el complemento.",
+            "Los dos cuadros son de solo lectura. Nada de lo que presiones mientras los lees cambiará ni instalará nada."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Cada complemento tiene un menú de acciones. Para abrirlo, presiona Enter o la tecla Aplicaciones sobre el complemento en la lista. También puedes ir con Tab al botón Acciones de los detalles y presionar Espacio. Para un complemento que no has instalado, el menú ofrece Instalar, Ayuda, Página de inicio, Licencia, Código Fuente, Reseñas de la comunidad y Resultados de análisis de VirusTotal. Algunos complementos ofrecen también Novedades. Usa Flecha Arriba y Flecha Abajo para recorrer el menú, y Escape para cerrarlo sin elegir nada. Presiona Enter para continuar.",
+          "hints": [
+            "La tecla Aplicaciones está en la fila inferior de muchos teclados, a la derecha de la barra Espaciadora. Shift+F10 hace lo mismo si tu teclado no la tiene.",
+            "Las acciones cambian según el complemento. Un complemento instalado ofrece Deshabilitar y Eliminar en lugar de Instalar.",
+            "Abrir el menú Acciones siempre es seguro. No ocurre nada hasta que presionas Enter sobre una de las acciones."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Tres de esas acciones te ayudan a decidir si confiar en un complemento. Ayuda abre la documentación del propio complemento. Reseñas de la comunidad abre una página web donde otros usuarios de NVDA han escrito sobre su experiencia con él. Resultados de análisis de VirusTotal abre el informe completo del análisis de virus en tu navegador web. Todo esto se abre en tu navegador, así que usa los comandos del modo exploración del capítulo 4 para leerlo, y luego presiona Alt+Tab para volver a la tienda. Presiona Enter para continuar.",
+          "hints": [
+            "Las reseñas de la comunidad están alojadas en un sitio web llamado GitHub. Presiona H para saltar entre encabezados y encontrar cada reseña.",
+            "Que todavía no haya reseñas no significa que un complemento sea malo. Muchos complementos buenos simplemente no han sido reseñados.",
+            "Página de inicio y Código Fuente te dicen de dónde viene el complemento. Es más fácil confiar en un desarrollador con una página pública y un historial de versiones."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora. En la tienda, en la pestaña Complementos disponibles, elige cualquier complemento que te parezca interesante. Ve con Tab a su descripción y léela. Presiona Alt+O y lee Otros Detalles. Después presiona Alt+D para volver a la lista, presiona Enter para abrir el menú Acciones, recórrelo con las flechas para escuchar lo que ofrece y presiona Escape para cerrar el menú. No instales nada todavía. Vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Presionar Escape una vez cierra el menú Acciones. Ten cuidado de no presionarlo una segunda vez, porque Escape en la propia tienda cierra la tienda.",
+            "Si cerraste la tienda sin querer, ábrela de nuevo con NVDA+N, luego H, luego C, y Enter si no se abre sola.",
+            "¿No sabes qué complemento explorar? Busca speech history. Es uno de los complementos más descargados, y se trata más adelante en este capítulo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "install_addon",
+      "title": "Instalar un Complemento",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Instalar un complemento desde la tienda lleva cuatro pasos. Uno: encuentra el complemento en la pestaña Complementos disponibles. Dos: presiona Enter sobre él y elige Instalar. Tres: cierra la tienda. Cuatro: deja que NVDA se reinicie. El complemento no empieza a funcionar hasta que NVDA se haya reiniciado. No tienes que instalar nada para terminar esta lección. Si por ahora prefieres solo aprender los pasos, ve leyendo y presiona Enter después de cada uno. Presiona Enter para continuar.",
+          "hints": [
+            "Encontrarlo, elegir Instalar, cerrar la tienda, reiniciar NVDA. Esos son los cuatro pasos todas las veces.",
+            "Reiniciar NVDA lleva unos segundos. NVDA se queda en silencio, luego escuchas su sonido de inicio y vuelve a hablar.",
+            "Si quieres practicar con un complemento real, elige uno sobre el que hayas leído y con el que te hayas sentido cómodo en la lección anterior."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Con el complemento seleccionado en la lista, presiona Enter para abrir su menú Acciones, y presiona Enter otra vez sobre Instalar, que es el primer elemento. La tienda empieza a descargar enseguida. Tú sigues en la lista, y el estado de ese complemento cambia a Descargando, y después a Descargado, instalación pendiente. El estado forma parte de la fila, así que para consultarlo presiona NVDA+Tab, que anuncia el elemento que tiene el foco. Presiona Enter para continuar.",
+          "hints": [
+            "Enter abre el menú Acciones, e Instalar es el primer elemento, así que presionar Enter dos veces sobre un complemento lo instala.",
+            "Descargado, instalación pendiente significa que el archivo ya llegó y está esperando. La instalación real ocurre cuando cierras la tienda.",
+            "Si el estado dice Falló la descarga, abre de nuevo el menú Acciones y elige Reintentar la instalación. La causa habitual es un corte de la conexión a internet."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Puedes elegir más complementos antes de cerrar la tienda. Cada uno que instalas se añade a la cola. También puedes seleccionar varios complementos a la vez, manteniendo presionado Shift mientras te mueves con las flechas o manteniendo presionado Control y presionando Espacio sobre cada uno, y después abrir el menú Acciones y elegir Instalar los complementos seleccionados. Si cambias de opinión sobre uno que todavía se está descargando, abre su menú Acciones y elige Cancelar la instalación. Presiona Enter para continuar.",
+          "hints": [
+            "No hace falta reiniciar NVDA después de cada complemento. Elige primero todo lo que quieras y luego cierra la tienda una sola vez.",
+            "Seleccionar varios complementos funciona igual que seleccionar varios archivos en el Explorador de archivos.",
+            "Empieza poco a poco. Instala uno o dos complementos, convive con ellos un tiempo y añade más después. Así es mucho más fácil saber qué hace cada uno."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Cuando hayas terminado de elegir, presiona Escape, o ve con Tab al botón Cerrar y presiona Enter. NVDA dice que está instalando los complementos y te pide que esperes. Después, un diálogo te informa de que se han hecho cambios a los complementos y te pregunta si te gustaría reiniciar NVDA ahora. Presiona Enter sobre Sí. NVDA se reinicia, y tu nuevo complemento ya está funcionando. Si eliges No, el complemento espera y termina de instalarse la próxima vez que NVDA se inicie. Presiona Enter para continuar.",
+          "hints": [
+            "Elegir Sí es la respuesta normal. NVDA se cierra y vuelve por sí solo en unos segundos.",
+            "NVDA Coach se detiene cuando NVDA se reinicia. Es lo esperado. Presiona NVDA+Shift+C después para abrir el selector de lecciones, y esta lección seguirá aquí.",
+            "Si NVDA no vuelve pasados unos quince segundos, presiona Control+Alt+N para iniciarlo."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Después de que NVDA se reinicie, ¿cómo usas tu nuevo complemento? Abre otra vez la Tienda de Complementos. Se abre en Complementos instalados, y tu nuevo complemento está en la lista con el estado Habilitado. Presiona Enter sobre él y elige Ayuda para abrir su documentación, que explica sus comandos. Muchos complementos añaden además su propia sección al diálogo Gestos de Entrada, en el submenú Preferencias del menú de NVDA, donde puedes encontrar y cambiar sus atajos de teclado. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "La acción Ayuda es el primer lugar donde mirar. Un complemento nuevo no sirve de mucho hasta que sabes a qué teclas responde.",
+            "Activa la Ayuda de Entrada con NVDA+1 y presiona el atajo del complemento. NVDA describe lo que hace esa tecla sin hacerlo. Presiona NVDA+1 de nuevo para desactivar la Ayuda de Entrada.",
+            "Algunos complementos añaden una categoría propia al diálogo Opciones de NVDA, o un elemento propio al menú de NVDA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manage_addons",
+      "title": "Actualizar, Deshabilitar y Eliminar Complementos",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Los complementos reciben versiones nuevas, igual que NVDA. De forma predeterminada, poco después de iniciarse, NVDA te avisa cuando hay actualizaciones disponibles para los complementos que tienes instalados, y te ofrece llevarte a ellas. También puedes comprobarlo en cualquier momento: abre la Tienda de Complementos y presiona Control+Tab hasta la pestaña Complementos actualizables. Para actualizar uno, presiona Enter sobre él y elige Actualizar. Después cierra la tienda y reinicia NVDA, exactamente como hiciste al instalar. Presiona Enter para continuar.",
+          "hints": [
+            "Actualizar sigue los mismos cuatro pasos que instalar: encontrarlo, elegir la acción, cerrar la tienda, reiniciar NVDA.",
+            "Para actualizar varios a la vez, selecciónalos manteniendo presionado Shift mientras presionas Flecha Abajo, y después abre el menú Acciones.",
+            "Mantener los complementos al día importa sobre todo justo después de actualizar el propio NVDA, porque las versiones antiguas de los complementos pueden dejar de funcionar con un NVDA nuevo."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Puedes elegir cómo se gestionan las actualizaciones. Abre las Opciones de NVDA con NVDA+N, luego P de Preferencias, luego O de Opciones, y ve a la categoría Tienda de Complementos. La opción Actualizaciones automáticas tiene tres valores. Notificar, el predeterminado, te avisa cuando hay actualizaciones. Actualizar Automáticamente las descarga e instala en segundo plano, y después te pide que reinicies NVDA. Deshabilitado no comprueba nunca. Presiona Enter para continuar.",
+          "hints": [
+            "Notificar es una buena elección para la mayoría de las personas. Tú mantienes el control y no te pierdes las actualizaciones.",
+            "En la lista de categorías de las Opciones de NVDA, presiona T hasta escuchar Tienda de Complementos. Más de una categoría empieza por esa letra.",
+            "NVDA busca actualizaciones de complementos una vez cada 24 horas."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "A veces quieres quitar de en medio un complemento sin borrarlo. Para eso sirve Deshabilitar. En la pestaña Complementos instalados, presiona Enter sobre el complemento y elige Deshabilitar. Su estado cambia a Deshabilitado, reinicio pendiente. Después de reiniciar NVDA queda apagado pero sigue instalado, y puedes recuperarlo en cualquier momento con la acción Habilitar. Deshabilitar es el primer paso correcto cuando sospechas que un complemento está causando un problema. Presiona Enter para continuar.",
+          "hints": [
+            "Deshabilitar es como apagar algo desde el enchufe. Eliminar es como tirarlo a la basura.",
+            "Si NVDA empieza a comportarse mal después de instalar un complemento, deshabilita ese complemento y reinicia. Si el problema desaparece, has encontrado la causa.",
+            "Como todo lo demás en la tienda, deshabilitar y habilitar solo surten efecto después de reiniciar NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Para desinstalar un complemento por completo, presiona Enter sobre él en la pestaña Complementos instalados y elige Eliminar. NVDA te pide que confirmes. El estado pasa entonces a Pendiente de eliminación, y el complemento desaparece cuando NVDA se reinicia. Una advertencia: NVDA Coach también está en esta lista. Si eliminas NVDA Coach, tus lecciones se van con él, así que fíjate bien en qué complemento está seleccionado antes de elegir Eliminar. Presiona Enter para continuar.",
+          "hints": [
+            "Eliminar un complemento lo borra de tu computadora. Puedes instalarlo otra vez desde la pestaña Complementos disponibles cuando quieras.",
+            "Antes de confirmar, escucha el nombre en el mensaje de confirmación. Te dice exactamente qué complemento está a punto de eliminarse.",
+            "Si eliges Eliminar por error y todavía no has reiniciado NVDA, responde No a la confirmación, o pregunta a tu instructor antes de reiniciar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Pruébalo ahora, sin cambiar nada. Abre la tienda y ve a la pestaña Complementos instalados. Baja con las flechas hasta NVDA Coach. Presiona Enter para abrir su menú Acciones y recórrelo con las flechas. Escucharás Deshabilitar, Eliminar, Ayuda y otras. Presiona Escape para cerrar el menú sin elegir nada. Después presiona Control+Tab hasta la pestaña Complementos actualizables y escucha si hay algo esperando. Vuelve aquí con NVDA+Shift+C y presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Recorrer un menú con las flechas nunca activa nada. Solo Enter lo hace. Escape cierra el menú sin riesgo.",
+            "Si la lista de Complementos actualizables está vacía, todos los complementos que tienes están al día.",
+            "Si aparece una actualización de NVDA Coach, es una versión más nueva de estas lecciones. Al actualizar conservas tu progreso."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external_and_incompatible",
+      "title": "Archivos de Complementos, Complementos Incompatibles y Cómo Salir de Apuros",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "No todos los complementos están en la tienda. Algunos se comparten como un archivo en un sitio web o te los envían por correo electrónico. Un archivo de complemento tiene un nombre que termina en punto N V D A guion addon. Hay dos formas de instalar uno. En la Tienda de Complementos, presiona Alt+X para el botón Instalar desde una fuente externa y elige el archivo. O, si NVDA está instalado en la computadora, simplemente presiona Enter sobre el archivo en el Explorador de archivos. En los dos casos NVDA te pide que confirmes antes de instalar, y después te pide reiniciar. Presiona Enter para continuar.",
+          "hints": [
+            "Un complemento de fuera de la tienda ni siquiera ha pasado el análisis de virus de la tienda. Asegúrate todavía más de que confías en quien te lo dio.",
+            "Los archivos descargados normalmente van a tu carpeta Descargas. Presiona Enter allí sobre el archivo del complemento y NVDA se encarga del resto.",
+            "Los complementos instalados de esta forma aparecen en la pestaña Complementos instalados con el canal Externo."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Cada complemento indica con qué versiones de NVDA funciona. Más o menos una vez al año, normalmente con la primera versión de NVDA del año, NVDA cambia de maneras que pueden romper complementos antiguos. Cuando eso ocurre, NVDA te avisa antes de actualizarse, y apaga cualquier complemento que no se haya actualizado para adaptarse. Esos complementos pasan a la pestaña Complementos incompatibles instalados. Por lo general, la solución es esperar: la mayoría de los complementos populares se actualizan en días o semanas, y entonces aparecen en la pestaña Complementos actualizables. Presiona Enter para continuar.",
+          "hints": [
+            "Incompatible no significa roto para siempre. Significa que el desarrollador todavía no ha confirmado que el complemento funciona con tu NVDA.",
+            "Antes de una actualización grande de NVDA, NVDA te dice cuáles de tus complementos se deshabilitarán. Si dependes de alguno, puedes esperar para actualizar NVDA.",
+            "La tienda te permite anular la incompatibilidad y habilitar el complemento de todos modos. Eso es bajo tu propio riesgo. Puede que no funcione, y puede volver inestable a NVDA."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Esta es la red de seguridad, y vale la pena recordarla. Si NVDA se comporta de forma extraña o se cierra una y otra vez después de instalar un complemento, puedes reiniciar NVDA con todos los complementos apagados. Presiona NVDA+Q (comando de NVDA). En el diálogo Salir de NVDA, usa Flecha Abajo para elegir Reiniciar con los complementos deshabilitados y presiona Enter. NVDA vuelve limpio, como si no hubiera ningún complemento instalado. Ahora abre la Tienda de Complementos, deshabilita o elimina el complemento del que sospechas y reinicia NVDA normalmente. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA más Q abre el diálogo Salir de NVDA. Es una lista de opciones. Reiniciar con los complementos deshabilitados es una de ellas.",
+            "Esto es temporal. El siguiente reinicio normal trae de vuelta todos tus complementos, salvo los que hayas deshabilitado o eliminado.",
+            "NVDA Coach también es un complemento, así que no estará disponible mientras los complementos estén deshabilitados. Vuelve con el siguiente reinicio normal."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Ya conoces toda la vida de un complemento: qué es, cómo juzgar si confiar en él, cómo encontrarlo, leer sobre él, instalarlo, actualizarlo, apagarlo, eliminarlo y recuperarte si alguno sale mal. Las tres últimas lecciones de este capítulo son un recorrido guiado por 25 de los complementos más descargados de la tienda, agrupados según para qué sirven. No necesitas ninguno de ellos. Están ahí para que sepas lo que es posible. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Puedes volver a este capítulo en cualquier momento desde el selector de lecciones para consultar un paso.",
+            "La Guía del Usuario de NVDA tiene una sección completa llamada Complementos y la Tienda de Complementos. Abre la Guía del Usuario desde el submenú Ayuda del menú de NVDA.",
+            "Nada de lo que aparece en el recorrido que sigue es una recomendación de instalar. Usa las comprobaciones de la primera lección y decide por ti mismo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_everyday",
+      "title": "Complementos Populares: Herramientas para el Día a Día",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Las tres lecciones siguientes presentan 25 de los complementos más descargados de la Tienda de Complementos. Unas palabras sobre cómo se eligieron. La tienda no publica cuántas personas usan cada complemento. Por eso esta lista ordena los complementos según cuántas veces se ha descargado cada uno desde GitHub, el sitio web donde se guarda la mayoría de los complementos, contadas en noviembre de 2026. Solo se contaron los complementos que la tienda ofrece para NVDA 2026.3. Es una medida de popularidad, no una recomendación. Presiona Enter para continuar.",
+          "hints": [
+            "Los recuentos de descargas incluyen cada actualización automática, así que los complementos que se actualizan a menudo quedan más arriba de lo que indicaría su número real de usuarios.",
+            "Aparecen complementos nuevos todo el tiempo, y uno más nuevo puede venirte mejor que uno famoso. Ordenar la pestaña Complementos disponibles por fecha de publicación te muestra las novedades.",
+            "No hace falta instalar nada de esto para terminar la lección. Escucha, y anota los nombres de los que te parezcan útiles."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Esta lección trata de nueve herramientas pequeñas que añaden una función al propio NVDA. Primero, tres para obtener información cuando la pides. Reloj, que en inglés se llama Clock, es un reloj y calendario avanzado. Se hace cargo del comando de hora del propio NVDA, NVDA+F12, de modo que una pulsación da la hora, dos pulsaciones la fecha, y tres pulsaciones el día, el número de la semana y el año. Día de la semana, en inglés Day of the week, te dice en qué día cae una fecha que tú eliges. Resource Monitor informa de lo ocupada que está tu computadora: carga del procesador, memoria en uso, espacio en disco y más. Presiona Enter para continuar.",
+          "hints": [
+            "Reloj, Día de la semana y Resource Monitor responden a una pregunta para la que, de otro modo, necesitarías la vista o varios pasos.",
+            "Sin ningún complemento, NVDA+F12 ya dice la hora, y presionarlo dos veces dice la fecha. Lo aprendiste en el capítulo 1. Reloj parte de ahí.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "A continuación, tres para trabajar con lo que NVDA dice y con lo que copias. Speech history review and copying guarda una lista de las cosas más recientes que dijo NVDA. De forma predeterminada, Shift+F11 y Shift+F12 retroceden y avanzan por ellas, y F12 copia la actual al portapapeles. Es muy práctico cuando NVDA dice algo una sola vez y se te escapó. Clip Contents Designer te permite añadir más texto a lo que ya está en el portapapeles en lugar de reemplazarlo, y puede mostrarte el contenido del portapapeles. Instant Translate traduce el texto seleccionado, o el texto del portapapeles, a otro idioma y te lee el resultado. Presiona Enter para continuar.",
+          "hints": [
+            "NVDA 2026.2 y posteriores pueden repetir por sí solos lo último que se dijo: presiona NVDA+X. Speech history va más lejos, porque recuerda muchos elementos, no solo el último.",
+            "Instant Translate envía el texto a un servicio de traducción en línea, así que necesita conexión a internet, y no deberías usarlo con texto privado.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Para terminar este grupo, tres que cambian lo que escuchas o te protegen de errores. Emoticons hace que NVDA diga el nombre de un emoticono de texto, como cara sonriente, en lugar de leer los signos de puntuación con los que se escribe. Report Symbols dice los símbolos mientras los escribes, como los signos de puntuación, incluso cuando has desactivado la lectura de los caracteres escritos. Bloqueo de entrada, en inglés Input lock, bloquea tus dispositivos de entrada con una sola pulsación de tecla y los desbloquea de la misma manera, lo que resulta útil cuando necesitas limpiar el teclado o cuando hay un niño o una mascota cerca. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "Emoticons y Report Symbols solo cambian la voz. No cambian lo que realmente se escribe o se envía.",
+            "Antes de instalar Bloqueo de entrada, lee su Ayuda y apréndete la tecla que desbloquea. Un teclado bloqueado que no puedes desbloquear es un verdadero fastidio.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_reading_navigation",
+      "title": "Complementos Populares: Lectura, Navegación y Voz",
+      "order": 10,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Esta lección trata de nueve complementos populares que cambian cómo lees, cómo te mueves o cómo escuchas a NVDA. Varios de ellos son anteriores a que NVDA pudiera hacer por sí mismo un trabajo parecido, así que esta lección también te dice lo que NVDA ya hace sin ellos. Primero, la lectura. Nao, que significa NVDA Advanced OCR, mejora el reconocimiento de texto integrado en NVDA, para leer texto de imágenes y documentos escaneados. SentenceNav te permite moverte por el texto frase por frase. PlaceMarkers, que en inglés se escribe Place markers, te permite poner marcadores en páginas web y otros documentos de modo exploración y volver a ellos más tarde. Presiona Enter para continuar.",
+          "hints": [
+            "OCR significa reconocimiento óptico de caracteres: convertir una imagen de texto en texto que NVDA puede leer. NVDA trae OCR integrado. Presiona NVDA+R para reconocer el objeto actual. Nao parte de ahí.",
+            "NVDA 2026.3 se mueve por frases por sí solo en muchos lugares: Alt+Flecha Abajo para la frase siguiente y Alt+Flecha Arriba para la anterior. Prueba eso antes de instalar SentenceNav.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "A continuación, el movimiento. ObjPad te permite hacer la navegación por objetos, que aprendiste en el capítulo 5, presionando teclas sueltas en lugar de combinaciones de teclas. Enhanced Touch Gestures añade gestos adicionales de pantalla táctil para quienes usan NVDA en una tableta o en una laptop con pantalla táctil. Read Feeds convierte a NVDA en un lector de fuentes de noticias, para que puedas seguir los últimos artículos de sitios web sin abrir cada sitio. Presiona Enter para continuar.",
+          "hints": [
+            "ObjPad les conviene a quienes usan mucho la navegación por objetos. Si rara vez necesitas los comandos del capítulo 5, no lo echarás de menos.",
+            "Enhanced Touch Gestures solo es útil en una computadora con pantalla táctil. NVDA 2026.2 y 2026.3 añadieron muchos gestos táctiles propios.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Por último, tres que van más allá de la voz de todos los días. Switch synth te permite guardar sintetizadores y voces en posiciones numeradas y saltar entre ellos con una pulsación de teclas: Control+Shift+NVDA más un número del 1 al 6. Access8Math ayuda con las matemáticas. Lee contenido matemático y te permite escribir matemáticas con una notación llamada LaTeX. Asistencia remota TeleNVDA, en inglés Tele NVDA remote assistance, permite que una persona de confianza, como un instructor, se conecte a tu computadora por internet y la escuche y la controle, o que tú te conectes a la suya. Presiona Enter para finalizar esta lección.",
+          "hints": [
+            "NVDA ya incluye Acceso remoto, en el submenú Herramientas del menú de NVDA, y lee matemáticas por sí solo desde NVDA 2026.1. TeleNVDA y Access8Math añaden opciones adicionales sobre eso.",
+            "Las herramientas de acceso remoto le dan a otra persona el control de tu computadora. Conéctate únicamente con alguien que conozcas y en quien confíes, y nunca compartas públicamente tu clave de conexión.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_app_support",
+      "title": "Complementos Populares: Soporte para Programas Concretos",
+      "order": 11,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "El último grupo de complementos populares no añade una función. Hacen que un programa concreto funcione mejor con NVDA. Si no usas el programa, no necesitas el complemento. Esta lección trata de siete de ellos. El complemento más descargado de toda la tienda está en este grupo: Windows App Essentials. Mejora el funcionamiento de NVDA con diversas aplicaciones y controles de Windows 11. Presiona Enter para continuar.",
+          "hints": [
+            "Un complemento para un programa solo hace algo mientras estás en ese programa. El resto del tiempo no estorba.",
+            "Windows App Essentials sigue de cerca a Windows y se actualiza muy a menudo. También es el complemento que con más probabilidad necesitará la versión más nueva de NVDA.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Tres complementos para programas que quizá uses todos los días. Mozilla Apps Enhancements añade funciones de accesibilidad para el navegador web Firefox y el programa de correo Thunderbird. Outlook Extended mejora Microsoft Outlook, con comandos para leer partes de un mensaje, como sus encabezados y sus archivos adjuntos, o para ir a ellas. VLC Media Player hace más fácil de usar el reproductor multimedia VLC, con mejor navegación y una forma de leer su barra de estado. Presiona Enter para continuar.",
+          "hints": [
+            "Si usas Firefox, Thunderbird, Outlook o VLC, vale la pena leer sobre el complemento correspondiente. Si no, sáltatelo.",
+            "Cada uno de ellos documenta sus propios comandos. Después de instalarlo, usa la acción Ayuda de la Tienda de Complementos para aprenderlos.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Y tres para quienes trabajan con audio. GoldWave mejora el acceso al editor de audio GoldWave. mp3DirectCut añade comandos para mp3DirectCut, un programa para cortar y recortar archivos MP3. StationPlaylist mejora el soporte para los programas StationPlaylist, que los locutores de radio usan para llevar una emisora, y añade comandos que controlan el programa Studio desde cualquier lugar. Presiona Enter para continuar.",
+          "hints": [
+            "Estas tres son herramientas especializadas. Son populares porque productores de audio y locutores ciegos dependen de ellas a diario.",
+            "Un complemento especializado suele añadir muchos comandos. Date tiempo con su documentación.",
+            "Para encontrar cualquiera de ellos, abre la Tienda de Complementos, ve a Complementos disponibles, presiona Alt+B y escribe el nombre."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Con esto termina el recorrido: 25 complementos, agrupados en herramientas para el día a día, lectura y navegación, y soporte para programas concretos. Recuerda el orden de trabajo para cualquier complemento. Decide si confías en él. Lee su descripción y sus reseñas. Instálalo desde la pestaña Complementos disponibles. Reinicia NVDA. Lee su Ayuda. Y si algo sale mal, presiona NVDA+Q y elige Reiniciar con los complementos deshabilitados. Presiona Enter para finalizar esta lección y completar el capítulo Complementos y la Tienda de Complementos.",
+          "hints": [
+            "Confiar, leer sobre él, instalarlo, reiniciar, leer su Ayuda. Ese orden te evita problemas.",
+            "Puedes volver a las lecciones de este capítulo en cualquier momento para consultar un paso o el nombre de un complemento.",
+            "En la tienda hay varios cientos de complementos más que los 25 tratados aquí. Buscar un programa que usas, o una tarea que quieres resolver, es la mejor manera de encontrarlos."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "id": "addon_store",
+  "title": "Eklentiler ve Eklenti Mağazası",
+  "description": "NVDA eklentilerinin ne olduğunu, eklentileri güvenle nasıl kullanacağınızı, Eklenti Mağazası'nda nasıl dolaşacağınızı ve eklentileri nasıl kurup güncelleyeceğinizi, devre dışı bırakacağınızı ve kaldıracağınızı öğrenin. Bölüm, en çok indirilen 25 eklentinin tanıtımıyla sona erer.",
+  "order": 7,
+  "lessons": [
+    {
+      "id": "what_are_addons",
+      "title": "Eklenti Nedir?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Eklenti, NVDA'ya kendisinde hazır bulunmayan bir özellik kazandıran küçük bir pakettir. Şu anda bir eklenti kullanıyorsunuz: NVDA Eğitmeni bir eklentidir. Eklentiler üç tür iş yapar. Bazıları belirli bir program için destek ekler veya var olan desteği geliştirir. Bazıları yeni konuşma sentezleyicileri veya braille ekran sürücüleri ekler. Bazıları da pano geçmişi veya saat gibi, NVDA'nın kendisine özellik ekler ya da var olan özellikleri değiştirir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Eklentileri telefondaki uygulamalar gibi düşünün. NVDA hiçbiri olmadan da çalışır; eklediğiniz her eklenti ona bir yetenek daha kazandırır.",
+            "Eklentileri NVDA topluluğundaki kişiler ve bazı şirketler hazırlar. NVDA'yı geliştiren kuruluş olan NV Access hazırlamaz.",
+            "Eklenti kurmak zorunda değilsiniz. NVDA Eğitmeni'nin ilk altı bölümünde öğretilen her şey, NVDA'nın ilk kurulduğu haliyle çalışır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA'da eklenti bulmak için yerleşik bir yer vardır; adı Eklenti Mağazası'dır. Mağazadaki her eklenti ücretsiz indirilebilir. Çoğu ticari ses olan birkaç eklenti ücretsiz indirilir, ama çalışması için sonradan ücretli bir lisans gerekir. Bunlardan birini kurup fikrinizi değiştirirseniz eklentiyi kaldırmanız yeterlidir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Ücretsiz indirilmesi, her zaman ücretsiz kullanılacağı anlamına gelmez. Lisans satın almak gerekiyorsa eklentinin açıklamasında bu belirtilir.",
+            "Eklenti Mağazası'nın nelerin bulunduğunu gösterebilmesi için internet bağlantısı gerekir. Daha önce kurduğunuz eklentiler çevrimdışıyken de çalışmaya devam eder.",
+            "Mağazada birkaç yüz eklenti vardır. Bir başlangıç noktanız olsun diye bu bölümün son üç dersi en çok indirilen 25 eklentiyi tanıtır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Herhangi bir şey kurmadan önce, bu bölümdeki en önemli bilgiyi öğrenin. Eklenti Mağazası'ndaki eklentiler NV Access ya da başka biri tarafından denetlenmez ve onaylanmaz. Bir eklenti NVDA'nın yapabildiği her şeyi yapabilir; buna kişisel bilgilerinizi okumak da dahildir. Mağazaya gönderilen her eklenti VirusTotal adlı bir hizmetle bilinen virüslere karşı taranır, ama temiz çıkan bir tarama garanti değildir. Bu yüzden eklentiye, indirdiğiniz diğer programlar gibi davranın: yalnızca kaynağına güveniyorsanız kurun. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Mağaza bir katalogdur, onay mührü değildir. Bir eklentinin orada listelenmesi, NV Access tarafından test edildiği anlamına gelmez.",
+            "Virüs taraması yalnızca eklenti gönderildiği sırada bilinen tehditleri yakalar. Ayrıca her iki yönde de yanılabilir.",
+            "NVDA, Eklenti Mağazası'nı ilk açtığınızda size aynı uyarıyı gösterir. Bu uyarıyla bir sonraki derste karşılaşacaksınız."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bir eklentiye güvenip güvenmeyeceğinize nasıl karar verirsiniz? İşte herkesin yapabileceği dört kontrol. Bir: eklentiyi kimin hazırladığını ve ne zamandır eklenti hazırladığını öğrenin. İki: düzenli olarak güncellenip güncellenmediğine bakın. Üç: mağazadaki Topluluk incelemeleri eylemini kullanarak diğer kullanıcıların ne dediğini okuyun; bu eylemi bu bölümde öğreneceksiniz. Dört: diğer NVDA kullanıcılarına sorun; örneğin NVDA kullanıcılarının e-posta listesinde veya sosyal medyada. Hâlâ emin değilseniz eklentiyi kurmayın. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "Birçok kişinin yıllardır kullandığı ve hâlâ güncellenen bir eklenti, kimsenin duymadığı bir eklentiden çok daha güvenli bir seçimdir.",
+            "Topluluk incelemelerini diğer NVDA kullanıcıları yazar. İncelemeler bir web sayfası olarak açılır; bu yüzden onları 4. Bölümdeki tarama kipi komutlarıyla okursunuz.",
+            "Bir eğitmeniniz varsa, hangi eklentileri kullandığını ve önerdiğini ona sorun. Bu, başlamak için gayet iyi bir yoldur."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_addon_store",
+      "title": "Eklenti Mağazası'nı Açma",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Eklenti Mağazası, NVDA menüsünün Araçlar alt menüsündedir. Açmak için NVDA+N (NVDA komutu) tuşlarına basarak NVDA menüsünü açın, ardından Araçlar için R'ye, sonra Eklenti mağazası için M'ye basın. Bunu henüz yapmanız gerekmiyor. Önce, sonraki iki adım size ne duyacağınızı ve buraya nasıl döneceğinizi anlatacak. Devam etmek için Enter'a basın.",
+          "hints": [
+            "NVDA artı N, NVDA menüsünü açar. R, Araçlar'a gidip onu açar. M, Eklenti mağazası'nı etkinleştirir.",
+            "Menüde harfe basmak işe yaramazsa Aşağı Ok ile Araçlar'ı bulun, açmak için Sağ Ok'a veya Enter'a basın, ardından Aşağı Ok ile Eklenti mağazası'na gidip Enter'a basın.",
+            "Mağazanın kendine ait bir kısayol tuşu yoktur. Daha sonra, NVDA menüsünün Tercihler alt menüsündeki Girdi Hareketleri iletişim kutusundan ona bir kısayol atayabilirsiniz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Eklenti Mağazası'nı ilk açtığınızda NVDA, Eklenti Mağazası Uyarısı adlı bir iletişim kutusu gösterir. Bu uyarı, önceki derste öğrendiklerinizi tekrarlar: eklentileri topluluk hazırlar, NV Access bunları incelemez ve eklentiler kişisel verilerinize erişebilir. İletişim kutusunda Bu mesajı bir daha gösterme adlı bir onay kutusu ve bir Tamam düğmesi vardır. Sekme tuşuna (Windows komutu) basarak Tamam'a gidin ve Enter'a basın. Uyarıyı her seferinde duymak istemiyorsanız önce onay kutusunun üzerinde Boşluk tuşuna basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Uyarıyı duymazsanız, bu bilgisayarda biri Bu mesajı bir daha gösterme kutusunu daha önce işaretlemiş demektir. Sorun değil. Mağaza doğrudan açılır.",
+            "Uyarıyı kabul etmeden önce yeniden okumak için NVDA+Sekme tuşlarına basarak odaktaki kontrolü dinleyin veya 5. Bölümdeki nesne dolaşımı komutlarıyla uyarı metnine gidin.",
+            "Tamam'a basmak hiçbir şey kurmaz. Yalnızca uyarıyı okuduğunuzu onaylar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Eklenti Mağazası açıkken mağaza ile bu pencere arasında gidip geleceksiniz. NVDA Eğitmeni'ne dönmek için NVDA+Shift+C tuşlarına basın. Mağazaya dönmek için Eklenti mağazası sözünü duyana kadar Alt+Sekme (Windows komutu) tuşlarına basın. Mağazayı tamamen kapatmak için mağazanın içindeyken Escape tuşuna basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Microsoft Excel'de olmadığınız sürece NVDA artı Shift artı C sizi her zaman bu derse geri getirir.",
+            "Alt artı Sekme, 1. Bölümün son dersinde anlatılmıştı. Alt'ı basılı tutun, Sekme'ye dokunun, dinleyin ve istediğiniz pencereyi duyduğunuzda Alt'ı bırakın.",
+            "Nerede olduğunuzu karıştırırsanız, geçerli pencerenin başlığını duymak için NVDA+T tuşlarına basın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. NVDA+N tuşlarına, ardından R'ye, sonra M'ye basın. Uyarı çıkarsa Sekme ile Tamam'a gidip Enter'a basın. Mağaza açıldığında başlığını okumak için NVDA+T (NVDA komutu) tuşlarına basın. En az bir eklentiniz, yani NVDA Eğitmeni kurulu olduğu için başlık, Eklenti mağazası, Kurulu eklentiler gibi bir şey olacaktır. Odak bir listededir ve NVDA Eğitmeni de o listededir. Listeyi keşfetmek için Yukarı ve Aşağı Ok tuşlarına basın. Ardından buraya dönmek için NVDA+Shift+C tuşlarına basın ve bu dersi bitirmek için Enter'a basın. Mağazayı bir sonraki ders için açık bırakabilirsiniz.",
+          "hints": [
+            "Hiç eklenti kurulu olmayan bir bilgisayarda mağaza, Mağazadaki eklentiler sekmesinde açılır. Sizin bilgisayarınızda ise NVDA Eğitmeni kurulu olduğu için Kurulu eklentiler sekmesinde açılır.",
+            "Liste boş gibiyse veya Eklentiler yükleniyor sözünü duyarsanız birkaç saniye bekleyin. Mağaza bilgileri internetten alıyordur.",
+            "Hiçbir şey açılmazsa NVDA güvenli kipte veya eklentilerin kapalı olduğu bir yerden çalışıyor olabilir. Eğitmeninize veya sistem yöneticinize sorun."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "store_layout",
+      "title": "Mağazada Yolunuzu Bulma",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Eklenti Mağazası, dört sekmesi olan tek bir penceredir. Her sekme farklı bir eklenti listesi gösterir. Kurulu eklentiler, sizde olanları gösterir. Güncellenebilen eklentiler, kurulu olup daha yeni bir sürümü bekleyen eklentileri gösterir. Mağazadaki eklentiler, kurabileceğiniz her şeyi gösterir. Kurulu uyumsuz eklentiler ise sizde olan, ama NVDA sürümünüzle çalışmayan eklentileri gösterir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Dört sekme: Kurulu eklentiler, Güncellenebilen eklentiler, Mağazadaki eklentiler ve Kurulu uyumsuz eklentiler. Çoğu zaman Kurulu eklentiler ile Mağazadaki eklentiler sekmelerini kullanacaksınız.",
+            "Pencerenin başlığı her zaman hangi sekmede olduğunuzu söyler. Duymak için NVDA+T tuşlarına basın.",
+            "Güncellenebilen eklentiler sekmesinin boş olması iyi haberdir. Sizdeki her şeyin güncel olduğu anlamına gelir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bir sekmeden sonrakine geçmek için Kontrol+Sekme (Windows komutu) tuşlarına basın. Geriye gitmek için Kontrol+Shift+Sekme tuşlarına basın. Bu, mağazanın her yerinden çalışır ve NVDA geldiğiniz sekmenin adını duyurur. Şimdi deneyin: Alt+Sekme ile mağazaya gidin, Mağazadaki eklentiler sözünü duyana kadar Kontrol+Sekme tuşlarına basın, ardından NVDA+Shift+C ile buraya dönün ve devam etmek için Enter'a basın.",
+          "hints": [
+            "Kontrol artı Sekme bir Windows komutudur. Web tarayıcıları ve ayar pencereleri dahil birçok programda sekmeler arasında geçiş yapar.",
+            "Ayrıca sekme kontrolünün kendisine ulaşana kadar Shift+Sekme tuşlarına basabilir, ardından Sol ve Sağ Ok ile sekme değiştirebilirsiniz.",
+            "Sekme değiştirdikten sonra listenin dolması biraz zaman alır. Eklentiler yükleniyor sözünü duyarsanız birkaç saniye bekleyin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Her sekme aynı şekilde düzenlenmiştir. Sekme tuşuna bastıkça bölümler arasında şu sırayla ilerlersiniz. Önce eklenti listesi. Sonra seçtiğiniz eklentinin ayrıntıları: ok tuşlarıyla okuyabileceğiniz bir açıklama, bir Eylemler düğmesi ve Diğer ayrıntılar adlı ikinci bir metin kutusu. Sonra iki düğme: Dış kaynaktan kur ve Kapat. Bunlardan sonra sekmeler ve filtreler gelir: Sıralanacak sütun, Kanal ve bir Arama kutusu. Sekme tuşuna bir kez daha basınca listeye dönersiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Liste, mağazanın kalbidir. Yukarı ve Aşağı Ok eklentiler arasında dolaşır; ayrıntılar da hangi eklentinin üzerindeyseniz onu anlatır.",
+            "Listedeyken Shift+Sekme sizi geriye, Arama kutusuna ve diğer filtrelere götürür.",
+            "Bu düzeni ezberlemeniz gerekmez. Sekme ve Shift+Sekme sizi her zaman adım adım dolaştırır ve NVDA geldiğiniz her bölümün adını söyler."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Mağazada erişim tuşları da vardır; bunlar sizi doğrudan pencerenin bir bölümüne götürür. Alt tuşunu basılı tutup harfe basın. Türkçe NVDA'da Alt+A Arama kutusuna, Alt+S ise Sıralanacak sütun filtresine gider. Mağazadaki eklentiler sekmesinde Alt+M eklenti listesine gider. Kanal filtresinin ve Diğer ayrıntılar kutusunun harfleri başka düğmelerle ortaktır; bu yüzden bu ikisine Sekme tuşuyla gidin. Devam etmek için Enter'a basın.",
+          "hints": [
+            "İlk öğrenilecek ikisi şunlardır: Arama için Alt artı A ve Mağazadaki eklentiler sekmesinde liste için Alt artı M. Bu ikisi sizi neredeyse her yere götürür.",
+            "Bu harfler Türkçe NVDA içindir ve listenin harfi sekmeye göre değişir. Kurulu eklentiler sekmesinde listenin harfi başka kontrollerle ortaktır; orada Sekme tuşunu kullanın. Her kontrole Sekme ile geldiğinizde NVDA o kontrolün erişim tuşunu duyurur.",
+            "Erişim tuşları Windows komutlarıdır. NVDA bunları her kontrolün bir parçası olarak bildirir; örneğin: Arama, yazı alanı, Alt artı A."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. Alt+Sekme ile mağazaya gidin. Mağazadaki eklentiler sekmesinde olduğunuzdan emin olun, listeye gitmek için Alt+M tuşlarına basın ve ok tuşuyla birkaç eklenti aşağı inin. Sekme tuşuna basın ve ardından ne geldiğini dinleyin. Listeye dönene kadar Sekme tuşuna basmaya devam edin. Ardından NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter'a basın.",
+          "hints": [
+            "Sekme tuşuna bastıkça şunları dinleyin: açıklama, Eylemler düğmesi, Diğer ayrıntılar, Dış kaynaktan kur, Kapat, sekmeler ve ardından filtreler.",
+            "Açıklama ve Diğer ayrıntılar salt okunur metinlerdir. Tıpkı 3. Bölümde yaptığınız gibi, içlerinde satır satır okumak için Yukarı ve Aşağı Ok tuşlarını kullanın.",
+            "Kaybolursanız Mağazadaki eklentiler sekmesinde Alt+M tuşlarına basın. Bu sizi her zaman listeye geri götürür."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_and_filter",
+      "title": "Listede Arama ve Filtreleme",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Mağazadaki eklentiler sekmesi, ada göre sıralanmış birkaç yüz eklenti listeler. Hepsini ok tuşlarıyla dolaşmak çok uzun sürer. Bir eklentiyi bulmanın daha hızlı üç yolu vardır: ilk harfle dolaşım, Arama kutusu ve filtreler. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Listede bir eklentinin adının ilk birkaç harfini yazmak, tıpkı bir dosya listesinde olduğu gibi sizi o eklentiye atlatır.",
+            "Arama, bir eklentinin ne yapmasını istediğinizi bilip adını bilmediğiniz zaman kullanılacak araçtır.",
+            "Filtreler listeyi daraltır. Hiçbir şeyi silmezler. Filtreyi temizlediğinizde tam liste geri gelir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Arama yapmak için Alt+A tuşlarına basarak veya listedeyken Shift+Sekme tuşlarına basarak Arama kutusuna gidin. İstediğiniz şeyi anlatan bir iki sözcük yazın; örneğin pano veya saat. Enter'a basmazsınız. Siz yazdıkça liste kendiliğinden güncellenir. Ardından Sekme tuşuyla listeye geçin ve ok tuşlarıyla sonuçlarda dolaşın. Arama; her eklentinin adına, yayıncısına, yazarına ve açıklamasına bakar. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Sözcüğü yazın, ardından Sekme tuşuna basın. Sonuçlar listede sizi bekliyordur.",
+            "Arama açıklamalara da baktığı için OCR veya ses gibi bir işi aratmak, adını asla tahmin edemeyeceğiniz eklentileri bulur.",
+            "Tam listeyi geri getirmek için Alt+A ile Arama kutusuna dönün ve yazdıklarınızı silin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Arama'nın yanında filtreler vardır. Kanal, hangi tür sürümlerin listeleneceğini seçer: Tümü, Kararlı, Beta, Geliştirici veya Dış. Kararlı, geliştiricinin eklentiyi test edilmiş ve hazır saydığı anlamına gelir. Beta ve Geliştirici sürümleri test edenler içindir ve sorunlu olabilir. Yeni başlayan biri olarak Kararlı'yı seçin. Mağazadaki eklentiler ve Güncellenebilen eklentiler sekmelerinde ayrıca Uyumsuz eklentileri göster adlı bir onay kutusu vardır. Onu işaretsiz bırakın. Kurulu eklentilerle ilgili sekmelerde ise bunun yerine Etkin/devre dışı filtresi bulunur. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Kanal filtresine Sekme tuşuyla gidin, ardından Yukarı ve Aşağı Ok ile Kararlı'yı seçin.",
+            "Dış, mağazadan değil bir dosyadan kurulan eklentiler için kullanılan kanal adıdır.",
+            "Uyumsuz eklentiler, NVDA sürümünüzle çalıştığı belirtilmemiş olanlardır. Bu bölümdeki sonraki derslerden biri onları açıklar."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Liste normalde ada göre sıralıdır. Alt+S ile gidilen Sıralanacak sütun filtresi listeyi başka bir şekilde, örneğin yayıncıya veya yayın tarihine göre, artan ya da azalan düzende sıralamanızı sağlar. Yayın tarihine göre, en yeni en üstte olacak şekilde sıralamak, son zamanlarda nelerin eklendiğini veya güncellendiğini keşfetmenin kullanışlı bir yoludur. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Sıralanacak sütun bir seçim kutusudur. Seçenekleri duymak için Yukarı ve Aşağı Ok tuşlarını kullanın. Birini seçer seçmez liste yeniden sıralanır.",
+            "Seçenekler sekmeden sekmeye biraz değişir, çünkü her sekmenin sütunları biraz farklıdır.",
+            "Liste tuhaf bir sırada gibi geliyorsa bu filtreyi kontrol edin. Biri değiştirmiş olabilir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. Alt+Sekme ile mağazaya gidin ve Mağazadaki eklentiler sekmesine gelene kadar Kontrol+Sekme tuşlarına basın. Alt+A tuşlarına basın ve saat sözcüğünü yazın. Sekme tuşuyla listeye geçin ve ok tuşlarıyla sonuçlarda dolaşın. Ardından yeniden Alt+A tuşlarına basın, sözcüğü silin ve her şeyi listelemek için Sekme ile listeye dönün. NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter'a basın.",
+          "hints": [
+            "Aramadan sonra liste boşsa yazımınızı kontrol edin ve Kanal filtresinin Tümü veya Kararlı olarak ayarlandığına bakın.",
+            "Arama metninizi hızlıca silmek için Kontrol+A ile tümünü seçin, ardından Delete tuşuna basın.",
+            "İnternet bağlantısı yoksa Mağazadaki eklentiler de yoktur. Arama kutusuna hiçbir şey yazılmamışken sekme boş kalıyorsa bağlantınızı kontrol edin."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "addon_details",
+      "title": "Kurmadan Önce Eklenti Hakkında Bilgi Edinme",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Listede ok tuşuyla bir eklentinin üzerine geldiğinizde NVDA onun satırını okur: adı, durumu, sürümü, kanalı ve yayıncısı. Bu yalnızca özettir. Asıl bilgi ayrıntılardadır; oraya listedeyken Sekme tuşuna basarak ulaşırsınız. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Satır, eklentinin adını ve onu kimin yayımladığını söyler. Ayrıntılar ise gerçekte ne yaptığını anlatır.",
+            "NVDA satırı siz hepsini yakalayamadan bitirirse, odaktaki öğeyi yeniden duymak için NVDA+Sekme tuşlarına basın.",
+            "Ayrıntılar her zaman listede seçili olan eklentiye aittir. Seçimi değiştirirseniz ayrıntılar da onunla birlikte değişir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Listedeyken Sekme tuşuna basın. Açıklamaya gelirsiniz. Bu salt okunur bir metin kutusudur; bu yüzden onu ok tuşlarıyla okuyun veya Tümünü Oku ile baştan sona dinleyin: masaüstü düzeninde NVDA+Aşağı Ok, dizüstü düzeninde NVDA+A. Sekme tuşuna basarak Eylemler düğmesini geçin ve Diğer ayrıntılar'a ulaşmak için Sekme tuşuna bir kez daha basın. Burada yayıncı, yazar, sürüm, gereken asgari NVDA sürümü, en son test edilen NVDA sürümü, lisans ve VirusTotal taramasının sonucu listelenir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Açıklama şu soruyu yanıtlar: bu ne yapıyor? Diğer ayrıntılar ise şunları yanıtlar: kim hazırladı, ne kadar güncel ve virüs taramasında bir şey işaretlendi mi?",
+            "En son test edilen NVDA sürümüne bakmaya değer. Sizin NVDA'nızdan birkaç yıl gerideyse eklentiyle artık ilgilenilmiyor olabilir.",
+            "Her iki kutu da salt okunurdur. Onları okurken bastığınız hiçbir tuş bir şeyi değiştirmez veya kurmaz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Her eklentinin bir eylemler menüsü vardır. Açmak için listede eklentinin üzerindeyken Enter'a veya Uygulamalar tuşuna basın. Ayrıca ayrıntılardaki Eylemler düğmesine Sekme ile gidip Boşluk tuşuna da basabilirsiniz. Kurmadığınız bir eklenti için menüde Kur, Yardım, Ana sayfa, Lisans, Kaynak kodu, Topluluk incelemeleri ve VirusTotal taraması sonuçları bulunur. Bazı eklentilerde Neler yeni de vardır. Menüde dolaşmak için Yukarı ve Aşağı Ok tuşlarını, hiçbir şey seçmeden kapatmak için Escape tuşunu kullanın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Uygulamalar tuşu birçok klavyenin en alt sırasında, Boşluk çubuğunun sağındadır. Klavyenizde yoksa Shift+F10 aynı işi yapar.",
+            "Eylemler eklentiye göre değişir. Kurulu bir eklentide Kur yerine Devre dışı bırak ve Kaldır bulunur.",
+            "Eylemler menüsünü açmak her zaman güvenlidir. Eylemlerden birinin üzerinde Enter'a basana kadar hiçbir şey olmaz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bu eylemlerden üçü, bir eklentiye güvenip güvenmeyeceğinize karar vermenize yardımcı olur. Yardım, eklentinin kendi belgelerini açar. Topluluk incelemeleri, diğer NVDA kullanıcılarının eklentiyle ilgili deneyimlerini yazdığı bir web sayfasını açar. VirusTotal taraması sonuçları, virüs tarama raporunun tamamını web tarayıcınızda açar. Bunlar tarayıcınızda açılır; bu yüzden okumak için 4. Bölümdeki tarama kipi komutlarını kullanın, ardından mağazaya dönmek için Alt+Sekme tuşlarına basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Topluluk incelemeleri GitHub adlı bir web sitesinde tutulur. Başlıklar arasında atlayıp her incelemeyi bulmak için H tuşuna basın.",
+            "Henüz inceleme olmaması bir eklentinin kötü olduğu anlamına gelmez. Birçok iyi eklenti henüz incelenmemiştir, o kadar.",
+            "Ana sayfa ve Kaynak kodu, eklentinin nereden geldiğini söyler. Herkese açık bir ana sayfası ve sürüm geçmişi olan bir geliştiriciye güvenmek daha kolaydır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi deneyin. Mağazada, Mağazadaki eklentiler sekmesinde, ilginizi çeken herhangi bir eklentiyi seçin. Sekme ile açıklamasına gidin ve okuyun. Sekme tuşuna iki kez daha basarak Diğer ayrıntılar'a gidin ve okuyun. Ardından Alt+M ile listeye dönün, Enter'a basarak Eylemler menüsünü açın, neler sunulduğunu duymak için ok tuşlarıyla menüde dolaşın ve menüyü kapatmak için Escape tuşuna basın. Henüz hiçbir şey kurmayın. NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter'a basın.",
+          "hints": [
+            "Escape'e bir kez basmak Eylemler menüsünü kapatır. İkinci kez basmamaya dikkat edin, çünkü mağazanın kendisindeyken Escape mağazayı kapatır.",
+            "Mağazayı yanlışlıkla kapattıysanız NVDA+N, ardından R, sonra M ile yeniden açın.",
+            "Hangi eklentiyi inceleyeceğinizden emin değil misiniz? Arama kutusuna speech history yazın. En çok indirilen eklentilerden biridir ve bu bölümde daha sonra ele alınır."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "install_addon",
+      "title": "Eklenti Kurma",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Mağazadan eklenti kurmak dört adımdır. Bir: eklentiyi Mağazadaki eklentiler sekmesinde bulun. İki: üzerinde Enter'a basın ve Kur'u seçin. Üç: mağazayı kapatın. Dört: NVDA'nın yeniden başlamasına izin verin. Eklenti, NVDA yeniden başlayana kadar çalışmaya başlamaz. Bu dersi bitirmek için bir şey kurmanız gerekmez. Şimdilik yalnızca adımları öğrenmek isterseniz okuyarak ilerleyin ve her adımdan sonra Enter'a basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bulun, Kur'u seçin, mağazayı kapatın, NVDA'yı yeniden başlatın. Dört adım her seferinde bunlardır.",
+            "NVDA'nın yeniden başlaması birkaç saniye sürer. NVDA susar, ardından başlangıç sesini duyarsınız ve yeniden konuşmaya başlar.",
+            "Gerçek bir eklentiyle alıştırma yapmak isterseniz, önceki derste hakkında bilgi edindiğiniz ve içinize sinen bir eklentiyi seçin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Eklenti listede seçiliyken Enter'a basarak Eylemler menüsünü açın ve ilk öğe olan Kur'un üzerinde yeniden Enter'a basın. Mağaza hemen indirmeye başlar. Siz listede kalırsınız ve o eklentinin durumu önce İndiriliyor, ardından İndirildi, kurulmayı bekliyor olarak değişir. Durum, satırın bir parçasıdır; bu yüzden kontrol etmek için odaktaki öğeyi bildiren NVDA+Sekme tuşlarına basın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Enter, Eylemler menüsünü açar ve Kur ilk öğedir; yani bir eklentinin üzerinde Enter'a iki kez basmak onu kurar.",
+            "İndirildi, kurulmayı bekliyor; dosyanın geldiği ve beklediği anlamına gelir. Asıl kurulum, mağazayı kapattığınızda yapılır.",
+            "Durum İndirme başarısız diyorsa Eylemler menüsünü yeniden açın ve Kurmayı yeniden dene'yi seçin. Bunun olağan nedeni kopan internet bağlantısıdır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Mağazayı kapatmadan önce başka eklentiler de seçebilirsiniz. Kurduğunuz her eklenti sıraya eklenir. Ayrıca ok tuşlarına basarken Shift'i basılı tutarak veya Kontrol'ü basılı tutup her birinin üzerinde Boşluk tuşuna basarak birkaç eklentiyi birden seçebilir, ardından Eylemler menüsünü açıp Seçili eklentileri kur'u seçebilirsiniz. Hâlâ inmekte olan bir eklenti hakkında fikrinizi değiştirirseniz onun Eylemler menüsünü açın ve Kurulumu iptal et'i seçin. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Her eklentiden sonra NVDA'yı yeniden başlatmanız gerekmez. Önce istediğiniz her şeyi seçin, sonra mağazayı bir kez kapatın.",
+            "Birkaç eklentiyi seçmek, Dosya Gezgini'nde birkaç dosyayı seçmekle aynı şekilde çalışır.",
+            "Küçük başlayın. Bir iki eklenti kurun, bir süre onlarla çalışın ve sonra başkalarını ekleyin. Her birinin ne yaptığını bu şekilde anlamak çok daha kolaydır."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Seçmeyi bitirdiğinizde Escape tuşuna basın veya Sekme ile Kapat düğmesine gidip Enter'a basın. NVDA eklentilerin kurulduğunu söyler ve beklemenizi ister. Ardından bir iletişim kutusu, eklentilerde değişiklik yapıldığını bildirir ve NVDA'nın şimdi yeniden başlatılmasını isteyip istemediğinizi sorar. Evet'in üzerinde Enter'a basın. NVDA yeniden başlar ve yeni eklentiniz çalışır durumdadır. Hayır'ı seçerseniz eklenti bekler ve NVDA bir sonraki açılışında tam olarak kurulur. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Evet'i seçmek olağan yanıttır. NVDA kapanır ve birkaç saniye içinde kendiliğinden geri gelir.",
+            "NVDA yeniden başladığında NVDA Eğitmeni durur. Bu beklenen bir şeydir. Sonrasında ders seçiciyi açmak için NVDA+Shift+C tuşlarına basın; bu ders yerinde duruyor olacak.",
+            "NVDA yaklaşık on beş saniye sonra geri gelmezse başlatmak için Kontrol+Alt+N tuşlarına basın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA yeniden başladıktan sonra yeni eklentinizi nasıl kullanırsınız? Eklenti Mağazası'nı yeniden açın. Mağaza Kurulu eklentiler sekmesinde açılır ve yeni eklentiniz Etkin durumuyla listededir. Üzerinde Enter'a basın ve Yardım'ı seçerek komutlarını anlatan belgelerini açın. Birçok eklenti ayrıca NVDA menüsünün Tercihler alt menüsündeki Girdi Hareketleri iletişim kutusuna kendi bölümünü ekler; kısayol tuşlarını orada bulabilir ve değiştirebilirsiniz. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "İlk bakılacak yer Yardım eylemidir. Hangi tuşlara yanıt verdiğini bilmediğiniz sürece yeni bir eklentinin pek yararı olmaz.",
+            "NVDA+1 ile Girdi Yardımı'nı açın ve eklentinin kısayoluna basın. NVDA o tuşun ne yaptığını, işlemi gerçekleştirmeden anlatır. Girdi Yardımı'nı kapatmak için yeniden NVDA+1 tuşlarına basın.",
+            "Bazı eklentiler NVDA Ayarları iletişim kutusuna kendi kategorisini veya NVDA menüsüne kendi öğesini ekler."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manage_addons",
+      "title": "Eklentileri Güncelleme, Devre Dışı Bırakma ve Kaldırma",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Tıpkı NVDA gibi eklentilerin de yeni sürümleri çıkar. Varsayılan olarak NVDA, başladıktan kısa süre sonra kurulu eklentileriniz için güncelleme olduğunda bunu size bildirir ve sizi güncellemelere götürmeyi önerir. İstediğiniz zaman kendiniz de kontrol edebilirsiniz: Eklenti Mağazası'nı açın ve Kontrol+Sekme ile Güncellenebilen eklentiler sekmesine gidin. Bir eklentiyi güncellemek için üzerinde Enter'a basın ve Güncelle'yi seçin. Ardından tıpkı kurarken yaptığınız gibi mağazayı kapatın ve NVDA'yı yeniden başlatın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Güncelleme, kurmayla aynı dört adımı izler: bulun, eylemi seçin, mağazayı kapatın, NVDA'yı yeniden başlatın.",
+            "Birkaçını birden güncellemek için Aşağı Ok'a basarken Shift'i basılı tutarak onları seçin, ardından Eylemler menüsünü açın.",
+            "Eklentileri güncel tutmak en çok, NVDA'nın kendisini güncelledikten hemen sonra önemlidir, çünkü eklentilerin eski sürümleri yeni NVDA ile çalışmayabilir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Güncellemelerin nasıl ele alınacağını seçebilirsiniz. NVDA+N, ardından Tercihler için T, sonra Ayarlar için L ile NVDA Ayarları'nı açın ve Eklenti mağazası kategorisine gidin. Otomatik güncellemeler ayarının üç seçeneği vardır. Varsayılan olan Bildir, güncelleme olduğunda size haber verir. Otomatik olarak güncelle, güncellemeleri arka planda indirip kurar, ardından NVDA'yı yeniden başlatmanızı ister. Devre dışı ise hiç kontrol etmez. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bildir çoğu kişi için iyi bir seçimdir. Kontrol sizde kalır ve güncellemeleri kaçırmazsınız.",
+            "NVDA Ayarları'nın kategori listesinde, Eklenti mağazası sözünü duyana kadar E harfine basın. Bu harfle başlayan başka kategoriler de olabilir.",
+            "NVDA, eklenti güncellemelerini 24 saatte bir kontrol eder."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bazen bir eklentiyi silmeden aradan çıkarmak istersiniz. Devre dışı bırak bunun içindir. Kurulu eklentiler sekmesinde eklentinin üzerinde Enter'a basın ve Devre dışı bırak'ı seçin. Durumu, Yeniden başlatıldıktan sonra devre dışı olarak değişir. NVDA'yı yeniden başlattıktan sonra eklenti kapalıdır ama hâlâ kuruludur ve Etkinleştir eylemiyle onu istediğiniz zaman geri getirebilirsiniz. Bir eklentinin soruna yol açtığından şüphelendiğinizde atılacak doğru ilk adım onu devre dışı bırakmaktır. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Devre dışı bırakmak, bir şeyi prizden kapatmak gibidir. Kaldırmak ise onu atmak gibidir.",
+            "Bir eklenti kurduktan sonra NVDA tuhaf davranmaya başlarsa o eklentiyi devre dışı bırakıp NVDA'yı yeniden başlatın. Sorun ortadan kalkarsa nedeni bulmuşsunuzdur.",
+            "Mağazadaki diğer her şey gibi devre dışı bırakma ve etkinleştirme de ancak NVDA yeniden başladıktan sonra geçerli olur."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bir eklentiyi tamamen kaldırmak için Kurulu eklentiler sekmesinde üzerinde Enter'a basın ve Kaldır'ı seçin. NVDA sizden onay ister. Ardından durum Kaldırma bekliyor olarak görünür ve eklenti, NVDA yeniden başladıktan sonra gitmiş olur. Bir uyarı: NVDA Eğitmeni de bu listededir. NVDA Eğitmeni'ni kaldırırsanız dersleriniz de onunla birlikte gider; bu yüzden Kaldır'ı seçmeden önce hangi eklentinin seçili olduğuna dikkat edin. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bir eklentiyi kaldırmak onu bilgisayarınızdan siler. İstediğiniz zaman Mağazadaki eklentiler sekmesinden yeniden kurabilirsiniz.",
+            "Onaylamadan önce onay mesajındaki adı dinleyin. Mesaj, tam olarak hangi eklentinin kaldırılmak üzere olduğunu söyler.",
+            "Kaldır'ı yanlışlıkla seçtiyseniz ve NVDA'yı henüz yeniden başlatmadıysanız onay sorusuna Hayır yanıtını verin veya yeniden başlatmadan önce eğitmeninize sorun."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Şimdi, hiçbir şeyi değiştirmeden deneyin. Mağazayı açın ve Kurulu eklentiler sekmesine gidin. Ok tuşlarıyla NVDA Eğitmeni'ne gelin. Enter'a basarak Eylemler menüsünü açın ve ok tuşlarıyla menüde dolaşın. Devre dışı bırak, Kaldır, Yardım ve başka eylemler duyacaksınız. Hiçbir şey seçmeden menüyü kapatmak için Escape tuşuna basın. Ardından Kontrol+Sekme ile Güncellenebilen eklentiler sekmesine gidin ve bekleyen bir şey olup olmadığını dinleyin. NVDA+Shift+C ile buraya dönün ve bu dersi bitirmek için Enter'a basın.",
+          "hints": [
+            "Bir menüde ok tuşlarıyla dolaşmak hiçbir şeyi etkinleştirmez. Bunu yalnızca Enter yapar. Escape menüyü güvenle kapatır.",
+            "Güncellenebilen eklentiler listesi boşsa sizdeki her eklenti günceldir.",
+            "NVDA Eğitmeni için bir güncelleme listeleniyorsa bu, bu derslerin daha yeni bir sürümüdür. Güncellemek ilerlemenizi korur."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external_and_incompatible",
+      "title": "Eklenti Dosyaları, Uyumsuz Eklentiler ve Sorundan Kurtulma",
+      "order": 8,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Her eklenti mağazada bulunmaz. Bazıları bir web sitesinde dosya olarak paylaşılır veya size e-postayla gönderilir. Bir eklenti dosyasının adı nokta N V D A tire addon ile biter. Böyle bir dosyayı kurmanın iki yolu vardır. Eklenti Mağazası'nda Sekme tuşuyla Dış kaynaktan kur düğmesine gidin, Enter'a basın ve dosyayı seçin. Ya da NVDA bilgisayara kuruluysa Dosya Gezgini'nde dosyanın üzerinde Enter'a basmanız yeterlidir. Her iki durumda da NVDA kurmadan önce sizden onay ister, ardından yeniden başlatmayı önerir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Mağaza dışından gelen bir eklenti, mağazanın virüs taramasından bile geçmemiştir. Onu size verene güvendiğinizden iyice emin olun.",
+            "İndirilen dosyalar normalde İndirilenler klasörünüze gelir. Oradaki eklenti dosyasının üzerinde Enter'a basın; gerisini NVDA halleder.",
+            "Bu şekilde kurulan eklentiler, Kurulu eklentiler sekmesinde kanalı Dış olarak görünür."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Her eklenti, NVDA'nın hangi sürümleriyle çalıştığını belirtir. Kabaca yılda bir kez, genellikle yılın ilk NVDA sürümüyle, NVDA eski eklentileri bozabilecek şekilde değişir. Böyle olduğunda NVDA güncellenmeden önce sizi uyarır ve buna uygun olarak güncellenmemiş her eklentiyi kapatır. Bu eklentiler Kurulu uyumsuz eklentiler sekmesine taşınır. Çoğu zaman çözüm beklemektir: popüler eklentilerin çoğu günler veya haftalar içinde güncellenir ve ardından Güncellenebilen eklentiler sekmesinde görünür. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Uyumsuz, sonsuza dek bozuk demek değildir. Geliştiricinin, eklentinin sizin NVDA'nızla çalıştığını henüz doğrulamadığı anlamına gelir.",
+            "Büyük bir NVDA güncellemesinden önce NVDA, eklentilerinizden hangilerinin devre dışı bırakılacağını söyler. Bunlardan birine bağımlıysanız NVDA'yı güncellemek için bekleyebilirsiniz.",
+            "Mağaza, uyumsuzluğu yok sayıp eklentiyi yine de etkinleştirmenize izin verir. Bunun sorumluluğu size aittir. Eklenti çalışmayabilir ve NVDA'yı kararsız hale getirebilir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "İşte güvenlik ağınız; bunu aklınızda tutmaya değer. Bir eklenti kurduktan sonra NVDA tuhaf davranırsa veya sürekli çökerse, NVDA'yı bütün eklentiler kapalı olarak yeniden başlatabilirsiniz. NVDA+Q (NVDA komutu) tuşlarına basın. NVDA'dan çık iletişim kutusunda Aşağı Ok ile Eklentileri devre dışı bırakarak yeniden başlat'ı seçin ve Enter'a basın. NVDA, hiç eklenti kurulu değilmiş gibi sade haliyle geri gelir. Şimdi Eklenti Mağazası'nı açın, şüphelendiğiniz eklentiyi devre dışı bırakın veya kaldırın ve NVDA'yı normal şekilde yeniden başlatın. Devam etmek için Enter'a basın.",
+          "hints": [
+            "NVDA artı Q, NVDA'dan çık iletişim kutusunu açar. Bu bir seçenekler listesidir. Eklentileri devre dışı bırakarak yeniden başlat bunlardan biridir.",
+            "Bu geçicidir. Bir sonraki normal yeniden başlatma, devre dışı bıraktıklarınız veya kaldırdıklarınız dışında bütün eklentilerinizi geri getirir.",
+            "NVDA Eğitmeni de bir eklentidir; bu yüzden eklentiler devre dışıyken kullanılamaz. Bir sonraki normal yeniden başlatmada geri gelir."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Artık bir eklentinin bütün yaşam döngüsünü biliyorsunuz: ne olduğunu, ona güvenip güvenmeyeceğinize nasıl karar vereceğinizi, onu nasıl bulacağınızı, hakkında nasıl bilgi edineceğinizi, nasıl kuracağınızı, güncelleyeceğinizi, kapatacağınızı, kaldıracağınızı ve biri sorun çıkarırsa nasıl toparlanacağınızı. Bu bölümün son üç dersi, mağazada en çok indirilen 25 eklentinin ne işe yaradıklarına göre gruplanmış rehberli bir turudur. Hiçbirine ihtiyacınız yoktur. Nelerin mümkün olduğunu bilmeniz için oradadırlar. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "Bir adıma bakmak için ders seçiciden bu bölüme istediğiniz zaman dönebilirsiniz.",
+            "NVDA Kullanıcı Rehberi'nde Eklentiler ve Eklenti Mağazası adlı tam bir bölüm vardır. Kullanıcı Rehberi'ni NVDA menüsünün Yardım alt menüsünden açın.",
+            "Bundan sonraki turda yer alan hiçbir şey kurma önerisi değildir. İlk dersteki kontrolleri kullanın ve kararı kendiniz verin."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_everyday",
+      "title": "Popüler Eklentiler: Günlük Araçlar",
+      "order": 9,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Sonraki üç ders, Eklenti Mağazası'nda en çok indirilen 25 eklentiyi tanıtır. Nasıl seçildikleri hakkında bir not. Mağaza, her eklentiyi kaç kişinin kullandığını yayımlamaz. Bu yüzden bu liste eklentileri, çoğu eklentinin tutulduğu web sitesi olan GitHub'dan kaç kez indirildiklerine göre sıralar; sayım Kasım 2026'da yapılmıştır. Yalnızca mağazanın NVDA 2026.3 için sunduğu eklentiler sayılmıştır. Bu bir popülerlik ölçüsüdür, öneri değildir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "İndirme sayıları her otomatik güncellemeyi de içerir; bu yüzden sık güncellenen eklentiler, gerçek kullanıcı sayılarının göstereceğinden daha üst sırada yer alır.",
+            "Sürekli yeni eklentiler çıkar ve yeni bir eklenti size ünlü bir eklentiden daha uygun olabilir. Mağazadaki eklentiler sekmesini yayın tarihine göre sıralamak size nelerin yeni olduğunu gösterir.",
+            "Dersi bitirmek için buradaki hiçbir şeyi kurmanız gerekmez. Dinleyin ve yararlı görünenlerin adlarını not edin."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bu ders, NVDA'nın kendisine bir özellik ekleyen dokuz küçük aracı ele alır. Önce, istendiğinde bilgi veren üç eklenti. Saat, İngilizce adıyla Clock, gelişmiş bir saat ve takvimdir. NVDA'nın kendi saat komutu olan NVDA+F12'yi devralır; böylece bir basış saati, iki basış tarihi, üç basış ise günü, hafta numarasını ve yılı verir. Bu tarih hangi gün, İngilizce adıyla Day of the week, seçtiğiniz bir tarihin hangi güne denk geldiğini söyler. Kaynak İzleme, İngilizce adıyla Resource Monitor, bilgisayarınızın ne kadar meşgul olduğunu bildirir: işlemci yükü, kullanılan bellek, disk alanı ve daha fazlası. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Saat, Bu tarih hangi gün ve Kaynak İzleme; başka türlü yanıtlamak için görmeniz veya birkaç adım atmanız gereken bir soruyu yanıtlar.",
+            "Hiçbir eklenti olmadan da NVDA+F12 saati söyler, iki kez basmak ise tarihi söyler. Bunu 1. Bölümde öğrendiniz. Saat eklentisi bunun üzerine kurulur.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sırada, NVDA'nın söyledikleriyle ve kopyaladıklarınızla çalışmak için üç eklenti var. Speech history review and copying, NVDA'nın en son söylediği şeylerin bir listesini tutar. Varsayılan olarak Shift+F11 ve Shift+F12 bunlar arasında geri ve ileri gider, F12 ise o andakini panoya kopyalar. NVDA bir şeyi bir kez söyleyip siz kaçırdığınızda çok işe yarar. Pano İçerik Düzenleyicisi, İngilizce adıyla Clip Contents Designer, panoda zaten bulunan metnin yerine yenisini koymak yerine ona metin eklemenizi sağlar ve pano içeriğini size gösterebilir. Instant Translate, seçili metni veya panodaki metni başka bir dile çevirir ve sonucu size okur. Devam etmek için Enter'a basın.",
+          "hints": [
+            "NVDA 2026.2 ve sonraki sürümler, son söyleneni kendi başına tekrarlayabilir: NVDA+X tuşlarına basın. Speech history daha ileri gider, çünkü yalnızca sonuncuyu değil birçok öğeyi hatırlar.",
+            "Instant Translate metni çevrimiçi bir çeviri hizmetine gönderir; bu yüzden internet bağlantısı gerekir ve onu özel metinlerde kullanmamalısınız.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Bu grubun sonunda, duyduklarınızı değiştiren veya sizi hatalardan koruyan üç eklenti var. İfadeler, İngilizce adıyla Emoticons, NVDA'nın metinle yazılmış bir ifadeyi, onu oluşturan noktalama karakterlerini okumak yerine gülen yüz gibi adıyla söylemesini sağlar. Sembolleri Bildir, İngilizce adıyla Report Symbols, yazılan karakterlerin seslendirilmesini kapatmış olsanız bile noktalama işaretleri gibi sembolleri siz yazarken seslendirir. Girdi kilidi, İngilizce adıyla Input lock, giriş aygıtlarınızı tek bir tuşa basışla kilitler ve aynı şekilde açar; klavyeyi temizlemeniz gerektiğinde veya yakınlarda bir çocuk ya da evcil hayvan olduğunda kullanışlıdır. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "İfadeler ve Sembolleri Bildir yalnızca konuşmayı değiştirir. Gerçekte yazılanı veya gönderileni değiştirmezler.",
+            "Girdi kilidi'ni kurmadan önce Yardım'ını okuyun ve kilidi açan tuşu öğrenin. Açamadığınız kilitli bir klavye gerçek bir baş belasıdır.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_reading_navigation",
+      "title": "Popüler Eklentiler: Okuma, Dolaşım ve Konuşma",
+      "order": 10,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Bu ders, okuma, dolaşma veya NVDA'yı duyma biçiminizi değiştiren dokuz popüler eklentiyi ele alır. Bunların birkaçı, NVDA benzer bir işi kendisi yapamadığı zamanlardan kalmadır; bu yüzden bu ders NVDA'nın onlar olmadan zaten neler yaptığını da söyler. Önce okuma. NVDA Gelişmiş OCR'ın kısaltması olan Nao, resimlerden ve taranmış belgelerden metin okumak için NVDA'da yerleşik olan metin tanımayı geliştirir. Cümle Dolaşımı, İngilizce adıyla SentenceNav, metinde cümle cümle ilerlemenizi sağlar. Yerimleri, İngilizce adıyla Place markers, web sayfalarına ve diğer tarama kipi belgelerine yer imi koymanızı ve daha sonra onlara geri atlamanızı sağlar. Devam etmek için Enter'a basın.",
+          "hints": [
+            "OCR, optik karakter tanıma demektir: bir metin resmini NVDA'nın okuyabileceği metne dönüştürmek. NVDA'da OCR yerleşiktir. Geçerli nesneyi tanımak için NVDA+R tuşlarına basın. Nao bunun üzerine kurulur.",
+            "NVDA 2026.3 birçok yerde kendi başına cümle cümle ilerler: sonraki cümle için Alt+Aşağı Ok, önceki cümle için Alt+Yukarı Ok. Cümle Dolaşımı'nı kurmadan önce bunu deneyin.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sırada dolaşım var. Mağazada Nesne Dolaşımı adıyla görünen ve İngilizce adı ObjPad olan eklenti, 5. Bölümde öğrendiğiniz nesne dolaşımını tuş bileşimleri yerine tek tuşlara basarak yapmanızı sağlar. Gelişmiş Dokunma Hareketleri, İngilizce adıyla Enhanced Touch Gestures, NVDA'yı tablette veya dokunmatik ekranlı dizüstü bilgisayarda kullananlar için ek dokunmatik ekran hareketleri ekler. Akışları Oku, İngilizce adıyla Read Feeds, NVDA'yı bir haber akışı okuyucusuna dönüştürür; böylece web sitelerinin en son yazılarını her siteyi açmadan izleyebilirsiniz. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Nesne Dolaşımı eklentisi, nesne dolaşımını çok kullananlara uygundur. 5. Bölümdeki komutlara nadiren ihtiyaç duyuyorsanız eksikliğini hissetmezsiniz.",
+            "Gelişmiş Dokunma Hareketleri yalnızca dokunmatik ekranlı bir bilgisayarda işe yarar. NVDA 2026.2 ve 2026.3 kendi başına birçok dokunma hareketi eklemiştir.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Son olarak, günlük konuşmanın ötesine geçen üç eklenti. Switch synth, sentezleyicileri ve sesleri numaralı yuvalara kaydetmenizi ve bir tuş basışıyla aralarında geçiş yapmanızı sağlar: Kontrol+Shift+NVDA artı 1'den 6'ya kadar bir rakam. Access8Math matematikte yardımcı olur. Matematik içeriğini okur ve LaTeX adlı bir gösterimle matematik yazmanızı sağlar. Tele NVDA uzaktan Destek, İngilizce adıyla Tele NVDA remote assistance, eğitmen gibi güvendiğiniz bir kişinin internet üzerinden bilgisayarınıza bağlanıp onu duymasını ve denetlemesini ya da sizin onun bilgisayarına bağlanmanızı sağlar. Bu dersi bitirmek için Enter tuşuna basın.",
+          "hints": [
+            "NVDA'da, NVDA menüsünün Araçlar alt menüsünde Uzaktan erişim zaten vardır ve NVDA, 2026.1 sürümünden beri matematiği kendi başına okur. Tele NVDA ve Access8Math bunların üzerine ek seçenekler getirir.",
+            "Uzaktan erişim araçları başka bir kişiye bilgisayarınızın denetimini verir. Yalnızca tanıdığınız ve güvendiğiniz biriyle bağlantı kurun ve bağlantı anahtarınızı asla herkese açık şekilde paylaşmayın.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "popular_app_support",
+      "title": "Popüler Eklentiler: Belirli Programlar için Destek",
+      "order": 11,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Popüler eklentilerin son grubu bir özellik eklemez. Belirli bir programın NVDA ile daha iyi çalışmasını sağlar. Programı kullanmıyorsanız eklentiye ihtiyacınız yoktur. Bu ders bunlardan yedisini ele alır. Bütün mağazada en çok indirilen eklenti bu gruptadır: Windows Temel Uygulamalar, İngilizce adıyla Windows App Essentials. NVDA'nın Windows 11'deki çeşitli uygulamalarla ve kontrollerle çalışmasını geliştirir. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bir program için hazırlanmış eklenti, yalnızca siz o programdayken bir şey yapar. Geri kalan zamanda ayak altında dolaşmaz.",
+            "Windows Temel Uygulamalar Windows'u yakından izler ve çok sık güncellenir. Aynı zamanda NVDA'nın en yeni sürümünü gerektirme olasılığı en yüksek eklentidir.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Her gün kullanıyor olabileceğiniz programlar için üç eklenti. Mozilla Apps Enhancements, Firefox web tarayıcısı ve Thunderbird e-posta programı için erişilebilirlik özellikleri ekler. Genişletilmiş Outlook Desteği, İngilizce adıyla Outlook Extended, bir iletinin üst bilgileri ve ekleri gibi bölümlerini okuyan veya o bölümlere giden komutlarla Microsoft Outlook'u geliştirir. VLC Medya Oynatıcı, İngilizce adıyla VLC Media Player, daha iyi dolaşım ve durum çubuğunu okuma yoluyla VLC medya oynatıcısının kullanımını kolaylaştırır. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Firefox, Thunderbird, Outlook veya VLC kullanıyorsanız ona karşılık gelen eklenti hakkında bilgi edinmeye değer. Kullanmıyorsanız geçin.",
+            "Bunların her biri kendi komutlarını belgeler. Kurduktan sonra bunları öğrenmek için Eklenti Mağazası'ndaki Yardım eylemini kullanın.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sesle çalışanlar için de üç eklenti. GoldWave, GoldWave ses düzenleyicisine erişimi geliştirir. mp3DirectCut, MP3 dosyalarını kesmeye ve kırpmaya yarayan mp3DirectCut programı için komutlar ekler. StationPlaylist, radyo yayıncılarının bir istasyonu yönetmek için kullandığı StationPlaylist programlarına verilen desteği geliştirir ve Studio programını her yerden denetleyen komutlar ekler. Devam etmek için Enter'a basın.",
+          "hints": [
+            "Bu üçü uzmanlık araçlarıdır. Popülerdirler, çünkü kör ses yapımcıları ve yayıncılar her gün onlara güvenir.",
+            "Bir uzmanlık eklentisi genellikle çok sayıda komut ekler. Belgelerini okumak için kendinize zaman tanıyın.",
+            "Bunlardan herhangi birini bulmak için Eklenti Mağazası'nı açın, Mağazadaki eklentiler sekmesine gidin, Alt+A tuşlarına basın ve adını yazın."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Tur böylece tamamlandı: günlük araçlar, okuma ve dolaşım, belirli programlar için destek olarak gruplanmış 25 eklenti. Her eklenti için iş sırasını hatırlayın. Ona güvenip güvenmediğinize karar verin. Açıklamasını ve incelemelerini okuyun. Mağazadaki eklentiler sekmesinden kurun. NVDA'yı yeniden başlatın. Yardım'ını okuyun. Bir şey ters giderse NVDA+Q tuşlarına basın ve Eklentileri devre dışı bırakarak yeniden başlat'ı seçin. Bu dersi bitirmek ve Eklentiler ve Eklenti Mağazası bölümünü tamamlamak için Enter tuşuna basın.",
+          "hints": [
+            "Güvenin, hakkında bilgi edinin, kurun, yeniden başlatın, Yardım'ını okuyun. Bu sıra sizi sorunlardan uzak tutar.",
+            "Bir adıma veya bir eklenti adına bakmak için bu bölümdeki derslere istediğiniz zaman dönebilirsiniz.",
+            "Mağazada, burada ele alınan 25 eklentiden birkaç yüz tane daha fazlası vardır. Onları bulmanın en iyi yolu, kullandığınız bir programı veya yapılmasını istediğiniz bir işi aratmaktır."
+          ]
+        }
+      ]
+    }
+  ]
+}

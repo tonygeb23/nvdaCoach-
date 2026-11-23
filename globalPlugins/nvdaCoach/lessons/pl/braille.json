@@ -1,0 +1,374 @@
+{
+  "id": "braille",
+  "title": "Korzystanie z monitora brajlowskiego",
+  "description": "Opcjonalny rozdział dla osób, które mają monitor brajlowski. Dowiedz się, jak go podłączyć, czytać i przewijać, używać klawiszy przywoływania kursora, wybrać tablicę brajlowską i pisać brajlem. Ten rozdział nie jest wymagany do uzyskania certyfikatu ukończenia.",
+  "order": 8,
+  "optional": true,
+  "lessons": [
+    {
+      "id": "braille_is_optional",
+      "title": "Czy ten rozdział jest dla Ciebie?",
+      "order": 1,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Ten rozdział jest opcjonalny. Jest przeznaczony dla osób, które mają monitor brajlowski, czyli urządzenie z rzędem małych bolców, które podnoszą się i opadają, tworząc znaki brajlowskie. Jeśli go nie masz, możesz pominąć cały ten rozdział. Twój certyfikat ukończenia od niego nie zależy. Naciśnij Enter, aby kontynuować, albo naciśnij Escape, aby na tym poprzestać.",
+          "hints": [
+            "Opcjonalny znaczy dokładnie to. NVDA Coach uznaje kurs za ukończony bez tych lekcji, a certyfikat jest wystawiany bez nich.",
+            "Jeśli monitor brajlowski będziesz mieć później, ten rozdział nadal będzie czekał w wyborze lekcji.",
+            "Nie musisz znać brajla, żeby używać NVDA. Sama mowa wystarcza do wszystkiego, czego uczą wcześniejsze rozdziały."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeśli masz monitor brajlowski, oto co robi z nim NVDA. Wszystko, co NVDA by wypowiedziało, może też pokazać w brajlu: kontrolkę, na której jesteś, wiersz tekstu, który czytasz, oraz komunikaty. Możesz czytać palcami we własnym tempie, sprawdzać dotykiem pisownię słowa i pracować w ciszy. Jeśli Twój monitor ma klawiaturę brajlowską, możesz też na niej pisać. Mowa i brajl działają razem, ale możesz też używać tylko jednego z nich. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Brajl sprawdza się szczególnie tam, gdzie mowa radzi sobie słabo: przy dokładnej pisowni, interpunkcji, liczbach i układzie tekstu.",
+            "Wiele osób używa obu naraz: mowy dla szybkości, a brajla dla dokładności.",
+            "NVDA obsługuje tablice brajlowskie dla wielu języków, zarówno bez skrótów, jak i ze skrótami."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeszcze jedno, zanim zaczniesz. Każdy monitor brajlowski jest zbudowany trochę inaczej, a klawisze monitora Focus to nie to samo co klawisze monitora Brailliant albo Orbit. NVDA Coach uczy, co robi każde polecenie i jak nazywa je NVDA. Dokładne klawisze Twojego monitora znajdziesz w Podręczniku użytkownika NVDA, w rozdziale Obsługiwane monitory brajlowskie, który zawiera listę przypisań klawiszy dla każdego modelu. Podręcznik użytkownika otworzysz tak: NVDA+N, potem C jak Pomoc, potem U jak Podręcznik użytkownika. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Podręcznik użytkownika jest stroną internetową. Naciśnij NVDA+Control+F, aby wyszukać w nim nazwę swojego monitora, albo użyj Listy elementów, NVDA+F7, i wybierz Nagłówki.",
+            "Pomoc klawiatury działa też dla klawiszy monitora brajlowskiego. Naciśnij NVDA+1, potem naciśnij klawisz na monitorze, a NVDA powie, co ten klawisz robi. Naciśnij ponownie NVDA+1, aby wyłączyć pomoc klawiatury.",
+            "Instrukcja dołączona do Twojego monitora podaje nazwy jego klawiszy. Miej ją pod ręką podczas pracy z tym rozdziałem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect_display",
+      "title": "Podłączanie monitora brajlowskiego",
+      "order": 2,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "NVDA potrafi samo znaleźć wiele monitorów brajlowskich. Nazywa się to automatycznym wykrywaniem i jest domyślnie włączone. W większości przypadków podłączenie jest bardzo proste: podłącz monitor do komputera kablem USB, włącz monitor i poczekaj kilka sekund. Pod palcami pojawi się brajl. Zrób to teraz, jeśli Twój monitor nie jest jeszcze podłączony. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Automatyczne wykrywanie działa z większością współczesnych monitorów, między innymi z modelami firm HumanWare, Freedom Scientific, Help Tech, HIMS, Orbit, Baum, Eurobraille i Seika, oraz z każdym monitorem używającym standardowego protokołu HID dla brajla.",
+            "Niektóre monitory mają więcej niż jeden tryb połączenia. Jeśli nic się nie dzieje, poszukaj w menu monitora albo w jego instrukcji ustawienia takiego jak tryb czytnika ekranu, tryb terminala albo tryb HID.",
+            "Na początek najpewniejszy jest kabel USB. Najpierw uruchom monitor przez USB, a Bluetooth dodaj później."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Aby zamiast tego połączyć się przez Bluetooth, monitor trzeba najpierw sparować z systemem Windows. Otwórz Ustawienia systemu Windows skrótem Windows+I (polecenie systemu Windows), przejdź do sekcji Bluetooth i urządzenia i dodaj tam monitor. Gdy jest sparowany, automatyczne wykrywanie w NVDA znajduje go tak samo jak przez USB. Parowanie wykonuje się tylko raz. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Parowanie to zadanie systemu Windows, a nie NVDA. NVDA może używać tylko takiego monitora Bluetooth, który system Windows już zna.",
+            "Jeśli podczas parowania system Windows poprosi o kod PIN, znajdziesz go w instrukcji monitora. Często jest to 0000 albo 1234.",
+            "Monitory Bluetooth przechodzą w stan uśpienia, żeby oszczędzać baterię. Jeśli brajl przestanie działać, wybudź monitor i daj NVDA kilka sekund na ponowne połączenie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeśli Twój monitor nie zostanie znaleziony automatycznie, możesz wybrać go samodzielnie. Naciśnij NVDA+Control+A (polecenie NVDA). Otworzy się okno dialogowe Wybór monitora brajlowskiego. Pierwszą kontrolką jest lista rozwijana o nazwie Monitor brajlowski. Strzałką w górę i strzałką w dół posłuchaj dostępnych opcji. Automatyczne to opcja domyślna. Bez brajla wyłącza brajl. Pozostałe opcje to nazwy producentów i modeli monitorów. Wybierz swój, przejdź klawiszem Tab do OK i naciśnij Enter. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus Control plus A. Ten skrót działa z każdego miejsca, bez otwierania menu NVDA.",
+            "Jeśli NVDA nie może załadować wybranego monitora, informuje o tym i dalej używa tego, co działało wcześniej. Nic się nie zepsuło. Sprawdź kabel i spróbuj ponownie.",
+            "Niektóre monitory wymagają zainstalowania w systemie Windows sterownika od producenta, zanim NVDA będzie mogło się z nimi porozumieć. Rozdział Obsługiwane monitory brajlowskie w Podręczniku użytkownika mówi o tym tam, gdzie to konieczne."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "W tym samym oknie dialogowym jest lista rozwijana o nazwie Port. Określa ona, w jaki sposób NVDA łączy się z monitorem: Automatyczne, USB, Bluetooth, a czasem port szeregowy. Zostaw opcję Automatyczne, chyba że instrukcja Twojego monitora mówi inaczej. Jeśli Twojego monitora w ogóle nie ma na liście, może być mimo to obsługiwany przez dodatek. Niektórzy producenci publikują swój sterownik do NVDA w Add-on Store, z którego nauczyłeś się korzystać w poprzednim rozdziale. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Dla listy Port opcja Automatyczne jest właściwa prawie zawsze.",
+            "Aby poszukać dodatku ze sterownikiem, otwórz Add-on Store, przejdź na kartę Odkrywaj dodatki i wyszukaj nazwę swojego monitora albo jego producenta.",
+            "Podłączaj naraz tylko jeden monitor tego samego producenta. NVDA nie da się wskazać, którego z dwóch identycznych monitorów ma używać."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Sprawdź, czy wszystko działa. Mając podłączony monitor, wróć do tego okna, naciskając NVDA+Shift+C, i dotknij monitora. Powinien być na nim brajl: tekst tej lekcji albo nazwa kontrolki, która ma fokus. Jeśli tak jest, Twój monitor jest podłączony i możesz przejść do następnej lekcji. Jeśli monitor jest pusty, naciśnij NVDA+Control+A i sprawdź, który monitor jest wybrany. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Gdy NVDA uruchamia się z podłączonym monitorem, pierwszą rzeczą, którą pokazuje w brajlu, jest komunikat o tym, że NVDA zostało uruchomione.",
+            "Pusty monitor oznacza zwykle jedną z trzech rzeczy: monitor jest wyłączony albo uśpiony, kabel jest poluzowany albo w oknie dialogowym Wybór monitora brajlowskiego wybrano opcję Bez brajla.",
+            "Jeśli masz instruktora, pierwsze podłączanie monitora to dobry moment, żeby poprosić go o pomoc. Potem NVDA łączy się już samo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading_braille",
+      "title": "Czytanie i przewijanie w brajlu",
+      "order": 3,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Monitor brajlowski pokazuje naraz tylko krótki fragment ekranu. Większość monitorów ma od 14 do 40 komórek, a niektóre mają 80. Wiersz tekstu jest często dłuższy, więc czytanie w brajlu polega na przeczytaniu tego, co jest na monitorze, a potem przesunięciu monitora dalej. Takie przesuwanie nazywa się przewijaniem. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Komórka to jeden znak brajlowski: zestaw sześciu albo ośmiu bolców.",
+            "Monitor 40-komórkowy pokazuje mniej więcej połowę typowego wiersza tekstu. Monitor 20-komórkowy pokazuje mniej więcej jedną czwartą.",
+            "Przewijanie monitora nie przesuwa kursora i niczego nie zmienia na ekranie. Zmienia tylko to, który fragment czytasz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "NVDA ma dwa polecenia przewijania. Przewijanie monitora brajlowskiego w przód pokazuje następny fragment tekstu. Przewijanie monitora brajlowskiego do tyłu pokazuje poprzedni fragment. Na większości monitorów służą do tego klawisze przewijania albo klawisze pod kciukami, zwykle na końcach monitora albo wzdłuż jego przedniej krawędzi. Gdy przewijasz w przód poza koniec wiersza, NVDA przechodzi na początek następnego wiersza, więc cały dokument możesz przeczytać, naciskając tylko klawisz przewijania w przód. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Aby znaleźć klawisze przewijania na swoim monitorze, naciśnij NVDA+1, aby włączyć pomoc klawiatury, a potem wypróbuj klawisze na obu końcach monitora. Gdy je znajdziesz, NVDA powie: Przewija brajl w przód albo Przewija brajl do tyłu. Na koniec naciśnij ponownie NVDA+1.",
+            "Zwykle czyta się jedną ręką, a druga spoczywa na klawiszu przewijania w przód.",
+            "Przewijanie przesuwa po tekście. Nie przesuwa kursora, w którym piszesz, więc czytanie niczego nie zmienia."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Są jeszcze dwa polecenia do czytania. Przeniesienie monitora brajlowskiego do następnej linii oraz przeniesienie monitora brajlowskiego do poprzedniej linii. Przeskakują one o cały wiersz, niezależnie od tego, w której części wiersza byłeś. Wiele monitorów ma do tego osobne klawisze. Używaj ich, żeby szybko przejrzeć dokument w dół, a przewijania używaj, żeby przeczytać wiersz od początku do końca. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przewijanie w przód i do tyłu przesuwa wzdłuż wiersza fragmentami o długości monitora. Następna linia i poprzednia linia przenoszą w dół i w górę o całe wiersze.",
+            "Nie każdy monitor ma dla tych dwóch poleceń własne klawisze. Możesz im przypisać klawisze w oknie dialogowym Zdarzenia wejścia, w kategorii Brajl.",
+            "Domyślnie mowa milknie, gdy przewijasz monitor, żeby nie zagłuszała czytania."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz, tutaj. Tekst do ćwiczeń znajduje się niżej w tym oknie. Naciskaj strzałkę w dół na klawiaturze, aby do niego przejść. Przeczytaj palcami pierwszy wiersz na monitorze. Naciśnij klawisz przewijania w przód na swoim monitorze, aby czytać dalej. Potem wypróbuj klawisze następnej i poprzedniej linii, jeśli Twój monitor je ma. Gdy doczytasz do końca, naciśnij Enter, aby kontynuować.",
+          "practiceText": "To jest pierwszy wiersz tekstu do ćwiczeń w brajlu i jest na tyle długi, że aby przeczytać go w całości, trzeba będzie przewinąć monitor.\nDrugi wiersz jest krótki.\nBrajl pokazuje dokładnie, jak pisze się słowo, razem z wielkimi literami i znakami interpunkcyjnymi.\nLiczby, takie jak 2026, i symbole, takie jak małpa w adresie imie@example.com, łatwo sprawdzić dotykiem.\nTo jest ostatni wiersz tekstu do ćwiczeń.",
+          "hints": [
+            "Jeśli monitor nadal pokazuje instrukcję, a nie tekst do ćwiczeń, naciśnij strzałkę w dół jeszcze kilka razy, aż dojdziesz do nagłówka Obszar ćwiczeń.",
+            "Jeśli klawisz przewijania nic nie robi, włącz pomoc klawiatury skrótem NVDA+1 i naciśnij ten klawisz. NVDA powie, do czego jest przypisany. Wyłącz pomoc klawiatury skrótem NVDA+1.",
+            "Nie spiesz się. Czytanie brajla na monitorze to umiejętność manualna i z praktyką przyspiesza tak samo jak polecenia klawiaturowe."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeszcze jedna rzecz, która może się przydać podczas czytania. NVDA może przewijać monitor za Ciebie w stałym tempie. Nazywa się to automatycznym przewijaniem i pojawiło się w NVDA 2026.2. Naciśnij NVDA+Alt+K (polecenie NVDA), aby je włączyć albo wyłączyć. Gdy jest włączone, NVDA+Alt+L je przyspiesza, a NVDA+Alt+J je spowalnia. Zatrzymuje się samo, gdy naciśniesz klawisz przywoływania kursora, gdy przeniesie się fokus albo gdy dojdzie do końca. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "K włącza i wyłącza automatyczne przewijanie. L przyspiesza. J spowalnia. Wszystkie trzy naciska się razem z NVDA i Alt.",
+            "Podczas automatycznego przewijania nadal możesz nacisnąć przewijanie do tyłu, żeby przeczytać coś jeszcze raz, albo przewijanie w przód, żeby pominąć krótki wiersz.",
+            "Prędkość można też ustawić w oknie Ustawienia NVDA, w kategorii Brajl, suwakiem Automatyczna prędkość przewijania."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_cursor_routing",
+      "title": "Kursor brajlowski i klawisze przywoływania kursora",
+      "order": 4,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Gdy jesteś w miejscu, w którym możesz pisać, brajl pokazuje, gdzie jest kursor. Kursor to punkty 7 i 8, czyli dwa dolne punkty komórki, podniesione pod znakiem, na którym się znajduje. Domyślnie miga, czyli równomiernie podnosi się i opada, żeby można go było znaleźć dotykiem. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Punkty 7 i 8 to dodatkowy dolny rząd ośmiopunktowej komórki brajlowskiej. Zwykły brajl sześciopunktowy ich nie używa, dlatego mogą służyć do oznaczania kursora.",
+            "Jeśli miganie Cię rozprasza, można je wyłączyć w oknie Ustawienia NVDA, w kategorii Brajl: usuń zaznaczenie pola Miganie kursora.",
+            "Zaznaczony tekst też jest oznaczany punktami 7 i 8, pod każdym zaznaczonym znakiem i bez migania."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Na większości monitorów nad każdą komórką albo pod nią jest mały przycisk. To klawisze przywoływania kursora, nazywane też klawiszami routing, po jednym dla każdej komórki. Naciśnięcie takiego klawisza nad znakiem przenosi kursor prosto do tego znaku. To jedna z największych zalet brajla: znajdujesz błąd palcem, naciskasz przycisk nad nim, a kursor już tam jest, gotowy do poprawki. Bez przechodzenia strzałkami wzdłuż wiersza. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Przywoływanie oznacza wysłanie kursora w konkretne miejsce. Jedno naciśnięcie klawisza przywoływania kursora nad literą i kursor jest na tej literze.",
+            "Klawisze przywoływania kursora są małe i jest ich tyle, ile komórek, więc tworzą rząd tuż za komórkami albo tuż przed nimi.",
+            "Kilka bardzo małych albo tanich monitorów nie ma klawiszy przywoływania kursora. Ich instrukcje opisują inny sposób przenoszenia kursora."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisze przywoływania kursora mają też drugie zadanie. Gdy monitor pokazuje kontrolkę zamiast tekstu, na przykład przycisk, link albo pole wyboru, naciśnięcie klawisza przywoływania kursora nad nią aktywuje ją, tak samo jak Enter albo spacja. W oknie dialogowym możesz więc przeczytać nazwę przycisku w brajlu i nacisnąć klawisz przywoływania kursora nad nim, żeby nacisnąć ten przycisk. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Na tekście klawisz przywoływania kursora przenosi kursor. Na kontrolce klawisz przywoływania kursora ją aktywuje.",
+            "Na stronie internetowej w trybie przeglądania naciśnięcie klawisza przywoływania kursora nad linkiem otwiera ten link.",
+            "Gdy NVDA pokazuje komunikat w brajlu, naciśnięcie dowolnego klawisza przywoływania kursora zamyka komunikat i znowu pokazuje miejsce, w którym byłeś."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Klawisze przywoływania kursora najlepiej sprawdzają się w prawdziwym dokumencie, w którym masz kursor do przenoszenia. Aby poćwiczyć, otwórz Notatnik: naciśnij klawisz Windows, wpisz notatnik i naciśnij Enter. Wpisz zdanie z celowym błędem w pisowni. Znajdź błąd palcem. Naciśnij klawisz przywoływania kursora nad błędną literą. Naciśnij Delete na klawiaturze i wpisz właściwą literę. Gdy to wypróbujesz, wróć za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Po naciśnięciu klawisza przywoływania kursora poszukaj palcem migających punktów 7 i 8. Powinny być teraz pod wybraną literą.",
+            "Jeśli po naciśnięciu klawisza przywoływania kursora nic się nie dzieje, sprawdź to w pomocy klawiatury: naciśnij NVDA+1, naciśnij klawisz przywoływania kursora, a NVDA powinno powiedzieć, że umieszcza kursor lub aktywuje obiekt pod daną komórką.",
+            "Gdy skończysz, zamknij Notatnik skrótem Alt+F4. Jeśli zapyta, czy zapisać zmiany, wybierz Nie zapisuj."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_tables",
+      "title": "Wybór tablicy brajlowskiej",
+      "order": 5,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Brajl ma różne odmiany zapisu. Każdy język ma własną. W obrębie języka jest zwykle brajl bez skrótów, nazywany też integrałem, w którym zapisana jest każda litera, oraz brajl ze skrótami, który używa skróconych form, żeby oszczędzać miejsce. Jest też brajl komputerowy, który używa ośmiu punktów i pokazuje dokładnie jedną komórkę dla każdego znaku. NVDA nazywa każdą z tych odmian tablicą, a Ty wybierasz, której tablicy ma używać. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Jeśli dopiero uczysz się brajla, wybierz tablicę bez skrótów. Pojawia się każda litera i nic nie jest skracane.",
+            "Brajl ze skrótami mieści więcej tekstu na małym monitorze, dlatego lubią go doświadczeni czytelnicy.",
+            "Brajl komputerowy przydaje się do rzeczy, które muszą być dokładne, takich jak adresy e-mail, hasła i kod programów."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Wyboru dokonuje się w oknie Ustawienia NVDA. Naciśnij NVDA+N, potem O jak Opcje, potem U jak Ustawienia. Na liście kategorii naciskaj B, aż usłyszysz Brajl. Potem naciskaj Tab, aby przechodzić po ustawieniach. Po przycisku Zmień, który otwiera okno dialogowe Wybór monitora brajlowskiego, dojdziesz do listy Tablica wyjścia. To tablica, której NVDA używa do pokazywania brajla na Twoim monitorze. Wybierz jedną z nich strzałką w górę i strzałką w dół. Pierwsza opcja, Automatycznie, dobiera tablicę do języka, w którym działa samo NVDA. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Naciskaj B, aż NVDA powie Brajl. Jeśli usłyszysz inną kategorię na tę samą literę, naciśnij B jeszcze raz.",
+            "Lista tablic jest długa, bo obejmuje wiele języków, i jest ułożona alfabetycznie. Naciśnij pierwszą literę nazwy tablicy, aby do niej przeskoczyć.",
+            "Dla języka polskiego zwykle wybiera się tablicę Polski brajl literacki, czyli brajl bez skrótów, albo Polski brajl komputerowy. Naciskaj P, aż je usłyszysz."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Następne ustawienie to Tablica wprowadzania. To tablica, której NVDA oczekuje, gdy piszesz na klawiaturze brajlowskiej swojego monitora. Może być inna niż tablica wyjścia. Na przykład możesz czytać brajl ze skrótami, a pisać bez skrótów. Jeśli Twój monitor nie ma klawiatury brajlowskiej, to ustawienie Cię nie dotyczy. Dalej jest pole wyboru o nazwie Rozwiń słowo pod kursorem do brajla komputerowego. Gdy jest oznaczone, słowo, na którym stoi kursor, jest pokazywane w całości, bez skrótów, żebyś mógł sprawdzić jego dokładną pisownię. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Wyjście to to, co czytasz. Wprowadzanie to to, co piszesz. Ustawia się je osobno.",
+            "Pole Rozwiń słowo pod kursorem do brajla komputerowego jest powodem, dla którego słowo jakby zmienia kształt, gdy wchodzi na nie kursor. Tak ma być.",
+            "Jeśli zmieniające się słowo Ci przeszkadza, usuń zaznaczenie tego pola. Słowo pozostanie wtedy w tym samym zapisie co reszta wiersza."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Otwórz Ustawienia NVDA i przejdź do kategorii Brajl. Przejdź klawiszem Tab do listy Tablica wyjścia i posłuchaj, która tablica jest wybrana. Jeśli Ci odpowiada, naciśnij Escape, aby zostawić wszystko bez zmian. Jeśli chcesz inną, wybierz ją, przejdź klawiszem Tab do OK i naciśnij Enter. Brajl na Twoim monitorze zmieni się od razu. Potem wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Escape zamyka Ustawienia NVDA bez żadnych zmian. OK zatwierdza to, co wybrałeś.",
+            "Jeśli monitor nagle pokazuje brajl, którego nie umiesz przeczytać, wybrałeś tablicę dla zapisu, którego nie znasz. Wróć do kategorii Brajl i wybierz ponownie albo wybierz opcję Automatycznie.",
+            "Twój wybór jest zapisywany razem z pozostałymi ustawieniami NVDA przy zamykaniu NVDA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_follow",
+      "title": "Za czym podąża monitor",
+      "order": 6,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "W rozdziale 5, Nawigacja po obiektach, dowiedziałeś się, że NVDA śledzi dwa miejsca. Jedno to fokus systemowy z jego kursorem: miejsce, do którego trafia to, co piszesz. Drugie to obiekt nawigatora z kursorem przeglądu, który przesuwasz, żeby poznawać ekran bez zmieniania czegokolwiek. Twój monitor brajlowski może podążać za jednym albo za drugim. NVDA nazywa to powiązaniem brajla, czyli przywiązaniem monitora do czegoś. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Powiązanie z fokusem oznacza, że monitor pokazuje miejsce, w którym są fokus klawiatury i kursor.",
+            "Powiązanie z kursorem przeglądu oznacza, że monitor pokazuje miejsce, w którym są obiekt nawigatora i kursor przeglądu.",
+            "Jeśli nawigacja po obiektach jest dla Ciebie nowością, ta lekcja będzie bardziej zrozumiała po rozdziale 5. Brajl działa bardzo dobrze bez zmieniania tego ustawienia."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Naciśnij NVDA+Control+T (polecenie NVDA), aby zmienić to, z czym brajl jest powiązany. Każde naciśnięcie przechodzi do następnej opcji, a NVDA ją ogłasza. Opcje są trzy. Automatycznie, czyli opcja domyślna: brajl podąża za fokusem i przełącza się na jakiś czas na kursor przeglądu, kiedy celowo go przesuwasz. Do fokusu: brajl podąża tylko za fokusem. Do kursora przeglądu: brajl podąża tylko za kursorem przeglądu. Opcja automatycznie odpowiada prawie każdemu, więc jeśli wypróbujesz pozostałe, na koniec wróć do automatycznie. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus Control plus T przełącza kolejno między opcjami automatycznie, do fokusu i do kursora przeglądu.",
+            "Jeśli monitor wydaje się zablokowany i nie podąża za Tobą, gdy przechodzisz klawiszem Tab, najpierw sprawdź to ustawienie. Mogło zostać zmienione na opcję do kursora przeglądu.",
+            "To samo ustawienie jest w oknie Ustawienia NVDA, w kategorii Brajl, jako lista rozwijana o nazwie Powiąż Brajl."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jest też drugie, inne ustawienie, o nazwie Tryb brajla. Naciśnij NVDA+Alt+T (polecenie NVDA), aby przełączać między jego dwiema opcjami. Śledź kursory to opcja domyślna i to z niej korzystałeś do tej pory: monitor pokazuje miejsce, w którym jesteś. Pokazuj mowę pokazuje w brajlu wszystko, co mówi NVDA. Ten tryb przydaje się do czytania komunikatów, które są wypowiadane raz i znikają, na przykład powiadomień. Naciśnij ponownie NVDA+Alt+T, aby wrócić do opcji śledź kursory. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "NVDA plus Control plus T wybiera, za którym kursorem podąża brajl. NVDA plus Alt plus T wybiera, czy brajl w ogóle podąża za kursorami, czy pokazuje mowę.",
+            "W trybie pokazuj mowę monitor pokazuje to, co NVDA by powiedziało, nawet gdy mowa jest wyłączona.",
+            "Jeśli monitor pokazuje komunikaty i ogłoszenia, ale nigdy kursora, tryb brajla został ustawiony na pokazuj mowę. Naciśnij NVDA+Alt+T."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Skoro mowa o wyłączaniu mowy: niektóre osoby czytające brajlem pracują zupełnie bez mowy. Naciskaj NVDA+S (polecenie NVDA), aby przechodzić przez tryby mowy NVDA. Są to: mowa, czyli zwykłe mówienie, na żądanie, brak i dźwięki. NVDA ogłasza każdy tryb, gdy do niego dojdziesz. Gdy tryb mowy jest ustawiony na brak, NVDA milczy, a wszystko przekazuje monitor brajlowski. Naciskaj NVDA+S, aż usłyszysz mowa, aby przywrócić mówienie. Naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "NVDA plus S. Każde naciśnięcie przechodzi do następnego trybu mowy.",
+            "Jeśli NVDA kiedykolwiek zamilknie, a Ty tego nie chciałeś, naciskaj NVDA+S, aż znowu usłyszysz mowa. Warto to zapamiętać, nawet jeśli nigdy nie użyjesz brajla.",
+            "Tryb na żądanie mówi tylko wtedy, gdy o coś zapytasz poleceniem, na przykład NVDA+T, żeby poznać tytuł. Gdy się poruszasz, milczy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_abbreviations",
+      "title": "Brajlowskie skróty kontrolek",
+      "order": 7,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Mowa podaje typ każdej kontrolki w pełnym brzmieniu: przycisk, pole wyboru, pole edycji. Na małym monitorze brajlowskim zajęłoby to cenne komórki. Dlatego w brajlu NVDA używa krótkich skrótów. Gdy poznasz te najczęstsze, szybko przeczytasz okno dialogowe w brajlu. Ta lekcja omawia skróty, które spotkasz najczęściej. Litery są tu zapisane osobno, żeby NVDA wypowiadało je wyraźnie. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Skrót zwykle stoi zaraz po nazwie kontrolki, w tej samej kolejności, której używa mowa.",
+            "Nie musisz dziś zapamiętać wszystkich. Pięć albo sześć najczęstszych wystarcza do większości tego, co będziesz czytać.",
+            "Pełna lista jest w Podręczniku użytkownika, w rozdziale Brajl, w części o nazwie Brajlowskie skróty typu i stanu kontrolki oraz punktów orientacyjnych."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Oto najczęstsze typy kontrolek. Przycisk to B T N. Pole wyboru to C H K. Pole edycji, w którym piszesz, to E D T. Lista rozwijana to C B O. Przycisk opcji to R B T N. Link to L N, a link, który już odwiedziłeś, to V L N K. Lista to L S. Menu to M N U, a element menu to E L M N U. Okno dialogowe to D L G. Nagłówek to litera H, po której stoi jego poziom, więc nagłówek poziomu 2 to H 2. Naciśnij Enter, aby kontynuować.",
+          "practiceText": "Zapisz btn\nZapamiętaj mnie chk\nImię edt\nKraj cbo\nE-mail rbtn\nKontakt ln\nStrona główna vlnk\nOpcje dlg\nh2 Pierwsze kroki",
+          "hints": [
+            "Obszar ćwiczeń pod tym krokiem pokazuje każdy skrót tak, jak wygląda na monitorze. Przejdź do niego strzałką w dół i przeczytaj każdy wiersz w brajlu.",
+            "Większość skrótów to angielska nazwa kontrolki bez samogłosek: button, czyli przycisk, daje B T N, a dialog, czyli okno dialogowe, daje D L G.",
+            "Na stronie internetowej skróty mają też punkty orientacyjne. Główny to M A I N, nawigacja to N A V, a szukaj to S R C H."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Brajl pokazuje też stan kontrolki. Oznaczone pole wyboru pokazuje kształt wypełnionej ramki, złożony z trzech komórek, a nieoznaczone pokazuje kształt pustej ramki. Inne stany są pokazywane krótkimi skrótami albo znakami. C H K, czyli te same litery co przy polu wyboru, oznacza zaznaczony. R O oznacza tylko do odczytu. R E Q oznacza wymagane pole formularza. Trzy gwiazdki oznaczają zabezpieczone, jak w polu hasła. Punkty 3 6, a po nich punkty 4 5, oznaczają, że element otwiera podmenu. Znak minus oznacza, że element można zwinąć, a znak plus, że można go rozwinąć. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Znaków oznaczonego i nieoznaczonego pola łatwiej nauczyć się dotykiem niż z opisu. Znajdź pole wyboru, naciśnij spację, aby zmienić jego stan, i wyczuj, jak zmienia się znak.",
+            "W drzewie, takim jak wybór lekcji NVDA Coach, znak plus przy rozdziale oznacza, że można go otworzyć, a znak minus, że jest otwarty.",
+            "W tabeli litera C z liczbą to kolumna, a litera R z liczbą to wiersz. C 2 R 3 oznacza kolumnę 2, wiersz 3."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Spróbuj teraz. Otwórz okno Ustawienia NVDA: naciśnij NVDA+N, potem O, potem U. Powoli przechodź klawiszem Tab po oknie i po każdym naciśnięciu przeczytaj monitor. Znajdź przycisk, pole wyboru, listę rozwijaną i pole edycji i zwróć uwagę na skrót po każdej nazwie. Gdy je znajdziesz, naciśnij Escape, aby zamknąć Ustawienia NVDA bez żadnych zmian. Wróć tutaj za pomocą NVDA+Shift+C i naciśnij Enter, aby zakończyć tę lekcję.",
+          "hints": [
+            "Kategoria Ogólne, na której Ustawienia NVDA zwykle się otwierają, ma kilka pól wyboru i list rozwijanych blisko siebie.",
+            "Jeśli nazwa kontrolki jest za długa dla Twojego monitora, przewiń w przód. Skrót jej typu stoi po nazwie.",
+            "Naciśnięcie Escape zostawia każde ustawienie bez zmian. Przechodzenie klawiszem Tab po oknie dialogowym niczego nie zmienia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "braille_input_and_comfort",
+      "title": "Pisanie brajlem i dopasowywanie ustawień",
+      "order": 8,
+      "chapterComplete": true,
+      "steps": [
+        {
+          "type": "info",
+          "instruction": "Jeśli Twój monitor ma klawiaturę brajlowską, z sześcioma albo ośmioma klawiszami ułożonymi jak w maszynie brajlowskiej Perkins, możesz na niej pisać, a NVDA zamieni Twój brajl na tekst. To, jakiego zapisu NVDA oczekuje, określa Tablica wprowadzania, którą poznałeś wcześniej w tym rozdziale. Przy tablicy bez skrótów każda litera pojawia się od razu po wpisaniu. Przy tablicy ze skrótami NVDA czeka, aż na końcu słowa naciśniesz spację albo Enter, i dopiero wtedy tłumaczy całe słowo. Jeśli Twój monitor nie ma klawiatury brajlowskiej, naciśnij Enter, aby przejść do następnego kroku.",
+          "hints": [
+            "Nie każdy monitor ma klawiaturę brajlowską, a na kilku monitorach, które ją mają, pisanie nie jest obsługiwane. Rozdział Obsługiwane monitory brajlowskie w Podręczniku użytkownika mówi, których to dotyczy.",
+            "Pisanie brajlem ze skrótami sprawia wrażenie opóźnionego, bo słowo pojawia się dopiero wtedy, gdy je skończysz. Tak to ma działać.",
+            "Klawiatury brajlowskiej i klawiatury komputera możesz używać razem. NVDA przyjmuje obie."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Podczas pisania brajlem trzy klawisze mają specjalne zadania. Sam punkt 7 kasuje ostatnią wpisaną komórkę brajlowską albo ostatni znak, tak jak Backspace. Sam punkt 8 tłumaczy to, co wpisałeś, i naciska Enter. Punkty 7 i 8 razem tłumaczą to, co wpisałeś, bez dodawania spacji i bez naciskania Enter. Punkt 7 to klawisz tuż obok punktu 3, po zewnętrznej stronie, pod małym palcem lewej ręki. Punkt 8 to klawisz tuż obok punktu 6, po zewnętrznej stronie, pod małym palcem prawej ręki. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Punkt 7 to Backspace. Punkt 8 to Enter. Te dwa klawisze wystarczają do większości zadań.",
+            "Punkty 7 i 8 razem służą do zakończenia słowa pisanego skrótami, gdy nie chcesz po nim spacji, na przykład przed znakiem interpunkcyjnym wpisywanym z klawiatury.",
+            "Aby poćwiczyć, otwórz Notatnik z menu Start i wpisz kilka słów na klawiaturze brajlowskiej. Zamknij go skrótem Alt+F4 i wybierz Nie zapisuj."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Teraz trzy ustawienia, dzięki którym czyta się wygodniej. Wszystkie są w oknie Ustawienia NVDA, w kategorii Brajl. Pokazuj wiadomości określa, czy komunikaty NVDA pojawiają się w brajlu oraz czy znikają po upływie ustalonego czasu, czy zostają, dopóki ich nie zamkniesz. Czas wygasania komunikatów ustawia liczbę sekund. Jeśli komunikaty znikają, zanim zdążysz je przeczytać, zwiększ ten czas albo wybierz opcję Pokazuj w nieskończoność. Z kolei Przerwij mowę podczas przewijania, domyślnie włączone, sprawia, że mowa nie zagłusza Cię podczas czytania. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Komunikat to coś, co NVDA mówi, a czego nie ma na ekranie, na przykład godzina po naciśnięciu NVDA+F12. W brajlu tymczasowo zastępuje to, co czytałeś.",
+            "Gdy wybrana jest opcja Pokazuj w nieskończoność, komunikat zostaje, dopóki nie naciśniesz klawisza przywoływania kursora albo nie przejdziesz dalej.",
+            "Jeśli lubisz jednocześnie słuchać i czytać, wyłącz ustawienie Przerwij mowę podczas przewijania."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "Jeszcze dwa ustawienia wpływają na to, jak tekst mieści się na monitorze. Dzielenie słów określa, co się dzieje, gdy słowo nie mieści się na końcu monitora. NVDA może przeciąć słowo, przeciąć je i pokazać znak albo przenieść całe słowo do następnego fragmentu, żebyś nigdy nie czytał połowy słowa. W wersjach NVDA starszych niż 2026.3 było to prostsze ustawienie w postaci pola wyboru. Z kolei Czytaj akapitami sprawia, że monitor pokazuje cały akapit płynnie, zamiast zatrzymywać się na końcu każdego wiersza ekranu, co wiele osób woli przy czytaniu książek i długich dokumentów. Naciśnij Enter, aby kontynuować.",
+          "hints": [
+            "Gdy słowo jest przecięte między dwoma fragmentami, NVDA pokazuje w ostatniej komórce punkty 7 i 8 jako znak, że słowo ma ciąg dalszy.",
+            "Opcja Na granicach słów jest najwygodniejsza do czytania. Opcja wyłączone mieści najwięcej tekstu w każdym fragmencie.",
+            "Gdy ustawienie Czytaj akapitami jest włączone, klawisze następnej i poprzedniej linii przenoszą o akapit."
+          ]
+        },
+        {
+          "type": "info",
+          "instruction": "To koniec rozdziału o brajlu. Wiesz już, jak podłączyć monitor, czytać i przewijać, wysłać kursor w wybrane miejsce klawiszem przywoływania kursora, wybrać tablicę brajlowską, zdecydować, za czym podąża monitor, czytać skróty kontrolek, pisać brajlem i dopasować ustawienia do siebie. Jeśli chodzi o dokładne klawisze Twojego monitora, pamiętaj o rozdziale Obsługiwane monitory brajlowskie w Podręczniku użytkownika. Naciśnij Enter, aby zakończyć tę lekcję i ukończyć rozdział Korzystanie z monitora brajlowskiego.",
+          "hints": [
+            "Najszybciej nabierzesz wprawy, gdy zostawisz monitor podłączony i podczas codziennej pracy będziesz trzymać na nim jedną rękę, nawet gdy słuchasz mowy.",
+            "Wszystkie polecenia brajlowskie NVDA są wymienione w oknie dialogowym Zdarzenia wejścia, w kategorii Brajl. Każdemu z nich możesz przypisać klawisz na monitorze albo na klawiaturze.",
+            "Ten rozdział był opcjonalny, więc jego ukończenie nie zmienia Twojego certyfikatu. Mimo to jest to prawdziwe osiągnięcie."
+          ]
+        }
+      ]
+    }
+  ]
+}
