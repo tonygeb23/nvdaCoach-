@@ -421,7 +421,7 @@
           "instruction": "NVDA zawiera pełny Podręcznik użytkownika, który możesz otworzyć w dowolnym momencie. Podręcznik użytkownika znajduje się w menu NVDA w podmenu Pomoc. To świetne źródło informacji, gdy chcesz samodzielnie dowiedzieć się więcej. Naciśnij Enter, aby kontynuować.",
           "hints": [
             "Podręcznik użytkownika otwiera się w domyślnej przeglądarce internetowej jako lokalny plik HTML. Jest instalowany z NVDA, dzięki czemu można go czytać bez połączenia z Internetem.",
-            "Aby otworzyć podręcznik użytkownika: naciśnij NVDA+N, aby otworzyć menu NVDA, naciśnij H, aby uzyskać pomoc, a następnie naciśnij U, aby wyświetlić podręcznik użytkownika. Twoja przeglądarka otworzy się automatycznie.",
+            "Aby otworzyć podręcznik użytkownika: naciśnij NVDA+N, aby otworzyć menu NVDA, naciśnij C, aby otworzyć podmenu Pomoc, a następnie naciśnij U, aby wyświetlić podręcznik użytkownika. Twoja przeglądarka otworzy się automatycznie.",
             "Podręcznik użytkownika opisuje szczegółowo każde polecenie i funkcję NVDA. Możesz użyć trybu przeglądania — omówione w dalszej części tego kursu — aby szybko poruszać się po nim za pomocą nagłówków."
           ]
         },
@@ -432,7 +432,7 @@
             "kb:nvda+n"
           ],
           "hints": [
-            "Przytrzymaj NVDA i naciśnij N, aby otworzyć menu. Po otwarciu naciśnij H, aby otworzyć podmenu Pomoc, a następnie naciśnij U, aby wyświetlić Podręcznik użytkownika.",
+            "Przytrzymaj NVDA i naciśnij N, aby otworzyć menu. Po otwarciu naciśnij C, aby otworzyć podmenu Pomoc, a następnie naciśnij U, aby wyświetlić Podręcznik użytkownika.",
             "Jeśli trafisz w menu w nieoczekiwane miejsce, naciśnij Escape, aby je zamknąć i spróbuj ponownie. Menu za każdym razem otwiera się od góry.",
             "Menu NVDA podzielone jest na Opcje, Narzędzia, Pomoc i kilka innych elementów. Poruszają się po nim klawisze strzałek; Enter otwiera podmenu lub aktywuje element."
           ]

@@ -288,7 +288,7 @@ msgstr "Rozdział {number}: {title}"
 
 #: globalPlugins/nvdaCoach/__init__.py:983
 msgid "--- YOUR CERTIFICATE OF COMPLETION ---\nTab to the Export Certificate button below and press Enter.\nYour certificate will open in your web browser.\n\nTo save or print your certificate:\n  1. In your browser, press Ctrl+S to save the page, or press Ctrl+P to print it.\n  2. To print to PDF, choose 'Save as PDF' or 'Microsoft Print to PDF' as your printer.\n  3. A copy is also saved automatically to your Downloads folder."
-msgstr "--- TWOJE CERTYFIKAT UKOŃCZENIA ---\nPrzejdź tabulatorem do przycisku Eksportuj certyfikat poniżej i naciśnij Enter.\nTwój certyfikat otworzy się w Twojej przeglądarce internetowej.\n\nAby zapisać lub wydrukować certyfikat:\n  1. W przeglądarce naciśnij Ctrl+S, aby zapisać stronę lub naciśnij Ctrl+P, aby ją wydrukować.\n  2. Aby wydrukować do pliku PDF, wybierz opcję „Zapisz jako PDF” lub „Microsoft Print to PDF” jako drukarkę.\n  3. Kopia zostanie również automatycznie zapisana w folderze Pobrane."
+msgstr "--- TWÓJ CERTYFIKAT UKOŃCZENIA ---\nPrzejdź tabulatorem do przycisku Eksportuj certyfikat poniżej i naciśnij Enter.\nTwój certyfikat otworzy się w Twojej przeglądarce internetowej.\n\nAby zapisać lub wydrukować certyfikat:\n  1. W przeglądarce naciśnij Ctrl+S, aby zapisać stronę lub naciśnij Ctrl+P, aby ją wydrukować.\n  2. Aby wydrukować do pliku PDF, wybierz opcję „Zapisz jako PDF” lub „Microsoft Print to PDF” jako drukarkę.\n  3. Kopia zostanie również automatycznie zapisana w folderze Pobrane."
 
 #: globalPlugins/nvdaCoach/__init__.py:996
 msgid "NVDA Coach — Course Complete!"

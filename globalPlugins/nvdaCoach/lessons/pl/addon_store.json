@@ -264,7 +264,7 @@
           "type": "info",
           "instruction": "Gdy dodatek jest zaznaczony na liście, naciśnij Enter, aby otworzyć jego menu Działania, i jeszcze raz Enter na pozycji Zainstaluj, która jest pierwsza. Sklep od razu zaczyna pobieranie. Zostajesz na liście, a stan tego dodatku zmienia się na Pobieranie, a potem na Pobrany, oczekuje na instalacje. Stan jest częścią wiersza, więc aby go sprawdzić, naciśnij NVDA+Tab, które odczytuje element mający fokus. Naciśnij Enter, aby kontynuować.",
           "hints": [
-            "Enter otwiera menu Działania, a Zainstaluj jest pierwszą pozycją, więc dwukrotne naciśnięcie Enter na dodatku instaluje go.",
+            "Enter otwiera menu Działania. Wybierz Zainstaluj i naciśnij Enter, aby rozpocząć pobieranie.",
             "Pobrany, oczekuje na instalacje oznacza, że plik dotarł i czeka. Właściwa instalacja odbywa się po zamknięciu sklepu.",
             "Jeśli stan brzmi Pobieranie nie powiodło się, otwórz ponownie menu Działania i wybierz Spróbuj ponownie zainstalować. Najczęstszą przyczyną jest zerwane połączenie z internetem."
           ]

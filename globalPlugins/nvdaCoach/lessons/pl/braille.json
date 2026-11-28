@@ -98,7 +98,7 @@
       "steps": [
         {
           "type": "info",
-          "instruction": "Monitor brajlowski pokazuje naraz tylko krótki fragment ekranu. Większość monitorów ma od 14 do 40 komórek, a niektóre mają 80. Wiersz tekstu jest często dłuższy, więc czytanie w brajlu polega na przeczytaniu tego, co jest na monitorze, a potem przesunięciu monitora dalej. Takie przesuwanie nazywa się przewijaniem. Naciśnij Enter, aby kontynuować.",
+          "instruction": "Monitor brajlowski pokazuje naraz tylko krótki fragment ekranu. Większość monitorów ma od 14 do 40 komórek, a niektóre mają 80. Wiersz tekstu jest często dłuższy, więc czytanie w brajlu polega na przeczytaniu tego, co jest na monitorze, a potem wyświetleniu kolejnego fragmentu. Nazywa się to przewijaniem. Naciśnij Enter, aby kontynuować.",
           "hints": [
             "Komórka to jeden znak brajlowski: zestaw sześciu albo ośmiu bolców.",
             "Monitor 40-komórkowy pokazuje mniej więcej połowę typowego wiersza tekstu. Monitor 20-komórkowy pokazuje mniej więcej jedną czwartą.",
@@ -299,7 +299,7 @@
         },
         {
           "type": "info",
-          "instruction": "Brajl pokazuje też stan kontrolki. Oznaczone pole wyboru pokazuje kształt wypełnionej ramki, złożony z trzech komórek, a nieoznaczone pokazuje kształt pustej ramki. Inne stany są pokazywane krótkimi skrótami albo znakami. C H K, czyli te same litery co przy polu wyboru, oznacza zaznaczony. R O oznacza tylko do odczytu. R E Q oznacza wymagane pole formularza. Trzy gwiazdki oznaczają zabezpieczone, jak w polu hasła. Punkty 3 6, a po nich punkty 4 5, oznaczają, że element otwiera podmenu. Znak minus oznacza, że element można zwinąć, a znak plus, że można go rozwinąć. Naciśnij Enter, aby kontynuować.",
+          "instruction": "Brajl pokazuje też stan kontrolki. Oznaczone pole wyboru pokazuje kształt wypełnionej ramki, złożony z trzech komórek, a nieoznaczone pokazuje kształt pustej ramki. Inne stany są pokazywane krótkimi skrótami albo znakami. W polskiej wersji NVDA 2026.3.1 skrót stanu „zaznaczony” ma taki sam zapis brajlowski jak skrót typu „pole wyboru”: C H K. Znaczenie wynika z kontekstu. R O oznacza tylko do odczytu. R E Q oznacza wymagane pole formularza. Trzy gwiazdki oznaczają zabezpieczone, jak w polu hasła. Punkty 3 6, a po nich punkty 4 5, oznaczają, że element otwiera podmenu. Znak minus oznacza, że element można zwinąć, a znak plus, że można go rozwinąć. Naciśnij Enter, aby kontynuować.",
           "hints": [
             "Znaków oznaczonego i nieoznaczonego pola łatwiej nauczyć się dotykiem niż z opisu. Znajdź pole wyboru, naciśnij spację, aby zmienić jego stan, i wyczuj, jak zmienia się znak.",
             "W drzewie, takim jak wybór lekcji NVDA Coach, znak plus przy rozdziale oznacza, że można go otworzyć, a znak minus, że jest otwarty.",
