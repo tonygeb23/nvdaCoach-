@@ -105,6 +105,35 @@ msgstr "Instruktor technologii wspomagających"
 #: globalPlugins/nvdaCoach/__init__.py:566
 msgid "Welcome to NVDA Coach\nCreated by Tony Gebhard, Assistive Technology Instructor\ngithub.com/tonygeb23/nvdaCoach-\n\nBefore you begin, there is one key you should know right now. The Control key, labeled Ctrl, is in the bottom-left corner of your keyboard. Press it once and NVDA stops talking immediately, no matter what it is reading. This is the single most useful key you will ever learn as an NVDA user. You will reach for it dozens of times every day, in every program, at any moment.\n\nNVDA Coach teaches screen reader commands through short, hands-on practice sessions. Each lesson guides you through one command at a time and waits for you to try it before moving on. The program is designed for beginners who already have a basic feel for their keyboard, including letters, numbers, arrow keys, Enter, Escape, and Tab.\n\nIf you are not yet confident with your keyboard, that is completely fine. NVDA has a built-in tool called Input Help. Press NVDA and the number 1 together to turn it on. While Input Help is active, pressing any key tells you what that key does without actually doing it. Press NVDA+1 again to turn it off. You can use Input Help at any time, even during a lesson.\n\nIf you have an assistive technology instructor nearby, let them know you are starting NVDA Coach. They can help you find keys, adjust settings, or answer questions before you begin. If you are working on your own, that is perfectly fine too. NVDA Coach is built to guide you step by step, at your own pace.\n\n--- KEYS AVAILABLE DURING EVERY LESSON ---\n  Enter  —  Confirm you have tried the step and move to the next one.\n  F1  —  Repeat the current instruction.\n  F2  —  Hear a hint. Press again for more hints.\n  F3  —  Skip the current step.\n  Escape  —  Stop the lesson. Press three times to close NVDA Coach.\n\n--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\n  F4  —  Open help documentation (press twice within 5 seconds).\n  F5  —  Send feedback by email (press twice within 5 seconds).\n  F6  —  Toggle lesson sounds on or off.\n  F7  —  Open your profile (name, instructor, training center).\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson  ·  Ctrl+B  —  Previous  ·  Ctrl+R  —  Restart\n\nWhen you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
 msgstr ""
+"Witaj w NVDA Coach\n"
+"Autor: Tony Gebhard, instruktor technologii wspomagających\n"
+"github.com/tonygeb23/nvdaCoach-\n"
+"\n"
+"Na początek poznaj klawisz Control, oznaczony jako Ctrl. Zwykle znajduje się w lewym dolnym rogu klawiatury. Naciśnij go raz, aby natychmiast przerwać mowę NVDA, niezależnie od tego, co czytnik odczytuje. To jeden z najprzydatniejszych klawiszy w pracy z NVDA. Będziesz go używać dziesiątki razy dziennie, niezależnie od programu.\n"
+"\n"
+"W NVDA Coach poznasz polecenia czytnika ekranu w krótkich ćwiczeniach. W każdym kroku wypróbujesz jedno polecenie, zanim przejdziesz dalej. Kurs jest dla początkujących, którzy wiedzą już, gdzie znaleźć litery, cyfry, strzałki oraz klawisze Enter, Escape i Tab.\n"
+"\n"
+"Jeśli klawiatura nie jest Ci jeszcze dobrze znana, włącz pomoc klawiatury skrótem NVDA+1. NVDA podpowie, do czego służy naciśnięty klawisz, bez wykonywania polecenia. Naciśnij NVDA+1 ponownie, aby wyłączyć pomoc. Możesz z niej korzystać także podczas lekcji.\n"
+"\n"
+"Jeśli uczysz się z instruktorem technologii wspomagających, powiedz mu, że zaczynasz kurs. Przed rozpoczęciem może pomóc Ci znaleźć klawisze, dobrać ustawienia lub odpowiedzieć na pytania. Możesz też uczyć się samodzielnie, krok po kroku, we własnym tempie.\n"
+"\n"
+"--- KLAWISZE PODCZAS LEKCJI ---\n"
+"  Enter: po wypróbowaniu polecenia przejdź do następnego kroku.\n"
+"  F1: powtórz bieżącą instrukcję.\n"
+"  F2: posłuchaj podpowiedzi. Naciśnij ponownie, aby usłyszeć kolejną.\n"
+"  F3: pomiń bieżący krok.\n"
+"  Escape: przerwij lekcję. Aby zamknąć NVDA Coach, naciśnij Escape trzy razy z rzędu.\n"
+"\n"
+"--- KLAWISZE DOSTĘPNE W TYM OKNIE TAKŻE POZA LEKCJĄ ---\n"
+"  F4: otwórz pomoc. Naciśnij dwa razy w ciągu pięciu sekund.\n"
+"  F5: otwórz wiadomość e-mail do twórcy. Naciśnij dwa razy w ciągu pięciu sekund.\n"
+"  F6: włącz lub wyłącz dźwięki lekcji.\n"
+"  F7: otwórz profil (Twoje imię, imię instruktora i ośrodek szkoleniowy).\n"
+"\n"
+"--- NAWIGACJA PO LEKCJACH ---\n"
+"  Ctrl+N: następna lekcja. Ctrl+B: poprzednia lekcja. Ctrl+R: bieżąca lekcja od początku.\n"
+"\n"
+"Aby zacząć, przejdź klawiszem Tab do przycisku „Rozpocznij kurs”. Naciśnij Enter lub spację, aby rozpocząć pierwszą lekcję. Możesz też nacisnąć NVDA+Shift+C, aby otworzyć wybór lekcji i od razu wybrać dowolną lekcję."
 
 #: globalPlugins/nvdaCoach/__init__.py:613
 msgid "During a lesson:  Enter — Next Step  ·  F1 Repeat  ·  F2 Hint  ·  F3 Skip  ·  Esc Stop"
@@ -209,6 +238,26 @@ msgstr "Zanim zaczniesz, jest jeden klawisz, który powinieneś znać już teraz
 #: globalPlugins/nvdaCoach/__init__.py:790
 msgid "--- KEYS AVAILABLE DURING EVERY LESSON ---\nThese function keys work at any time while a lesson is open:\n\n  Enter  —  Confirm you have tried the step and move to the next one.\n  F1  —  Repeat the current instruction. Use this whenever you want NVDA to read the step again.\n  F2  —  Hear a hint. If you are not sure what to do, press F2 for a helpful suggestion. Press it again for additional hints.\n  F3  —  Skip the current step and move on. Use this if you cannot complete a step right now and want to continue.\n  Escape  —  Stop the lesson. Press Escape three times to close NVDA Coach.\n\n--- KEYS AVAILABLE ANY TIME IN THIS WINDOW ---\nThese keys work whether a lesson is running or not:\n\n  F4  —  Open the NVDA Coach help documentation in your web browser. Press F4 once to arm it, then press F4 again within five seconds to open.\n  F5  —  Send feedback to the developer by email. Press F5 once to arm it, then press F5 again within five seconds to open.\n  F6  —  Toggle lesson sounds on or off. Press once to silence sounds, press again to restore them.\n  F7  —  Open your profile. Set your name, your instructor's name, and your training center. This information personalizes your lessons and appears on your certificate of completion.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Move to the next lesson in the current chapter.\n  Ctrl+B  —  Go back to the previous lesson.\n  Ctrl+R  —  Restart the current lesson from the beginning.\n\n"
 msgstr ""
+"--- KLAWISZE PODCZAS LEKCJI ---\n"
+"Tych klawiszy możesz używać, gdy lekcja jest otwarta:\n"
+"\n"
+"  Enter: po wypróbowaniu polecenia przejdź do następnego kroku.\n"
+"  F1: posłuchaj bieżącej instrukcji jeszcze raz.\n"
+"  F2: jeśli nie wiesz, co zrobić, posłuchaj podpowiedzi. Naciśnij ponownie, aby usłyszeć kolejną.\n"
+"  F3: jeśli nie możesz teraz wykonać ćwiczenia, pomiń ten krok i przejdź dalej.\n"
+"  Escape: przerwij lekcję. Aby zamknąć NVDA Coach, naciśnij Escape trzy razy z rzędu.\n"
+"\n"
+"--- KLAWISZE DOSTĘPNE W TYM OKNIE TAKŻE POZA LEKCJĄ ---\n"
+"  F4: otwórz pomoc NVDA Coach w przeglądarce. Naciśnij F4 dwa razy w ciągu pięciu sekund.\n"
+"  F5: otwórz wiadomość e-mail do twórcy, aby napisać opinię. Naciśnij F5 dwa razy w ciągu pięciu sekund.\n"
+"  F6: włącz lub wyłącz dźwięki lekcji. Ponowne naciśnięcie przywraca poprzednie ustawienie.\n"
+"  F7: otwórz profil. Możesz podać swoje imię, imię instruktora i nazwę ośrodka szkoleniowego. Te dane służą do dopasowania treści lekcji i pojawią się na certyfikacie ukończenia.\n"
+"\n"
+"--- NAWIGACJA PO LEKCJACH ---\n"
+"  Ctrl+N: przejdź do następnej lekcji w bieżącym rozdziale.\n"
+"  Ctrl+B: wróć do poprzedniej lekcji.\n"
+"  Ctrl+R: zacznij bieżącą lekcję od początku.\n"
+"\n"
 
 #: globalPlugins/nvdaCoach/__init__.py:817
 msgid "When you are ready to begin, press Tab to find the Start Course button below and press Enter or Space to start the first lesson. You can also press NVDA+Shift+C to open the lesson picker and choose any lesson directly."
@@ -296,23 +345,41 @@ msgstr "NVDA Coach - kurs ukończony!"
 
 #: globalPlugins/nvdaCoach/__init__.py:1017
 msgid "Welcome back, {name} — NVDA Coach Complete!"
-msgstr ""
+msgstr "Witaj ponownie, {name}. Kurs NVDA Coach ukończony!"
 
 #: globalPlugins/nvdaCoach/__init__.py:1019
 msgid "Welcome back — NVDA Coach Complete!"
-msgstr ""
+msgstr "Witaj ponownie. Kurs NVDA Coach ukończony!"
 
 #: globalPlugins/nvdaCoach/__init__.py:1022
 msgid "Welcome back, {name}. You have already completed every lesson in NVDA Coach. Your certificate is available below."
-msgstr ""
+msgstr "Witaj ponownie, {name}. Wszystkie wymagane lekcje NVDA Coach masz już za sobą. Poniżej znajdziesz certyfikat."
 
 #: globalPlugins/nvdaCoach/__init__.py:1025
 msgid "Welcome back. You have already completed every lesson in NVDA Coach. Your certificate is available below."
-msgstr ""
+msgstr "Witaj ponownie. Wszystkie wymagane lekcje NVDA Coach masz już za sobą. Poniżej znajdziesz certyfikat."
 
 #: globalPlugins/nvdaCoach/__init__.py:1031
 msgid "You have completed NVDA Coach. Your progress is saved and your certificate of completion is ready.\n\n--- YOUR CERTIFICATE ---\nTab to the Export Certificate of Completion button below and press Enter to open your certificate in your web browser. A copy is also saved to your Downloads folder automatically.\n\n--- CONTINUE LEARNING ---\nPress NVDA+Shift+C to open the lesson picker. You can revisit any lesson at any time to review commands and practice.\n\n--- LESSON NAVIGATION ---\n  Ctrl+N  —  Next lesson in the current category\n  Ctrl+B  —  Previous lesson\n  Ctrl+R  —  Restart the current lesson\n\n--- QUICK KEYS ---\n  F4 — Open help documentation\n  F5 — Send feedback to the developer\n  F6 — Toggle lesson sounds on or off\n  F7 — Update your profile (name, instructor, training center)"
 msgstr ""
+"Kurs NVDA Coach ukończony. Twoje postępy są zapisane, a certyfikat ukończenia jest gotowy.\n"
+"\n"
+"--- TWÓJ CERTYFIKAT ---\n"
+"Przejdź klawiszem Tab do przycisku „Eksportuj certyfikat ukończenia” i naciśnij Enter, aby otworzyć certyfikat w przeglądarce. Kopia zapisze się automatycznie w folderze Pobrane.\n"
+"\n"
+"--- DALSZA NAUKA ---\n"
+"Naciśnij NVDA+Shift+C, aby otworzyć wybór lekcji. W każdej chwili możesz wrócić do dowolnej lekcji, aby przypomnieć sobie polecenia i poćwiczyć.\n"
+"\n"
+"--- NAWIGACJA PO LEKCJACH ---\n"
+"  Ctrl+N: następna lekcja w bieżącym rozdziale.\n"
+"  Ctrl+B: poprzednia lekcja.\n"
+"  Ctrl+R: bieżąca lekcja od początku.\n"
+"\n"
+"--- SKRÓTY ---\n"
+"  F4: otwórz pomoc. Naciśnij dwa razy w ciągu pięciu sekund.\n"
+"  F5: otwórz wiadomość e-mail do twórcy, aby napisać opinię. Naciśnij dwa razy w ciągu pięciu sekund.\n"
+"  F6: włącz lub wyłącz dźwięki lekcji.\n"
+"  F7: uaktualnij profil (Twoje imię, imię instruktora i ośrodek szkoleniowy)."
 
 #: globalPlugins/nvdaCoach/__init__.py:1071
 msgid "Lesson stopped.\n\nPress Escape two more times to close NVDA Coach.\nOr press NVDA+Shift+C to start another lesson."
@@ -596,7 +663,7 @@ msgstr "NVDA Coach — wybór lekcji"
 
 #: globalPlugins/nvdaCoach/__init__.py:1629
 msgid "Browse lessons and resources below. Right arrow expands a section, Left arrow collapses it. Press Enter or the Open / Start button to activate the selected item. Press F4 for help, F5 for feedback, F6 to toggle sounds, F7 or the Profile button to set your name and instructor."
-msgstr ""
+msgstr "Poniżej znajdziesz lekcje i materiały. Strzałka w prawo rozwija sekcję, a strzałka w lewo ją zwija. Aby otworzyć wybraną pozycję, naciśnij Enter lub użyj przycisku „Otwórz / rozpocznij”. Naciśnij F4 dwa razy w ciągu pięciu sekund, aby otworzyć pomoc. Tak samo naciśnij F5, aby otworzyć wiadomość e-mail do twórcy. F6 włącza lub wyłącza dźwięki lekcji. Naciśnij F7 lub wybierz przycisk „Profil”, aby podać swoje imię i imię instruktora."
 
 #: globalPlugins/nvdaCoach/__init__.py:1652
 msgid "Introduction / About NVDA Coach"
@@ -632,11 +699,11 @@ msgstr "&Otwórz / rozpocznij"
 
 #: globalPlugins/nvdaCoach/__init__.py:1698
 msgid "&Profile  (F7)"
-msgstr ""
+msgstr "&Profil  (F7)"
 
 #: globalPlugins/nvdaCoach/__init__.py:1699
 msgid "Set your name, instructor name, and training center. This information appears on your certificate of completion and personalizes lesson instructions throughout NVDA Coach. You can update your profile at any time."
-msgstr ""
+msgstr "Możesz podać swoje imię, imię instruktora i nazwę ośrodka szkoleniowego. NVDA Coach wykorzystuje te dane, aby dopasować treść lekcji. Pojawią się też na certyfikacie ukończenia. Profil możesz zmienić w dowolnej chwili."
 
 #: globalPlugins/nvdaCoach/__init__.py:1723
 msgid "Please select an item first."
